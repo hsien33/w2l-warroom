@@ -1,0 +1,31 @@
+name: refresh-warroom-data
+
+on:
+  schedule:
+    # every 3 hours - keep follower count fresh
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: update data.json
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GRAPH_API_VERSION: v22.0
+        run: python refresh.py
+      - name: commit data.json
+        run: |
+          git config user.name "warroom-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "auto: refresh data.json"
+          git push
