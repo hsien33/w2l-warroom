@@ -3,6 +3,8 @@
   "followers": 346,
   "goal": 1000,
   "dday": 20,
+  "day": 10,
+  "alert": "主集 Reel 庫存只到 Day 10（今晚發完就見底）— 週日前補下週 Day 11–15",
   "inventory": [
     {
       "name": "IG 主集 Reel",
