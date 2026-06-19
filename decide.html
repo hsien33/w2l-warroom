@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>裁示駕駛艙 · 財富煉金術</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+ :root{--bg:#f1ece1;--card:#fffdf8;--ink:#2b2720;--mid:#564f40;--dim:#8a7f66;--line:#e7dfd0;
+   --gold:#c19a3e;--mint:#239b73;--coral:#db543b;--indigo:#615ae0}
+ *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+ body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",sans-serif;line-height:1.6;font-size:16px}
+ .wrap{max-width:680px;margin:0 auto;padding:18px 14px 120px}
+ header{text-align:center;padding:10px 0 4px}
+ header h1{font-size:22px;font-weight:900}
+ header p{font-size:13px;color:var(--dim)}
+ .sec{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 10px 28px -18px rgba(70,55,30,.4)}
+ .sec h2{font-size:17px;font-weight:900;margin-bottom:4px;border-left:5px solid var(--gold);padding-left:11px}
+ .sec .hint{font-size:13px;color:var(--dim);margin:2px 0 12px 11px}
+ /* 金句卡 gallery */
+ .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+ .cardx{border:2px solid var(--line);border-radius:12px;overflow:hidden;background:#000;position:relative;transition:.15s}
+ .cardx img{width:100%;display:block}
+ .cardx .pick{position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:13px;font-weight:700;padding:7px;
+   background:rgba(255,255,255,.92);color:var(--mid)}
+ .cardx.on{border-color:var(--mint);box-shadow:0 0 0 3px rgba(35,155,115,.25)}
+ .cardx.on .pick{background:var(--mint);color:#fff}
+ .cardx.on .pick::before{content:"✓ "}
+ /* 補真話 */
+ .truth{margin-bottom:14px}
+ .truth label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+ .truth label .p{font-size:11px;font-weight:800;color:#fff;background:var(--coral);border-radius:6px;padding:2px 7px;margin-right:6px}
+ .truth textarea{width:100%;min-height:64px;border:1.5px solid var(--line);border-radius:10px;padding:11px;font:inherit;font-size:15px;color:var(--ink);resize:vertical;background:#fffef9}
+ .truth textarea:focus{outline:none;border-color:var(--gold)}
+ .truth .tip{font-size:12px;color:var(--dim);margin-top:4px}
+ /* 按鈕選項 */
+ .opt{margin-bottom:14px}
+ .opt .q{font-weight:700;font-size:15px;margin-bottom:7px}
+ .opt .btns{display:flex;gap:8px;flex-wrap:wrap}
+ .obtn{border:1.5px solid var(--line);background:#fffef9;border-radius:22px;padding:9px 16px;font:inherit;font-size:14px;font-weight:700;color:var(--mid);cursor:pointer;transition:.15s}
+ .obtn.on{background:var(--indigo);border-color:var(--indigo);color:#fff}
+ /* 連結成品 */
+ .links a{display:flex;align-items:center;gap:10px;padding:11px 13px;border:1px solid var(--line);border-radius:11px;margin-bottom:8px;text-decoration:none;color:var(--ink);font-weight:600;background:#fffef9}
+ .links a .ar{margin-left:auto;color:var(--dim)}
+ /* 底部行動列 */
+ .bar{position:fixed;left:0;right:0;bottom:0;background:rgba(255,253,248,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);
+   padding:12px 14px calc(12px + env(safe-area-inset-bottom));display:flex;gap:10px;max-width:680px;margin:0 auto}
+ .bar button{flex:1;border:none;border-radius:12px;padding:14px;font:inherit;font-size:15px;font-weight:800;cursor:pointer}
+ #prev{background:#efe7d6;color:var(--ink)}
+ #send{background:linear-gradient(160deg,#1b160d,#0e0b06);color:#f3ead6}
+ /* 預覽裁示 modal */
+ .modal{position:fixed;inset:0;background:rgba(20,16,8,.55);display:none;align-items:flex-end;z-index:50}
+ .modal.show{display:flex}
+ .sheet{background:var(--card);width:100%;max-width:680px;margin:0 auto;border-radius:20px 20px 0 0;padding:20px 18px 24px;max-height:86vh;overflow:auto}
+ .sheet h2{font-size:19px;font-weight:900;margin-bottom:4px}
+ .sheet .sum{font-size:14.5px;white-space:pre-wrap;background:#faf5e9;border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0;line-height:1.7}
+ .sheet .row{display:flex;gap:10px;margin-top:8px}
+ .sheet button{flex:1;border:none;border-radius:12px;padding:14px;font:inherit;font-weight:800;font-size:15px;cursor:pointer}
+ #close{background:#efe7d6;color:var(--ink)}
+ #confirm{background:var(--mint);color:#fff}
+ .saved{font-size:12px;color:var(--mint);text-align:center;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🎛️ 裁示駕駛艙</h1>
+    <p>看成品 → 點選／補話 → 預覽裁示 → 送出開工</p>
+  </header>
+
+  <div class="sec">
+    <h2>① 金句卡 ×10（挑要發的）</h2>
+    <div class="hint">點卡片切換「採用／不用」；已採用＝綠框打勾</div>
+    <div class="cards" id="cards"></div>
+  </div>
+
+  <div class="sec">
+    <h2>② 補真話（可用手機語音轉文字）</h2>
+    <div class="hint">這幾集卡住了，需要你的真實故事才能寫，缺一句就空著沒關係</div>
+    <div id="truths"></div>
+  </div>
+
+  <div class="sec">
+    <h2>③ 其他決定</h2>
+    <div id="opts"></div>
+  </div>
+
+  <div class="sec links">
+    <h2>④ 其他成品（點開看）</h2>
+    <div class="hint">看完回來這頁繼續裁決</div>
+    <a href="magnet/孩子的第一桶金.html" target="_blank">📄 磁鐵《孩子的第一桶金》<span class="ar">開 ›</span></a>
+    <a href="https://new.walk2light.com/tools/alchemy-tuition.html" target="_blank">🧪 補習費煉金計算機<span class="ar">開 ›</span></a>
+    <a href="https://new.walk2light.com/tools/learning-gift.html" target="_blank">🎁 孩子學習天賦解碼<span class="ar">開 ›</span></a>
+    <a href="https://hsien33.github.io/w2l-warroom/report.html" target="_blank">📊 今日戰情報告<span class="ar">開 ›</span></a>
+  </div>
+  <div class="saved" id="saved"></div>
+</div>
+
+<div class="bar">
+  <button id="prev">👁️ 預覽裁示</button>
+  <button id="send">🚀 送出開工</button>
+</div>
+
+<div class="modal" id="modal">
+  <div class="sheet">
+    <h2>預覽裁示</h2>
+    <p style="font-size:13px;color:#8a7f66">確認以下是你的決定，按「確認送出」會開 GitHub 工單頁，你按 Submit 就送進系統開工</p>
+    <div class="sum" id="sum"></div>
+    <div class="row"><button id="close">返回改</button><button id="confirm">確認送出 →</button></div>
+  </div>
+</div>
+
+<script>
+const CARDS=[
+ ["觀念卡01_六個月.png","六個月"],["觀念卡02_先付給自己.png","先付給自己"],["觀念卡03_資產.png","資產"],
+ ["觀念卡04_需要.png","需要"],["觀念卡05_你自己.png","投資你自己"],["觀念卡06_一支.png","一支"],
+ ["觀念卡07_紀律.png","紀律"],["觀念卡08_複利.png","複利"],["觀念卡09_流向.png","流向"],["觀念卡10_夠.png","夠了"]
+];
+const OPTS=[
+ {id:"金句卡視覺",q:"金句卡視覺要哪種金？",opts:["漸層金箔（建議）","平塗金"]},
+ {id:"重溫Shorts",q:"重溫 Shorts 線今天啟動嗎？",opts:["啟動","先不要"]},
+ {id:"引流工具首發",q:"引流工具首發先做幾個？",opts:["先做 1 個","先做 2 個","這批先不做"]}
+];
+const KEY="w2l_decide_v1";
+let S=JSON.parse(localStorage.getItem(KEY)||"{}");
+S.cards=S.cards||{}; S.truths=S.truths||{}; S.opts=S.opts||{};
+function save(){localStorage.setItem(KEY,JSON.stringify(S));document.getElementById('saved').textContent='已自動暫存 · '+new Date().toLocaleTimeString();}
+
+// 金句卡
+const cbox=document.getElementById('cards');
+CARDS.forEach(([f,name])=>{
+ const d=document.createElement('div');d.className='cardx'+(S.cards[name]?' on':'');
+ d.innerHTML=`<img src="assets/cards/${encodeURIComponent(f)}" alt="${name}"><div class="pick">${S.cards[name]?'採用':'點此採用'}</div>`;
+ d.onclick=()=>{S.cards[name]=!S.cards[name];d.classList.toggle('on',S.cards[name]);d.querySelector('.pick').textContent=S.cards[name]?'採用':'點此採用';save();};
+ cbox.appendChild(d);
+});
+
+// 補真話 + 決定（從 data.json 抓 decisions）
+const tbox=document.getElementById('truths'), obox=document.getElementById('opts');
+function renderOpts(){
+ obox.innerHTML='';
+ OPTS.forEach(o=>{
+  const w=document.createElement('div');w.className='opt';
+  w.innerHTML=`<div class="q">${o.q}</div><div class="btns">${o.opts.map(x=>`<button class="obtn${S.opts[o.id]===x?' on':''}" data-v="${x}">${x}</button>`).join('')}</div>`;
+  w.querySelectorAll('.obtn').forEach(b=>b.onclick=()=>{S.opts[o.id]=b.dataset.v;renderOpts();save();});
+  obox.appendChild(w);
+ });
+}
+fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
+ (D.decisions||[]).filter(x=>x.tag==='truth').forEach((x,i)=>{
+  const id='t'+i;const w=document.createElement('div');w.className='truth';
+  w.innerHTML=`<label><span class="p">${x.p}</span>${x.t}</label><textarea placeholder="說/打你的真話…（手機可用語音轉文字 🎤）">${S.truths[id]||''}</textarea><div class="tip">${x.blocks?'解鎖：'+x.blocks:''}</div>`;
+  const ta=w.querySelector('textarea');ta.oninput=()=>{S.truths[id]=ta.value;S.truthLabels=S.truthLabels||{};S.truthLabels[id]=x.t;save();};
+  tbox.appendChild(w);
+ });
+}).catch(()=>{tbox.innerHTML='<p style="color:#db543b">data.json 載入失敗，補真話清單暫時抓不到</p>';});
+renderOpts();
+
+// 預覽裁示
+function buildSummary(){
+ const used=Object.keys(S.cards).filter(k=>S.cards[k]);
+ let t=`【Jeff 裁決 · ${new Date().toLocaleString('zh-TW')}】\n\n`;
+ t+=`■ 金句卡採用（${used.length}/10）：${used.length?used.join('、'):'（未選）'}\n\n`;
+ t+=`■ 其他決定：\n`+OPTS.map(o=>`· ${o.q} → ${S.opts[o.id]||'（未選）'}`).join('\n')+`\n\n`;
+ t+=`■ 補真話：\n`;
+ const tl=S.truthLabels||{};
+ const tk=Object.keys(S.truths).filter(k=>S.truths[k] && S.truths[k].trim());
+ t+= tk.length? tk.map(k=>`· ${(tl[k]||k)}\n  → ${S.truths[k]}`).join('\n') : '（這次沒補）';
+ return t;
+}
+const modal=document.getElementById('modal');
+document.getElementById('prev').onclick=()=>{document.getElementById('sum').textContent=buildSummary();modal.classList.add('show');};
+document.getElementById('close').onclick=()=>modal.classList.remove('show');
+document.getElementById('confirm').onclick=()=>{
+ const body=encodeURIComponent(buildSummary());
+ const title=encodeURIComponent('Jeff 裁決 '+new Date().toLocaleDateString('zh-TW'));
+ window.open(`https://github.com/hsien33/w2l-warroom/issues/new?title=${title}&body=${body}&labels=裁決`,'_blank');
+};
+document.getElementById('send').onclick=()=>document.getElementById('prev').click();
+</script>
+</body>
+</html>
