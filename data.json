@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-20 00:10 台北",
-  "followers": 346,
+  "updated": "2026-06-20 02:14 台北",
+  "followers": 345,
   "goal": 1000,
   "dday": 20,
   "day": 10,
@@ -46,43 +46,209 @@
     "half": 4,
     "blocked": 2,
     "list": [
-      { "day": 11, "date": "6/21", "name": "時事蹭梗（機動）", "form": "⑲時事卡", "status": "half", "gap": "當天熱點＋兒子真問過的時事題" },
-      { "day": 12, "date": "6/22", "name": "誘因設計 1500·延遲滿足", "form": "真人批錄", "status": "half", "gap": "那 1500 兒子真實去向（punchline）" },
-      { "day": 13, "date": "6/23", "name": "閱讀槓桿（金庸/波西傑克森）", "form": "輪播書封", "status": "ready", "gap": "兒子書單＋書封照（素材物非對白）" },
-      { "day": 14, "date": "6/24", "name": "週戰報＋中場之夜預告", "form": "戰況卡加強", "status": "ready", "gap": "無·數據驅動" },
-      { "day": 15, "date": "6/25", "name": "中場比分板·換他出題", "form": "⑲動態", "status": "ready", "gap": "無·機制集" },
-      { "day": 16, "date": "6/26", "name": "反殺①比特幣是不是龐氏", "form": "真人批錄", "status": "blocked", "gap": "兒子真考過的財經題＋Jeff 回答" },
-      { "day": 17, "date": "6/27", "name": "反殺②爸最後悔的一筆", "form": "真人批錄", "status": "blocked", "gap": "Jeff 真實最後悔投資·匿名" },
-      { "day": 18, "date": "6/28", "name": "MVP 統計題·報酬率陷阱", "form": "答案卡", "status": "half", "gap": "MVP 賽事真實背景（小六打到高三）" },
-      { "day": 19, "date": "6/29", "name": "美股 ETF 路徑·下一步", "form": "⑲動態", "status": "ready", "gap": "無·6/9 下單真實素材足" },
-      { "day": 20, "date": "6/30", "name": "川普/SpaceX 蹭梗（機動）", "form": "⑲時事卡", "status": "half", "gap": "當天熱點＋兒子真問過的時事題" }
+      {
+        "day": 11,
+        "date": "6/21",
+        "name": "時事蹭梗（機動）",
+        "form": "⑲時事卡",
+        "status": "half",
+        "gap": "當天熱點＋兒子真問過的時事題"
+      },
+      {
+        "day": 12,
+        "date": "6/22",
+        "name": "誘因設計 1500·延遲滿足",
+        "form": "真人批錄",
+        "status": "half",
+        "gap": "那 1500 兒子真實去向（punchline）"
+      },
+      {
+        "day": 13,
+        "date": "6/23",
+        "name": "閱讀槓桿（金庸/波西傑克森）",
+        "form": "輪播書封",
+        "status": "ready",
+        "gap": "兒子書單＋書封照（素材物非對白）"
+      },
+      {
+        "day": 14,
+        "date": "6/24",
+        "name": "週戰報＋中場之夜預告",
+        "form": "戰況卡加強",
+        "status": "ready",
+        "gap": "無·數據驅動"
+      },
+      {
+        "day": 15,
+        "date": "6/25",
+        "name": "中場比分板·換他出題",
+        "form": "⑲動態",
+        "status": "ready",
+        "gap": "無·機制集"
+      },
+      {
+        "day": 16,
+        "date": "6/26",
+        "name": "反殺①比特幣是不是龐氏",
+        "form": "真人批錄",
+        "status": "blocked",
+        "gap": "兒子真考過的財經題＋Jeff 回答"
+      },
+      {
+        "day": 17,
+        "date": "6/27",
+        "name": "反殺②爸最後悔的一筆",
+        "form": "真人批錄",
+        "status": "blocked",
+        "gap": "Jeff 真實最後悔投資·匿名"
+      },
+      {
+        "day": 18,
+        "date": "6/28",
+        "name": "MVP 統計題·報酬率陷阱",
+        "form": "答案卡",
+        "status": "half",
+        "gap": "MVP 賽事真實背景（小六打到高三）"
+      },
+      {
+        "day": 19,
+        "date": "6/29",
+        "name": "美股 ETF 路徑·下一步",
+        "form": "⑲動態",
+        "status": "ready",
+        "gap": "無·6/9 下單真實素材足"
+      },
+      {
+        "day": 20,
+        "date": "6/30",
+        "name": "川普/SpaceX 蹭梗（機動）",
+        "form": "⑲時事卡",
+        "status": "half",
+        "gap": "當天熱點＋兒子真問過的時事題"
+      }
     ]
   },
   "sessions": [
-    { "name": "中央（父子主線）", "role": "主集 Reel 腳本＋每日營運", "today": "Day10 主集已備·待 11–15", "sched": "每晚 20:30 主集", "status": "warn" },
-    { "name": "戰況卡自動線", "role": "凌晨抓即時數出卡", "today": "Day10 卡已排 IG/FB", "sched": "每日 00:00 結算", "status": "ok" },
-    { "name": "w2l-content-editor 核稿官", "role": "核稿合規最後關", "today": "今早核 10 張觀念卡＋盤點", "sched": "每日晨間批次", "status": "ok" },
-    { "name": "自動剪輯 session", "role": "重溫 Shorts 切片出片", "today": "10 支選題企劃已備·待啟動", "sched": "待 Jeff 貼 brief", "status": "idle" },
-    { "name": "工具工廠 session", "role": "每週 1–2 導流工具", "today": "補習費 v6 待核可", "sched": "每週產線", "status": "ok" },
-    { "name": "雲端戰情室 cron", "role": "財經晨報雲端排程", "today": "08:30 自動產出", "sched": "GitHub Actions 每日", "status": "ok" }
+    {
+      "name": "中央（父子主線）",
+      "role": "主集 Reel 腳本＋每日營運",
+      "today": "Day10 主集已備·待 11–15",
+      "sched": "每晚 20:30 主集",
+      "status": "warn"
+    },
+    {
+      "name": "戰況卡自動線",
+      "role": "凌晨抓即時數出卡",
+      "today": "Day10 卡已排 IG/FB",
+      "sched": "每日 00:00 結算",
+      "status": "ok"
+    },
+    {
+      "name": "w2l-content-editor 核稿官",
+      "role": "核稿合規最後關",
+      "today": "今早核 10 張觀念卡＋盤點",
+      "sched": "每日晨間批次",
+      "status": "ok"
+    },
+    {
+      "name": "自動剪輯 session",
+      "role": "重溫 Shorts 切片出片",
+      "today": "10 支選題企劃已備·待啟動",
+      "sched": "待 Jeff 貼 brief",
+      "status": "idle"
+    },
+    {
+      "name": "工具工廠 session",
+      "role": "每週 1–2 導流工具",
+      "today": "補習費 v6 待核可",
+      "sched": "每週產線",
+      "status": "ok"
+    },
+    {
+      "name": "雲端戰情室 cron",
+      "role": "財經晨報雲端排程",
+      "today": "08:30 自動產出",
+      "sched": "GitHub Actions 每日",
+      "status": "ok"
+    }
   ],
   "decisions": [
-    { "tag": "truth", "p": "P0", "t": "Day12：班排第一那 1500 兒子真實去向？（整集 punchline）", "blocks": "卡 Day12＋重溫 Shorts" },
-    { "tag": "truth", "p": "P0", "t": "Day16：兒子有沒有真考過你哪個財經題？原話＋你的反應", "blocks": "卡 Day16 真人集" },
-    { "tag": "truth", "p": "P0", "t": "Day17：你投資生涯最後悔的一筆？（匿名講、不報數字）", "blocks": "卡 Day17 真人集" },
-    { "tag": "truth", "p": "P1", "t": "Day13：兒子小學真實書單＋能否拍書封？", "blocks": "卡 Day13 輪播素材" },
-    { "tag": "truth", "p": "P1", "t": "Day18：MVP「小六打到高三」是什麼比賽？真實背景", "blocks": "卡 Day18 賽事敘述" },
-    { "tag": "decide", "p": "P1", "t": "觀念金句卡定版：10 張草稿 vs FB盤點提案（DAY016-022 撞父子線）", "blocks": "本批 FB 金句卡上排" },
-    { "tag": "decide", "p": "P2", "t": "重溫 Shorts 線是否今天啟動？10 支企劃已備", "blocks": "YT/IG 重溫曝光" }
+    {
+      "tag": "truth",
+      "p": "P0",
+      "t": "Day12：班排第一那 1500 兒子真實去向？（整集 punchline）",
+      "blocks": "卡 Day12＋重溫 Shorts"
+    },
+    {
+      "tag": "truth",
+      "p": "P0",
+      "t": "Day16：兒子有沒有真考過你哪個財經題？原話＋你的反應",
+      "blocks": "卡 Day16 真人集"
+    },
+    {
+      "tag": "truth",
+      "p": "P0",
+      "t": "Day17：你投資生涯最後悔的一筆？（匿名講、不報數字）",
+      "blocks": "卡 Day17 真人集"
+    },
+    {
+      "tag": "truth",
+      "p": "P1",
+      "t": "Day13：兒子小學真實書單＋能否拍書封？",
+      "blocks": "卡 Day13 輪播素材"
+    },
+    {
+      "tag": "truth",
+      "p": "P1",
+      "t": "Day18：MVP「小六打到高三」是什麼比賽？真實背景",
+      "blocks": "卡 Day18 賽事敘述"
+    },
+    {
+      "tag": "decide",
+      "p": "P1",
+      "t": "觀念金句卡定版：10 張草稿 vs FB盤點提案（DAY016-022 撞父子線）",
+      "blocks": "本批 FB 金句卡上排"
+    },
+    {
+      "tag": "decide",
+      "p": "P2",
+      "t": "重溫 Shorts 線是否今天啟動？10 支企劃已備",
+      "blocks": "YT/IG 重溫曝光"
+    }
   ],
   "editorReview": {
     "note": "核稿官＋各平台顧問把關狀態 · 永不自動發、僅產草稿待 Jeff",
     "items": [
-      { "ch": "IG 主集 Reel", "adv": "Reels 導師 · 賴文智", "status": "wait", "label": "待補真話" },
-      { "ch": "FB 金句卡", "adv": "FB 導師 · 原研哉 · Krug", "status": "ready", "label": "已核·待 Jeff" },
-      { "ch": "觀念卡 10 張", "adv": "原研哉 · 于美人 · Jeff 校準", "status": "ready", "label": "已出圖待核" },
-      { "ch": "重溫 Shorts", "adv": "Shorts 導師 · 賴文智", "status": "wait", "label": "選題待核" },
-      { "ch": "導流工具文案", "adv": "Miller · cmo-challenger", "status": "ready", "label": "補習費待核" }
+      {
+        "ch": "IG 主集 Reel",
+        "adv": "Reels 導師 · 賴文智",
+        "status": "wait",
+        "label": "待補真話"
+      },
+      {
+        "ch": "FB 金句卡",
+        "adv": "FB 導師 · 原研哉 · Krug",
+        "status": "ready",
+        "label": "已核·待 Jeff"
+      },
+      {
+        "ch": "觀念卡 10 張",
+        "adv": "原研哉 · 于美人 · Jeff 校準",
+        "status": "ready",
+        "label": "已出圖待核"
+      },
+      {
+        "ch": "重溫 Shorts",
+        "adv": "Shorts 導師 · 賴文智",
+        "status": "wait",
+        "label": "選題待核"
+      },
+      {
+        "ch": "導流工具文案",
+        "adv": "Miller · cmo-challenger",
+        "status": "ready",
+        "label": "補習費待核"
+      }
     ]
   }
 }
