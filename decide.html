@@ -123,6 +123,7 @@ const OPTS=[
  {id:"引流工具首發",q:"引流工具首發先做幾個？",opts:["先做 1 個","先做 2 個","這批先不做"]}
 ];
 const KEY="w2l_decide_v1";
+const NTFY="w2l-jeff-verdict-9x7k2m4q"; // 秘密中繼頻道：手機送出→這裡→AI 讀取
 let S=JSON.parse(localStorage.getItem(KEY)||"{}");
 S.cards=S.cards||{}; S.truths=S.truths||{}; S.opts=S.opts||{};
 function save(){localStorage.setItem(KEY,JSON.stringify(S));document.getElementById('saved').textContent='已自動暫存 · '+new Date().toLocaleTimeString();}
@@ -175,11 +176,18 @@ document.getElementById('prev').onclick=openPrev;
 document.getElementById('close').onclick=()=>modal.classList.remove('show');
 document.getElementById('confirm').onclick=async()=>{
  const ta=document.getElementById('sumta'); ta.value=buildSummary();
- let ok=false;
- try{ await navigator.clipboard.writeText(ta.value); ok=true; }
- catch(e){ try{ ta.focus(); ta.select(); ok=document.execCommand('copy'); }catch(_){} }
- document.getElementById('copied').style.display='block';
- document.getElementById('confirm').textContent= ok? '已複製 ✓ 貼給我即可' : '長按上面文字複製';
+ const btn=document.getElementById('confirm'); btn.textContent='送出中…';
+ // 1) 直送 AI（ntfy 中繼，手機→系統，國外可用）
+ let sent=false;
+ try{ const r=await fetch('https://ntfy.sh',{method:'POST',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({topic:NTFY,title:'Jeff裁決 '+new Date().toLocaleString('zh-TW'),message:ta.value})}); sent=r.ok; }catch(e){}
+ // 2) 複製作備份
+ let copied=false;
+ try{ await navigator.clipboard.writeText(ta.value); copied=true; }
+ catch(e){ try{ ta.focus(); ta.select(); copied=document.execCommand('copy'); }catch(_){} }
+ const c=document.getElementById('copied'); c.style.display='block';
+ if(sent){ c.textContent='✅ 已送出給 AI！我會收到並開工'+(copied?'（也複製了備份）':''); c.style.color='var(--mint)'; btn.textContent='已送出 ✓'; }
+ else{ c.textContent=copied?'⚠️ 直送失敗，已複製 → 請貼到對話傳給我':'⚠️ 請長按上面文字複製 → 貼給我'; c.style.color='var(--coral)'; btn.textContent='重試送出'; }
 };
 document.getElementById('send').onclick=openPrev;
 </script>

@@ -1,0 +1,33 @@
+name: verdict-inbox-poller
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "dry run (1=不推 LINE)"
+        required: false
+        default: "0"
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: poll ntfy for verdicts
+        env:
+          NTFY_TOPIC: w2l-jeff-verdict-9x7k2m4q
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python inbox_poll.py
+      - name: commit inbox
+        run: |
+          git config user.name "warroom-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add inbox
+          git diff --staged --quiet || (git commit -m "verdict inbox" && git push)
