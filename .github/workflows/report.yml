@@ -1,0 +1,29 @@
+name: daily-morning-report
+
+on:
+  schedule:
+    # 05:00 Taipei = 21:00 UTC
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: generate report and LINE push
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GRAPH_API_VERSION: v22.0
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: python gen_report.py
+      - name: commit report
+        run: |
+          git config user.name "warroom-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add report.html data.json
+          git diff --staged --quiet || (git commit -m "daily morning report" && git push)
