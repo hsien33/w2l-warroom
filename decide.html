@@ -53,7 +53,7 @@
  .modal.show{display:flex}
  .sheet{background:var(--card);width:100%;max-width:680px;margin:0 auto;border-radius:20px 20px 0 0;padding:20px 18px 24px;max-height:86vh;overflow:auto}
  .sheet h2{font-size:19px;font-weight:900;margin-bottom:4px}
- .sheet .sum{font-size:14.5px;white-space:pre-wrap;background:#faf5e9;border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0;line-height:1.7}
+ .sumta{width:100%;min-height:210px;font-size:13.5px;line-height:1.65;background:#faf5e9;border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0;color:var(--ink);font-family:inherit;resize:vertical}
  .sheet .row{display:flex;gap:10px;margin-top:8px}
  .sheet button{flex:1;border:none;border-radius:12px;padding:14px;font:inherit;font-weight:800;font-size:15px;cursor:pointer}
  #close{background:#efe7d6;color:var(--ink)}
@@ -104,9 +104,10 @@
 <div class="modal" id="modal">
   <div class="sheet">
     <h2>預覽裁示</h2>
-    <p style="font-size:13px;color:#8a7f66">確認以下是你的決定，按「確認送出」會開 GitHub 工單頁，你按 Submit 就送進系統開工</p>
-    <div class="sum" id="sum"></div>
-    <div class="row"><button id="close">返回改</button><button id="confirm">確認送出 →</button></div>
+    <p style="font-size:13px;color:#8a7f66">確認以下是你的決定。按「📋 複製裁決」後，<b>貼到跟我的對話框傳來，我就立刻開工</b>。</p>
+    <textarea class="sumta" id="sumta" readonly></textarea>
+    <div class="row"><button id="close">返回改</button><button id="confirm">📋 複製裁決</button></div>
+    <div id="copied" style="text-align:center;color:var(--mint);font-weight:700;font-size:14px;margin-top:8px;display:none">✅ 已複製！貼到對話框傳給我就開工 🚀</div>
   </div>
 </div>
 
@@ -169,14 +170,18 @@ function buildSummary(){
  return t;
 }
 const modal=document.getElementById('modal');
-document.getElementById('prev').onclick=()=>{document.getElementById('sum').textContent=buildSummary();modal.classList.add('show');};
+function openPrev(){document.getElementById('sumta').value=buildSummary();document.getElementById('copied').style.display='none';modal.classList.add('show');}
+document.getElementById('prev').onclick=openPrev;
 document.getElementById('close').onclick=()=>modal.classList.remove('show');
-document.getElementById('confirm').onclick=()=>{
- const body=encodeURIComponent(buildSummary());
- const title=encodeURIComponent('Jeff 裁決 '+new Date().toLocaleDateString('zh-TW'));
- window.open(`https://github.com/hsien33/w2l-warroom/issues/new?title=${title}&body=${body}&labels=裁決`,'_blank');
+document.getElementById('confirm').onclick=async()=>{
+ const ta=document.getElementById('sumta'); ta.value=buildSummary();
+ let ok=false;
+ try{ await navigator.clipboard.writeText(ta.value); ok=true; }
+ catch(e){ try{ ta.focus(); ta.select(); ok=document.execCommand('copy'); }catch(_){} }
+ document.getElementById('copied').style.display='block';
+ document.getElementById('confirm').textContent= ok? '已複製 ✓ 貼給我即可' : '長按上面文字複製';
 };
-document.getElementById('send').onclick=()=>document.getElementById('prev').click();
+document.getElementById('send').onclick=openPrev;
 </script>
 </body>
 </html>
