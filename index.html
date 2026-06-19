@@ -393,7 +393,7 @@ $("#hero").innerHTML=`
     <div><h3>父子對決總部</h3><div class="role">IG 30 天衝粉 — 當前唯一主線</div></div>
     <div style="margin-left:auto"><span class="st run">運行中</span></div></div>
   <div class="hbody">
-    <div class="hnum"><span class="v" data-to="${FOLLOWERS}">0</span><span class="o">/ ${GOAL}</span><span class="c">追蹤</span></div>
+    <div class="hnum"><span class="v">${FOLLOWERS}</span><span class="o">/ ${GOAL}</span><span class="c">追蹤</span></div>
     <div class="hprog"><div class="htrack"><i id="hbar"></i></div>
       <div class="hmeta"><span>還差 <b>${GOAL-FOLLOWERS}</b> 粉兒子認輸</span><span>Day 9 · D-21</span></div></div>
   </div>
@@ -444,7 +444,7 @@ requestAnimationFrame(()=>{
   $("#hbar").style.width=(FOLLOWERS/GOAL*100)+"%";
   document.querySelectorAll('.kpi .kv[data-to]').forEach(el=>{const t=el.dataset.to;if(/^[0-9]+$/.test(t))countUp(el,+t);else el.textContent=t;});
   document.querySelectorAll('.ptrack i').forEach(el=>el.style.width=el.dataset.w+"%");
-  countUp($('#hero .hnum .v'),FOLLOWERS);
+  /* hero 數字不靠 rAF 動畫（分頁未顯示時 rAF 會凍結）— 直接顯示，由 data.json 校正 */
 });
 if(!rm){
   [...document.querySelectorAll('.conn .spark')].forEach((sp,i)=>{
@@ -501,7 +501,7 @@ secs.forEach(s=>s&&io.observe(s));
     if(D.inventory) renderInv(D.inventory);
     if(D.followers){
       FOLLOWERS=+D.followers; GOAL=+D.goal||GOAL;
-      const hv=document.querySelector('#hero .hnum .v'); if(hv) countUp(hv,FOLLOWERS); // 重跑動畫到正確值（修 race）
+      const hv=document.querySelector('#hero .hnum .v'); if(hv) hv.textContent=FOLLOWERS; // 直接設值、不靠動畫（永遠正確）
       const hb=document.getElementById('hbar'); if(hb) hb.style.width=(FOLLOWERS/GOAL*100)+'%';
       const gp=document.querySelector('#hero .hmeta b'); if(gp) gp.textContent=(GOAL-FOLLOWERS);
       const ig=document.querySelectorAll('.ch .cv')[2]; if(ig&&ig.firstChild) ig.firstChild.textContent=FOLLOWERS;
