@@ -25,9 +25,13 @@ jobs:
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
         run: python inbox_poll.py
-      - name: commit inbox
+      - name: commit results
         run: |
           git config user.name "warroom-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add inbox
-          git diff --staged --quiet || (git commit -m "verdict inbox" && git push)
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "verdict executed"
+            git pull --rebase origin master || true
+            git push
+          fi
