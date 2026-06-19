@@ -242,9 +242,9 @@
         <div class="sub">財富煉金術 · 一人 × AI 內容公司 — 即時營運全貌</div>
       </div>
       <div class="sp"></div>
-      <div class="pill"><span class="live"></span>今日 <b id="today">06/19</b></div>
-      <div class="pill">主集 <b id="mday">Day 9</b> · 戰況 <b id="wday">第 9 天</b></div>
-      <div class="pill accent">父子對決終局 7/10 · <b id="dday">D-21</b></div>
+      <div class="pill"><span class="live"></span>今日 <b id="today">06/20</b></div>
+      <div class="pill">主集 <b id="mday">Day 10</b> · 戰況 <b id="wday">第 10 天</b></div>
+      <div class="pill accent">父子對決終局 7/10 · <b id="dday">D-20</b></div>
     </div>
 
     <div class="kpis" id="kpis"></div>
@@ -252,6 +252,18 @@
     <div class="sh"><div class="i" style="background:var(--amber-s);color:var(--amber)">📦</div>
       <div class="t">庫存與預排</div><div class="tag" id="updated">開頁自動更新</div></div>
     <div class="invgrid" id="inventory"></div>
+
+    <div class="sh" id="sh-ep" style="display:none"><div class="i" style="background:var(--mint-s);color:var(--mint)">🎬</div>
+      <div class="t" id="ep-title">主集 Reel · 10 集庫存</div><div class="tag" id="ep-tag"></div></div>
+    <div class="epwrap" id="epwrap" style="display:none">
+      <div class="epbar" id="epbar"></div>
+      <div class="eplgd"><span><i class="r"></i>可直接寫（真材料足）</span><span><i class="h"></i>半成品·缺一個真話</span><span><i class="b"></i>需 Jeff 補真話</span></div>
+      <div class="epgrid" id="epgrid"></div>
+    </div>
+
+    <div class="sh" id="sh-dec" style="display:none"><div class="i" style="background:var(--coral-s);color:var(--coral)">⚖</div>
+      <div class="t">待 Jeff 裁決</div><div class="tag" id="dec-tag">補一句真話解鎖多支內容</div></div>
+    <div class="deck" id="deck" style="display:none"></div>
 
     <div class="sh"><div class="i"><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 12 2-7h6"/></svg></div>
       <div class="t">內容自動化流水線</div><div class="tag">選題 → 發布 · 全線誰在跑</div></div>
@@ -265,6 +277,10 @@
       <div class="hero" id="hero"></div>
       <div class="projs" id="projs"></div>
     </div>
+
+    <div class="sh" id="sh-ses" style="display:none"><div class="i" style="background:var(--violet-s);color:var(--violet)"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
+      <div class="t">各 session 負責與排程確認</div><div class="tag">誰在跑 · 今日狀態 · 排程</div></div>
+    <div class="sesgrid" id="sesgrid" style="display:none"></div>
     </section>
 
     <section id="s-done">
@@ -287,6 +303,8 @@
           <div class="csub">零錄影產配音 · HTML 程式化出片 · 雲端排程</div>
           <div class="eng" id="engines"></div>
           <div class="holes"><div class="ht">今日該補的洞</div><ul id="holes"></ul></div>
+          <div class="holes" id="rev-wrap" style="display:none"><div class="ht">各平台核稿狀態 · 顧問把關</div>
+            <div class="revgrid" id="revgrid"></div></div>
         </div>
       </div>
     </div>
@@ -298,8 +316,8 @@
     </section>
 
     <footer>
-      資料截至 2026-06-19 · 產出與追蹤數為盤點估算，每日由資料區更新<br>
-      財富煉金術 AI 大腦 · 總控制中心 v3
+      <span id="foot-upd">資料每日由資料區（data.json）更新</span> · 追蹤數由 IG Graph API 自動回填，庫存/排程人工維護<br>
+      財富煉金術 AI 大腦 · 總控制中心 v3.1
     </footer>
   </main>
 </div>
@@ -310,7 +328,7 @@ let FOLLOWERS=345, GOAL=1000;
 const KPIS=[
   {l:"本期累計產出",v:"82",s:"Reels · 卡片 · 工具 · 輪播",c:"--indigo",cs:"--indigo-s",ic:"▦"},
   {l:"已發 / 已排程",v:"25",s:"IG · FB · Threads",c:"--sky",cs:"--sky-s",ic:"➤"},
-  {l:"待辦缺口",v:"6",s:"含 1 紅燈（重溫線）",c:"--coral",cs:"--coral-s",ic:"!"},
+  {l:"待 Jeff 裁決",v:"7",s:"含 3 條 P0 待補真話",c:"--coral",cs:"--coral-s",ic:"!"},
   {l:"自動化覆蓋",v:"70%",s:"配音 · 渲染 · 排程已自動",c:"--mint",cs:"--mint-s",ic:"⟳"},
 ];
 const FLOW=[
@@ -323,13 +341,13 @@ const FLOW=[
 ];
 const HERO={owner:"中央（本 session）",
   advisors:["IG · Reels 導師","李崇建 · 尹建莉（親子）","游庭皓（財經白話）"],
-  todo:"今日該補：戰況卡 第 9 天 — 庫存見底"};
+  todo:"今日該補：主集 Reel Day 11–15 — 庫存今晚見底"};
 /* 進行中專案（含完成度） */
 const PROJS=[
   {ic:"🧪",n:"引流工具工廠",st:["run","運行中"],role:"每週 1-2 免費鉤子工具 · 已產 2 支",pct:100,bar:"持續產線",own:"工具工廠 session",adv:"原研哉 / Krug / Miller",c:"--indigo",cs:"--indigo-s"},
   {ic:"📲",n:"資產配置 App",st:["dev","開發中"],role:"黑金 PWA 取代試算表 · M1 原型完成、接 Supabase",pct:40,own:"資產配置 session",adv:"Osterwalder",c:"--amber",cs:"--amber-s"},
   {ic:"🌐",n:"官網 walk2light",st:["dev","待上傳"],role:"Astro 官網 v2.2 · 89 頁建好、待上傳 Hostinger",pct:90,own:"網站搭建師-4",adv:"SEO 官 / Krug",c:"--sky",cs:"--sky-s"},
-  {ic:"📺",n:"重溫 Shorts",st:["idle","未啟動"],role:"YT 長片 → Shorts 重溫 · 點此把 brief 貼給自動剪輯 →",pct:5,own:"自動剪輯 session（待）",adv:"Shorts · Paddy 導師",c:"--coral",cs:"--coral-s"},
+  {ic:"📺",n:"重溫 Shorts",st:["idle","待啟動"],role:"YT/父子長片 → Shorts · 10 支選題企劃已備、待貼 brief 啟動",pct:15,own:"自動剪輯 session（待）",adv:"Shorts · Paddy 導師",c:"--coral",cs:"--coral-s"},
 ];
 /* 已完工 · 穩定上線 */
 const DONE=[
@@ -356,7 +374,7 @@ const ENGINES=[
   {n:"重溫 Shorts 線",s:"未啟動",idle:true},
 ];
 const HOLES=[
-  {t:"戰況卡 第 9 天（明日）— 庫存見底，先補",hot:true},
+  {t:"主集 Reel Day 11–15 — 今晚 Day10 發完見底，週日前補",hot:true},
   {t:"重溫 Shorts — 把 brief 貼給【自動剪輯】",hot:true},
   {t:"資產配置 App — 接 Supabase（M2）",hot:false},
   {t:"官網 v2.2 zip — 上傳 Hostinger",hot:false},
@@ -372,7 +390,7 @@ const ADVISORS=[
 /* ════════ 渲染 ════════ */
 const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
 const $=(s,p=document)=>p.querySelector(s);
-$("#today").textContent="06/19";
+(function(){const n=new Date();$("#today").textContent=String(n.getMonth()+1).padStart(2,'0')+'/'+String(n.getDate()).padStart(2,'0');})();
 
 $("#kpis").innerHTML=KPIS.map(k=>`
   <div class="kpi" style="--c:var(${k.c});--cs:var(${k.cs})">
@@ -395,7 +413,7 @@ $("#hero").innerHTML=`
   <div class="hbody">
     <div class="hnum"><span class="v">${FOLLOWERS}</span><span class="o">/ ${GOAL}</span><span class="c">追蹤</span></div>
     <div class="hprog"><div class="htrack"><i id="hbar"></i></div>
-      <div class="hmeta"><span>還差 <b>${GOAL-FOLLOWERS}</b> 粉兒子認輸</span><span>Day 9 · D-21</span></div></div>
+      <div class="hmeta"><span>還差 <b>${GOAL-FOLLOWERS}</b> 粉兒子認輸</span><span>Day 10 · D-20</span></div></div>
   </div>
   <div class="hfoot">
     <span class="tagchip">負責 <b>${HERO.owner}</b></span>
@@ -480,7 +498,79 @@ secs.forEach(s=>s&&io.observe(s));
   .invcard.warn .iauto::before{background:var(--amber)} .invcard.bad .iauto::before{background:var(--coral)}
   .invcard .inote{font-family:var(--tc);font-size:11px;color:var(--coral);margin-top:6px}
   @media(max-width:1080px){.invgrid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:520px){.invgrid{grid-template-columns:1fr}}`;
+  @media(max-width:520px){.invgrid{grid-template-columns:1fr}}
+
+  /* ── 主集 Reel · 10 集庫存進度條 ── */
+  .epwrap{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh2);
+    -webkit-backdrop-filter:blur(17px) saturate(1.25);backdrop-filter:blur(17px) saturate(1.25);
+    border-color:var(--glassedge);padding:20px clamp(14px,2vw,22px) 18px}
+  .epbar{display:flex;gap:6px;margin-bottom:16px}
+  .epseg{flex:1;height:8px;border-radius:5px;background:#ece6d9}
+  .epseg.ready{background:linear-gradient(90deg,var(--mint),#3fb88c)}
+  .epseg.half{background:linear-gradient(90deg,var(--amber),#e0a445)}
+  .epseg.blocked{background:linear-gradient(90deg,var(--coral),#e9705a)}
+  .eplgd{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--tc);font-size:12.5px;color:var(--mid);margin-bottom:16px}
+  .eplgd span{display:flex;align-items:center;gap:6px}
+  .eplgd i{width:9px;height:9px;border-radius:3px;display:inline-block}
+  .eplgd i.r{background:var(--mint)} .eplgd i.h{background:var(--amber)} .eplgd i.b{background:var(--coral)}
+  .epgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .epc{border-radius:13px;padding:12px 12px 11px;background:var(--bg2);border:1px solid var(--line);
+    border-top:4px solid var(--mint);transition:.18s;position:relative}
+  .epc.half{border-top-color:var(--amber)} .epc.blocked{border-top-color:var(--coral)}
+  .epc:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+  .epc .ed{font-size:11px;font-weight:700;color:var(--faint);letter-spacing:.5px;display:flex;justify-content:space-between}
+  .epc .ed .ef{color:var(--indigo)}
+  .epc .en{font-family:var(--tc);font-weight:700;font-size:13.5px;line-height:1.3;margin:6px 0 7px;min-height:35px}
+  .epc .eg{font-family:var(--tc);font-size:11.5px;color:var(--mid);line-height:1.45;display:flex;gap:5px}
+  .epc .eg::before{content:"";width:6px;height:6px;border-radius:50%;flex:none;margin-top:4px;background:var(--mint)}
+  .epc.half .eg::before{background:var(--amber)} .epc.blocked .eg::before{background:var(--coral)}
+  .epc.blocked .eg{color:var(--coral);font-weight:600}
+  @media(max-width:1080px){.epgrid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:560px){.epgrid{grid-template-columns:repeat(2,1fr)}.epc .en{min-height:0}}
+
+  /* ── session 排程確認表 ── */
+  .sesgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .sesc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--sh);
+    border-left:5px solid var(--mint);transition:.18s}
+  .sesc.warn{border-left-color:var(--amber)} .sesc.idle{border-left-color:var(--coral)}
+  .sesc:hover{transform:translateX(2px);box-shadow:var(--sh2)}
+  .sesc .sht{display:flex;align-items:center;gap:9px}
+  .sesc .sn{font-family:var(--tc);font-weight:700;font-size:14.5px}
+  .sesc .sled{width:9px;height:9px;border-radius:50%;flex:none;background:var(--mint);box-shadow:0 0 7px 1px rgba(35,155,115,.55)}
+  .sesc.warn .sled{background:var(--amber);box-shadow:0 0 7px 1px rgba(207,140,36,.55)}
+  .sesc.idle .sled{background:var(--coral);box-shadow:0 0 7px 1px rgba(219,84,59,.55);animation:bl 1.6s infinite}
+  .sesc .sr{font-family:var(--tc);font-size:12.5px;color:var(--dim);margin:5px 0 9px}
+  .sesc .srow{font-family:var(--tc);font-size:12.5px;color:var(--mid);display:flex;justify-content:space-between;gap:8px;padding:3px 0}
+  .sesc .srow .k{color:var(--faint)} .sesc .srow b{color:var(--ink);font-weight:600;text-align:right}
+  @media(max-width:760px){.sesgrid{grid-template-columns:1fr}}
+
+  /* ── 待 Jeff 裁決清單 ── */
+  .deck{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 4px;box-shadow:var(--sh);
+    -webkit-backdrop-filter:blur(17px) saturate(1.25);backdrop-filter:blur(17px) saturate(1.25);border-color:var(--glassedge)}
+  .deci{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line)}
+  .deci:last-child{border-bottom:none}
+  .deci .dp{font-family:var(--tc);font-size:11px;font-weight:800;padding:3px 8px;border-radius:7px;flex:none;letter-spacing:.5px;margin-top:1px}
+  .deci .dp.P0{background:var(--coral-s);color:var(--coral)}
+  .deci .dp.P1{background:var(--amber-s);color:var(--amber)}
+  .deci .dp.P2{background:var(--sky-s);color:var(--sky)}
+  .deci .dtag{font-family:var(--tc);font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px;flex:none;margin-top:1px;white-space:nowrap}
+  .deci .dtag.truth{background:#f6e8e2;color:#b4432e}
+  .deci .dtag.decide{background:var(--violet-s);color:var(--violet)}
+  .deci .dmain{flex:1;min-width:0}
+  .deci .dt{font-family:var(--tc);font-size:14px;color:var(--ink);font-weight:500;line-height:1.45}
+  .deci .db{font-family:var(--tc);font-size:12px;color:var(--faint);margin-top:3px}
+  .deci .db::before{content:"卡住 · ";color:var(--coral)}
+
+  /* ── 各平台核稿狀態 ── */
+  .revgrid{display:flex;flex-direction:column;gap:9px;margin-top:2px}
+  .revr{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:10px 13px}
+  .revr .rled{width:9px;height:9px;border-radius:50%;flex:none;background:var(--mint);box-shadow:0 0 8px 1px rgba(35,155,115,.6)}
+  .revr.wait .rled{background:var(--amber);box-shadow:0 0 8px 1px rgba(207,140,36,.6)}
+  .revr .rmid{flex:1;min-width:0}
+  .revr .rch{font-family:var(--tc);font-size:13.5px;font-weight:600;color:var(--dink)}
+  .revr .radv{font-family:var(--tc);font-size:11.5px;color:var(--ddim);margin-top:1px}
+  .revr .rst{font-family:var(--tc);font-size:11.5px;font-weight:600;color:var(--mint);text-align:right;white-space:nowrap}
+  .revr.wait .rst{color:var(--amber)}`;
   const s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
   const lbl={ok:['','充足'],warn:['warn','吃緊'],bad:['bad','見底']};
   const stcls={ok:'run',warn:'dev',bad:'idle'};
@@ -497,8 +587,65 @@ secs.forEach(s=>s&&io.observe(s));
     {name:"FB 金句卡",auto:"Publer 排程",stock:"7 天",through:"DAY 015",status:"ok"},
     {name:"導流工具",auto:"每週產 1–2",stock:"5 件",through:"補習費待核",status:"ok"}
   ]);
+
+  const sescls={ok:'ok',warn:'warn',idle:'idle'};
+  function show(id){const e=document.getElementById(id); if(e)e.style.display='';}
+  function renderEpisodes(ep){
+    if(!ep||!Array.isArray(ep.list)||!ep.list.length) return;
+    show('sh-ep'); show('epwrap');
+    const tt=document.getElementById('ep-title'); if(tt&&ep.title) tt.textContent=ep.title;
+    const tg=document.getElementById('ep-tag');
+    if(tg){const r=ep.list.filter(e=>e.status==='ready').length,h=ep.list.filter(e=>e.status==='half').length,b=ep.list.filter(e=>e.status==='blocked').length;
+      tg.textContent='可寫 '+r+' · 半成品 '+h+' · 待補真話 '+b;}
+    document.getElementById('epbar').innerHTML=ep.list.map(e=>`<div class="epseg ${e.status}" title="Day ${e.day} ${e.name}"></div>`).join('');
+    document.getElementById('epgrid').innerHTML=ep.list.map(e=>`
+      <div class="epc ${e.status}">
+        <div class="ed">DAY ${e.day}<span class="ef">${e.form||''}</span></div>
+        <div class="en">${e.name}</div>
+        <div class="eg">${e.gap||''}</div>
+      </div>`).join('');
+  }
+  function renderSessions(list){
+    if(!Array.isArray(list)||!list.length) return;
+    show('sh-ses'); show('sesgrid');
+    document.getElementById('sesgrid').innerHTML=list.map(s=>`
+      <div class="sesc ${sescls[s.status]||'ok'}">
+        <div class="sht"><span class="sled"></span><span class="sn">${s.name}</span></div>
+        <div class="sr">${s.role||''}</div>
+        <div class="srow"><span class="k">今日</span><b>${s.today||'—'}</b></div>
+        <div class="srow"><span class="k">排程</span><b>${s.sched||'—'}</b></div>
+      </div>`).join('');
+  }
+  function renderDecisions(list){
+    if(!Array.isArray(list)||!list.length) return;
+    show('sh-dec');
+    const box=document.getElementById('deck'); box.style.display='';
+    const cnt=list.filter(d=>d.tag==='truth').length;
+    const dt=document.getElementById('dec-tag'); if(dt) dt.textContent=cnt?('含 '+cnt+' 條待補真話 · 補一句解鎖多支內容'):'待裁決事項';
+    const tl={truth:'補真話',decide:'要定案'};
+    box.innerHTML=list.map(d=>`
+      <div class="deci">
+        <span class="dp ${d.p}">${d.p}</span>
+        <span class="dtag ${d.tag}">${tl[d.tag]||d.tag}</span>
+        <div class="dmain"><div class="dt">${d.t}</div>${d.blocks?`<div class="db">${d.blocks}</div>`:''}</div>
+      </div>`).join('');
+  }
+  function renderReview(rv){
+    if(!rv||!Array.isArray(rv.items)||!rv.items.length) return;
+    show('rev-wrap');
+    document.getElementById('revgrid').innerHTML=rv.items.map(it=>`
+      <div class="revr ${it.status==='wait'?'wait':''}">
+        <span class="rled"></span>
+        <div class="rmid"><div class="rch">${it.ch}</div><div class="radv">顧問 · ${it.adv}</div></div>
+        <div class="rst">${it.label||(it.status==='wait'?'待補':'已核')}</div>
+      </div>`).join('');
+  }
   fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
     if(D.inventory) renderInv(D.inventory);
+    if(D.episodes) renderEpisodes(D.episodes);
+    if(D.sessions) renderSessions(D.sessions);
+    if(D.decisions) renderDecisions(D.decisions);
+    if(D.editorReview) renderReview(D.editorReview);
     if(D.followers){
       FOLLOWERS=+D.followers; GOAL=+D.goal||GOAL;
       const hv=document.querySelector('#hero .hnum .v'); if(hv) hv.textContent=FOLLOWERS; // 直接設值、不靠動畫（永遠正確）
@@ -515,7 +662,8 @@ secs.forEach(s=>s&&io.observe(s));
     }
     const th=document.querySelector('#hero .todo-hero');
     if(th){ if(D.alert){th.innerHTML='⚠ '+D.alert; th.style.display='';} else { th.style.display='none'; } }
-    if(D.updated){const u=document.getElementById('updated'); if(u) u.textContent='更新：'+D.updated;}
+    if(D.updated){const u=document.getElementById('updated'); if(u) u.textContent='更新：'+D.updated;
+      const fu=document.getElementById('foot-upd'); if(fu) fu.textContent='資料截至 '+D.updated+' · 每日由 data.json 更新';}
   }).catch(e=>console.log('data.json fallback',e));
 })();
 </script>
