@@ -1,12 +1,40 @@
 {
-  "updated": "2026-06-19 23:45 台北",
-  "followers": 345,
+  "updated": "2026-06-19 23:39 台北",
+  "followers": 346,
   "goal": 1000,
   "dday": 21,
   "inventory": [
-    {"name": "IG 主集 Reel", "auto": "每晚 20:30 自動發", "stock": "1 集", "through": "Day 10 · 6/20（週六）", "status": "warn", "note": "Day 11+ 待做，週日前補下週" },
-    {"name": "IG 戰況卡", "auto": "每日 00:00 結算自動發", "stock": "自動現生", "through": "無需庫存", "status": "ok", "note": "凌晨抓即時數出卡" },
-    {"name": "FB 金句卡", "auto": "Publer 排程", "stock": "7 天", "through": "DAY 015", "status": "ok", "note": "" },
-    {"name": "導流工具", "auto": "每週產 1–2 件", "stock": "5 件上線", "through": "補習費 v 待核可", "status": "ok", "note": "落點/八字/補習費/天賦/會考" }
+    {
+      "name": "IG 主集 Reel",
+      "auto": "每晚 20:30 自動發",
+      "stock": "1 集",
+      "through": "Day 10 · 6/20（週六）",
+      "status": "warn",
+      "note": "Day 11+ 待做，週日前補下週"
+    },
+    {
+      "name": "IG 戰況卡",
+      "auto": "每日 00:00 結算自動發",
+      "stock": "自動現生",
+      "through": "無需庫存",
+      "status": "ok",
+      "note": "凌晨抓即時數出卡"
+    },
+    {
+      "name": "FB 金句卡",
+      "auto": "Publer 排程",
+      "stock": "7 天",
+      "through": "DAY 015",
+      "status": "ok",
+      "note": ""
+    },
+    {
+      "name": "導流工具",
+      "auto": "每週產 1–2 件",
+      "stock": "5 件上線",
+      "through": "補習費 v 待核可",
+      "status": "ok",
+      "note": "落點/八字/補習費/天賦/會考"
+    }
   ]
 }
