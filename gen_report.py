@@ -46,7 +46,7 @@ body=f"""
   <div style="flex:1;min-width:120px;background:#fffdf8;border:1px solid #e7dfd0;border-radius:14px;padding:14px 16px">
     <div style="font-size:13px;color:#857c69">IG 追蹤</div><div style="font-size:30px;font-weight:800;color:#615ae0">{followers}<span style="font-size:15px;color:#a89e88"> / {goal}</span></div></div>
   <div style="flex:1;min-width:120px;background:#fffdf8;border:1px solid #e7dfd0;border-radius:14px;padding:14px 16px">
-    <div style="font-size:13px;color:#857c69">距終局 7/10</div><div style="font-size:30px;font-weight:800;color:#2b2720">D-{dday}</div></div>
+    <div style="font-size:13px;color:#857c69">距終局 7/10 還有</div><div style="font-size:30px;font-weight:800;color:#2b2720">{dday} 天</div></div>
   <div style="flex:1;min-width:120px;background:#fffdf8;border:1px solid #e7dfd0;border-radius:14px;padding:14px 16px">
     <div style="font-size:13px;color:#857c69">今天</div><div style="font-size:30px;font-weight:800;color:#2b2720">Day {day}</div></div>
 </div>
@@ -70,6 +70,8 @@ body=f"""
 
 TPL="""<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>財富煉金術 · 今日戰情 {date}</title>
+<meta name="description" content="財富煉金術每日戰情：追蹤數、今日自動排程、待你裁決事項一覽。">
+<meta property="og:title" content="財富煉金術 · 今日戰情 {date}"><meta property="og:description" content="追蹤數、自動排程、待裁決事項一覽">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
  :root{{--gold:#c9a44c;--ink:#2b2720;--mid:#55503f;--line:#e7dfd0}}
@@ -92,14 +94,17 @@ json.dump(d,open(os.path.join(HERE,"data.json"),"w",encoding="utf-8"),ensure_asc
 print("report.html 產出 ·", now.strftime('%Y-%m-%d %H:%M'))
 
 # LINE 推送（摘要＋連結）
-summary=(f"☀️ 早安 Jeff！今日戰情 {now.strftime('%m/%d')}（週{WK}）\n"
+summary=(f"☀️ 早安！今日戰情 {now.strftime('%m/%d')}（週{WK}）\n"
          f"━━━━━━━━━━\n"
-         f"📊 追蹤 {followers}/{goal} · D-{dday} · 今天 Day{day}\n"
-         f"⚔️ 戰況卡 08:00｜🎬 主集 Reel 20:30 自動發\n"
-         f"🔴 需你決定/補真話：{ndec} 件（{nP0} 件最急）\n"
+         f"📊 追蹤 {followers}\n"
+         f"🏁 距終局 7/10 還有 {dday} 天 · Day {day}\n"
+         f"⚔️ 戰況卡 08:00 自動發\n"
+         f"🎬 主集 Reel 20:30 自動發\n"
+         f"🔴 待你決定/補真話 {ndec} 件（{nP0} 件最急）\n"
          f"━━━━━━━━━━\n"
-         f"🎛️ 裁示駕駛艙（看成品+裁決+開工）👉 {DECIDE}\n"
-         f"📖 完整報告 👉 {URL}")
+         f"📖 完整報告 👉 {URL}\n"
+         f"🎛️ 裁示駕駛艙 👉 {DECIDE}\n"
+         f"📊 即時戰情室 👉 {ROOM}")
 if LINE_TOKEN and LINE_USER:
     try:
         req=urllib.request.Request("https://api.line.me/v2/bot/message/push",
