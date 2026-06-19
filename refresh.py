@@ -17,5 +17,6 @@ except Exception as e:
     print("抓追蹤數失敗（保留舊值）:",e)
 d["updated"]=now.strftime("%Y-%m-%d %H:%M 台北")
 d["dday"]=(datetime.date(2026,7,10)-now.date()).days
+d["day"]=(now.date()-datetime.date(2026,6,10)).days   # 主集集數＝戰況卡第N天（今天−6/10）
 json.dump(d,open(P,"w",encoding="utf-8"),ensure_ascii=False,indent=2)
 print("data.json 已更新 · D-",d["dday"])
