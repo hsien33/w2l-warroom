@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-20 22:39 台北",
-  "followers": 364,
+  "updated": "2026-06-21 00:13 台北",
+  "followers": 369,
   "goal": 1000,
-  "dday": 20,
-  "day": 10,
+  "dday": 19,
+  "day": 11,
   "alert": "主集 Reel 庫存只到 Day 10（今晚發完就見底）— 週日前補下週 Day 11–15",
   "inventory": [
     {
@@ -239,19 +239,19 @@
       }
     ]
   },
-  "warday": 9,
+  "warday": 10,
   "channels": {
     "ig": {
-      "followers": 364,
+      "followers": 369,
       "live": true,
-      "updated": "06/20 22:39"
+      "updated": "06/21 00:13"
     },
     "yt": {
       "subs": 19700,
       "views": 804420,
       "videos": 31,
       "live": true,
-      "updated": "06/20 22:39"
+      "updated": "06/21 00:13"
     },
     "fb": {
       "followers": 13,
@@ -259,18 +259,18 @@
       "last_time": "2026-06-20",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
       "live": true,
-      "updated": "06/20 22:39"
+      "updated": "06/21 00:13"
     },
     "threads": {
-      "followers": 30,
+      "followers": 31,
       "live": true,
-      "updated": "06/20 22:39"
+      "updated": "06/21 00:13"
     },
     "site": {
-      "pageviews": 124,
-      "users": 61,
+      "pageviews": 122,
+      "users": 60,
       "live": true,
-      "updated": "06/20 22:39"
+      "updated": "06/21 00:13"
     }
   }
 }
