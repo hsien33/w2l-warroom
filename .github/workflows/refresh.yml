@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: install deps
+        run: pip install google-auth
       - name: update data.json
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -23,6 +25,8 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          GA4_SA_JSON: ${{ secrets.GA4_SA_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: python refresh.py
       - name: commit data.json
         run: |

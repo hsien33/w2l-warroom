@@ -60,8 +60,30 @@ if tht and thu:
 else:
     ch.setdefault("threads", {})["live"] = False
 
-# ── 官網 GA4 瀏覽數（gated GA4_PAGEVIEWS 由另支 GA4 workflow 寫入；這裡只標未接）──
-ch.setdefault("site", {}).setdefault("live", False)
+# ── 官網 GA4 近7天瀏覽數（gated GA4_SA_JSON 服務帳戶 + GA4_PROPERTY_ID）──
+ga_json, ga_prop = env("GA4_SA_JSON"), env("GA4_PROPERTY_ID")
+if ga_json and ga_prop:
+    try:
+        from google.oauth2 import service_account
+        import google.auth.transport.requests
+        creds = service_account.Credentials.from_service_account_info(
+            json.loads(ga_json), scopes=["https://www.googleapis.com/auth/analytics.readonly"])
+        creds.refresh(google.auth.transport.requests.Request())
+        body = json.dumps({"dateRanges": [{"startDate": "7daysAgo", "endDate": "today"}],
+                           "metrics": [{"name": "screenPageViews"}, {"name": "activeUsers"}]}).encode()
+        req = urllib.request.Request(
+            f"https://analyticsdata.googleapis.com/v1beta/properties/{ga_prop}:runReport",
+            data=body, method="POST",
+            headers={"Authorization": f"Bearer {creds.token}", "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r: rep = json.loads(r.read())
+        rows = rep.get("rows", [])
+        pv = int(rows[0]["metricValues"][0]["value"]) if rows else 0
+        au = int(rows[0]["metricValues"][1]["value"]) if rows else 0
+        ch["site"] = {"pageviews": pv, "users": au, "live": True, "updated": stamp}; print("GA4 pv", pv)
+    except Exception as e:
+        print("GA4 失敗:", e); ch.setdefault("site", {})["live"] = False
+else:
+    ch.setdefault("site", {}).setdefault("live", False)
 
 d["channels"] = ch
 d["updated"] = now.strftime("%Y-%m-%d %H:%M 台北")
