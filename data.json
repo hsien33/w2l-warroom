@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20 16:18 台北",
+  "updated": "2026-06-20 16:22 台北",
   "followers": 357,
   "goal": 1000,
   "dday": 20,
@@ -244,7 +244,7 @@
     "ig": {
       "followers": 357,
       "live": true,
-      "updated": "06/20 16:18"
+      "updated": "06/20 16:22"
     },
     "yt": {
       "live": false
@@ -253,7 +253,9 @@
       "live": false
     },
     "threads": {
-      "live": false
+      "followers": 30,
+      "live": true,
+      "updated": "06/20 16:22"
     },
     "site": {
       "live": false
