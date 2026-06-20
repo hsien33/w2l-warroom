@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-21 05:44 台北",
-  "followers": 371,
+  "updated": "2026-06-21 06:01 台北",
+  "followers": 372,
   "goal": 1000,
   "dday": 19,
   "day": 11,
@@ -82,7 +82,7 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 371,
+        "current": 372,
         "live": true,
         "delta": {
           "day": {
@@ -218,7 +218,7 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 61,
+        "current": 62,
         "live": true,
         "delta": {
           "day": {
@@ -784,44 +784,44 @@
   },
   "history": {
     "2026-06-21": {
-      "ig": 371,
+      "ig": 372,
       "yt": 19700,
       "fb": 13,
       "threads": 31,
-      "site": 61
+      "site": 62
     }
   },
   "channels": {
     "ig": {
-      "followers": 371,
-      "live": false,
-      "updated": "06/21 04:47"
+      "followers": 372,
+      "live": true,
+      "updated": "06/21 06:01"
     },
     "yt": {
       "subs": 19700,
       "views": 804447,
       "videos": 31,
-      "live": false,
-      "updated": "06/21 04:47"
+      "live": true,
+      "updated": "06/21 06:01"
     },
     "fb": {
       "followers": 13,
       "last_msg": "你一天看幾次帳戶？\n\n很多人以為盯越緊越安全，研究卻剛好相反——看盤",
       "last_time": "2026-06-20",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
-      "live": false,
-      "updated": "06/21 04:47"
+      "live": true,
+      "updated": "06/21 06:01"
     },
     "threads": {
       "followers": 31,
-      "live": false,
-      "updated": "06/21 04:47"
+      "live": true,
+      "updated": "06/21 06:01"
     },
     "site": {
-      "pageviews": 123,
-      "users": 61,
+      "pageviews": 124,
+      "users": 62,
       "live": true,
-      "updated": "06/21 04:47"
+      "updated": "06/21 06:01"
     }
   }
 }
