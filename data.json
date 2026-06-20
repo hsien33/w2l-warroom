@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21 01:53 台北",
+  "updated": "2026-06-21 03:15 台北",
   "followers": 370,
   "goal": 1000,
   "dday": 19,
@@ -244,14 +244,14 @@
     "ig": {
       "followers": 370,
       "live": true,
-      "updated": "06/21 01:53"
+      "updated": "06/21 03:15"
     },
     "yt": {
       "subs": 19700,
-      "views": 804420,
+      "views": 804447,
       "videos": 31,
       "live": true,
-      "updated": "06/21 01:53"
+      "updated": "06/21 03:15"
     },
     "fb": {
       "followers": 13,
@@ -259,18 +259,18 @@
       "last_time": "2026-06-20",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
       "live": true,
-      "updated": "06/21 01:53"
+      "updated": "06/21 03:15"
     },
     "threads": {
       "followers": 31,
       "live": true,
-      "updated": "06/21 01:53"
+      "updated": "06/21 03:15"
     },
     "site": {
       "pageviews": 123,
       "users": 61,
       "live": true,
-      "updated": "06/21 01:53"
+      "updated": "06/21 03:15"
     }
   }
 }
