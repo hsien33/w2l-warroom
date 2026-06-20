@@ -55,9 +55,9 @@
     background:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
     filter:drop-shadow(0 2px 1px rgba(120,80,20,.18))}
   /* 標題下金線：寬度用 clamp 跟著標題大小縮放，搭配「第一桶金」那行的字寬 */
-  .cover h1::after{content:"";display:block;width:clamp(150px,36vw,205px);height:3px;margin:22px auto 0;
+  .cover h1::after{content:"";display:block;width:clamp(150px,36vw,205px);height:3px;margin:12px auto 0;
     background:var(--foil);border-radius:3px;opacity:.9}
-  .cover .sub{margin:18px auto 0;font-size:17px;color:var(--mid);font-weight:500;max-width:19em;line-height:1.85}
+  .cover .sub{margin:32px auto 0;font-size:17px;color:var(--mid);font-weight:500;max-width:19em;line-height:1.85}
   /* 中文斷行控制：標題/短句用 balance 平衡行長，關鍵詞組 nb 不被拆斷 */
   .nb{white-space:nowrap}
   .cover h1,.cover .sub,.pg h2,.cta p,.kick{text-wrap:balance;line-break:strict;word-break:normal;overflow-wrap:break-word}
