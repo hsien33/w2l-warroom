@@ -2,8 +2,9 @@ name: daily-morning-report
 
 on:
   schedule:
-    # 05:00 Taipei = 21:00 UTC
-    - cron: "0 21 * * *"
+    - cron: "0 21 * * *"    # 05:00 Taipei morning report
+    - cron: "30 3 * * *"    # 11:30 Taipei midday pulse
+    - cron: "0 11 * * *"    # 19:00 Taipei evening wrap
   workflow_dispatch:
 
 jobs:

@@ -93,13 +93,16 @@ open(os.path.join(HERE,"report.html"),"w",encoding="utf-8").write(out)
 json.dump(d,open(os.path.join(HERE,"data.json"),"w",encoding="utf-8"),ensure_ascii=False,indent=2)
 print("report.html 產出 ·", now.strftime('%Y-%m-%d %H:%M'))
 
-# LINE 推送（摘要＋連結）
-summary=(f"☀️ 早安！今日戰情 {now.strftime('%m/%d')}（週{WK}）\n"
+# LINE 推送（依時段切換：早安/午間/晚間 · 拉式脈搏，資訊同、框架不同）
+_h=now.hour
+if _h<9: _emo,_slot,_act="☀️","早安・今日戰情","⚔️ 戰況卡 08:1x 自動發｜🎬 主集 Reel 20:3x 自動發"
+elif _h<15: _emo,_slot,_act="🌤️","午間・進度脈搏","✅ 上午戰況卡已發（看門狗顧著）｜🎬 晚間 Reel 待發"
+else: _emo,_slot,_act="🌙","晚間・今日收工","✅ 今日戰況卡+Reel 應已發畢｜明早 08:1x 續跑"
+summary=(f"{_emo} {_slot} {now.strftime('%m/%d')}（週{WK}）\n"
          f"━━━━━━━━━━\n"
          f"📊 追蹤 {followers}\n"
          f"🏁 距終局 7/10 還有 {dday} 天 · Day {day}\n"
-         f"⚔️ 戰況卡 08:00 自動發\n"
-         f"🎬 主集 Reel 20:30 自動發\n"
+         f"{_act}\n"
          f"🔴 待你決定/補真話 {ndec} 件（{nP0} 件最急）\n"
          f"━━━━━━━━━━\n"
          f"📖 完整報告 👉 {URL}\n"
