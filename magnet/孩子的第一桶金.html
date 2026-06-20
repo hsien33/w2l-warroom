@@ -54,8 +54,10 @@
   .cover h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(38px,9.5vw,54px);line-height:1.18;margin:6px 0 0;
     background:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
     filter:drop-shadow(0 2px 1px rgba(120,80,20,.18))}
-  .cover h1::after{content:"";display:block;width:46px;height:2px;margin:20px auto 0;background:var(--foil);border-radius:2px;opacity:.85}
-  .cover .sub{margin:20px auto 0;font-size:17px;color:var(--mid);font-weight:500;max-width:19em;line-height:1.85}
+  .cover .sub{margin:24px auto 0;font-size:17px;color:var(--mid);font-weight:500;max-width:19em;line-height:1.85}
+  /* 中文斷行控制：標題/短句用 balance 平衡行長，關鍵詞組 nb 不被拆斷 */
+  .nb{white-space:nowrap}
+  .cover h1,.cover .sub,.pg h2,.cta p,.kick{text-wrap:balance;line-break:strict;word-break:normal;overflow-wrap:break-word}
   .cover .by{margin-top:22px;display:inline-block;font-size:13.5px;color:var(--gold-d);background:#fbf0d8;
     border:1px solid #efdcae;border-radius:30px;padding:8px 18px;font-weight:600}
 
@@ -178,8 +180,8 @@
   <div class="pg cta">
     <div class="eyebrow"><span class="sun"></span>下一步</div>
     <h2 class="serif">你不用一次到位，先做第 1 步</h2>
-    <p>這 5 步，我兒子真的在做。你今晚先挑一步開始，就贏過 90% 只焦慮、卻沒動的爸媽。</p>
-    <p>你家孩子幾歲、該從哪一步開始，其實不一樣——<strong>3 歲、10 歲、15 歲，帶法完全不同。</strong></p>
+    <p>這 5 步，我兒子真的在做。你今晚先挑一步開始，<span class="nb">就贏過 90% 只焦慮</span>、<span class="nb">卻沒動的爸媽</span>。</p>
+    <p>你家孩子幾歲、<span class="nb">該從哪一步開始</span>，其實不一樣——<strong><span class="nb">3 歲、10 歲、15 歲</span>，<span class="nb">帶法完全不同</span>。</strong></p>
     <div class="key">在 IG 私訊「地圖」，我把分齡版親手傳給你</div>
     <div class="handle">一個爸爸，給另一個爸媽 · 追蹤 @jeff.walk2light，看退休理財爸爸 × 神祕學霸兒子的 30 天賭局</div>
   </div>
