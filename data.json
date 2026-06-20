@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20 21:21 台北",
+  "updated": "2026-06-20 22:14 台北",
   "followers": 364,
   "goal": 1000,
   "dday": 20,
@@ -244,22 +244,27 @@
     "ig": {
       "followers": 364,
       "live": true,
-      "updated": "06/20 21:21"
+      "updated": "06/20 22:14"
     },
     "yt": {
       "subs": 19700,
       "views": 804420,
       "videos": 31,
       "live": true,
-      "updated": "06/20 21:21"
+      "updated": "06/20 22:14"
     },
     "fb": {
-      "live": false
+      "followers": 13,
+      "last_msg": "你一天看幾次帳戶？\n\n很多人以為盯越緊越安全，研究卻剛好相反——看盤",
+      "last_time": "2026-06-20",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
+      "live": true,
+      "updated": "06/20 22:14"
     },
     "threads": {
       "followers": 30,
       "live": true,
-      "updated": "06/20 21:21"
+      "updated": "06/20 22:14"
     },
     "site": {
       "live": false
