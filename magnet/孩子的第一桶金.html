@@ -6,83 +6,100 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>孩子的第一桶金 · 財富煉金術</title>
-<meta name="description" content="一個退休理財爸爸，真的在帶國三兒子做的 5 件事——不用很有錢，從今晚就能開始，陪孩子存到人生的第一桶金。教育性質、非投資建議。">
+<meta name="description" content="我不是要把孩子變股神——只是想在他長大以前，把「錢」這件事教好。一個退休理財爸爸真的在帶兒子做的 5 件事，今晚就能開始。教育性質、非投資建議。">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-/* ════════ 晨光暖風 · 一個爸爸寫給爸媽的信 ════════
-   親子系列走暖風（不黑金）：奶白底＋日出漸層(杏/桃/玫瑰)＋溫潤金＋幼苗綠。
-   品牌錨點＝真正的金箭頭 logo（圓徽）。 */
+/* ════════ 晨光暖風 v2 · 一個爸爸寫給爸媽的信 ════════
+   顧問團(原研哉/Kelly Hoppen/于美人)圓桌後大改：
+   底沉下去、卡片浮起來有紙感、金有光、五步有節奏、今晚讓位給「我的做法」、CTA 收回品牌金。 */
   :root{
-    --milk:#fbf3e6; --card:#fffdf8; --card2:#f7efe0;
-    --ink:#4a4036; --mid:#6d6453; --dim:#988b76; --faint:#b7ab95;
-    --line:#efe4d1; --line2:#f4ecdd;
+    --milk:#f1eadd; --card:#fffefb; --card2:#f6f0e6;
+    --ink:#453c31; --mid:#766c59; --dim:#9a8d77; --faint:#bbb09a;
+    --line:#efe4d0; --line2:#f3ecdc;
     --gold:#c0902f; --gold-d:#a3781f; --gold-hi:#e7c46a;
-    --foil:linear-gradient(176deg,#f0d488 2%,#cf9f3a 48%,#9c6f1c 98%);
-    --dawn1:#f8dcab; --dawn2:#f4b89a; --dawn3:#eaa6bf; --leaf:#7fae78;
-    --shadow:0 2px 8px rgba(150,115,60,.06),0 24px 54px -30px rgba(150,110,55,.34);
-    --shadow-s:0 2px 6px rgba(150,115,60,.05),0 12px 26px -16px rgba(150,110,55,.20);
+    --foil:linear-gradient(135deg,#f6e3a6 0%,#e7c46a 26%,#c0902f 56%,#9c6f1c 82%,#caa04a 100%);
+    --dawn1:#f8dcab; --dawn2:#f4b89a; --dawn3:#eaa6bf;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{
     background:var(--milk);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
-    color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased;text-wrap:pretty;
+    color:var(--ink);line-height:1.92;-webkit-font-smoothing:antialiased;text-wrap:pretty;
     background-image:
-      radial-gradient(1100px 460px at 50% -160px,#fde6c6,transparent 64%),
-      radial-gradient(680px 360px at 90% 40px,#fbdde6cc,transparent 60%),
-      radial-gradient(720px 480px at 6% 700px,#f3e7d3aa,transparent 60%);
+      radial-gradient(1200px 520px at 50% -220px,#f9e3c0aa,transparent 62%),
+      radial-gradient(620px 320px at 92% 60px,#f6dbe18c,transparent 58%),
+      radial-gradient(680px 460px at 4% 820px,#efe6d488,transparent 60%);
     background-attachment:fixed;background-repeat:no-repeat;
   }
-  .doc{max-width:680px;margin:0 auto;padding:30px 16px 76px}
+  .doc{max-width:640px;margin:0 auto;padding:30px 16px 78px}
   .serif{font-family:"Noto Serif TC",serif}
   .round{font-family:"Baloo 2","Noto Sans TC",sans-serif}
-  .pg{background:var(--card);border:1px solid var(--line);border-radius:22px;margin-bottom:20px;
-    padding:38px clamp(22px,5.5vw,48px);box-shadow:var(--shadow-s);position:relative;overflow:hidden}
-  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3.5px;color:var(--gold-d);font-weight:700}
-  .eyebrow .sun{width:13px;height:13px;border-radius:50%;background:linear-gradient(160deg,var(--dawn1),var(--dawn3))}
+
+  .pg{position:relative;overflow:hidden;background:var(--card);border:1px solid #f0e7d6;border-radius:18px;
+    margin-bottom:16px;padding:42px clamp(24px,5.5vw,46px);
+    box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 1px 2px rgba(150,115,60,.05),0 18px 40px -24px rgba(150,110,55,.22)}
+  /* 極淡紙纖維（零外部檔） */
+  .pg::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E")}
+  .pg>*{position:relative;z-index:1}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;letter-spacing:3px;color:var(--gold-d);font-weight:700}
+  .eyebrow .sun{width:12px;height:12px;border-radius:50%;background:linear-gradient(160deg,var(--dawn1),var(--dawn3))}
 
   /* 封面 */
-  .cover{text-align:center;padding:54px 30px 46px;border:1px solid var(--line);
-    background:radial-gradient(520px 280px at 50% -40px,#ffeaccaa,transparent 70%),var(--card)}
-  .cover .badge{width:96px;height:96px;margin:0 auto 20px;border-radius:50%;display:block;
-    box-shadow:0 14px 30px -12px rgba(160,120,40,.55);background:#0f1116}
-  .cover .eyebrow{justify-content:center;margin-bottom:18px}
-  .cover h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(36px,9vw,52px);line-height:1.2;margin:6px 0 16px;
-    background:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .cover .sub{font-size:17.5px;color:var(--mid);font-weight:500;max-width:20em;margin:0 auto}
-  .cover .by{margin-top:26px;display:inline-block;font-size:13.5px;color:var(--gold-d);background:#fbf0d8;
+  .cover{text-align:center;padding:62px 30px 54px;
+    background:radial-gradient(540px 320px at 50% -30px,#ffeaccbb,transparent 70%),var(--card)}
+  .cover .badge{width:80px;height:80px;margin:0 auto 24px;border-radius:50%;display:block;background:#0f1116;
+    box-shadow:0 0 0 7px #fff8ec,0 0 0 8px #f0dcb6,0 16px 36px -14px rgba(160,120,40,.45)}
+  .cover .eyebrow{justify-content:center;margin-bottom:16px}
+  .cover h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(38px,9.5vw,54px);line-height:1.18;margin:6px 0 0;
+    background:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 1px rgba(120,80,20,.18))}
+  .cover h1::after{content:"";display:block;width:46px;height:2px;margin:20px auto 0;background:var(--foil);border-radius:2px;opacity:.85}
+  .cover .sub{margin:20px auto 0;font-size:17px;color:var(--mid);font-weight:500;max-width:19em;line-height:1.85}
+  .cover .by{margin-top:22px;display:inline-block;font-size:13.5px;color:var(--gold-d);background:#fbf0d8;
     border:1px solid #efdcae;border-radius:30px;padding:8px 18px;font-weight:600}
 
   /* 內頁通用 */
-  .pg h2{font-family:"Noto Serif TC",serif;font-weight:900;font-size:24px;line-height:1.45;margin:6px 0 12px;color:var(--ink)}
-  .pg p{color:var(--mid);font-size:16.5px;margin:.55em 0}
+  .pg h2{font-family:"Noto Serif TC",serif;font-weight:900;font-size:23px;line-height:1.45;margin:8px 0 14px;color:var(--ink)}
+  .pg p{color:#7a6f5c;font-size:16px;margin:.55em 0;line-height:1.92}
   .pg p strong{color:var(--ink);font-weight:700}
-  .kick{font-size:18px!important;color:var(--ink)!important;font-weight:700;margin-top:14px!important}
+  .kick{font-size:17.5px!important;color:var(--ink)!important;font-weight:700;margin-top:16px!important}
   .kick b{color:var(--gold-d)}
 
-  /* 步驟 */
-  .step{display:flex;align-items:center;gap:15px;margin-bottom:8px}
-  .step .num{width:50px;height:50px;flex:none;border-radius:16px;display:grid;place-items:center;
-    font-family:"Baloo 2",sans-serif;font-weight:700;font-size:25px;color:#fff;
-    background:linear-gradient(150deg,var(--dawn1),var(--dawn2) 55%,var(--dawn3));
-    box-shadow:0 10px 20px -8px rgba(231,150,140,.6)}
+  /* 步驟卡：頂部日出色帶隨步驟推進，第五步收於金＝抵達 */
+  .step-card::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:18px 18px 0 0;z-index:2}
+  .step-1::after{background:linear-gradient(90deg,#f8dcab,#f4c98f)}
+  .step-2::after{background:linear-gradient(90deg,#f4c98f,#f0b27e)}
+  .step-3::after{background:linear-gradient(90deg,#f0b27e,#ec9f9c)}
+  .step-4::after{background:linear-gradient(90deg,#ec9f9c,#eaa6bf)}
+  .step-5::after{background:linear-gradient(90deg,#eaa6bf,#e7c46a)}
+  .step{display:flex;align-items:center;gap:15px;margin-bottom:14px}
+  .step .num{width:46px;height:46px;flex:none;border-radius:50%;display:grid;place-items:center;
+    font-family:"Baloo 2",sans-serif;font-weight:700;font-size:22px;color:var(--gold-d);
+    background:#fff;border:1.5px solid #f0c9a6;box-shadow:0 4px 12px -6px rgba(231,150,140,.35)}
   .step h2{margin:0}
-  .real{background:linear-gradient(176deg,#fdf6e7,#faf0db);border:1px solid #efe1c4;border-left:4px solid var(--gold-hi);
-    border-radius:0 14px 14px 0;padding:15px 18px;margin:15px 0;font-size:15.5px;color:#5e5238;line-height:1.85}
-  .real b{color:var(--gold-d);font-weight:700}
-  .tonight{display:flex;gap:11px;align-items:flex-start;margin-top:13px;font-size:15.5px;color:var(--ink);line-height:1.8}
-  .tonight .tag{flex:none;background:linear-gradient(150deg,#f0b27e,#e7799a);color:#fff;font-size:12px;font-weight:700;
-    border-radius:8px;padding:4px 11px;margin-top:4px;box-shadow:0 6px 14px -6px rgba(231,121,154,.5)}
+
+  /* 我的做法＝這頁的重心：乾淨暖白、篤定金邊 */
+  .real{background:linear-gradient(176deg,#fefaf0,#faf2e2);border:1px solid #f0e3c8;border-left:4px solid var(--gold);
+    border-radius:0 14px 14px 0;padding:15px 18px;margin:18px 0;font-size:15.5px;color:#5e5238;line-height:1.88}
+  .real b{color:var(--gold-d);font-weight:700;letter-spacing:.3px}
+
+  /* 今晚＝輕盈的便箋，讓位給「我的做法」 */
+  .tonight{display:flex;gap:11px;align-items:flex-start;margin-top:16px;font-size:15.5px;color:var(--ink);line-height:1.82;
+    background:#fdf3ec;border:1px dashed #f1cdb4;border-radius:12px;padding:13px 16px}
+  .tonight .tag{flex:none;background:transparent;color:#d2794f;border:1.5px solid #ecb89c;font-size:12px;font-weight:700;
+    border-radius:8px;padding:4px 11px;margin-top:3px}
   .tonight b,.tonight strong{color:var(--ink)}
 
-  /* CTA（暖版，不黑） */
-  .cta{text-align:center;padding:46px 30px;border:1px solid #f0d9bf;
+  /* CTA：暖底＋品牌金按鈕（不螢光） */
+  .cta{text-align:center;padding:60px 30px;border:1px solid #f0d9bf;
     background:radial-gradient(460px 240px at 50% -30px,#ffe6cfcc,transparent 70%),linear-gradient(170deg,#fff6e9,#fdeede)}
   .cta .eyebrow{justify-content:center;margin-bottom:8px}
   .cta h2{font-family:"Noto Serif TC",serif;color:var(--ink);font-size:25px;margin-bottom:10px}
   .cta p{color:var(--mid);font-size:16px}
   .cta p strong{color:var(--gold-d)}
-  .cta .key{display:inline-block;margin-top:20px;background:linear-gradient(150deg,#f0b27e,#e7799a);color:#fff;font-weight:800;
-    border-radius:32px;padding:15px 30px;font-size:17px;letter-spacing:.5px;box-shadow:0 14px 28px -10px rgba(231,121,154,.55)}
+  .cta .key{display:inline-block;margin-top:22px;background:var(--foil);color:#3a2e16;font-weight:800;
+    border-radius:32px;padding:16px 34px;font-size:17px;letter-spacing:.5px;box-shadow:0 12px 26px -12px rgba(160,120,40,.5)}
   .cta .handle{margin-top:16px;font-size:13.5px;color:var(--dim)}
 
   /* 免責 */
@@ -92,8 +109,8 @@
   .foot img{width:30px;height:30px;border-radius:50%}
   .foot .ft{font-family:"Noto Serif TC",serif;font-size:15px;font-weight:700;color:var(--ink)}
 
-  @media(max-width:520px){.pg{padding:30px 20px}.cover{padding:44px 22px 38px}}
-  @media print{body{background:#fff;background-image:none}.doc{max-width:none;padding:0}.pg{box-shadow:none;border:1px solid #eee;border-radius:0;page-break-after:always;margin:0}}
+  @media(max-width:520px){.pg{padding:32px 22px}.cover{padding:48px 22px 42px}}
+  @media print{body{background:#fff;background-image:none}.doc{max-width:none;padding:0}.pg{box-shadow:none;border:1px solid #eee;border-radius:0;page-break-after:always;margin:0}.pg::before{display:none}}
 </style>
 </head>
 <body>
@@ -101,60 +118,60 @@
 
   <!-- 封面 -->
   <div class="pg cover">
-    <img class="badge" src="logo.png" alt="財富煉金術" width="96" height="96">
-    <div class="eyebrow"><span class="sun"></span>財富煉金術 · WEALTH ALCHEMY</div>
+    <img class="badge" src="logo.png" alt="財富煉金術" width="80" height="80">
+    <div class="eyebrow"><span class="sun"></span>財富煉金術 · 向光而行</div>
     <h1>孩子的<br>第一桶金</h1>
-    <div class="sub">一個退休理財爸爸，真的在帶兒子做的 5 件事</div>
-    <div class="by">不用很有錢 — 從今晚就能開始第一步</div>
+    <div class="sub">我不是要把孩子變股神 — 我只是想，在他長大以前，把「錢」這件事教好。</div>
+    <div class="by">不用很有錢，也不用很懂 — 今晚就能開始第一步</div>
   </div>
 
   <!-- 痛點＋承諾 -->
   <div class="pg">
     <div class="eyebrow"><span class="sun"></span>為什麼寫這份</div>
-    <h2>想給孩子未來，又怕自己不懂理財？</h2>
-    <p>我懂那種矛盾——不想雞娃、把孩子逼到沒童年；可是看著別人家「贏在起跑點」，又怕自己的孩子落後。尤其「教孩子理財」這件事，自己都半懂不懂，怎麼教？</p>
-    <p>這份不是理論，是<strong>我真的在帶我國三兒子做</strong>的一套。我們父子訂了一個目標：<strong>大學畢業前，存到他人生的第一桶金 100 萬</strong>。靠的不是我多有錢，是<strong>從小一步一步、把觀念變成習慣</strong>——目前已經走到大約一半。</p>
+    <h2>你怕的不是沒錢 — 是怕耽誤了孩子，自己卻還不懂</h2>
+    <p>我懂那種矛盾——不想雞娃、把孩子逼到沒童年；可是看著別人家「贏在起跑點」，又怕自己的孩子落後。說真的，<strong>我一開始也不會教，是跟孩子一邊做、一邊學的。</strong></p>
+    <p>這份不是專家寫的，是一個爸爸，把走過的路，寫給另一個爸爸、另一個媽媽看。我和我國三的兒子訂了一個目標：<strong>大學畢業前，存到他人生的第一桶金 100 萬</strong>——靠的不是我多有錢，是從小一步一步、把觀念變成習慣，目前已經走到大約一半。</p>
     <p class="kick">下面 5 步，你不用一次到位。<b>今晚，先做第 1 步就好。</b></p>
   </div>
 
   <!-- 步驟 1 -->
-  <div class="pg">
+  <div class="pg step-card step-1">
     <div class="step"><div class="num">1</div><h2 class="serif">先給他一個「自己的」帳戶</h2></div>
     <p>第一桶金的起點，不是錢多寡，是「<strong>這是我的</strong>」那份擁有感。壓歲錢別全收走——讓孩子有個屬於他自己、看得到數字長大的帳戶。</p>
-    <div class="real">📌 <b>我的做法：</b>兒子從國小起，壓歲錢就一路存進他自己的帳戶，他知道那是「他的錢」，不是爸媽代管的。</div>
+    <div class="real"><b>我的做法 —</b> 兒子從國小起，壓歲錢就一路存進他自己的帳戶，他知道那是「他的錢」，不是爸媽代管的。</div>
     <div class="tonight"><span class="tag">今晚</span><div>找個週末帶孩子去開一個他自己的帳戶；或先用一本記帳本，把他現在有的錢記下來。<strong>讓他「擁有」，他才會在意。</strong></div></div>
   </div>
 
   <!-- 步驟 2 -->
-  <div class="pg">
-    <div class="step"><div class="num">2</div><h2 class="serif">把「獎勵」和「省下的錢」，變成本金</h2></div>
+  <div class="pg step-card step-2">
+    <div class="step"><div class="num">2</div><h2 class="serif">那筆省下來的補習費，我沒收回口袋 — 變成了他的本金</h2></div>
     <p>零用錢花掉就沒了；但如果把<strong>努力換來的、和本來要花掉的</strong>，撥一份去投資，它會開始替他工作。</p>
-    <div class="real">📌 <b>我的做法：</b>小考、段考、會考的獎金，一路存一路投。甚至本來要付的補習費，因為他靠自己念上目標學校，那筆錢就「省下來」成了他的第一筆大金額——把一筆<b>消費，煉成了資本</b>。</div>
+    <div class="real"><b>我的做法 —</b> 小考、段考、會考的獎金，一路存一路投。甚至本來要付的補習費，因為他靠自己念上目標學校，那筆錢就「省下來」成了他的第一筆大金額——把一筆<b>消費，煉成了資本</b>。</div>
     <div class="tonight"><span class="tag">今晚</span><div>跟孩子約定一個規則：「你省下的、賺到的，我們撥一份固定比例去投資」。讓他親手把錢從「花掉」改成「長大」。</div></div>
   </div>
 
   <!-- 步驟 3 -->
-  <div class="pg">
+  <div class="pg step-card step-3">
     <div class="step"><div class="num">3</div><h2 class="serif">讓他親手做、親眼看「錢生錢」</h2></div>
     <p>複利不是用講的，是<strong>給他看的</strong>。一次升級一階，讓他自己經歷，比你說一百遍都有用。</p>
-    <div class="real">📌 <b>我的做法：</b>我們從定存開始（看見利息）→ 買過股票（看見漲跌）→ 領過股息（錢真的生錢）→ 現在投資不同地區的市場。每一階他都親手做、親眼看。</div>
+    <div class="real"><b>我的做法 —</b> 我們從定存開始（看見利息）→ 買過股票（看見漲跌）→ 領過股息（錢真的生錢）→ 現在投資不同地區的市場。每一階他都親手做、親眼看。</div>
     <div class="tonight"><span class="tag">今晚</span><div>用一個小例子算給他看：「一筆錢，每年長一點點，30 年後會變多少？」——讓複利這件事，在他心裡長根。</div></div>
   </div>
 
   <!-- 步驟 4 -->
-  <div class="pg">
-    <div class="step"><div class="num">4</div><h2 class="serif">教的是紀律，不是明牌</h2></div>
+  <div class="pg step-card step-4">
+    <div class="step"><div class="num">4</div><h2 class="serif">我沒教他買什麼會賺 — 我教他怎麼不亂買</h2></div>
     <p>孩子要學的不是「買什麼會賺」，是<strong>固定、持續、不被情緒帶著走</strong>。順便，讓他懂「時間」也是成本。</p>
-    <div class="real">📌 <b>我的做法：</b>我們用「定期定額、不猜高低點」的方式長期投。我兒子國二就自己想通——「跑去補習班浪費的時間和錢，不如拿來做更有效益的事」。這種<b>時間成本觀</b>，比任何明牌值錢。</div>
+    <div class="real"><b>我的做法 —</b> 我們用「定期定額、不猜高低點」的方式長期投。我兒子國二就自己想通——「跑去補習班浪費的時間和錢，不如拿來做更有效益的事」。這種<b>時間成本觀</b>，比任何明牌值錢。</div>
     <div class="tonight"><span class="tag">今晚</span><div>設一筆「每月固定、金額不大」的投入，跟孩子一起執行。重點不是多少，是<strong>每個月都做</strong>這件事本身。</div></div>
   </div>
 
   <!-- 步驟 5 -->
-  <div class="pg">
+  <div class="pg step-card step-5">
     <div class="step"><div class="num">5</div><h2 class="serif">一起訂一個「夠遠」的共同目標</h2></div>
     <p>有了目標，前面 4 步才有方向。目標要夠遠、夠大，讓他願意為了它延遲滿足。</p>
-    <div class="real">📌 <b>我的做法：</b>我和兒子訂下「<b>大學畢業前存到 100 萬</b>」。這個數字，把壓歲錢、獎金、省下的補習費全都串起來，變成一條他自己想走完的路。</div>
-    <div class="tonight"><span class="tag">今晚</span><div>跟孩子聊一次：「我們一起訂一個數字、一個時間點，好不好？」——那一刻，第一桶金就真正開始了。</div></div>
+    <div class="real"><b>我的做法 —</b> 我和兒子訂下「<b>大學畢業前存到 100 萬</b>」。這個數字，把壓歲錢、獎金、省下的補習費全都串起來，變成一條他自己想走完的路。</div>
+    <div class="tonight"><span class="tag">今晚</span><div>吃完飯，跟孩子說一句：「我們一起訂個數字、訂個時間，好不好？」——當他點頭的那一刻，這不只是他的第一桶金，是你們父子之間，多了一件<strong>只屬於你們倆的事</strong>。</div></div>
   </div>
 
   <!-- CTA -->
@@ -162,9 +179,9 @@
     <div class="eyebrow"><span class="sun"></span>下一步</div>
     <h2 class="serif">你不用一次到位，先做第 1 步</h2>
     <p>這 5 步，我兒子真的在做。你今晚先挑一步開始，就贏過 90% 只焦慮、卻沒動的爸媽。</p>
-    <p>想要更完整的「<strong>分齡版：不同年紀怎麼帶</strong>」＋複利、補習費試算工具？</p>
-    <div class="key">在 IG 留言或私訊「地圖」，我親自傳給你</div>
-    <div class="handle">追蹤 @jeff.walk2light · 看退休理財爸爸 × 神祕學霸兒子的 30 天賭局</div>
+    <p>你家孩子幾歲、該從哪一步開始，其實不一樣——<strong>3 歲、10 歲、15 歲，帶法完全不同。</strong></p>
+    <div class="key">在 IG 私訊「地圖」，我把分齡版親手傳給你</div>
+    <div class="handle">一個爸爸，給另一個爸媽 · 追蹤 @jeff.walk2light，看退休理財爸爸 × 神祕學霸兒子的 30 天賭局</div>
   </div>
 
   <!-- 免責 -->
