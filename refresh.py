@@ -90,5 +90,69 @@ d["updated"] = now.strftime("%Y-%m-%d %H:%M 台北")
 d["dday"] = (datetime.date(2026, 7, 10) - now.date()).days
 d["day"] = (now.date() - datetime.date(2026, 6, 10)).days       # 主集 Reel 集數＝日期−10（6/20＝Day10）
 d["warday"] = (now.date() - datetime.date(2026, 6, 11)).days    # 🔴 戰況卡天數＝日期−11（6/20＝第9天），兩套別混
+
+# ── 每日追蹤數快照 + social 版圖各期間增量 ─────────────────────────
+# 把今天各平台數字寫進 history[YYYY-MM-DD]；再用歷史回推 昨日/週/季/半年/年 增量。
+# 有幾天歷史就算幾天；完全沒參考點 → value=null 標「資料待接」。
+PLAT_METRIC = {"ig": "followers", "yt": "subs", "fb": "followers", "threads": "followers", "site": "users"}
+RANGE_DAYS = {"day": 1, "week": 7, "quarter": 90, "half": 182, "year": 365}
+
+def cur_val(p):
+    c = ch.get(p, {})
+    v = c.get(PLAT_METRIC[p])
+    try:
+        return int(v) if v is not None else None
+    except (TypeError, ValueError):
+        return None
+
+today = now.strftime("%Y-%m-%d")
+hist = d.setdefault("history", {})
+snap = {p: cur_val(p) for p in PLAT_METRIC}
+hist[today] = snap   # 同日多次執行→覆蓋成最新一筆
+
+# 只保留最近 ~400 天，避免無限長
+if len(hist) > 420:
+    for k in sorted(hist.keys())[:-400]:
+        hist.pop(k, None)
+
+def nearest_on_or_before(target_date):
+    """回傳 <= target_date 的最近一筆快照日期字串，找不到回 None。"""
+    cand = [k for k in hist.keys() if k <= target_date]
+    return max(cand) if cand else None
+
+def delta_for(p, span_days):
+    """以今天為基準回推 span_days 天的增量。回 (value, days, note)。"""
+    today_d = now.date()
+    target = (today_d - datetime.timedelta(days=span_days)).strftime("%Y-%m-%d")
+    base_key = nearest_on_or_before(target)
+    # 找不到剛好區間起點 → 退而用「擁有的最早一筆」算「有幾天算幾天」
+    if base_key is None:
+        earliest = min(hist.keys()) if hist else None
+        if earliest is None or earliest >= today:
+            return None, 0, "資料待接"
+        base_key = earliest
+    base = hist.get(base_key, {}).get(p)
+    nowv = snap.get(p)
+    if base is None or nowv is None:
+        return None, 0, "資料待接"
+    actual_days = (today_d - datetime.date.fromisoformat(base_key)).days
+    if actual_days <= 0:
+        return None, 0, "資料待接"
+    return nowv - base, actual_days, ""
+
+soc = d.get("social", {})
+for plat in soc.get("platforms", []):
+    pk = plat.get("key")
+    if pk not in PLAT_METRIC:
+        continue
+    plat["current"] = snap.get(pk) if snap.get(pk) is not None else plat.get("current")
+    dd = plat.setdefault("delta", {})
+    for rk, span in RANGE_DAYS.items():
+        val, days, note = delta_for(pk, span)
+        dd[rk] = {"value": val, "days": days, "note": note}
+d["social"] = soc
+print("快照寫入", today, snap)
+# ───────────────────────────────────────────────────────────────
+
 json.dump(d, open(P, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 print(f"data.json 更新 · 戰況第{d['warday']}天 · 主集 Day{d['day']} · D-{d['dday']}")
