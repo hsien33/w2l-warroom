@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-20 05:42 台北",
-  "followers": 354,
+  "updated": "2026-06-20 16:18 台北",
+  "followers": 357,
   "goal": 1000,
   "dday": 20,
   "day": 10,
@@ -239,5 +239,24 @@
       }
     ]
   },
-  "warday": 9
+  "warday": 9,
+  "channels": {
+    "ig": {
+      "followers": 357,
+      "live": true,
+      "updated": "06/20 16:18"
+    },
+    "yt": {
+      "live": false
+    },
+    "fb": {
+      "live": false
+    },
+    "threads": {
+      "live": false
+    },
+    "site": {
+      "live": false
+    }
+  }
 }
