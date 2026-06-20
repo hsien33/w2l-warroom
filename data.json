@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20 12:49 台北",
+  "updated": "2026-06-20 05:42 台北",
   "followers": 354,
   "goal": 1000,
   "dday": 20,
@@ -26,9 +26,9 @@
       "name": "FB 金句卡",
       "auto": "Publer 排程",
       "stock": "7 天",
-      "through": "DAY 015",
+      "through": "DAY015 已發 · DAY016-025 圓桌定版待排",
       "status": "ok",
-      "note": ""
+      "note": "觀念週10張已登錄金句庫"
     },
     {
       "name": "導流工具",
@@ -174,46 +174,34 @@
   ],
   "decisions": [
     {
-      "tag": "truth",
+      "p": "P0",
+      "t": "Day11：當天熱點＋兒子真問過的時事題（機動集）",
+      "g": "卡 Day11 真人/時事卡"
+    },
+    {
       "p": "P0",
       "t": "Day12：班排第一那 1500 兒子真實去向？（整集 punchline）",
-      "blocks": "卡 Day12＋重溫 Shorts"
+      "g": "卡 Day12"
     },
     {
-      "tag": "truth",
       "p": "P0",
-      "t": "Day16：兒子有沒有真考過你哪個財經題？原話＋你的反應",
-      "blocks": "卡 Day16 真人集"
+      "t": "Day16：兒子有沒有真考過你「比特幣是不是龐氏」？原話＋你的答案",
+      "g": "卡 Day16 真人集"
     },
     {
-      "tag": "truth",
       "p": "P0",
-      "t": "Day17：你投資生涯最後悔的一筆？（匿名講、不報數字）",
-      "blocks": "卡 Day17 真人集"
+      "t": "Day20：當天熱點＋兒子真問/真回應（機動集）",
+      "g": "卡 Day20"
     },
     {
-      "tag": "truth",
       "p": "P1",
-      "t": "Day13：兒子小學真實書單＋能否拍書封？",
-      "blocks": "卡 Day13 輪播素材"
+      "t": "開跨平台分發：跑 oauth_threads.js / oauth_fb.js 拿權杖→設 GitHub Secret",
+      "g": "戰況卡/Reel 自動轉 Threads＋FB"
     },
     {
-      "tag": "truth",
-      "p": "P1",
-      "t": "Day18：MVP「小六打到高三」是什麼比賽？真實背景",
-      "blocks": "卡 Day18 賽事敘述"
-    },
-    {
-      "tag": "decide",
-      "p": "P1",
-      "t": "觀念金句卡定版：10 張草稿 vs FB盤點提案（DAY016-022 撞父子線）",
-      "blocks": "本批 FB 金句卡上排"
-    },
-    {
-      "tag": "decide",
       "p": "P2",
-      "t": "重溫 Shorts 線是否今天啟動？10 支企劃已備",
-      "blocks": "YT/IG 重溫曝光"
+      "t": "Day13：兒子小學完整書單（你說會整理傳來·不擋發）",
+      "g": "第一則留言做成真清單"
     }
   ],
   "editorReview": {
@@ -250,5 +238,6 @@
         "label": "補習費待核"
       }
     ]
-  }
+  },
+  "warday": 9
 }

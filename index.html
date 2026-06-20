@@ -359,12 +359,12 @@ const DONE=[
   {ic:"📊",n:"會考倒數 / 私中試算",r:"升學倒數＋私中vs公立費用試算 · 已上線",own:"工具工廠 session"},
 ];
 const CHANNELS=[
-  {ic:"▶",p:"YouTube",a:"投資 · 房市 · 理財",v:"2",vu:"萬訂閱",note:"重溫線待啟動",c:"--coral"},
-  {ic:"✉",p:"Email · KIT",a:"理財老客（皇冠資產）",v:"3,275",vu:"訂閱",note:"72% 開信 · 待喚醒",c:"--amber"},
-  {ic:"◎",p:"Instagram",a:"父子 · 親子升學",v:"345",vu:"追蹤",note:"父子對決衝刺 D-21",c:"--coral",hot:true},
-  {ic:"f",p:"Facebook",a:"教養爸媽",v:"DAY",vu:"連續劇",note:"DAY006 已排程",c:"--sky"},
-  {ic:"@",p:"Threads",a:"IG 延伸",v:"同步",vu:"",note:"跟發連動",c:"--violet"},
-  {ic:"◍",p:"官網",a:"SEO 入口",v:"89",vu:"頁",note:"new.walk2light.com",c:"--mint"},
+  {ic:"▶",p:"YouTube",a:"投資 · 房市 · 理財",v:"—",vu:"",note:"待接 YT API · 即時訂閱",c:"--coral"},
+  {ic:"✉",p:"Email · KIT",a:"理財老客（皇冠資產）",v:"3,275",vu:"訂閱",note:"72% 開信（KIT 後台值）",c:"--amber"},
+  {ic:"◎",p:"Instagram",a:"父子 · 親子升學",v:"354",vu:"追蹤",note:"即時 · 父子對決衝刺",c:"--coral",hot:true},
+  {ic:"f",p:"Facebook",a:"教養爸媽",v:"—",vu:"",note:"待接粉專 API · 即時追蹤＋最新貼文",c:"--sky"},
+  {ic:"@",p:"Threads",a:"IG 延伸",v:"—",vu:"",note:"待設權杖 · 即時追蹤",c:"--violet"},
+  {ic:"◍",p:"官網",a:"SEO 入口",v:"—",vu:"",note:"待埋 GA4 · 即時瀏覽",c:"--mint"},
 ];
 const ENGINES=[
   {n:"配音引擎 VoxCPM（聲音克隆）",s:"運行中"},
@@ -656,9 +656,22 @@ secs.forEach(s=>s&&io.observe(s));
     if(D.dday!=null){const d=document.getElementById('dday'); if(d) d.textContent='D-'+D.dday;}
     if(D.day!=null){
       const m=document.getElementById('mday'); if(m) m.textContent='Day '+D.day;
-      const w=document.getElementById('wday'); if(w) w.textContent='第 '+D.day+' 天';
+      const wd=(D.warday!=null)?D.warday:(D.day-1);   // 戰況卡＝日期−11＝主集−1；別跟主集混
+      const w=document.getElementById('wday'); if(w) w.textContent='第 '+wd+' 天';
       const hm=document.querySelector('#hero .hmeta span:last-child');
       if(hm) hm.textContent='Day '+D.day+(D.dday!=null?' · D-'+D.dday:'');
+    }
+    if(D.channels){
+      const C=D.channels, tiles=document.querySelectorAll('#channels .ch');
+      const fmt=n=>(n==null?'':(+n).toLocaleString('en-US'));
+      const setTile=(i,val,unit,note)=>{ const t=tiles[i]; if(!t)return;
+        const cv=t.querySelector('.cv'); if(cv&&val!=null){ cv.firstChild.textContent=val;
+          const cu=cv.querySelector('.cu'); if(cu&&unit!=null) cu.textContent=unit; }
+        if(note!=null){ const cn=t.querySelector('.cnote'); if(cn) cn.innerHTML='<span class="d"></span>'+note; } };
+      if(C.yt&&C.yt.live)      setTile(0, fmt(C.yt.subs), ' 訂閱', '即時 · '+fmt(C.yt.views)+' 次觀看');
+      if(C.fb&&C.fb.live)      setTile(3, fmt(C.fb.followers), ' 追蹤', C.fb.last_time?('最新 '+C.fb.last_time+'：'+(C.fb.last_msg||'')):'已連動');
+      if(C.threads&&C.threads.live) setTile(4, fmt(C.threads.followers), ' 追蹤', '即時 · '+(C.threads.updated||''));
+      if(C.site&&C.site.live)  setTile(5, fmt(C.site.pageviews), ' 瀏覽', 'GA4 · 近 7 天');
     }
     const th=document.querySelector('#hero .todo-hero');
     if(th){ if(D.alert){th.innerHTML='⚠ '+D.alert; th.style.display='';} else { th.style.display='none'; } }
