@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-20 20:25 台北",
-  "followers": 361,
+  "updated": "2026-06-20 21:21 台北",
+  "followers": 364,
   "goal": 1000,
   "dday": 20,
   "day": 10,
@@ -242,12 +242,16 @@
   "warday": 9,
   "channels": {
     "ig": {
-      "followers": 361,
+      "followers": 364,
       "live": true,
-      "updated": "06/20 20:25"
+      "updated": "06/20 21:21"
     },
     "yt": {
-      "live": false
+      "subs": 19700,
+      "views": 804420,
+      "videos": 31,
+      "live": true,
+      "updated": "06/20 21:21"
     },
     "fb": {
       "live": false
@@ -255,7 +259,7 @@
     "threads": {
       "followers": 30,
       "live": true,
-      "updated": "06/20 20:25"
+      "updated": "06/20 21:21"
     },
     "site": {
       "live": false
