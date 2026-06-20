@@ -668,7 +668,7 @@ secs.forEach(s=>s&&io.observe(s));
         const cv=t.querySelector('.cv'); if(cv&&val!=null){ cv.firstChild.textContent=val;
           const cu=cv.querySelector('.cu'); if(cu&&unit!=null) cu.textContent=unit; }
         if(note!=null){ const cn=t.querySelector('.cnote'); if(cn) cn.innerHTML='<span class="d"></span>'+note; } };
-      if(C.yt&&C.yt.live)      setTile(0, fmt(C.yt.subs), ' 訂閱', '即時 · '+fmt(C.yt.views)+' 次觀看');
+      if(C.yt&&C.yt.live)      setTile(0, '約 '+fmt(C.yt.subs), ' 訂閱', 'YT API 取整 · '+fmt(C.yt.views)+' 次觀看');
       if(C.fb&&C.fb.live)      setTile(3, fmt(C.fb.followers), ' 追蹤', C.fb.last_time?('最新 '+C.fb.last_time+'：'+(C.fb.last_msg||'')):'已連動');
       if(C.threads&&C.threads.live) setTile(4, fmt(C.threads.followers), ' 追蹤', '即時 · '+(C.threads.updated||''));
       if(C.site&&C.site.live)  setTile(5, fmt(C.site.pageviews), ' 瀏覽', 'GA4 · 近 7 天');
