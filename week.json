@@ -58,5 +58,5 @@
     }
   },
   "shorts_cron": false,
-  "shorts_status": "producing"
+  "shorts_status": "paused"
 }
