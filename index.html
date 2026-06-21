@@ -671,64 +671,68 @@ function renderWeek(cfg){
     const iso=isoOf(d);
     const warDay=daysBetween(cfg.warcard_start,d), reelDay=daysBetween(cfg.reel_start,d);
 
+    const C=cfg.reels_content||{}, SC=cfg.social_content||{};
+    const miss=t=>'<b>未排 · 差什麼</b>｜'+t;   /* 紅色一律寫清楚「差什麼才會綠」*/
+
     /* IG 戰況卡：真有每日 cron＝已排程（內容即時生成、不靠庫存）→ cron 開才綠 */
     const slotWar={t:'08:00',ch:'IG 戰況卡',state:cfg.warcard_cron?'green':'red',
       label:cfg.warcard_cron
-        ?'<b>第'+warDay+'天戰況 · 已排程</b>｜每天上午 cron 真的會自動發 IG（2 班備援），即時抓追蹤數、零人工。'
-        :'<b>未排</b>｜戰況卡 cron 未開。'};
+        ?'<b>第'+warDay+'天戰況卡 · 已排程</b>｜這天會發的內容：開盤前自動抓「即時追蹤數」算戰況、出黑金卡發 IG（每天即時生成、不固定）。'
+        :miss('戰況卡 cron 沒開——差：去 warcard.yml 開排程。')};
 
     /* FB 社團文：只在「週二、週五」發。非這兩天＝本日不發(灰)；週二/五才看已備(黃)/未排(紅) */
     const isClubDay=(d.getDay()===2||d.getDay()===5);  /* 2=週二 5=週五 */
-    const clubPrepared=prepared.has(iso);
     let slotClub;
     if(!isClubDay){
       slotClub={t:'12:00',ch:'FB 社團文',state:'off',
         label:'<b>本日不發</b>｜社團文固定只在「週二、週五」發，今天不是社團文發文日。'};
+    }else if(SC[iso]){
+      const sc=SC[iso];
+      slotClub={t:'12:00',ch:'FB 社團文',state:'yellow',
+        label:'<b>'+esc(sc.title||'已備好')+'</b>｜這天會貼的內容：'+esc(sc.preview||'')+'（文稿＋圖＋首留言在「桌面成品\\社團文_本週」，19:30 LINE 提醒你手貼）。'};
     }else{
-      slotClub={t:'12:00',ch:'FB 社團文',state:clubPrepared?'yellow':'red',
-        label:clubPrepared
-          ?'<b>內容已備好 · 待你貼（非自動排程）</b>｜文稿＋圖＋第一則留言在「桌面成品\\社團文_本週」，當天 19:30 LINE 提醒（FB 社團無法 API 全自動）。'
-          :'<b>未排</b>｜週二/五要發、但這天還沒備好內容。'};
+      slotClub={t:'12:00',ch:'FB 社團文',state:'red',
+        label:miss('週二/五是發文日、但這天內容還沒備——差：產這天的社團文＋圖＋首留言。')};
     }
 
     /* Shorts：cron 沒開＝沒排程。製作中＝黃；上線(cron開)＝綠 */
     const ss=cfg.shorts_status||'none';
     const slotShorts={t:'18:00',ch:'Shorts',
       state: cfg.shorts_cron?'green':(ss==='producing'?'yellow':'red'),
-      label: cfg.shorts_cron?'<b>已排程</b>｜cron 真的會自動上傳 YouTube Shorts。'
-           : ss==='producing'?'<b>製作中（尚未排程）</b>｜正用「複利有聲」那套做你的聲音＋實拍 b-roll 版；做好你核可才會排上去。'
-           : '<b>未排</b>｜待製作。'};
+      label: cfg.shorts_cron?'<b>已排程</b>｜cron 會自動上傳 YouTube Shorts（unlisted）。'
+           : ss==='producing'?'<b>製作中（尚未排程）</b>｜這支會發的內容：「複利有聲」那套＝你的聲音＋實拍 b-roll＋金字＋圖表。差：你看過王牌成品點頭→ready 改 true 才會排上去（YT 金鑰已設好）。'
+           : miss('Shorts 還沒做、cron 沒開——差：做成品＋你核可＋開 cron。')};
 
-    /* FB 粉專金句卡：綠＝真有 cron＋隊列裡第 i 張是你核可的卡（隊列來自 schedule.json，非日期算）*/
+    /* FB 粉專金句卡：綠＝真有 cron＋隊列裡第 i 張是你核可的卡 */
     let slotFbq;
     if(cfg.fbquote_cron && i<fbq.length){
       const c=fbq[i];
       slotFbq={t:'20:00',ch:'FB 粉專金句卡',state:'green',
-        label:'<b>DAY'+c.day+' '+(c.topic||'')+' · 已在排程隊列</b>｜你核可的卡，每晚 20:07 cron 依序自動發 FB 粉專（與 Publer 互備不雙發）。'};
+        label:'<b>DAY'+c.day+' '+esc(c.topic||'')+' · 已排程</b>｜這天會發的金句：「'+esc(c.content||'')+'」（每晚 20:07 cron 自動發 FB 粉專、與 Publer 互備不雙發）。'};
     }else{
       slotFbq={t:'20:00',ch:'FB 粉專金句卡',state:'red',
         label: cfg.fbquote_cron
-          ?'<b>排程隊列已空（本系列發完）</b>｜要排下一週：把新卡＋文案加進 schedule，核可後才會變綠。'
-          :'<b>未排</b>｜金句卡 cron 未開。'};
+          ? miss('本系列(到 DAY15)發完了——差：排下一週金句卡(新卡＋文案)、你核可進 schedule。')
+          : miss('金句卡 cron 沒開。')};
     }
 
-    /* IG 主 Reel：綠＝reels/schedule.json 真有登錄這集（庫存）；沒登錄＝紅 */
+    /* IG 主 Reel：綠＝reels/schedule.json 真有登錄這集 */
     const reelOk=inv.has(reelDay);
     const slotReel={t:'20:30',ch:'IG 主 Reel',state:reelOk?'green':'red',
-      label:reelOk?('<b>Day'+reelDay+' 已排程</b>｜schedule.json 真有這集、影片已備，今晚 20:30 cron 自動發 IG（＋轉 FB）。')
-                  :('<b>Day'+reelDay+' 未排</b>｜schedule.json 沒登錄這集（影片還沒做），不會發。')};
+      label:reelOk?('<b>Day'+reelDay+' · 已排程</b>｜這天會發的內容：'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（今晚 20:30 cron 自動發 IG＋轉 FB）。')
+                  :miss('Day'+reelDay+' 這集還沒做——差：腳本→拍/配音(過逐句聽稿)→出片→登錄 schedule.json。')};
 
-    /* Thread 改寫：綠＝真有 cron＋隊列裡第 i 篇是你核可的（隊列來自 thread schedule.json）*/
+    /* Thread 改寫：綠＝真有 cron＋隊列裡第 i 篇是你核可的 */
     let slotThread;
     if(cfg.thread_cron && i<thq.length){
       const tq=thq[i];
       slotThread={t:'21:00',ch:'Thread 改寫',state:'green',
-        label:'<b>對應 Day'+tq.day+'（'+(tq.topic||'')+'）· 已在排程隊列</b>｜你核可的改寫文，每晚 21:00 cron 依序自動發 Threads（連結進第一則留言）。'};
+        label:'<b>對應 Day'+tq.day+'（'+esc(tq.topic||'')+'）· 已排程</b>｜這天會發的內容：「'+esc(tq.content||'')+'」（每晚 21:00 cron 自動發 Threads、連結進第一則留言）。'};
     }else{
       slotThread={t:'21:00',ch:'Thread 改寫',state:'red',
         label: cfg.thread_cron
-          ?'<b>排程隊列已空</b>｜要再排：多寫幾篇 Thread 改寫、核可後才會變綠。'
-          :'<b>未排</b>｜Thread cron 未開。'};
+          ? miss('Thread 改寫文發完了——差：再寫幾篇(對應之後的 Reel)、你審過進 schedule。')
+          : miss('Thread cron 沒開。')};
     }
 
     days.push({mmdd:(d.getMonth()+1)+'/'+d.getDate(),dow:DOW[d.getDay()],today:i===0,edge:i>=4,

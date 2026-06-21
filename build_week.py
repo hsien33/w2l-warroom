@@ -25,8 +25,19 @@ def grep_start(path, key, default):
 reel_start    = grep_start(os.path.join(WC, "src", "post_reel.py"), "REEL_START",    "2026-06-10")
 warcard_start = grep_start(os.path.join(WC, "src", "daily.py"),     "WARCARD_START", "2026-06-11")
 
-# ── 2. 主集 Reel 庫存：reels/schedule.json 內「有登錄且 mp4 存在」的集數 ──
-reels_inventory = []
+# ── 共用：從一段文字取「內容預覽」（金句卡取『帶走一句』、其餘取首行；去空白、截斷）──
+def preview_of(text, n=48):
+    if not text: return ""
+    for line in str(text).splitlines():
+        s = line.strip()
+        if s.startswith("帶走一句"):
+            return s.replace("：", ":").split(":", 1)[-1].strip()
+    first = (str(text).strip().splitlines() or [""])[0].strip()
+    return first[:n] + ("…" if len(first) > n else "")
+
+# ── 2. 主集 Reel 庫存＋每集文案預覽：reels/schedule.json 內「有登錄且 mp4 存在」的集數 ──
+reels_inventory = []          # 仍給舊用途
+reels_content = {}            # day -> 文案首行預覽
 try:
     sched = read_json(os.path.join(WC, "reels", "schedule.json"))
     for k, v in sched.items():
@@ -34,6 +45,7 @@ try:
         f = v.get("file") if isinstance(v, dict) else v
         if f and os.path.exists(os.path.join(WC, "reels", f)):
             reels_inventory.append(int(k))
+            reels_content[str(int(k))] = preview_of(v.get("caption", "") if isinstance(v, dict) else "")
 except Exception as e:
     print("讀 reels/schedule.json 失敗：", e)
 reels_inventory.sort()
@@ -64,23 +76,25 @@ prev = {}
 try: prev = read_json(os.path.join(HERE, "week.json"))
 except Exception: pass
 
-# ── 4. FB 金句卡「真實待發隊列」＝schedule.json 裡 day > posted_through 的卡（你核可、還沒發）──
+# ── 4. FB 金句卡「真實待發隊列」＝schedule.json 裡 day > posted_through 的卡（你核可、還沒發）＋金句預覽 ──
 POSTED_THROUGH = prev.get("fbquote_posted_through", 12)   # 雲端 dry-run 真讀 FB 得知；發過更多就改這數
 fbq_queue = []
 try:
     cards = read_json(os.path.join(WC, "fb_quote", "schedule.json"))["cards"]
     for c in sorted(cards, key=lambda c: int(c["day"])):
         if int(c["day"]) > POSTED_THROUGH:
-            fbq_queue.append({"day": int(c["day"]), "topic": c.get("topic", "")})
+            fbq_queue.append({"day": int(c["day"]), "topic": c.get("topic", ""),
+                              "content": preview_of(c.get("caption", ""))})
 except Exception as e:
     print("讀 fb_quote/schedule.json 失敗：", e)
 
-# ── 5. Thread「真實待發隊列」＝thread_rewrite/schedule.json 裡的 posts（你核可、還沒發）──
+# ── 5. Thread「真實待發隊列」＝thread_rewrite/schedule.json 裡的 posts（你核可、還沒發）＋正文預覽 ──
 thread_queue = []
 try:
     posts = read_json(os.path.join(WC, "thread_rewrite", "schedule.json"))["posts"]
     for p in sorted(posts, key=lambda p: int(p["day"])):
-        thread_queue.append({"day": int(p["day"]), "topic": p.get("topic", "")})
+        thread_queue.append({"day": int(p["day"]), "topic": p.get("topic", ""),
+                             "content": preview_of(p.get("body", ""))})
 except Exception as e:
     print("讀 thread_rewrite/schedule.json 失敗：", e)
 
@@ -95,8 +109,10 @@ out = {
     "fbquote_queue": fbq_queue,
     "fbquote_posted_through": POSTED_THROUGH,
     "reels_inventory": reels_inventory,
-    # 人工維護：本週已備好的社團文日期（YYYY-MM-DD）、Shorts 線狀態（none/producing/live）
+    "reels_content": reels_content,
+    # 人工維護：本週已備好的社團文（日期→{title,preview}）、Shorts 線狀態（none/producing/live）
     "social_prepared": prev.get("social_prepared", []),
+    "social_content": prev.get("social_content", {}),
     "shorts_cron": shorts_cron,
     "shorts_status": prev.get("shorts_status", "none"),
 }
