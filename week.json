@@ -1,27 +1,43 @@
 {
-  "updated": "2026-06-21",
+  "updated": "2026-06-21 12:24Z",
   "warcard_start": "2026-06-11",
   "reel_start": "2026-06-10",
-
   "warcard_cron": true,
-
   "thread_cron": true,
   "thread_queue": [
-    { "day": 10, "topic": "需要 vs 想要" },
-    { "day": 11, "topic": "把進度握回自己手裡" }
+    {
+      "day": 10,
+      "topic": "需要 vs 想要"
+    },
+    {
+      "day": 11,
+      "topic": "把進度握回自己手裡"
+    }
   ],
-
   "fbquote_cron": true,
   "fbquote_queue": [
-    { "day": 13, "topic": "過度自信" },
-    { "day": 14, "topic": "假老師詐騙" },
-    { "day": 15, "topic": "收官" }
+    {
+      "day": 13,
+      "topic": "過度自信"
+    },
+    {
+      "day": 14,
+      "topic": "假老師詐騙"
+    },
+    {
+      "day": 15,
+      "topic": "收官"
+    }
   ],
-
-  "reels_inventory": [10, 11],
-
-  "social_prepared": ["2026-06-23", "2026-06-26"],
-
+  "fbquote_posted_through": 12,
+  "reels_inventory": [
+    10,
+    11
+  ],
+  "social_prepared": [
+    "2026-06-23",
+    "2026-06-26"
+  ],
   "shorts_cron": false,
   "shorts_status": "producing"
 }

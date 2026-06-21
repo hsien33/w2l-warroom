@@ -38,66 +38,66 @@ except Exception as e:
     print("讀 reels/schedule.json 失敗：", e)
 reels_inventory.sort()
 
-# ── 3. FB 粉專金句卡：是否上線（fb_quote.yml 的 schedule cron 有沒有被註解）＋待發隊列 ──
-fbq_live = False
-try:
-    yml = io.open(os.path.join(WC, ".github", "workflows", "fb_quote.yml"), encoding="utf-8").read()
-    # 找 schedule: 區塊下是否有「未被註解」的 - cron
+# ── 共用：某 workflow 的 schedule cron 是否「未被註解」＝該線 cron 真的開著 ──
+def cron_active(yml_name):
+    try:
+        yml = io.open(os.path.join(WC, ".github", "workflows", yml_name), encoding="utf-8").read()
+    except Exception as e:
+        print(f"讀 {yml_name} 失敗：", e); return False
     in_sched = False
     for line in yml.splitlines():
         s = line.strip()
         if s.startswith("schedule:") and not s.startswith("#"): in_sched = True; continue
         if in_sched:
-            if s.startswith("- cron:"): fbq_live = True; break
-            if s and not s.startswith("#") and not s.startswith("-"): in_sched = False  # 離開 schedule 區塊
-except Exception as e:
-    print("讀 fb_quote.yml 失敗：", e)
-
-# 金句卡 schedule（day→topic）；posted_through＝已驗證在 FB 上發到第幾天（雲端 dry-run 真讀 FB 得知）
-fbq_topics = {}
-fbq_last = 0
-try:
-    fq = read_json(os.path.join(WC, "fb_quote", "schedule.json"))["cards"]
-    for c in fq:
-        fbq_topics[int(c["day"])] = c.get("topic", "")
-        fbq_last = max(fbq_last, int(c["day"]))
-except Exception as e:
-    print("讀 fb_quote/schedule.json 失敗：", e)
-# ── 4. Thread 改寫線是否上線（thread_rewrite.yml schedule cron 有沒有被註解）──
-thread_live = False
-try:
-    yml = io.open(os.path.join(WC, ".github", "workflows", "thread_rewrite.yml"), encoding="utf-8").read()
-    in_sched = False
-    for line in yml.splitlines():
-        s = line.strip()
-        if s.startswith("schedule:") and not s.startswith("#"): in_sched = True; continue
-        if in_sched:
-            if s.startswith("- cron:"): thread_live = True; break
+            if s.startswith("- cron:"): return True
             if s and not s.startswith("#") and not s.startswith("-"): in_sched = False
-except Exception as e:
-    print("讀 thread_rewrite.yml 失敗：", e)
+    return False
+
+# ── 3. 各線 cron 是否真的開著（＝有沒有設時程）──
+warcard_cron = cron_active("warcard.yml")
+fbq_cron     = cron_active("fb_quote.yml")
+thread_cron  = cron_active("thread_rewrite.yml")
+shorts_cron  = cron_active("shorts.yml")
 
 # 既有 week.json 的「人工維護欄」要保留（不被自動重算洗掉）
 prev = {}
 try: prev = read_json(os.path.join(HERE, "week.json"))
 except Exception: pass
 
+# ── 4. FB 金句卡「真實待發隊列」＝schedule.json 裡 day > posted_through 的卡（你核可、還沒發）──
+POSTED_THROUGH = prev.get("fbquote_posted_through", 12)   # 雲端 dry-run 真讀 FB 得知；發過更多就改這數
+fbq_queue = []
+try:
+    cards = read_json(os.path.join(WC, "fb_quote", "schedule.json"))["cards"]
+    for c in sorted(cards, key=lambda c: int(c["day"])):
+        if int(c["day"]) > POSTED_THROUGH:
+            fbq_queue.append({"day": int(c["day"]), "topic": c.get("topic", "")})
+except Exception as e:
+    print("讀 fb_quote/schedule.json 失敗：", e)
+
+# ── 5. Thread「真實待發隊列」＝thread_rewrite/schedule.json 裡的 posts（你核可、還沒發）──
+thread_queue = []
+try:
+    posts = read_json(os.path.join(WC, "thread_rewrite", "schedule.json"))["posts"]
+    for p in sorted(posts, key=lambda p: int(p["day"])):
+        thread_queue.append({"day": int(p["day"]), "topic": p.get("topic", "")})
+except Exception as e:
+    print("讀 thread_rewrite/schedule.json 失敗：", e)
+
 out = {
     "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%MZ"),
-    "reel_start": reel_start,
     "warcard_start": warcard_start,
+    "reel_start": reel_start,
+    "warcard_cron": warcard_cron,
+    "thread_cron": thread_cron,
+    "thread_queue": thread_queue,
+    "fbquote_cron": fbq_cron,
+    "fbquote_queue": fbq_queue,
+    "fbquote_posted_through": POSTED_THROUGH,
     "reels_inventory": reels_inventory,
-    "thread_live": thread_live,
-    "fbquote": {
-        "live": fbq_live,
-        # anchor：金句卡發到哪由「某基準日=某DAY」推算（前端按日期自動推進）。重跑時若已發到更新天數，改這兩個值。
-        "anchor_date": (prev.get("fbquote") or {}).get("anchor_date", "2026-06-21"),
-        "anchor_day": (prev.get("fbquote") or {}).get("anchor_day", 13),
-        "last_day": fbq_last,
-        "topics": {str(k): v for k, v in fbq_topics.items()},
-    },
     # 人工維護：本週已備好的社團文日期（YYYY-MM-DD）、Shorts 線狀態（none/producing/live）
     "social_prepared": prev.get("social_prepared", []),
+    "shorts_cron": shorts_cron,
     "shorts_status": prev.get("shorts_status", "none"),
 }
 
