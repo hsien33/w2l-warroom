@@ -163,24 +163,36 @@
 
   /* ── ⑥ 未來一周進度 ── */
   .wpgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
-  .wp-day{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:13px 12px;box-shadow:var(--sh);transition:.18s}
+  .wp-day{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:12px 11px;box-shadow:var(--sh);transition:.18s;position:relative}
   .wp-day:hover{box-shadow:var(--sh2)}
   .wp-day.today{border-color:var(--gold);box-shadow:0 0 0 2px rgba(201,164,76,.3),var(--sh)}
-  .wp-day .wdate{display:flex;align-items:baseline;gap:6px;padding-bottom:9px;margin-bottom:9px;border-bottom:1px solid var(--line)}
+  .wp-day .wdate{display:flex;align-items:baseline;gap:6px;padding-bottom:9px;margin-bottom:8px;border-bottom:1px solid var(--line)}
   .wp-day .wdate .dd{font-family:var(--tc);font-weight:800;font-size:16px}
   .wp-day .wdate .wk{font-family:var(--tc);font-size:12px;color:var(--dim)}
   .wp-day .wdate .nowtag{margin-left:auto;font-family:var(--tc);font-size:10px;font-weight:800;color:var(--gold-d);background:#fbf2da;border-radius:6px;padding:2px 6px}
-  .slot{display:flex;gap:7px;padding:7px 0;align-items:flex-start}
-  .slot+.slot{border-top:1px dashed var(--line)}
-  .slot .stime{font-family:var(--tc);font-size:10.5px;font-weight:800;color:var(--faint);flex:none;width:34px;margin-top:2px}
-  .slot.ok .stime{color:var(--mint)} .slot.no .stime{color:var(--coral)}
-  .slot .smid{flex:1;min-width:0}
-  .slot .sch{font-family:var(--tc);font-size:12px;font-weight:800;color:var(--ink);line-height:1.35}
-  .slot .stask{font-family:var(--tc);font-size:11px;color:var(--mid);line-height:1.35;margin-top:1px}
-  .slot .ssta{font-family:var(--tc);font-size:10px;font-weight:800;flex:none;margin-top:2px;border-radius:6px;padding:2px 7px;white-space:nowrap}
-  .slot .ssta.sched{color:var(--mint);background:var(--mint-s)}
-  .slot .ssta.unsched{color:var(--coral);background:var(--coral-s)}
   .wp-day .wdate .wcount{margin-left:auto;font-family:var(--tc);font-size:10px;font-weight:800;color:var(--dim);background:#efe8d8;border-radius:6px;padding:2px 6px}
+  /* 一行一檔：平常只給 時間+通路+狀態，乾淨；摘要懸停才浮出 */
+  .slot{position:relative;display:flex;gap:7px;align-items:center;padding:7px 9px;border-radius:9px;margin-bottom:5px;cursor:default;transition:.14s}
+  .slot:last-child{margin-bottom:0}
+  .slot .stime{font-family:var(--tc);font-size:10px;font-weight:800;flex:none;width:32px;letter-spacing:-.3px}
+  .slot .sch{font-family:var(--tc);font-size:12.5px;font-weight:800;flex:1;min-width:0;line-height:1.3}
+  .slot .ssta{font-family:var(--tc);font-size:9.5px;font-weight:800;flex:none;border-radius:999px;padding:2px 8px;white-space:nowrap}
+  /* 已排定＝淡金 */
+  .slot.ok{background:#fbf4e0}
+  .slot.ok .stime{color:#b88a26} .slot.ok .sch{color:#5c4a1e}
+  .slot.ok .ssta{color:#8a6410;background:#f0dca0}
+  /* 未排定＝紅底（明顯） */
+  .slot.no{background:#f6ddd8}
+  .slot.no .stime{color:#c2554a} .slot.no .sch{color:#9b3f35}
+  .slot.no .ssta{color:#fff;background:#cf5e53}
+  .slot:hover{transform:translateX(1px);filter:brightness(.985)}
+  /* 摘要浮層：平常隱藏、懸停顯示、絕對定位＝不擠版面 */
+  .slot .stask{position:absolute;left:8px;right:8px;top:calc(100% - 3px);z-index:8;
+    font-family:var(--tc);font-size:11px;line-height:1.45;color:var(--mid);
+    background:#fffdf8;border:1px solid var(--line);border-radius:9px;padding:7px 10px;box-shadow:var(--sh2);
+    opacity:0;visibility:hidden;transform:translateY(-4px);transition:.14s;pointer-events:none}
+  .slot:hover{z-index:9}
+  .slot:hover .stask{opacity:1;visibility:visible;transform:translateY(0)}
 
   /* ── ⑦ Reel Day11-20 三色 ── */
   .epwrap{background:var(--card);border:1px solid var(--glassedge);border-radius:18px;box-shadow:var(--sh2);
@@ -666,9 +678,11 @@ function renderWeek(cfg){
     return `<div class="wp-day ${d.today?'today':''}">
       <div class="wdate"><span class="dd">${d.mmdd}</span><span class="wk">週${d.dow}</span>${d.today?'<span class="nowtag">今天</span>':`<span class="wcount">${n}/6</span>`}</div>
       ${d.slots.map(s=>`
-        <div class="slot ${s.ok?'ok':'no'}"><span class="stime">${s.t}</span>
-          <div class="smid"><div class="sch">${esc(s.ch)}</div><div class="stask">${esc(s.label)}</div></div>
-          <span class="ssta ${s.ok?'sched':'unsched'}">${s.ok?'已排定':'未排定'}</span>
+        <div class="slot ${s.ok?'ok':'no'}">
+          <span class="stime">${s.t}</span>
+          <span class="sch">${esc(s.ch)}</span>
+          <span class="ssta">${s.ok?'已排定':'未排定'}</span>
+          <div class="stask">${esc(s.label)}</div>
         </div>`).join('')}
     </div>`;
   }).join('');
