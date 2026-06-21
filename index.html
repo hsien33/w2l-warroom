@@ -189,6 +189,10 @@
   .slot.red{background:#f6ddd8}
   .slot.red .stime{color:#c2554a} .slot.red .sch{color:#9b3f35}
   .slot.red .ssta{color:#fff;background:#cf5e53}
+  /* 本日不發（非該通路發文日）＝中性灰、淡化 */
+  .slot.off{background:#f0ece2;opacity:.7}
+  .slot.off .stime{color:#a99f8c} .slot.off .sch{color:#8c8268;font-weight:700}
+  .slot.off .ssta{color:#fff;background:#b6ab94}
   .slot:hover{transform:translateX(1px);filter:brightness(.985)}
   /* 摘要浮層：平常隱藏、懸停顯示、絕對定位＝不擠版面；大框、字大、內容詳細 */
   .slot .stask{position:absolute;left:0;right:auto;top:calc(100% + 3px);z-index:8;width:260px;max-width:76vw;
@@ -462,7 +466,7 @@
     <!-- ⑥ 未來一周進度 -->
     <section class="sect" id="s-week">
       <div class="sh"><div class="i" style="background:var(--indigo-s);color:var(--indigo)">🗓</div>
-        <div class="t">未來一周排程板</div><div class="tag">每次 F5 即時重算 · 🟢已排定(自動)｜🟡進行中/已備｜🔴未排定(要排)</div></div>
+        <div class="t">未來一周排程板</div><div class="tag">綠=真排程(自動)｜黃=已備/進行｜紅=未排(要排)｜灰=本日不發</div></div>
       <div class="wpgrid" id="wpgrid"></div>
     </section>
 
@@ -650,7 +654,7 @@ function renderHQ(D){
 
 /* ════════ 未來一周排程板（綠＝真有 cron＋你核可的卡真的在排程隊列裡；不是用日期推算）════════ */
 const DOW=['日','一','二','三','四','五','六'];
-const PILL={green:'已排定',yellow:'已備/進行',red:'未排定'};
+const PILL={green:'已排定',yellow:'已備/進行',red:'未排定',off:'不發'};
 function daysBetween(startISO,d){return Math.round((d-new Date(startISO+'T00:00:00'))/86400000);}
 function isoOf(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
 function renderWeek(cfg){
@@ -673,12 +677,19 @@ function renderWeek(cfg){
         ?'<b>第'+warDay+'天戰況 · 已排程</b>｜每天上午 cron 真的會自動發 IG（2 班備援），即時抓追蹤數、零人工。'
         :'<b>未排</b>｜戰況卡 cron 未開。'};
 
-    /* FB 社團文：無 cron（社團不能 API）。本週已備好內容＝黃(已備待你貼)；否則紅 */
+    /* FB 社團文：只在「週二、週五」發。非這兩天＝本日不發(灰)；週二/五才看已備(黃)/未排(紅) */
+    const isClubDay=(d.getDay()===2||d.getDay()===5);  /* 2=週二 5=週五 */
     const clubPrepared=prepared.has(iso);
-    const slotClub={t:'12:00',ch:'FB 社團文',state:clubPrepared?'yellow':'red',
-      label:clubPrepared
-        ?'<b>內容已備好 · 待你貼（非自動排程）</b>｜文稿＋圖＋第一則留言在「桌面成品\\社團文_本週」，當天 19:30 LINE 提醒（FB 社團無法 API 全自動）。'
-        :'<b>未排</b>｜這天沒有已備內容、也沒設時程。'};
+    let slotClub;
+    if(!isClubDay){
+      slotClub={t:'12:00',ch:'FB 社團文',state:'off',
+        label:'<b>本日不發</b>｜社團文固定只在「週二、週五」發，今天不是社團文發文日。'};
+    }else{
+      slotClub={t:'12:00',ch:'FB 社團文',state:clubPrepared?'yellow':'red',
+        label:clubPrepared
+          ?'<b>內容已備好 · 待你貼（非自動排程）</b>｜文稿＋圖＋第一則留言在「桌面成品\\社團文_本週」，當天 19:30 LINE 提醒（FB 社團無法 API 全自動）。'
+          :'<b>未排</b>｜週二/五要發、但這天還沒備好內容。'};
+    }
 
     /* Shorts：cron 沒開＝沒排程。製作中＝黃；上線(cron開)＝綠 */
     const ss=cfg.shorts_status||'none';
