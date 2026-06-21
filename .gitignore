@@ -1,3 +1,6 @@
 .DS_Store
 .claude/
 server.log
+
+__pycache__/
+*.pyc
