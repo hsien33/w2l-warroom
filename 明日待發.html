@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<!-- 財富煉金術品牌 favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>明日待發 · 一頁預覽</title>
+<style>
+:root{--bg:#f3eee3;--card:#fffdf8;--ink:#2b2720;--mid:#55503f;--faint:#8c8470;--line:#e7dfd0;--gold:#b07d1a;--gold-hi:#f4dd8e;
+  --red:#c2554a;--red-s:#fbe9e6;--amber:#c08a2e;--amber-s:#fbf2dc;--green:#3a9e6a;--green-s:#e6f4ec;--off:#b6ab94}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.7;font-size:15px}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.back{display:inline-block;font-size:13px;color:var(--gold);text-decoration:none;margin-bottom:14px}
+.top{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;margin-bottom:6px}
+h1{font-size:22px;font-weight:900}
+.dateline{font-size:13px;color:var(--faint);font-family:ui-monospace,monospace}
+
+/* 現況橫條 */
+.now{background:linear-gradient(135deg,#1b160d,#0c0a05);color:#f3ead6;border-radius:15px;padding:16px 20px;margin:14px 0 8px;
+  box-shadow:0 16px 38px -20px rgba(40,30,10,.7),0 0 0 1px rgba(201,164,76,.22);position:relative;overflow:hidden}
+.now::after{content:"";position:absolute;right:-40px;top:-50px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(201,164,76,.2),transparent 70%)}
+.now .nd{font-size:13px;color:#cdbf9f;position:relative;z-index:2}
+.now .nb{font-size:18px;font-weight:900;margin-top:3px;position:relative;z-index:2;
+  background:linear-gradient(90deg,var(--gold-hi),#c9a44c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;width:fit-content}
+
+/* 全部核可大鈕 */
+.allbar{margin:16px 0 22px}
+.allbtn{width:100%;font-family:inherit;font-size:17px;font-weight:900;border:none;border-radius:14px;padding:16px 18px;cursor:pointer;
+  background:linear-gradient(160deg,#3fb88c,#2f9c6f);color:#fff;box-shadow:0 12px 30px -12px rgba(47,156,111,.8);transition:.15s}
+.allbtn:hover{filter:brightness(1.05)} .allbtn:active{transform:translateY(1px)}
+.allbtn:disabled{opacity:.55;cursor:default}
+.allmsg{font-size:14px;font-weight:700;margin-top:9px;text-align:center;min-height:1px}
+.allmsg.ok{color:var(--green)} .allmsg.err{color:var(--red)}
+.alltip{font-size:12px;color:var(--faint);text-align:center;margin-top:5px}
+
+/* 每項卡 */
+.item{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:11px;transition:.15s}
+.item.green{border-left-color:var(--green)} .item.yellow{border-left-color:var(--amber)}
+.item.red{border-left-color:var(--red)} .item.off{border-left-color:var(--off);opacity:.72}
+.ihead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.itime{font-family:ui-monospace,monospace;font-size:12.5px;font-weight:700;color:var(--faint);flex:none}
+.ich{font-weight:800;font-size:15.5px}
+.ibadge{font-size:11px;font-weight:800;border-radius:7px;padding:3px 10px;margin-left:auto;flex:none}
+.ibadge.green{background:var(--green-s);color:var(--green)} .ibadge.yellow{background:var(--amber-s);color:var(--amber)}
+.ibadge.red{background:var(--red-s);color:var(--red)} .ibadge.off{background:#eee8da;color:#8c8268}
+.iprev{font-size:14px;color:var(--mid);margin-top:8px;line-height:1.65;background:#faf5e9;border-radius:9px;padding:9px 12px}
+.iprev b{color:var(--gold)}
+.itopic{font-size:12px;color:var(--faint);margin-top:6px}
+
+/* 逐項裁定鈕 */
+.ibtns{display:flex;gap:9px;flex-wrap:wrap;margin-top:11px}
+.ibtns button{font-family:inherit;font-size:14px;font-weight:800;border:none;border-radius:9px;padding:8px 16px;cursor:pointer;transition:.15s}
+.ibtns button:active{transform:translateY(1px)}
+.iok{background:var(--green);color:#fff;box-shadow:0 5px 14px -8px rgba(58,158,106,.8)}
+.iok:hover{filter:brightness(1.06)}
+.ino{background:#fff;color:var(--red);border:1.5px solid var(--red)!important}
+.ino:hover{background:var(--red-s)}
+.ifb{display:none;margin-top:10px}
+.item.editing .ifb{display:block}
+.item.editing .iok{display:none}
+.ifb textarea{width:100%;min-height:70px;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);
+  border:1.5px solid var(--amber);border-radius:10px;padding:10px 12px;resize:vertical;background:#fff}
+.ifb textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(176,125,26,.15)}
+.isend{margin-top:8px;font-family:inherit;font-size:14px;font-weight:800;border:none;border-radius:9px;padding:8px 18px;cursor:pointer;
+  background:var(--gold);color:#fff;box-shadow:0 5px 14px -8px rgba(176,125,26,.8)}
+.isend:hover{filter:brightness(1.06)}
+.imsg{font-size:13.5px;font-weight:700;margin-top:8px}
+.imsg.ok{color:var(--green)} .imsg.err{color:var(--red)}
+
+footer{margin-top:28px;color:var(--faint);font-size:12px;text-align:center;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← 回戰情室</a>
+  <div class="top"><h1>📬 明日待發 · 一頁預覽</h1></div>
+  <div class="dateline" id="dateline">計算明日中…</div>
+
+  <div class="now" id="now"><div class="nd">載入排程中…</div></div>
+
+  <div class="allbar">
+    <button class="allbtn" id="allbtn">✅ 全部核可、照排程發</button>
+    <div class="allmsg" id="allmsg"></div>
+    <div class="alltip">一鍵把明日整份清單送回給 AI；也可往下逐項核可／不同意。</div>
+  </div>
+
+  <div id="list">載入中…</div>
+
+  <footer>
+    戰情室內部頁 · 資料來源 week.json（與排程板同源）<br>
+    🟢已排程(自動發) 🟡已備/手貼 🔴未排(要補) ⚪本日不發 · 裁示直送失敗會自動複製到剪貼簿
+  </footer>
+</div>
+
+<script>
+const NTFY='w2l-jeff-verdict-9x7k2m4q';   /* 沿用戰情室秘密頻道、與 jobs.html 同 */
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const DOW=['日','一','二','三','四','五','六'];
+const PILL={green:'🟢 已排程',yellow:'🟡 已備好',red:'🔴 未排',off:'⚪ 不發'};
+function daysBetween(startISO,d){return Math.round((d-new Date(startISO+'T00:00:00'))/86400000);}
+function isoOf(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+
+/* ───── 算「明天」各線真的會發什麼（i=1，沿用 index.html renderWeek 的對映邏輯）───── */
+function buildTomorrow(cfg){
+  const I=1;                                   /* 明天＝今天+1，對應隊列第 1 個（0-based）*/
+  const today=new Date(); today.setHours(0,0,0,0);
+  const d=new Date(today); d.setDate(today.getDate()+I);
+  const iso=isoOf(d);
+  const warDay=daysBetween(cfg.warcard_start,d), reelDay=daysBetween(cfg.reel_start,d);
+  const C=cfg.reels_content||{}, SC=cfg.social_content||{};
+  const inv=new Set(cfg.reels_inventory||[]);
+  const fbq=cfg.fbquote_queue||[], thq=cfg.thread_queue||[];
+  const miss=t=>'<b>未排 · 差什麼：</b>'+t;
+  const items=[];
+
+  /* IG 戰況卡 — cron 開＝每日即時生成 */
+  items.push({t:'08:00',ch:'IG 戰況卡',
+    state:cfg.warcard_cron?'green':'red',
+    topic:'第'+warDay+'天戰況',
+    prev:cfg.warcard_cron
+      ?'<b>第'+warDay+'天戰況卡</b>｜開盤前自動抓即時追蹤數→算戰況→出黑金卡發 IG（每天即時生成、內容不固定）。'
+      :miss('戰況卡 cron 沒開——去 warcard.yml 開排程。')});
+
+  /* FB 社團文 — 只在週二/五發 */
+  const isClubDay=(d.getDay()===2||d.getDay()===5);
+  if(!isClubDay){
+    items.push({t:'12:00',ch:'FB 社團文',state:'off',topic:'',
+      prev:'<b>本日不發</b>｜社團文固定只在週二、週五發，明天不是社團文發文日。'});
+  }else if(SC[iso]){
+    const sc=SC[iso];
+    items.push({t:'12:00',ch:'FB 社團文',state:'yellow',topic:esc(sc.title||''),
+      prev:'<b>'+esc(sc.title||'已備好')+'</b>｜'+esc(sc.preview||'')+'（文稿＋圖＋首留言在「桌面成品\\社團文_本週」，19:30 LINE 提醒手貼）。'});
+  }else{
+    items.push({t:'12:00',ch:'FB 社團文',state:'red',topic:'',
+      prev:miss('週二/五是發文日、但明天內容還沒備——產這天的社團文＋圖＋首留言。')});
+  }
+
+  /* Shorts — 多半暫停 */
+  const ss=cfg.shorts_status||'none';
+  items.push({t:'18:00',ch:'YouTube Shorts',
+    state:cfg.shorts_cron?'green':(ss==='producing'?'yellow':(ss==='paused'?'off':'red')),
+    topic:'',
+    prev:cfg.shorts_cron?'<b>已排程</b>｜cron 自動上傳 YouTube Shorts（unlisted）。'
+      :ss==='producing'?'<b>製作中（尚未排程）</b>｜你的聲音＋實拍 b-roll＋金字＋圖表，待你點頭。'
+      :ss==='paused'?'<b>暫停中</b>｜現有形式效果不佳，Jeff 在重想方向；YT 金鑰已設好、隨時可恢復。'
+      :miss('Shorts 還沒做、cron 沒開。')});
+
+  /* FB 粉專金句卡 — cron 開＋隊列第 1 張 */
+  if(cfg.fbquote_cron && I<fbq.length){
+    const c=fbq[I];
+    items.push({t:'20:00',ch:'FB 粉專金句卡',state:'green',topic:'DAY'+c.day+' '+esc(c.topic||''),
+      prev:'<b>DAY'+c.day+'｜'+esc(c.topic||'')+'</b>｜金句：「'+esc(c.content||'')+'」（每晚 20:07 cron 自動發 FB 粉專，與 Publer 互備不雙發）。'});
+  }else{
+    items.push({t:'20:00',ch:'FB 粉專金句卡',state:'red',topic:'',
+      prev:cfg.fbquote_cron?miss('本系列(到 DAY15)發完了——排下一週金句卡＋文案、核可進 schedule。'):miss('金句卡 cron 沒開。')});
+  }
+
+  /* IG 主 Reel — 庫存有明天那集 */
+  const reelOk=inv.has(reelDay);
+  items.push({t:'20:30',ch:'IG 主 Reel',state:reelOk?'green':'red',topic:'Day'+reelDay,
+    prev:reelOk?('<b>Day'+reelDay+'</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（今晚 20:30 cron 自動發 IG＋轉 FB）。')
+      :miss('Day'+reelDay+' 這集還沒做——腳本→拍/配音→出片→登錄 schedule.json。')});
+
+  /* Thread 改寫 — cron 開＋隊列第 1 篇 */
+  if(cfg.thread_cron && I<thq.length){
+    const tq=thq[I];
+    items.push({t:'21:00',ch:'Thread 改寫',state:'green',topic:'對應 Day'+tq.day+' '+esc(tq.topic||''),
+      prev:'<b>對應 Day'+tq.day+'｜'+esc(tq.topic||'')+'</b>｜開頭：「'+esc(tq.content||'')+'」（每晚 21:00 cron 自動發 Threads、連結進第一則留言）。'});
+  }else{
+    items.push({t:'21:00',ch:'Thread 改寫',state:'red',topic:'',
+      prev:cfg.thread_cron?miss('Thread 改寫文發完了——再寫幾篇對應之後的 Reel、審過進 schedule。'):miss('Thread cron 沒開。')});
+  }
+
+  return {date:d, iso, dow:DOW[d.getDay()], mmdd:(d.getMonth()+1)+'/'+d.getDate(), items};
+}
+
+/* ───── 送裁示到 ntfy（沿用 jobs.html 機制：fetch ntfy + 失敗複製剪貼簿）───── */
+async function sendVerdict(title,body,msgEl,doneLabel){
+  let sent=false;
+  try{
+    const r=await fetch('https://ntfy.sh',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({topic:NTFY,title:title,message:body})});
+    sent=r.ok;
+  }catch(e){}
+  if(!sent){ try{ await navigator.clipboard.writeText(body); }catch(e){} }
+  if(msgEl){
+    if(sent){ msgEl.className=msgEl.className.replace(/\b(ok|err)\b/g,'')+' ok'; msgEl.textContent='✅ '+doneLabel+'！AI 已收到。'; }
+    else{ msgEl.className=msgEl.className.replace(/\b(ok|err)\b/g,'')+' err'; msgEl.textContent='⚠️ 直送失敗、已複製到剪貼簿 → 貼回對話傳我即可。'; }
+  }
+  return sent;
+}
+
+let TOM=null;
+
+function render(cfg){
+  TOM=buildTomorrow(cfg);
+  document.getElementById('dateline').textContent=
+    '明日 '+TOM.iso+'（週'+TOM.dow+'）· 排程資料更新 '+(cfg.updated||'—');
+
+  /* 真的會發的（非「不發」）件數 */
+  const active=TOM.items.filter(it=>it.state!=='off');
+  const greenN=TOM.items.filter(it=>it.state==='green').length;
+  const redN=TOM.items.filter(it=>it.state==='red').length;
+  document.getElementById('now').innerHTML=
+    '<div class="nd">明日 '+TOM.mmdd+'（週'+TOM.dow+'）</div>'+
+    '<div class="nb">明日 '+active.length+' 項待發 · '+greenN+' 已排程'+(redN?(' · '+redN+' 待補'):'')+'</div>';
+
+  document.getElementById('list').innerHTML=TOM.items.map((it,idx)=>`
+    <div class="item ${it.state}" data-i="${idx}">
+      <div class="ihead">
+        <span class="itime">${it.t}</span>
+        <span class="ich">${esc(it.ch)}</span>
+        <span class="ibadge ${it.state}">${PILL[it.state]}</span>
+      </div>
+      <div class="iprev">${it.prev}</div>
+      ${it.topic?`<div class="itopic">主題：${it.topic}</div>`:''}
+      ${it.state==='off'?'':`
+      <div class="ibtns">
+        <button class="iok">✅ 核可</button>
+        <button class="ino">✏️ 不同意</button>
+      </div>
+      <div class="ifb">
+        <textarea placeholder="這項想怎麼改？往哪個方向？寫給我…（手機可語音 🎤）"></textarea>
+        <button class="isend">🚀 送出</button>
+      </div>
+      <div class="imsg"></div>`}
+    </div>`).join('');
+
+  wire();
+}
+
+function wire(){
+  document.querySelectorAll('.item').forEach(el=>{
+    const idx=+el.dataset.i, it=TOM.items[idx];
+    if(it.state==='off') return;
+    const label=it.ch+'（'+it.t+'｜'+(it.topic||PILL[it.state])+'）';
+    const msg=el.querySelector('.imsg');
+    const ok=el.querySelector('.iok'), no=el.querySelector('.ino'), send=el.querySelector('.isend');
+    ok.onclick=async()=>{ ok.disabled=true; ok.textContent='送出中…';
+      const body='【Jeff 明日待發裁決 · '+new Date().toLocaleString('zh-TW')+'】\n\n■ 這一項：'+label
+        +'\n■ 內容：'+it.ch+'｜'+(it.topic||'')+'\n■ 裁示：✅ 核可、照排程發';
+      const s=await sendVerdict('明日待發 · 核可 '+it.ch, body, msg, '已核可');
+      ok.textContent=s?'已核可 ✓':'重試'; ok.disabled=!s; };
+    no.onclick=()=>{ el.classList.add('editing'); el.querySelector('textarea').focus(); };
+    send.onclick=async()=>{ const ta=el.querySelector('textarea'), val=(ta.value||'').trim();
+      if(!val){ msg.className='imsg err'; msg.textContent='請先寫這項要改的方向'; return; }
+      send.disabled=true; send.textContent='送出中…';
+      const body='【Jeff 明日待發裁決 · '+new Date().toLocaleString('zh-TW')+'】\n\n■ 這一項：'+label
+        +'\n■ 裁示：✏️ 不同意，要改\n\n■ 要改的方向：\n'+val;
+      const s=await sendVerdict('明日待發 · 改 '+it.ch, body, msg, '修改方向已送出');
+      send.textContent=s?'已送出 ✓':'重試'; send.disabled=!s; };
+  });
+
+  /* 全部核可、照排程發 */
+  const allbtn=document.getElementById('allbtn'), allmsg=document.getElementById('allmsg');
+  allbtn.onclick=async()=>{
+    allbtn.disabled=true; allbtn.textContent='送出中…';
+    const active=TOM.items.filter(it=>it.state!=='off');
+    const summary=active.map(it=>'• '+it.t+' '+it.ch+'｜'+(it.topic||PILL[it.state])).join('\n');
+    const body='【Jeff 明日待發 · 全部核可 · '+new Date().toLocaleString('zh-TW')+'】\n\n'
+      +'明日 '+TOM.iso+'（週'+TOM.dow+'）以下 '+active.length+' 項全部核可、照排程發：\n\n'+summary;
+    const s=await sendVerdict('明日待發 · 全部核可（'+active.length+' 項）', body, allmsg, '明日全部核可');
+    allbtn.textContent=s?'✅ 已全部核可 ✓':'重試'; allbtn.disabled=!s;
+  };
+}
+
+fetch('week.json?t='+Date.now()).then(r=>r.json()).then(render).catch(e=>{
+  document.getElementById('now').innerHTML='<div class="nd">讀取 week.json 失敗：'+esc(e.message||e)+'</div>';
+  document.getElementById('list').innerHTML='';
+});
+</script>
+</body>
+</html>
