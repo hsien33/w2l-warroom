@@ -170,14 +170,17 @@
   .wp-day .wdate .dd{font-family:var(--tc);font-weight:800;font-size:16px}
   .wp-day .wdate .wk{font-family:var(--tc);font-size:12px;color:var(--dim)}
   .wp-day .wdate .nowtag{margin-left:auto;font-family:var(--tc);font-size:10px;font-weight:800;color:var(--gold-d);background:#fbf2da;border-radius:6px;padding:2px 6px}
-  .slot{display:flex;gap:8px;padding:7px 0;align-items:flex-start}
+  .slot{display:flex;gap:7px;padding:7px 0;align-items:flex-start}
   .slot+.slot{border-top:1px dashed var(--line)}
-  .slot .stime{font-family:var(--tc);font-size:11px;font-weight:800;color:var(--faint);flex:none;width:18px;margin-top:1px}
+  .slot .stime{font-family:var(--tc);font-size:10.5px;font-weight:800;color:var(--faint);flex:none;width:34px;margin-top:2px}
+  .slot.ok .stime{color:var(--mint)} .slot.no .stime{color:var(--coral)}
   .slot .smid{flex:1;min-width:0}
-  .slot .stask{font-family:var(--tc);font-size:12px;color:var(--mid);line-height:1.4}
-  .slot .ssta{font-family:var(--tc);font-size:10.5px;font-weight:800;margin-top:3px;display:inline-flex;align-items:center;gap:4px}
-  .slot .ssta.done{color:var(--mint)} .slot .ssta.undone{color:var(--coral)}
-  .slot .ssta::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block}
+  .slot .sch{font-family:var(--tc);font-size:12px;font-weight:800;color:var(--ink);line-height:1.35}
+  .slot .stask{font-family:var(--tc);font-size:11px;color:var(--mid);line-height:1.35;margin-top:1px}
+  .slot .ssta{font-family:var(--tc);font-size:10px;font-weight:800;flex:none;margin-top:2px;border-radius:6px;padding:2px 7px;white-space:nowrap}
+  .slot .ssta.sched{color:var(--mint);background:var(--mint-s)}
+  .slot .ssta.unsched{color:var(--coral);background:var(--coral-s)}
+  .wp-day .wdate .wcount{margin-left:auto;font-family:var(--tc);font-size:10px;font-weight:800;color:var(--dim);background:#efe8d8;border-radius:6px;padding:2px 6px}
 
   /* ── ⑦ Reel Day11-20 三色 ── */
   .epwrap{background:var(--card);border:1px solid var(--glassedge);border-radius:18px;box-shadow:var(--sh2);
@@ -440,7 +443,7 @@
     <!-- ⑥ 未來一周進度 -->
     <section class="sect" id="s-week">
       <div class="sh"><div class="i" style="background:var(--indigo-s);color:var(--indigo)">🗓</div>
-        <div class="t">未來一周進度分析</div><div class="tag">每日 早/中/晚 · 已完成｜未完成</div></div>
+        <div class="t">未來一周排程板</div><div class="tag">每日 6 檔通路 · 🟢已排定（自動）｜🔴未排定（要排）</div></div>
       <div class="wpgrid" id="wpgrid"></div>
     </section>
 
@@ -626,18 +629,46 @@ function renderHQ(D){
   }).join('');
 }
 
-/* ════════ 未來一周進度 ════════ */
-function renderWeek(wp){
-  if(!wp||!Array.isArray(wp.days))return;
-  const todayStr=(new Date().getMonth()+1)+'/'+new Date().getDate();
-  $("#wpgrid").innerHTML=wp.days.map(d=>{
-    const isToday=(d.date===todayStr);
-    return `<div class="wp-day ${isToday?'today':''}">
-      <div class="wdate"><span class="dd">${esc(d.date)}</span><span class="wk">週${esc(d.weekday||'')}</span>${isToday?'<span class="nowtag">今天</span>':''}</div>
-      ${(d.slots||[]).map(s=>`
-        <div class="slot"><span class="stime">${esc(s.time)}</span>
-          <div class="smid"><div class="stask">${esc(s.task)}</div>
-            <span class="ssta ${s.status==='done'?'done':'undone'}">${s.status==='done'?'已完成':'未完成'}</span></div>
+/* ════════ 未來一周排程板（JS 即時算日期＝週數永不錯；綠=已排定 紅=未排定）════════ */
+const DOW=['日','一','二','三','四','五','六'];
+function daysBetween(startISO,d){return Math.round((d-new Date(startISO+'T00:00:00'))/86400000);}
+function renderWeek(cfg){
+  if(!cfg){return;}
+  const inv=new Set(cfg.reels_inventory||[]);
+  const fq=cfg.fbquote||{}, ml=cfg.manual_lines||{}, tp=fq.topics||{};
+  const today=new Date(); today.setHours(0,0,0,0);
+  const days=[];
+  for(let i=0;i<7;i++){
+    const d=new Date(today); d.setDate(today.getDate()+i);
+    const warDay=daysBetween(cfg.warcard_start,d), reelDay=daysBetween(cfg.reel_start,d);
+    /* FB 金句卡：上線→從 next_day 依序排；未上線→恆紅（待你上線） */
+    let fbqOk=false,fbqLabel;
+    if(fq.live){
+      const cand=(fq.next_day||0)+i;
+      if(cand<=(fq.last_day||0)){fbqOk=true;fbqLabel='DAY'+cand+' '+(tp[cand]||'');}
+      else fbqLabel='無卡待排（排新一週）';
+    }else{
+      fbqLabel=i===0?('建好待上線 · 下一張 DAY'+(fq.next_day||'')+' '+(tp[fq.next_day]||'')):'待你上線';
+    }
+    const reelOk=inv.has(reelDay);
+    const slots=[
+      {t:'08:00',ch:'IG 戰況卡',     ok:true,      label:'第'+warDay+'天戰況 · 每早自動'},
+      {t:'12:00',ch:'FB 社團文',     ok:!ml.club,  label:ml.club?'手動轉傳 · 未排':'已排'},
+      {t:'18:00',ch:'Shorts',        ok:!ml.shorts,label:ml.shorts?'尚無自動化 · 未排':'已排'},
+      {t:'20:00',ch:'FB 粉專金句卡', ok:fbqOk,     label:fbqLabel},
+      {t:'20:30',ch:'IG 主 Reel',    ok:reelOk,    label:reelOk?('Day'+reelDay+' 已備 · 自動'):('Day'+reelDay+' 未製作')},
+      {t:'21:00',ch:'Thread 改寫',   ok:!ml.thread,label:ml.thread?'手動發 · 未排':'已排'},
+    ];
+    days.push({mmdd:(d.getMonth()+1)+'/'+d.getDate(),dow:DOW[d.getDay()],today:i===0,slots});
+  }
+  $("#wpgrid").innerHTML=days.map(d=>{
+    const n=d.slots.filter(s=>s.ok).length;
+    return `<div class="wp-day ${d.today?'today':''}">
+      <div class="wdate"><span class="dd">${d.mmdd}</span><span class="wk">週${d.dow}</span>${d.today?'<span class="nowtag">今天</span>':`<span class="wcount">${n}/6</span>`}</div>
+      ${d.slots.map(s=>`
+        <div class="slot ${s.ok?'ok':'no'}"><span class="stime">${s.t}</span>
+          <div class="smid"><div class="sch">${esc(s.ch)}</div><div class="stask">${esc(s.label)}</div></div>
+          <span class="ssta ${s.ok?'sched':'unsched'}">${s.ok?'已排定':'未排定'}</span>
         </div>`).join('')}
     </div>`;
   }).join('');
@@ -806,7 +837,6 @@ fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
   renderHQ(D);
   if(D.social){ SOCIAL=D.social; CURRANGE=(D.social.defaultRange)||'day'; renderSocial(); }
   renderTrend(D.dailyTrend);
-  renderWeek(D.weekPlan);
   renderEpisodes(D.episodes);
   renderInv(D.inventory);
   renderDecisions(D.decisions);
@@ -819,11 +849,13 @@ fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
   }
 }).catch(e=>{
   console.log('data.json fallback',e);
-  /* 缺檔：把主要容器標「資料待接」、不假數字 */
-  ['hqstats','socgrid','wpgrid','epgrid','inventory','deck','pipgrid','sesgrid','shipgrid'].forEach(id=>{
-    const el=document.getElementById(id);
-    if(el&&!el.innerHTML.trim()) el.innerHTML='<div style="font-family:var(--tc);color:var(--faint);padding:14px">資料待接（data.json 載入失敗）</div>';
-  });
+});
+
+/* 未來一周排程板：獨立載入 week.json（真實排程設定，由 build_week.py 從 warcard-auto 推導） */
+fetch('week.json?t='+Date.now()).then(r=>r.json()).then(renderWeek).catch(e=>{
+  console.log('week.json fallback',e);
+  const el=document.getElementById('wpgrid');
+  if(el&&!el.innerHTML.trim()) el.innerHTML='<div style="font-family:var(--tc);color:var(--faint);padding:14px">排程設定待接（week.json 載入失敗）</div>';
 });
 
 /* ════════ 左欄高亮（捲動時） ════════ */
