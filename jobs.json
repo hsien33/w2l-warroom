@@ -23,13 +23,13 @@
     },
     {
       "id": "20260621-line-shorts",
-      "ts": "06-21 16:40",
-      "project": "建『YouTube Shorts 線』計畫＋本週改編草案",
-      "owner": "Shorts 主管（背景）",
-      "result": "派工中：Reel→Shorts 改編計畫、Day10/11 各 1 支腳本/字幕/標題、poster 骨架、列出 YT 金鑰設定步驟",
-      "status": "dispatched",
-      "artifacts": [],
-      "note": "唯一卡點＝YouTube 發佈金鑰要你授權設定一次（A 級）；內容會先備好等金鑰"
+      "ts": "06-21 17:00",
+      "project": "YouTube Shorts 線 · 計畫＋本週兩支草案（待裁定）",
+      "owner": "Shorts 主管 → 副總驗收",
+      "result": "✅ 計畫書+Day10/11 兩支 Shorts 腳本/字幕/標題+poster 骨架備妥。副總驗：0條啟用cron、缺金鑰強制DRY(設DRY_RUN=0也不誤發)、py_compile OK、計畫書16KB",
+      "status": "needs_jeff",
+      "artifacts": ["財富煉金術/02_社群產出/Shorts線/本週_計畫與草案.md", "戰況卡自動發/src/post_shorts.py"],
+      "note": "卡點＝YouTube 金鑰(A級,你設一次,步驟已列在計畫書第4節)。內容先備好等金鑰；核腳本後交⑲出片"
     },
     {
       "id": "20260621-warroom-week-board",
