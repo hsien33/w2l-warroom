@@ -1,19 +1,19 @@
 {
-  "updated": "2026-06-21 14:54Z",
+  "updated": "2026-06-21 15:26Z",
   "warcard_start": "2026-06-11",
   "reel_start": "2026-06-10",
   "warcard_cron": true,
-  "thread_cron": false,
+  "thread_cron": true,
   "thread_queue": [
     {
       "day": 10,
       "topic": "需要 vs 想要",
-      "content": "我到現在還搞不太清楚，「需要」和「想要」中間那條線，到底畫在哪。"
+      "content": "孩子伸手要那個一千多塊的東西，你第一句話通常是什麼？"
     },
     {
       "day": 11,
-      "topic": "把進度握回自己手裡",
-      "content": "我兒子這次考 67 分，全班一起垮，我卻沒罵他——然後我整晚都在懷疑，自己這樣到底對不對。"
+      "topic": "代課老師",
+      "content": "我兒子拿了張六十七分的考卷回家那天，我血壓瞬間飆上來。"
     }
   ],
   "fbquote_cron": true,
