@@ -50,6 +50,24 @@ h1{font-size:22px;font-weight:900}
 .iprev b{color:var(--gold)}
 .itopic{font-size:12px;color:var(--faint);margin-top:6px}
 
+/* 點開看完整內文＋附件 */
+.detail{margin-top:10px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fffefb}
+.detail>summary{cursor:pointer;list-style:none;font-size:13.5px;font-weight:800;color:var(--gold);
+  padding:10px 13px;background:#fbf4e4;user-select:none;display:flex;align-items:center;gap:7px}
+.detail>summary::-webkit-details-marker{display:none}
+.detail>summary::before{content:"▸";font-size:12px;transition:.15s}
+.detail[open]>summary::before{transform:rotate(90deg)}
+.detail .dbody{padding:13px 15px}
+.dlabel{font-size:11.5px;font-weight:800;color:var(--faint);letter-spacing:.04em;margin:0 0 5px}
+.dtext{white-space:pre-wrap;font-size:14.5px;line-height:1.78;color:var(--ink);
+  background:#fbf7ee;border-radius:9px;padding:12px 14px;border:1px solid #efe6d3}
+.dcomment{white-space:pre-wrap;font-size:13.5px;line-height:1.7;color:var(--mid);
+  background:#eef4ef;border-radius:9px;padding:10px 13px;border:1px solid #d9e6dc;margin-top:10px}
+.dmedia{margin-top:12px}
+.dmedia img,.dmedia video{width:100%;max-width:360px;border-radius:11px;display:block;
+  border:1px solid var(--line);box-shadow:0 10px 26px -16px rgba(40,30,10,.5)}
+.dnote{font-size:11.5px;color:var(--faint);margin-top:5px}
+
 /* 逐項裁定鈕 */
 .ibtns{display:flex;gap:9px;flex-wrap:wrap;margin-top:11px}
 .ibtns button{font-family:inherit;font-size:14px;font-weight:800;border:none;border-radius:9px;padding:8px 16px;cursor:pointer;transition:.15s}
@@ -100,6 +118,21 @@ const NTFY='w2l-jeff-verdict-9x7k2m4q';   /* 沿用戰情室秘密頻道、與 j
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const DOW=['日','一','二','三','四','五','六'];
 const PILL={green:'🟢 已排程',yellow:'🟡 已備好',red:'🔴 未排',off:'⚪ 不發'};
+function mediaLabel(ch){return ch.indexOf('金句卡')>=0?'🖼️ 金句卡（明天會發這張）'
+  :ch.indexOf('社團')>=0?'🖼️ 社團文配圖'
+  :ch.indexOf('戰況')>=0?'🖼️ 戰況卡（範例）'
+  :ch.indexOf('Reel')>=0?'🎬 影片':'🖼️ 附件';}
+function detailBlock(it){
+  if(it.state==='off') return '';
+  const hasFull=it.full&&it.full.trim(), hasImg=!!it.img, hasVid=!!it.video, hasCom=it.comment&&it.comment.trim();
+  if(!hasFull&&!hasImg&&!hasVid) return '';
+  let inner='';
+  if(hasFull) inner+='<p class="dlabel">完整內文（明天實際會發的）</p><div class="dtext">'+esc(it.full)+'</div>';
+  if(hasCom) inner+='<p class="dlabel" style="margin-top:12px">第一則留言（含導流連結）</p><div class="dcomment">'+esc(it.comment)+'</div>';
+  if(hasVid) inner+='<div class="dmedia"><p class="dlabel">'+mediaLabel(it.ch)+'</p><video src="'+esc(it.video)+'" controls preload="metadata"></video></div>';
+  else if(hasImg) inner+='<div class="dmedia"><p class="dlabel">'+mediaLabel(it.ch)+'</p><img loading="lazy" src="'+esc(it.img)+'" alt="附件">'+(it.imgnote?'<div class="dnote">'+esc(it.imgnote)+'</div>':'')+'</div>';
+  return '<details class="detail"><summary>📄 點開看完整內文＋附件</summary><div class="dbody">'+inner+'</div></details>';
+}
 function daysBetween(startISO,d){return Math.round((d-new Date(startISO+'T00:00:00'))/86400000);}
 function isoOf(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
 
@@ -122,7 +155,9 @@ function buildTomorrow(cfg){
     topic:'第'+warDay+'天戰況',
     prev:cfg.warcard_cron
       ?'<b>第'+warDay+'天戰況卡</b>｜開盤前自動抓即時追蹤數→算戰況→出黑金卡發 IG（每天即時生成、內容不固定）。'
-      :miss('戰況卡 cron 沒開——去 warcard.yml 開排程。')});
+      :miss('戰況卡 cron 沒開——去 warcard.yml 開排程。'),
+    full:cfg.warcard_cron?cfg.warcard_caption_tpl:'',
+    img:cfg.warcard_cron?cfg.warcard_sample_img:'', imgnote:'範例卡（昨日版）— 明早數字自動更新'});
 
   /* FB 社團文 — 只在週二/五發 */
   const isClubDay=(d.getDay()===2||d.getDay()===5);
@@ -132,7 +167,8 @@ function buildTomorrow(cfg){
   }else if(SC[iso]){
     const sc=SC[iso];
     items.push({t:'12:00',ch:'FB 社團文',state:'yellow',topic:esc(sc.title||''),
-      prev:'<b>'+esc(sc.title||'已備好')+'</b>｜'+esc(sc.preview||'')+'（文稿＋圖＋首留言在「桌面成品\\社團文_本週」，19:30 LINE 提醒手貼）。'});
+      prev:'<b>'+esc(sc.title||'已備好')+'</b>｜'+esc(sc.preview||'')+'（文稿＋圖＋首留言已備，19:30 LINE 提醒手貼）。',
+      full:sc.full||'', comment:sc.comment||'', img:sc.img||''});
   }else{
     items.push({t:'12:00',ch:'FB 社團文',state:'red',topic:'',
       prev:miss('週二/五是發文日、但明天內容還沒備——產這天的社團文＋圖＋首留言。')});
@@ -152,7 +188,8 @@ function buildTomorrow(cfg){
   if(cfg.fbquote_cron && I<fbq.length){
     const c=fbq[I];
     items.push({t:'20:00',ch:'FB 粉專金句卡',state:'green',topic:'DAY'+c.day+' '+esc(c.topic||''),
-      prev:'<b>DAY'+c.day+'｜'+esc(c.topic||'')+'</b>｜金句：「'+esc(c.content||'')+'」（每晚 20:07 cron 自動發 FB 粉專，與 Publer 互備不雙發）。'});
+      prev:'<b>DAY'+c.day+'｜'+esc(c.topic||'')+'</b>｜金句：「'+esc(c.content||'')+'」（每晚 20:07 cron 自動發 FB 粉專，與 Publer 互備不雙發）。',
+      full:c.full||'', img:c.img||''});
   }else{
     items.push({t:'20:00',ch:'FB 粉專金句卡',state:'red',topic:'',
       prev:cfg.fbquote_cron?miss('本系列(到 DAY15)發完了——排下一週金句卡＋文案、核可進 schedule。'):miss('金句卡 cron 沒開。')});
@@ -160,15 +197,18 @@ function buildTomorrow(cfg){
 
   /* IG 主 Reel — 庫存有明天那集 */
   const reelOk=inv.has(reelDay);
+  const reelMeta=(cfg.reels_media||{})[String(reelDay)]||{};
   items.push({t:'20:30',ch:'IG 主 Reel',state:reelOk?'green':'red',topic:'Day'+reelDay,
     prev:reelOk?('<b>Day'+reelDay+'</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（今晚 20:30 cron 自動發 IG＋轉 FB）。')
-      :miss('Day'+reelDay+' 這集還沒做——腳本→拍/配音→出片→登錄 schedule.json。')});
+      :miss('Day'+reelDay+' 這集還沒做——腳本→拍/配音→出片→登錄 schedule.json。'),
+    full:reelOk?(reelMeta.script||C[String(reelDay)]||''):'', video:reelOk?(reelMeta.video||''):'', img:reelOk?(reelMeta.cover||''):''});
 
   /* Thread 改寫 — cron 開＋隊列第 1 篇 */
   if(cfg.thread_cron && I<thq.length){
     const tq=thq[I];
     items.push({t:'21:00',ch:'Thread 改寫',state:'green',topic:'對應 Day'+tq.day+' '+esc(tq.topic||''),
-      prev:'<b>對應 Day'+tq.day+'｜'+esc(tq.topic||'')+'</b>｜開頭：「'+esc(tq.content||'')+'」（每晚 21:00 cron 自動發 Threads、連結進第一則留言）。'});
+      prev:'<b>對應 Day'+tq.day+'｜'+esc(tq.topic||'')+'</b>｜開頭：「'+esc(tq.content||'')+'」（每晚 21:00 cron 自動發 Threads、不放連結）。',
+      full:tq.full||''});
   }else{
     items.push({t:'21:00',ch:'Thread 改寫',state:'red',topic:'',
       prev:cfg.thread_cron?miss('Thread 改寫文發完了——再寫幾篇對應之後的 Reel、審過進 schedule。'):miss('Thread cron 沒開。')});
@@ -217,6 +257,7 @@ function render(cfg){
       </div>
       <div class="iprev">${it.prev}</div>
       ${it.topic?`<div class="itopic">主題：${it.topic}</div>`:''}
+      ${detailBlock(it)}
       ${it.state==='off'?'':`
       <div class="ibtns">
         <button class="iok">✅ 核可</button>

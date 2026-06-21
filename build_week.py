@@ -76,25 +76,34 @@ prev = {}
 try: prev = read_json(os.path.join(HERE, "week.json"))
 except Exception: pass
 
+# ── 共用：明日待發頁要的「附件圖」＝preview_media/ 下符合命名的檔（有就帶 web 相對路徑）──
+def media_if_exists(fname):
+    return ("preview_media/" + fname) if os.path.exists(os.path.join(HERE, "preview_media", fname)) else ""
+
 # ── 4. FB 金句卡「真實待發隊列」＝schedule.json 裡 day > posted_through 的卡（你核可、還沒發）＋金句預覽 ──
+#     full＝整段文案、img＝preview_media/fbquote_day{N}.png（明日待發頁點開看完整內文＋金句卡圖）
 POSTED_THROUGH = prev.get("fbquote_posted_through", 12)   # 雲端 dry-run 真讀 FB 得知；發過更多就改這數
 fbq_queue = []
 try:
     cards = read_json(os.path.join(WC, "fb_quote", "schedule.json"))["cards"]
     for c in sorted(cards, key=lambda c: int(c["day"])):
         if int(c["day"]) > POSTED_THROUGH:
-            fbq_queue.append({"day": int(c["day"]), "topic": c.get("topic", ""),
-                              "content": preview_of(c.get("caption", ""))})
+            day = int(c["day"])
+            fbq_queue.append({"day": day, "topic": c.get("topic", ""),
+                              "content": preview_of(c.get("caption", "")),
+                              "full": (c.get("caption", "") or "").strip(),
+                              "img": media_if_exists(f"fbquote_day{day}.png")})
 except Exception as e:
     print("讀 fb_quote/schedule.json 失敗：", e)
 
-# ── 5. Thread「真實待發隊列」＝thread_rewrite/schedule.json 裡的 posts（你核可、還沒發）＋正文預覽 ──
+# ── 5. Thread「真實待發隊列」＝thread_rewrite/schedule.json 裡的 posts（你核可、還沒發）＋正文預覽＋整段正文 ──
 thread_queue = []
 try:
     posts = read_json(os.path.join(WC, "thread_rewrite", "schedule.json"))["posts"]
     for p in sorted(posts, key=lambda p: int(p["day"])):
         thread_queue.append({"day": int(p["day"]), "topic": p.get("topic", ""),
-                             "content": preview_of(p.get("body", ""))})
+                             "content": preview_of(p.get("body", "")),
+                             "full": (p.get("body", "") or "").strip()})
 except Exception as e:
     print("讀 thread_rewrite/schedule.json 失敗：", e)
 
@@ -115,6 +124,10 @@ out = {
     "social_content": prev.get("social_content", {}),
     "shorts_cron": shorts_cron,
     "shorts_status": prev.get("shorts_status", "none"),
+    # 人工維護：戰況卡範例圖＋當天 caption 模板（明日待發頁 08:00 戰況卡點開看樣子）、Reel 影片附件對映
+    "warcard_sample_img": prev.get("warcard_sample_img", ""),
+    "warcard_caption_tpl": prev.get("warcard_caption_tpl", ""),
+    "reels_media": prev.get("reels_media", {}),
 }
 
 with io.open(os.path.join(HERE, "week.json"), "w", encoding="utf-8") as f:
