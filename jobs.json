@@ -1,134 +1,254 @@
 {
-  "updated": "2026-06-21 18:10 台北",
-  "jobs": [
+ "updated": "2026-06-22 07:22 台北",
+ "jobs": [
+  {
+   "id": "20260622-tomorrow-detail",
+   "ts": "06-22 07:22",
+   "project": "明日待發頁 · 每項可點開看完整內文＋附件",
+   "owner": "戰情室升級",
+   "result": "每項展開＝完整文稿全文＋金句卡圖/社團圖/影片＋社團首留言(含連結)，比照員工呈報；build_week.py 自動帶full+img",
+   "status": "done",
+   "artifacts": [
+    "hsien33.github.io/w2l-warroom/明日待發.html",
+    "commit 0c88553"
+   ],
+   "note": "你清晨回饋『太倆光只一行』已修；本機+線上雙驗"
+  },
+  {
+   "id": "20260622-report-archive",
+   "ts": "06-22 07:22",
+   "project": "戰情室 · 昨日報告過00:00自動歸檔",
+   "owner": "戰情室升級",
+   "result": "頂部橫幅只在報告是今天才醒目；過午夜變昨天的→降級+移進『📚歷史報告存檔』；回戰情室連結修為絕對網址",
+   "status": "done",
+   "artifacts": [
+    "index.html",
+    "reports.json",
+    "commit d7f61b3"
+   ],
+   "note": "你清晨回饋『舊報告佔頂部混淆』已修"
+  },
+  {
+   "id": "20260622-funnel-magnet",
+   "ts": "06-22 07:22",
+   "project": "名單出海口 · 落地頁v1/v2＋兩工具email捕捉",
+   "owner": "變現漏斗",
+   "result": "黑金名單落地頁v1/v2、補習費/天賦兩工具加email區、統一磁鐵『第一張理財地圖』",
+   "status": "done",
+   "artifacts": [
+    "引流工具工廠/名單落地頁_v2.html",
+    "自走_0621夜/落地頁v2_文案定稿.md"
+   ],
+   "note": "未部署；待你早上校文案+接Tally/Kit後端"
+  },
+  {
+   "id": "20260622-ladder-99",
+   "ts": "06-22 07:22",
+   "project": "變現受眾階梯 · NT$99《孩子的第一堂金錢課》",
+   "owner": "變現漏斗",
+   "result": "升級品定稿(100%既有素材重排零新拍)＋5封歡迎信序列＋銷售頁HTML草稿",
+   "status": "needs_jeff",
+   "artifacts": [
+    "自走_0621夜/變現受眾階梯_定稿.md",
+    "引流工具工廠/升級品銷售頁_孩子的第一堂金錢課_草稿.html"
+   ],
+   "ask": [
     {
-      "id": "20260621-line-thread",
-      "ts": "06-21 18:05",
-      "project": "Thread 改寫線 · ✅ 已上線（每晚 21:00 自動發）",
-      "owner": "副總",
-      "result": "✅ Jeff 核可兩篇＋上線。已改 cron 每晚 21:00 真發；THREADS 金鑰雲端早已設好(6/20)；雲端 dry-run 實證讀到 Threads 13 則貼文＝金鑰有效。今晚 21:00 起自動發你審過的 Thread(DAY010→011)，當日防呆＋冪等不重發",
-      "status": "done",
-      "artifacts": ["戰況卡自動發/thread_rewrite/schedule.json", "戰況卡自動發/src/thread_rewrite.py"],
-      "note": "金鑰那點你本來要設的，其實 6/20 就跟 IG/FB 一起設好了＝不用做。這條線從此全自動。",
-      "_ask_done": [
-        {"q":"核可這兩篇 Thread 嗎？（點看內容）","review":"【DAY010｜需要 vs 想要】\n我到現在還搞不太清楚，「需要」和「想要」中間那條線，到底畫在哪。\n\n孩子在店裡指著比較貴的那個，眼睛發亮。我張口想說「那個太貴了」，又把話吞回去——因為我發現，我自己每次手滑下單，用的也是一模一樣的理由：「這個比較好。」\n\n後來我只學會問一句話，問他、也問我自己：「這個是你現在需要，還是你現在想要？」沒有要他不准買，只是讓他停三秒。\n\n讓我困惑的是：這三秒的停頓，到底是在幫他存錢，還是只是把我的焦慮，提早搬到他身上？我還沒想清楚。\n\n你家也會在結帳前，多問那一句嗎？\n— 第一則留言放：first-bucket 工具連結（已驗200）\n\n──────────\n\n【DAY011｜把進度握回自己手裡】\n我兒子這次考 67 分，全班一起垮，我卻沒罵他——然後我整晚都在懷疑，自己這樣到底對不對。\n\n我跟他說的其實只有一句：老師可以請公假，但你的人生，沒有代課老師；自己的進度，要自己握回來。\n\n講完我反而心虛。因為這句話，根本是我四十幾歲才真的學會的——以前我也老覺得，賠錢是市場的錯、是時機不對、是別人沒提醒我。一直到我認了「這是我自己的帳、得我自己扛」，才慢慢翻身。\n\n讓我困惑的是：這種「自己扛」的底氣，是逼出來的，還是要等他自己撞牆才長得出來？\n\n你會在孩子考差的時候罵，還是忍住？\n— 第一則留言放：父子對決 IG 連結（已驗200）"},
-        {"q":"要上線嗎？核可後我取消 cron 註解，每晚 20:20 自動發「你審過的」Thread。"},
-        {"q":"雲端要設 THREADS_ACCESS_TOKEN / THREADS_USER_ID Secret（登入帳號的事、你設一次，我不能碰）。"}
-      ]
+     "q": "NT$99升級品要不要做？(顧問一致建議做＝把白嫖者變付過錢客戶)",
+     "review": "名稱《孩子的第一堂金錢課》/定價99(前100)·149/要不要先架5封歡迎信"
     },
     {
-      "id": "20260621-line-club",
-      "ts": "06-21 18:05",
-      "project": "FB 社團文線 · 依你裁示重做中",
-      "owner": "FB 執行手（背景）",
-      "result": "派工中：①週五『天賦』維持(已核)②週二『補習』重寫＝扣你真故事(10萬衝刺班→不補自己念→上建中→當獎學金)③每篇備 文稿+1張圖+首留言④打包到桌面成品同資料夾⑤已建週二/五 19:30 LINE 提醒。發社團：家有中學生/家有國中生/小一聯盟",
-      "status": "dispatched",
-      "artifacts": ["財富煉金術/02_社群產出/引流工具工廠/社團文計劃案/本週_待裁定.html"],
-      "note": "誠實：FB 社團無法 API 全自動（Meta 收了 API）→ 發那一下你一鍵手貼或 FB 後台原生排程；內容我全備好。",
-      "ask": [
-        {"q":"核可這兩篇社團文嗎？（點看內容）","review":"【週二 6/23・搭補習費計算機・關鍵字「補習」】\n我算過一筆帳，算完那天有點睡不著。\n\n我家小孩補習那幾年，我習慣性每個月匯出去，從沒停下來想過：這筆錢「不只是補習費」，它其實還有另一個長相。\n\n我隨手抓個常見的數字——每個月 1 萬 5。補三年、五年、十年，你猜總共多少？更狠的是：如果這筆錢沒拿去補，而是放著慢慢滾，到孩子成年那天，它會變成什麼樣子。\n\n我不是要說補習不好（我自己也讓孩子補過），我只是覺得，當家長至少該「看得見」這個選擇題長什麼樣。\n\n我把它做成一個小工具，純在你手機裡算、不收任何資料。想自己拉拉看的，在留言區打「補習」兩個字，我把連結送你 👇\n（也歡迎說說：你家一個月的補習預算抓多少？）\n— 第一則留言放：alchemy-tuition 連結（已驗200）\n\n──────────\n\n【週五 6/26・搭天賦解碼・關鍵字「天賦」】\n同一間補習班、同一個老師，為什麼有的孩子上完突飛猛進，有的孩子越補越累？\n\n我後來想通一件事：問題常常不在「補不補」，而在「這孩子本來是用哪種方式在學」。有的孩子靠聽、有的靠看、有的非得動手做一遍才記得住；你硬把他塞進不對的方式裡，再貴的補習都像在漏水的桶子裡倒水。\n\n我把這幾種「學習方式」整理成一個小測驗——花兩分鐘，幫你看看你家孩子比較像哪一型，還附一份對應的「在家陪他學」的小錦囊。\n\n想測測看你家孩子的，在留言打「天賦」，我把連結送你 👇\n（先猜猜：你覺得你家那位是「用聽的」「用看的」還是「用手的」？）\n— 第一則留言放：learning-gift 連結（已驗200）"},
-        {"q":"要發進哪個 FB 社團？（我不知道你要發哪個社團，這點要你給）"},
-        {"q":"兩篇都排，還是先發週二試水溫？（我建議兩篇都排）"},
-        {"q":"發法：你一鍵手貼，還是 Publer 手機推播提醒？（Meta 不給社團 API 全自動）"}
-      ]
-    },
-    {
-      "id": "20260621-line-shorts",
-      "ts": "06-21 18:20",
-      "project": "YouTube Shorts 線 · 改用『複利有聲』那套重做中",
-      "owner": "自動剪輯製作官（背景）",
-      "result": "❌ 動畫字卡版被退。Jeff 要的是之前『複利有聲 Shorts』那套＝你的VoxCPM聲音+實拍b-roll+金字字幕。已找到當初做法(video-autopilot-kit/build_fuli_short.py+gen_voice_fuli.py+724支broll)，正用這套重做王牌『珍奶/賓士費用』有聲版。YT金鑰已設+驗證可上傳、隱私unlisted",
-      "status": "dispatched",
-      "note": "先做王牌一支(有你的聲音)給你看，對了再做第二支。⚠️ 同意畫面記得按『發布應用程式』(否則 token 約7天過期)。",
-      "artifacts": ["財富煉金術/02_社群產出/Shorts線/本週_計畫與草案_v2_從0到1.md", "戰況卡自動發/shorts/schedule.json"],
-      "ask": [
-        {"q":"看過這兩支成品片(桌面成品\\Shorts_本週\\)OK 嗎？OK 我就讓它自動上傳 unlisted 給你在 YT 做最後確認。","review":"【A｜珍奶/賓士費用・35.5秒・已輸出mp4】\n8% vs 7% 雙長條動畫 → 1006萬 vs 761萬 → 差245萬＝一台賓士。Peak：你以為省的是一杯珍奶，其實是一台賓士。\n\n【B｜年齡財富配速表・35.5秒・已輸出mp4】\n馬拉松不是百米 → 平均數騙局(中位數894萬) → 20/30/40歲配速表。Peak：今天比昨天富一點點，你就站在贏家圈。\n\n兩支：黑金漸層金箔、數據會動、靜音可懂、片尾非投資建議、0個股代號。副總抽幀驗過數字正確無錯字。"}
-      ]
-    },
-    {
-      "id": "20260621-warroom-week-board",
-      "ts": "06-21 16:15",
-      "project": "戰情室「未來一周排程板」（真實排程、非願望清單）",
-      "owner": "副總",
-      "result": "改成 6 檔通路×7天、🟢已排定/🔴未排定，由 build_week.py 從 warcard-auto 真實源頭推導 week.json；JS 即時算日期（修掉週六→週日 bug）；實機驗證紅綠正確、console 無錯、已上線",
-      "status": "done",
-      "artifacts": ["index.html", "week.json", "build_week.py"],
-      "note": "目前真相：每天只有『戰況卡』全自動(綠)；Reel 僅今天 Day11 有庫存(綠)，Day12-17 未製作(紅)；社團/Shorts/Thread 無自動化(恆紅)；FB金句卡建好未上線(紅)"
-    },
-    {
-      "id": "20260621-fb-quote-auto",
-      "ts": "06-21 16:00",
-      "project": "FB 粉專金句卡連續劇 — 雲端自動發",
-      "owner": "背景 agent → 副總驗收",
-      "result": "✅ 已上線（Jeff 授權「金句卡核定即自動發」）。加『當日防呆 quote_posted_today』＝每天最多一張，Publer 與本系統永不雙發、互為備援；每 20:07 自動發下一張未發卡（讀 FB 即時判定）。dry-run/防呆單元測試/md5/連結200 全驗過",
-      "status": "done",
-      "artifacts": ["戰況卡自動發/src/fb_quote.py", "戰況卡自動發/fb_quote/schedule.json"],
-      "note": "今晚 DAY013 由 Publer 20:00 發、我 20:07 自動讓位（備援）；本系列到 DAY015 收官後 LINE 提醒排新一週。Publer 的金句卡可隨時刪、不刪也不會雙發"
-    },
-    {
-      "id": "20260621-domain-migration",
-      "ts": "06-21 18:05",
-      "project": "網域遷移 · 交由另一 session 執行中",
-      "owner": "網站 session",
-      "result": "Jeff 裁示：另一隻 session 已在做。程式備妥的部分(分支 migrate-to-www、dist、操作手冊)留存備用；本看板不再列為待你拍板",
-      "status": "done",
-      "artifacts": ["01_文件與日誌/網域遷移_Jeff操作手冊.md", "walk2light-site/dist/", "walk2light-site/migration/new.htaccess"],
-      "note": "程式全備妥，缺的是要登入主機的操作（A 級、你來）。",
-      "ask": [
-        {"q":"確認可以開始搬站嗎？（新站→www、舊→bak、落點工具留 new 不動）"},
-        {"q":"Hostinger 主機操作要你登入執行（部署 dist、放 .htaccess、DNS、SSL）。"},
-        {"q":"付費工具買家清單給我，好做 bak 實測不漏單。"}
-      ]
-    },
-    {
-      "id": "20260621-day11-reel",
-      "ts": "06-21 15:10",
-      "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
-      "owner": "影音製作 agent → 副總排發",
-      "result": "✅ 修正版完成＋Jeff 核准，已登錄 schedule.json Day11→今晚 20:30 自動發 IG(＋FB 自動轉)。reels/DAY011.mp4 md5 與桌面成品一致(11M/99s/結尾有聲)",
-      "status": "done",
-      "artifacts": ["戰況卡自動發/reels/DAY011.mp4"],
-      "note": "20:30 雲端自動發；文案已附 Jeff 可在 20:30 前改"
-    },
-    {
-      "id": "20260621-fb-autopost",
-      "ts": "06-21 12:10",
-      "project": "FB 粉專自動發文接通",
-      "owner": "副總",
-      "result": "✅ 永久接通：Jeff 給 App ID/Secret/新權杖→換成永不過期粉專權杖(驗:type=PAGE,expires_at=0,含 pages_manage_posts)，已設 secret",
-      "status": "done",
-      "artifacts": [],
-      "note": "以後戰況卡/Reel 自動轉 FB(餵母檔)，巡檢官每天抽驗那支能播；FB 自動發永遠不用再管"
-    },
-    {
-      "id": "20260621-warcard-caption",
-      "ts": "06-21 11:50",
-      "project": "戰況卡文稿引擎＋預告模式",
-      "owner": "IG 顧問 agent ＋ 副總",
-      "result": "輪替 hook＋情境感知＋今日真事插槽＋預告端好料模式；移除捏造（衝最兇/釘首頁）；dry-run 實證",
-      "status": "done",
-      "artifacts": ["warcard-auto/src/daily.py"],
-      "note": "TEASE_MODE=1 已開，明早起自動走預告調"
-    },
-    {
-      "id": "20260621-warroom-v4-trend",
-      "ts": "06-21 10:30",
-      "project": "戰情室 v4 ＋ 每日 IG 增減圖表",
-      "owner": "副總＋資料/前端 agent",
-      "result": "13 點規格重排上線；每日增減長條圖（回填真實歷史 6/13~6/21）",
-      "status": "done",
-      "artifacts": ["index.html", "refresh.py"],
-      "note": "線上 hsien33.github.io/w2l-warroom/"
-    },
-    {
-      "id": "20260621-magnet-warm",
-      "ts": "06-21 09:20",
-      "project": "磁鐵頁《孩子的第一桶金》暖風改版",
-      "owner": "設計顧問 agent（原研哉/Kelly Hoppen/于美人）",
-      "result": "晨光暖風＋正確金箭頭 logo＋斷行修正＋金線＋CTA 接 IG 私訊；Jeff 拍板「這就是我愛的樣式」",
-      "status": "done",
-      "artifacts": ["w2l-warroom/magnet/孩子的第一桶金.html"],
-      "note": "樣式已固化成 warm-magnet-style 範本"
+     "q": "🔴唯一要你補的真話：『我20年金融業卻一樣卡在怎麼跟自己孩子開口』的真實故事＝銷售頁靈魂，AI不能編",
+     "review": "你給真話我落地進銷售頁"
     }
-  ]
+   ]
+  },
+  {
+   "id": "20260622-quote-content",
+   "ts": "06-22 07:22",
+   "project": "庫存＋內容升級 · 金句卡DAY016-025＋好笑度升級包",
+   "owner": "內容工廠",
+   "result": "金句卡DAY016-025共10張(核可版金箔)＋內容好笑度升級包(戰況卡caption/Reel hook/好笑記憶錨)",
+   "status": "done",
+   "artifacts": [
+    "金句卡/下一週_DAY016-025/",
+    "自走_0621夜/內容好笑度升級包_定稿.md"
+   ],
+   "note": "金句卡待你即貼包核可才發；升級包待你挑版落地"
+  },
+  {
+   "id": "20260622-night-report",
+   "ts": "06-22 07:22",
+   "project": "自走成果0622報告 · 已進戰情室存檔",
+   "owner": "收尾",
+   "result": "整晚白話報告生成HTML進戰情室(6/22置頂·6/21歸檔)＋桌面成品；含你15分鐘照順序點頭的5步驟",
+   "status": "done",
+   "artifacts": [
+    "hsien33.github.io/w2l-warroom/reports/2026-06-22.html",
+    "commit 4daef53"
+   ],
+   "note": "頂部🌙橫幅點開即看"
+  },
+  {
+   "id": "20260621-line-thread",
+   "ts": "06-21 18:05",
+   "project": "Thread 改寫線 · ✅ 已上線（每晚 21:00 自動發）",
+   "owner": "副總",
+   "result": "✅ Jeff 核可兩篇＋上線。已改 cron 每晚 21:00 真發；THREADS 金鑰雲端早已設好(6/20)；雲端 dry-run 實證讀到 Threads 13 則貼文＝金鑰有效。今晚 21:00 起自動發你審過的 Thread(DAY010→011)，當日防呆＋冪等不重發",
+   "status": "done",
+   "artifacts": [
+    "戰況卡自動發/thread_rewrite/schedule.json",
+    "戰況卡自動發/src/thread_rewrite.py"
+   ],
+   "note": "金鑰那點你本來要設的，其實 6/20 就跟 IG/FB 一起設好了＝不用做。這條線從此全自動。",
+   "_ask_done": [
+    {
+     "q": "核可這兩篇 Thread 嗎？（點看內容）",
+     "review": "【DAY010｜需要 vs 想要】\n我到現在還搞不太清楚，「需要」和「想要」中間那條線，到底畫在哪。\n\n孩子在店裡指著比較貴的那個，眼睛發亮。我張口想說「那個太貴了」，又把話吞回去——因為我發現，我自己每次手滑下單，用的也是一模一樣的理由：「這個比較好。」\n\n後來我只學會問一句話，問他、也問我自己：「這個是你現在需要，還是你現在想要？」沒有要他不准買，只是讓他停三秒。\n\n讓我困惑的是：這三秒的停頓，到底是在幫他存錢，還是只是把我的焦慮，提早搬到他身上？我還沒想清楚。\n\n你家也會在結帳前，多問那一句嗎？\n— 第一則留言放：first-bucket 工具連結（已驗200）\n\n──────────\n\n【DAY011｜把進度握回自己手裡】\n我兒子這次考 67 分，全班一起垮，我卻沒罵他——然後我整晚都在懷疑，自己這樣到底對不對。\n\n我跟他說的其實只有一句：老師可以請公假，但你的人生，沒有代課老師；自己的進度，要自己握回來。\n\n講完我反而心虛。因為這句話，根本是我四十幾歲才真的學會的——以前我也老覺得，賠錢是市場的錯、是時機不對、是別人沒提醒我。一直到我認了「這是我自己的帳、得我自己扛」，才慢慢翻身。\n\n讓我困惑的是：這種「自己扛」的底氣，是逼出來的，還是要等他自己撞牆才長得出來？\n\n你會在孩子考差的時候罵，還是忍住？\n— 第一則留言放：父子對決 IG 連結（已驗200）"
+    },
+    {
+     "q": "要上線嗎？核可後我取消 cron 註解，每晚 20:20 自動發「你審過的」Thread。"
+    },
+    {
+     "q": "雲端要設 THREADS_ACCESS_TOKEN / THREADS_USER_ID Secret（登入帳號的事、你設一次，我不能碰）。"
+    }
+   ]
+  },
+  {
+   "id": "20260621-line-club",
+   "ts": "06-22 07:22",
+   "project": "FB 社團文線 · 本週＋下週文稿已備",
+   "owner": "FB 執行手（背景）",
+   "result": "本週(6/23二補習費・6/26五天賦)文稿+圖+首留言已打包桌面成品；下週(6/30・7/3)三社團×6篇客製文稿已備",
+   "status": "done",
+   "artifacts": [
+    "桌面成品/社團文_本週_0623-0626",
+    "自走_0621夜/社團文下週計劃案_0630-0703.md"
+   ],
+   "note": "社團禁外連＝走私訊關鍵字導IG；發前19:30 LINE提醒手貼。待你核語氣"
+  },
+  {
+   "id": "20260621-line-shorts",
+   "ts": "06-22 07:22",
+   "project": "YouTube Shorts 線 · 暫停（你決定先放棄、重想方向）",
+   "owner": "自動剪輯製作官（背景）",
+   "result": "Shorts 暫停；YT 上傳金鑰已設好並驗證，隨時可恢復",
+   "status": "done",
+   "note": "你說先放棄Shorts重想方向；金鑰永久就緒",
+   "artifacts": [
+    "戰情室明日待發頁 Shorts＝不發/暫停狀態"
+   ]
+  },
+  {
+   "id": "20260621-warroom-week-board",
+   "ts": "06-21 16:15",
+   "project": "戰情室「未來一周排程板」（真實排程、非願望清單）",
+   "owner": "副總",
+   "result": "改成 6 檔通路×7天、🟢已排定/🔴未排定，由 build_week.py 從 warcard-auto 真實源頭推導 week.json；JS 即時算日期（修掉週六→週日 bug）；實機驗證紅綠正確、console 無錯、已上線",
+   "status": "done",
+   "artifacts": [
+    "index.html",
+    "week.json",
+    "build_week.py"
+   ],
+   "note": "目前真相：每天只有『戰況卡』全自動(綠)；Reel 僅今天 Day11 有庫存(綠)，Day12-17 未製作(紅)；社團/Shorts/Thread 無自動化(恆紅)；FB金句卡建好未上線(紅)"
+  },
+  {
+   "id": "20260621-fb-quote-auto",
+   "ts": "06-21 16:00",
+   "project": "FB 粉專金句卡連續劇 — 雲端自動發",
+   "owner": "背景 agent → 副總驗收",
+   "result": "✅ 已上線（Jeff 授權「金句卡核定即自動發」）。加『當日防呆 quote_posted_today』＝每天最多一張，Publer 與本系統永不雙發、互為備援；每 20:07 自動發下一張未發卡（讀 FB 即時判定）。dry-run/防呆單元測試/md5/連結200 全驗過",
+   "status": "done",
+   "artifacts": [
+    "戰況卡自動發/src/fb_quote.py",
+    "戰況卡自動發/fb_quote/schedule.json"
+   ],
+   "note": "今晚 DAY013 由 Publer 20:00 發、我 20:07 自動讓位（備援）；本系列到 DAY015 收官後 LINE 提醒排新一週。Publer 的金句卡可隨時刪、不刪也不會雙發"
+  },
+  {
+   "id": "20260621-domain-migration",
+   "ts": "06-21 18:05",
+   "project": "網域遷移 · 交由另一 session 執行中",
+   "owner": "網站 session",
+   "result": "Jeff 裁示：另一隻 session 已在做。程式備妥的部分(分支 migrate-to-www、dist、操作手冊)留存備用；本看板不再列為待你拍板",
+   "status": "done",
+   "artifacts": [
+    "01_文件與日誌/網域遷移_Jeff操作手冊.md",
+    "walk2light-site/dist/",
+    "walk2light-site/migration/new.htaccess"
+   ],
+   "note": "程式全備妥，缺的是要登入主機的操作（A 級、你來）。",
+   "ask": [
+    {
+     "q": "確認可以開始搬站嗎？（新站→www、舊→bak、落點工具留 new 不動）"
+    },
+    {
+     "q": "Hostinger 主機操作要你登入執行（部署 dist、放 .htaccess、DNS、SSL）。"
+    },
+    {
+     "q": "付費工具買家清單給我，好做 bak 實測不漏單。"
+    }
+   ]
+  },
+  {
+   "id": "20260621-day11-reel",
+   "ts": "06-21 15:10",
+   "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
+   "owner": "影音製作 agent → 副總排發",
+   "result": "✅ 修正版完成＋Jeff 核准，已登錄 schedule.json Day11→今晚 20:30 自動發 IG(＋FB 自動轉)。reels/DAY011.mp4 md5 與桌面成品一致(11M/99s/結尾有聲)",
+   "status": "done",
+   "artifacts": [
+    "戰況卡自動發/reels/DAY011.mp4"
+   ],
+   "note": "20:30 雲端自動發；文案已附 Jeff 可在 20:30 前改"
+  },
+  {
+   "id": "20260621-fb-autopost",
+   "ts": "06-21 12:10",
+   "project": "FB 粉專自動發文接通",
+   "owner": "副總",
+   "result": "✅ 永久接通：Jeff 給 App ID/Secret/新權杖→換成永不過期粉專權杖(驗:type=PAGE,expires_at=0,含 pages_manage_posts)，已設 secret",
+   "status": "done",
+   "artifacts": [],
+   "note": "以後戰況卡/Reel 自動轉 FB(餵母檔)，巡檢官每天抽驗那支能播；FB 自動發永遠不用再管"
+  },
+  {
+   "id": "20260621-warcard-caption",
+   "ts": "06-21 11:50",
+   "project": "戰況卡文稿引擎＋預告模式",
+   "owner": "IG 顧問 agent ＋ 副總",
+   "result": "輪替 hook＋情境感知＋今日真事插槽＋預告端好料模式；移除捏造（衝最兇/釘首頁）；dry-run 實證",
+   "status": "done",
+   "artifacts": [
+    "warcard-auto/src/daily.py"
+   ],
+   "note": "TEASE_MODE=1 已開，明早起自動走預告調"
+  },
+  {
+   "id": "20260621-warroom-v4-trend",
+   "ts": "06-21 10:30",
+   "project": "戰情室 v4 ＋ 每日 IG 增減圖表",
+   "owner": "副總＋資料/前端 agent",
+   "result": "13 點規格重排上線；每日增減長條圖（回填真實歷史 6/13~6/21）",
+   "status": "done",
+   "artifacts": [
+    "index.html",
+    "refresh.py"
+   ],
+   "note": "線上 hsien33.github.io/w2l-warroom/"
+  },
+  {
+   "id": "20260621-magnet-warm",
+   "ts": "06-21 09:20",
+   "project": "磁鐵頁《孩子的第一桶金》暖風改版",
+   "owner": "設計顧問 agent（原研哉/Kelly Hoppen/于美人）",
+   "result": "晨光暖風＋正確金箭頭 logo＋斷行修正＋金線＋CTA 接 IG 私訊；Jeff 拍板「這就是我愛的樣式」",
+   "status": "done",
+   "artifacts": [
+    "w2l-warroom/magnet/孩子的第一桶金.html"
+   ],
+   "note": "樣式已固化成 warm-magnet-style 範本"
+  }
+ ]
 }

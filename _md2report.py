@@ -88,7 +88,7 @@ STYLE = (":root{--gold:#c9a44c;--ink:#2b2720;--mid:#55503f;--line:#e7dfd0}*{box-
 PAGE = (f"<!doctype html><html lang=\"zh-Hant\"><head><meta charset=\"UTF-8\">"
  f"<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">{FAVICON}"
  f"<title>{html.escape(TITLE)}</title><style>{STYLE}</style></head>"
- f"<body><div class=\"wrap\"><a class=\"back\" href=\"./\">← 回戰情室</a>"
+ f"<body><div class=\"wrap\"><a class=\"back\" href=\"https://hsien33.github.io/w2l-warroom/\">← 回戰情室</a>"
  f"<div class=\"card\">{content}</div></div></body></html>")
 
 # 1) 戰情室存檔頁
