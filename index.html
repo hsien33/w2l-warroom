@@ -186,11 +186,14 @@
   .slot.no .stime{color:#c2554a} .slot.no .sch{color:#9b3f35}
   .slot.no .ssta{color:#fff;background:#cf5e53}
   .slot:hover{transform:translateX(1px);filter:brightness(.985)}
-  /* 摘要浮層：平常隱藏、懸停顯示、絕對定位＝不擠版面 */
-  .slot .stask{position:absolute;left:8px;right:8px;top:calc(100% - 3px);z-index:8;
-    font-family:var(--tc);font-size:11px;line-height:1.45;color:var(--mid);
-    background:#fffdf8;border:1px solid var(--line);border-radius:9px;padding:7px 10px;box-shadow:var(--sh2);
-    opacity:0;visibility:hidden;transform:translateY(-4px);transition:.14s;pointer-events:none}
+  /* 摘要浮層：平常隱藏、懸停顯示、絕對定位＝不擠版面；大框、字大、內容詳細 */
+  .slot .stask{position:absolute;left:0;right:auto;top:calc(100% + 3px);z-index:8;width:260px;max-width:76vw;
+    font-family:var(--tc);font-size:13.5px;line-height:1.7;color:var(--ink);text-align:left;
+    background:#fffefb;border:1px solid var(--gold);border-radius:12px;padding:12px 14px;
+    box-shadow:0 18px 44px -14px rgba(60,45,15,.5),0 0 0 1px rgba(201,164,76,.15);
+    opacity:0;visibility:hidden;transform:translateY(-5px);transition:.15s;pointer-events:none}
+  .slot .stask b{color:var(--gold-d);font-weight:800}
+  .wp-day.r .slot .stask{left:auto;right:0}
   .slot:hover{z-index:9}
   .slot:hover .stask{opacity:1;visibility:visible;transform:translateY(0)}
 
@@ -663,26 +666,37 @@ function renderWeek(cfg){
       fbqLabel=i===0?('建好待上線 · 下一張 DAY'+(fq.next_day||'')+' '+(tp[fq.next_day]||'')):'待你上線';
     }
     const reelOk=inv.has(reelDay);
+    const fbqDetail = fq.live
+      ? ((fq.next_day||0)+i<=(fq.last_day||0)
+          ? '<b>DAY'+((fq.next_day||0)+i)+' '+(tp[(fq.next_day||0)+i]||'')+'</b>｜每晚 20:07 雲端自動發 FB 粉專（讀 FB 即時判斷發到哪、每天最多一張、與 Publer 互為備援不雙發）。'
+          : '<b>本系列已收官（到 DAY'+(fq.last_day||'')+'）</b>｜需排下一週金句卡：把新卡＋文案加進 schedule 就自動接力。')
+      : '<b>建好但待你上線</b>｜下一張 DAY'+(fq.next_day||'')+' '+(tp[fq.next_day]||'')+'。核可即每晚 20:07 自動發。';
     const slots=[
-      {t:'08:00',ch:'IG 戰況卡',     ok:true,      label:'第'+warDay+'天戰況 · 每早自動'},
-      {t:'12:00',ch:'FB 社團文',     ok:!ml.club,  label:ml.club?'手動轉傳 · 未排':'已排'},
-      {t:'18:00',ch:'Shorts',        ok:!ml.shorts,label:ml.shorts?'尚無自動化 · 未排':'已排'},
-      {t:'20:00',ch:'FB 粉專金句卡', ok:fbqOk,     label:fbqLabel},
-      {t:'20:30',ch:'IG 主 Reel',    ok:reelOk,    label:reelOk?('Day'+reelDay+' 已備 · 自動'):('Day'+reelDay+' 未製作')},
-      {t:'21:00',ch:'Thread 改寫',   ok:!ml.thread,label:ml.thread?'手動發 · 未排':'已排'},
+      {t:'08:00',ch:'IG 戰況卡',     ok:true,
+        label:'<b>第'+warDay+'天戰況</b>｜每天上午雲端自動發 IG（含 2 班備援），即時抓追蹤數計分、誠實預告調，零人工。'},
+      {t:'12:00',ch:'FB 社團文',     ok:!ml.club,
+        label:'<b>目前無人顧 · 建置中</b>｜計畫：每週搭配 1 個免費小工具，週六給你「計劃案網頁」裁定（工具＋週二/週五文稿＋引流鉤子＋私訊關鍵字），核可後自動排發。本週計劃案產製中。'},
+      {t:'18:00',ch:'Shorts',        ok:!ml.shorts,
+        label:'<b>製作線建置中</b>｜計畫：把當日主集 Reel 改編成 YouTube Shorts（非純搬運），一週備量等發、你審後自動排。唯一卡點＝YouTube 發佈金鑰待你授權設定。'},
+      {t:'20:00',ch:'FB 粉專金句卡', ok:fbqOk, label:fbqDetail},
+      {t:'20:30',ch:'IG 主 Reel',    ok:reelOk,
+        label:reelOk?('<b>Day'+reelDay+' 影片已備</b>｜今晚 20:30 雲端自動發 IG（＋自動轉 FB 粉專）。')
+                    :('<b>Day'+reelDay+' 尚未製作</b>｜需先做好影片＋配音（過逐句聽稿驗收）才能發；這格紅＝今晚這集沒庫存。')},
+      {t:'21:00',ch:'Thread 改寫',   ok:!ml.thread,
+        label:'<b>改寫線建置中</b>｜計畫：當日 Reel 一做好就自動改寫成 Thread（過演算法閘＋你審），一週備量自動排發。卡在 Reel 完成才有素材。'},
     ];
-    days.push({mmdd:(d.getMonth()+1)+'/'+d.getDate(),dow:DOW[d.getDay()],today:i===0,slots});
+    days.push({mmdd:(d.getMonth()+1)+'/'+d.getDate(),dow:DOW[d.getDay()],today:i===0,edge:i>=4,slots});
   }
   $("#wpgrid").innerHTML=days.map(d=>{
     const n=d.slots.filter(s=>s.ok).length;
-    return `<div class="wp-day ${d.today?'today':''}">
+    return `<div class="wp-day ${d.today?'today':''} ${d.edge?'r':''}">
       <div class="wdate"><span class="dd">${d.mmdd}</span><span class="wk">週${d.dow}</span>${d.today?'<span class="nowtag">今天</span>':`<span class="wcount">${n}/6</span>`}</div>
       ${d.slots.map(s=>`
         <div class="slot ${s.ok?'ok':'no'}">
           <span class="stime">${s.t}</span>
           <span class="sch">${esc(s.ch)}</span>
           <span class="ssta">${s.ok?'已排定':'未排定'}</span>
-          <div class="stask">${esc(s.label)}</div>
+          <div class="stask">${s.label}</div>
         </div>`).join('')}
     </div>`;
   }).join('');
