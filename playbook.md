@@ -77,6 +77,7 @@
 ### ✍️ 文案/改寫（skill: jeff-perspective, threads/ig/reels/shorts-strategy-mentor）
 - 留言/文案語感：先短認同→補自己點→謙虛收尾，比 AI 草稿砍三成字；用「的確/其實/也」少用「真的真的」；指自己貼文用「這篇」。
 - 戰況卡文稿走「預告端好料」誠實調（TEASE_MODE），不白送 Email 磁鐵（孩子的第一桶金走電子報漏斗）。
+- 🔴 **Thread 改寫鐵則（Jeff 2026-06-21 退稿、刪文）**：①**忠實改寫「當天主 Reel 的真實文稿」**＝拿那支 Reel 的實際旁白/故事改成 Threads 版，**不是憑主題自己編一篇新散文**（agent 用 Honest Explorer「我到現在還搞不清楚需要vs想要」＝亂寫、跟 Reel 文稿無關）②**不准亂套工具/連結**（亂塞 first-bucket 計算機＝亂套）③**先核後發＝每篇草稿先給 Jeff 看過核可才發、不自動發**（已關 thread cron）。要上線＝先把「Reel 文稿→Thread 草稿」做對、Jeff 核可流程後才開。
 
 ### 🎨 設計/視覺（skill: 原研哉/Kelly Hoppen/Jobs/Kenya Hara + make_week.py）
 - 金句卡照 make_week.py（SS2/Black/柔投影/冷暖金/漸層金箔），別自製別用 satori。
