@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-21 19:27 台北",
-  "followers": 387,
+  "updated": "2026-06-21 21:21 台北",
+  "followers": 389,
   "goal": 1000,
   "dday": 19,
   "day": 11,
@@ -82,31 +82,31 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 387,
+        "current": 389,
         "live": true,
         "delta": {
           "day": {
-            "value": 13,
+            "value": 15,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 328,
+            "value": 330,
             "days": 8,
             "note": ""
           },
           "quarter": {
-            "value": 360,
+            "value": 362,
             "days": 10,
             "note": ""
           },
           "half": {
-            "value": 360,
+            "value": 362,
             "days": 10,
             "note": ""
           },
           "year": {
-            "value": 360,
+            "value": 362,
             "days": 10,
             "note": ""
           }
@@ -784,7 +784,7 @@
   },
   "history": {
     "2026-06-21": {
-      "ig": 387,
+      "ig": 389,
       "yt": 19700,
       "fb": 13,
       "threads": 32,
@@ -811,35 +811,35 @@
   },
   "channels": {
     "ig": {
-      "followers": 387,
+      "followers": 389,
       "live": true,
-      "updated": "06/21 19:27"
+      "updated": "06/21 21:21"
     },
     "yt": {
       "subs": 19700,
       "views": 804489,
       "videos": 31,
       "live": true,
-      "updated": "06/21 19:27"
+      "updated": "06/21 21:21"
     },
     "fb": {
       "followers": 13,
-      "last_msg": "你一天看幾次帳戶？\n\n很多人以為盯越緊越安全，研究卻剛好相反——看盤",
-      "last_time": "2026-06-20",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
+      "last_msg": "父子對決・第 11 天｜我兒子考 67 分，我卻沒罵他\n全班一起考爛",
+      "last_time": "2026-06-21",
+      "last_url": "https://www.facebook.com/reel/1479382123509328/",
       "live": true,
-      "updated": "06/21 19:27"
+      "updated": "06/21 21:21"
     },
     "threads": {
       "followers": 32,
       "live": true,
-      "updated": "06/21 19:27"
+      "updated": "06/21 21:21"
     },
     "site": {
-      "pageviews": 133,
+      "pageviews": 136,
       "users": 67,
       "live": true,
-      "updated": "06/21 19:27"
+      "updated": "06/21 21:21"
     }
   },
   "dailyTrend": [
@@ -875,8 +875,8 @@
     },
     {
       "date": "2026-06-21",
-      "ig": 387,
-      "delta": 13
+      "ig": 389,
+      "delta": 15
     }
   ]
 }
