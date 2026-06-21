@@ -39,6 +39,7 @@
 - **裁定回收機制（Jeff 2026-06-21 打通）**：戰情室派工看板「核可/不同意」按鈕 POST 到 ntfy 頻道 `w2l-jeff-verdict-9x7k2m4q`。**副總用 `curl -s "https://ntfy.sh/w2l-jeff-verdict-9x7k2m4q/json?poll=1&since=24h"` 即可把 Jeff 的裁示全部拉回來**（每點一則，含核可/不同意＋修改方向）。⚠️ ntfy 免費頻道只留約 12h，超時就讀不到→開 session 先 poll 一次；長期穩定版可改 Google Sheet(Apps Script→Sheet→Drive MCP 讀)。
 - **Shorts 線素材源（鐵則）**：Shorts 一律從**「從0到1」YouTube 長片**切成多支（財經觀念教育：ETF/複利/高股息/隱形成本…，逐字稿在 `03_原始素材/…逐字稿/`），**不是父子對決 IG Reels**（已踩過 C9）。選題照 `作戰規劃/晨間批次_0620/YT長片轉Shorts重溫_10支選題`。
 - **🔴 Shorts 製作做法（Jeff 指定＝照「複利有聲 Shorts」那套，2026-06-21）**：成品＝**你的 VoxCPM 聲音旁白 ＋ 實拍 b-roll 畫面 ＋ 逐句金字字幕(關鍵字點金) ＋ 溫暖 BGM ＋ 黑金片尾卡**。**不是純 HyperFrames 動畫字卡**（那版被退）。模板＝`自動剪輯系統/video-autopilot-kit/build_fuli_short.py`(組裝)＋`聲音克隆/gen_voice_fuli.py`(VoxCPM 配音, conda env=voxcpm)；b-roll 庫＝`video-autopilot-kit/assets/broll/`(724 支)＋標籤表 `export/_主題標籤表.json`；對齊用 stable_whisper。配音必過逐句聽稿(C7)、多音字替換。參考成品＝`video-autopilot-kit/export/向光而行_複利_有聲Shorts.mp4`。
+  - 🔴 **Jeff 4 偏好（2026-06-21 王牌回饋，必照）**：①**b-roll 不重複**（724 支夠多，每段配不同片、記已用檔跳過）②**字幕固定大字、不忽大忽小**（別用「太長就縮字」；改固定 BLACK 88–92、過長自動斷兩行置中，視覺一致像黑金版）③**數字段加黑金漸層金長條圖**（如 8%→1006萬/7%→761萬/差245萬，扣品牌）④**BGM 用輕快討喜的**（`素材庫/音樂素材庫/律動_*` 系列，別用沉穩「教學_溫暖」；仍墊低不蓋人聲）。
 - **Thread 改寫線（已上線 2026-06-21）**：每晚 **21:00** 自動發「下一篇 Jeff 已審過」的 Thread（cron 真發、當日防呆＋冪等）。素材＝每日主集 Reel 改寫成 Honest Explorer 第一人稱。
 - **金句卡＝常設授權（Jeff 2026-06-21）**：FB 粉專金句卡**只要 Jeff 在戰情室核定該卡，即視為授權自動排程發布**（不必每張再按扳機）。已上線 `fb_quote`（每 20:07 自動發下一張已核定卡，當日防呆＝每天最多一張、與 Publer 互不雙發且互為備援，收官後 LINE 提醒排新一週）。**金句卡可逐步退出 Publer 手動**；排新一週＝把新卡＋文案加進 `fb_quote/schedule.json` 即自動接力。
 
