@@ -17,6 +17,15 @@
 - **ScheduleWakeup / Cron**：夜間自走接力＋定時巡檢殭屍案。
 - **平行上限**：重活（配音/HyperFrames 渲染）一次一件；輕活（改寫/查證/排版/SEO）才放膽平行（共用 Jeff 這台機器）。
 
+## 1.5 🔴🔴 排程線鐵則（GitHub cron 會丟班、絕不可只靠它；Jeff 2026-06-21 動怒：教訓記了卻每次 reactive 補）
+> **GitHub 排程 Actions 不可靠、會整批丟班**（已踩 B4＋C10）。任何「自動發佈／定時」線**上線前**必須同時備好下面三層，**沒做齊不准上線**——這是主動防範、不是出錯才補：
+1. **多班備援 cron**（主班＋2 後備，錯開時段）。
+2. **🔴看門狗（watchdog）＝強制**：發布視窗全過後檢查「今天發了沒」，沒發**自動補發＋LINE 告警**。建法＝`watchdog.py`（`WATCH_TARGET=<線>`，重用該線 `already_posted_today/main`）＋ `watchdog-<線>.yml`（cron 排在所有發布班之後、且離峰）。**新發佈線＝同時交「發佈 yml」與「watchdog yml」，缺一不准上線。**
+3. **冪等＋當日防呆**：每天最多一篇、Publer/本系統/補發互不雙發。
+- **上線檢查表**（取消發佈 yml 的 cron 註解時，同時取消對應 watchdog 的 cron 註解、並各跑一次 dispatch 驗證）。
+- **看門狗覆蓋盤點（隨上線更新）**：戰況卡✅ / 主集Reel✅ / FB金句卡✅ / Thread✅ /（Shorts✅ 已備、隨線上線同開 cron）。
+- 下一層更穩＝**外部 dead-man（healthchecks.io）**：線不 ping 就獨立於 GitHub 寄警報（reel 已埋 HC_PING_URL，其餘待 Jeff 設一次 healthchecks 帳號）。
+
 ## 2. 🔴 分級授權（瓶頸＝Jeff 的核可頻寬，狂派工堆給他＝等於零）
 副總天職＝**替 Jeff 過濾、自驗、打包成「一鍵 yes/no 決策包」**，用分級讓多數事不進他眼睛。
 | 級 | 範圍 | 處理 |
