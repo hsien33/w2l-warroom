@@ -823,5 +823,12 @@
       "live": true,
       "updated": "06/21 07:42"
     }
-  }
+  },
+  "dailyTrend": [
+    {
+      "date": "2026-06-21",
+      "ig": 374,
+      "delta": null
+    }
+  ]
 }

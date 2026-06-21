@@ -136,6 +136,17 @@
   .rbtn:hover{border-color:var(--gold)}
   .rbtn.on{background:var(--ink);border-color:var(--ink);color:#f3ead6}
   .socgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  /* 每日增減圖表 */
+  .trendwrap{margin-top:20px;border-top:1px solid var(--line);padding-top:16px}
+  .trendttl{font-family:var(--tc);font-size:13px;color:var(--mid);margin-bottom:14px;font-weight:600}
+  .trend{display:flex;align-items:flex-end;gap:7px;height:130px;overflow-x:auto;padding-bottom:2px}
+  .tbar{flex:1 0 38px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+  .tbar .bv{font-family:var(--tc);font-size:11.5px;font-weight:800;margin-bottom:4px;white-space:nowrap}
+  .tbar .bar{width:62%;min-height:3px;border-radius:5px 5px 0 0}
+  .tbar .bd{font-family:var(--tc);font-size:10px;color:var(--faint);margin-top:5px;white-space:nowrap}
+  .tbar.up .bv{color:var(--mint)} .tbar.up .bar{background:linear-gradient(180deg,#6cc79a,#3a9e6a)}
+  .tbar.down .bv{color:#c2554a} .tbar.down .bar{background:linear-gradient(180deg,#e79b8f,#c2554a)}
+  .tbar.flat .bv{color:var(--faint)} .tbar.flat .bar{background:#d4ccba}
   .soc{border-radius:15px;padding:17px;background:linear-gradient(150deg,rgba(255,255,255,.8),rgba(255,252,246,.5));
     border:1px solid var(--line);box-shadow:var(--sh);border-top:4px solid var(--c);transition:.18s}
   .soc:hover{transform:translateY(-2px);box-shadow:var(--sh2)}
@@ -414,6 +425,10 @@
       <div class="socwide glass">
         <div class="rangebar" id="rangebar"></div>
         <div class="socgrid" id="socgrid"></div>
+        <div class="trendwrap">
+          <div class="trendttl">📈 每日 IG 追蹤增減｜近 14 天（綠＝漲 紅＝跌）</div>
+          <div class="trend" id="dailytrend"></div>
+        </div>
       </div>
     </section>
 
@@ -537,6 +552,17 @@ let SOCIAL=null, CURRANGE='day';
 const PLAT_META={ig:{ic:'◎',c:'--coral',unit:'追蹤'},yt:{ic:'▶',c:'--coral',unit:'訂閱'},
   fb:{ic:'f',c:'--sky',unit:'追蹤'},threads:{ic:'@',c:'--violet',unit:'追蹤'},site:{ic:'◍',c:'--mint',unit:'用戶'}};
 function rangeLabel(k){const r=(SOCIAL&&SOCIAL.ranges||[]).find(x=>x.key===k);return r?r.label:k;}
+function renderTrend(trend){
+  const el=$("#dailytrend"); if(!el) return;
+  const arr=(trend||[]).filter(t=>t&&t.delta!=null);
+  if(!arr.length){ el.innerHTML='<span class="tba-inline">資料待接 · 每天累積快照，有兩天以上就看得到每日增減</span>'; return; }
+  const max=Math.max(1,...arr.map(t=>Math.abs(t.delta)));
+  el.innerHTML=arr.map(t=>{
+    const d=t.delta, cls=d>0?'up':(d<0?'down':'flat'), sign=d>0?'+':'';
+    const h=Math.round(Math.abs(d)/max*86)+6;
+    return `<div class="tbar ${cls}" title="${esc(t.date)}：${sign}${d}（IG ${fmt(t.ig)}）"><span class="bv">${sign}${d}</span><div class="bar" style="height:${h}px"></div><span class="bd">${esc(t.date.slice(5))}</span></div>`;
+  }).join('');
+}
 function renderSocial(){
   if(!SOCIAL)return;
   const rb=$("#rangebar");
@@ -774,6 +800,7 @@ fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
   renderNight(D.nightReport);
   renderHQ(D);
   if(D.social){ SOCIAL=D.social; CURRANGE=(D.social.defaultRange)||'day'; renderSocial(); }
+  renderTrend(D.dailyTrend);
   renderWeek(D.weekPlan);
   renderEpisodes(D.episodes);
   renderInv(D.inventory);

@@ -110,6 +110,27 @@ hist = d.setdefault("history", {})
 snap = {p: cur_val(p) for p in PLAT_METRIC}
 hist[today] = snap   # 同日多次執行→覆蓋成最新一筆
 
+# 一次性回填：歷史不足時，從 IG 戰況卡 caption（含「還差 N 人」＝真實追蹤數＋日期）補回每日 IG 數，
+# 讓「每日增減」圖表立刻有真實歷史可看（只填缺的日子、不覆蓋既有；全程 try 包住、壞了不影響其餘）。
+try:
+    import re as _re
+    if sum(1 for k in hist if hist[k].get("ig") is not None) < 6:
+        _md = getj(f"https://graph.instagram.com/{VER}/{env('IG_USER_ID')}/media"
+                   f"?fields=timestamp,caption&limit=30&access_token={env('IG_ACCESS_TOKEN')}")
+        for _m in _md.get("data", []):
+            _cap = _m.get("caption") or ""
+            if "挺老爸" not in _cap: continue
+            _mt = _re.search(r"還差\s*(\d+)\s*人", _cap)
+            if not _mt: continue
+            _ds = (_m.get("timestamp") or "")[:10]
+            if not _ds: continue
+            _val = 1000 - int(_mt.group(1))     # GOAL=1000；還差 N → 當時追蹤 1000-N（真實卡上數字）
+            row = hist.setdefault(_ds, {})
+            if row.get("ig") is None: row["ig"] = _val
+        print("回填歷史完成，現有天數:", sum(1 for k in hist if hist[k].get("ig") is not None))
+except Exception as _e:
+    print("回填歷史失敗（略過、不影響）:", _e)
+
 # 只保留最近 ~400 天，避免無限長
 if len(hist) > 420:
     for k in sorted(hist.keys())[:-400]:
@@ -152,6 +173,15 @@ for plat in soc.get("platforms", []):
         dd[rk] = {"value": val, "days": days, "note": note}
 d["social"] = soc
 print("快照寫入", today, snap)
+
+# 每日 IG 追蹤增減序列（給戰情室「每日增減」圖表＝用事實比較取代文案捏造）
+_ks = sorted(hist.keys()); _trend = []; _prev = None
+for _k in _ks:
+    _v = hist[_k].get("ig")
+    _delta = (_v - _prev) if (_prev is not None and _v is not None) else None
+    if _v is not None: _prev = _v
+    _trend.append({"date": _k, "ig": _v, "delta": _delta})
+d["dailyTrend"] = _trend[-14:]
 # ───────────────────────────────────────────────────────────────
 
 json.dump(d, open(P, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
