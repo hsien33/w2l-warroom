@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-21 08:18 台北",
+  "updated": "2026-06-21 08:19 台北",
   "followers": 375,
   "goal": 1000,
   "dday": 19,
@@ -86,29 +86,29 @@
         "live": true,
         "delta": {
           "day": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 1,
+            "days": 1,
+            "note": ""
           },
           "week": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 316,
+            "days": 8,
+            "note": ""
           },
           "quarter": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 348,
+            "days": 10,
+            "note": ""
           },
           "half": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 348,
+            "days": 10,
+            "note": ""
           },
           "year": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 348,
+            "days": 10,
+            "note": ""
           }
         }
       },
@@ -789,20 +789,38 @@
       "fb": 13,
       "threads": 32,
       "site": 62
+    },
+    "2026-06-20": {
+      "ig": 374
+    },
+    "2026-06-19": {
+      "ig": 315
+    },
+    "2026-06-18": {
+      "ig": 244
+    },
+    "2026-06-16": {
+      "ig": 216
+    },
+    "2026-06-13": {
+      "ig": 59
+    },
+    "2026-06-11": {
+      "ig": 27
     }
   },
   "channels": {
     "ig": {
       "followers": 375,
       "live": true,
-      "updated": "06/21 08:18"
+      "updated": "06/21 08:19"
     },
     "yt": {
       "subs": 19700,
       "views": 804447,
       "videos": 31,
       "live": true,
-      "updated": "06/21 08:18"
+      "updated": "06/21 08:19"
     },
     "fb": {
       "followers": 13,
@@ -810,25 +828,55 @@
       "last_time": "2026-06-20",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
       "live": true,
-      "updated": "06/21 08:18"
+      "updated": "06/21 08:19"
     },
     "threads": {
       "followers": 32,
       "live": true,
-      "updated": "06/21 08:18"
+      "updated": "06/21 08:19"
     },
     "site": {
       "pageviews": 124,
       "users": 62,
       "live": true,
-      "updated": "06/21 08:18"
+      "updated": "06/21 08:19"
     }
   },
   "dailyTrend": [
     {
+      "date": "2026-06-11",
+      "ig": 27,
+      "delta": null
+    },
+    {
+      "date": "2026-06-13",
+      "ig": 59,
+      "delta": 32
+    },
+    {
+      "date": "2026-06-16",
+      "ig": 216,
+      "delta": 157
+    },
+    {
+      "date": "2026-06-18",
+      "ig": 244,
+      "delta": 28
+    },
+    {
+      "date": "2026-06-19",
+      "ig": 315,
+      "delta": 71
+    },
+    {
+      "date": "2026-06-20",
+      "ig": 374,
+      "delta": 59
+    },
+    {
       "date": "2026-06-21",
       "ig": 375,
-      "delta": null
+      "delta": 1
     }
   ]
 }
