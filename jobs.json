@@ -15,11 +15,11 @@
       "id": "20260621-day11-reel",
       "ts": "06-21 15:10",
       "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
-      "owner": "影音製作 agent（背景·第2棒）",
-      "result": "第1棒做完鷹架(16句進index.html＋bgm＋角色圖)但配音/渲染未完成(渲染階段被截斷)；第2棒續做 VoxCPM配音＋渲染mp4",
-      "status": "dispatched",
-      "artifacts": ["02_社群產出/hyperframes引擎/day11_warm/"],
-      "note": "重活(配音+渲染)續做中；完成放🔴待拍板等你核可"
+      "owner": "影音製作 agent（背景，2 棒接力）",
+      "result": "✅ 已完成出片：VoxCPM 配音＋暖風渲染。副總獨立驗：42M／1080×1920／98s／有音軌、兩份 md5 一致、抽幀暖風無錯字、關鍵字金",
+      "status": "needs_jeff",
+      "artifacts": ["桌面成品/DAY11_代課老師暖風Reel.mp4"],
+      "note": "等你看過點頭再發（先核後發）。長 98s（與你認可的 day7/day10 同量級）"
     },
     {
       "id": "20260621-fb-autopost",
