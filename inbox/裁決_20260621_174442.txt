@@ -1,0 +1,5 @@
+【Jeff 裁決 · 2026/6/21 下午5:44:44】
+
+■ 案子：20260621-line-thread
+■ 這一點：雲端要設 THREADS_ACCESS_TOKEN / THREADS_USER_ID Secret（登入帳號的事、你設一次，我不能碰）。
+■ 裁示：✅ 核可

@@ -1,0 +1,8 @@
+【Jeff 裁決 · 2026/6/21 下午5:54:57】
+
+■ 案子：20260621-domain-migration
+■ 這一點：Hostinger 主機操作要你登入執行（部署 dist、放 .htaccess、DNS、SSL）。
+■ 裁示：✏️ 不同意，要改
+
+■ 要改的方向：
+另一隻SESSION已在做
