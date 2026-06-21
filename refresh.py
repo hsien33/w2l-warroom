@@ -115,7 +115,7 @@ hist[today] = snap   # 同日多次執行→覆蓋成最新一筆
 try:
     import re as _re
     if sum(1 for k in hist if hist[k].get("ig") is not None) < 6:
-        _md = getj(f"https://graph.instagram.com/{VER}/{env('IG_USER_ID')}/media"
+        _md = getj(f"https://graph.instagram.com/{VER}/me/media"
                    f"?fields=timestamp,caption&limit=30&access_token={env('IG_ACCESS_TOKEN')}")
         for _m in _md.get("data", []):
             _cap = _m.get("caption") or ""
