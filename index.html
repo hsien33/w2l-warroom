@@ -96,6 +96,22 @@
     background:linear-gradient(90deg,#f4dd8e,#c9a44c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;width:fit-content}
   .night .nt span{font-family:var(--tc);font-size:13px;color:#cdbf9f;display:block;margin-top:3px}
   .night .go{font-family:var(--tc);font-weight:800;font-size:14px;color:#f4dd8e;white-space:nowrap;position:relative;z-index:2}
+  /* 報告過 00:00＝昨天的，降級成低調樣式（不再醒目佔頂部） */
+  .night.stale{background:linear-gradient(135deg,#171511,#0d0c09);box-shadow:0 8px 22px -16px rgba(0,0,0,.6),0 0 0 1px rgba(140,130,110,.18);opacity:.82}
+  .night.stale .nm{filter:none;opacity:.7}
+  .night.stale .nt b{background:linear-gradient(90deg,#b8ad94,#9a9077);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  /* ── ③b 歷史報告存檔 ── */
+  .arc-toggle{font-family:var(--tc);font-weight:800;font-size:14px;color:var(--gold,#b07d1a);background:rgba(176,125,26,.08);
+    border:1px solid rgba(176,125,26,.25);border-radius:12px;padding:11px 16px;width:100%;text-align:left;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.15s}
+  .arc-toggle:hover{background:rgba(176,125,26,.14)} .arc-toggle i{margin-left:auto;transition:.2s}
+  .arc-toggle.open i{transform:rotate(180deg)}
+  .arc-list{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+  .arc-item{display:flex;align-items:center;gap:12px;text-decoration:none;padding:12px 16px;border-radius:11px;
+    background:linear-gradient(135deg,#181611,#0e0d0a);box-shadow:0 0 0 1px rgba(201,164,76,.16);transition:.15s}
+  .arc-item:hover{transform:translateX(2px);box-shadow:0 0 0 1px rgba(201,164,76,.4)}
+  .arc-item b{font-family:ui-monospace,monospace;font-size:12.5px;color:#c9a44c;flex:none}
+  .arc-item span{font-family:var(--tc);font-size:14px;color:#e9dfc8;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .arc-item i{color:#c9a44c;font-style:normal;font-weight:800;flex:none}
 
   /* ── ④ 父子對決總部 ── */
   .hq{background:linear-gradient(150deg,rgba(255,255,255,.82),rgba(248,244,255,.5));border:1px solid var(--glassedge);border-radius:18px;
@@ -432,6 +448,12 @@
         <span class="nt"><b>明日待發 · 一頁預覽</b><span>一頁看完明天全部待發 · 一鍵全准／逐項核可</span></span>
         <span class="go">進入 ›</span>
       </a>
+    </section>
+
+    <!-- ③b 歷史報告存檔（過 00:00 的昨日報告自動歸這） -->
+    <section class="sect" id="s-reports" style="display:none;margin-top:12px">
+      <button class="arc-toggle" id="arc-toggle">📚 歷史報告存檔 <span id="arc-count"></span><i>▾</i></button>
+      <div class="arc-list" id="arc-list" style="display:none"></div>
     </section>
 
     <!-- ④ 父子對決總部 -->
@@ -936,6 +958,35 @@ fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
 }).catch(e=>{
   console.log('data.json fallback',e);
 });
+
+/* ════════ 歷史報告存檔：reports.json 驅動 · 過 00:00 的昨日報告自動降級＋歸檔 ════════ */
+function isoToday(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function renderReports(list){
+  if(!Array.isArray(list)||!list.length) return;
+  list=list.slice().filter(r=>r&&r.date).sort((a,b)=>b.date.localeCompare(a.date));
+  if(!list.length) return;
+  const today=isoToday(), latest=list[0], fresh=(latest.date>=today);
+  const nightA=document.getElementById('night');
+  const titleEl=document.getElementById('night-title'), subEl=document.getElementById('night-sub');
+  if(fresh){
+    if(latest.title) titleEl.textContent=latest.title.replace(/^🌙\s*/,'');
+    if(latest.summary) subEl.textContent=latest.summary;
+    nightA.setAttribute('href',latest.href||'夜間成果.html'); nightA.classList.remove('stale');
+  }else{
+    titleEl.textContent='今晚自走中 · 最新報告已歸檔';
+    subEl.textContent='昨日（'+latest.date+'）報告已移到下方「歷史報告存檔」，避免和今天混淆';
+    nightA.setAttribute('href',latest.href||'夜間成果.html'); nightA.classList.add('stale');
+  }
+  const arc=fresh?list.slice(1):list;
+  const sec=document.getElementById('s-reports');
+  if(!arc.length){ sec.style.display='none'; return; }
+  sec.style.display='';
+  document.getElementById('arc-count').textContent='（'+arc.length+'）';
+  document.getElementById('arc-list').innerHTML=arc.map(r=>
+    '<a class="arc-item" href="'+(r.href||'#')+'"><b>'+r.date+'</b><span>'+((r.title||'自走報告').replace(/^🌙\s*/,''))+'</span><i>›</i></a>').join('');
+}
+(function(){const t=document.getElementById('arc-toggle');if(t)t.onclick=()=>{const l=document.getElementById('arc-list');const open=l.style.display==='none';l.style.display=open?'':'none';t.classList.toggle('open',open);};})();
+fetch('reports.json?t='+Date.now()).then(r=>r.json()).then(renderReports).catch(e=>{console.log('reports.json 無（用 data.json 的 nightReport）',e);});
 
 /* 未來一周排程板：獨立載入 week.json（真實排程設定，由 build_week.py 從 warcard-auto 推導） */
 fetch('week.json?t='+Date.now()).then(r=>r.json()).then(renderWeek).catch(e=>{
