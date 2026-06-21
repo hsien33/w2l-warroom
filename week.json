@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21 08:08Z",
+  "updated": "2026-06-21 08:21Z",
   "reel_start": "2026-06-10",
   "warcard_start": "2026-06-11",
   "reels_inventory": [
@@ -7,7 +7,7 @@
     11
   ],
   "fbquote": {
-    "live": false,
+    "live": true,
     "next_day": 13,
     "last_day": 15,
     "topics": {

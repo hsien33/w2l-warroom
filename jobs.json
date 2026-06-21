@@ -16,10 +16,10 @@
       "ts": "06-21 16:00",
       "project": "FB 粉專金句卡連續劇 — 雲端自動發",
       "owner": "背景 agent → 副總驗收",
-      "result": "機制建好(fb_quote.py+schedule+12張卡)；雲端 dry-run 真讀 FB 證實 DAY004-012 已發、下一張=DAY013；md5/py_compile/連結200 全驗過。🔴抓到 agent 把 cron 設成會真發，已關閉 schedule cron 守先核後發",
-      "status": "needs_jeff",
-      "artifacts": ["戰況卡自動發/fb_quote/schedule.json", "戰況卡自動發/src/fb_quote.py"],
-      "note": "等 Jeff：說『上線』我取消 fb_quote.yml 的 cron 註解+push→明晚起每 20:07 自動發 DAY013→015；或先手動跑一次真發看看"
+      "result": "✅ 已上線（Jeff 授權「金句卡核定即自動發」）。加『當日防呆 quote_posted_today』＝每天最多一張，Publer 與本系統永不雙發、互為備援；每 20:07 自動發下一張未發卡（讀 FB 即時判定）。dry-run/防呆單元測試/md5/連結200 全驗過",
+      "status": "done",
+      "artifacts": ["戰況卡自動發/src/fb_quote.py", "戰況卡自動發/fb_quote/schedule.json"],
+      "note": "今晚 DAY013 由 Publer 20:00 發、我 20:07 自動讓位（備援）；本系列到 DAY015 收官後 LINE 提醒排新一週。Publer 的金句卡可隨時刪、不刪也不會雙發"
     },
     {
       "id": "20260621-domain-migration",
