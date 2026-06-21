@@ -1,11 +1,11 @@
 {
   "schema": "v4",
-  "updated": "2026-06-21 23:21 台北",
-  "followers": 393,
+  "updated": "2026-06-22 01:00 台北",
+  "followers": 397,
   "goal": 1000,
-  "dday": 19,
-  "day": 11,
-  "warday": 10,
+  "dday": 18,
+  "day": 12,
+  "warday": 11,
   "nightReport": {
     "title": "🌙 昨夜自走成果報告",
     "href": "夜間成果.html",
@@ -82,32 +82,32 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 393,
+        "current": 397,
         "live": true,
         "delta": {
           "day": {
-            "value": 19,
+            "value": 4,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 334,
-            "days": 8,
+            "value": 338,
+            "days": 9,
             "note": ""
           },
           "quarter": {
-            "value": 366,
-            "days": 10,
+            "value": 370,
+            "days": 11,
             "note": ""
           },
           "half": {
-            "value": 366,
-            "days": 10,
+            "value": 370,
+            "days": 11,
             "note": ""
           },
           "year": {
-            "value": 366,
-            "days": 10,
+            "value": 370,
+            "days": 11,
             "note": ""
           }
         }
@@ -120,9 +120,9 @@
         "live": true,
         "delta": {
           "day": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 0,
+            "days": 1,
+            "note": ""
           },
           "week": {
             "value": null,
@@ -154,9 +154,9 @@
         "live": true,
         "delta": {
           "day": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 0,
+            "days": 1,
+            "note": ""
           },
           "week": {
             "value": null,
@@ -188,9 +188,9 @@
         "live": true,
         "delta": {
           "day": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 0,
+            "days": 1,
+            "note": ""
           },
           "week": {
             "value": null,
@@ -222,9 +222,9 @@
         "live": true,
         "delta": {
           "day": {
-            "value": null,
-            "days": 0,
-            "note": "資料待接"
+            "value": 0,
+            "days": 1,
+            "note": ""
           },
           "week": {
             "value": null,
@@ -807,39 +807,46 @@
     },
     "2026-06-11": {
       "ig": 27
+    },
+    "2026-06-22": {
+      "ig": 397,
+      "yt": 19700,
+      "fb": 13,
+      "threads": 32,
+      "site": 67
     }
   },
   "channels": {
     "ig": {
-      "followers": 393,
+      "followers": 397,
       "live": true,
-      "updated": "06/21 23:21"
+      "updated": "06/22 01:00"
     },
     "yt": {
       "subs": 19700,
       "views": 804489,
       "videos": 31,
       "live": true,
-      "updated": "06/21 23:21"
+      "updated": "06/22 01:00"
     },
     "fb": {
       "followers": 13,
-      "last_msg": "父子對決・第 11 天｜我兒子考 67 分，我卻沒罵他\n全班一起考爛",
+      "last_msg": "「Jeff 老師飆股群，限額 50 名」——那張廣告，用的是我的臉。",
       "last_time": "2026-06-21",
-      "last_url": "https://www.facebook.com/reel/1479382123509328/",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116620069125488",
       "live": true,
-      "updated": "06/21 23:21"
+      "updated": "06/22 01:00"
     },
     "threads": {
       "followers": 32,
       "live": true,
-      "updated": "06/21 23:21"
+      "updated": "06/22 01:00"
     },
     "site": {
       "pageviews": 136,
       "users": 67,
       "live": true,
-      "updated": "06/21 23:21"
+      "updated": "06/22 01:00"
     }
   },
   "dailyTrend": [
@@ -877,6 +884,11 @@
       "date": "2026-06-21",
       "ig": 393,
       "delta": 19
+    },
+    {
+      "date": "2026-06-22",
+      "ig": 397,
+      "delta": 4
     }
   ]
 }
