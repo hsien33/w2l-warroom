@@ -15,11 +15,11 @@
       "id": "20260621-day11-reel",
       "ts": "06-21 15:10",
       "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
-      "owner": "影音製作 agent（背景，2 棒接力）",
-      "result": "✅ 已完成出片：VoxCPM 配音＋暖風渲染。副總獨立驗：42M／1080×1920／98s／有音軌、兩份 md5 一致、抽幀暖風無錯字、關鍵字金",
-      "status": "needs_jeff",
-      "artifacts": ["桌面成品/DAY11_代課老師暖風Reel.mp4"],
-      "note": "等你看過點頭再發（先核後發）。長 98s（與你認可的 day7/day10 同量級）"
+      "owner": "影音製作 agent（背景·修正棒）",
+      "result": "第1版有缺陷（Jeff 抓包）：血/乾多音字念錯、line6 斷句錯、結尾卡沒配音、agent 擅改結尾。修正中：多音字餵同音字、line6 改寫、結尾配音補齊，這次逐句聽稿驗收",
+      "status": "dispatched",
+      "artifacts": ["桌面成品/DAY11_代課老師暖風Reel.mp4（舊·待換）"],
+      "note": "修正中；驗收升級＝逐句聽稿(發音/斷句/無啞卡)。教訓記 playbook 🎬段＋負面案例 C7"
     },
     {
       "id": "20260621-fb-autopost",
