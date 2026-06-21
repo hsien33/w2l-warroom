@@ -26,10 +26,10 @@
       "ts": "06-21 12:10",
       "project": "FB 粉專自動發文接通",
       "owner": "副總",
-      "result": "程式/抽驗全備妥；FB Page token 已設但今天到期（來自短效用戶權杖）",
-      "status": "needs_jeff",
+      "result": "✅ 永久接通：Jeff 給 App ID/Secret/新權杖→換成永不過期粉專權杖(驗:type=PAGE,expires_at=0,含 pages_manage_posts)，已設 secret",
+      "status": "done",
       "artifacts": [],
-      "note": "等 Jeff 給 App ID＋App Secret，做一次性長效轉換才永久"
+      "note": "以後戰況卡/Reel 自動轉 FB(餵母檔)，巡檢官每天抽驗那支能播；FB 自動發永遠不用再管"
     },
     {
       "id": "20260621-warcard-caption",
