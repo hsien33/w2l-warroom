@@ -13,13 +13,13 @@
     },
     {
       "id": "20260621-day11-reel",
-      "ts": "06-21 13:40",
+      "ts": "06-21 15:10",
       "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
-      "owner": "副總（jeff-perspective 校準）",
-      "result": "合成版標題＋16 句旁白定稿（不點哪個兒子、不讓老師對號入座、收自主學習金句）",
-      "status": "needs_jeff",
+      "owner": "影音製作 agent（背景）",
+      "result": "合成版 16 句定稿，背景 agent 製作中：VoxCPM 配音→對嘴→暖風渲染",
+      "status": "dispatched",
       "artifacts": [],
-      "note": "等 Jeff 點頭 → 即可配音＋對嘴＋渲染出片"
+      "note": "製作中；完成後成品放🔴待拍板等你核可再發（先核後發）"
     },
     {
       "id": "20260621-fb-autopost",
