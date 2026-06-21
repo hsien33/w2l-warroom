@@ -1,35 +1,27 @@
 {
-  "updated": "2026-06-21 12:11Z",
-  "reel_start": "2026-06-10",
+  "updated": "2026-06-21",
   "warcard_start": "2026-06-11",
-  "reels_inventory": [
-    10,
-    11
+  "reel_start": "2026-06-10",
+
+  "warcard_cron": true,
+
+  "thread_cron": true,
+  "thread_queue": [
+    { "day": 10, "topic": "需要 vs 想要" },
+    { "day": 11, "topic": "把進度握回自己手裡" }
   ],
-  "thread_live": true,
-  "fbquote": {
-    "live": true,
-    "anchor_date": "2026-06-21",
-    "anchor_day": 13,
-    "last_day": 15,
-    "topics": {
-      "4": "通膨",
-      "5": "ETF",
-      "6": "高股息",
-      "7": "財務自由",
-      "8": "行動召集",
-      "9": "壞習慣",
-      "10": "擇時",
-      "11": "FOMO",
-      "12": "看盤成癮",
-      "13": "過度自信",
-      "14": "假老師詐騙",
-      "15": "收官"
-    }
-  },
-  "social_prepared": [
-    "2026-06-23",
-    "2026-06-26"
+
+  "fbquote_cron": true,
+  "fbquote_queue": [
+    { "day": 13, "topic": "過度自信" },
+    { "day": 14, "topic": "假老師詐騙" },
+    { "day": 15, "topic": "收官" }
   ],
+
+  "reels_inventory": [10, 11],
+
+  "social_prepared": ["2026-06-23", "2026-06-26"],
+
+  "shorts_cron": false,
   "shorts_status": "producing"
 }
