@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<!-- 財富煉金術品牌 favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>戰情室 · 成果頁</title>
+<style>
+:root{--bg:#f3eee3;--card:#fffdf8;--ink:#2b2720;--mid:#55503f;--faint:#8c8470;--line:#e7dfd0;--gold:#b07d1a;
+  --red:#c2554a;--red-s:#fbe9e6;--amber:#c08a2e;--amber-s:#fbf2dc;--green:#3a9e6a;--green-s:#e6f4ec}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.7;font-size:15px}
+.wrap{max-width:920px;margin:0 auto;padding:26px 18px 70px}
+.top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+h1{font-size:22px;font-weight:900}
+.upd{font-size:12.5px;color:var(--faint);font-family:ui-monospace,monospace}
+.back{display:inline-block;font-size:13px;color:var(--gold);text-decoration:none;margin-bottom:16px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:22px;font-size:15px}
+.now b{color:var(--ink)}
+.sec{margin-bottom:24px}
+.sh{display:flex;align-items:center;gap:9px;font-weight:800;font-size:15px;margin:0 2px 11px}
+.sh .dot{width:11px;height:11px;border-radius:50%}
+.sh .ct{font-family:ui-monospace,monospace;font-size:12px;color:var(--faint);font-weight:500}
+.red .dot{background:var(--red)} .amber .dot{background:var(--amber)} .green .dot{background:var(--green)}
+.job{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:11px;padding:13px 16px;margin-bottom:9px}
+.job.red{border-left-color:var(--red)} .job.amber{border-left-color:var(--amber)} .job.green{border-left-color:var(--green)}
+.j1{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.j1 .t{font-family:ui-monospace,monospace;font-size:12px;color:var(--faint);flex:none}
+.j1 .p{font-weight:700}
+.badge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 9px;margin-left:auto;flex:none}
+.badge.red{background:var(--red-s);color:var(--red)} .badge.amber{background:var(--amber-s);color:var(--amber)} .badge.green{background:var(--green-s);color:var(--green)}
+.owner{font-size:12px;color:var(--faint);margin-top:2px}
+.result{font-size:14px;color:var(--mid);margin-top:6px}
+.note{font-size:13px;color:var(--mid);margin-top:6px;background:#faf5e9;border-radius:7px;padding:7px 11px}
+.note b{color:var(--red)}
+.arts{margin-top:7px;display:flex;gap:8px;flex-wrap:wrap}
+.arts a{font-size:12px;color:var(--gold);text-decoration:none;border:1px solid #ecdcb4;border-radius:999px;padding:3px 11px;background:#fbf3e0}
+.empty{color:var(--faint);font-size:13px;padding:4px 2px}
+footer{margin-top:26px;color:var(--faint);font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← 回戰情室</a>
+  <div class="top"><h1>🗂️ 成果頁</h1><span class="upd" id="upd"></span></div>
+  <div class="now" id="now">載入中…</div>
+  <div id="boxes"></div>
+  <footer>副總自動更新 · 🔴待你拍板 🟡進行中 🟢已完成 · 完成項附證據、舊的自動收摺</footer>
+</div>
+<script>
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LB={needs_jeff:['red','待你拍板'],dispatched:['amber','進行中'],running:['amber','進行中'],done:['green','已完成'],failed:['red','失敗']};
+function artLink(p){const name=p.replace(/\/$/,'').split('/').pop()||p; return `<a href="../${p}" target="_blank" rel="noopener">${esc(name)}</a>`;}
+function row(j){const k=LB[j.status]||LB.dispatched;const cls=k[0];
+  return `<div class="job ${cls}">
+    <div class="j1"><span class="t">${esc(j.ts||'')}</span><span class="p">${esc(j.project||'')}</span><span class="badge ${cls}">${k[1]}</span></div>
+    ${j.owner?`<div class="owner">負責：${esc(j.owner)}</div>`:''}
+    ${j.result?`<div class="result">${esc(j.result)}</div>`:''}
+    ${(j.artifacts&&j.artifacts.length)?`<div class="arts">${j.artifacts.map(artLink).join('')}</div>`:''}
+    ${j.note?`<div class="note">${esc(j.note)}</div>`:''}
+  </div>`;}
+function group(jobs,statuses,label,cls){
+  const list=jobs.filter(j=>statuses.includes(j.status));
+  return `<div class="sec ${cls}"><div class="sh"><span class="dot"></span>${label}<span class="ct">${list.length} 件</span></div>
+    ${list.length?list.map(row).join(''):'<div class="empty">（無）</div>'}</div>`;
+}
+fetch('jobs.json?cb='+Math.random()).then(r=>r.json()).then(d=>{
+  const jobs=d.jobs||[];
+  document.getElementById('upd').textContent='更新 '+(d.updated||'');
+  const need=jobs.filter(j=>j.status==='needs_jeff').length;
+  const run=jobs.filter(j=>['dispatched','running'].includes(j.status)).length;
+  document.getElementById('now').innerHTML=`<b>現況：</b>🔴 ${need} 件待你拍板 · 🟡 ${run} 件進行中 · 🟢 今日 ${jobs.filter(j=>j.status==='done').length} 件完成`;
+  document.getElementById('boxes').innerHTML=
+    group(jobs,['needs_jeff','failed'],'🔴 待你拍板 / 異常（要你動作）','red')+
+    group(jobs,['dispatched','running'],'🟡 進行中（副總在跑、不用管）','amber')+
+    group(jobs,['done'],'🟢 已完成（附證據）','green');
+}).catch(e=>{document.getElementById('now').textContent='讀取 jobs.json 失敗：'+e;});
+</script>
+</body>
+</html>

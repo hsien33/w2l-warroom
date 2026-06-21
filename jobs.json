@@ -1,0 +1,65 @@
+{
+  "updated": "2026-06-21 15:00 台北",
+  "jobs": [
+    {
+      "id": "20260621-domain-migration",
+      "ts": "06-21 14:30",
+      "project": "網域遷移（新站→www、舊→bak、落點留 new）",
+      "owner": "副總＋遷移執行 agent",
+      "result": "程式全備妥：分支 migrate-to-www、dist canonical 翻 www、落點三檔排除已對齊 /tools/、報導連結確認免 301、操作手冊 v2 已產",
+      "status": "needs_jeff",
+      "artifacts": ["01_文件與日誌/網域遷移_Jeff操作手冊.md", "walk2light-site/dist/", "walk2light-site/migration/new.htaccess"],
+      "note": "等 Jeff：①舊網址→新頁對照表 ②付費工具買家清單＋bak實測 ③Hostinger 主機操作（要登入）"
+    },
+    {
+      "id": "20260621-day11-reel",
+      "ts": "06-21 13:40",
+      "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
+      "owner": "副總（jeff-perspective 校準）",
+      "result": "合成版標題＋16 句旁白定稿（不點哪個兒子、不讓老師對號入座、收自主學習金句）",
+      "status": "needs_jeff",
+      "artifacts": [],
+      "note": "等 Jeff 點頭 → 即可配音＋對嘴＋渲染出片"
+    },
+    {
+      "id": "20260621-fb-autopost",
+      "ts": "06-21 12:10",
+      "project": "FB 粉專自動發文接通",
+      "owner": "副總",
+      "result": "程式/抽驗全備妥；FB Page token 已設但今天到期（來自短效用戶權杖）",
+      "status": "needs_jeff",
+      "artifacts": [],
+      "note": "等 Jeff 給 App ID＋App Secret，做一次性長效轉換才永久"
+    },
+    {
+      "id": "20260621-warcard-caption",
+      "ts": "06-21 11:50",
+      "project": "戰況卡文稿引擎＋預告模式",
+      "owner": "IG 顧問 agent ＋ 副總",
+      "result": "輪替 hook＋情境感知＋今日真事插槽＋預告端好料模式；移除捏造（衝最兇/釘首頁）；dry-run 實證",
+      "status": "done",
+      "artifacts": ["warcard-auto/src/daily.py"],
+      "note": "TEASE_MODE=1 已開，明早起自動走預告調"
+    },
+    {
+      "id": "20260621-warroom-v4-trend",
+      "ts": "06-21 10:30",
+      "project": "戰情室 v4 ＋ 每日 IG 增減圖表",
+      "owner": "副總＋資料/前端 agent",
+      "result": "13 點規格重排上線；每日增減長條圖（回填真實歷史 6/13~6/21）",
+      "status": "done",
+      "artifacts": ["index.html", "refresh.py"],
+      "note": "線上 hsien33.github.io/w2l-warroom/"
+    },
+    {
+      "id": "20260621-magnet-warm",
+      "ts": "06-21 09:20",
+      "project": "磁鐵頁《孩子的第一桶金》暖風改版",
+      "owner": "設計顧問 agent（原研哉/Kelly Hoppen/于美人）",
+      "result": "晨光暖風＋正確金箭頭 logo＋斷行修正＋金線＋CTA 接 IG 私訊；Jeff 拍板「這就是我愛的樣式」",
+      "status": "done",
+      "artifacts": ["w2l-warroom/magnet/孩子的第一桶金.html"],
+      "note": "樣式已固化成 warm-magnet-style 範本"
+    }
+  ]
+}
