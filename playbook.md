@@ -78,7 +78,7 @@
 - 留言/文案語感：先短認同→補自己點→謙虛收尾，比 AI 草稿砍三成字；用「的確/其實/也」少用「真的真的」；指自己貼文用「這篇」。
 - 戰況卡文稿走「預告端好料」誠實調（TEASE_MODE），不白送 Email 磁鐵（孩子的第一桶金走電子報漏斗）。
 - 🔴 **Thread 改寫鐵則（Jeff 2026-06-21 退稿、刪文）**：①**忠實改寫「當天主 Reel 的真實文稿」**＝拿那支 Reel 的實際旁白/故事改成 Threads 版，**不是憑主題自己編一篇新散文**②**不准亂套工具/連結**③先核後發。
-- ✅ **每日 Reel→Thread 常設流程（Jeff 2026-06-21 定版、已上線）**：今天的主 Reel 做好核可預排後 → **圓桌團隊改寫成 Thread**（Cole＝Threads演算法／于美人＝說書同溫／呼蘭付航＝幽默卸防／席爾迪尼＝引發討論 → **jeff-perspective 收斂**；圓桌 workflow 可重跑）→ **給 Jeff 審核** → 核可才進 `thread_rewrite/schedule.json` **預排（隔天 21:00 自動發）**。技術：Reel 真旁白在 `聲音克隆/配音輸出/DAYxx_配音_時間軸.json`；長文**自動切段串接**破 Threads 500 字上限（`crosspost.threads_post_chain`）；**第一則留言導流回 IG 父子對決**（@jeff.walk2light，curl 驗 200）。圓桌定的 5 條 Threads 心法：①第一句把讀者拉進他家現場②把「我做對了」改成「我也在算計差點做錯」③中段埋可截圖金句、結尾留會分兩派的開放縫④敢示弱（我到現在沒算明白算贏算輸）⑤收尾一句可印牆上的對仗短句＋開放問句。
+- ✅ **每日 Reel→Thread 常設流程（Jeff 2026-06-21 定版、已上線）**：今天的主 Reel 做好核可預排後 → **圓桌團隊改寫成 Thread**（Cole＝Threads演算法／于美人＝說書同溫／呼蘭付航＝幽默卸防／席爾迪尼＝引發討論 → **jeff-perspective 收斂**；圓桌 workflow 可重跑）→ **給 Jeff 審核** → 核可才進 `thread_rewrite/schedule.json` **預排（隔天 21:00 自動發）**。技術：Reel 真旁白在 `聲音克隆/配音輸出/DAYxx_配音_時間軸.json`；長文**自動切段串接**破 Threads 500 字上限（`crosspost.threads_post_chain`）；**🔴 Thread 不放 IG 導流連結**（Jeff 2026-06-21：留言放 IG 連結會出現自己臉的縮圖、不喜歡；以後正文發完不附連結，comment 留空）。圓桌定的 5 條 Threads 心法：①第一句把讀者拉進他家現場②把「我做對了」改成「我也在算計差點做錯」③中段埋可截圖金句、結尾留會分兩派的開放縫④敢示弱（我到現在沒算明白算贏算輸）⑤收尾一句可印牆上的對仗短句＋開放問句。
 
 ### 🎨 設計/視覺（skill: 原研哉/Kelly Hoppen/Jobs/Kenya Hara + make_week.py）
 - 金句卡照 make_week.py（SS2/Black/柔投影/冷暖金/漸層金箔），別自製別用 satori。
