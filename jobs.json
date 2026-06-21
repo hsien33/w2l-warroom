@@ -15,11 +15,11 @@
       "id": "20260621-day11-reel",
       "ts": "06-21 15:10",
       "project": "父子對決 Day11 Reel（老師請公假→自主學習）",
-      "owner": "影音製作 agent（背景，3 棒：製作→修正）",
-      "result": "✅ 4 點修正版完成。副總獨立驗：結尾卡 90.6–94.3s 音量 -16.4dB(不再啞卡)、line6 抽幀完整句乾淨斷句、血壓/乾脆字幕正字(TTS 餵寫壓/甘脆)、99s/1080×1920",
-      "status": "needs_jeff",
-      "artifacts": ["桌面成品/DAY11_代課老師暖風Reel.mp4"],
-      "note": "已幫你開檔；發音請你聽一句確認。OK 就發；b7 為塞完整句用 sm 字級(78px)，要中字可再說"
+      "owner": "影音製作 agent → 副總排發",
+      "result": "✅ 修正版完成＋Jeff 核准，已登錄 schedule.json Day11→今晚 20:30 自動發 IG(＋FB 自動轉)。reels/DAY011.mp4 md5 與桌面成品一致(11M/99s/結尾有聲)",
+      "status": "done",
+      "artifacts": ["戰況卡自動發/reels/DAY011.mp4"],
+      "note": "20:30 雲端自動發；文案已附 Jeff 可在 20:30 前改"
     },
     {
       "id": "20260621-fb-autopost",
