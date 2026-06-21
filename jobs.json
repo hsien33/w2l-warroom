@@ -3,23 +3,23 @@
   "jobs": [
     {
       "id": "20260621-line-thread",
-      "ts": "06-21 16:40",
-      "project": "建『Thread 改寫線』（Reel→Thread 自動改寫→審→自動發）",
-      "owner": "Thread 建線主管（背景）",
-      "result": "派工中：用既有 Threads 權杖＋post_threads_post.py 建自動發(架構照 fb_quote)、本週用 Day10/11 Reel 各改 1 篇 Thread、過演算法閘、staged 待裁定（不真發）",
-      "status": "dispatched",
-      "artifacts": [],
-      "note": "最可行的一條（權杖已有）。完成回報本週兩篇＋演算法要點給你裁定"
+      "ts": "06-21 16:55",
+      "project": "Thread 改寫線 · 建好＋本週兩篇（待裁定）",
+      "owner": "Thread 建線主管 → 副總驗收",
+      "result": "✅ 程式+本週 DAY010/011 兩篇 Thread 已 push(ba71001)。副總驗：cron 全註解(0條啟用=不會自動發)、py_compile OK、兩篇第一則留言連結HTTP200。DRY 實跑讀到13則真貼文、挑對下一篇、未發",
+      "status": "needs_jeff",
+      "artifacts": ["戰況卡自動發/thread_rewrite/schedule.json", "戰況卡自動發/src/thread_rewrite.py"],
+      "note": "等你：①核可上線(我取消cron註解+push,每晚20:20自動發)②雲端要設 THREADS_ACCESS_TOKEN/USER_ID Secret(禁派,你設)。文已過演算法閘:第一人稱鉤子/結尾問句/連結進留言"
     },
     {
       "id": "20260621-line-club",
-      "ts": "06-21 16:40",
-      "project": "建『FB 社團文線』本週計劃案網頁（工具+週二/五文+鉤子+私訊）",
-      "owner": "社團文主管（背景）",
-      "result": "派工中：挑 1 個現成工具搭配、寫週二(6/23)+週五(6/26)社團文+引流鉤子+私訊關鍵字、組成『待裁定』網頁",
-      "status": "dispatched",
-      "artifacts": [],
-      "note": "誠實：Meta 收掉社團發文 API→發那步走 Publer 或你一鍵貼，其餘自動。每週六給你裁定"
+      "ts": "06-21 16:50",
+      "project": "FB 社團文線 · 本週計劃案（待裁定）",
+      "owner": "社團文主管 → 副總驗收",
+      "result": "✅ 計劃案網頁備妥：搭補習費計算機、週二(6/23)『補習』+週五(6/26)『天賦』兩篇+鉤子+私訊關鍵字+第一則留言連結。副總驗：HTML存在(18KB)、favicon有、兩連結HTTP200",
+      "status": "needs_jeff",
+      "artifacts": ["財富煉金術/02_社群產出/引流工具工廠/社團文計劃案/本週_待裁定.html"],
+      "note": "誠實：FB社團無法API全自動(Meta收API)→你一鍵手貼或FB後台原生排程。等你定：①發哪個社團②兩篇都發/先試週二③Publer推播 or 手貼"
     },
     {
       "id": "20260621-line-shorts",
