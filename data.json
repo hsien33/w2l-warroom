@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-21 16:14 台北",
-  "followers": 385,
+  "updated": "2026-06-21 19:27 台北",
+  "followers": 387,
   "goal": 1000,
   "dday": 19,
   "day": 11,
@@ -82,31 +82,31 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 385,
+        "current": 387,
         "live": true,
         "delta": {
           "day": {
-            "value": 11,
+            "value": 13,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 326,
+            "value": 328,
             "days": 8,
             "note": ""
           },
           "quarter": {
-            "value": 358,
+            "value": 360,
             "days": 10,
             "note": ""
           },
           "half": {
-            "value": 358,
+            "value": 360,
             "days": 10,
             "note": ""
           },
           "year": {
-            "value": 358,
+            "value": 360,
             "days": 10,
             "note": ""
           }
@@ -218,7 +218,7 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 65,
+        "current": 67,
         "live": true,
         "delta": {
           "day": {
@@ -784,11 +784,11 @@
   },
   "history": {
     "2026-06-21": {
-      "ig": 385,
+      "ig": 387,
       "yt": 19700,
       "fb": 13,
       "threads": 32,
-      "site": 65
+      "site": 67
     },
     "2026-06-20": {
       "ig": 374
@@ -811,16 +811,16 @@
   },
   "channels": {
     "ig": {
-      "followers": 385,
+      "followers": 387,
       "live": true,
-      "updated": "06/21 16:14"
+      "updated": "06/21 19:27"
     },
     "yt": {
       "subs": 19700,
       "views": 804489,
       "videos": 31,
       "live": true,
-      "updated": "06/21 16:14"
+      "updated": "06/21 19:27"
     },
     "fb": {
       "followers": 13,
@@ -828,18 +828,18 @@
       "last_time": "2026-06-20",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
       "live": true,
-      "updated": "06/21 16:14"
+      "updated": "06/21 19:27"
     },
     "threads": {
       "followers": 32,
       "live": true,
-      "updated": "06/21 16:14"
+      "updated": "06/21 19:27"
     },
     "site": {
-      "pageviews": 130,
-      "users": 65,
+      "pageviews": 133,
+      "users": 67,
       "live": true,
-      "updated": "06/21 16:14"
+      "updated": "06/21 19:27"
     }
   },
   "dailyTrend": [
@@ -875,8 +875,8 @@
     },
     {
       "date": "2026-06-21",
-      "ig": 385,
-      "delta": 11
+      "ig": 387,
+      "delta": 13
     }
   ]
 }
