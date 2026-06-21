@@ -52,6 +52,7 @@
 - 兩套天數別混（集數=日期−10、戰況卡=日期−11）。
 - send_message 在無人值守模式被擋＝不能自動驅動別的獨立 session（執行改用「本 session 背景派 sub-agent」）。
 - 交付前驗「最終成品本身」（抽幀/抽音軌/md5），別憑改了上游就說完成（Day10 配音 6 輪教訓）。
+- 🔴 給 Jeff 看成品**別用 SendUserFile（他點不開、踩過兩次：IG文稿、Day11 mp4）**→ 影音/大檔用 `Invoke-Item` 直接開檔；其餘給**桌面成品絕對路徑**或 inline 顯示（圖用 Read 秀）。
 
 ## 7. 各部門累積經驗（department playbooks · 每次 Jeff 回饋就更新對應段）
 > 每個部門＝一個 skill ＋ 這段累積筆記。派該部門的 agent 前，把對應段一起餵給它。
