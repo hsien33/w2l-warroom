@@ -53,6 +53,8 @@
 - send_message 在無人值守模式被擋＝不能自動驅動別的獨立 session（執行改用「本 session 背景派 sub-agent」）。
 - 交付前驗「最終成品本身」（抽幀/抽音軌/md5），別憑改了上游就說完成（Day10 配音 6 輪教訓）。
 - 🔴 給 Jeff 看成品**別用 SendUserFile（他點不開、踩過兩次：IG文稿、Day11 mp4）**→ 影音/大檔用 `Invoke-Item` 直接開檔；其餘給**桌面成品絕對路徑**或 inline 顯示（圖用 Read 秀）。
+- 🔴 **別信「追蹤/進度標記檔」就下結論**（2026-06-21 兩次被金句庫「DAY003 目前發到此」帶歪，誤判 FB 金句卡死掉，其實已發到 DAY12）→ 結論前去**真實源頭驗**（FB 真貼文/IG 真卡/雲端 log），手寫的進度標記常忘了更新＝假進度。戰情室面板一律從真實源頭推導、不手寫狀態。
+- 🔴 **改發文 workflow 後，確認「排程觸發不會變成真發」**（2026-06-21 fb_quote.yml 在 schedule 觸發時 `DRY_RUN=${{ inputs.dry_run }}` 為空＝會真發，差點未經核可自動發）→ 未核可的對外發佈，cron 一律先註解關閉/或強制 DRY_RUN=1；agent 宣稱「未上線」要去 yml 親驗 schedule 區塊。
 
 ## 7. 各部門累積經驗（department playbooks · 每次 Jeff 回饋就更新對應段）
 > 每個部門＝一個 skill ＋ 這段累積筆記。派該部門的 agent 前，把對應段一起餵給它。
@@ -65,8 +67,10 @@
 - 金句卡照 make_week.py（SS2/Black/柔投影/冷暖金/漸層金箔），別自製別用 satori。
 - 暖風頁照 warm-magnet-style 記憶＋範本檔。
 
-### 📊 戰情室/數據（skill: refresh.py/index.html）
+### 📊 戰情室/數據（skill: refresh.py/index.html/build_week.py）
 - 數字只放真值、缺資料標「資料待接」不假數；比較用圖表不用文案捏造。
+- **「未來一周排程板」鐵則**：每格紅綠（🟢已排定/🔴未排定）一律由 `build_week.py` 從 warcard-auto 真實源頭（reels/fb_quote schedule＋cron 是否開）推導成 `week.json`，**禁止手寫狀態**；日期/星期/今天由前端 `new Date()` 即時算（別寫死星期，曾把週日寫成週六）。排程改變（補 Reel、金句卡上線、排新一週）就重跑 build_week.py。
+- **治理觀**：任何「靠 Jeff 手動」的內容線＝會悄悄斷（金句卡手動 Publer 就是這樣斷掉沒人知）→ 板上恆紅提醒，能自動就自動、不能自動的每天主動提醒 Jeff。
 
 ### 🎬 影音/配音（VoxCPM + hyperframes）
 - 🔴🔴🔴 **強制**：做任何「自動剪輯影片／Reel／配音」**動工前，必先讀本 playbook（尤其這 🎬 段＋多音字易錯表＋逐句聽稿驗收 SOP）**。副總派影音/剪輯 agent 時，prompt **必含一句「先讀 w2l-warroom/playbook.md 的 🎬 段再開工」**；agent 沒讀＝不准動工。（Jeff 2026-06-21 指定，避免重犯 Day11 配音錯。）

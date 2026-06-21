@@ -1,6 +1,26 @@
 {
-  "updated": "2026-06-21 15:00 台北",
+  "updated": "2026-06-21 16:20 台北",
   "jobs": [
+    {
+      "id": "20260621-warroom-week-board",
+      "ts": "06-21 16:15",
+      "project": "戰情室「未來一周排程板」（真實排程、非願望清單）",
+      "owner": "副總",
+      "result": "改成 6 檔通路×7天、🟢已排定/🔴未排定，由 build_week.py 從 warcard-auto 真實源頭推導 week.json；JS 即時算日期（修掉週六→週日 bug）；實機驗證紅綠正確、console 無錯、已上線",
+      "status": "done",
+      "artifacts": ["index.html", "week.json", "build_week.py"],
+      "note": "目前真相：每天只有『戰況卡』全自動(綠)；Reel 僅今天 Day11 有庫存(綠)，Day12-17 未製作(紅)；社團/Shorts/Thread 無自動化(恆紅)；FB金句卡建好未上線(紅)"
+    },
+    {
+      "id": "20260621-fb-quote-auto",
+      "ts": "06-21 16:00",
+      "project": "FB 粉專金句卡連續劇 — 雲端自動發",
+      "owner": "背景 agent → 副總驗收",
+      "result": "機制建好(fb_quote.py+schedule+12張卡)；雲端 dry-run 真讀 FB 證實 DAY004-012 已發、下一張=DAY013；md5/py_compile/連結200 全驗過。🔴抓到 agent 把 cron 設成會真發，已關閉 schedule cron 守先核後發",
+      "status": "needs_jeff",
+      "artifacts": ["戰況卡自動發/fb_quote/schedule.json", "戰況卡自動發/src/fb_quote.py"],
+      "note": "等 Jeff：說『上線』我取消 fb_quote.yml 的 cron 註解+push→明晚起每 20:07 自動發 DAY013→015；或先手動跑一次真發看看"
+    },
     {
       "id": "20260621-domain-migration",
       "ts": "06-21 14:30",
