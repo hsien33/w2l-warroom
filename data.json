@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-21 07:42 台北",
-  "followers": 374,
+  "updated": "2026-06-21 08:18 台北",
+  "followers": 375,
   "goal": 1000,
   "dday": 19,
   "day": 11,
@@ -82,7 +82,7 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 374,
+        "current": 375,
         "live": true,
         "delta": {
           "day": {
@@ -784,7 +784,7 @@
   },
   "history": {
     "2026-06-21": {
-      "ig": 374,
+      "ig": 375,
       "yt": 19700,
       "fb": 13,
       "threads": 32,
@@ -793,16 +793,16 @@
   },
   "channels": {
     "ig": {
-      "followers": 374,
+      "followers": 375,
       "live": true,
-      "updated": "06/21 07:42"
+      "updated": "06/21 08:18"
     },
     "yt": {
       "subs": 19700,
       "views": 804447,
       "videos": 31,
       "live": true,
-      "updated": "06/21 07:42"
+      "updated": "06/21 08:18"
     },
     "fb": {
       "followers": 13,
@@ -810,24 +810,24 @@
       "last_time": "2026-06-20",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116514325125488",
       "live": true,
-      "updated": "06/21 07:42"
+      "updated": "06/21 08:18"
     },
     "threads": {
       "followers": 32,
       "live": true,
-      "updated": "06/21 07:42"
+      "updated": "06/21 08:18"
     },
     "site": {
       "pageviews": 124,
       "users": 62,
       "live": true,
-      "updated": "06/21 07:42"
+      "updated": "06/21 08:18"
     }
   },
   "dailyTrend": [
     {
       "date": "2026-06-21",
-      "ig": 374,
+      "ig": 375,
       "delta": null
     }
   ]
