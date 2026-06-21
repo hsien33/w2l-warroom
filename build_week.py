@@ -63,22 +63,42 @@ try:
         fbq_last = max(fbq_last, int(c["day"]))
 except Exception as e:
     print("讀 fb_quote/schedule.json 失敗：", e)
-POSTED_THROUGH = 12        # 2026-06-21 雲端 dry-run 真讀 FB 粉專確認 DAY004–012 已發；重跑前若再發過請更新
-fbq_next = POSTED_THROUGH + 1
+# ── 4. Thread 改寫線是否上線（thread_rewrite.yml schedule cron 有沒有被註解）──
+thread_live = False
+try:
+    yml = io.open(os.path.join(WC, ".github", "workflows", "thread_rewrite.yml"), encoding="utf-8").read()
+    in_sched = False
+    for line in yml.splitlines():
+        s = line.strip()
+        if s.startswith("schedule:") and not s.startswith("#"): in_sched = True; continue
+        if in_sched:
+            if s.startswith("- cron:"): thread_live = True; break
+            if s and not s.startswith("#") and not s.startswith("-"): in_sched = False
+except Exception as e:
+    print("讀 thread_rewrite.yml 失敗：", e)
+
+# 既有 week.json 的「人工維護欄」要保留（不被自動重算洗掉）
+prev = {}
+try: prev = read_json(os.path.join(HERE, "week.json"))
+except Exception: pass
 
 out = {
     "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%MZ"),
     "reel_start": reel_start,
     "warcard_start": warcard_start,
     "reels_inventory": reels_inventory,
+    "thread_live": thread_live,
     "fbquote": {
         "live": fbq_live,
-        "next_day": fbq_next,
+        # anchor：金句卡發到哪由「某基準日=某DAY」推算（前端按日期自動推進）。重跑時若已發到更新天數，改這兩個值。
+        "anchor_date": (prev.get("fbquote") or {}).get("anchor_date", "2026-06-21"),
+        "anchor_day": (prev.get("fbquote") or {}).get("anchor_day", 13),
         "last_day": fbq_last,
         "topics": {str(k): v for k, v in fbq_topics.items()},
     },
-    # 以下三線目前無自動化（社團轉傳手動／Shorts 未建 poster／Thread 手動）＝板上恆紅，靠這份標記
-    "manual_lines": {"club": True, "shorts": True, "thread": True},
+    # 人工維護：本週已備好的社團文日期（YYYY-MM-DD）、Shorts 線狀態（none/producing/live）
+    "social_prepared": prev.get("social_prepared", []),
+    "shorts_status": prev.get("shorts_status", "none"),
 }
 
 with io.open(os.path.join(HERE, "week.json"), "w", encoding="utf-8") as f:
