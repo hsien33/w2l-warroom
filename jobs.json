@@ -9,7 +9,12 @@
       "result": "✅ 程式+本週 DAY010/011 兩篇 Thread 已 push(ba71001)。副總驗：cron 全註解(0條啟用=不會自動發)、py_compile OK、兩篇第一則留言連結HTTP200。DRY 實跑讀到13則真貼文、挑對下一篇、未發",
       "status": "needs_jeff",
       "artifacts": ["戰況卡自動發/thread_rewrite/schedule.json", "戰況卡自動發/src/thread_rewrite.py"],
-      "note": "等你：①核可上線(我取消cron註解+push,每晚20:20自動發)②雲端要設 THREADS_ACCESS_TOKEN/USER_ID Secret(禁派,你設)。文已過演算法閘:第一人稱鉤子/結尾問句/連結進留言"
+      "note": "文已過演算法閘：第一人稱鉤子／結尾問句／連結進第一則留言。",
+      "ask": [
+        "這兩篇 Thread 內容核可嗎？（DAY010 需要vs想要、DAY011 考67分沒罵）",
+        "要上線嗎？核可後我取消 cron 註解，每晚 20:20 自動發「你審過的」Thread。",
+        "雲端要設 THREADS_ACCESS_TOKEN / THREADS_USER_ID Secret（登入帳號的事、你設一次，我不能碰）。"
+      ]
     },
     {
       "id": "20260621-line-club",
@@ -19,7 +24,13 @@
       "result": "✅ 計劃案網頁備妥：搭補習費計算機、週二(6/23)『補習』+週五(6/26)『天賦』兩篇+鉤子+私訊關鍵字+第一則留言連結。副總驗：HTML存在(18KB)、favicon有、兩連結HTTP200",
       "status": "needs_jeff",
       "artifacts": ["財富煉金術/02_社群產出/引流工具工廠/社團文計劃案/本週_待裁定.html"],
-      "note": "誠實：FB社團無法API全自動(Meta收API)→你一鍵手貼或FB後台原生排程。等你定：①發哪個社團②兩篇都發/先試週二③Publer推播 or 手貼"
+      "note": "誠實：FB 社團無法 API 全自動（Meta 收了 API）→ 發那一下你一鍵手貼或 FB 後台原生排程；內容我全備好。",
+      "ask": [
+        "這兩篇社團文核可嗎？（週二『補習』＋週五『天賦』，先開計劃案網頁看）",
+        "要發進哪個 FB 社團？",
+        "兩篇都排，還是先發週二試水溫？（我建議兩篇都排）",
+        "發法：你一鍵手貼，還是 Publer 手機推播提醒？"
+      ]
     },
     {
       "id": "20260621-line-shorts",
@@ -29,7 +40,12 @@
       "result": "✅ 計畫書+Day10/11 兩支 Shorts 腳本/字幕/標題+poster 骨架備妥。副總驗：0條啟用cron、缺金鑰強制DRY(設DRY_RUN=0也不誤發)、py_compile OK、計畫書16KB",
       "status": "needs_jeff",
       "artifacts": ["財富煉金術/02_社群產出/Shorts線/本週_計畫與草案.md", "戰況卡自動發/src/post_shorts.py"],
-      "note": "卡點＝YouTube 金鑰(A級,你設一次,步驟已列在計畫書第4節)。內容先備好等金鑰；核腳本後交⑲出片"
+      "note": "內容先備好等金鑰；核腳本後交出片主管做 34 秒直式影片。",
+      "ask": [
+        "這兩支 Shorts 腳本核可出片嗎？（Day10 需要vs想要、Day11 考67分）",
+        "YouTube 上傳金鑰要你設一次（步驟在計畫書第 4 節、登入帳號的事，我不能碰）。",
+        "發佈先 unlisted 給你看過再公開？（我建議：是）"
+      ]
     },
     {
       "id": "20260621-warroom-week-board",
@@ -59,7 +75,12 @@
       "result": "程式全備妥：分支 migrate-to-www、dist canonical 翻 www、落點三檔排除已對齊 /tools/、報導連結確認免 301、操作手冊 v2 已產",
       "status": "needs_jeff",
       "artifacts": ["01_文件與日誌/網域遷移_Jeff操作手冊.md", "walk2light-site/dist/", "walk2light-site/migration/new.htaccess"],
-      "note": "等 Jeff：①舊網址→新頁對照表 ②付費工具買家清單＋bak實測 ③Hostinger 主機操作（要登入）"
+      "note": "程式全備妥，缺的是要登入主機的操作（A 級、你來）。",
+      "ask": [
+        "確認可以開始搬站嗎？（新站→www、舊→bak、落點工具留 new 不動）",
+        "Hostinger 主機操作要你登入執行（部署 dist、放 .htaccess、DNS、SSL）。",
+        "付費工具買家清單給我，好做 bak 實測不漏單。"
+      ]
     },
     {
       "id": "20260621-day11-reel",

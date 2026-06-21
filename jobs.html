@@ -38,6 +38,37 @@ h1{font-size:22px;font-weight:900}
 .arts a{font-size:12px;color:var(--gold);text-decoration:none;border:1px solid #ecdcb4;border-radius:999px;padding:3px 11px;background:#fbf3e0}
 .empty{color:var(--faint);font-size:13px;padding:4px 2px}
 footer{margin-top:26px;color:var(--faint);font-size:12px;text-align:center}
+
+/* ── 裁定區（待你拍板才出現）──────────────────────── */
+.verdict{margin-top:13px;border-top:1px dashed var(--line);padding-top:13px}
+.vhead{font-size:15px;font-weight:900;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.vhead::before{content:"📌"}
+.asklist{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:14px}
+.asklist li{position:relative;font-size:15px;line-height:1.65;color:var(--ink);
+  background:#fffefb;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:10px;
+  padding:11px 14px 11px 40px;box-shadow:0 2px 8px -5px rgba(80,60,20,.3)}
+.asklist li .n{position:absolute;left:12px;top:11px;width:20px;height:20px;border-radius:50%;
+  background:var(--amber-s);color:var(--amber);font-size:12px;font-weight:900;
+  display:flex;align-items:center;justify-content:center}
+.vbtns{display:flex;gap:10px;flex-wrap:wrap}
+.vbtns button{font-family:inherit;font-size:15px;font-weight:800;border:none;border-radius:10px;padding:11px 20px;cursor:pointer;transition:.15s}
+.vbtns button:active{transform:translateY(1px)}
+.vok{background:var(--green);color:#fff;box-shadow:0 6px 16px -8px rgba(58,158,106,.8)}
+.vok:hover{filter:brightness(1.06)}
+.vno{background:#fff;color:var(--red);border:1.5px solid var(--red)!important}
+.vno:hover{background:var(--red-s)}
+.vfb{display:none;margin-top:12px}
+.verdict.no .vfb{display:block}
+.verdict.no .vok{display:none}
+.vfb textarea{width:100%;min-height:84px;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);
+  border:1.5px solid var(--amber);border-radius:10px;padding:11px 13px;resize:vertical;background:#fffefb}
+.vfb textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(176,125,26,.15)}
+.vsend{margin-top:9px;font-family:inherit;font-size:15px;font-weight:800;border:none;border-radius:10px;
+  padding:11px 22px;cursor:pointer;background:var(--gold);color:#fff;box-shadow:0 6px 16px -8px rgba(176,125,26,.8)}
+.vsend:hover{filter:brightness(1.06)}
+.vmsg{margin-top:10px;font-size:14px;font-weight:700}
+.vmsg.ok{color:var(--green)} .vmsg.err{color:var(--red)}
+.vtip{font-size:12px;color:var(--faint);margin-top:8px}
 </style>
 </head>
 <body>
@@ -46,12 +77,36 @@ footer{margin-top:26px;color:var(--faint);font-size:12px;text-align:center}
   <div class="top"><h1>🗂️ 成果頁</h1><span class="upd" id="upd"></span></div>
   <div class="now" id="now">載入中…</div>
   <div id="boxes"></div>
-  <footer>副總自動更新 · 🔴待你拍板 🟡進行中 🟢已完成 · 完成項附證據、舊的自動收摺</footer>
+  <footer>副總自動更新 · 🔴待你拍板 🟡進行中 🟢已完成 · 待裁定可直接按「核可／不同意」送回</footer>
 </div>
 <script>
+const NTFY='w2l-jeff-verdict-9x7k2m4q';   /* 沿用戰情室秘密頻道，按鈕把你的裁示送回給 AI */
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const LB={needs_jeff:['red','待你拍板'],dispatched:['amber','進行中'],running:['amber','進行中'],done:['green','已完成'],failed:['red','失敗']};
 function artLink(p){const name=p.replace(/\/$/,'').split('/').pop()||p; return `<a href="../${p}" target="_blank" rel="noopener">${esc(name)}</a>`;}
+
+function verdictBlock(j){
+  if(j.status!=='needs_jeff') return '';
+  const asks=(j.ask&&j.ask.length)?j.ask:(j.note?[j.note]:[]);
+  if(!asks.length) return '';
+  return `<div class="verdict" data-job="${esc(j.id||j.project||'')}">
+    <div class="vhead">需要你裁定</div>
+    <ul class="asklist">
+      ${asks.map((a,i)=>`<li><span class="n">${i+1}</span>${esc(a)}</li>`).join('')}
+    </ul>
+    <div class="vbtns">
+      <button class="vok">✅ 核可</button>
+      <button class="vno">✏️ 不同意（要改）</button>
+    </div>
+    <div class="vfb">
+      <textarea placeholder="想改哪裡？要往哪個方向？寫給我…（手機可用語音轉文字 🎤）"></textarea>
+      <button class="vsend">🚀 送出修改方向</button>
+    </div>
+    <div class="vmsg"></div>
+    <div class="vtip">按下即送回 AI（直送失敗會自動複製，貼到對話傳我即可）</div>
+  </div>`;
+}
+
 function row(j){const k=LB[j.status]||LB.dispatched;const cls=k[0];
   return `<div class="job ${cls}">
     <div class="j1"><span class="t">${esc(j.ts||'')}</span><span class="p">${esc(j.project||'')}</span><span class="badge ${cls}">${k[1]}</span></div>
@@ -59,12 +114,43 @@ function row(j){const k=LB[j.status]||LB.dispatched;const cls=k[0];
     ${j.result?`<div class="result">${esc(j.result)}</div>`:''}
     ${(j.artifacts&&j.artifacts.length)?`<div class="arts">${j.artifacts.map(artLink).join('')}</div>`:''}
     ${j.note?`<div class="note">${esc(j.note)}</div>`:''}
+    ${verdictBlock(j)}
   </div>`;}
+
 function group(jobs,statuses,label,cls){
   const list=jobs.filter(j=>statuses.includes(j.status));
   return `<div class="sec ${cls}"><div class="sh"><span class="dot"></span>${label}<span class="ct">${list.length} 件</span></div>
     ${list.length?list.map(row).join(''):'<div class="empty">（無）</div>'}</div>`;
 }
+
+async function sendVerdict(jobName, decision, feedback, msgEl, doneLabel){
+  const body='【Jeff 裁決 · '+new Date().toLocaleString('zh-TW')+'】\n\n■ 案子：'+jobName
+    +'\n■ 裁示：'+decision+(feedback?('\n\n■ 要改的方向：\n'+feedback):'');
+  let sent=false;
+  try{const r=await fetch('https://ntfy.sh',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({topic:NTFY,title:'Jeff裁決 '+jobName,message:body})}); sent=r.ok;}catch(e){}
+  if(!sent){ try{ await navigator.clipboard.writeText(body); }catch(e){} }
+  if(sent){ msgEl.className='vmsg ok'; msgEl.textContent='✅ '+doneLabel+'！AI 已收到，會開工。'; }
+  else{ msgEl.className='vmsg err'; msgEl.textContent='⚠️ 直送失敗、已複製到剪貼簿 → 貼到對話傳給我即可。'; }
+  return sent;
+}
+
+function wireVerdicts(){
+  document.querySelectorAll('.verdict').forEach(v=>{
+    const job=v.dataset.job, msg=v.querySelector('.vmsg');
+    const ok=v.querySelector('.vok'), no=v.querySelector('.vno'), send=v.querySelector('.vsend');
+    ok.onclick=async()=>{ ok.disabled=true; ok.textContent='送出中…';
+      const s=await sendVerdict(job,'✅ 核可，可發／上線','',msg,'已核可');
+      ok.textContent = s?'已核可 ✓':'重試'; ok.disabled=!s; };
+    no.onclick=()=>{ v.classList.add('no'); v.querySelector('textarea').focus(); };
+    send.onclick=async()=>{ const ta=v.querySelector('textarea'), val=(ta.value||'').trim();
+      if(!val){ msg.className='vmsg err'; msg.textContent='請先寫一下要改的方向'; return; }
+      send.disabled=true; send.textContent='送出中…';
+      const s=await sendVerdict(job,'✏️ 不同意，需修改',val,msg,'修改方向已送出');
+      send.textContent = s?'已送出 ✓':'重試送出'; send.disabled=!s; };
+  });
+}
+
 fetch('jobs.json?cb='+Math.random()).then(r=>r.json()).then(d=>{
   const jobs=d.jobs||[];
   document.getElementById('upd').textContent='更新 '+(d.updated||'');
@@ -75,6 +161,7 @@ fetch('jobs.json?cb='+Math.random()).then(r=>r.json()).then(d=>{
     group(jobs,['needs_jeff','failed'],'🔴 待你拍板 / 異常（要你動作）','red')+
     group(jobs,['dispatched','running'],'🟡 進行中（副總在跑、不用管）','amber')+
     group(jobs,['done'],'🟢 已完成（附證據）','green');
+  wireVerdicts();
 }).catch(e=>{document.getElementById('now').textContent='讀取 jobs.json 失敗：'+e;});
 </script>
 </body>
