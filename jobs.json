@@ -1,6 +1,36 @@
 {
-  "updated": "2026-06-21 16:20 台北",
+  "updated": "2026-06-21 16:45 台北",
   "jobs": [
+    {
+      "id": "20260621-line-thread",
+      "ts": "06-21 16:40",
+      "project": "建『Thread 改寫線』（Reel→Thread 自動改寫→審→自動發）",
+      "owner": "Thread 建線主管（背景）",
+      "result": "派工中：用既有 Threads 權杖＋post_threads_post.py 建自動發(架構照 fb_quote)、本週用 Day10/11 Reel 各改 1 篇 Thread、過演算法閘、staged 待裁定（不真發）",
+      "status": "dispatched",
+      "artifacts": [],
+      "note": "最可行的一條（權杖已有）。完成回報本週兩篇＋演算法要點給你裁定"
+    },
+    {
+      "id": "20260621-line-club",
+      "ts": "06-21 16:40",
+      "project": "建『FB 社團文線』本週計劃案網頁（工具+週二/五文+鉤子+私訊）",
+      "owner": "社團文主管（背景）",
+      "result": "派工中：挑 1 個現成工具搭配、寫週二(6/23)+週五(6/26)社團文+引流鉤子+私訊關鍵字、組成『待裁定』網頁",
+      "status": "dispatched",
+      "artifacts": [],
+      "note": "誠實：Meta 收掉社團發文 API→發那步走 Publer 或你一鍵貼，其餘自動。每週六給你裁定"
+    },
+    {
+      "id": "20260621-line-shorts",
+      "ts": "06-21 16:40",
+      "project": "建『YouTube Shorts 線』計畫＋本週改編草案",
+      "owner": "Shorts 主管（背景）",
+      "result": "派工中：Reel→Shorts 改編計畫、Day10/11 各 1 支腳本/字幕/標題、poster 骨架、列出 YT 金鑰設定步驟",
+      "status": "dispatched",
+      "artifacts": [],
+      "note": "唯一卡點＝YouTube 發佈金鑰要你授權設定一次（A 級）；內容會先備好等金鑰"
+    },
     {
       "id": "20260621-warroom-week-board",
       "ts": "06-21 16:15",
