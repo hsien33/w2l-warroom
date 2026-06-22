@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-22 15:33 台北",
-  "followers": 405,
+  "updated": "2026-06-22 21:29 台北",
+  "followers": 409,
   "goal": 1000,
   "dday": 18,
   "day": 12,
@@ -82,31 +82,31 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 403,
+        "current": 409,
         "live": true,
         "delta": {
           "day": {
-            "value": 10,
+            "value": 16,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 344,
+            "value": 350,
             "days": 9,
             "note": ""
           },
           "quarter": {
-            "value": 376,
+            "value": 382,
             "days": 11,
             "note": ""
           },
           "half": {
-            "value": 376,
+            "value": 382,
             "days": 11,
             "note": ""
           },
           "year": {
-            "value": 376,
+            "value": 382,
             "days": 11,
             "note": ""
           }
@@ -184,11 +184,11 @@
         "key": "threads",
         "name": "Threads",
         "metric": "followers",
-        "current": 32,
+        "current": 33,
         "live": true,
         "delta": {
           "day": {
-            "value": 0,
+            "value": 1,
             "days": 1,
             "note": ""
           },
@@ -809,44 +809,44 @@
       "ig": 27
     },
     "2026-06-22": {
-      "ig": 403,
+      "ig": 409,
       "yt": 19700,
       "fb": 13,
-      "threads": 32,
+      "threads": 33,
       "site": 72
     }
   },
   "channels": {
     "ig": {
-      "followers": 403,
+      "followers": 409,
       "live": true,
-      "updated": "06/22 15:33"
+      "updated": "06/22 21:29"
     },
     "yt": {
       "subs": 19700,
-      "views": 804489,
+      "views": 804580,
       "videos": 31,
       "live": true,
-      "updated": "06/22 15:33"
+      "updated": "06/22 21:29"
     },
     "fb": {
       "followers": 13,
-      "last_msg": "8 成散戶覺得自己「比平均聰明」。但平均，不可能有 8 成的人在上面",
-      "last_time": "2026-06-21",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116601763125488",
+      "last_msg": "父子對決・第 12 天｜班排第一，我給他 1500\n有人說我用錢收買",
+      "last_time": "2026-06-22",
+      "last_url": "https://www.facebook.com/reel/1236223818488636/",
       "live": true,
-      "updated": "06/22 15:33"
+      "updated": "06/22 21:29"
     },
     "threads": {
-      "followers": 32,
+      "followers": 33,
       "live": true,
-      "updated": "06/22 15:33"
+      "updated": "06/22 21:29"
     },
     "site": {
-      "pageviews": 142,
+      "pageviews": 146,
       "users": 72,
       "live": true,
-      "updated": "06/22 15:33"
+      "updated": "06/22 21:29"
     }
   },
   "dailyTrend": [
@@ -887,8 +887,8 @@
     },
     {
       "date": "2026-06-22",
-      "ig": 403,
-      "delta": 10
+      "ig": 409,
+      "delta": 16
     }
   ],
   "todayStatus": {
@@ -898,12 +898,16 @@
       "url": "https://www.instagram.com/p/DZ3djCglYVF/"
     },
     "reel": {
-      "posted": false
+      "posted": true,
+      "time": "21:17",
+      "url": "https://www.instagram.com/reel/DZ47ieSjtio/"
     },
     "fbquote": {
-      "posted": false
+      "posted": true,
+      "time": "21:18",
+      "url": "https://www.facebook.com/reel/1236223818488636/"
     },
-    "checked": "06/22 15:33",
+    "checked": "06/22 21:29",
     "date": "2026-06-22"
   }
 }
