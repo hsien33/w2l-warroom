@@ -1,4 +1,5 @@
 {
  "last_processed_unix": 1782103093,
- "note": "核可看門 watcher 狀態；只處理此時間後的新裁示"
+ "note": "Jeff 2026-06-22 改成 on-demand：他在 chat 說『已核』我才讀頻道動工，不跑自動 polling。下次 ScheduleWakeup 喚醒→不再重排、直接停。",
+ "watcher_cancelled": true
 }
