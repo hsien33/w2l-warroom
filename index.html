@@ -521,7 +521,8 @@
     <!-- ⑥ 未來一周進度 -->
     <section class="sect" id="s-week">
       <div class="sh"><div class="i" style="background:var(--indigo-s);color:var(--indigo)">🗓</div>
-        <div class="t">未來一周排程板</div><div class="tag">綠=真排程(自動)｜黃=已備/進行｜紅=未排(要排)｜灰=本日不發</div></div>
+        <div class="t" id="wp-title">未來一周排程板</div><div class="tag">綠=真排程(自動)｜黃=已備/進行｜紅=未排(要排)｜灰=本日不發</div>
+        <button id="wp-toggle" style="margin-left:auto;font-family:var(--tc);font-size:12px;font-weight:800;color:var(--indigo);background:var(--indigo-s);border:1px solid var(--indigo);border-radius:9px;padding:6px 13px;cursor:pointer;white-space:nowrap">展開看四週 ▾</button></div>
       <div class="wpgrid" id="wpgrid"></div>
     </section>
 
@@ -712,7 +713,9 @@ const DOW=['日','一','二','三','四','五','六'];
 const PILL={green:'已排定',yellow:'已備/進行',red:'未排定',off:'不發'};
 function daysBetween(startISO,d){return Math.round((d-new Date(startISO+'T00:00:00'))/86400000);}
 function isoOf(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+let WP_CFG=null, WP_DAYS=7;
 function renderWeek(cfg){
+  if(cfg) WP_CFG=cfg; cfg=WP_CFG;            /* 存起來，切換週數時可重畫 */
   if(!cfg){return;}
   /* 日期窗只是「日曆顯示」；每格的綠/黃/紅一律來自真實排程狀態（cron 開沒開＋隊列裡有沒有你核可的卡），不靠日期公式 */
   const inv=new Set(cfg.reels_inventory||[]);
@@ -721,7 +724,7 @@ function renderWeek(cfg){
   const prepared=new Set(cfg.social_prepared||[]);
   const today=new Date(); today.setHours(0,0,0,0);
   const days=[];
-  for(let i=0;i<7;i++){
+  for(let i=0;i<WP_DAYS;i++){
     const d=new Date(today); d.setDate(today.getDate()+i);
     const iso=isoOf(d);
     const warDay=daysBetween(cfg.warcard_start,d), reelDay=daysBetween(cfg.reel_start,d);
@@ -804,7 +807,7 @@ function renderWeek(cfg){
           : miss('Thread cron 沒開。')};
     }
 
-    days.push({mmdd:(d.getMonth()+1)+'/'+d.getDate(),dow:DOW[d.getDay()],today:i===0,edge:i>=4,
+    days.push({mmdd:(d.getMonth()+1)+'/'+d.getDate(),dow:DOW[d.getDay()],today:i===0,edge:(i%7)>=4,wkbreak:(i>0&&i%7===0),
       slots:[slotWar,slotClub,slotShorts,slotFbq,slotReel,slotThread]});
   }
   $("#wpgrid").innerHTML=days.map(d=>{
@@ -1111,6 +1114,12 @@ fetch('week.json?t='+Date.now()).then(r=>r.json()).then(W=>{
   const el=document.getElementById('wpgrid');
   if(el&&!el.innerHTML.trim()) el.innerHTML='<div style="font-family:var(--tc);color:var(--faint);padding:14px">排程設定待接（week.json 載入失敗）</div>';
 });
+/* 排程板「一週↔四週」切換：展開看 28 天、知道排到哪天 */
+(function(){const b=document.getElementById('wp-toggle');if(!b)return;
+  b.onclick=()=>{WP_DAYS=(WP_DAYS===7?28:7);renderWeek();
+    b.textContent=(WP_DAYS===28?'收合回一週 ▴':'展開看四週 ▾');
+    const t=document.getElementById('wp-title');if(t)t.textContent=(WP_DAYS===28?'未來四週排程板':'未來一周排程板');};
+})();
 
 /* ════════ 左欄高亮（捲動時） ════════ */
 const navSecs=["s-hq","s-social","s-week","s-ep","s-inv","s-dec","s-pipe","s-ship"];
