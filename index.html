@@ -420,11 +420,7 @@
     <a class="navbtn on" href="#s-hq" data-sec="s-hq"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.7v5.1c0 4.4-3 7.4-7 8.9-4-1.5-7-4.5-7-8.9V5.7z"/><path d="M12 15.4v-5m0 0l-2.3 2.3M12 10.4l2.3 2.3"/></svg><span class="nl">總部</span></a>
     <a class="navbtn" href="#s-social" data-sec="s-social"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="8.3" r="2"/><circle cx="11.5" cy="17" r="2"/><path d="M7.9 7.7l8-.7M7.5 8.6l3 6.6M16.4 9.9l-4 5.4"/></svg><span class="nl">版圖</span></a>
     <a class="navbtn" href="#s-week" data-sec="s-week"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2.6"/><path d="M4 9.6h16M8 3.3v3.3M16 3.3v3.3"/><path d="M8.4 13.7l1.6 1.6 3.4-3.6"/></svg><span class="nl">週進度</span></a>
-    <a class="navbtn" href="#s-ep" data-sec="s-ep"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="4.6" width="16.8" height="14.8" rx="3.4"/><path d="M10 9.3l4.6 2.7L10 14.7z" fill="url(#xtal)" stroke="none"/></svg><span class="nl">主集</span></a>
     <a class="navbtn" href="#s-inv" data-sec="s-inv"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8.4 4.5L12 12 3.6 7.5z"/><path d="M3.6 12L12 16.5l8.4-4.5M3.6 16.4L12 21l8.4-4.6"/></svg><span class="nl">庫存</span></a>
-    <a class="navbtn" href="#s-dec" data-sec="s-dec"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.2v15.6M7.2 19.8h9.6M12 6.3l-6 1.4M12 6.3l6 1.4"/><path d="M3.2 13.2l2.8-5.4 2.8 5.4a2.8 2.8 0 0 1-5.6 0zM15.2 13.2l2.8-5.4 2.8 5.4a2.8 2.8 0 0 1-5.6 0z"/></svg><span class="nl">裁決</span></a>
-    <a class="navbtn" href="#s-pipe" data-sec="s-pipe"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="1.9"/><circle cx="5" cy="18" r="1.9"/><circle cx="18.5" cy="12" r="1.9"/><path d="M6.9 6h3.4a3 3 0 0 1 3 3v0a3 3 0 0 0 3 3M6.9 18h3.4a3 3 0 0 0 3-3"/></svg><span class="nl">流水線</span></a>
-    <a class="navbtn" href="#s-ship" data-sec="s-ship"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="url(#xtal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><path d="M8.2 12.4l2.6 2.6 5-5.3"/></svg><span class="nl">已完工</span></a>
     <div class="grow"></div>
   </aside>
 
@@ -523,7 +519,7 @@
     </section>
 
     <!-- ⑦ 主集 Reel Day11-20 三色 -->
-    <section class="sect" id="s-ep">
+    <section class="sect" id="s-ep" style="display:none">
       <div class="sh"><div class="i" style="background:var(--mint-s);color:var(--mint)">🎬</div>
         <div class="t" id="ep-title">主集 Reel · Day11–20 庫存</div><div class="tag" id="ep-tag"></div></div>
       <div class="epwrap glass">
@@ -545,14 +541,14 @@
     </section>
 
     <!-- ⑨ 待 Jeff 裁決 -->
-    <section class="sect" id="s-dec">
+    <section class="sect" id="s-dec" style="display:none">
       <div class="sh"><div class="i" style="background:var(--coral-s);color:var(--coral)">⚖</div>
         <div class="t">待 Jeff 裁決</div><div class="tag" id="dec-tag">點開看詳情 · 打字/語音直接送出派工</div></div>
       <div class="deck glass" id="deck"></div>
     </section>
 
     <!-- ⑩ 內容自動化流水線 -->
-    <section class="sect" id="s-pipe">
+    <section class="sect" id="s-pipe" style="display:none">
       <div class="sh"><div class="i" style="background:var(--violet-s);color:var(--violet)">⚗</div>
         <div class="t" id="pipe-title">內容自動化流水線</div><div class="tag">各主軸 → session → 進度 → 待完成</div></div>
       <div class="pipgrid" id="pipgrid"></div>
@@ -562,14 +558,14 @@
     </section>
 
     <!-- ⑪ session 排程 -->
-    <section class="sect" id="s-ses">
+    <section class="sect" id="s-ses" style="display:none">
       <div class="sh"><div class="i" style="background:var(--violet-s);color:var(--violet)">⚙</div>
         <div class="t" id="ses-title">各 session 負責與排程確認</div><div class="tag">誰在跑 · 今日狀態 · 排程</div></div>
       <div class="sesgrid" id="sesgrid"></div>
     </section>
 
     <!-- ⑫ 已完工 -->
-    <section class="sect" id="s-ship">
+    <section class="sect" id="s-ship" style="display:none">
       <div class="sh"><div class="i" style="background:var(--mint-s);color:var(--mint)">✅</div>
         <div class="t" id="ship-title">已完工 · 穩定上線</div><div class="tag">已上線→真網址 · 未上傳→本機路徑</div></div>
       <div class="shipgrid" id="shipgrid"></div>
@@ -987,12 +983,10 @@ fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
   renderHQ(D);
   if(D.social){ SOCIAL=D.social; CURRANGE=(D.social.defaultRange)||'day'; renderSocial(); }
   renderTrend(D.dailyTrend);
-  renderEpisodes(D.episodes);
-  renderInv(D.inventory);
-  renderDecisions(D.decisions);
-  renderPipeline(D.pipeline);
-  renderSessions(D.sessions);
-  renderShipped(D.shipped);
+  renderInv(D.inventory);   /* 庫存：即時 derive（renderWeek 會再用 week.json 覆蓋）*/
+  /* 🔴 以下 5 塊舊手動快照已停用，改由「即時視圖」取代，避免過期誤導（Jeff 2026-06-22）：
+     episodes/pipeline→庫存區+排程板｜decisions→金句卡核可頁+今明待發｜sessions/shipped→報告存檔。
+     renderEpisodes/Decisions/Pipeline/Sessions/Shipped 不再呼叫；對應 section 已 display:none。*/
   if(D.updated){
     const u=$("#updated"); if(u) u.textContent='更新：'+D.updated;
     const fu=$("#foot-upd"); if(fu) fu.textContent='資料截至 '+D.updated+' · 每日由 data.json 更新';
