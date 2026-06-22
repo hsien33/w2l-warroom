@@ -158,14 +158,21 @@ function buildDay(cfg, I){
   const miss=t=>'<b>未排 · 差什麼：</b>'+t;
   const items=[];
 
-  /* IG 戰況卡 — cron 開＝每日即時生成 */
+  /* IG 戰況卡 — cron 開＝每日即時生成；內文＝當天 IG 顧問手寫(warcard_captions)、按前晚 Reel 撰寫 */
+  const wcCap=(cfg.warcard_captions||{})[String(warDay)]||'';
+  const wcCapPreview=wcCap                                  /* 佔位換成可讀標籤(數字發文時自動帶入) */
+    .replace(/\{N\}/g,warDay).replace(/\{G\}/g,'1000')
+    .replace(/\{X\}/g,'〔即時人數〕').replace(/\{Y\}/g,'〔還差人數〕').replace(/\{Z\}/g,'〔昨日增減〕');
+  const wcWritten=!!wcCap;
   items.push({t:'08:00',ch:'IG 戰況卡',
     state:cfg.warcard_cron?'green':'red',
     topic:'第'+warDay+'天戰況',
     prev:cfg.warcard_cron
-      ?'<b>第'+warDay+'天戰況卡</b>｜開盤前自動抓即時追蹤數→算戰況→出黑金卡發 IG（每天即時生成、內容不固定）。'
+      ?('<b>第'+warDay+'天戰況卡</b>｜'+(wcWritten
+          ?'IG 顧問已按前一晚 Reel 手寫今日內文（下方可看）；明早自動抓即時追蹤數填入數字後發 IG。'
+          :'⚠ 今日內文尚未手寫——會退回程式輪播範本（請補 warcard/captions.json）。')+'')
       :miss('戰況卡 cron 沒開——去 warcard.yml 開排程。'),
-    full:cfg.warcard_cron?cfg.warcard_caption_tpl:'',
+    full:cfg.warcard_cron?(wcCapPreview||cfg.warcard_caption_tpl):'',
     img:cfg.warcard_cron?cfg.warcard_sample_img:'', imgnote:'範例卡（昨日版）— 明早數字自動更新'});
 
   /* FB 社團文 — 只在週二/五發 */

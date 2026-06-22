@@ -89,6 +89,15 @@ try:
 except Exception as e:
     print("讀 shorts/schedule.json 失敗：", e)
 
+# ── 4c. 戰況卡每日手寫內文：warcard/captions.json（IG 顧問按前晚 Reel 寫，不套模板）──
+warcard_captions = {}
+try:
+    _wcp = os.path.join(WC, "warcard", "captions.json")
+    if os.path.exists(_wcp):
+        warcard_captions = {k: v for k, v in read_json(_wcp).items() if str(k).isdigit()}
+except Exception as e:
+    print("讀 warcard/captions.json 失敗：", e)
+
 # 既有 week.json 的「人工維護欄」要保留（不被自動重算洗掉）
 prev = {}
 try: prev = read_json(os.path.join(HERE, "week.json"))
@@ -205,6 +214,7 @@ out = {
     # 人工維護：戰況卡範例圖＋當天 caption 模板（明日待發頁 08:00 戰況卡點開看樣子）、Reel 影片附件對映
     "warcard_sample_img": prev.get("warcard_sample_img", ""),
     "warcard_caption_tpl": prev.get("warcard_caption_tpl", ""),
+    "warcard_captions": warcard_captions,   # 每天 IG 顧問手寫戰況卡內文（按前晚 Reel）；空＝退回程式範本
     "reels_media": reels_media,   # 自動推導（含 approved），非手維護
 }
 
