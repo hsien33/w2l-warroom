@@ -213,7 +213,7 @@ function buildDay(cfg, I){
     prev:reelApproved?('<b>Day'+reelDay+' · 已排程</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（已核可，今晚 20:30 cron 自動發 IG＋轉 FB）。')
       :reelHasVid?('<b>Day'+reelDay+' · 待你核可</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（影片已備好在下方，<b>核可後</b>今晚才會自動發；未核可不發＝先核後發）。')
       :miss('Day'+reelDay+' 這集還沒做——腳本→拍/配音→出片→登錄 schedule.json。'),
-    full:reelHasVid?(reelMeta.script||C[String(reelDay)]||''):'', video:reelHasVid?(reelMeta.video||''):'', img:reelHasVid?(reelMeta.cover||''):''});
+    full:reelHasVid?(reelMeta.full||reelMeta.script||C[String(reelDay)]||''):'', comment:reelHasVid?(reelMeta.comment||''):'', video:reelHasVid?(reelMeta.video||''):'', img:reelHasVid?(reelMeta.cover||''):''});
 
   /* Thread 改寫 — cron 開＋隊列第 1 篇 */
   if(cfg.thread_cron && I<thq.length){

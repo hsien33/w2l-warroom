@@ -126,6 +126,8 @@ for k, v in (sched.items() if isinstance(sched, dict) else []):
     reels_media[str(day)] = {
         "video": media_if_exists(f),                        # 不在 keep＝檔已清，video="" (過去集數不需預覽)
         "script": preview_of(v.get("caption", "")),
+        "full": (v.get("caption", "") or "").strip(),       # ★ 完整內文（戰情室審內文用）
+        "comment": (v.get("comment", "") or "").strip(),    # ★ 首則留言（含導流）
         "approved": bool(v.get("approved")),                # ★ 帶核可旗標，前端據此分『待核可/已排程』
     }
 
