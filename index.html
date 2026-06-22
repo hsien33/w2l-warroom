@@ -1031,9 +1031,29 @@ function renderReports(list){
 fetch('reports.json?t='+Date.now()).then(r=>r.json()).then(renderReports).catch(e=>{console.log('reports.json 無（用 data.json 的 nightReport）',e);});
 
 /* 未來一周排程板：獨立載入 week.json（真實排程設定，由 build_week.py 從 warcard-auto 推導） */
+/* 父子對決總部告警＝從真庫存即時算（取代手打 hq.topAlert，避免過期）*/
+function setReelAlert(W){
+  const ta=document.getElementById('topalert'); if(!ta||!W.reel_start||!Array.isArray(W.reels_inventory)) return;
+  const today=new Date(); today.setHours(0,0,0,0);
+  const d=Math.round((today-new Date(W.reel_start+'T00:00:00'))/86400000);
+  const inv=W.reels_inventory, maxd=inv.length?Math.max.apply(null,inv):0, left=maxd-d;
+  let msg,done=false;
+  if(!inv.includes(d)) msg='🔴 今天 Day '+d+' 主集 Reel 沒庫存——20:30 沒得發，請盡快補';
+  else if(left<=0) msg='主集 Reel 庫存到今天 Day '+maxd+'＝今晚發完見底，週日前補下週';
+  else if(left<=1) msg='主集 Reel 庫存到 Day '+maxd+'（剩 '+left+' 天見底）— 該補下週';
+  else done=true;
+  const ax=ta.querySelector('.ax');
+  if(done){ ta.classList.add('done'); if(ax)ax.textContent='✓';
+    document.getElementById('topalert-text').innerHTML='主集 Reel 庫存到 Day '+maxd+'（足 '+left+' 天）· 各線照排程自動發'; }
+  else { ta.classList.remove('done'); if(ax)ax.textContent='⚠';
+    document.getElementById('topalert-text').innerHTML=msg; }
+  document.getElementById('topalert-upd').textContent='即時算 · '+new Date().toLocaleString('zh-TW',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
+  ta.style.display='';
+}
 fetch('week.json?t='+Date.now()).then(r=>r.json()).then(W=>{
   renderWeek(W);
   if(W.inventory_derived) renderInv(W.inventory_derived);   /* 庫存改用自動 derive（非手打快照）*/
+  setReelAlert(W);                                          /* 總部告警即時算，蓋掉手打過期版 */
 }).catch(e=>{
   console.log('week.json fallback',e);
   const el=document.getElementById('wpgrid');
