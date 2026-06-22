@@ -1027,7 +1027,10 @@ function renderReports(list){
 fetch('reports.json?t='+Date.now()).then(r=>r.json()).then(renderReports).catch(e=>{console.log('reports.json 無（用 data.json 的 nightReport）',e);});
 
 /* 未來一周排程板：獨立載入 week.json（真實排程設定，由 build_week.py 從 warcard-auto 推導） */
-fetch('week.json?t='+Date.now()).then(r=>r.json()).then(renderWeek).catch(e=>{
+fetch('week.json?t='+Date.now()).then(r=>r.json()).then(W=>{
+  renderWeek(W);
+  if(W.inventory_derived) renderInv(W.inventory_derived);   /* 庫存改用自動 derive（非手打快照）*/
+}).catch(e=>{
   console.log('week.json fallback',e);
   const el=document.getElementById('wpgrid');
   if(el&&!el.innerHTML.trim()) el.innerHTML='<div style="font-family:var(--tc);color:var(--faint);padding:14px">排程設定待接（week.json 載入失敗）</div>';

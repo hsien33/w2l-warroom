@@ -107,8 +107,33 @@ try:
 except Exception as e:
     print("讀 thread_rewrite/schedule.json 失敗：", e)
 
+# ── 庫存自動 derive（從真排程算，非手打；給戰情室「各產線庫存」直接顯示）──
+def _last(seq): return max(seq) if seq else None
+social_prep = prev.get("social_prepared", [])
+inventory_derived = {
+    "title": "各產線庫存（自動算 · 非手打）",
+    "lines": [
+        {"name": "IG 戰況卡", "stock": ("每日即時生成" if warcard_cron else "cron 關"),
+         "through": "—", "auto": ("✅ 每日 08:1x 自動發" if warcard_cron else "🔴 未排程")},
+        {"name": "IG 主集 Reel", "stock": f"{len(reels_inventory)} 集已備",
+         "through": (f"Day{_last(reels_inventory)}" if reels_inventory else "見底"),
+         "auto": "✅ 20:3x 自動發"},
+        {"name": "FB 粉專金句卡", "stock": f"{len(fbq_queue)} 張待發",
+         "through": (f"DAY{_last([c['day'] for c in fbq_queue])}" if fbq_queue else "發完"),
+         "auto": ("✅ 20:0x 自動發" if fbq_cron else "🔴 cron 關")},
+        {"name": "Thread 改寫", "stock": f"{len(thread_queue)} 篇待發",
+         "through": (f"對應 Day{_last([c['day'] for c in thread_queue])}" if thread_queue else "發完"),
+         "auto": ("✅ 21:0x 自動發" if thread_cron else "🔴 cron 關")},
+        {"name": "FB 社團文", "stock": f"{len(social_prep)} 天已備",
+         "through": (social_prep[-1] if social_prep else "未備"), "auto": "🟡 週二/五手貼（LINE 提醒）"},
+        {"name": "YouTube Shorts", "stock": prev.get("shorts_status", "none"),
+         "through": "—", "auto": ("✅ 自動" if shorts_cron else "⚪ 暫停")},
+    ],
+}
+
 out = {
     "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%MZ"),
+    "inventory_derived": inventory_derived,
     "warcard_start": warcard_start,
     "reel_start": reel_start,
     "warcard_cron": warcard_cron,

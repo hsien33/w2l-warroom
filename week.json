@@ -1,5 +1,46 @@
 {
-  "updated": "2026-06-22 05:04Z",
+  "updated": "2026-06-22 05:06Z",
+  "inventory_derived": {
+    "title": "各產線庫存（自動算 · 非手打）",
+    "lines": [
+      {
+        "name": "IG 戰況卡",
+        "stock": "每日即時生成",
+        "through": "—",
+        "auto": "✅ 每日 08:1x 自動發"
+      },
+      {
+        "name": "IG 主集 Reel",
+        "stock": "3 集已備",
+        "through": "Day12",
+        "auto": "✅ 20:3x 自動發"
+      },
+      {
+        "name": "FB 粉專金句卡",
+        "stock": "13 張待發",
+        "through": "DAY25",
+        "auto": "✅ 20:0x 自動發"
+      },
+      {
+        "name": "Thread 改寫",
+        "stock": "2 篇待發",
+        "through": "對應 Day11",
+        "auto": "✅ 21:0x 自動發"
+      },
+      {
+        "name": "FB 社團文",
+        "stock": "2 天已備",
+        "through": "2026-06-26",
+        "auto": "🟡 週二/五手貼（LINE 提醒）"
+      },
+      {
+        "name": "YouTube Shorts",
+        "stock": "paused",
+        "through": "—",
+        "auto": "⚪ 暫停"
+      }
+    ]
+  },
   "warcard_start": "2026-06-11",
   "reel_start": "2026-06-10",
   "warcard_cron": true,
