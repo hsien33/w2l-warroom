@@ -7,20 +7,20 @@ import os, sys, re, json, time, datetime, urllib.request
 sys.stdout.reconfigure(encoding="utf-8")
 def env(k,d=""): return os.environ.get(k,d).strip()
 TOPIC=env("NTFY_TOPIC","w2l-jeff-verdict-9x7k2m4q")
-LINE_TOKEN=env("LINE_CHANNEL_ACCESS_TOKEN"); LINE_USER=env("LINE_USER_ID")
+TG_TOKEN=env("TG_BOT_TOKEN"); TG_CHAT=env("TG_CHAT_ID")   # 只走 Telegram（LINE 已退場）
 DRY=env("DRY_RUN","0")=="1"
 HERE=os.path.dirname(os.path.abspath(__file__)); INBOX=os.path.join(HERE,"inbox"); LAST=os.path.join(INBOX,".last")
 LOG=os.path.join(HERE,"裁決紀錄.md"); TRUTH=os.path.join(HERE,"真話庫.md"); DATA=os.path.join(HERE,"data.json")
 os.makedirs(INBOX,exist_ok=True)
-def line(t):
-    if DRY: print("[DRY 不推 LINE]\n"+t); return
-    if not(LINE_TOKEN and LINE_USER): return
+def line(t):   # 函式名沿用、改推 Telegram
+    if DRY: print("[DRY 不推]\n"+t); return
+    if not(TG_TOKEN and TG_CHAT): return
     try:
-        req=urllib.request.Request("https://api.line.me/v2/bot/message/push",
-          data=json.dumps({"to":LINE_USER,"messages":[{"type":"text","text":t}]}).encode(),
-          headers={"Content-Type":"application/json","Authorization":f"Bearer {LINE_TOKEN}"},method="POST")
+        req=urllib.request.Request(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
+          data=json.dumps({"chat_id":TG_CHAT,"text":t,"disable_web_page_preview":True}).encode(),
+          headers={"Content-Type":"application/json"},method="POST")
         urllib.request.urlopen(req,timeout=30)
-    except Exception as e: print("LINE 失敗",e)
+    except Exception as e: print("Telegram 失敗",e)
 
 def parse(text):
     v={"cards":[], "decides":[], "truths":[]}
