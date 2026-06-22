@@ -1,14 +1,20 @@
 [
- {
-  "date": "2026-06-22",
-  "title": "🌙 自走成果（6/21 夜 → 6/22 早）",
-  "href": "reports/2026-06-22.html",
-  "summary": "整晚補完流量接住→養熟→變現整套，外加戰情室升級；全先核後發"
- },
- {
-  "date": "2026-06-21",
-  "title": "自走成果（6/20 夜 → 6/21 早）",
-  "href": "reports/2026-06-21.html",
-  "summary": "上一輪夜間自走的成果報告"
- }
+  {
+    "date": "2026-06-23",
+    "title": "\u81ea\u8d70\u6210\u679c\u6668\u5831 \u00b7 6/23\uff08\u9031\u4e94\u5929\u8ce6\u61f6\u4eba\u5305\u5b9a\u7248\uff09",
+    "href": "\u81ea\u8d70\u6210\u679c_0623\u6668\u5831.html",
+    "summary": "\u9031\u4e94 6/26 \u5929\u8ce6\u793e\u5718\u6587\u61f6\u4eba\u5305\u5b8c\u6574\u4ea4\u4ed8\u5b9a\u7248\uff0b\u639b\u6230\u60c5\u5ba4\uff0b\u4e0b\u9031\u9078\u984c\u8349\u7a3f\uff08\u5148\u6838\u5f8c\u767c\u3001\u672a\u81ea\u52d5\u767c\uff09"
+  },
+  {
+    "date": "2026-06-22",
+    "title": "\ud83c\udf19 \u81ea\u8d70\u6210\u679c\uff086/21 \u591c \u2192 6/22 \u65e9\uff09",
+    "href": "reports/2026-06-22.html",
+    "summary": "\u6574\u665a\u88dc\u5b8c\u6d41\u91cf\u63a5\u4f4f\u2192\u990a\u719f\u2192\u8b8a\u73fe\u6574\u5957\uff0c\u5916\u52a0\u6230\u60c5\u5ba4\u5347\u7d1a\uff1b\u5168\u5148\u6838\u5f8c\u767c"
+  },
+  {
+    "date": "2026-06-21",
+    "title": "\u81ea\u8d70\u6210\u679c\uff086/20 \u591c \u2192 6/21 \u65e9\uff09",
+    "href": "reports/2026-06-21.html",
+    "summary": "\u4e0a\u4e00\u8f2a\u591c\u9593\u81ea\u8d70\u7684\u6210\u679c\u5831\u544a"
+  }
 ]
