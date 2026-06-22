@@ -1,0 +1,100 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>自走成果_0623晨報</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+ :root{--gold:#c9a44c;--ink:#2b2720;--mid:#55503f;--line:#e7dfd0}
+ *{box-sizing:border-box}
+ body{margin:0;background:#f3eee3;color:var(--ink);font-family:"Noto Sans TC",sans-serif;line-height:1.75;
+   font-size:16px;-webkit-font-smoothing:antialiased}
+ .wrap{max-width:860px;margin:0 auto;padding:36px 22px 80px}
+ .card{background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:34px clamp(18px,4vw,46px);
+   box-shadow:0 2px 6px rgba(60,50,30,.05),0 24px 60px -32px rgba(70,55,30,.3)}
+ h1{font-weight:900;font-size:26px;letter-spacing:.5px;margin:.2em 0 .6em;
+   border-bottom:3px solid;border-image:linear-gradient(90deg,var(--gold),transparent) 1;padding-bottom:.3em}
+ h2{font-weight:900;font-size:20px;margin:1.6em 0 .5em;color:#3a3424;
+   border-left:5px solid var(--gold);padding-left:12px}
+ h3{font-weight:700;font-size:17px;margin:1.3em 0 .4em;color:#403a29}
+ p,li{color:var(--mid)} strong{color:var(--ink)}
+ a{color:#b07d1a} code{background:#f1ebdd;padding:2px 6px;border-radius:5px;font-size:.9em}
+ blockquote{margin:1em 0;padding:12px 16px;background:#faf5e9;border-left:4px solid var(--gold);
+   border-radius:0 10px 10px 0;color:#5a5238}
+ blockquote p{margin:.3em 0}
+ table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:14.5px;display:block;overflow-x:auto}
+ th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+ th{background:#efe7d6;font-weight:700;color:var(--ink);white-space:nowrap}
+ tr:nth-child(even) td{background:#fbf7ee}
+ hr{border:none;border-top:1px solid var(--line);margin:1.8em 0}
+ ul,ol{padding-left:1.4em} li{margin:.25em 0}
+ .foot{text-align:center;color:#a89e88;font-size:12.5px;margin-top:24px}
+</style></head><body><div class="wrap"><div class="card">
+<h1>☀️ 自走成果晨報 · 2026-06-23（含晚間自走報告）</h1>
+<blockquote>
+<p>一句話：昨晚把<strong>週五 6/26「學習天賦」社團文懶人包</strong>從零做到<strong>完整交付、定版、掛上戰情室</strong>；另外多備了<strong>下週(6/30 起)社團文選題草稿</strong>。全程只產草稿、沒有自動對外發任何東西（先核後發）。</p>
+</blockquote>
+<hr />
+<h2>🟢 真做掉的（有證據）</h2>
+<ol>
+<li>
+<p><strong>週五 6/26「學習天賦」社團文懶人包 — 完整交付定版上線</strong><br />
+   - 三社團文稿 v2（家有中學生／家有國中生／小一聯盟），經圓桌 round2 迭代到更溫暖、更同感。<br />
+   - 兩張暖風輪播圖：金句卡（他不是不努力，是用錯方式學＋爸爸 IP）＋工具圖（你家孩子是哪一型？2 分鐘測驗）。<br />
+   - 第一則留言（三篇共用，只放 IG）＋ IG 預存回覆關鍵字「天賦」。<br />
+   - 單檔 HTML 懶人包（圖 base64 內嵌、一鍵複製、品牌 favicon）。<br />
+   - 掛進戰情室：新增「🧩 社團文懶人包 · 週五 6/26（學習天賦）」入口卡，已 push 上線。<br />
+   - QA 全過：工具連結 learning-gift-full／learning-gift 皆 <strong>HTTP 200</strong>；HTML 完整性檢查（2 張 base64 圖、5 個複製鈕、連結×2、favicon、v2 文稿關鍵句都在）；兩圖抽幀目視無溢出、暖風一致、工具圖含「不貼標籤」合規語。</p>
+</li>
+<li>
+<p><strong>下週(6/30 起)社團文選題草稿 — 落檔待你挑</strong><br />
+   - 3 個候選＋圓桌速記＋待 Jeff 裁定，只寫文字、不出圖、不定稿。</p>
+</li>
+</ol>
+<hr />
+<h2>📄 產出文件（可點）</h2>
+<ul>
+<li>成品資料夾：<code>桌面成品/社團文_週五0626/</code>（5 份 txt ＋ 2 張 png ＋ 社團文發布包_週五0626.html）</li>
+<li>戰情室頁（已上線）：<code>w2l-warroom/社團文懶人包_週五.html</code></li>
+<li>懶人包產製腳本：<code>財富煉金術/02_社群產出/貼文圖/make_post_page_fri.py</code></li>
+<li>暖風兩圖腳本：<code>make_warm_quote_talent.py</code>、<code>make_tool_card_talent.py</code></li>
+<li>下週選題草稿：<code>財富煉金術/02_社群產出/作戰規劃/自走_0623/下週社團文選題_0630起_草稿.md</code></li>
+<li>自走進度：<code>財富煉金術/02_社群產出/作戰規劃/自走_0623/_進度.md</code></li>
+</ul>
+<hr />
+<h2>🧭 關鍵裁定（為什麼這樣做）</h2>
+<ul>
+<li><strong>社團家長群一律暖風</strong>（奶白晨光＋華康少女＋螢光），黑金留給 IG 戰況卡／粉專 — 黑金在家長群不討喜。</li>
+<li><strong>圓桌 round2</strong> 把三文稿再迭代：開頭更戳（國中生加「你比孩子還焦慮」畫面）、收尾更暖（中學生加「你不是不夠努力，只是還沒找到他的開關」）、CTA 統一順。</li>
+<li><strong>漏斗</strong>：社團貼文 → 引導追蹤 IG ＋私訊「天賦」→ IG 預存回覆把完整版測驗（learning-gift-full）傳出去。正文不放外連、留言只放 IG 主頁、工具 URL 只在私訊給。</li>
+<li>「家有中學生」上週已發補習費角度 → 這次改天賦角度，<strong>不重覆</strong>。</li>
+</ul>
+<hr />
+<h2>✅ 你該做的（展開看步驟）</h2>
+<details>
+<summary>① 週五當天發文（照懶人包做）</summary>
+
+- 打開戰情室「🧩 週五 6/26（學習天賦）」入口卡，或桌面成品的 `社團文發布包_週五0626.html`。
+- 用個人臉書、以「一個爸爸」身分發最自然。
+- 三社團各用對應文稿（中學生＝越補越累痛點鉤／國中生＝會考衝刺鉤／小一＝趁早啟蒙鉤）。
+- 兩張圖一起上＝輪播，**金句卡在前、工具圖在後**。
+- 正文不放外連；發完把**第一則留言**貼上（只放 IG 主頁）。
+- 時段：中午 12–13 或晚上 21:00。
+</details>
+
+<details>
+<summary>② 手機 IG 設好預存回覆</summary>
+
+- 手機 IG → 設定 → 商業工具 → 已存回覆，捷徑設「天賦」，內容用懶人包裡的「IG 預存回覆」那段（含 learning-gift-full 連結）。
+</details>
+
+<details>
+<summary>③ 挑下週(6/30 起)社團文選題</summary>
+
+- 打開 `下週社團文選題_0630起_草稿.md`。
+- 建議：A（孩子吵著要買＝零用錢）＋ B（暑假任務）一週兩篇；C（會考完的暑假·連動賭局）留做 7/10 賭局收尾壓軸。
+- 你挑定後我再走 club-leadpack：前一天出整包、暖風兩圖、單檔 HTML 掛戰情室。
+</details>
+
+<hr />
+<h2>🙂 誠實小結</h2>
+<p>主任務一輪到位、QA 確實做過（連結、抽幀、HTML 結構都驗了）；<strong>全程沒有自動對外發任何內容</strong>（先核後發）。其餘時間純維持心跳，沒有為了「看起來有在做」硬塞半成品或狂開圓桌。週五懶人包等你核可即可發。</p>
+</div><div class="foot">財富煉金術 · 報告轉檔 2026-06-23 06:03　·　原始檔：D:\02. 系統資料夾\Desktop\Claude\財富煉金術\02_社群產出\作戰規劃\自走_0623\自走成果_0623晨報.md</div></div></body></html>
