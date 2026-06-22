@@ -1,11 +1,11 @@
 {
   "schema": "v4",
-  "updated": "2026-06-22 21:29 台北",
+  "updated": "2026-06-23 02:05 台北",
   "followers": 410,
   "goal": 1000,
-  "dday": 18,
-  "day": 12,
-  "warday": 11,
+  "dday": 17,
+  "day": 13,
+  "warday": 12,
   "nightReport": {
     "title": "🌙 昨夜自走成果報告",
     "href": "夜間成果.html",
@@ -82,32 +82,32 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 409,
+        "current": 410,
         "live": true,
         "delta": {
           "day": {
-            "value": 16,
+            "value": 1,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 350,
-            "days": 9,
+            "value": 194,
+            "days": 7,
             "note": ""
           },
           "quarter": {
-            "value": 382,
-            "days": 11,
+            "value": 383,
+            "days": 12,
             "note": ""
           },
           "half": {
-            "value": 382,
-            "days": 11,
+            "value": 383,
+            "days": 12,
             "note": ""
           },
           "year": {
-            "value": 382,
-            "days": 11,
+            "value": 383,
+            "days": 12,
             "note": ""
           }
         }
@@ -188,7 +188,7 @@
         "live": true,
         "delta": {
           "day": {
-            "value": 1,
+            "value": 0,
             "days": 1,
             "note": ""
           },
@@ -218,11 +218,11 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 72,
+        "current": 60,
         "live": true,
         "delta": {
           "day": {
-            "value": 5,
+            "value": -12,
             "days": 1,
             "note": ""
           },
@@ -814,39 +814,46 @@
       "fb": 13,
       "threads": 33,
       "site": 72
+    },
+    "2026-06-23": {
+      "ig": 410,
+      "yt": 19700,
+      "fb": 13,
+      "threads": 33,
+      "site": 60
     }
   },
   "channels": {
     "ig": {
-      "followers": 409,
+      "followers": 410,
       "live": true,
-      "updated": "06/22 21:29"
+      "updated": "06/23 02:05"
     },
     "yt": {
       "subs": 19700,
       "views": 804580,
       "videos": 31,
       "live": true,
-      "updated": "06/22 21:29"
+      "updated": "06/23 02:05"
     },
     "fb": {
       "followers": 13,
-      "last_msg": "父子對決・第 12 天｜班排第一，我給他 1500\n有人說我用錢收買",
+      "last_msg": "打開新聞，三天兩頭就一條投資詐騙；上網隨便滑，到處是「保證獲利」「穩",
       "last_time": "2026-06-22",
-      "last_url": "https://www.facebook.com/reel/1236223818488636/",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116704081125488",
       "live": true,
-      "updated": "06/22 21:29"
+      "updated": "06/23 02:05"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/22 21:29"
+      "updated": "06/23 02:05"
     },
     "site": {
-      "pageviews": 146,
-      "users": 72,
+      "pageviews": 126,
+      "users": 60,
       "live": true,
-      "updated": "06/22 21:29"
+      "updated": "06/23 02:05"
     }
   },
   "dailyTrend": [
@@ -889,25 +896,26 @@
       "date": "2026-06-22",
       "ig": 409,
       "delta": 16
+    },
+    {
+      "date": "2026-06-23",
+      "ig": 410,
+      "delta": 1
     }
   ],
   "todayStatus": {
     "warcard": {
-      "posted": true,
-      "time": "07:36",
-      "url": "https://www.instagram.com/p/DZ3djCglYVF/"
+      "posted": false
     },
     "reel": {
-      "posted": true,
-      "time": "21:17",
-      "url": "https://www.instagram.com/reel/DZ47ieSjtio/"
+      "posted": false
     },
     "fbquote": {
       "posted": true,
-      "time": "21:18",
-      "url": "https://www.facebook.com/reel/1236223818488636/"
+      "time": "01:10",
+      "url": "https://www.facebook.com/122116524549125488/posts/122116704081125488"
     },
-    "checked": "06/22 21:29",
-    "date": "2026-06-22"
+    "checked": "06/23 02:05",
+    "date": "2026-06-23"
   }
 }
