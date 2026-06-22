@@ -204,13 +204,16 @@ function buildDay(cfg, I){
       prev:cfg.fbquote_cron?miss('本系列(到 DAY15)發完了——排下一週金句卡＋文案、核可進 schedule。'):miss('金句卡 cron 沒開。')});
   }
 
-  /* IG 主 Reel — 庫存有明天那集 */
-  const reelOk=inv.has(reelDay);
+  /* IG 主 Reel — 庫存有明天那集；再分『已核可=已排程(綠)』vs『影片已備但未核可=待你核可(黃)』vs『沒做(紅)』 */
   const reelMeta=(cfg.reels_media||{})[String(reelDay)]||{};
-  items.push({t:'20:30',ch:'IG 主 Reel',state:reelOk?'green':'red',topic:'Day'+reelDay,
-    prev:reelOk?('<b>Day'+reelDay+'</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（今晚 20:30 cron 自動發 IG＋轉 FB）。')
+  const reelHasVid=inv.has(reelDay) && !!reelMeta.video;     /* 真的有影片才算有庫存 */
+  const reelApproved=reelHasVid && reelMeta.approved===true; /* 先核後發：approved 才會自動發 */
+  const reelState=reelApproved?'green':(reelHasVid?'yellow':'red');
+  items.push({t:'20:30',ch:'IG 主 Reel',state:reelState,topic:'Day'+reelDay,
+    prev:reelApproved?('<b>Day'+reelDay+' · 已排程</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（已核可，今晚 20:30 cron 自動發 IG＋轉 FB）。')
+      :reelHasVid?('<b>Day'+reelDay+' · 待你核可</b>｜'+esc(C[String(reelDay)]||('第'+reelDay+'集'))+'（影片已備好在下方，<b>核可後</b>今晚才會自動發；未核可不發＝先核後發）。')
       :miss('Day'+reelDay+' 這集還沒做——腳本→拍/配音→出片→登錄 schedule.json。'),
-    full:reelOk?(reelMeta.script||C[String(reelDay)]||''):'', video:reelOk?(reelMeta.video||''):'', img:reelOk?(reelMeta.cover||''):''});
+    full:reelHasVid?(reelMeta.script||C[String(reelDay)]||''):'', video:reelHasVid?(reelMeta.video||''):'', img:reelHasVid?(reelMeta.cover||''):''});
 
   /* Thread 改寫 — cron 開＋隊列第 1 篇 */
   if(cfg.thread_cron && I<thq.length){

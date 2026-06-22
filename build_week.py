@@ -3,7 +3,7 @@
 # 戰情室前端用 new Date() 即時算日期/星期/今天，再套這份設定決定每格紅綠＋摘要。
 # 排程狀態改變時（補 Reel 庫存、FB金句卡上線、排新一週）重跑本檔即可。
 # 用法：python build_week.py   （需與 ../戰況卡自動發 並存於 Claude/ 下）
-import os, io, json, re, sys, datetime
+import os, io, json, re, sys, datetime, shutil
 sys.stdout.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -38,6 +38,7 @@ def preview_of(text, n=48):
 # ── 2. 主集 Reel 庫存＋每集文案預覽：reels/schedule.json 內「有登錄且 mp4 存在」的集數 ──
 reels_inventory = []          # 仍給舊用途
 reels_content = {}            # day -> 文案首行預覽
+sched = {}
 try:
     sched = read_json(os.path.join(WC, "reels", "schedule.json"))
     for k, v in sched.items():
@@ -96,6 +97,37 @@ except Exception: pass
 # ── 共用：明日待發頁要的「附件圖」＝preview_media/ 下符合命名的檔（有就帶 web 相對路徑）──
 def media_if_exists(fname):
     return ("preview_media/" + fname) if os.path.exists(os.path.join(HERE, "preview_media", fname)) else ""
+
+# ── 4b. Reel 影片附件＋核可狀態：自動從 reels/schedule.json 推導(含 approved)；只把「最近兩集」mp4 留在 preview_media（避免 repo 被一堆影片撐爆）──
+#       （取代過去手維護的 reels_media；根治「庫存有這集卻沒影片/沒帶 approved」的不一致）
+reels_media = {}
+_pm = os.path.join(HERE, "preview_media")
+os.makedirs(_pm, exist_ok=True)
+_inv_days = sorted(int(k) for k, v in (sched.items() if isinstance(sched, dict) else [])
+                   if str(k).isdigit() and isinstance(v, dict) and v.get("file")
+                   and os.path.exists(os.path.join(WC, "reels", v["file"])))
+_keep = set(_inv_days[-2:])                                  # 只留最近兩集（＝儀表板會顯示的今天/下一集）
+for fn in os.listdir(_pm):                                   # 清掉不在 keep 的舊 DAY*.mp4
+    m = re.match(r"DAY0*(\d+)\.mp4$", fn)
+    if m and int(m.group(1)) not in _keep:
+        try: os.remove(os.path.join(_pm, fn))
+        except Exception: pass
+for k, v in (sched.items() if isinstance(sched, dict) else []):
+    if not str(k).isdigit() or not isinstance(v, dict): continue
+    day = int(k); f = v.get("file"); src = os.path.join(WC, "reels", f) if f else ""
+    if not (f and os.path.exists(src)): continue
+    if day in _keep:
+        dst = os.path.join(_pm, f)
+        try:
+            if (not os.path.exists(dst)) or os.path.getmtime(src) > os.path.getmtime(dst):
+                shutil.copy2(src, dst)
+        except Exception as e:
+            print("複製 reel 影片失敗", f, e)
+    reels_media[str(day)] = {
+        "video": media_if_exists(f),                        # 不在 keep＝檔已清，video="" (過去集數不需預覽)
+        "script": preview_of(v.get("caption", "")),
+        "approved": bool(v.get("approved")),                # ★ 帶核可旗標，前端據此分『待核可/已排程』
+    }
 
 # ── 4. FB 金句卡「真實待發隊列」＝schedule.json 裡 day > posted_through 的卡（你核可、還沒發）＋金句預覽 ──
 #     full＝整段文案、img＝preview_media/fbquote_day{N}.png（明日待發頁點開看完整內文＋金句卡圖）
@@ -171,7 +203,7 @@ out = {
     # 人工維護：戰況卡範例圖＋當天 caption 模板（明日待發頁 08:00 戰況卡點開看樣子）、Reel 影片附件對映
     "warcard_sample_img": prev.get("warcard_sample_img", ""),
     "warcard_caption_tpl": prev.get("warcard_caption_tpl", ""),
-    "reels_media": prev.get("reels_media", {}),
+    "reels_media": reels_media,   # 自動推導（含 approved），非手維護
 }
 
 with io.open(os.path.join(HERE, "week.json"), "w", encoding="utf-8") as f:
