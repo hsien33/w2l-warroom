@@ -20,7 +20,17 @@ try:
 except Exception as e: print("追蹤數抓取失敗，用 data.json 舊值",e)
 followers=d.get("followers","?"); goal=d.get("goal",1000)
 day=(now.date()-datetime.date(2026,6,10)).days; dday=(datetime.date(2026,7,10)-now.date()).days
-inv=d.get("inventory",[]); ep=d.get("episodes",{}); dec=d.get("decisions",[]); sess=d.get("sessions",[])
+# 戰情室 v4 把各區塊包成 {title,...,lines/items/list}；舊格式是直接 list。兩種都相容（防呆，避免再像 6/20 起連壞 3 天）。
+def _aslist(v, *keys):
+    if isinstance(v, list): return v
+    if isinstance(v, dict):
+        for k in keys:
+            if isinstance(v.get(k), list): return v[k]
+    return []
+inv=_aslist(d.get("inventory"), "lines","list","items")
+ep=d.get("episodes",{}) if isinstance(d.get("episodes"), dict) else {}
+dec=_aslist(d.get("decisions"), "items","list")
+sess=_aslist(d.get("sessions"), "list","items")
 
 esc=html.escape
 WK="一二三四五六日"[(now.weekday())]
