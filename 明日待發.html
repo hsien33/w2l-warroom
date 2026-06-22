@@ -300,9 +300,9 @@ function render(cfg){
 }
 
 function wire(){
-  document.querySelectorAll('.item').forEach(el=>{
+  document.querySelectorAll('#list .item').forEach(el=>{   /* 只接明日核可卡，別碰今日預覽卡 */
     const idx=+el.dataset.i, it=TOM.items[idx];
-    if(it.state==='off') return;
+    if(!it||it.state==='off') return;
     const label=it.ch+'（'+it.t+'｜'+(it.topic||PILL[it.state])+'）';
     const msg=el.querySelector('.imsg');
     const ok=el.querySelector('.iok'), no=el.querySelector('.ino'), send=el.querySelector('.isend');
