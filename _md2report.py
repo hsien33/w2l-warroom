@@ -85,11 +85,17 @@ STYLE = (":root{--gold:#c9a44c;--ink:#2b2720;--mid:#55503f;--line:#e7dfd0}*{box-
  "details[open]>summary{margin-bottom:6px}details[open]>summary::before{transform:rotate(90deg)}summary:hover{background:#ecdcb9}"
  "p,li{color:var(--mid)}strong{color:var(--ink)}.back{display:inline-block;margin-bottom:14px;color:#b07d1a;text-decoration:none}hr{border:none;border-top:1px solid var(--line);margin:1.4em 0}")
 
+# 底部「一頁看完直接跳下一項」串接鈕（順序：報告→成果頁→明日待發→回戰情室）
+NEXTBTN = ("<a href=\"https://hsien33.github.io/w2l-warroom/jobs.html\" "
+ "style=\"display:block;margin:26px auto 0;max-width:560px;text-align:center;text-decoration:none;"
+ "font-weight:900;font-size:18px;color:#1b160d;padding:18px 24px;border-radius:16px;"
+ "background:linear-gradient(135deg,#f4dd8e,#c9a44c);box-shadow:0 14px 34px -16px rgba(176,120,40,.7)\">"
+ "下一項：成果頁 · 派工看板 →</a>")
 PAGE = (f"<!doctype html><html lang=\"zh-Hant\"><head><meta charset=\"UTF-8\">"
  f"<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">{FAVICON}"
  f"<title>{html.escape(TITLE)}</title><style>{STYLE}</style></head>"
  f"<body><div class=\"wrap\"><a class=\"back\" href=\"https://hsien33.github.io/w2l-warroom/\">← 回戰情室</a>"
- f"<div class=\"card\">{content}</div></div></body></html>")
+ f"<div class=\"card\">{content}</div>{NEXTBTN}</div></body></html>")
 
 # 1) 戰情室存檔頁
 arc = os.path.join(HERE, "reports", f"{DATE}.html")
