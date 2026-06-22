@@ -67,12 +67,12 @@ try:
                        "decides":[f"{a}→{b}" for a,b in v["decides"]],"truths":[l for l,_ in v["truths"]]},
                       open(os.path.join(HERE,"lastVerdict.json"),"w",encoding="utf-8"),ensure_ascii=False,indent=2)
         except Exception as e: print("lastVerdict 寫入失敗",e)
-        # LINE 回報「做了什麼 + 待本機什麼」
-        parts=["✅ 已收到並執行你的裁決！"]
-        if v["cards"]: parts.append(f"📜 金句卡選 {len(v['cards'])} 張（{('、'.join(v['cards']))}）→ 已排入待發清單")
-        if v["decides"]: parts.append("🔘 決定：\n"+"\n".join(f"· {a}：{b}" for a,b in v["decides"]))
-        if v["truths"]: parts.append(f"🎬 真話補 {len(v['truths'])} 條（{('、'.join(l.split('：')[0] for l,_ in v['truths']))}）→ 已進真話庫；對應 Reel 需本機生產，AI 回來就做")
-        parts.append("（已歸檔到 inbox/裁決紀錄/真話庫，戰情室已更新）")
+        # 副總式回報（白話、不用術語）
+        parts=["📊 副總回報：收到您的指示，已處理。"]
+        if v["cards"]: parts.append(f"・金句卡：您選的 {len(v['cards'])} 張（{('、'.join(v['cards']))}）已排進待發清單。")
+        if v["decides"]: parts.append("・您的決定我記下了：\n"+"\n".join(f"  - {a}：{b}" for a,b in v["decides"]))
+        if v["truths"]: parts.append(f"・您補的真話 {len(v['truths'])} 條已收進素材庫，相關影片我回來就做。")
+        parts.append("戰情室已更新。")
         line("\n".join(parts))
         processed+=1; newmax=max(newmax,t)
 except Exception as e:

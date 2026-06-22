@@ -185,10 +185,10 @@ function buildDay(cfg, I){
 
   /* Shorts — 多半暫停 */
   const ss=cfg.shorts_status||'none';
-  items.push({t:'18:00',ch:'YouTube Shorts',
+  items.push({t:'12:30',ch:'YouTube Shorts',
     state:cfg.shorts_cron?'green':(ss==='producing'?'yellow':(ss==='paused'?'off':'red')),
     topic:'',
-    prev:cfg.shorts_cron?'<b>已排程</b>｜cron 自動上傳 YouTube Shorts（unlisted）。'
+    prev:cfg.shorts_cron?'<b>已排程</b>｜每天 12:30 自動發 1 支 YouTube Shorts（公開）。'
       :ss==='producing'?'<b>製作中（尚未排程）</b>｜你的聲音＋實拍 b-roll＋金字＋圖表，待你點頭。'
       :ss==='paused'?'<b>暫停中</b>｜現有形式效果不佳，Jeff 在重想方向；YT 金鑰已設好、隨時可恢復。'
       :miss('Shorts 還沒做、cron 沒開。')});
