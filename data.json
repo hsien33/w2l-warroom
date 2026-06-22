@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-22 07:05 台北",
-  "followers": 396,
+  "updated": "2026-06-22 10:00 台北",
+  "followers": 397,
   "goal": 1000,
   "dday": 18,
   "day": 12,
@@ -218,11 +218,11 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 68,
+        "current": 71,
         "live": true,
         "delta": {
           "day": {
-            "value": 1,
+            "value": 4,
             "days": 1,
             "note": ""
           },
@@ -813,40 +813,40 @@
       "yt": 19700,
       "fb": 13,
       "threads": 32,
-      "site": 68
+      "site": 71
     }
   },
   "channels": {
     "ig": {
       "followers": 397,
       "live": true,
-      "updated": "06/22 07:05"
+      "updated": "06/22 10:00"
     },
     "yt": {
       "subs": 19700,
       "views": 804489,
       "videos": 31,
       "live": true,
-      "updated": "06/22 07:05"
+      "updated": "06/22 10:00"
     },
     "fb": {
       "followers": 13,
-      "last_msg": "「Jeff 老師飆股群，限額 50 名」——那張廣告，用的是我的臉。",
+      "last_msg": "第 11 天，397 人挺老爸。但老爸心裡有數——這樣不夠 😤\n\n老",
       "last_time": "2026-06-21",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116620069125488",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116642293125488",
       "live": true,
-      "updated": "06/22 07:05"
+      "updated": "06/22 10:00"
     },
     "threads": {
       "followers": 32,
       "live": true,
-      "updated": "06/22 07:05"
+      "updated": "06/22 10:00"
     },
     "site": {
-      "pageviews": 137,
-      "users": 68,
+      "pageviews": 140,
+      "users": 71,
       "live": true,
-      "updated": "06/22 07:05"
+      "updated": "06/22 10:00"
     }
   },
   "dailyTrend": [
