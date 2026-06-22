@@ -91,6 +91,40 @@ d["dday"] = (datetime.date(2026, 7, 10) - now.date()).days
 d["day"] = (now.date() - datetime.date(2026, 6, 10)).days       # 主集 Reel 集數＝日期−10（6/20＝Day10）
 d["warday"] = (now.date() - datetime.date(2026, 6, 11)).days    # 🔴 戰況卡天數＝日期−11（6/20＝第9天），兩套別混
 
+# ── 🔴 今日各線「真實發文狀態」：查 IG/FB，取代任何寫死的「已發」（台北日）──
+todaystr = now.strftime("%Y-%m-%d")
+def _today_hhmm(ts):
+    try:
+        dt = datetime.datetime.strptime((ts or "")[:19], "%Y-%m-%dT%H:%M:%S") + datetime.timedelta(hours=8)
+        return (dt.strftime("%Y-%m-%d") == todaystr), dt.strftime("%H:%M")
+    except Exception:
+        return False, ""
+status = {"warcard": {"posted": False}, "reel": {"posted": False}, "fbquote": {"posted": False}}
+try:  # IG 戰況卡(IMAGE+挺老爸) / 主集Reel(VIDEO)
+    med = getj(f"https://graph.instagram.com/{VER}/me/media?fields=timestamp,media_type,caption,permalink&limit=15&access_token={env('IG_ACCESS_TOKEN')}").get("data", [])
+    for m in med:
+        ok, hhmm = _today_hhmm(m.get("timestamp"));  cap = m.get("caption") or ""; mt = m.get("media_type")
+        if not ok: continue
+        if mt == "IMAGE" and "挺老爸" in cap and not status["warcard"]["posted"]:
+            status["warcard"] = {"posted": True, "time": hhmm, "url": m.get("permalink", "")}
+        if mt in ("VIDEO", "REELS", "CLIP") and not status["reel"]["posted"]:
+            status["reel"] = {"posted": True, "time": hhmm, "url": m.get("permalink", "")}
+    print("IG 今日:", "戰況卡", status["warcard"], "Reel", status["reel"])
+except Exception as e:
+    print("IG 今日狀態查詢失敗:", e)
+if fbt and fbp:  # FB 金句卡(今日貼文含#財富煉金術/帶走一句，排除戰況卡的挺老爸)
+    try:
+        fps = getj(f"https://graph.facebook.com/{fbv}/{fbp}/posts?fields=message,created_time,permalink_url&limit=12&access_token={fbt}").get("data", [])
+        for p in fps:
+            ok, hhmm = _today_hhmm(p.get("created_time"));  msg = p.get("message") or ""
+            if not ok: continue
+            if ("#財富煉金術" in msg or "帶走一句" in msg) and "挺老爸" not in msg:
+                status["fbquote"] = {"posted": True, "time": hhmm, "url": p.get("permalink_url", "")}; break
+    except Exception as e:
+        print("FB 金句卡狀態查詢失敗:", e)
+d["todayStatus"] = dict(status, checked=stamp, date=todaystr)
+print("今日發文狀態:", d["todayStatus"])
+
 # ── 每日追蹤數快照 + social 版圖各期間增量 ─────────────────────────
 # 把今天各平台數字寫進 history[YYYY-MM-DD]；再用歷史回推 昨日/週/季/半年/年 增量。
 # 有幾天歷史就算幾天；完全沒參考點 → value=null 標「資料待接」。
