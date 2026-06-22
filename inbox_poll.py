@@ -3,13 +3,13 @@
 #   ③執行能自動的、歸檔需本機的 ④更新 data.json(戰情室秀「最近裁決」) ⑤LINE 回報做了什麼。
 # 自動邊界：金句卡選取→排入待發清單；真話→寫進真話庫(腳本素材)；決定→記錄。
 #   ⚠️ 產新 Reel(克隆配音+渲染)在本機跑、雲端做不了→標「待本機生產」，由 AI 回來處理。
-import os, sys, re, json, time, datetime, urllib.request
+import os, sys, re, json, time, datetime, urllib.request, hashlib
 sys.stdout.reconfigure(encoding="utf-8")
 def env(k,d=""): return os.environ.get(k,d).strip()
 TOPIC=env("NTFY_TOPIC","w2l-jeff-verdict-9x7k2m4q")
 TG_TOKEN=env("TG_BOT_TOKEN"); TG_CHAT=env("TG_CHAT_ID")   # 只走 Telegram（LINE 已退場）
 DRY=env("DRY_RUN","0")=="1"
-HERE=os.path.dirname(os.path.abspath(__file__)); INBOX=os.path.join(HERE,"inbox"); LAST=os.path.join(INBOX,".last")
+HERE=os.path.dirname(os.path.abspath(__file__)); INBOX=os.path.join(HERE,"inbox"); LAST=os.path.join(INBOX,".last"); SEEN=os.path.join(INBOX,".seen")
 LOG=os.path.join(HERE,"裁決紀錄.md"); TRUTH=os.path.join(HERE,"真話庫.md"); DATA=os.path.join(HERE,"data.json")
 os.makedirs(INBOX,exist_ok=True)
 def line(t):   # 函式名沿用、改推 Telegram
@@ -38,6 +38,7 @@ def parse(text):
     return v
 
 since = open(LAST).read().strip() if os.path.exists(LAST) else str(int(time.time())-900)
+seen = set(open(SEEN,encoding="utf-8").read().split()) if os.path.exists(SEEN) else set()   # 已處理裁決指紋(去重防連跳)
 url=f"https://ntfy.sh/{TOPIC}/json?poll=1&since={since}"
 newmax=int(since); processed=0
 try:
@@ -52,6 +53,9 @@ try:
         if (not msg or msg.startswith("You received a file")) and o.get("attachment",{}).get("url"):
             try: msg=urllib.request.urlopen(o["attachment"]["url"],timeout=30).read().decode()
             except Exception: pass
+        _h=hashlib.md5(msg.encode("utf-8")).hexdigest()   # 同一份裁決重複送(連點/ntfy重送)→只處理回報一次
+        if _h in seen: newmax=max(newmax,t); continue
+        seen.add(_h)
         ts=datetime.datetime.fromtimestamp(t+8*3600); tss=ts.strftime("%Y%m%d_%H%M%S")
         open(os.path.join(INBOX,f"裁決_{tss}.txt"),"w",encoding="utf-8").write(msg)
         v=parse(msg)
@@ -78,4 +82,5 @@ try:
 except Exception as e:
     print("輪詢/執行失敗（保留 since）",e)
 if processed>0: open(LAST,"w").write(str(newmax))
+open(SEEN,"w",encoding="utf-8").write("\n".join(list(seen)[-300:]))   # 保留近 300 筆指紋(防檔案無限長大)
 print(f"執行 {processed} 筆新裁決")
