@@ -17,6 +17,9 @@ body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Microsoft
 .top{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;margin-bottom:6px}
 h1{font-size:22px;font-weight:900}
 .dateline{font-size:13px;color:var(--faint);font-family:ui-monospace,monospace}
+.sectitle{font-size:16px;font-weight:900;color:var(--gold);margin:18px 0 10px;padding-left:11px;border-left:4px solid var(--gold)}
+.tprev .ibadge.posted{background:var(--green-s);color:var(--green)}
+.tprev .ibadge.pending{background:var(--amber-s);color:var(--amber)}
 
 /* 現況橫條 */
 .now{background:linear-gradient(135deg,#1b160d,#0c0a05);color:#f3ead6;border-radius:15px;padding:16px 20px;margin:14px 0 8px;
@@ -94,9 +97,13 @@ footer{margin-top:28px;color:var(--faint);font-size:12px;text-align:center;line-
 <body>
 <div class="wrap">
   <a class="back" href="./">← 回戰情室</a>
-  <div class="top"><h1>📬 明日待發 · 一頁預覽</h1></div>
-  <div class="dateline" id="dateline">計算明日中…</div>
+  <div class="top"><h1>📬 今日＋明日 · 待發一頁覽</h1></div>
+  <div class="dateline" id="dateline">計算中…</div>
 
+  <h2 class="sectitle">📤 今日待發成品（看實際內容＋影片可播）</h2>
+  <div id="todaylist">載入今日…</div>
+
+  <h2 class="sectitle" style="margin-top:26px">📬 明日待發（核可用）</h2>
   <div class="now" id="now"><div class="nd">載入排程中…</div></div>
 
   <div class="allbar">
@@ -128,7 +135,7 @@ function detailBlock(it){
   const hasFull=it.full&&it.full.trim(), hasImg=!!it.img, hasVid=!!it.video, hasCom=it.comment&&it.comment.trim();
   if(!hasFull&&!hasImg&&!hasVid) return '';
   let inner='';
-  if(hasFull) inner+='<p class="dlabel">完整內文（明天實際會發的）</p><div class="dtext">'+esc(it.full)+'</div>';
+  if(hasFull) inner+='<p class="dlabel">完整內文（實際會發的）</p><div class="dtext">'+esc(it.full)+'</div>';
   if(hasCom) inner+='<p class="dlabel" style="margin-top:12px">第一則留言（含導流連結）</p><div class="dcomment">'+esc(it.comment)+'</div>';
   if(hasVid) inner+='<div class="dmedia"><p class="dlabel">'+mediaLabel(it.ch)+'</p><video src="'+esc(it.video)+'" controls preload="metadata"></video></div>';
   else if(hasImg) inner+='<div class="dmedia"><p class="dlabel">'+mediaLabel(it.ch)+'</p><img loading="lazy" src="'+esc(it.img)+'" alt="附件">'+(it.imgnote?'<div class="dnote">'+esc(it.imgnote)+'</div>':'')+'</div>';
@@ -137,9 +144,8 @@ function detailBlock(it){
 function daysBetween(startISO,d){return Math.round((d-new Date(startISO+'T00:00:00'))/86400000);}
 function isoOf(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
 
-/* ───── 算「明天」各線真的會發什麼（i=1，沿用 index.html renderWeek 的對映邏輯）───── */
-function buildTomorrow(cfg){
-  const I=1;                                   /* 明天＝今天+1，對應隊列第 1 個（0-based）*/
+/* ───── 算「某天(I=0今天/1明天)」各線真的會發什麼 ───── */
+function buildDay(cfg, I){
   const today=new Date(); today.setHours(0,0,0,0);
   const d=new Date(today); d.setDate(today.getDate()+I);
   const iso=isoOf(d);
@@ -234,12 +240,31 @@ async function sendVerdict(title,body,msgEl,doneLabel){
   return sent;
 }
 
-let TOM=null;
+let TOM=null, TODAYSTATUS=null;
 
+function statusBadge(ch, ts){
+  const map={'IG 戰況卡':'warcard','FB 粉專金句卡':'fbquote','IG 主 Reel':'reel'};
+  const k=map[ch], s=(k&&ts)?ts[k]:null;
+  return (s&&s.posted)?{txt:'✅ 已發 '+(s.time||''), url:s.url||''}:null;
+}
+function renderTodayPreview(day, ts){
+  const el=document.getElementById('todaylist'); if(!el) return;
+  el.innerHTML=day.items.map(it=>{
+    const sb=statusBadge(it.ch, ts);
+    const badge = sb?('<span class="ibadge posted">'+sb.txt+'</span>'+(sb.url?' <a href="'+esc(sb.url)+'" target="_blank" style="font-size:12px;color:var(--gold);text-decoration:none">看 ›</a>':''))
+      :('<span class="ibadge '+it.state+'">'+PILL[it.state]+'</span>');
+    return '<div class="item tprev '+it.state+'"><div class="ihead"><span class="itime">'+it.t+'</span><span class="ich">'+esc(it.ch)+'</span>'+badge+'</div>'+
+      '<div class="iprev">'+it.prev+'</div>'+(it.topic?'<div class="itopic">主題：'+esc(it.topic)+'</div>':'')+detailBlock(it)+'</div>';
+  }).join('');
+}
 function render(cfg){
-  TOM=buildTomorrow(cfg);
+  /* ① 今日待發成品（預覽用，含影片；已發的標✓） */
+  const TODAY=buildDay(cfg,0);
+  renderTodayPreview(TODAY, TODAYSTATUS);
+  /* ② 明日待發（核可用） */
+  TOM=buildDay(cfg,1);
   document.getElementById('dateline').textContent=
-    '明日 '+TOM.iso+'（週'+TOM.dow+'）· 排程資料更新 '+(cfg.updated||'—');
+    '今日 '+TODAY.iso+' · 明日 '+TOM.iso+'（週'+TOM.dow+'）· 排程更新 '+(cfg.updated||'—');
 
   /* 真的會發的（非「不發」）件數 */
   const active=TOM.items.filter(it=>it.state!=='off');
@@ -309,9 +334,12 @@ function wire(){
   };
 }
 
-fetch('week.json?t='+Date.now()).then(r=>r.json()).then(render).catch(e=>{
-  document.getElementById('now').innerHTML='<div class="nd">讀取 week.json 失敗：'+esc(e.message||e)+'</div>';
-  document.getElementById('list').innerHTML='';
+/* 先抓 data.json 的今日真實發文狀態(標✓)，再抓 week.json 渲染 */
+fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{TODAYSTATUS=D.todayStatus||null;}).catch(()=>{}).finally(()=>{
+  fetch('week.json?t='+Date.now()).then(r=>r.json()).then(render).catch(e=>{
+    document.getElementById('now').innerHTML='<div class="nd">讀取 week.json 失敗：'+esc(e.message||e)+'</div>';
+    document.getElementById('list').innerHTML='';
+  });
 });
 </script>
 </body>
