@@ -160,16 +160,20 @@ function buildDay(cfg, I){
 
   /* IG 戰況卡 — cron 開＝每日即時生成；內文＝當天 IG 顧問手寫(warcard_captions)、按前晚 Reel 撰寫 */
   const wcCap=(cfg.warcard_captions||{})[String(warDay)]||'';
-  const wcCapPreview=wcCap                                  /* 佔位換成可讀標籤(數字發文時自動帶入) */
-    .replace(/\{N\}/g,warDay).replace(/\{G\}/g,'1000')
-    .replace(/\{X\}/g,'〔即時人數〕').replace(/\{Y\}/g,'〔還差人數〕').replace(/\{Z\}/g,'〔昨日增減〕');
+  /* 數字＝發文當天 08:00 自動抓即時追蹤數帶入；預覽先用目前即時值(data.json)讓 Jeff 看真數字，不是要他填 */
+  const _gn=1000, _fn=(LIVE_FOLLOWERS!=null?LIVE_FOLLOWERS:null);
+  const wcCapPreview=wcCap
+    .replace(/\{N\}/g,warDay).replace(/\{G\}/g,_gn)
+    .replace(/\{X\}/g,_fn!=null?_fn:'＿')
+    .replace(/\{Y\}/g,_fn!=null?(_gn-_fn):'＿')
+    .replace(/\{Z\}/g,'—');
   const wcWritten=!!wcCap;
   items.push({t:'08:00',ch:'IG 戰況卡',
     state:cfg.warcard_cron?'green':'red',
     topic:'第'+warDay+'天戰況',
     prev:cfg.warcard_cron
       ?('<b>第'+warDay+'天戰況卡</b>｜'+(wcWritten
-          ?'IG 顧問已按前一晚 Reel 手寫今日內文（下方可看）；明早自動抓即時追蹤數填入數字後發 IG。'
+          ?'IG 顧問已按前一晚 Reel 手寫今日內文（下方可看）。<b>內文裡的人數＝當天 08:00 自動抓即時追蹤數帶入，你不用填</b>（預覽先顯示目前即時值）。'
           :'⚠ 今日內文尚未手寫——會退回程式輪播範本（請補 warcard/captions.json）。')+'')
       :miss('戰況卡 cron 沒開——去 warcard.yml 開排程。'),
     full:cfg.warcard_cron?(wcCapPreview||cfg.warcard_caption_tpl):'',
@@ -252,7 +256,7 @@ async function sendVerdict(title,body,msgEl,doneLabel){
   return sent;
 }
 
-let TOM=null, TODAYSTATUS=null;
+let TOM=null, TODAYSTATUS=null, LIVE_FOLLOWERS=null;
 
 function statusBadge(ch, ts){
   const map={'IG 戰況卡':'warcard','FB 粉專金句卡':'fbquote','IG 主 Reel':'reel'};
@@ -346,8 +350,8 @@ function wire(){
   };
 }
 
-/* 先抓 data.json 的今日真實發文狀態(標✓)，再抓 week.json 渲染 */
-fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{TODAYSTATUS=D.todayStatus||null;}).catch(()=>{}).finally(()=>{
+/* 先抓 data.json 的今日真實發文狀態(標✓)＋即時追蹤數(給戰況卡內文預覽填真數字)，再抓 week.json 渲染 */
+fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{TODAYSTATUS=D.todayStatus||null;LIVE_FOLLOWERS=(typeof D.followers==='number'?D.followers:null);}).catch(()=>{}).finally(()=>{
   fetch('week.json?t='+Date.now()).then(r=>r.json()).then(render).catch(e=>{
     document.getElementById('now').innerHTML='<div class="nd">讀取 week.json 失敗：'+esc(e.message||e)+'</div>';
     document.getElementById('list').innerHTML='';

@@ -1163,7 +1163,7 @@ refreshPages();
 /* ════════ 版本戳＋快取自檢（防「看到舊版」）════════
  * BUILD/BUILT 由 bump_version.py 自動寫入（勿手改）；version.json 永遠抓最新做比對。
  * 邏輯：頂部秀「你正在看的這份」版本＋時間；若 version.json 比你手上的新＝你吃到舊快取→清快取自動重整一次。 */
-const BUILD="2026-06-23.4", BUILT="2026-06-23 07:28";
+const BUILD="2026-06-23.5", BUILT="2026-06-23 07:36";
 (function(){
   const stamp=document.getElementById('bstamp'),bt=document.getElementById('btime'),bv=document.getElementById('bver');
   if(bt)bt.textContent=BUILT; if(bv)bv.textContent='v'+BUILD;
