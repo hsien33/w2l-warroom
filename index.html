@@ -679,29 +679,34 @@ function renderSocial(){
   }).join("");
 }
 
-/* ════════ 父子對決總部 ════════ */
+/* ════════ 父子對決總部（全部即時算：粉數即時、天數/D-day 由日期算、四塊由 data.json＋week.json 即時組）════════ */
+let HQ_D=null;
 function renderHQ(D){
+  if(D) HQ_D=D; D=HQ_D; if(!D) return;
   const hq=D.hq||{};
   if(hq.title) $("#hq-title").textContent=hq.title;
-  /* 最緊急提醒（可即時更動、做完 topAlertDone=true 就拿掉） */
-  const ta=$("#topalert");
-  if(hq.topAlert && !hq.topAlertDone){
-    $("#topalert-text").innerHTML=esc(hq.topAlert);
-    $("#topalert-upd").textContent=hq.topAlertUpdated?('更新：'+hq.topAlertUpdated):'';
-    ta.classList.remove('done'); ta.style.display='';
-  } else if(hq.topAlertDone){
-    ta.classList.add('done'); $("#topalert .ax").textContent='✓';
-    $("#topalert-text").innerHTML='今日緊急提醒已清空 — 一切照排程自走';
-    $("#topalert-upd").textContent=hq.topAlertUpdated?('更新：'+hq.topAlertUpdated):'';
-    ta.style.display='';
-  } else { ta.style.display='none'; }
-  /* 進度條 */
+  /* 緊急提醒一律交給 setReelAlert 即時算（不讀 data.json 靜態 topAlert，避免過期） */
+  /* 天數/D-day：用日期即時算（主集 Day＝日期−reel_start；終局 7/10）*/
+  const today=new Date(); today.setHours(0,0,0,0);
+  const rs=(typeof WP_CFG!=='undefined'&&WP_CFG&&WP_CFG.reel_start)||'2026-06-10';
+  const day=daysBetween(rs,today);
+  const dday=Math.max(0,Math.round((new Date('2026-07-10T00:00:00')-today)/86400000));
   const f=+D.followers||0, g=+D.goal||1000;
+  const ddEl=document.getElementById('dday'); if(ddEl) ddEl.textContent='D-'+dday;
   $("#hq-remain").textContent=Math.max(0,g-f);
-  $("#hq-daytag").textContent='Day '+(D.day!=null?D.day:'—')+(D.dday!=null?' · D-'+D.dday:'');
+  $("#hq-daytag").textContent='Day '+day+' · D-'+dday;
   requestAnimationFrame(()=>{$("#hqbar-i").style.width=Math.min(100,f/g*100)+'%';});
-  /* 右側四塊：實際進度真數據 */
-  const cards=(hq.progress&&hq.progress.cards)||[];
+  /* 右側四塊：即時組（粉數即時、Reel 庫存＋自動化從 week.json 即時）*/
+  const W=(typeof WP_CFG!=='undefined')?WP_CFG:null;
+  const inv=(W&&W.reels_inventory)||[]; const reelMax=inv.length?Math.max.apply(null,inv):null;
+  const cr=W?[['戰況卡',W.warcard_cron],['金句卡',W.fbquote_cron],['Thread',W.thread_cron],['Shorts',W.shorts_cron]].filter(x=>x[1]).map(x=>x[0]):null;
+  const pend=((hq.progress&&hq.progress.cards)||[]).find(c=>c.label&&c.label.indexOf('裁決')>=0);
+  const cards=[
+    {label:'本期累計粉絲',value:f,unit:'人',sub:'目標 '+g+' · D-'+dday+'（每30分真查 IG）'},
+    {label:'已發 / 已排',value:reelMax!=null?('主集 Reel 到 Day'+reelMax):'資料待接',unit:'',sub:reelMax!=null?('Day1–10 已發、庫存到 Day'+reelMax):'讀 week.json 中'},
+    {label:'待裁決',value:pend?pend.value:'—',unit:'項',sub:pend?(pend.sub||''):'看派工看板'},
+    {label:'自動化覆蓋',value:cr?(cr.length+' 線自動'):'資料待接',unit:'',sub:cr?(cr.join('／')+' 已自走'):'讀 week.json 中'},
+  ];
   $("#hqstats").innerHTML=cards.map(c=>{
     const isTba=(c.value==null||c.value==='資料待接');
     const v=isTba?'資料待接':(typeof c.value==='number'?fmt(c.value):esc(c.value));
@@ -1114,6 +1119,7 @@ fetch('week.json?t='+Date.now()).then(r=>r.json()).then(W=>{
   renderWeek(W);
   if(W.inventory_derived) renderInv(W.inventory_derived);   /* 庫存改用自動 derive（非手打快照）*/
   setReelAlert(W);                                          /* 總部告警即時算，蓋掉手打過期版 */
+  renderHQ();                                               /* week.json 到手→重算總部四塊(Reel庫存/自動化線) */
 }).catch(e=>{
   console.log('week.json fallback',e);
   const el=document.getElementById('wpgrid');
