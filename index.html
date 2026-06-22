@@ -67,6 +67,14 @@
   .top h1{font-family:var(--tc);font-weight:900;font-size:clamp(23px,2.4vw,30px);letter-spacing:.5px;
     border-bottom:2.5px solid;border-image:linear-gradient(90deg,var(--gold),transparent) 1;padding-bottom:4px;display:inline-block}
   .top .sub{font-size:14px;color:var(--dim);margin-top:6px;font-family:var(--tc)}
+  .bstamp{display:inline-flex;align-items:center;gap:7px;margin-top:9px;font-family:var(--tc);font-size:12.5px;font-weight:700;
+    color:#8a8270;background:rgba(176,125,26,.07);border:1px solid rgba(176,125,26,.22);border-radius:9px;padding:5px 11px}
+  .bstamp .dot{width:7px;height:7px;border-radius:50%;background:#cbb98c;transition:.2s}
+  .bstamp.ok .dot{background:var(--mint,#36c08a);box-shadow:0 0 0 3px var(--mint-s,rgba(54,192,138,.18))}
+  .bstamp.ok{color:#5a7a64}
+  .bstamp.stale{color:#fff;background:#c0392b;border-color:#c0392b;cursor:pointer}
+  .bstamp.stale .dot{background:#fff}
+  .bstamp b{color:#6a5320}
   .top .sp{flex:1}
   .pill{font-size:13.5px;font-weight:600;color:var(--mid);background:var(--card);border:1px solid var(--line);
     border-radius:11px;padding:9px 15px;display:flex;align-items:center;gap:8px;white-space:nowrap;box-shadow:var(--sh)}
@@ -433,6 +441,7 @@
       <div>
         <h1>總控制中心</h1>
         <div class="sub">財富煉金術 · 一人 × AI 內容公司 — 即時營運全貌</div>
+        <div class="bstamp" id="bstamp" title="這是你目前看到的頁面版本；若變紅代表你看到的是舊快取，點一下即更新"><span class="dot"></span>⏱ 更新 <b id="btime">—</b> · <b id="bver">v—</b></div>
       </div>
       <div class="sp"></div>
       <div class="pill"><span class="live"></span>今日 <b id="today">06/21</b></div>
@@ -1014,7 +1023,7 @@ function renderTop(D){
 }
 
 /* ════════ 載入 data.json（fetch 驅動全頁；缺檔顯示資料待接） ════════ */
-fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
+fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(D=>{
   renderTop(D);
   renderToday(D.todayStatus);
   renderNight(D.nightReport);
@@ -1098,7 +1107,7 @@ function refreshPages(){
   PAGE_ITEMS=arc; renderArchive();
 }
 (function(){const t=document.getElementById('arc-toggle');if(t)t.onclick=()=>{const l=document.getElementById('arc-list');const open=l.style.display==='none';l.style.display=open?'':'none';t.classList.toggle('open',open);};})();
-fetch('reports.json?t='+Date.now()).then(r=>r.json()).then(renderReports).catch(e=>{console.log('reports.json 無（用 data.json 的 nightReport）',e);});
+fetch('reports.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(renderReports).catch(e=>{console.log('reports.json 無（用 data.json 的 nightReport）',e);});
 
 /* 未來一周排程板：獨立載入 week.json（真實排程設定，由 build_week.py 從 warcard-auto 推導） */
 /* 父子對決總部告警＝從真庫存即時算（取代手打 hq.topAlert，避免過期）*/
@@ -1120,7 +1129,7 @@ function setReelAlert(W){
   document.getElementById('topalert-upd').textContent='即時算 · '+new Date().toLocaleString('zh-TW',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
   ta.style.display='';
 }
-fetch('week.json?t='+Date.now()).then(r=>r.json()).then(W=>{
+fetch('week.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(W=>{
   renderWeek(W);
   if(W.inventory_derived) renderInv(W.inventory_derived);   /* 庫存改用自動 derive（非手打快照）*/
   setReelAlert(W);                                          /* 總部告警即時算，蓋掉手打過期版 */
@@ -1150,6 +1159,30 @@ secs.forEach(s=>io.observe(s));
 
 /* ════════ 「全部處理完→歸檔」：核可/成果頁按鈕設 localStorage → 已處理頁併入上方單一「歷史報告存檔」 ════════ */
 refreshPages();
+
+/* ════════ 版本戳＋快取自檢（防「看到舊版」）════════
+ * BUILD/BUILT 由 bump_version.py 自動寫入（勿手改）；version.json 永遠抓最新做比對。
+ * 邏輯：頂部秀「你正在看的這份」版本＋時間；若 version.json 比你手上的新＝你吃到舊快取→清快取自動重整一次。 */
+const BUILD="2026-06-23.1", BUILT="2026-06-23 06:19";
+(function(){
+  const stamp=document.getElementById('bstamp'),bt=document.getElementById('btime'),bv=document.getElementById('bver');
+  if(bt)bt.textContent=BUILT; if(bv)bv.textContent='v'+BUILD;
+  fetch('version.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(v=>{
+    if(!v||!v.version)return;
+    if(v.version===BUILD){ if(stamp)stamp.classList.add('ok'); return; }
+    // 你手上的 index.html 比線上舊＝吃到快取。清 SW 快取後自動重整一次（用 sessionStorage 防無限重整）。
+    const key='w2l_freshreload_'+v.version;
+    if(!sessionStorage.getItem(key)){
+      sessionStorage.setItem(key,'1');
+      const go=()=>location.reload(true);
+      if(window.caches){caches.keys().then(ks=>Promise.all(ks.map(k=>caches.delete(k)))).then(go).catch(go);}else go();
+    }else if(stamp){ // 重整過仍不符（多半本地伺服器沒同步）→ 紅戳提示手動，不再硬重整
+      stamp.classList.add('stale');
+      stamp.innerHTML='<span class="dot"></span>⚠ 你看到的是舊版 v'+BUILD+'（最新 v'+v.version+'）— 點此強制更新';
+      stamp.onclick=()=>{sessionStorage.clear();if(window.caches){caches.keys().then(ks=>Promise.all(ks.map(k=>caches.delete(k)))).then(()=>location.reload(true));}else location.reload(true);};
+    }
+  }).catch(()=>{ if(stamp)stamp.classList.add('ok'); }); // 離線：就顯示手上版本、不擋
+})();
 </script>
 </body>
 </html>
