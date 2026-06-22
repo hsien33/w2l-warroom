@@ -112,6 +112,17 @@
   .arc-item b{font-family:ui-monospace,monospace;font-size:12.5px;color:#c9a44c;flex:none}
   .arc-item span{font-family:var(--tc);font-size:14px;color:#e9dfc8;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .arc-item i{color:#c9a44c;font-style:normal;font-weight:800;flex:none}
+  /* ── ③c 今日發文真實狀態 ── */
+  .todaybar{background:linear-gradient(135deg,#181611,#0e0d0a);border-radius:14px;padding:14px 18px;box-shadow:0 0 0 1px rgba(201,164,76,.18)}
+  .todaybar .th{font-family:var(--tc);font-size:13px;color:#c9a44c;font-weight:800;margin-bottom:9px;display:flex;align-items:center;gap:7px}
+  .todaybar .th .chk{margin-left:auto;font-size:11px;color:#8c8268;font-weight:500}
+  .tsrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-top:1px solid rgba(201,164,76,.1)}
+  .tsrow:first-of-type{border-top:none}
+  .tsrow .nm{font-family:var(--tc);font-size:14.5px;color:#e9dfc8;flex:1}
+  .tsrow .bd{font-size:12.5px;font-weight:800;border-radius:7px;padding:3px 11px;flex:none}
+  .tsrow .bd.yes{background:rgba(58,158,106,.18);color:#7fd3a6}
+  .tsrow .bd.no{background:rgba(192,138,46,.16);color:#e0b86a}
+  .tsrow a.lk{color:#c9a44c;font-size:12px;text-decoration:none;flex:none}
 
   /* ── ④ 父子對決總部 ── */
   .hq{background:linear-gradient(150deg,rgba(255,255,255,.82),rgba(248,244,255,.5));border:1px solid var(--glassedge);border-radius:18px;
@@ -459,6 +470,11 @@
     <section class="sect" id="s-reports" style="display:none;margin-top:12px">
       <button class="arc-toggle" id="arc-toggle">📚 歷史報告存檔 <span id="arc-count"></span><i>▾</i></button>
       <div class="arc-list" id="arc-list" style="display:none"></div>
+    </section>
+
+    <!-- ③c 今日發文真實狀態（refresh.py 每30分真查 IG/FB，非寫死） -->
+    <section class="sect" id="s-today" style="margin-top:12px">
+      <div class="todaybar" id="todaystatus"><div class="tsline">今日發文狀態載入中…</div></div>
     </section>
 
     <!-- ④ 父子對決總部 -->
@@ -924,6 +940,22 @@ function renderShipped(sh){
   }).join('');
 }
 
+/* ════════ 今日發文真實狀態（refresh.py 真查 IG/FB）════════ */
+function renderToday(ts){
+  const el=$("#todaystatus"); if(!el) return;
+  if(!ts){ el.innerHTML='<div class="tsline" style="color:var(--faint);font-size:13px">今日發文狀態待接（refresh 尚未寫入）</div>'; return; }
+  const rows=[
+    {nm:'⚔️ IG 戰況卡',s:ts.warcard,sched:'08:1x'},
+    {nm:'📜 FB 金句卡',s:ts.fbquote,sched:'20:0x'},
+    {nm:'🎬 IG 主集 Reel',s:ts.reel,sched:'20:3x'},
+  ];
+  el.innerHTML='<div class="th">📡 今日發文真實狀態（真查 IG/FB，非寫死）<span class="chk">查於 '+(ts.checked||'—')+'</span></div>'+
+    rows.map(r=>{const p=(r.s&&r.s.posted);
+      return '<div class="tsrow"><span class="nm">'+r.nm+'</span>'+
+        (p?'<span class="bd yes">✅ 已發 '+(r.s.time||'')+'</span>'+(r.s.url?'<a class="lk" href="'+r.s.url+'" target="_blank">看 ›</a>':'')
+           :'<span class="bd no">⏳ '+r.sched+' 待發</span>')+'</div>';}).join('');
+}
+
 /* ════════ 昨夜成果橫幅 ════════ */
 function renderNight(nr){
   if(!nr)return;
@@ -946,6 +978,7 @@ function renderTop(D){
 /* ════════ 載入 data.json（fetch 驅動全頁；缺檔顯示資料待接） ════════ */
 fetch('data.json?t='+Date.now()).then(r=>r.json()).then(D=>{
   renderTop(D);
+  renderToday(D.todayStatus);
   renderNight(D.nightReport);
   renderHQ(D);
   if(D.social){ SOCIAL=D.social; CURRANGE=(D.social.defaultRange)||'day'; renderSocial(); }

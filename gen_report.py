@@ -105,10 +105,15 @@ print("report.html 產出 ·", now.strftime('%Y-%m-%d %H:%M'))
 
 # LINE 推送（依時段切換：早安/午間/晚間 · 拉式脈搏，資訊同、框架不同）
 _h=now.hour
-# 每點各自一行（Jeff 指定：分行才好看，別用｜黏一起）
-if _h<9: _emo,_slot,_act="☀️","早安・今日戰情","⚔️ 戰況卡 08:1x 自動發\n🎬 主集 Reel 20:3x 自動發"
-elif _h<15: _emo,_slot,_act="🌤️","午間・進度脈搏","✅ 上午戰況卡已發（看門狗顧著）\n🎬 晚間 Reel 待發"
-else: _emo,_slot,_act="🌙","晚間・今日收工","✅ 今日戰況卡+Reel 應已發畢\n🌙 明早 08:1x 續跑"
+# 🔴 各線狀態＝真查 IG/FB（data.json todayStatus，由 refresh.py 每30分更新），不再寫死
+if _h<9: _emo,_slot="☀️","早安・今日戰情"
+elif _h<15: _emo,_slot="🌤️","午間・進度脈搏"
+else: _emo,_slot="🌙","晚間・今日收工"
+_ts=d.get("todayStatus",{})
+def _statline(name,key,sched):
+    s=_ts.get(key,{}) or {}
+    return (f"✅ {name} 已發 {s.get('time','')}" if s.get("posted") else f"⏳ {name} {sched} 待發")
+_act=(_statline("戰況卡","warcard","08:1x")+"\n"+_statline("金句卡","fbquote","20:0x")+"\n"+_statline("主集 Reel","reel","20:3x"))
 summary=(f"{_emo} {_slot} {now.strftime('%m/%d')}（週{WK}）\n"
          f"━━━━━━━━━━\n"
          f"📊 追蹤 {followers}\n"
