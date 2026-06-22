@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Shorts · 待核（7 支）</title>
+<style>
+:root{--bg:#f3eee3;--card:#fffdf8;--ink:#2b2720;--mid:#55503f;--faint:#8c8470;--line:#e7dfd0;--gold:#b07d1a;--gold-hi:#f4dd8e;--red:#c2554a;--red-s:#fbe9e6;--amber:#c08a2e;--amber-s:#fbf2dc;--green:#3a9e6a;--green-s:#e6f4ec}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.7;font-size:15px}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 80px}
+.back{display:inline-block;font-size:13px;color:var(--gold);text-decoration:none;margin-bottom:14px}
+h1{font-size:22px;font-weight:900}
+.now{background:linear-gradient(135deg,#1b160d,#0c0a05);color:#f3ead6;border-radius:15px;padding:16px 20px;margin:12px 0 8px}
+.now .nb{font-size:17px;font-weight:900;background:linear-gradient(90deg,var(--gold-hi),#c9a44c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;width:fit-content}
+.now .nd{font-size:13px;color:#cdbf9f;margin-top:3px}
+.allbar{margin:16px 0 22px}
+.allbtn{width:100%;font-family:inherit;font-size:17px;font-weight:900;border:none;border-radius:14px;padding:16px 18px;cursor:pointer;background:linear-gradient(160deg,#3fb88c,#2f9c6f);color:#fff;box-shadow:0 12px 30px -12px rgba(47,156,111,.8)}
+.allbtn:active{transform:translateY(1px)} .allbtn:disabled{opacity:.55}
+.allmsg{font-size:14px;font-weight:700;margin-top:9px;text-align:center;min-height:1px}
+.allmsg.ok{color:var(--green)} .allmsg.err{color:var(--red)}
+.alltip{font-size:12px;color:var(--faint);text-align:center;margin-top:5px}
+.item{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:13px;padding:15px 16px;margin-bottom:14px}
+.item.ok{border-left-color:var(--green);background:var(--green-s)} .item.no{border-left-color:var(--red);background:var(--red-s)}
+.ih{display:flex;gap:12px}
+.poster{width:96px;height:170px;object-fit:cover;border-radius:9px;border:1px solid var(--line);flex:none;background:#000}
+.ihr{flex:1;min-width:0}
+.iday{font-family:ui-monospace,monospace;font-weight:800;color:var(--gold);font-size:12.5px}
+.ititle{font-weight:800;font-size:16px;margin-top:3px;line-height:1.4}
+.isrc{font-size:12px;color:var(--faint);margin-top:5px}
+.ilong{font-size:12.5px;margin-top:5px}.ilong a{color:var(--gold)}
+.istate{font-size:12px;font-weight:800;margin-top:6px}
+.dlabel{font-size:11.5px;font-weight:800;color:var(--faint);margin:11px 0 4px}
+.dtext{white-space:pre-wrap;font-size:13.5px;line-height:1.7;background:#fbf7ee;border-radius:9px;padding:11px 13px;border:1px solid #efe6d3}
+.ibtns{display:flex;gap:9px;margin-top:12px}
+.ibtns button{font-family:inherit;font-size:14px;font-weight:800;border:none;border-radius:9px;padding:8px 16px;cursor:pointer}
+.iok{background:var(--green);color:#fff} .ino{background:#fff;color:var(--red);border:1.5px solid var(--red)!important}
+.ifb{display:none;margin-top:10px} .item.editing .ifb{display:block}
+.ifb textarea{width:100%;min-height:56px;font-family:inherit;font-size:14px;border:1.5px solid var(--gold);border-radius:9px;padding:9px 11px;background:#fff}
+.isend{margin-top:7px;font-family:inherit;font-size:13px;font-weight:800;border:none;border-radius:8px;padding:7px 16px;cursor:pointer;background:var(--gold);color:#fff}
+.imsg{font-size:13px;font-weight:700;margin-top:7px}.imsg.ok{color:var(--green)}.imsg.err{color:var(--red)}
+footer{margin-top:24px;color:var(--faint);font-size:12px;text-align:center;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← 回戰情室</a>
+  <h1>🎬 Shorts · 待核（7 支）</h1>
+  <div class="now" id="now"><div class="nd">載入中…</div></div>
+  <div class="allbar">
+    <button class="allbtn" id="allbtn">✅ 全部核可 · 排上去（每天 12:30 一支）</button>
+    <div class="allmsg" id="allmsg"></div>
+    <div class="alltip">一鍵核掉整批 → 我登錄排程、每天午休自動發 YouTube。也可逐支核可／不同意。影片你已看過，要重看在桌面成品。</div>
+  </div>
+  <div id="list">載入中…</div>
+  <footer>戰情室內部頁 · Shorts 7 支＝長片切片、原音＋大字卡、導流回對應長片＋IG 父子對決 · 先核後發</footer>
+</div>
+<script>
+const NTFY='w2l-jeff-verdict-9x7k2m4q';
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let CARDS=[];
+async function sendVerdict(title,body,msgEl,doneLabel){
+  let sent=false;
+  try{const r=await fetch('https://ntfy.sh',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic:NTFY,title:title,message:body})});sent=r.ok;}catch(e){}
+  if(!sent){try{await navigator.clipboard.writeText(body);}catch(e){}}
+  if(msgEl){if(sent){msgEl.className=msgEl.className.replace(/\b(ok|err)\b/g,'')+' ok';msgEl.textContent='✅ '+doneLabel+'！AI 已收到。';}
+    else{msgEl.className=msgEl.className.replace(/\b(ok|err)\b/g,'')+' err';msgEl.textContent='⚠️ 直送失敗、已複製到剪貼簿 → 貼回對話傳我。';}}
+  return sent;
+}
+function render(data){
+  CARDS=data.cards||[];
+  document.getElementById('now').innerHTML='<div class="nb">'+CARDS.length+' 支 Shorts 等你核</div><div class="nd">'+esc(data.plan||'')+'</div>';
+  document.getElementById('list').innerHTML=CARDS.map((c,i)=>`
+    <div class="item" data-i="${i}">
+      <div class="ih">
+        <img class="poster" loading="lazy" src="${esc(c.poster)}" alt="封面">
+        <div class="ihr">
+          <div class="iday">Day${c.n}｜${esc(c.topic)}</div>
+          <div class="ititle">${esc(c.title)}</div>
+          <div class="isrc">切自：${esc(c.src)}</div>
+          <div class="ilong">導流長片 👉 <a href="${esc(c.long)}" target="_blank">${esc(c.long)}</a></div>
+          <div class="istate"></div>
+        </div>
+      </div>
+      <div class="dlabel">YouTube 說明欄（會發的全文）</div>
+      <div class="dtext">${esc(c.desc)}</div>
+      <div class="ibtns"><button class="iok">✅ 核可</button><button class="ino">✏️ 不同意</button></div>
+      <div class="ifb"><textarea placeholder="這支想怎麼改？標題/文稿/導流…"></textarea><button class="isend">🚀 送出</button></div>
+      <div class="imsg"></div>
+    </div>`).join('');
+  wire();
+}
+function wire(){
+  document.querySelectorAll('.item').forEach(el=>{
+    const i=+el.dataset.i,c=CARDS[i],msg=el.querySelector('.imsg');
+    const ok=el.querySelector('.iok'),no=el.querySelector('.ino'),send=el.querySelector('.isend');
+    const label='Shorts Day'+c.n+'｜'+c.topic;
+    ok.onclick=async()=>{ok.disabled=true;ok.textContent='送出中…';
+      const body='【Jeff Shorts 核可 · '+new Date().toLocaleString('zh-TW')+'】\n\n■ 這支：'+label+'\n■ 裁示：✅ 核可、排上去自動發';
+      const s=await sendVerdict('Shorts 核可 Day'+c.n,body,msg,'已核可');
+      el.classList.add('ok');el.querySelector('.istate').textContent='✅ 已核可';ok.textContent=s?'已核可 ✓':'重試';ok.disabled=!s;};
+    no.onclick=()=>{el.classList.add('editing');el.querySelector('textarea').focus();};
+    send.onclick=async()=>{const ta=el.querySelector('textarea'),v=(ta.value||'').trim();
+      if(!v){msg.className='imsg err';msg.textContent='請先寫要改的方向';return;}
+      send.disabled=true;send.textContent='送出中…';
+      const body='【Jeff Shorts 裁決 · '+new Date().toLocaleString('zh-TW')+'】\n\n■ 這支：'+label+'\n■ 裁示：✏️ 不同意，要改\n\n■ 方向：\n'+v;
+      const s=await sendVerdict('Shorts 改 Day'+c.n,body,msg,'修改方向已送出');
+      el.classList.add('no');el.querySelector('.istate').textContent='✏️ 要改';send.textContent=s?'已送出 ✓':'重試';send.disabled=!s;};
+  });
+  const allbtn=document.getElementById('allbtn'),allmsg=document.getElementById('allmsg');
+  allbtn.onclick=async()=>{allbtn.disabled=true;allbtn.textContent='送出中…';
+    const summary=CARDS.map(c=>'• Day'+c.n+' '+c.topic+'｜'+c.title).join('\n');
+    const body='【Jeff Shorts · 全部核可 · '+new Date().toLocaleString('zh-TW')+'】\n\n以下 '+CARDS.length+' 支全部核可、每天 12:30 排上去自動發：\n\n'+summary;
+    const s=await sendVerdict('Shorts 全部核可（'+CARDS.length+' 支）',body,allmsg,'整批核可');
+    allbtn.textContent=s?'✅ 已全部核可 ✓':'重試';allbtn.disabled=!s;
+    if(s)document.querySelectorAll('.item').forEach(el=>{el.classList.add('ok');el.querySelector('.istate').textContent='✅ 已核可';});};
+}
+fetch('shorts_pending.json?t='+Date.now()).then(r=>r.json()).then(render).catch(e=>{
+  document.getElementById('now').innerHTML='<div class="nd">待核池空或讀取失敗</div>';document.getElementById('list').innerHTML='';});
+</script>
+</body>
+</html>
