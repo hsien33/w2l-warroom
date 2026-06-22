@@ -1069,6 +1069,35 @@ const io=new IntersectionObserver(es=>{
   }});
 },{rootMargin:"-20% 0px -70% 0px"});
 secs.forEach(s=>io.observe(s));
+
+/* ════════ 「全部處理完→歸檔」：核可/成果頁按鈕設 localStorage，這裡把已歸檔的待審橫幅移到「已處理存檔」 ════════ */
+(function(){
+  const ARCHIVABLE={'jobs.html':'成果頁 · 派工看板','明日待發.html':'明日待發','金句卡核可.html':'金句卡核可','Shorts核可.html':'Shorts核可'};
+  function load(){try{return JSON.parse(localStorage.getItem('w2lArchived')||'{}')}catch(e){return {}}}
+  function save(o){localStorage.setItem('w2lArchived',JSON.stringify(o))}
+  function decode(href){const f=decodeURIComponent((href||'').split('/').pop().split('?')[0]);return f}
+  function run(){
+    const A=load(), arc=[];
+    document.querySelectorAll('#s-night a.night').forEach(a=>{
+      const f=decode(a.getAttribute('href'));
+      if(ARCHIVABLE[f] && A[f]){ a.style.display='none'; arc.push({f,ts:A[f],href:a.getAttribute('href')}); }
+      else if(ARCHIVABLE[f]){ a.style.display=''; }
+    });
+    let box=document.getElementById('s-archived');
+    if(!box){ box=document.createElement('section'); box.className='sect'; box.id='s-archived'; box.style.marginTop='12px';
+      document.getElementById('s-reports').after(box); }
+    if(!arc.length){ box.style.display='none'; return; }
+    box.style.display='';
+    box.innerHTML='<button class="arc-toggle" id="arch2-t">📦 已處理存檔（'+arc.length+'）<i>▾</i></button><div id="arch2-l" style="display:none;margin-top:10px"></div>';
+    document.getElementById('arch2-l').innerHTML=arc.map(x=>
+      '<div class="arc-item" style="cursor:default"><b>'+x.ts+'</b><span>'+ARCHIVABLE[x.f]+'</span>'+
+      '<a class="lk2" href="'+x.href+'" style="color:#c9a44c;text-decoration:none;font-size:12px">看 ›</a>'+
+      '<button data-f="'+x.f+'" class="unarch" style="margin-left:8px;font-size:11px;font-weight:800;border:1px solid rgba(201,164,76,.4);background:transparent;color:#c9a44c;border-radius:7px;padding:3px 9px;cursor:pointer">復原</button></div>').join('');
+    document.getElementById('arch2-t').onclick=()=>{const l=document.getElementById('arch2-l');const op=l.style.display==='none';l.style.display=op?'':'none';document.getElementById('arch2-t').classList.toggle('open',op);};
+    box.querySelectorAll('.unarch').forEach(b=>b.onclick=()=>{const A=load();delete A[b.dataset.f];save(A);run();});
+  }
+  run();
+})();
 </script>
 </body>
 </html>

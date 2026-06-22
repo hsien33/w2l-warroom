@@ -58,7 +58,9 @@ footer{margin-top:24px;color:var(--faint);font-size:12px;text-align:center;line-
     <div class="alltip">一次核掉整批 → 我收到後登錄進排程、自動發。也可往下逐張核可／不同意。</div>
   </div>
   <div id="list">載入中…</div>
+  <button onclick="archiveThisPage()" style="display:block;margin:22px auto 8px;max-width:560px;width:100%;font-family:inherit;font-size:15px;font-weight:800;border:1.5px solid var(--gold);background:rgba(176,125,26,.08);color:var(--gold);border-radius:12px;padding:13px;cursor:pointer">📦 全部處理完 · 移到歷史存檔</button>
   <footer>戰情室內部頁 · 待核金句卡＝已產好卡＋文案、等你核可才排上線 · 先核後發</footer>
+  <script>function archiveThisPage(){var f=decodeURIComponent(location.pathname.split('/').pop().split('?')[0]);var ts=new Date().toLocaleString('zh-TW');var A;try{A=JSON.parse(localStorage.getItem('w2lArchived')||'{}')}catch(e){A={}}A[f]=ts;localStorage.setItem('w2lArchived',JSON.stringify(A));alert('✅ 已歸檔（'+ts+'）\n回戰情室它會移到「已處理存檔」區');location.href='./';}</script>
 </div>
 <script>
 const NTFY='w2l-jeff-verdict-9x7k2m4q';
