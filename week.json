@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22 08:20Z",
+  "updated": "2026-06-22 08:45Z",
   "inventory_derived": {
     "title": "各產線庫存（自動算 · 非手打）",
     "lines": [
@@ -183,6 +183,54 @@
   },
   "shorts_cron": true,
   "shorts_status": "live",
+  "shorts_start": "2026-06-10",
+  "shorts_content": {
+    "10": {
+      "title": "少喝一杯珍奶，30 年後少一台賓士？費用 1% 的可怕真相｜從0到1",
+      "ready": false,
+      "lead": ""
+    },
+    "11": {
+      "title": "你的年齡，該有多少錢？20／30／40 歲財富配速表｜從0到1",
+      "ready": false,
+      "lead": ""
+    },
+    "13": {
+      "title": "你的 ETF 正在被「白蟻」吃掉——30 年少賺一台賓士",
+      "ready": true,
+      "lead": "完整版（這集完整拆解隱形費用）👉 https://youtu.be/QiOak4IkyRM"
+    },
+    "14": {
+      "title": "別再盯股價——你盯的其實是一隻「亂跑的狗」",
+      "ready": true,
+      "lead": "完整版 👉 https://youtu.be/wka5I8TL5Hs"
+    },
+    "15": {
+      "title": "為什麼你越努力，存款越追不上房價？",
+      "ready": true,
+      "lead": "完整版（階級翻身的數學真相）👉 https://youtu.be/m1Jx0b_zxa4"
+    },
+    "16": {
+      "title": "換大房，差點害我少賺一千萬",
+      "ready": true,
+      "lead": "完整版 👉 https://youtu.be/RNYWjqQj7F0"
+    },
+    "17": {
+      "title": "你每天都在幫美國公司打工，卻把錢全押台灣？",
+      "ready": true,
+      "lead": "完整版 👉 https://youtu.be/zFBISxCwkyE"
+    },
+    "18": {
+      "title": "賺錢了卻捨不得賣？這可能是你最危險的時刻",
+      "ready": true,
+      "lead": "完整版 👉 https://youtu.be/dgnlWyS5vbg"
+    },
+    "19": {
+      "title": "投資是有錢人的事？用一支手機的錢就能開始",
+      "ready": true,
+      "lead": "完整版（ETF 新手入門）👉 https://youtu.be/zcJwp5IYBmg"
+    }
+  },
   "warcard_sample_img": "preview_media/warcard_sample.png",
   "warcard_caption_tpl": "【賽報·第N天】老爸今天又進帳 X 票，全場目前 XXX 人站老爸這邊 👏\n兒子在房間刷手機，假裝沒在看比分（但我知道他有看）😏\n還差 XXX 個人，這老爸就能在自己兒子面前抬頭挺胸一次。\n幫我喊一聲 → 追蹤 @jeff.walk2light＝幫老爸計一分。\n\n※ 數字每天清晨自動抓即時追蹤數帶入，卡面與比分為當天即時生成。",
   "reels_media": {

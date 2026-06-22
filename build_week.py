@@ -71,6 +71,23 @@ fbq_cron     = cron_active("fb_quote.yml")
 thread_cron  = cron_active("thread_rewrite.yml")
 shorts_cron  = cron_active("shorts.yml")
 
+# ── 3b. Shorts「每日主題」＝shorts/schedule.json（對齊 SHORTS_START）＋ready 旗標＋導向長片那行 ──
+shorts_start = grep_start(os.path.join(WC, "src", "post_shorts.py"), "SHORTS_START", "2026-06-10")
+shorts_content = {}
+try:
+    sh = read_json(os.path.join(WC, "shorts", "schedule.json"))
+    for k, v in sh.items():
+        if not str(k).isdigit() or not isinstance(v, dict): continue
+        lead = ""
+        for ln in (v.get("description", "") or "").splitlines():
+            s = ln.strip()
+            if "👉" in s or "youtu" in s.lower():
+                lead = s; break
+        shorts_content[str(int(k))] = {"title": (v.get("title", "") or "").strip(),
+                                       "ready": bool(v.get("ready")), "lead": lead}
+except Exception as e:
+    print("讀 shorts/schedule.json 失敗：", e)
+
 # 既有 week.json 的「人工維護欄」要保留（不被自動重算洗掉）
 prev = {}
 try: prev = read_json(os.path.join(HERE, "week.json"))
@@ -149,6 +166,8 @@ out = {
     "social_content": prev.get("social_content", {}),
     "shorts_cron": shorts_cron,
     "shorts_status": prev.get("shorts_status", "none"),
+    "shorts_start": shorts_start,
+    "shorts_content": shorts_content,
     # 人工維護：戰況卡範例圖＋當天 caption 模板（明日待發頁 08:00 戰況卡點開看樣子）、Reel 影片附件對映
     "warcard_sample_img": prev.get("warcard_sample_img", ""),
     "warcard_caption_tpl": prev.get("warcard_caption_tpl", ""),

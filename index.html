@@ -748,14 +748,27 @@ function renderWeek(cfg){
         label:miss('週二/五是發文日、但這天內容還沒備——差：產這天的社團文＋圖＋首留言。')};
     }
 
-    /* Shorts：cron 沒開＝沒排程。製作中＝黃；上線(cron開)＝綠 */
+    /* Shorts：逐日帶「當天主題」（對齊 SHORTS_START）。cron 開＋這天有 ready 成品＝綠並秀主題；cron 開但這天沒排＝紅(庫存邊界)；其餘照線狀態 */
     const ss=cfg.shorts_status||'none';
-    const slotShorts={t:'12:30',ch:'Shorts',
-      state: cfg.shorts_cron?'green':(ss==='producing'?'yellow':(ss==='paused'?'off':'red')),
-      label: cfg.shorts_cron?'<b>已排程</b>｜每天 12:30 自動發 1 支 YouTube Shorts（公開）。'
-           : ss==='producing'?'<b>製作中（尚未排程）</b>｜你的聲音＋實拍 b-roll＋金字＋圖表。差：你看過點頭→ready 改 true 才排上去。'
-           : ss==='paused'?'<b>暫停中</b>｜現有形式效果不佳（顧問也說天花板低），Jeff 在重想方向；YT 金鑰已設好、隨時可恢復。'
-           : miss('Shorts 還沒做、cron 沒開——差：做成品＋你核可＋開 cron。')};
+    const shortsDay=daysBetween(cfg.shorts_start,d);
+    const SH=cfg.shorts_content||{}, shc=SH[String(shortsDay)];
+    let slotShorts;
+    if(cfg.shorts_cron && shc && shc.ready){
+      slotShorts={t:'12:30',ch:'Shorts',state:'green',
+        label:'<b>Day'+shortsDay+' · 已排程</b>｜這天會發：「'+esc(shc.title||'')+'」'+(shc.lead?('（'+esc(shc.lead)+'）'):'')+'。每天 12:30 自動發 YouTube Shorts（公開）。'};
+    }else if(cfg.shorts_cron && shc && !shc.ready){
+      slotShorts={t:'12:30',ch:'Shorts',state:'yellow',
+        label:'<b>Day'+shortsDay+'：「'+esc(shc.title||'')+'」腳本備好、影片未輸出</b>｜差：出片→ready 改 true 才會自動發。'};
+    }else if(cfg.shorts_cron && !shc){
+      slotShorts={t:'12:30',ch:'Shorts',state:'red',
+        label:miss('Day'+shortsDay+' 這天沒排 Shorts（庫存邊界）——差：補這天的成品＋登錄 schedule。')};
+    }else{
+      slotShorts={t:'12:30',ch:'Shorts',
+        state:(ss==='producing'?'yellow':(ss==='paused'?'off':'red')),
+        label: ss==='producing'?'<b>製作中（尚未排程）</b>｜你的聲音＋實拍 b-roll＋金字＋圖表。差：你看過點頭→ready 改 true 才排上去。'
+             : ss==='paused'?'<b>暫停中</b>｜現有形式效果不佳，Jeff 在重想方向；YT 金鑰已設好、隨時可恢復。'
+             : miss('Shorts 還沒做、cron 沒開——差：做成品＋你核可＋開 cron。')};
+    }
 
     /* FB 粉專金句卡：綠＝真有 cron＋隊列裡第 i 張是你核可的卡 */
     let slotFbq;
