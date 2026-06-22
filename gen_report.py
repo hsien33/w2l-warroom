@@ -6,6 +6,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 def env(k,d=""): return os.environ.get(k,d).strip()
 TOK=env("IG_ACCESS_TOKEN"); VER=env("GRAPH_API_VERSION","v22.0")
 LINE_TOKEN=env("LINE_CHANNEL_ACCESS_TOKEN"); LINE_USER=env("LINE_USER_ID")
+TG_TOKEN=env("TG_BOT_TOKEN"); TG_CHAT=env("TG_CHAT_ID")   # Telegram 主推播（免費無上限、取代被 LINE 配額卡住）
 HERE=os.path.dirname(os.path.abspath(__file__))
 URL="https://hsien33.github.io/w2l-warroom/report.html"
 ROOM="https://hsien33.github.io/w2l-warroom/"
@@ -118,11 +119,21 @@ summary=(f"{_emo} {_slot} {now.strftime('%m/%d')}（週{WK}）\n"
          f"📖 完整報告 👉 {URL}\n"
          f"🎛️ 裁示駕駛艙 👉 {DECIDE}\n"
          f"📊 即時戰情室 👉 {ROOM}")
-if LINE_TOKEN and LINE_USER:
+# ① Telegram 主推播（免費無上限）
+tg_ok=False
+if TG_TOKEN and TG_CHAT:
+    try:
+        req=urllib.request.Request(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
+          data=json.dumps({"chat_id":TG_CHAT,"text":summary,"disable_web_page_preview":True}).encode(),
+          headers={"Content-Type":"application/json"},method="POST")
+        urllib.request.urlopen(req,timeout=30); tg_ok=True; print("Telegram 已推送")
+    except Exception as e: print("Telegram 推送失敗",e)
+else: print("(無 Telegram 設定)")
+# ② LINE 備援（僅在 Telegram 沒送成時才試，省 LINE 配額）
+if not tg_ok and LINE_TOKEN and LINE_USER:
     try:
         req=urllib.request.Request("https://api.line.me/v2/bot/message/push",
           data=json.dumps({"to":LINE_USER,"messages":[{"type":"text","text":summary}]}).encode(),
           headers={"Content-Type":"application/json","Authorization":f"Bearer {LINE_TOKEN}"},method="POST")
-        urllib.request.urlopen(req,timeout=30); print("LINE 已推送")
-    except Exception as e: print("LINE 推送失敗",e)
-else: print("(無 LINE 設定，略過推送)")
+        urllib.request.urlopen(req,timeout=30); print("LINE 已推送(備援)")
+    except Exception as e: print("LINE 備援也失敗",e)

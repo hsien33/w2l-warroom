@@ -21,6 +21,8 @@ jobs:
           GRAPH_API_VERSION: v22.0
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: python gen_report.py
       - name: commit report
         run: |
@@ -28,13 +30,12 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add report.html data.json
           git diff --staged --quiet || (git commit -m "daily morning report" && git push)
-      - name: alert Jeff on failure (不接受靜默失敗)
+      - name: alert Jeff on failure (不接受靜默失敗 · 走 Telegram)
         if: failure()
         env:
-          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          curl -s -X POST https://api.line.me/v2/bot/message/push \
-            -H "Authorization: Bearer $LINE_CHANNEL_ACCESS_TOKEN" \
+          curl -s -X POST "https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage" \
             -H "Content-Type: application/json" \
-            -d "{\"to\":\"$LINE_USER_ID\",\"messages\":[{\"type\":\"text\",\"text\":\"⚠️ 晨報產生失敗（report.yml / gen_report.py 出錯）。戰情室晨報今天可能沒發，請看 GitHub Actions log。\"}]}" || true
+            -d "{\"chat_id\":\"$TG_CHAT_ID\",\"text\":\"⚠️ 晨報產生失敗（report.yml / gen_report.py 出錯）。戰情室晨報今天可能沒發，請看 GitHub Actions log。\"}" || true
