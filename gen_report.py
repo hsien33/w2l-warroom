@@ -19,7 +19,7 @@ try:
     d["followers"]=int(fc)
 except Exception as e: print("追蹤數抓取失敗，用 data.json 舊值",e)
 followers=d.get("followers","?"); goal=d.get("goal",1000)
-day=(now.date()-datetime.date(2026,6,10)).days; dday=(datetime.date(2026,7,10)-now.date()).days
+day=(now.date()-datetime.date(2026,6,10)).days; warday=(now.date()-datetime.date(2026,6,11)).days; dday=(datetime.date(2026,7,10)-now.date()).days   # day=Reel集數(−10)、warday=戰況卡第N天(−11)
 # 戰情室 v4 把各區塊包成 {title,...,lines/items/list}；舊格式是直接 list。兩種都相容（防呆，避免再像 6/20 起連壞 3 天）。
 def _aslist(v, *keys):
     if isinstance(v, list): return v
@@ -62,7 +62,7 @@ body=f"""
 </div>
 
 <h2>今日自動排程</h2>
-<p>{chip('08:00 戰況卡 第'+str(day)+'天 自動發','#239b73')}{chip('20:30 主集 Reel · Day'+str(day),'#615ae0' if (day in [e.get('day') for e in eplist] or True) else '#db543b')}{chip('戰情室每 30 分刷新','#3289cf')}</p>
+<p>{chip('08:00 戰況卡 第'+str(warday)+'天 自動發','#239b73')}{chip('20:30 主集 Reel · Day'+str(day),'#615ae0' if (day in [e.get('day') for e in eplist] or True) else '#db543b')}{chip('戰情室每 30 分刷新','#3289cf')}</p>
 
 <h2>各產線庫存</h2>
 <table><thead><tr><th>產線</th><th>庫存</th><th>預排到</th><th>自動發</th></tr></thead><tbody>{invrows}</tbody></table>
