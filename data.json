@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-24 05:12 台北",
+  "updated": "2026-06-24 06:44 台北",
   "followers": 426,
   "goal": 1000,
   "dday": 16,
@@ -150,11 +150,11 @@
         "key": "fb",
         "name": "Facebook",
         "metric": "followers",
-        "current": 13,
+        "current": 12,
         "live": true,
         "delta": {
           "day": {
-            "value": 0,
+            "value": -1,
             "days": 1,
             "note": ""
           },
@@ -825,7 +825,7 @@
     "2026-06-24": {
       "ig": 426,
       "yt": 19700,
-      "fb": 13,
+      "fb": 12,
       "threads": 33,
       "site": 41
     }
@@ -834,33 +834,33 @@
     "ig": {
       "followers": 426,
       "live": true,
-      "updated": "06/24 05:12"
+      "updated": "06/24 06:44"
     },
     "yt": {
       "subs": 19700,
       "views": 804580,
       "videos": 32,
       "live": true,
-      "updated": "06/24 05:12"
+      "updated": "06/24 06:44"
     },
     "fb": {
-      "followers": 13,
+      "followers": 12,
       "last_msg": "這一週，我們把散戶最常踩的坑走了一遍。\n\n忍不住的手、等不到的低點、",
       "last_time": "2026-06-23",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116785357125488",
       "live": true,
-      "updated": "06/24 05:12"
+      "updated": "06/24 06:44"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/24 05:12"
+      "updated": "06/24 06:44"
     },
     "site": {
       "pageviews": 73,
       "users": 41,
       "live": true,
-      "updated": "06/24 05:12"
+      "updated": "06/24 06:44"
     }
   },
   "dailyTrend": [
@@ -927,7 +927,7 @@
       "time": "00:05",
       "url": "https://www.facebook.com/122116524549125488/posts/122116785357125488"
     },
-    "checked": "06/24 05:12",
+    "checked": "06/24 06:44",
     "date": "2026-06-24"
   }
 }
