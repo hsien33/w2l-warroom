@@ -168,13 +168,16 @@ function buildDay(cfg, I){
     .replace(/\{Y\}/g,_fn!=null?(_gn-_fn):'＿')
     .replace(/\{Z\}/g,'—');
   const wcWritten=!!wcCap;
+  const wcApproved=(cfg.warcard_approved||[]).map(String).indexOf(String(warDay))>=0;  /* 先核後發：白名單才會自動發手寫版 */
   items.push({t:'08:00',ch:'IG 戰況卡',
-    state:cfg.warcard_cron?'green':'red',
+    state:cfg.warcard_cron?(wcWritten?(wcApproved?'green':'yellow'):'green'):'red',
     topic:'第'+warDay+'天戰況',
     prev:cfg.warcard_cron
-      ?('<b>第'+warDay+'天戰況卡</b>｜'+(wcWritten
-          ?'IG 顧問已按前一晚 Reel 手寫今日內文（下方可看）。<b>內文裡的人數＝當天 08:00 自動抓即時追蹤數帶入，你不用填</b>（預覽先顯示目前即時值）。'
-          :'⚠ 今日內文尚未手寫——會退回程式輪播範本（請補 warcard/captions.json）。')+'')
+      ?('<b>第'+warDay+'天戰況卡</b>｜'+(!wcWritten
+          ?'⚠ 今日內文尚未手寫——會退回程式輪播範本。'
+          :wcApproved
+            ?'IG 顧問已按前一晚 Reel 手寫、<b>你已核可</b>（下方可看）。人數＝當天 08:00 自動帶入即時追蹤數，你不用填。'
+            :'IG 顧問已手寫初稿（下方可看），<b>待你核可</b>——核可前不會自動發這版（先核後發）。')+'')
       :miss('戰況卡 cron 沒開——去 warcard.yml 開排程。'),
     full:cfg.warcard_cron?(wcCapPreview||cfg.warcard_caption_tpl):'',
     img:cfg.warcard_cron?cfg.warcard_sample_img:'', imgnote:'範例卡（昨日版）— 明早數字自動更新'});

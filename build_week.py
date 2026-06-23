@@ -89,12 +89,14 @@ try:
 except Exception as e:
     print("讀 shorts/schedule.json 失敗：", e)
 
-# ── 4c. 戰況卡每日手寫內文：warcard/captions.json（IG 顧問按前晚 Reel 寫，不套模板）──
-warcard_captions = {}
+# ── 4c. 戰況卡每日手寫內文：warcard/captions.json（IG 顧問按前晚 Reel 寫，不套模板）＋核可白名單 ──
+warcard_captions = {}; warcard_approved = []
 try:
     _wcp = os.path.join(WC, "warcard", "captions.json")
     if os.path.exists(_wcp):
-        warcard_captions = {k: v for k, v in read_json(_wcp).items() if str(k).isdigit()}
+        _wc = read_json(_wcp)
+        warcard_captions = {k: v for k, v in _wc.items() if str(k).isdigit()}
+        warcard_approved = [str(x) for x in (_wc.get("_approved") or [])]
 except Exception as e:
     print("讀 warcard/captions.json 失敗：", e)
 
@@ -215,6 +217,7 @@ out = {
     "warcard_sample_img": prev.get("warcard_sample_img", ""),
     "warcard_caption_tpl": prev.get("warcard_caption_tpl", ""),
     "warcard_captions": warcard_captions,   # 每天 IG 顧問手寫戰況卡內文（按前晚 Reel）；空＝退回程式範本
+    "warcard_approved": warcard_approved,   # 已核可白名單：只有列入的天數才會自動發手寫文案（先核後發）
     "reels_media": reels_media,   # 自動推導（含 approved），非手維護
 }
 
