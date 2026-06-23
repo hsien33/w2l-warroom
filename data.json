@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-23 08:14 台北",
-  "followers": 413,
+  "updated": "2026-06-23 12:38 台北",
+  "followers": 417,
   "goal": 1000,
   "dday": 17,
   "day": 13,
@@ -82,31 +82,31 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 413,
+        "current": 417,
         "live": true,
         "delta": {
           "day": {
-            "value": 4,
+            "value": 8,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 197,
+            "value": 201,
             "days": 7,
             "note": ""
           },
           "quarter": {
-            "value": 386,
+            "value": 390,
             "days": 12,
             "note": ""
           },
           "half": {
-            "value": 386,
+            "value": 390,
             "days": 12,
             "note": ""
           },
           "year": {
-            "value": 386,
+            "value": 390,
             "days": 12,
             "note": ""
           }
@@ -816,7 +816,7 @@
       "site": 72
     },
     "2026-06-23": {
-      "ig": 413,
+      "ig": 417,
       "yt": 19700,
       "fb": 13,
       "threads": 33,
@@ -825,16 +825,16 @@
   },
   "channels": {
     "ig": {
-      "followers": 413,
+      "followers": 417,
       "live": true,
-      "updated": "06/23 08:14"
+      "updated": "06/23 12:38"
     },
     "yt": {
       "subs": 19700,
       "views": 804580,
-      "videos": 31,
+      "videos": 32,
       "live": true,
-      "updated": "06/23 08:14"
+      "updated": "06/23 12:38"
     },
     "fb": {
       "followers": 13,
@@ -842,18 +842,18 @@
       "last_time": "2026-06-22",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116729167125488",
       "live": true,
-      "updated": "06/23 08:14"
+      "updated": "06/23 12:38"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/23 08:14"
+      "updated": "06/23 12:38"
     },
     "site": {
       "pageviews": 126,
       "users": 60,
       "live": true,
-      "updated": "06/23 08:14"
+      "updated": "06/23 12:38"
     }
   },
   "dailyTrend": [
@@ -899,8 +899,8 @@
     },
     {
       "date": "2026-06-23",
-      "ig": 413,
-      "delta": 4
+      "ig": 417,
+      "delta": 8
     }
   ],
   "todayStatus": {
@@ -917,7 +917,7 @@
       "time": "01:10",
       "url": "https://www.facebook.com/122116524549125488/posts/122116704081125488"
     },
-    "checked": "06/23 08:14",
+    "checked": "06/23 12:38",
     "date": "2026-06-23"
   }
 }
