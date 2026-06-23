@@ -1,7 +1,7 @@
 {
   "schema": "v4",
-  "updated": "2026-06-24 06:44 台北",
-  "followers": 426,
+  "updated": "2026-06-24 07:51 台北",
+  "followers": 427,
   "goal": 1000,
   "dday": 16,
   "day": 14,
@@ -82,31 +82,31 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 426,
+        "current": 427,
         "live": true,
         "delta": {
           "day": {
-            "value": 1,
+            "value": 2,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 210,
+            "value": 211,
             "days": 8,
             "note": ""
           },
           "quarter": {
-            "value": 399,
+            "value": 400,
             "days": 13,
             "note": ""
           },
           "half": {
-            "value": 399,
+            "value": 400,
             "days": 13,
             "note": ""
           },
           "year": {
-            "value": 399,
+            "value": 400,
             "days": 13,
             "note": ""
           }
@@ -823,7 +823,7 @@
       "site": 60
     },
     "2026-06-24": {
-      "ig": 426,
+      "ig": 427,
       "yt": 19700,
       "fb": 12,
       "threads": 33,
@@ -832,35 +832,35 @@
   },
   "channels": {
     "ig": {
-      "followers": 426,
+      "followers": 427,
       "live": true,
-      "updated": "06/24 06:44"
+      "updated": "06/24 07:51"
     },
     "yt": {
       "subs": 19700,
       "views": 804580,
       "videos": 32,
       "live": true,
-      "updated": "06/24 06:44"
+      "updated": "06/24 07:51"
     },
     "fb": {
       "followers": 12,
-      "last_msg": "這一週，我們把散戶最常踩的坑走了一遍。\n\n忍不住的手、等不到的低點、",
+      "last_msg": "他賭我 30 天衝不到 1000——今天第 13 天，427 人挺老",
       "last_time": "2026-06-23",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116785357125488",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116811475125488",
       "live": true,
-      "updated": "06/24 06:44"
+      "updated": "06/24 07:51"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/24 06:44"
+      "updated": "06/24 07:51"
     },
     "site": {
       "pageviews": 73,
       "users": 41,
       "live": true,
-      "updated": "06/24 06:44"
+      "updated": "06/24 07:51"
     }
   },
   "dailyTrend": [
@@ -911,13 +911,15 @@
     },
     {
       "date": "2026-06-24",
-      "ig": 426,
-      "delta": 1
+      "ig": 427,
+      "delta": 2
     }
   ],
   "todayStatus": {
     "warcard": {
-      "posted": false
+      "posted": true,
+      "time": "07:36",
+      "url": "https://www.instagram.com/p/DZ8nLVEj_89/"
     },
     "reel": {
       "posted": false
@@ -927,7 +929,7 @@
       "time": "00:05",
       "url": "https://www.facebook.com/122116524549125488/posts/122116785357125488"
     },
-    "checked": "06/24 06:44",
+    "checked": "06/24 07:51",
     "date": "2026-06-24"
   }
 }
