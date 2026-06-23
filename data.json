@@ -1,11 +1,11 @@
 {
   "schema": "v4",
-  "updated": "2026-06-23 22:34 台北",
-  "followers": 425,
+  "updated": "2026-06-24 01:12 台北",
+  "followers": 426,
   "goal": 1000,
-  "dday": 17,
-  "day": 13,
-  "warday": 12,
+  "dday": 16,
+  "day": 14,
+  "warday": 13,
   "nightReport": {
     "title": "🌙 昨夜自走成果報告",
     "href": "夜間成果.html",
@@ -82,32 +82,32 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 425,
+        "current": 426,
         "live": true,
         "delta": {
           "day": {
-            "value": 16,
+            "value": 1,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 209,
-            "days": 7,
+            "value": 210,
+            "days": 8,
             "note": ""
           },
           "quarter": {
-            "value": 398,
-            "days": 12,
+            "value": 399,
+            "days": 13,
             "note": ""
           },
           "half": {
-            "value": 398,
-            "days": 12,
+            "value": 399,
+            "days": 13,
             "note": ""
           },
           "year": {
-            "value": 398,
-            "days": 12,
+            "value": 399,
+            "days": 13,
             "note": ""
           }
         }
@@ -218,11 +218,11 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 60,
+        "current": 41,
         "live": true,
         "delta": {
           "day": {
-            "value": -12,
+            "value": -19,
             "days": 1,
             "note": ""
           },
@@ -821,39 +821,46 @@
       "fb": 13,
       "threads": 33,
       "site": 60
+    },
+    "2026-06-24": {
+      "ig": 426,
+      "yt": 19700,
+      "fb": 13,
+      "threads": 33,
+      "site": 41
     }
   },
   "channels": {
     "ig": {
-      "followers": 425,
+      "followers": 426,
       "live": true,
-      "updated": "06/23 22:34"
+      "updated": "06/24 01:12"
     },
     "yt": {
       "subs": 19700,
       "views": 804580,
       "videos": 32,
       "live": true,
-      "updated": "06/23 22:34"
+      "updated": "06/24 01:12"
     },
     "fb": {
       "followers": 13,
-      "last_msg": "父子對決・第 13 天｜我自己沒多愛看書，卻養出兩個書蟲 📚\n\n常有",
+      "last_msg": "這一週，我們把散戶最常踩的坑走了一遍。\n\n忍不住的手、等不到的低點、",
       "last_time": "2026-06-23",
-      "last_url": "https://www.facebook.com/reel/879095618575838/",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116785357125488",
       "live": true,
-      "updated": "06/23 22:34"
+      "updated": "06/24 01:12"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/23 22:34"
+      "updated": "06/24 01:12"
     },
     "site": {
-      "pageviews": 126,
-      "users": 60,
+      "pageviews": 73,
+      "users": 41,
       "live": true,
-      "updated": "06/23 22:34"
+      "updated": "06/24 01:12"
     }
   },
   "dailyTrend": [
@@ -901,25 +908,26 @@
       "date": "2026-06-23",
       "ig": 425,
       "delta": 16
+    },
+    {
+      "date": "2026-06-24",
+      "ig": 426,
+      "delta": 1
     }
   ],
   "todayStatus": {
     "warcard": {
-      "posted": true,
-      "time": "07:36",
-      "url": "https://www.instagram.com/p/DZ6CXm4FLDk/"
+      "posted": false
     },
     "reel": {
-      "posted": true,
-      "time": "20:39",
-      "url": "https://www.instagram.com/reel/DZ7b9V5EuNk/"
+      "posted": false
     },
     "fbquote": {
       "posted": true,
-      "time": "20:40",
-      "url": "https://www.facebook.com/reel/879095618575838/"
+      "time": "00:05",
+      "url": "https://www.facebook.com/122116524549125488/posts/122116785357125488"
     },
-    "checked": "06/23 22:34",
-    "date": "2026-06-23"
+    "checked": "06/24 01:12",
+    "date": "2026-06-24"
   }
 }
