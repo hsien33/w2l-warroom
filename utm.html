@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<!-- 財富煉金術品牌 favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>UTM 連結產生器｜財富煉金術 戰情室</title>
+<style>
+:root{--ink:#0b1120;--panel:#131c2e;--panel2:#0f172a;--gold:#F4C430;--gold2:#d4af37;--cream:#f4f1e8;--mut:#9aa6b8;--line:rgba(244,196,48,.16);--ok:#34d399}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:radial-gradient(1100px 500px at 50% -10%,#16223c 0,var(--ink) 55%);color:var(--cream);line-height:1.7;min-height:100vh;padding:34px 18px 80px}
+.wrap{max-width:760px;margin:0 auto}
+.brand{display:inline-flex;align-items:center;gap:9px;margin-bottom:6px}
+.brand svg{width:34px;height:34px;filter:drop-shadow(0 0 7px rgba(244,196,48,.45))}
+.brand span{font-weight:800;letter-spacing:.13em;color:#fff;font-size:15px}
+h1{font-size:24px;font-weight:900;background:linear-gradient(180deg,#fff,#F4C430);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:6px}
+.lead{color:var(--mut);font-size:14px;margin-top:8px;margin-bottom:24px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
+label{display:block;font-size:13px;font-weight:700;color:var(--gold);margin:16px 0 7px;letter-spacing:.03em}
+label:first-child{margin-top:0}
+.hint{color:var(--mut);font-weight:400;font-size:11.5px;margin-left:6px}
+input,select{width:100%;background:var(--panel2);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 13px;color:var(--cream);font-size:14px;font-family:inherit}
+input:focus,select:focus{outline:none;border-color:var(--gold)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.seg{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.seg button{background:var(--panel2);border:1px solid rgba(255,255,255,.12);color:var(--cream);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;font-family:inherit;transition:.15s}
+.seg button.on{background:var(--gold);color:var(--ink);border-color:var(--gold);font-weight:700}
+.seg button:hover{border-color:var(--gold)}
+.out{margin-top:24px;background:linear-gradient(180deg,rgba(244,196,48,.08),rgba(244,196,48,.02));border:1px solid var(--line);border-radius:14px;padding:18px}
+.out-label{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.1em;margin-bottom:9px}
+.url{font-size:13.5px;color:#fff;word-break:break-all;background:var(--panel2);border-radius:10px;padding:13px 14px;border:1px solid rgba(255,255,255,.08);min-height:46px}
+.url .q{color:var(--gold)}
+.actions{display:flex;gap:10px;margin-top:13px;flex-wrap:wrap}
+.btn{border:none;border-radius:10px;padding:11px 20px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--cream)}
+.btn:active{transform:scale(.97)}
+.copied{color:var(--ok);font-size:13px;font-weight:700;align-self:center;opacity:0;transition:.2s}
+.copied.show{opacity:1}
+.spec{margin-top:26px;font-size:12.5px;color:var(--mut)}
+.spec h3{color:var(--gold);font-size:13px;margin-bottom:8px;letter-spacing:.05em}
+.spec table{width:100%;border-collapse:collapse;margin-top:6px}
+.spec td{padding:5px 8px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:top}
+.spec td:first-child{color:var(--gold2);font-weight:700;white-space:nowrap;width:120px}
+code{background:var(--panel2);padding:1px 6px;border-radius:5px;color:#bcd4ff;font-size:12px}
+.foot{text-align:center;color:var(--mut);font-size:11.5px;margin-top:30px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="63" fill="#0f172a"/><polygon points="64,20 96,68 79,68 79,106 49,106 49,68 32,68" fill="#F4C430"/></svg><span>財富煉金術 · 戰情室</span></div>
+  <h1>🔗 UTM 連結產生器</h1>
+  <p class="lead">所有「社群 → 官網」的外連都先過這裡。掛上 UTM，GA4 才知道訪客從哪個平台、哪篇內容來的——這是整個數據漏斗的地基。<b style="color:var(--gold)">禁止裸連結出站。</b></p>
+
+  <div class="card">
+    <label>① 目的地網址 <span class="hint">要導去官網的哪一頁</span></label>
+    <input id="base" type="text" placeholder="https://www.walk2light.com/tools/compound/" value="https://www.walk2light.com/">
+
+    <label>② 來源平台 <span class="hint">utm_source · 從哪個平台來</span></label>
+    <div class="seg" id="source"></div>
+
+    <label>③ 連結位置 <span class="hint">utm_medium · 這條連結放在哪</span></label>
+    <div class="seg" id="medium"></div>
+
+    <div class="row">
+      <div>
+        <label>④ 活動 <span class="hint">utm_campaign</span></label>
+        <input id="campaign" type="text" placeholder="例：dadbet_day12 / tool_compound / weekly">
+      </div>
+      <div>
+        <label>⑤ 內容 ID <span class="hint">utm_content · 哪篇/哪支（選填）</span></label>
+        <input id="content" type="text" placeholder="例：reel-0612 / ep23">
+      </div>
+    </div>
+
+    <div class="out">
+      <div class="out-label">✅ 帶 UTM 的連結（複製去用）</div>
+      <div class="url" id="url"></div>
+      <div class="actions">
+        <button class="btn btn-gold" id="copy">📋 複製連結</button>
+        <button class="btn btn-ghost" id="reset">清空重填</button>
+        <span class="copied" id="copied">已複製 ✓</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec">
+    <h3>📐 命名規範（圓桌定案 · 全公司統一）</h3>
+    <table>
+      <tr><td>utm_source</td><td>平台：<code>instagram</code> <code>youtube</code> <code>facebook</code> <code>threads</code> <code>kit</code>（電子報）</td></tr>
+      <tr><td>utm_medium</td><td>位置：<code>bio</code> <code>story</code>(限動) <code>reel</code> <code>post</code> <code>dm</code> <code>desc</code>(YT說明欄) <code>comment</code>(留言) <code>email</code></td></tr>
+      <tr><td>utm_campaign</td><td>活動：父子對決一律 <code>dadbet_dayNN</code>；工具導流 <code>tool_xxx</code>；常態週更 <code>weekly</code></td></tr>
+      <tr><td>utm_content</td><td>內容 ID（選填）：對齊內容績效總表的同一個 ID，如 <code>reel-0612</code>、<code>ep23</code>，方便日後歸因到單篇</td></tr>
+    </table>
+    <p style="margin-top:12px">🔴 鐵則：一律小寫、用底線不用空格；GA4 會在「流量開發 → 工作階段來源/媒介」自動解析，能切到單篇看 tool_engaged / email_signup / purchase_intent。</p>
+  </div>
+
+  <p class="foot">財富煉金術 · 向光而行　｜　純前端、零後端、資料不離開你的瀏覽器</p>
+</div>
+
+<script>
+(function(){
+  var SOURCES=[['instagram','IG'],['youtube','YouTube'],['facebook','FB'],['threads','Threads'],['kit','電子報']];
+  var MEDIUMS=[['bio','bio'],['story','限動'],['reel','Reel'],['post','貼文'],['dm','DM'],['desc','YT說明欄'],['comment','留言'],['email','Email']];
+  var state={source:'instagram',medium:'bio'};
+  function seg(id,arr,key){
+    var box=document.getElementById(id);
+    box.innerHTML='';
+    arr.forEach(function(o){
+      var b=document.createElement('button');
+      b.textContent=o[1]; b.dataset.v=o[0];
+      if(state[key]===o[0]) b.className='on';
+      b.onclick=function(){state[key]=o[0];seg(id,arr,key);render();};
+      box.appendChild(b);
+    });
+  }
+  function clean(s){return (s||'').trim().toLowerCase().replace(/\s+/g,'_');}
+  function render(){
+    var base=document.getElementById('base').value.trim()||'https://www.walk2light.com/';
+    var camp=clean(document.getElementById('campaign').value);
+    var cont=clean(document.getElementById('content').value);
+    var params=[];
+    params.push(['utm_source',state.source]);
+    params.push(['utm_medium',state.medium]);
+    if(camp) params.push(['utm_campaign',camp]);
+    if(cont) params.push(['utm_content',cont]);
+    var sep=base.indexOf('?')>=0?'&':'?';
+    var qs=params.map(function(p){return p[0]+'='+encodeURIComponent(p[1]);}).join('&');
+    var full=base+sep+qs;
+    var html=base+'<span class="q">'+sep+qs.replace(/&/g,'&amp;')+'</span>';
+    document.getElementById('url').innerHTML=html;
+    document.getElementById('url').dataset.full=full;
+  }
+  seg('source',SOURCES,'source');
+  seg('medium',MEDIUMS,'medium');
+  ['base','campaign','content'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
+  document.getElementById('copy').onclick=function(){
+    var t=document.getElementById('url').dataset.full;
+    navigator.clipboard.writeText(t).then(function(){
+      var c=document.getElementById('copied');c.classList.add('show');setTimeout(function(){c.classList.remove('show');},1600);
+    });
+  };
+  document.getElementById('reset').onclick=function(){
+    document.getElementById('campaign').value='';document.getElementById('content').value='';
+    document.getElementById('base').value='https://www.walk2light.com/';
+    state={source:'instagram',medium:'bio'};seg('source',SOURCES,'source');seg('medium',MEDIUMS,'medium');render();
+  };
+  render();
+})();
+</script>
+</body>
+</html>
