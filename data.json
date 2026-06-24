@@ -1,11 +1,11 @@
 {
   "schema": "v4",
-  "updated": "2026-06-24 23:30 台北",
-  "followers": 444,
+  "updated": "2026-06-25 01:49 台北",
+  "followers": 446,
   "goal": 1000,
-  "dday": 16,
-  "day": 14,
-  "warday": 13,
+  "dday": 15,
+  "day": 15,
+  "warday": 14,
   "nightReport": {
     "title": "🌙 昨夜自走成果報告",
     "href": "夜間成果.html",
@@ -82,32 +82,32 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 444,
+        "current": 446,
         "live": true,
         "delta": {
           "day": {
-            "value": 19,
+            "value": 2,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 228,
-            "days": 8,
+            "value": 202,
+            "days": 7,
             "note": ""
           },
           "quarter": {
-            "value": 417,
-            "days": 13,
+            "value": 419,
+            "days": 14,
             "note": ""
           },
           "half": {
-            "value": 417,
-            "days": 13,
+            "value": 419,
+            "days": 14,
             "note": ""
           },
           "year": {
-            "value": 417,
-            "days": 13,
+            "value": 419,
+            "days": 14,
             "note": ""
           }
         }
@@ -154,7 +154,7 @@
         "live": true,
         "delta": {
           "day": {
-            "value": -1,
+            "value": 0,
             "days": 1,
             "note": ""
           },
@@ -218,11 +218,11 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 41,
+        "current": 29,
         "live": true,
         "delta": {
           "day": {
-            "value": -19,
+            "value": -12,
             "days": 1,
             "note": ""
           },
@@ -828,39 +828,46 @@
       "fb": 12,
       "threads": 33,
       "site": 41
+    },
+    "2026-06-25": {
+      "ig": 446,
+      "yt": 19700,
+      "fb": 12,
+      "threads": 33,
+      "site": 29
     }
   },
   "channels": {
     "ig": {
-      "followers": 444,
+      "followers": 446,
       "live": true,
-      "updated": "06/24 23:30"
+      "updated": "06/25 01:49"
     },
     "yt": {
       "subs": 19700,
       "views": 805862,
       "videos": 33,
       "live": true,
-      "updated": "06/24 23:30"
+      "updated": "06/25 01:49"
     },
     "fb": {
       "followers": 12,
-      "last_msg": "父子對決・第 14 天｜我一度以為我兒子「怪怪的」😅\n\n我家兩個兒子",
+      "last_msg": "你不是存不到錢。\n你只是每個月，都把自己排在帳單的最後一個。\n\n水電",
       "last_time": "2026-06-24",
-      "last_url": "https://www.facebook.com/reel/4341418579502272/",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116871121125488",
       "live": true,
-      "updated": "06/24 23:30"
+      "updated": "06/25 01:49"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/24 23:30"
+      "updated": "06/25 01:49"
     },
     "site": {
-      "pageviews": 73,
-      "users": 41,
+      "pageviews": 60,
+      "users": 29,
       "live": true,
-      "updated": "06/24 23:30"
+      "updated": "06/25 01:49"
     }
   },
   "dailyTrend": [
@@ -913,25 +920,26 @@
       "date": "2026-06-24",
       "ig": 444,
       "delta": 19
+    },
+    {
+      "date": "2026-06-25",
+      "ig": 446,
+      "delta": 2
     }
   ],
   "todayStatus": {
     "warcard": {
-      "posted": true,
-      "time": "07:36",
-      "url": "https://www.instagram.com/p/DZ8nLVEj_89/"
+      "posted": false
     },
     "reel": {
-      "posted": true,
-      "time": "20:35",
-      "url": "https://www.instagram.com/reel/DZ-ANUPjT8S/"
+      "posted": false
     },
     "fbquote": {
       "posted": true,
-      "time": "20:36",
-      "url": "https://www.facebook.com/reel/4341418579502272/"
+      "time": "00:27",
+      "url": "https://www.facebook.com/122116524549125488/posts/122116871121125488"
     },
-    "checked": "06/24 23:30",
-    "date": "2026-06-24"
+    "checked": "06/25 01:49",
+    "date": "2026-06-25"
   }
 }
