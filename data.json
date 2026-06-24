@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-24 20:32 台北",
+  "updated": "2026-06-24 23:30 台北",
   "followers": 444,
   "goal": 1000,
   "dday": 16,
@@ -82,31 +82,31 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 445,
+        "current": 444,
         "live": true,
         "delta": {
           "day": {
-            "value": 20,
+            "value": 19,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 229,
+            "value": 228,
             "days": 8,
             "note": ""
           },
           "quarter": {
-            "value": 418,
+            "value": 417,
             "days": 13,
             "note": ""
           },
           "half": {
-            "value": 418,
+            "value": 417,
             "days": 13,
             "note": ""
           },
           "year": {
-            "value": 418,
+            "value": 417,
             "days": 13,
             "note": ""
           }
@@ -823,7 +823,7 @@
       "site": 60
     },
     "2026-06-24": {
-      "ig": 445,
+      "ig": 444,
       "yt": 19700,
       "fb": 12,
       "threads": 33,
@@ -832,35 +832,35 @@
   },
   "channels": {
     "ig": {
-      "followers": 445,
+      "followers": 444,
       "live": true,
-      "updated": "06/24 20:32"
+      "updated": "06/24 23:30"
     },
     "yt": {
       "subs": 19700,
       "views": 805862,
       "videos": 33,
       "live": true,
-      "updated": "06/24 20:32"
+      "updated": "06/24 23:30"
     },
     "fb": {
       "followers": 12,
-      "last_msg": "他賭我 30 天衝不到 1000——今天第 13 天，427 人挺老",
-      "last_time": "2026-06-23",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116811475125488",
+      "last_msg": "父子對決・第 14 天｜我一度以為我兒子「怪怪的」😅\n\n我家兩個兒子",
+      "last_time": "2026-06-24",
+      "last_url": "https://www.facebook.com/reel/4341418579502272/",
       "live": true,
-      "updated": "06/24 20:32"
+      "updated": "06/24 23:30"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/24 20:32"
+      "updated": "06/24 23:30"
     },
     "site": {
       "pageviews": 73,
       "users": 41,
       "live": true,
-      "updated": "06/24 20:32"
+      "updated": "06/24 23:30"
     }
   },
   "dailyTrend": [
@@ -911,8 +911,8 @@
     },
     {
       "date": "2026-06-24",
-      "ig": 445,
-      "delta": 20
+      "ig": 444,
+      "delta": 19
     }
   ],
   "todayStatus": {
@@ -922,14 +922,16 @@
       "url": "https://www.instagram.com/p/DZ8nLVEj_89/"
     },
     "reel": {
-      "posted": false
+      "posted": true,
+      "time": "20:35",
+      "url": "https://www.instagram.com/reel/DZ-ANUPjT8S/"
     },
     "fbquote": {
       "posted": true,
-      "time": "00:05",
-      "url": "https://www.facebook.com/122116524549125488/posts/122116785357125488"
+      "time": "20:36",
+      "url": "https://www.facebook.com/reel/4341418579502272/"
     },
-    "checked": "06/24 20:32",
+    "checked": "06/24 23:30",
     "date": "2026-06-24"
   }
 }
