@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-26 00:18 台北",
+  "updated": "2026-06-26 02:30 台北",
   "followers": 460,
   "goal": 1000,
   "dday": 14,
@@ -848,33 +848,33 @@
     "ig": {
       "followers": 460,
       "live": true,
-      "updated": "06/26 00:18"
+      "updated": "06/26 02:30"
     },
     "yt": {
       "subs": 19700,
       "views": 806381,
       "videos": 34,
       "live": true,
-      "updated": "06/26 00:18"
+      "updated": "06/26 02:30"
     },
     "fb": {
       "followers": 12,
-      "last_msg": "第 14 天，447 人挺老爸。但老爸心裡有數——這樣不夠 😤\n\n老",
-      "last_time": "2026-06-24",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116892391125488",
+      "last_msg": "門口那台新車，可能不是你的資產。\n它是負債——只是長得很體面而已。\n",
+      "last_time": "2026-06-25",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116960839125488",
       "live": true,
-      "updated": "06/26 00:18"
+      "updated": "06/26 02:30"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/26 00:18"
+      "updated": "06/26 02:30"
     },
     "site": {
       "pageviews": 48,
       "users": 23,
       "live": true,
-      "updated": "06/26 00:18"
+      "updated": "06/26 02:30"
     }
   },
   "dailyTrend": [
@@ -947,9 +947,11 @@
       "posted": false
     },
     "fbquote": {
-      "posted": false
+      "posted": true,
+      "time": "00:31",
+      "url": "https://www.facebook.com/122116524549125488/posts/122116960839125488"
     },
-    "checked": "06/26 00:18",
+    "checked": "06/26 02:30",
     "date": "2026-06-26"
   }
 }
