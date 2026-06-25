@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-26 04:52 台北",
+  "updated": "2026-06-26 06:17 台北",
   "followers": 460,
   "goal": 1000,
   "dday": 14,
@@ -848,14 +848,14 @@
     "ig": {
       "followers": 460,
       "live": true,
-      "updated": "06/26 04:52"
+      "updated": "06/26 06:17"
     },
     "yt": {
       "subs": 19700,
       "views": 806381,
       "videos": 34,
       "live": true,
-      "updated": "06/26 04:52"
+      "updated": "06/26 06:17"
     },
     "fb": {
       "followers": 12,
@@ -863,18 +863,18 @@
       "last_time": "2026-06-25",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116960839125488",
       "live": true,
-      "updated": "06/26 04:52"
+      "updated": "06/26 06:17"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/26 04:52"
+      "updated": "06/26 06:17"
     },
     "site": {
       "pageviews": 48,
       "users": 23,
       "live": true,
-      "updated": "06/26 04:52"
+      "updated": "06/26 06:17"
     }
   },
   "dailyTrend": [
@@ -951,7 +951,7 @@
       "time": "00:31",
       "url": "https://www.facebook.com/122116524549125488/posts/122116960839125488"
     },
-    "checked": "06/26 04:52",
+    "checked": "06/26 06:17",
     "date": "2026-06-26"
   }
 }
