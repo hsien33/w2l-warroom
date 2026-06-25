@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-26 06:17 台北",
+  "updated": "2026-06-26 07:50 台北",
   "followers": 460,
   "goal": 1000,
   "dday": 14,
@@ -848,33 +848,33 @@
     "ig": {
       "followers": 460,
       "live": true,
-      "updated": "06/26 06:17"
+      "updated": "06/26 07:50"
     },
     "yt": {
       "subs": 19700,
       "views": 806381,
       "videos": 34,
       "live": true,
-      "updated": "06/26 06:17"
+      "updated": "06/26 07:50"
     },
     "fb": {
       "followers": 12,
-      "last_msg": "門口那台新車，可能不是你的資產。\n它是負債——只是長得很體面而已。\n",
+      "last_msg": "第 15 天，460 人挺老爸。但老爸心裡有數——這樣不夠 😤\n\n老",
       "last_time": "2026-06-25",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116960839125488",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116981341125488",
       "live": true,
-      "updated": "06/26 06:17"
+      "updated": "06/26 07:50"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/26 06:17"
+      "updated": "06/26 07:50"
     },
     "site": {
       "pageviews": 48,
       "users": 23,
       "live": true,
-      "updated": "06/26 06:17"
+      "updated": "06/26 07:50"
     }
   },
   "dailyTrend": [
@@ -941,7 +941,9 @@
   ],
   "todayStatus": {
     "warcard": {
-      "posted": false
+      "posted": true,
+      "time": "07:36",
+      "url": "https://www.instagram.com/p/DaBwxlKEf7S/"
     },
     "reel": {
       "posted": false
@@ -951,7 +953,7 @@
       "time": "00:31",
       "url": "https://www.facebook.com/122116524549125488/posts/122116960839125488"
     },
-    "checked": "06/26 06:17",
+    "checked": "06/26 07:50",
     "date": "2026-06-26"
   }
 }
