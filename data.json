@@ -1,6 +1,6 @@
 {
   "schema": "v4",
-  "updated": "2026-06-25 06:48 台北",
+  "updated": "2026-06-25 08:02 台北",
   "followers": 447,
   "goal": 1000,
   "dday": 15,
@@ -841,33 +841,33 @@
     "ig": {
       "followers": 447,
       "live": true,
-      "updated": "06/25 06:48"
+      "updated": "06/25 08:02"
     },
     "yt": {
       "subs": 19700,
       "views": 805862,
       "videos": 33,
       "live": true,
-      "updated": "06/25 06:48"
+      "updated": "06/25 08:02"
     },
     "fb": {
       "followers": 12,
-      "last_msg": "你不是存不到錢。\n你只是每個月，都把自己排在帳單的最後一個。\n\n水電",
+      "last_msg": "第 14 天，447 人挺老爸。但老爸心裡有數——這樣不夠 😤\n\n老",
       "last_time": "2026-06-24",
-      "last_url": "https://www.facebook.com/122116524549125488/posts/122116871121125488",
+      "last_url": "https://www.facebook.com/122116524549125488/posts/122116892391125488",
       "live": true,
-      "updated": "06/25 06:48"
+      "updated": "06/25 08:02"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/25 06:48"
+      "updated": "06/25 08:02"
     },
     "site": {
       "pageviews": 60,
       "users": 29,
       "live": true,
-      "updated": "06/25 06:48"
+      "updated": "06/25 08:02"
     }
   },
   "dailyTrend": [
@@ -929,7 +929,9 @@
   ],
   "todayStatus": {
     "warcard": {
-      "posted": false
+      "posted": true,
+      "time": "07:36",
+      "url": "https://www.instagram.com/p/DZ_L9a3ibIr/"
     },
     "reel": {
       "posted": false
@@ -939,7 +941,7 @@
       "time": "00:27",
       "url": "https://www.facebook.com/122116524549125488/posts/122116871121125488"
     },
-    "checked": "06/25 06:48",
+    "checked": "06/25 08:02",
     "date": "2026-06-25"
   }
 }
