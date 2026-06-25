@@ -11,66 +11,63 @@
   html, body { margin: 0; height: 100%; background: #000; color: #fff;
     font-family: "Microsoft JhengHei","PingFang TC",sans-serif; overflow: hidden; }
 
-  /* 自己的小視窗（也靠近鏡頭，順便當眼神基準） */
   #cam { position: fixed; top: 8px; left: 50%; transform: translateX(-50%); z-index: 25;
-    width: 30vw; max-width: 150px; aspect-ratio: 3/4; border: 2px solid #F4C430;
+    width: 26vw; max-width: 130px; aspect-ratio: 9/16; border: 2px solid #F4C430;
     border-radius: 12px; overflow: hidden; background: #111; }
-  #preview { width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); }
+  #cv { width: 100%; height: 100%; display: block; transform: scaleX(-1); }
   #rec { position: absolute; top: 5px; right: 5px; width: 11px; height: 11px;
     border-radius: 50%; background: #ef4444; display: none; animation: blink 1s infinite; }
   @keyframes blink { 50% { opacity: .25; } }
-  #cuemsg { position: fixed; top: calc(8px + 40vw + 6px); left: 0; right: 0; z-index: 20;
+  #cuemsg { position: fixed; top: calc(8px + 46vw + 4px); left: 0; right: 0; z-index: 20;
     text-align: center; color: #F4C430; font-size: 13px; pointer-events: none; }
 
-  /* 讀稿區：讀字區在小視窗下方、靠近手機上緣鏡頭 */
   #viewport { position: absolute; inset: 0; overflow: hidden; }
-  #script { padding: 56vh 7vw 80vh; }
-  #script .line { font-size: 7vw; line-height: 1.7; font-weight: 800; margin: 0 0 4.5vh;
-    text-align: center; }
+  #script { padding: 62vh 7vw 80vh; }
+  #script .line { font-size: 7vw; line-height: 1.7; font-weight: 800; margin: 0 0 4.5vh; text-align: center; }
   #script .cue { display: block; font-size: 3.3vw; font-weight: 600; color: #64748b; margin-top: 1vh; }
   #script .em { color: #F4C430; }
 
-  /* 底部控制 */
   #bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 30;
     display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; align-items: center;
     padding: 8px; background: rgba(15,23,42,.94); border-top: 1px solid #F4C430; }
   #bar button { background: #1e293b; color: #fff; border: 1px solid #334155; border-radius: 8px;
     padding: 9px 12px; font-size: 14px; }
   #bar button:active { background: #F4C430; color: #0f172a; }
+  #bar button.on { background: #F4C430; color: #0f172a; border-color: #F4C430; font-weight: 700; }
   #go { font-weight: 800; background: #ef4444; color: #fff; border-color: #ef4444; padding: 9px 16px; }
   #go.recording { background: #fff; color: #ef4444; }
   #bar .lbl { font-size: 12px; color: #94a3b8; }
-  #save { display: none; background: #F4C430; color: #0f172a; font-weight: 800; border-color: #F4C430; }
 
   #count { position: fixed; inset: 0; z-index: 40; display: none; align-items: center;
-    justify-content: center; background: rgba(0,0,0,.55); font-size: 30vw; font-weight: 900; color: #F4C430; }
-  #msg { position: fixed; top: 50%; left: 0; right: 0; z-index: 45; text-align: center;
-    color: #fff; font-size: 15px; padding: 0 24px; }
+    justify-content: center; background: rgba(0,0,0,.5); font-size: 30vw; font-weight: 900; color: #F4C430; }
+  #msg { position: fixed; top: 52%; left: 0; right: 0; z-index: 45; text-align: center;
+    color: #fff; font-size: 15px; padding: 0 24px; line-height: 1.7; }
 
-  /* 錄好的影片 */
-  #out { position: fixed; inset: 0; z-index: 60; display: none; background: #000; padding: 14px;
-    flex-direction: column; }
+  #out { position: fixed; inset: 0; z-index: 60; display: none; background: #000; padding: 14px; flex-direction: column; }
   #out video { width: 100%; flex: 1; min-height: 0; background: #111; border-radius: 10px; }
-  #out .tip { color: #F4C430; font-size: 14px; text-align: center; margin: 10px 0; line-height: 1.6; }
+  #out .tip { color: #F4C430; font-size: 14px; text-align: center; margin: 10px 0; line-height: 1.7; }
   #out .row { display: flex; gap: 8px; }
-  #out a, #out button { flex: 1; text-align: center; padding: 13px; border-radius: 10px;
-    font-size: 16px; font-weight: 700; text-decoration: none; border: 0; }
+  #out a, #out button { flex: 1; text-align: center; padding: 13px; border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none; border: 0; }
   #dl { background: #F4C430; color: #0f172a; }
   #again { background: #334155; color: #fff; }
 </style>
 </head>
 <body>
 
-<div id="cam"><video id="preview" autoplay muted playsinline></video><div id="rec"></div></div>
+<div id="cam"><canvas id="cv" width="720" height="1280"></canvas><div id="rec"></div></div>
 <div id="cuemsg">👀 念的時候盡量看手機「最上方的鏡頭」</div>
+<video id="raw" autoplay muted playsinline style="display:none"></video>
 
 <div id="viewport"><div id="script"></div></div>
 
 <div id="bar">
   <button id="go">📷 開相機</button>
+  <span class="lbl">濾鏡</span>
+  <button class="flt" data-b="0">關</button>
+  <button class="flt on" data-b="1">自然</button>
+  <button class="flt" data-b="2">柔膚</button>
   <span class="lbl">速度</span><button data-spd="-1">－</button><button data-spd="1">＋</button>
   <span class="lbl">字</span><button data-fz="-1">－</button><button data-fz="1">＋</button>
-  <button id="save">⬇️ 存影片</button>
 </div>
 
 <div id="count"></div>
@@ -105,14 +102,49 @@ __450__。 落後一半。 但讓我真正森 77 的，不是這個。
 
 const $ = s => document.querySelector(s);
 const vp = $('#viewport'), script = $('#script'), go = $('#go');
-let speed = 4, playing = false, raf = null, last = 0;
-let stream = null, rec = null, chunks = [], state = 'idle'; // idle→ready→recording→done
+const raw = $('#raw'), cv = $('#cv'), ctx = cv.getContext('2d');
+const W = 720, H = 1280, tmp = document.createElement('canvas');
+let speed = 4, playing = false, raf = null, last = 0, beauty = 1;
+let stream = null, rec = null, chunks = [], state = 'idle', drawing = false;
 
-script.innerHTML = SCRIPT.split('\n').filter(l=>l.trim()).map(raw=>{
-  let [m,c] = raw.split('//');
-  m = m.replace(/__(.+?)__/g,'<span class="em">$1</span>');
+script.innerHTML = SCRIPT.split('\n').filter(l=>l.trim()).map(r=>{
+  let [m,c] = r.split('//'); m = m.replace(/__(.+?)__/g,'<span class="em">$1</span>');
   return `<div class="line">${m}${c?`<span class="cue">（${c.trim()}）</span>`:''}</div>`;
 }).join('');
+
+// ===== 直式畫布 + 人像濾鏡 =====
+function cover(vid){
+  const vw=vid.videoWidth, vh=vid.videoHeight; if(!vw) return;
+  const s=Math.max(W/vw, H/vh), dw=vw*s, dh=vh*s;
+  ctx.drawImage(vid,(W-dw)/2,(H-dh)/2,dw,dh);
+}
+function frame(){
+  if(!drawing) return;
+  if(raw.videoWidth){
+    ctx.globalAlpha=1; ctx.globalCompositeOperation='source-over';
+    cover(raw);
+    if(beauty>0){
+      // 柔膚：縮小再放大＝柔焦，疊在原圖上
+      const sc = beauty===2?9:13;
+      tmp.width=Math.round(W/sc); tmp.height=Math.round(H/sc);
+      tmp.getContext('2d').drawImage(cv,0,0,tmp.width,tmp.height);
+      ctx.imageSmoothingEnabled=true;
+      ctx.globalAlpha = beauty===2?0.42:0.28;
+      ctx.drawImage(tmp,0,0,W,H);
+      ctx.globalAlpha=1;
+      // 打亮
+      ctx.globalCompositeOperation='soft-light';
+      ctx.fillStyle = beauty===2?'rgba(255,250,245,0.55)':'rgba(255,250,245,0.34)';
+      ctx.fillRect(0,0,W,H);
+      // 暖色氣色
+      ctx.globalCompositeOperation='overlay';
+      ctx.fillStyle = beauty===2?'rgba(255,222,194,0.11)':'rgba(255,228,202,0.06)';
+      ctx.fillRect(0,0,W,H);
+      ctx.globalCompositeOperation='source-over';
+    }
+  }
+  requestAnimationFrame(frame);
+}
 
 function tick(t){ if(!playing) return; if(!last) last=t;
   const dt=(t-last)/1000; last=t; vp.scrollTop += speed*22*dt;
@@ -124,11 +156,11 @@ function pauseScroll(){ playing=false; cancelAnimationFrame(raf); }
 async function openCam(){
   try{
     stream = await navigator.mediaDevices.getUserMedia({
-      video:{ facingMode:'user', width:{ideal:1080}, height:{ideal:1920} }, audio:true });
-    $('#preview').srcObject = stream;
-    state='ready'; go.textContent='● 開始錄'; go.classList.add('recording');
-    $('#msg').textContent='';
-  }catch(e){ $('#msg').innerHTML='打不開相機 😣<br>請在彈出的視窗按「允許」相機與麥克風，<br>再重新整理頁面。'; }
+      video:{ facingMode:'user', width:{ideal:1280}, height:{ideal:720} }, audio:true });
+    raw.srcObject = stream; await raw.play().catch(()=>{});
+    drawing=true; frame();
+    state='ready'; go.textContent='● 開始錄'; go.classList.add('recording'); $('#msg').textContent='';
+  }catch(e){ $('#msg').innerHTML='打不開相機 😣<br>請在彈出視窗按「允許」相機與麥克風，再重新整理。<br>（必須用 https 網址開，不能用本機檔案）'; }
 }
 function pickMime(){
   const list=['video/mp4','video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'];
@@ -136,44 +168,44 @@ function pickMime(){
 }
 function startRec(){
   chunks=[]; const mime=pickMime();
-  rec = new MediaRecorder(stream, mime?{mimeType:mime}:undefined);
+  const vstream = cv.captureStream(30);
+  const mixed = new MediaStream([...vstream.getVideoTracks(), ...stream.getAudioTracks()]);
+  rec = new MediaRecorder(mixed, mime?{mimeType:mime}:undefined);
   rec.ondataavailable = e => { if(e.data.size) chunks.push(e.data); };
   rec.onstop = () => {
     const blob = new Blob(chunks, {type: chunks[0]?.type || 'video/mp4'});
     const url = URL.createObjectURL(blob);
     $('#outvid').src = url; $('#dl').href = url;
-    const isMp4 = (blob.type||'').includes('mp4');
-    $('#dl').setAttribute('download', isMp4 ? '父子對決Day15.mp4' : '父子對決Day15.webm');
-    $('#outtip').innerHTML = '影片錄好了！<br>① 按「下載到手機」存檔；<br>② 或長按上面的影片 →「儲存影片」到相簿。<br>再上傳到 IG 即可。';
+    const mp4 = (blob.type||'').includes('mp4');
+    $('#dl').setAttribute('download', mp4?'父子對決Day15.mp4':'父子對決Day15.webm');
+    $('#outtip').innerHTML = '直式影片錄好了！<br>① 按「下載到手機」存檔；<br>② 或長按上面影片 →「儲存影片」到相簿。';
     $('#out').style.display='flex';
   };
-  // 3-2-1 倒數後同時開錄＋捲動
   let n=3; const c=$('#count'); c.style.display='flex'; c.textContent=n;
   const iv=setInterval(()=>{ n--; if(n<=0){ clearInterval(iv); c.style.display='none';
-      rec.start(); $('#rec').style.display='block'; startScroll();
+      rec.start(); $('#rec').style.display='block'; vp.scrollTop=0; startScroll();
       state='recording'; go.textContent='■ 停止'; }
     else c.textContent=n; }, 800);
 }
 function stopRec(){ pauseScroll(); $('#rec').style.display='none';
-  if(rec && rec.state!=='inactive') rec.stop(); state='done'; go.textContent='● 重新錄'; go.classList.add('recording'); }
+  if(rec && rec.state!=='inactive') rec.stop(); state='done'; go.textContent='● 重新錄'; }
 
 go.onclick = () => {
   if(state==='idle') openCam();
-  else if(state==='ready' || state==='done'){ vp.scrollTop=0; startRec(); }
+  else if(state==='ready'||state==='done'){ startRec(); }
   else if(state==='recording') stopRec();
 };
-// 點畫面：錄影中可暫停/繼續「捲動」（不中斷錄影）
-vp.onclick = () => { if(state==='recording'){ playing ? pauseScroll() : startScroll(); } };
+vp.onclick = () => { if(state==='recording'){ playing?pauseScroll():startScroll(); } };
 
+document.querySelectorAll('.flt').forEach(b=> b.onclick=e=>{ e.stopPropagation();
+  beauty=+b.dataset.b; document.querySelectorAll('.flt').forEach(x=>x.classList.remove('on')); b.classList.add('on'); });
 document.querySelectorAll('[data-spd]').forEach(b=> b.onclick=e=>{ e.stopPropagation();
   speed=Math.min(10,Math.max(1,speed+(+b.dataset.spd))); });
 document.querySelectorAll('[data-fz]').forEach(b=> b.onclick=e=>{ e.stopPropagation();
   const cur=parseFloat(getComputedStyle(document.querySelector('.line')).fontSize);
   const px=Math.min(120,Math.max(18,cur+(+b.dataset.fz)*5));
   document.querySelectorAll('.line').forEach(l=>l.style.fontSize=px+'px'); });
-
-$('#again').onclick = () => { $('#out').style.display='none'; vp.scrollTop=0;
-  state='ready'; go.textContent='● 開始錄'; };
+$('#again').onclick = () => { $('#out').style.display='none'; vp.scrollTop=0; state='ready'; go.textContent='● 開始錄'; };
 </script>
 </body>
 </html>
