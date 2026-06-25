@@ -1,11 +1,11 @@
 {
   "schema": "v4",
-  "updated": "2026-06-25 21:33 台北",
-  "followers": 457,
+  "updated": "2026-06-26 00:18 台北",
+  "followers": 460,
   "goal": 1000,
-  "dday": 15,
-  "day": 15,
-  "warday": 14,
+  "dday": 14,
+  "day": 16,
+  "warday": 15,
   "nightReport": {
     "title": "🌙 昨夜自走成果報告",
     "href": "夜間成果.html",
@@ -82,32 +82,32 @@
         "key": "ig",
         "name": "Instagram",
         "metric": "followers",
-        "current": 457,
+        "current": 460,
         "live": true,
         "delta": {
           "day": {
-            "value": 13,
+            "value": 3,
             "days": 1,
             "note": ""
           },
           "week": {
-            "value": 213,
+            "value": 145,
             "days": 7,
             "note": ""
           },
           "quarter": {
-            "value": 430,
-            "days": 14,
+            "value": 433,
+            "days": 15,
             "note": ""
           },
           "half": {
-            "value": 430,
-            "days": 14,
+            "value": 433,
+            "days": 15,
             "note": ""
           },
           "year": {
-            "value": 430,
-            "days": 14,
+            "value": 433,
+            "days": 15,
             "note": ""
           }
         }
@@ -218,11 +218,11 @@
         "key": "site",
         "name": "官網",
         "metric": "users",
-        "current": 29,
+        "current": 23,
         "live": true,
         "delta": {
           "day": {
-            "value": -12,
+            "value": -6,
             "days": 1,
             "note": ""
           },
@@ -835,20 +835,27 @@
       "fb": 12,
       "threads": 33,
       "site": 29
+    },
+    "2026-06-26": {
+      "ig": 460,
+      "yt": 19700,
+      "fb": 12,
+      "threads": 33,
+      "site": 23
     }
   },
   "channels": {
     "ig": {
-      "followers": 457,
+      "followers": 460,
       "live": true,
-      "updated": "06/25 21:33"
+      "updated": "06/26 00:18"
     },
     "yt": {
       "subs": 19700,
-      "views": 806292,
+      "views": 806381,
       "videos": 34,
       "live": true,
-      "updated": "06/25 21:33"
+      "updated": "06/26 00:18"
     },
     "fb": {
       "followers": 12,
@@ -856,18 +863,18 @@
       "last_time": "2026-06-24",
       "last_url": "https://www.facebook.com/122116524549125488/posts/122116892391125488",
       "live": true,
-      "updated": "06/25 21:33"
+      "updated": "06/26 00:18"
     },
     "threads": {
       "followers": 33,
       "live": true,
-      "updated": "06/25 21:33"
+      "updated": "06/26 00:18"
     },
     "site": {
-      "pageviews": 60,
-      "users": 29,
+      "pageviews": 48,
+      "users": 23,
       "live": true,
-      "updated": "06/25 21:33"
+      "updated": "06/26 00:18"
     }
   },
   "dailyTrend": [
@@ -925,25 +932,24 @@
       "date": "2026-06-25",
       "ig": 457,
       "delta": 13
+    },
+    {
+      "date": "2026-06-26",
+      "ig": 460,
+      "delta": 3
     }
   ],
   "todayStatus": {
     "warcard": {
-      "posted": true,
-      "time": "07:36",
-      "url": "https://www.instagram.com/p/DZ_L9a3ibIr/"
+      "posted": false
     },
     "reel": {
-      "posted": true,
-      "time": "20:28",
-      "url": "https://www.instagram.com/reel/DaAkL3zot5b/"
+      "posted": false
     },
     "fbquote": {
-      "posted": true,
-      "time": "00:27",
-      "url": "https://www.facebook.com/122116524549125488/posts/122116871121125488"
+      "posted": false
     },
-    "checked": "06/25 21:33",
-    "date": "2026-06-25"
+    "checked": "06/26 00:18",
+    "date": "2026-06-26"
   }
 }
