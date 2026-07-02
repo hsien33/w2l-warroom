@@ -1,0 +1,43 @@
+# 北極星看板：每日拉 GA4 → polaris.json → 戰情室
+# 🔴 排程鐵則：主力觸發＝Google Apps Script 每天 06:20 台北打 workflow_dispatch（見 gas_polaris_trigger.txt）。
+#    下面的 cron 只是「備援」，GitHub cron 會漂移、不可當主力。
+name: ga-polaris-daily
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 22 * * *"   # 備援：06:40 台北（UTC 22:40 前一日）
+
+jobs:
+  polaris:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: install deps
+        run: pip install google-auth requests
+      - name: pull GA4 -> polaris.json (+ 出國模式告警)
+        env:
+          GA4_SA_JSON: ${{ secrets.GA4_SA_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: python ga_polaris.py
+      - name: commit polaris.json
+        run: |
+          git config user.name "warroom-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git pull --rebase origin master || true
+          git add polaris.json
+          git diff --staged --quiet || (git commit -m "polaris daily update" && git push)
+      - name: alert on failure (不接受靜默失敗)
+        if: failure()
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\":\"$TG_CHAT_ID\",\"text\":\"⚠️ 北極星看板更新失敗（ga-polaris.yml）。今天沒有新 GA 數據，請看 Actions log。\"}" || true

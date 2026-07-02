@@ -1,0 +1,22 @@
+// ============================================================
+// 北極星看板 主力排程（Google Apps Script 時間觸發器）
+// 依 2026-06-30 排程鐵則：GitHub cron 只當備援，準點觸發走 GAS。
+// Jeff 安裝步驟（一次 5 分鐘）：
+//  1. 開 https://script.google.com → 新專案，貼上整段程式碼
+//  2. 左側「專案設定」→ 指令碼屬性 → 新增屬性 GH_PAT ＝ GitHub 個人權杖
+//     （github.com → Settings → Developer settings → Fine-grained token，
+//       只勾 hsien33/w2l-warroom 的 Actions: Read and write）
+//  3. 執行一次 triggerPolaris()（會要求授權 → 允許）確認 Log 顯示 204
+//  4. 左側「觸發條件」→ 新增 → 函式 triggerPolaris → 時間驅動
+//     → 天計時器 → 上午 6 時至 7 時
+// ============================================================
+function triggerPolaris() {
+  var pat = PropertiesService.getScriptProperties().getProperty('GH_PAT');
+  var res = UrlFetchApp.fetch(
+    'https://api.github.com/repos/hsien33/w2l-warroom/actions/workflows/ga-polaris.yml/dispatches',
+    { method: 'post',
+      headers: { Authorization: 'Bearer ' + pat, Accept: 'application/vnd.github+json' },
+      payload: JSON.stringify({ ref: 'master' }),
+      muteHttpExceptions: true });
+  Logger.log(res.getResponseCode());   // 204 = 成功
+}

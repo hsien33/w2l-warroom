@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<!-- 財富煉金術戰情室 favicon（與 utm.html 同款） -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>北極星看板｜財富煉金術 戰情室</title>
+<style>
+:root{--ink:#0b1120;--panel:#131c2e;--panel2:#0f172a;--gold:#F4C430;--cream:#f4f1e8;--mut:#9aa6b8;--line:rgba(244,196,48,.16);--ok:#34d399;--warn:#fbbf24;--bad:#f87171}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:radial-gradient(1100px 500px at 50% -10%,#16223c 0,var(--ink) 55%);color:var(--cream);line-height:1.7;min-height:100vh;padding:34px 16px 90px}
+.wrap{max-width:900px;margin:0 auto}
+h1{font-size:24px;font-weight:900;background:linear-gradient(180deg,#fff,#F4C430);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);font-size:13px;margin:6px 0 22px}
+h2{font-size:15px;color:var(--gold);letter-spacing:.08em;margin:28px 0 12px;font-weight:800}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.lights{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.light{border-radius:14px;padding:14px 16px;border:1px solid var(--line);background:var(--panel)}
+.light b{display:flex;align-items:center;gap:8px;font-size:14px}
+.dot{width:11px;height:11px;border-radius:50%;flex:none}
+.g .dot{background:var(--ok);box-shadow:0 0 9px var(--ok)}.y .dot{background:var(--warn);box-shadow:0 0 9px var(--warn)}.r .dot{background:var(--bad);box-shadow:0 0 9px var(--bad)}
+.light .v{font-size:26px;font-weight:900;color:#fff;margin:2px 0}
+.g .v{color:var(--ok)}.y .v{color:var(--warn)}.r .v{color:var(--bad)}
+.light .adv{font-size:12.5px;color:var(--mut)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-align:center}
+.kpi .n{font-size:28px;font-weight:900;color:var(--gold)}
+.kpi .t{font-size:12px;color:var(--mut)}
+.kpi .s{font-size:11.5px;color:var(--mut)}
+.funcols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:680px){.funcols{grid-template-columns:1fr}}
+.fstep{display:flex;align-items:center;gap:10px;margin:9px 0}
+.fbar{height:22px;border-radius:6px;background:linear-gradient(90deg,#d4af37,#F4C430);min-width:3px;flex:none}
+.fl{font-size:12.5px;color:var(--mut);width:96px;flex:none}
+.fn{font-size:13px;font-weight:800;color:#fff}
+.fr{font-size:11.5px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:var(--gold);text-align:left;font-size:12px;letter-spacing:.05em;padding:7px 8px;border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.05)}
+td.num{text-align:right;font-weight:700;color:#fff}
+.alert{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.35);color:#fecaca;border-radius:12px;padding:12px 16px;margin-bottom:10px;font-size:13.5px}
+svg text{font-family:inherit}
+.back{position:fixed;left:16px;bottom:16px;background:var(--panel);border:1px solid var(--line);color:var(--cream);border-radius:999px;padding:9px 18px;font-size:13px;text-decoration:none}
+.tblwrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>⭐ 北極星看板</h1>
+  <div class="lead">兩站 Email 名單＝唯一北極星 · <span id="upd">載入中…</span> · 資料源 GA4（每日 06:30 自動更新）· <span id="pver" style="opacity:.7">v—</span></div>
+
+  <!-- 佔位卡：polaris.json 不存在／status:error／示範數據時顯示 -->
+  <div class="card" id="setup" style="display:none;border-color:rgba(251,191,36,.45);margin-bottom:18px">
+    <b style="color:var(--warn)">⚠ 看板還沒接到 GA4 真實數據</b>
+    <div style="font-size:13px;color:var(--mut);margin-top:8px" id="setup-msg"></div>
+    <div style="font-size:13.5px;margin-top:10px;line-height:2">
+      先試最快的一步：GitHub → Actions → 手動跑一次 <b style="color:var(--gold)">ga-polaris-daily</b>（repo 的 GA4 secrets 2026-06-20 已設好且驗證能拉數，多半跑一次就亮）。<br>
+      若跑了仍失敗，照三步驟重新授權：<br>
+      ① <b>GCP 建服務帳戶＋下載 JSON key</b>：console.cloud.google.com → IAM與管理 → 服務帳戶 → 建立 → 金鑰 → 新增金鑰（JSON）<br>
+      ② <b>GA4 加檢視權限</b>：GA4 管理 → 資源存取管理 → 新增使用者 → 貼上服務帳戶 email → 角色「檢視者」<br>
+      ③ <b>GitHub 存 Secrets</b>：repo Settings → Secrets and variables → Actions → 更新 <b>GA4_SA_JSON</b>（整份 JSON 內容）與 <b>GA4_PROPERTY_ID</b>（GA4 資源的純數字 ID）
+    </div>
+  </div>
+
+  <div id="alerts"></div>
+  <div class="lights" id="lights"></div>
+
+  <h2>名單 · 昨日／7日／30日</h2>
+  <div class="kpis" id="kpis"></div>
+
+  <h2>近 30 天趨勢（金柱＝當日名單 · 線＝活躍訪客）</h2>
+  <div class="card"><svg id="trend" width="100%" height="150" viewBox="0 0 860 150" preserveAspectRatio="none"></svg></div>
+
+  <h2>漏斗（近 7 日）</h2>
+  <div class="funcols">
+    <div class="card"><b style="color:#8a9a6b">🌱 光合作用 grow</b><div id="fun-grow"></div></div>
+    <div class="card"><b style="color:var(--gold)">🏆 財富煉金術 www</b><div id="fun-wealth"></div></div>
+  </div>
+
+  <h2>流量從哪來（近 30 日 UTM／來源排行）</h2>
+  <div class="card tblwrap"><table id="utm"><thead><tr><th>來源</th><th>媒介</th><th>活動</th><th style="text-align:right">工作階段</th><th style="text-align:right">名單</th></tr></thead><tbody></tbody></table></div>
+</div>
+<a class="back" href="index.html">‹ 回戰情室</a>
+<script>
+/* 頁頭版本戳（防快取比照站規）：version.json 永遠 no-store 抓最新 */
+fetch('version.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json())
+  .then(v=>{document.getElementById('pver').textContent='v'+v.version;}).catch(()=>{});
+function showSetup(msg){
+  document.getElementById('setup').style.display='block';
+  document.getElementById('setup-msg').textContent=msg||'';
+}
+fetch('polaris.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(d=>{
+  if(d.status==='error'){
+    document.getElementById('upd').textContent='更新 '+(d.updated||'—');
+    showSetup('最近一次拉數失敗：'+(d.error||'未知錯誤')+'。錯誤已同步發 Telegram，詳情看 GitHub Actions log。');
+    return;
+  }
+  if(d.status!=='ok')showSetup('目前顯示的是示範空數據——還沒成功跑過第一次 GA4 拉數。');
+  document.getElementById('upd').textContent='更新 '+d.updated;
+  // 告警
+  document.getElementById('alerts').innerHTML=(d.alerts||[]).map(a=>'<div class="alert">🚨 '+a+'</div>').join('');
+  // 紅綠燈
+  const cls={green:'g',yellow:'y',red:'r'};
+  document.getElementById('lights').innerHTML=(d.lights||[]).map(l=>
+    '<div class="light '+(cls[l.status]||'y')+'"><b><span class="dot"></span>'+l.label+'</b><div class="v">'+l.value+'</div><div class="adv">'+(l.advice||'')+'</div></div>').join('');
+  // KPI 卡
+  const sg=p=>(p.events&&p.events.email_signup)||0;
+  const rate=p=>p.users?(sg(p)/p.users*100).toFixed(1)+'%':'—';
+  document.getElementById('kpis').innerHTML=[
+    ['昨日名單',sg(d.yesterday),d.yesterday_date],['7日名單',sg(d.d7),'訂閱率 '+rate(d.d7)],
+    ['30日名單',sg(d.d30),'訂閱率 '+rate(d.d30)],['7日活躍',d.d7.users,'grow '+(d.d7.sites.grow?d.d7.sites.grow.users:0)+' · 財富 '+(d.d7.sites.wealth?d.d7.sites.wealth.users:0)]
+  ].map(k=>'<div class="kpi"><div class="n">'+k[1]+'</div><div class="t">'+k[0]+'</div><div class="s">'+k[2]+'</div></div>').join('');
+  // 趨勢圖
+  const t=d.trend||[],W=860,H=150,n=t.length||1,bw=W/n*.55;
+  const mu=Math.max(...t.map(x=>x.users),1),ms=Math.max(...t.map(x=>x.signups),1);
+  let s='';
+  t.forEach((x,i)=>{const cx=i*W/n+W/n/2,bh=x.signups/ms*(H-30);
+    s+='<rect x="'+(cx-bw/2)+'" y="'+(H-14-bh)+'" width="'+bw+'" height="'+bh+'" rx="2" fill="#F4C430" opacity="'+(x.signups?1:.12)+'"/>';
+    if(x.signups)s+='<text x="'+cx+'" y="'+(H-18-bh)+'" fill="#F4C430" font-size="10" text-anchor="middle">'+x.signups+'</text>';});
+  s+='<polyline fill="none" stroke="#7dd3fc" stroke-width="1.6" opacity=".8" points="'+t.map((x,i)=>(i*W/n+W/n/2)+','+(H-14-x.users/mu*(H-34))).join(' ')+'"/>';
+  s+='<text x="4" y="12" fill="#9aa6b8" font-size="10">'+(t[0]?t[0].date.slice(5):'')+'</text><text x="'+(W-4)+'" y="12" fill="#9aa6b8" font-size="10" text-anchor="end">'+(t[n-1]?t[n-1].date.slice(5):'')+'</text>';
+  document.getElementById('trend').innerHTML=s;
+  // 漏斗
+  const fun=(id,arr)=>{const mx=Math.max(...arr.map(x=>x.count),1);
+    document.getElementById(id).innerHTML=arr.map(x=>'<div class="fstep"><span class="fl">'+x.step+'</span><span class="fbar" style="width:'+Math.max(x.count/mx*55,1)+'%"></span><span class="fn">'+x.count+'</span>'+(x.rate!=null?'<span class="fr">'+x.rate+'%</span>':'')+'</div>').join('');};
+  fun('fun-grow',d.funnel.grow); fun('fun-wealth',d.funnel.wealth);
+  // UTM 表
+  document.querySelector('#utm tbody').innerHTML=(d.utm||[]).map(u=>
+    '<tr><td>'+u.source+'</td><td>'+u.medium+'</td><td>'+(u.campaign==='(not set)'?'—':u.campaign)+'</td><td class="num">'+u.sessions+'</td><td class="num" style="color:var(--gold)">'+(u.signups||'')+'</td></tr>').join('');
+}).catch(e=>{
+  document.getElementById('upd').textContent='polaris.json 還沒產生';
+  showSetup('polaris.json 還不存在——push 後到 GitHub Actions 手動跑一次 ga-polaris-daily 即會產生。');
+});
+</script>
+</body>
+</html>

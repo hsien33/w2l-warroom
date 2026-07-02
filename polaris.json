@@ -1,0 +1,257 @@
+{
+ "updated": "尚未接通 · 這是示範空數據（跑一次 ga-polaris workflow 即變真數據）",
+ "yesterday_date": "2026-07-02",
+ "yesterday": {
+  "users": 0,
+  "pv": 0,
+  "events": {},
+  "sites": {
+   "grow": {
+    "users": 0,
+    "events": {}
+   },
+   "wealth": {
+    "users": 0,
+    "events": {}
+   }
+  }
+ },
+ "d7": {
+  "users": 0,
+  "pv": 0,
+  "events": {},
+  "sites": {
+   "grow": {
+    "users": 0,
+    "events": {}
+   },
+   "wealth": {
+    "users": 0,
+    "events": {}
+   }
+  }
+ },
+ "d30": {
+  "users": 0,
+  "pv": 0,
+  "events": {},
+  "sites": {
+   "grow": {
+    "users": 0,
+    "events": {}
+   },
+   "wealth": {
+    "users": 0,
+    "events": {}
+   }
+  }
+ },
+ "funnel": {
+  "grow": [
+   {
+    "step": "到站(活躍)",
+    "count": 0,
+    "rate": null
+   },
+   {
+    "step": "看到CTA",
+    "count": 0,
+    "rate": 0
+   },
+   {
+    "step": "Email訂閱",
+    "count": 0,
+    "rate": 0
+   },
+   {
+    "step": "領到對話卡",
+    "count": 0,
+    "rate": 0
+   }
+  ],
+  "wealth": [
+   {
+    "step": "到站(活躍)",
+    "count": 0,
+    "rate": null
+   },
+   {
+    "step": "用了工具",
+    "count": 0,
+    "rate": 0
+   },
+   {
+    "step": "Email訂閱",
+    "count": 0,
+    "rate": 0
+   },
+   {
+    "step": "購買意圖",
+    "count": 0,
+    "rate": 0
+   }
+  ]
+ },
+ "utm": [],
+ "trend": [
+  {
+   "date": "2026-06-03",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-04",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-05",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-06",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-07",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-08",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-09",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-10",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-11",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-12",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-13",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-14",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-15",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-16",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-17",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-18",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-19",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-20",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-21",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-22",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-23",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-24",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-25",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-26",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-27",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-28",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-29",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-06-30",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-07-01",
+   "users": 0,
+   "signups": 0
+  },
+  {
+   "date": "2026-07-02",
+   "users": 0,
+   "signups": 0
+  }
+ ],
+ "lights": [
+  {
+   "status": "yellow",
+   "label": "資料待接",
+   "value": "—",
+   "advice": "push 後手動跑一次 Actions 的 ga-polaris-daily，本頁即顯示真實 GA4 數據。"
+  }
+ ],
+ "alerts": []
+}
