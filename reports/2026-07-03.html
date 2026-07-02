@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自走成果 · 網站全面進化 · 2026-07-03</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><polygon points='64,18 114,106 14,106' fill='none' stroke='%23b8860b' stroke-width='8' stroke-linejoin='round'/><path d='M64 102 V74' stroke='%237a8c55' stroke-width='7' stroke-linecap='round' fill='none'/><ellipse cx='48' cy='74' rx='17' ry='9' fill='%238a9a6b' transform='rotate(-32 48 74)'/><ellipse cx='80' cy='68' rx='17' ry='9' fill='%238a9a6b' transform='rotate(32 80 68)'/></svg>">
+<style>
+:root{--cream:#fbf8f1;--ink:#2f2a22;--ink2:#5a5348;--soft:#8c8475;--gold:#b8860b;--goldd:#7a5b14;--leaf:#6f8455;--navy:#26374f;--line:rgba(120,100,60,.18)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fff,var(--cream));color:var(--ink);font-family:"Noto Serif TC",serif;line-height:1.9;padding:30px 16px 90px}
+.wrap{max-width:920px;margin:0 auto}
+.cover{background:linear-gradient(135deg,#fff7ea,#f5efe2);border:1px solid var(--line);border-radius:22px;padding:30px 30px 26px;text-align:center;margin-bottom:16px}
+.cover .ey{font-family:Inter,sans-serif;letter-spacing:.16em;font-size:12px;color:var(--goldd)}
+.cover h1{font-size:26px;margin:10px 0 6px}
+.cover p{color:var(--ink2);margin:2px 0;font-size:14px}
+.verdict{background:#fffdfa;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:16px;padding:20px 24px;margin:18px 0}
+.vlab{font-family:Inter,sans-serif;font-size:12px;letter-spacing:.1em;color:var(--goldd);margin-bottom:6px}
+.verdict p{margin:0;font-size:15px;line-height:2.05}
+h2.sec{font-size:20px;color:var(--goldd);border-bottom:2px solid var(--gold);padding-bottom:7px;margin:36px 0 14px}
+table.impl{width:100%;border-collapse:collapse;font-size:13px}
+table.impl th{background:var(--navy);color:#fff;text-align:left;padding:9px 11px;font-family:Inter,sans-serif;font-size:12px}
+table.impl td{border:1px solid var(--line);padding:9px 11px;vertical-align:top;background:#fffdfa}
+td.n{color:var(--soft);font-family:Inter,sans-serif}
+td.t{font-weight:700;min-width:130px}
+td.c{font-family:Consolas,monospace;color:var(--goldd);font-size:12px;white-space:nowrap}
+td.d{color:var(--ink2)}
+.note{font-size:13.5px;color:var(--ink2)}
+.note a{color:var(--goldd);font-weight:700}
+.dlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:11px}
+.dl{display:block;background:#fffdfa;border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink);transition:transform .1s,box-shadow .1s}
+.dl:hover{transform:translateY(-2px);box-shadow:0 12px 26px -18px rgba(0,0,0,.4)}
+.dl.star{border:1.5px solid var(--gold);background:linear-gradient(135deg,#fff3d8,#fffdfa)}
+.dl.zipc{border:1.5px solid rgba(111,132,85,.5);background:linear-gradient(135deg,#f3f6ec,#fffdfa)}
+.dl .g{font-family:Inter,sans-serif;font-size:10.5px;letter-spacing:.05em;color:#fff;background:var(--navy);border-radius:5px;padding:1px 7px}
+.dl b{display:block;margin:8px 0 4px;font-size:14.5px;line-height:1.4}
+.dl p{margin:0;font-size:12.5px;color:var(--ink2)}
+details{background:#fffdfa;border:1px solid var(--line);border-radius:12px;padding:4px 18px;margin:9px 0}
+summary{cursor:pointer;font-weight:800;font-size:15px;color:var(--ink);padding:10px 0}
+details p{margin:0 0 12px;font-size:14px;color:var(--ink2)}
+.honest{background:#fffdfa;border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.honest p{margin:8px 0;font-size:14.3px}
+code{background:#f0e8d6;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-family:Consolas,monospace;font-size:.88em;color:var(--goldd);word-break:break-all}
+b{color:var(--goldd)}
+@media(max-width:560px){.dlist{grid-template-columns:1fr}td.d{display:none}}
+</style></head><body><div class="wrap">
+<div class="cover">
+  <div class="ey">向光而行 WALK2LIGHT · 通宵自走成果 · 顧問團圓桌（Jeff 主席）</div>
+  <h1>網站全面進化 · 一夜成果</h1>
+  <p>財富煉金術 www ＋ 光合作用 grow · 六條水管全接通</p>
+  <p>2026-07-02 23:57 → 07-03 06:00 台北 · 15 項真實作 ＋ 8 份文件 ＋ 3 個部署包</p>
+</div>
+
+<div class="verdict">
+  <div class="vlab">一句話裁定（顧問團圓桌・你當主席）</div>
+  <p><b>兩站的臉是漂亮的，但水管到處在漏</b>——今晚不做新花樣，把「訂閱→交付→gating→互導→金流→數據」六條水管全部接通鎖緊。你問的 gating 答案也定了：<b>「八字」維持導流版</b>（LITE 公開、完整版只走 DM）——策略本來就對，錯在完整版被公開直連＋進了 sitemap＝白送；修漏四件套今晚已經上碼。</p>
+</div>
+
+<h2 class="sec">🟢 真做掉的：15 項實作（每項 build 驗證＋git 存檔）</h2>
+<table class="impl"><thead><tr><th>#</th><th>項目</th><th>做了什麼</th><th>commit</th></tr></thead><tbody>
+<tr><td class="n">01</td><td class="t">八字 gating 修漏四件套</td><td class="d">完整版 noindex／LITE canonical 自指／start 改連 LITE／sitemap 只收 LITE——DM 交換條件不再白送</td><td class="c">grow</td></tr><tr><td class="n">02</td><td class="t">grow OG 分享圖全套換暖風</td><td class="d">六張鉤子卡＋全部文章卡：原本分享出去是黑金理財卡，現在是奶白日出「光合作用」卡</td><td class="c">3aedbbb</td></tr><tr><td class="n">03</td><td class="t">grow 襯線字型自託管</td><td class="d">Noto Serif TC 子集 622KB＋metric fallback——Windows／Android 終於看得到品牌襯線</td><td class="c">5389da8</td></tr><tr><td class="n">04</td><td class="t">grow token 歸位</td><td class="d">ink／gold 全站改暖風色＋刪 12 組財經遺留 token（逐組 grep 零引用才刪）</td><td class="c">0959bbe</td></tr><tr><td class="n">05</td><td class="t">grow hero 減法</td><td class="d">刪同屏重複的品牌名、h1 加大到 44px、留白加大</td><td class="c">9fa1e6b</td></tr><tr><td class="n">06</td><td class="t">www 訂閱漏斗補完</td><td class="d">/welcome 即領頁＋三手冊 /guide/ 上站＋表單成功自動轉導——北極星最大斷點接通</td><td class="c">7eaaf6c</td></tr><tr><td class="n">07</td><td class="t">www 互導雙行道</td><td class="d">footer 家族列＋Header 主 CTA 從「訂閱 YouTube」換成「免費領工具箱」</td><td class="c">7eaaf6c</td></tr><tr><td class="n">08</td><td class="t">www 紙藝工具對比修正</td><td class="d">#8A7E72→#6b6357 過 WCAG AA——工具數字戶外手機看得清</td><td class="c">2612b96</td></tr><tr><td class="n">09</td><td class="t">dad-bet 收官定版＋許願池</td><td class="d">你的原話（含「每天不放棄」）＋21 天＋「下一章・家長許願池」區塊</td><td class="c">e549b3c</td></tr><tr><td class="n">10</td><td class="t">金流 PHP 三件套</td><td class="d">checkout＋webhook＋health＋共用庫：綠界官方測試向量逐字元通過、冪等＋斷信降級都有</td><td class="c">5148a93</td></tr><tr><td class="n">11</td><td class="t">北極星戰情管線上線</td><td class="d">GA4→GitHub Actions 每日拉數→看板頁；已實跑成功拉到真資料</td><td class="c">warroom</td></tr><tr><td class="n">12</td><td class="t">grow /tools 正式路由</td><td class="d">工具總覽頁＋資料抽單一事實來源＋導覽歸位</td><td class="c">e896af3</td></tr><tr><td class="n">13</td><td class="t">grow 工具「下一步」頁尾</td><td class="d">10 支單檔工具統一出口（領對話卡＋回工具箱＋IG）——不再是死路</td><td class="c">75fed84</td></tr><tr><td class="n">14</td><td class="t">www 工具統一裱框</td><td class="d">14 支工具外殼＋上緣 2px 金條——紙藝／暗色像同一家畫廊</td><td class="c">fd8ac6f</td></tr><tr><td class="n">15</td><td class="t">補習費完整版搬進 grow ＋手機 preload 修正</td><td class="d">親子工具歸親子站（noindex）；hero 人像只在桌機預載</td><td class="c">abbbdce</td></tr>
+</tbody></table>
+<p class="note">另有：北極星看板已實際上線並拉到真資料 → <a href="https://hsien33.github.io/w2l-warroom/%E5%8C%97%E6%A5%B5%E6%98%9F.html" target="_blank" rel="noopener">hsien33.github.io/w2l-warroom/北極星.html</a>（<b>GA4 憑證既有、你不用申請任何服務帳戶</b>）。</p>
+
+<h2 class="sec">成品庫（12 項，點開即用）</h2>
+<div class="dlist">
+<a class="dl star" href="0703_★網站進化指揮儀表板_先開這份.html"><span class="g">總覽</span><b>★ 網站進化指揮儀表板（先開這份）</b><p>六條水管＋15 項實作＋三個部署包＋你該做的，一頁指揮台。</p></a>
+<a class="dl star" href="0703_出國前全綠檢核表.html"><span class="g">先做</span><b>出國前全綠檢核表</b><p>AI 已完成／你待辦 7 件（約 3 小時）／出發前全綠驗收／出國每日 30 秒巡檢。</p></a>
+<a class="dl star" href="0703_部署包與部署說明.html"><span class="g">先做</span><b>部署包與部署說明</b><p>三包各解壓到哪、api 紅線、上傳後驗收清單，40 分鐘照做。</p></a>
+<a class="dl" href="0703_美工設計改造書.html"><span class="g">文件</span><b>美工設計改造書</b><p>OG／字型／token／對比裱框施工規格（多數今晚已施工完）。</p></a>
+<a class="dl" href="0703_動線UX修正清單.html"><span class="g">文件</span><b>動線 UX 修正清單</b><p>訂閱斷鏈等 7 項，附檔案行號與改法。</p></a>
+<a class="dl" href="0703_兩站資訊架構藍圖.html"><span class="g">文件</span><b>兩站資訊架構藍圖</b><p>www／grow／go 目標頁面樹＋遷移步驟＋URL 規範。</p></a>
+<a class="dl" href="0703_引流與Gating總設計.html"><span class="g">文件</span><b>引流與 Gating 總設計</b><p>一工具一行裁定表＋各平台引流位＋DM 逐字稿＋Kit 三封信。</p></a>
+<a class="dl" href="0703_金流串接方案書.html"><span class="g">文件</span><b>金流串接方案書</b><p>費率比較＋三件套用法＋序號池 SOP＋稅務三條線＋投顧法掃描。</p></a>
+<a class="dl" href="0703_GA北極星戰情包.html"><span class="g">文件</span><b>GA 北極星戰情包</b><p>看板怎麼看、管線架構、挪威每天 30 秒巡檢法。</p></a>
+<a class="dl zipc" href="grow-site_部署_0703.zip"><span class="g">部署</span><b>部署包 grow（167 檔）</b><p>解壓上傳到 grow 子網域根目錄，覆蓋既有檔。</p></a>
+<a class="dl zipc" href="walk2light-site_部署_0703.zip"><span class="g">部署</span><b>部署包 www（385 檔）</b><p>解壓上傳到 public_html 根目錄，覆蓋既有檔。</p></a>
+<a class="dl zipc" href="walk2light-api_金流PHP_0703.zip"><span class="g">部署</span><b>部署包 金流 api（8 檔）</b><p>上傳到 public_html/api/；之後更新網站永不覆蓋這個資料夾。</p></a>
+</div>
+
+<h2 class="sec">接下來你該做的（7/09 出發前，約 3 小時）</h2>
+<details open><summary>① 上傳三個部署包（約 40 分鐘）——15 項實作全封在裡面，不上傳線上看不到</summary>
+<p>照「部署包與部署說明」：grow 包→grow 子網域根目錄、www 包→<code>public_html</code> 根目錄、api 包→<code>public_html/api/</code>（新資料夾）。🔴 紅線：/api 上傳一次之後，日後更新網站的部署包<b>永不覆蓋它</b>（裡面會有訂單與序號池）。上傳完 Ctrl+Shift+R。</p></details>
+<details><summary>② 綠界三把鑰匙＋額度公告（15 分鐘，可回國再切正式）</summary>
+<p>廠商後台→系統開發管理→系統介接設定，抄 MerchantID／HashKey／HashIV 給我；順看公告 nID=5946 的個人賣家額度。出國期間不開賣的話，金流保持測試環境最穩。</p></details>
+<details><summary>③ pay@walk2light.com 信箱（10 分鐘）</summary>
+<p>hPanel 建信箱＋轉寄到你的 Gmail——序號信與對帳信專用。</p></details>
+<details><summary>④ IG DM 關鍵字自動回覆（40 分鐘）</summary>
+<p>對話／八字／公約／手機／補習——⚠️「補習」連結改給 <code>grow.walk2light.com/tools/tuitionfees-full.html</code>；「韭菜／ETF／新手」等 www 三手冊部署驗過 200 才設。逐字稿在話術庫。</p></details>
+<details><summary>⑤ GA4 後台註冊 site 維度（5 分鐘）＋ Kit 三封信＋ UptimeRobot</summary>
+<p>GA4：Admin→自訂定義→建維度（事件參數 <code>site</code>）——服務帳戶<b>不用申請</b>，既有憑證已驗證可用。Kit 信稿與 UptimeRobot 步驟在檢核表。</p></details>
+
+<h2 class="sec">誠實小結</h2>
+<div class="honest">
+<p>今晚改的都是<b>原始碼與部署包</b>——沒有對外發任何貼文、沒有動線上主機；15 項實作全部等你上傳三個包才會生效（發佈與部署都是你點頭才動）。</p>
+<p>沒做完的：www 系列 pillar 頁（大工程，列後續）；grow 襯線字型 622KB（目標 450KB 受可變字重物理限制達不到，但它取代了 644KB 沒在用的舊字型，淨效益為正）；GitHub Pages 部署偶發「cancelled」訊息（內容實際已上線，無礙）。金流三件套用綠界官方測試向量驗過演算法，但<b>正式環境還沒真刷過一筆</b>——等你的三把鑰匙後我跑一筆實測。</p>
+</div>
+
+<p style="text-align:center;color:var(--soft);font-size:12px;font-family:Inter,sans-serif;margin-top:36px">向光而行 · 一人 × AI 自動化作戰 · 2026-07-03 06:00 收尾</p>
+</div></body></html>
