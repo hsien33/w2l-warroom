@@ -1,24 +1,17 @@
 {
- "updated": "尚未接通 · 這是示範空數據（跑一次 ga-polaris workflow 即變真數據）",
+ "status": "ok",
+ "generatedAt": "2026-07-03 00:58",
+ "updated": "2026-07-03 00:58 台北",
  "yesterday_date": "2026-07-02",
  "yesterday": {
   "users": 0,
   "pv": 0,
   "events": {},
-  "sites": {
-   "grow": {
-    "users": 0,
-    "events": {}
-   },
-   "wealth": {
-    "users": 0,
-    "events": {}
-   }
-  }
+  "sites": {}
  },
  "d7": {
   "users": 0,
-  "pv": 0,
+  "pv": 1,
   "events": {},
   "sites": {
    "grow": {
@@ -32,8 +25,8 @@
   }
  },
  "d30": {
-  "users": 0,
-  "pv": 0,
+  "users": 100,
+  "pv": 177,
   "events": {},
   "sites": {
    "grow": {
@@ -41,7 +34,7 @@
     "events": {}
    },
    "wealth": {
-    "users": 0,
+    "users": 100,
     "events": {}
    }
   }
@@ -56,17 +49,17 @@
    {
     "step": "看到CTA",
     "count": 0,
-    "rate": 0
+    "rate": null
    },
    {
     "step": "Email訂閱",
     "count": 0,
-    "rate": 0
+    "rate": null
    },
    {
     "step": "領到對話卡",
     "count": 0,
-    "rate": 0
+    "rate": null
    }
   ],
   "wealth": [
@@ -78,120 +71,177 @@
    {
     "step": "用了工具",
     "count": 0,
-    "rate": 0
+    "rate": null
    },
    {
     "step": "Email訂閱",
     "count": 0,
-    "rate": 0
+    "rate": null
    },
    {
     "step": "購買意圖",
     "count": 0,
-    "rate": 0
+    "rate": null
    }
   ]
  },
- "utm": [],
+ "utm": [
+  {
+   "source": "(direct)",
+   "medium": "(none)",
+   "campaign": "(direct)",
+   "sessions": 87,
+   "users": 77,
+   "signups": 0
+  },
+  {
+   "source": "w-alchemy.kit.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 15,
+   "users": 13,
+   "signups": 0
+  },
+  {
+   "source": "hsien33.github.io",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 8,
+   "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 5,
+   "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 2,
+   "users": 2,
+   "signups": 0
+  },
+  {
+   "source": "shopping.parenting.com.tw",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 2,
+   "users": 2,
+   "signups": 0
+  },
+  {
+   "source": "m.facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 1,
+   "users": 1,
+   "signups": 0
+  }
+ ],
  "trend": [
   {
    "date": "2026-06-03",
-   "users": 0,
+   "users": 2,
    "signups": 0
   },
   {
    "date": "2026-06-04",
-   "users": 0,
+   "users": 5,
    "signups": 0
   },
   {
    "date": "2026-06-05",
-   "users": 0,
+   "users": 5,
    "signups": 0
   },
   {
    "date": "2026-06-06",
-   "users": 0,
+   "users": 1,
    "signups": 0
   },
   {
    "date": "2026-06-07",
-   "users": 0,
+   "users": 3,
    "signups": 0
   },
   {
    "date": "2026-06-08",
-   "users": 0,
+   "users": 1,
    "signups": 0
   },
   {
    "date": "2026-06-09",
-   "users": 0,
+   "users": 2,
    "signups": 0
   },
   {
    "date": "2026-06-10",
-   "users": 0,
+   "users": 4,
    "signups": 0
   },
   {
    "date": "2026-06-11",
-   "users": 0,
+   "users": 3,
    "signups": 0
   },
   {
    "date": "2026-06-12",
-   "users": 0,
+   "users": 1,
    "signups": 0
   },
   {
    "date": "2026-06-13",
-   "users": 0,
+   "users": 1,
    "signups": 0
   },
   {
    "date": "2026-06-14",
-   "users": 0,
+   "users": 1,
    "signups": 0
   },
   {
    "date": "2026-06-15",
-   "users": 0,
+   "users": 13,
    "signups": 0
   },
   {
    "date": "2026-06-16",
-   "users": 0,
+   "users": 19,
    "signups": 0
   },
   {
    "date": "2026-06-17",
-   "users": 0,
+   "users": 12,
    "signups": 0
   },
   {
    "date": "2026-06-18",
-   "users": 0,
+   "users": 6,
    "signups": 0
   },
   {
    "date": "2026-06-19",
-   "users": 0,
+   "users": 6,
    "signups": 0
   },
   {
    "date": "2026-06-20",
-   "users": 0,
+   "users": 5,
    "signups": 0
   },
   {
    "date": "2026-06-21",
-   "users": 0,
+   "users": 6,
    "signups": 0
   },
   {
    "date": "2026-06-22",
-   "users": 0,
+   "users": 4,
    "signups": 0
   },
   {
@@ -247,10 +297,16 @@
  ],
  "lights": [
   {
-   "status": "yellow",
-   "label": "資料待接",
-   "value": "—",
-   "advice": "push 後手動跑一次 Actions 的 ga-polaris-daily，本頁即顯示真實 GA4 數據。"
+   "status": "red",
+   "label": "昨日名單",
+   "value": "0",
+   "advice": "7 天沒進任何名單＝漏斗斷了。先查兩站訂閱表單能不能送出，再查 IG 導流連結。"
+  },
+  {
+   "status": "red",
+   "label": "7日訂閱率",
+   "value": "0.0%",
+   "advice": "訂閱率<0.5%：磁鐵賣點或表單位置有問題，優先改首頁 CTA。"
   }
  ],
  "alerts": []
