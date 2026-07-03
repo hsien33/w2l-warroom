@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-03 19:02",
- "updated": "2026-07-03 19:02 台北",
+ "generatedAt": "2026-07-03 22:30",
+ "updated": "2026-07-03 22:30 台北",
  "yesterday_date": "2026-07-02",
  "yesterday": {
   "users": 0,
@@ -309,7 +309,10 @@
    "advice": "訂閱率<0.5%：磁鐵賣點或表單位置有問題，優先改首頁 CTA。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（HTTPError）",
+  "財富煉金術 www 連不上（HTTPError）"
+ ],
  "v2": {
   "tools": [],
   "outbound_top": [],
