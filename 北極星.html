@@ -51,6 +51,30 @@ svg text{font-family:inherit}
   <h1>⭐ 北極星看板</h1>
   <div class="lead">兩站 Email 名單＝唯一北極星 · <span id="upd">載入中…</span> · 資料源 GA4（每日 06:30 自動更新）· <span id="pver" style="opacity:.7">v—</span></div>
 
+  <!-- 冷啟動說明帶：新事件剛部署、資料還沒累積時顯示（由 JS 判斷後開啟）-->
+  <div class="card" id="coldstart" style="display:none;border-color:rgba(125,211,252,.4);background:linear-gradient(135deg,#132132,#0f1a2b);margin-bottom:16px">
+    <b style="color:#7dd3fc;font-size:15px">📊 資料正在累積中——這不是故障</b>
+    <div style="font-size:13.5px;color:var(--cream);margin-top:10px;line-height:2">
+      帶追蹤的新版網站是<b style="color:#7dd3fc">今天才上線</b>的，加上 GA4 的 <code style="color:var(--gold)">site</code> 分站維度<b style="color:#7dd3fc">才剛註冊</b>——Google 官方就是要 <b style="color:#7dd3fc">24–48 小時</b>才會把資料填進報表。<br>
+      所以現在下面的「名單／漏斗」多半是 0，是<b>正常的</b>：東西才剛開始記。<b style="color:#7dd3fc">明天早上再打開這頁</b>，數字就會開始長出來。
+    </div>
+    <div style="font-size:13px;color:var(--mut);margin-top:12px;border-top:1px solid var(--line);padding-top:10px">
+      💡 <b style="color:var(--cream)">想現在就親眼確認它有在記？</b>用手機開你的網站（grow.walk2light.com），
+      同時電腦開 <b style="color:var(--gold)">GA4 → 左側「即時」報表</b>——你會在地圖上看到「1 位活躍使用者」就是你自己。這代表追蹤是活的，只是統計報表要隔天才結算。
+    </div>
+  </div>
+
+  <!-- 這頁在看什麼（永遠顯示的白話說明）-->
+  <div class="card" style="border-color:var(--line);margin-bottom:18px;background:var(--panel2)">
+    <b style="color:var(--gold);font-size:14px">這頁只要看三個數字就好</b>
+    <div style="font-size:13px;color:var(--mut);margin-top:8px;line-height:1.95">
+      ① <b style="color:var(--cream)">昨日名單</b>＝昨天多少人留了 Email（唯一真正重要的數字）
+      ② <b style="color:var(--cream)">訂閱率</b>＝每 100 個來的人有幾個留 Email（健康值 ≥ 8%）
+      ③ <b style="color:var(--cream)">漏斗</b>＝到站 → 看到領取按鈕 → 留 Email → 領到卡，哪一步掉最多人，下週就補那一步。<br>
+      其餘都是輔助。<b style="color:var(--cream)">出國時每天瞄一眼「昨日名單」有沒有在增加</b>就夠了。
+    </div>
+  </div>
+
   <!-- 佔位卡：polaris.json 不存在／status:error／示範數據時顯示 -->
   <div class="card" id="setup" style="display:none;border-color:rgba(251,191,36,.45);margin-bottom:18px">
     <b style="color:var(--warn)">⚠ 看板還沒接到 GA4 真實數據</b>
@@ -99,6 +123,10 @@ fetch('polaris.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0
   }
   if(d.status!=='ok')showSetup('目前顯示的是示範空數據——還沒成功跑過第一次 GA4 拉數。');
   document.getElementById('upd').textContent='更新 '+d.updated;
+  // 冷啟動判斷：30 天內都還沒有任何 email_signup 事件＝事件才剛開始記，顯示「資料累積中」說明帶
+  var _sg30=(d.d30&&d.d30.events&&d.d30.events.email_signup)||0;
+  var _ev30=d.d30&&d.d30.events&&Object.keys(d.d30.events).length;
+  if(!_sg30&&!_ev30){document.getElementById('coldstart').style.display='block';}
   // 告警
   document.getElementById('alerts').innerHTML=(d.alerts||[]).map(a=>'<div class="alert">🚨 '+a+'</div>').join('');
   // 紅綠燈
