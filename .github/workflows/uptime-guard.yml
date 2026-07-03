@@ -1,0 +1,35 @@
+# 出國監控雙保險之二：自家 Telegram 警報（UptimeRobot 免費版只剩 email，Telegram 走這條）
+# 每 15 分鐘檢查兩站＋金流心跳，任何一個掛掉 → Telegram 通知 Jeff。
+# 註：GitHub cron 會漂移，本管線定位是「備援警報」；主力照常 = UptimeRobot email（5 分鐘間隔）。
+name: uptime-guard
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check sites and alert telegram
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          fail=""
+          for u in "https://grow.walk2light.com/" "https://www.walk2light.com/" "https://www.walk2light.com/api/health.php"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 25 "$u" || echo "000")
+            echo "$u -> $code"
+            case "$code" in
+              2*|3*) ;;
+              *) fail="${fail}
+          ⛔ ${u} 回應 ${code}" ;;
+            esac
+          done
+          if [ -n "$fail" ]; then
+            curl -s -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+              -d chat_id="${TG_CHAT_ID}" \
+              --data-urlencode text="🚨 walk2light 網站監控警報：${fail}
+
+          （自家 uptime-guard 每 15 分鐘檢查；若持續收到請開 hPanel 找 Hostinger 客服）"
+          fi
