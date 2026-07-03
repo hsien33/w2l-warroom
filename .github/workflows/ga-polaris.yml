@@ -6,7 +6,9 @@ name: ga-polaris-daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: "40 22 * * *"   # 備援：06:40 台北（UTC 22:40 前一日）
+    # 近即時模式（Jeff 0703 要求）：每 3 小時刷一輪；GitHub cron 會漂移＝實際約 3-4 小時一次，可接受。
+    # GAS 06:20 準點觸發仍是每天早上的主力保險（見 gas_polaris_trigger.txt）。
+    - cron: "10 */3 * * *"
 
 jobs:
   polaris:
