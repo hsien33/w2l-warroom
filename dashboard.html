@@ -4,14 +4,363 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<!-- 好記網址別名：把中文檔名的北極星看板轉過去，方便手機收藏（hsien33.github.io/w2l-warroom/dashboard.html）-->
-<title>看板｜財富煉金術 戰情室</title>
-<link rel="canonical" href="%E5%8C%97%E6%A5%B5%E6%98%9F.html">
-<meta http-equiv="refresh" content="0; url=%E5%8C%97%E6%A5%B5%E6%98%9F.html">
-<script>location.replace('%E5%8C%97%E6%A5%B5%E6%98%9F.html'+location.search);</script>
-<style>body{font-family:system-ui,"Microsoft JhengHei",sans-serif;background:#0b1120;color:#f4f1e8;display:flex;height:100vh;margin:0;align-items:center;justify-content:center}a{color:#F4C430}</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='63' fill='%230f172a'/><polygon points='64,20 96,68 79,68 79,106 49,106 49,68 32,68' fill='%23F4C430'/></svg>">
+<title>戰情室｜向光而行</title>
+<style>
+/* ── 戰情室 v2（0703 圓桌規格：手機單欄/白話三件套/紅色只給告警/零外部庫）── */
+:root{--ink:#0b1120;--panel:#141d2e;--panel2:#0f1726;--gold:#F4C430;--goldd:#c79a3e;
+--cream:#f4f1e8;--mut:#93a0b4;--line:rgba(244,196,48,.14);--ok:#34d399;--warn:#fbbf24;--bad:#f87171;
+--leaf:#8a9a6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+background:radial-gradient(1100px 480px at 50% -12%,#182742 0,var(--ink) 58%);
+color:var(--cream);line-height:1.7;min-height:100vh;padding:20px 14px 80px}
+.wrap{max-width:760px;margin:0 auto}
+/* 頂欄 */
+.top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.top h1{font-size:22px;font-weight:900;background:linear-gradient(180deg,#fff,var(--gold));
+-webkit-background-clip:text;background-clip:text;color:transparent}
+.fresh{font-size:12.5px;color:var(--mut);margin:4px 0 18px}
+.fresh b{color:var(--cream);font-weight:600}
+/* 北極星 */
+.polar{background:linear-gradient(135deg,#182742,var(--panel));border:1px solid var(--line);
+border-radius:20px;padding:24px 22px;text-align:center}
+.polar .lbl{font-size:13px;color:var(--mut);letter-spacing:.1em}
+.polar .big{font-size:56px;font-weight:900;color:var(--gold);line-height:1.15}
+.polar .delta{font-size:15px;color:var(--cream);margin-top:2px}
+.polar .split{font-size:13px;color:var(--mut);margin-top:8px}
+.polar .split b{color:var(--cream)}
+.saying{margin-top:14px;padding:11px 14px;background:rgba(244,196,48,.08);
+border:1px solid rgba(244,196,48,.25);border-radius:12px;font-size:14.5px;color:var(--cream)}
+/* 通用 */
+h2{font-size:15px;color:var(--gold);letter-spacing:.06em;margin:26px 0 10px;font-weight:800}
+h2 .sub{font-size:11.5px;color:var(--mut);font-weight:400;margin-left:8px;letter-spacing:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+.plain{font-size:12px;color:var(--mut)}
+.arrow-up{color:var(--ok);font-weight:700}.arrow-dn{color:var(--mut);font-weight:700}
+/* 告警 */
+.allgood{border:1px solid rgba(52,211,153,.35);background:rgba(52,211,153,.07);
+border-radius:14px;padding:13px 16px;font-size:14.5px;color:var(--ok)}
+.acard{border-radius:14px;padding:14px 16px;margin-bottom:10px;font-size:14px}
+.acard.red{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.45)}
+.acard.yellow{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.4)}
+.acard b{display:block;font-size:14.5px;color:var(--cream)}
+.acard .why{color:var(--mut);font-size:13px;margin-top:4px}
+.acard a{display:inline-block;margin-top:8px;padding:8px 14px;border-radius:9px;font-size:13px;
+text-decoration:none;color:var(--ink);background:var(--gold);font-weight:700;min-height:24px}
+/* 成績單 */
+.grades{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.grades{grid-template-columns:1fr}}
+.gcard{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.gcard .site{font-size:13.5px;font-weight:800}
+.gcard .row{display:flex;justify-content:space-between;align-items:baseline;margin-top:8px}
+.gcard .row .n{font-size:20px;font-weight:900;color:var(--cream)}
+.gcard .row .t{font-size:12.5px;color:var(--mut)}
+/* 工具排行榜 */
+.tool{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:8px;overflow:hidden}
+.tool summary{list-style:none;cursor:pointer;padding:13px 14px;display:flex;align-items:center;gap:10px;min-height:44px}
+.tool summary::-webkit-details-marker{display:none}
+.tool .rank{font-size:13px;color:var(--mut);width:20px;flex:none;font-weight:700}
+.tool .tname{font-size:14.5px;font-weight:700;flex:1;min-width:0}
+.tool .tname .host{font-size:10.5px;color:var(--mut);font-weight:400;margin-left:5px}
+.tool .stat{font-size:13px;color:var(--cream);text-align:right;flex:none;width:74px}
+.tool .stat small{display:block;font-size:10px;color:var(--mut)}
+.badge{font-size:10.5px;font-weight:800;border-radius:6px;padding:2px 7px;flex:none}
+.badge.hot{background:var(--gold);color:var(--ink)}
+.badge.gem{background:rgba(52,211,153,.2);color:var(--ok);border:1px solid rgba(52,211,153,.4)}
+.badge.rise{background:rgba(125,211,252,.15);color:#7dd3fc;border:1px solid rgba(125,211,252,.35)}
+.badge.fat{background:rgba(251,191,36,.15);color:var(--warn);border:1px solid rgba(251,191,36,.35)}
+.badge.zzz,.badge.new{background:rgba(147,160,180,.15);color:var(--mut);border:1px solid rgba(147,160,180,.3)}
+.tdetail{padding:4px 16px 16px;border-top:1px solid var(--line);font-size:13px}
+.tdetail .drow{display:flex;justify-content:space-between;margin:7px 0;color:var(--mut)}
+.tdetail .drow b{color:var(--cream)}
+.spark{width:100%;height:44px;margin-top:6px}
+/* 外連 */
+.outrow{display:flex;justify-content:space-between;align-items:center;padding:10px 2px;border-bottom:1px solid rgba(255,255,255,.05)}
+.outrow:last-child{border-bottom:none}
+.outrow .dm{font-size:14px;font-weight:600}
+.outrow .dm small{display:block;font-size:11px;color:var(--mut);font-weight:400}
+.outrow .ct{font-size:18px;font-weight:900;color:var(--gold)}
+/* 趨勢 */
+.chart-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:12px}
+.chart-card .q{font-size:14px;font-weight:800;color:var(--cream)}
+.chart-card svg{width:100%;height:120px;margin-top:8px}
+.chart-card .concl{font-size:12.5px;color:var(--mut);margin-top:6px}
+/* 深究 */
+details.deep{background:var(--panel2);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+details.deep>summary{cursor:pointer;padding:13px 16px;font-size:14px;font-weight:700;min-height:44px;list-style:none}
+details.deep>summary::-webkit-details-marker{display:none}
+details.deep>div{padding:0 16px 14px;font-size:13px}
+.fstep{display:flex;align-items:center;gap:9px;margin:8px 0}
+.fbar{height:18px;border-radius:5px;background:linear-gradient(90deg,#d4af37,var(--gold));min-width:3px;flex:none}
+.fl{font-size:12px;color:var(--mut);width:104px;flex:none}
+.fn{font-size:13px;font-weight:800;color:#fff}
+.fr{font-size:11px;color:var(--mut)}
+/* 底部 */
+.refresh{display:block;width:100%;margin-top:26px;padding:15px;border:none;border-radius:14px;
+background:var(--gold);color:var(--ink);font-size:15.5px;font-weight:800;cursor:pointer;min-height:48px}
+.refresh:active{opacity:.85}
+.back{display:block;text-align:center;margin-top:14px;color:var(--mut);font-size:13px;text-decoration:none}
+.pending{border:1px dashed rgba(147,160,180,.4);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--mut)}
+</style>
 </head>
 <body>
-<p>正在打開北極星看板…若沒自動跳轉，<a href="%E5%8C%97%E6%A5%B5%E6%98%9F.html">點這裡</a>。</p>
+<div class="wrap">
+  <div class="top"><h1>⭐ 戰情室</h1><span id="pver" class="plain">v—</span></div>
+  <div class="fresh" id="fresh">載入中…</div>
+
+  <!-- 1 北極星 -->
+  <div class="polar">
+    <div class="lbl">兩站 EMAIL 名單（30 天）</div>
+    <div class="big" id="polar-n">—</div>
+    <div class="delta" id="polar-d">　</div>
+    <div class="split" id="polar-split">　</div>
+    <div class="saying" id="saying" style="display:none"></div>
+  </div>
+
+  <!-- 2 要注意 -->
+  <h2>要注意<span class="sub">問題永遠先講</span></h2>
+  <div id="alerts-v2"><div class="pending">載入中…</div></div>
+
+  <!-- 3 今天成績單 -->
+  <h2>今天成績單<span class="sub">昨天整天的數字（今天的還在累積）</span></h2>
+  <div class="grades" id="grades"></div>
+
+  <!-- 4 工具排行榜 -->
+  <h2>你的工具誰最紅<span class="sub">點一列看細節 · 新工具會自動出現</span></h2>
+  <div id="toolboard"><div class="pending">載入中…</div></div>
+
+  <!-- 5 外連去向 -->
+  <h2>有多少人被你送去別人網站<span class="sub">親子天下、書店…＝未來談分潤的籌碼</span></h2>
+  <div class="card" id="outbound"><div class="pending">載入中…</div></div>
+
+  <!-- 6 趨勢 -->
+  <h2>趨勢<span class="sub">近 30 天 · 只畫日級、不假裝即時</span></h2>
+  <div class="chart-card"><div class="q">Email 名單有沒有在長大？</div>
+    <svg id="ch-signup" viewBox="0 0 720 120" preserveAspectRatio="none"></svg>
+    <div class="concl" id="ch-signup-c"></div></div>
+  <div class="chart-card"><div class="q">訪客是越來越多嗎？</div>
+    <svg id="ch-users" viewBox="0 0 720 120" preserveAspectRatio="none"></svg>
+    <div class="concl" id="ch-users-c"></div></div>
+
+  <!-- 7 深究 -->
+  <h2>想深究再點</h2>
+  <details class="deep"><summary>名單漏斗（人是在哪一步流失的？）</summary>
+    <div>
+      <div style="color:var(--leaf);font-weight:700;margin-top:4px">🌱 光合作用</div><div id="fun-grow"></div>
+      <div style="color:var(--gold);font-weight:700;margin-top:12px">🏆 財富煉金術</div><div id="fun-wealth"></div>
+      <div class="plain" style="margin-top:8px">四步＝來了 → 看到訂閱邀請 → 留 Email → 收到贈品。最細的那節就是本週該修的地方。</div>
+    </div></details>
+  <details class="deep"><summary>流量從哪來（誰帶來會留 Email 的人？）</summary>
+    <div id="sources4"></div></details>
+  <details class="deep"><summary>名詞小字典（30 秒看懂所有數字）</summary>
+    <div style="line-height:2">
+      <b>點開</b>＝多少人打開這個工具頁<br>
+      <b>有認真用</b>＝打開後真的動手操作的人<br>
+      <b>用到出結果</b>＝一路用到算出答案的人<br>
+      <b>帶名單</b>＝在這個工具頁留下 Email 的人<br>
+      <b>外連</b>＝點了你的連結、真的去了別人網站的人<br>
+      <b>爆款</b>＝人多又好用｜<b>遺珠</b>＝好用但沒人知道（拍 Reel 推它）｜<b>虛胖</b>＝人多但沒人用完（先修工具）｜<b>竄升</b>＝這週人數暴漲
+    </div></details>
+
+  <!-- 8 底部 -->
+  <button class="refresh" onclick="loadAll(true)">重新抓一次最新資料</button>
+  <a class="back" href="index.html">‹ 回戰情室首頁</a>
+</div>
+
+<script>
+/* 工具中文名對照（沒收錄的顯示原名＋「新」徽章，提醒補名） */
+var NAMES={
+ "learning-gift":"孩子學習天賦解碼","learning-gift-full":"天賦解碼・完整版",
+ "booklist":"我兒子的書架（書單）","family-screen-pact":"3C 家庭公約",
+ "alchemy-tuition":"補習費 vs 陪伴試算","phone-pact":"手機使用約定",
+ "parent-child-bazi-lite":"八字合不合（公開版）","parent-child-bazi":"八字合不合（完整版）",
+ "parent-child-bazi-quotes":"八字金句卡","tuitionfees-full":"補習費試算・完整版",
+ "compound":"複利計算機","escape-velocity":"存錢逃逸速度","etf-vampire":"ETF 吸血鬼偵測器",
+ "fire-dashboard":"FIRE 自由度儀表板","fire":"FIRE 財富自由工程","fire-guide":"FIRE 使用說明書",
+ "first-bucket":"第一桶金渦輪計算機","global-shareholder":"全球股東計畫",
+ "house-swap-trap":"換屋陷阱試算","rebalance":"智能再平衡試算機","rent-vs-buy":"租房 vs 買房",
+ "shock-absorber":"資產避震器","survival-2026":"2026 生存試算","wealth-pyramid":"財富金字塔",
+ "bonus-doubler":"年終獎金翻倍計算機","crash-profit":"股災獲利計算機"};
+var BADGE={"爆款":"hot","遺珠":"gem","竄升":"rise","虛胖":"fat","沉睡":"zzz","無資料":"zzz","新":"new"};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function pad(n){return (n<10?'0':'')+n;}
+
+function renderFresh(d){
+  var g=d.generatedAt||'';
+  var t=g.slice(11,16)||'—';
+  var nxt='—';
+  try{var hh=parseInt(g.slice(11,13),10);var mm=g.slice(14,16);
+    nxt=pad((hh+3)%24)+':'+mm;}catch(e){}
+  document.getElementById('fresh').innerHTML=
+    '資料統計到 <b>'+esc(g.slice(5))+'</b>（台北）· 每 3 小時自動更新 · 下次約 <b>'+nxt+'</b>';
+}
+
+function renderPolar(d){
+  var v2=d.v2||{};
+  var total=(v2.signup_total_30d!=null)?v2.signup_total_30d:((d.d30&&d.d30.events&&d.d30.events.email_signup)||0);
+  var y=(d.yesterday&&d.yesterday.events&&d.yesterday.events.email_signup)||0;
+  var gw=(d.d30&&d.d30.sites)||{};
+  var gg=(gw.grow&&gw.grow.events&&gw.grow.events.email_signup)||0;
+  var ww=(gw.wealth&&gw.wealth.events&&gw.wealth.events.email_signup)||0;
+  document.getElementById('polar-n').textContent=total;
+  document.getElementById('polar-d').innerHTML= y>0?('昨天 <span class="arrow-up">+'+y+'</span>'):'昨天 +0';
+  document.getElementById('polar-split').innerHTML='光合作用 <b>'+gg+'</b> ・ 財富煉金術 <b>'+ww+'</b><br><span class="plain">＝這 30 天真正留下 Email、屬於你的讀者</span>';
+  if(v2.summary){var s=document.getElementById('saying');s.style.display='block';s.textContent='📌 '+v2.summary;}
+}
+
+function renderAlerts(d){
+  var v2=d.v2||{},el=document.getElementById('alerts-v2');
+  var cards=(v2.cards||[]);
+  if(!cards.length){el.innerHTML='<div class="allgood">✅ 今天沒有需要你操心的事</div>';return;}
+  var reds=cards.filter(function(c){return c.level==='red';});
+  var yels=cards.filter(function(c){return c.level!=='red';});
+  var show=reds.concat(yels).slice(0,3);
+  var more=cards.length-show.length;
+  el.innerHTML=show.map(function(c){
+    return '<div class="acard '+c.level+'"><b>'+(c.level==='red'?'🔴 ':'🟡 ')+esc(c.what)+'</b>'+
+      '<div class="why">'+esc(c.why)+'</div>'+
+      (c.link?'<a href="'+esc(c.link)+'" target="_blank" rel="noopener">'+esc(c.action)+' →</a>'
+             :'<div class="why" style="color:var(--cream)">👉 '+esc(c.action)+'</div>')+'</div>';
+  }).join('')+(more>0?'<div class="plain">…還有 '+more+' 件小事，回國再看</div>':'');
+}
+
+function renderGrades(d){
+  var el=document.getElementById('grades');
+  function g(site,label,color){
+    var y=(d.yesterday&&d.yesterday.sites&&d.yesterday.sites[site])||{users:0,events:{}};
+    var e=y.events||{};
+    return '<div class="gcard"><div class="site" style="color:'+color+'">'+label+'</div>'+
+    '<div class="row"><span class="t">來了幾個人</span><span class="n">'+(y.users||0)+'</span></div>'+
+    '<div class="row"><span class="t">有人用工具</span><span class="n">'+(e.tool_engaged||0)+'</span></div>'+
+    '<div class="row"><span class="t">留下 Email</span><span class="n">'+(e.email_signup||0)+'</span></div></div>';
+  }
+  el.innerHTML=g('grow','🌱 光合作用','var(--leaf)')+g('wealth','🏆 財富煉金術','var(--gold)');
+}
+
+function sparkline(daily){
+  if(!daily||!daily.length)return '';
+  var mx=Math.max.apply(null,daily.map(function(x){return x.users;}).concat([1]));
+  var w=300,h=44,n=daily.length;
+  var pts=daily.map(function(x,i){return (i*w/(n-1)).toFixed(1)+','+(h-4-(x.users/mx*(h-10))).toFixed(1);}).join(' ');
+  return '<svg class="spark" viewBox="0 0 300 44" preserveAspectRatio="none"><polyline fill="none" stroke="#F4C430" stroke-width="1.6" points="'+pts+'"/></svg>';
+}
+
+function renderTools(d){
+  var v2=d.v2||{},el=document.getElementById('toolboard');
+  var ts=v2.tools||[];
+  if(!ts.length){el.innerHTML='<div class="pending">工具數據等下一輪更新（每 3 小時）就會出現——新追蹤今天才上線，前 1-2 天數字會偏少，是正常的。</div>';return;}
+  el.innerHTML=ts.map(function(t,i){
+    var nm=NAMES[t.slug];var isNew=!nm;nm=nm||t.slug;
+    var badges=(t.badges||[]).slice();if(isNew)badges.push('新');
+    var bhtml=badges.map(function(b){return '<span class="badge '+(BADGE[b]||'new')+'">'+b+'</span>';}).join(' ');
+    var eng=(t.engage_rate!=null)?(t.engage_rate+'%'):'—';
+    var fin=(t.finish_rate!=null)?(t.finish_rate+'%'):'—';
+    var nodata=(t.badges||[]).indexOf('無資料')>-1;
+    var detail=nodata
+      ?'<div class="tdetail"><div class="pending" style="margin-top:10px">這支工具 30 天內沒看到任何資料——可能剛上線，或還沒裝追蹤（跑 inject_ga_tools.py）。</div></div>'
+      :'<div class="tdetail">'+
+        '<div class="drow"><span>7 天有幾人點開</span><b>'+t.d7+'</b></div>'+
+        '<div class="drow"><span>有認真用（每100個點開）</span><b>'+eng+'</b></div>'+
+        '<div class="drow"><span>用到出結果（每100個認真用）</span><b>'+fin+'</b></div>'+
+        '<div class="drow"><span>30 天帶了幾個 Email</span><b>'+t.emails30+'</b></div>'+
+        '<div class="drow"><span>30 天送出去的外連點擊</span><b>'+t.outbound30+'</b></div>'+
+        (t.outbound&&t.outbound.length?'<div class="plain" style="margin-top:6px">外連去向：'+t.outbound.slice(0,3).map(function(o){return esc(o.domain)+'×'+o.clicks;}).join('、')+'</div>':'')+
+        (t.channels&&t.channels.length?'<div class="plain">人從哪來：'+t.channels.slice(0,3).map(function(c){return esc(c.ch)+' '+c.users;}).join('、')+'</div>':'')+
+        sparkline(t.daily)+'<div class="plain">近 30 天每日點開人數</div>'+
+      '</div>';
+    return '<details class="tool"><summary>'+
+      '<span class="rank">'+(i+1)+'</span>'+
+      '<span class="tname">'+esc(nm)+'<span class="host">'+(t.site==='grow'?'光合':'財富')+'</span></span>'+
+      bhtml+
+      '<span class="stat">'+t.d7+'<small>7天點開</small></span>'+
+      '<span class="stat">'+t.emails30+'<small>帶名單</small></span>'+
+      '</summary>'+detail+'</details>';
+  }).join('')+'<div class="plain" style="margin-top:6px">排序＝帶名單優先（生意排序，不是人氣排序）。「今天」的數字永遠還在累積，看 7 天最準。</div>';
+}
+
+function renderOutbound(d){
+  var v2=d.v2||{},el=document.getElementById('outbound');
+  if(v2.outbound_status==='pending_dimension'){
+    el.innerHTML='<div class="pending">外連「去了哪個網站」的明細需要在 GA4 後台註冊兩個維度（domain、link，各 1 分鐘）——步驟已寫在檢核表。註冊前外連總數已在上面工具表計。</div>';return;}
+  var tops=v2.outbound_top||[];
+  if(!tops.length){el.innerHTML='<div class="pending">還沒有外連點擊資料——外連追蹤今天才上線，等讀者開始點就會出現（例：書單 → 親子天下）。</div>';return;}
+  el.innerHTML=tops.map(function(o){
+    return '<div class="outrow"><div class="dm">'+esc(o.domain)+
+      '<small>'+(o.pages&&o.pages.length?('主要來自 '+esc(o.pages[0][0])):'')+'</small></div>'+
+      '<div class="ct">'+o.clicks+'</div></div>';
+  }).join('')+'<div class="plain" style="margin-top:8px">＝點了你的連結、真的過去的人（30 天）</div>';
+}
+
+function lineChart(id,cid,daily,key,unitLabel){
+  var el=document.getElementById(id);if(!daily||!daily.length){el.innerHTML='';return;}
+  var W=720,H=120,n=daily.length;
+  var mx=Math.max.apply(null,daily.map(function(x){return x[key];}).concat([1]));
+  var pts=daily.map(function(x,i){return (i*W/(n-1)).toFixed(1)+','+(H-16-(x[key]/mx*(H-40))).toFixed(1);});
+  var last=daily[n-1],lx=W,ly=(H-16-(last[key]/mx*(H-40)));
+  var s='<polyline fill="none" stroke="#F4C430" stroke-width="2" points="'+pts.join(' ')+'"/>';
+  s+='<circle cx="'+(W-3)+'" cy="'+ly.toFixed(1)+'" r="4" fill="#F4C430"/>';
+  s+='<text x="'+(W-10)+'" y="'+(Math.max(ly-8,12)).toFixed(1)+'" fill="#F4C430" font-size="13" font-weight="800" text-anchor="end">'+last[key]+'</text>';
+  s+='<text x="4" y="'+(H-2)+'" fill="#93a0b4" font-size="10">'+daily[0].date.slice(5)+'</text>';
+  s+='<text x="'+(W-4)+'" y="'+(H-2)+'" fill="#93a0b4" font-size="10" text-anchor="end">'+last.date.slice(5)+'</text>';
+  el.innerHTML=s;
+  // 一句模板結論
+  var half=Math.floor(n/2);
+  var a=daily.slice(0,half).reduce(function(t,x){return t+x[key];},0);
+  var b=daily.slice(half).reduce(function(t,x){return t+x[key];},0);
+  var peak=daily.reduce(function(p,x){return x[key]>p[key]?x:p;},daily[0]);
+  var word=b>a*1.2?'後半段明顯在漲':(b<a*0.8?'後半段有點降溫':'大致持平');
+  document.getElementById(cid).textContent='這 30 天'+word+'；最好的一天是 '+peak.date.slice(5)+'（'+peak[key]+unitLabel+'）。';
+}
+
+function renderFunnel(d){
+  function fun(id,arr){var el=document.getElementById(id);if(!arr){el.innerHTML='';return;}
+    var mx=Math.max.apply(null,arr.map(function(x){return x.count;}).concat([1]));
+    el.innerHTML=arr.map(function(x){
+      return '<div class="fstep"><span class="fl">'+esc(x.step)+'</span>'+
+        '<span class="fbar" style="width:'+Math.max(x.count/mx*46,1)+'%"></span>'+
+        '<span class="fn">'+x.count+'</span>'+(x.rate!=null?'<span class="fr">'+x.rate+'%</span>':'')+'</div>';
+    }).join('');}
+  fun('fun-grow',d.funnel&&d.funnel.grow);fun('fun-wealth',d.funnel&&d.funnel.wealth);
+}
+
+function renderSources(d){
+  var v2=d.v2||{},el=document.getElementById('sources4');
+  var ss=v2.sources4||[];
+  if(!ss.length){el.innerHTML='<div class="pending">來源資料累積中。</div>';return;}
+  el.innerHTML=ss.map(function(s){
+    return '<div class="outrow"><div class="dm">'+esc(s.label)+'</div>'+
+      '<div style="text-align:right"><span class="ct" style="font-size:15px">'+s.users+' 人</span>'+
+      '<div class="plain">帶名單 '+s.signups+'</div></div></div>';
+  }).join('')+'<div class="plain" style="margin-top:8px">重點不是誰帶人多，是誰帶「會留 Email 的人」。</div>';
+}
+
+function loadAll(manual){
+  if(manual){var b=document.querySelector('.refresh');b.textContent='抓取中…';}
+  fetch('polaris.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+    renderFresh(d);renderPolar(d);renderAlerts(d);renderGrades(d);
+    renderTools(d);renderOutbound(d);renderFunnel(d);renderSources(d);
+    lineChart('ch-signup','ch-signup-c',d.trend,'signups',' 位');
+    lineChart('ch-users','ch-users-c',d.trend,'users',' 人');
+    if(manual){var b=document.querySelector('.refresh');
+      b.textContent='已是最新（資料到 '+(d.generatedAt||'').slice(11,16)+'）';
+      setTimeout(function(){b.textContent='重新抓一次最新資料';},4000);}
+    // 資料超過 6 小時 → 黃卡提醒（管線卡住≠生意壞掉）
+    try{
+      var g=new Date((d.generatedAt||'').replace(' ','T')+':00+08:00');
+      if(Date.now()-g.getTime()>6*3600*1000){
+        document.getElementById('alerts-v2').insertAdjacentHTML('afterbegin',
+        '<div class="acard yellow"><b>🟡 資料卡住了（上次更新 '+esc(d.generatedAt)+'）</b>'+
+        '<div class="why">這是資料管線的問題，不是網站沒人來</div>'+
+        '<a href="https://github.com/hsien33/w2l-warroom/actions" target="_blank" rel="noopener">看一眼管線 →</a></div>');}
+    }catch(e){}
+  }).catch(function(){
+    document.getElementById('fresh').textContent='資料還沒產生——等下一輪自動更新（每 3 小時）';
+  });
+}
+fetch('version.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();})
+  .then(function(v){document.getElementById('pver').textContent='v'+v.version;}).catch(function(){});
+loadAll(false);
+</script>
 </body>
 </html>
