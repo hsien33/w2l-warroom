@@ -1,8 +1,8 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-03 22:30",
- "updated": "2026-07-03 22:30 台北",
- "yesterday_date": "2026-07-02",
+ "generatedAt": "2026-07-04 00:44",
+ "updated": "2026-07-04 00:44 台北",
+ "yesterday_date": "2026-07-03",
  "yesterday": {
   "users": 0,
   "pv": 0,
@@ -25,8 +25,8 @@
   }
  },
  "d30": {
-  "users": 100,
-  "pv": 177,
+  "users": 98,
+  "pv": 175,
   "events": {},
   "sites": {
    "grow": {
@@ -34,7 +34,7 @@
     "events": {}
    },
    "wealth": {
-    "users": 100,
+    "users": 98,
     "events": {}
    }
   }
@@ -90,8 +90,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 87,
-   "users": 77,
+   "sessions": 85,
+   "users": 75,
    "signups": 0
   },
   {
@@ -144,11 +144,6 @@
   }
  ],
  "trend": [
-  {
-   "date": "2026-06-03",
-   "users": 2,
-   "signups": 0
-  },
   {
    "date": "2026-06-04",
    "users": 5,
@@ -293,6 +288,11 @@
    "date": "2026-07-02",
    "users": 0,
    "signups": 0
+  },
+  {
+   "date": "2026-07-03",
+   "users": 0,
+   "signups": 0
   }
  ],
  "lights": [
@@ -309,10 +309,7 @@
    "advice": "訂閱率<0.5%：磁鐵賣點或表單位置有問題，優先改首頁 CTA。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（HTTPError）",
-  "財富煉金術 www 連不上（HTTPError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [],
   "outbound_top": [],
@@ -320,7 +317,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 77,
+    "users": 75,
     "signups": 0
    },
    {
