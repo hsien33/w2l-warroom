@@ -70,6 +70,21 @@ def main():
 
     # ── DEBUG（0704 抓 bug）：這個 property 到底有哪些 hostName / 事件 ──
     print("=== DEBUG PROPERTY_ID (末4碼) =", GA_PROP[-4:] if len(GA_PROP) >= 4 else GA_PROP)
+    # 列出服務帳戶能看到的所有 GA4 資源（找正確的 property id）
+    try:
+        areq = urllib.request.Request(
+            "https://analyticsadmin.googleapis.com/v1beta/accountSummaries?pageSize=200",
+            headers={"Authorization": f"Bearer {creds.token}"})
+        with urllib.request.urlopen(areq, timeout=30) as r:
+            summ = json.loads(r.read())
+        print("=== DEBUG 服務帳戶能看到的資源:")
+        for acc in summ.get("accountSummaries", []):
+            for p in acc.get("propertySummaries", []):
+                pid = p.get("property", "").split("/")[-1]
+                nm = p.get("displayName", "").encode("ascii", "replace").decode()
+                print("   property_id=%s name=%s" % (pid, nm))
+    except Exception as ae:
+        print("=== DEBUG accountSummaries 失敗:", type(ae).__name__, str(ae)[:120])
     dbg_h = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
                         "dimensions": [{"name": "hostName"}],
                         "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"}],
