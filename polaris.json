@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-04 21:02",
- "updated": "2026-07-04 21:02 台北",
+ "generatedAt": "2026-07-04 21:14",
+ "updated": "2026-07-04 21:14 台北",
  "yesterday_date": "2026-07-03",
  "yesterday": {
   "users": 75,
@@ -42,23 +42,23 @@
   "users": 215,
   "pv": 566,
   "events": {
+   "cta_click": 10,
+   "tool_engaged": 5,
+   "tool_result": 4,
    "email_signup": 11,
    "magnet_delivered": 10,
    "card_open": 6,
-   "cta_click": 10,
    "outbound_placement": 2,
-   "tool_engaged": 5,
-   "tool_result": 4,
    "purchase_intent": 2
   },
   "sites": {
    "grow": {
     "users": 85,
     "events": {
+     "cta_click": 7,
      "email_signup": 11,
      "magnet_delivered": 10,
      "card_open": 6,
-     "cta_click": 7,
      "outbound_placement": 2,
      "tool_engaged": 1,
      "tool_result": 1
@@ -67,10 +67,10 @@
    "wealth": {
     "users": 130,
     "events": {
-     "purchase_intent": 2,
+     "cta_click": 3,
      "tool_engaged": 4,
      "tool_result": 3,
-     "cta_click": 3
+     "purchase_intent": 2
     }
    }
   }
@@ -83,19 +83,19 @@
    "tool_engaged": 12,
    "tool_result": 11,
    "cta_click": 11,
+   "purchase_intent": 4,
    "magnet_delivered": 10,
    "card_open": 6,
-   "outbound_placement": 2,
-   "purchase_intent": 4
+   "outbound_placement": 2
   },
   "sites": {
    "grow": {
     "users": 85,
     "events": {
+     "cta_click": 7,
      "email_signup": 11,
      "magnet_delivered": 10,
      "card_open": 6,
-     "cta_click": 7,
      "outbound_placement": 2,
      "tool_engaged": 1,
      "tool_result": 1
@@ -174,7 +174,7 @@
    "campaign": "finale",
    "sessions": 86,
    "users": 73,
-   "signups": 7
+   "signups": 8
   },
   {
    "source": "(not set)",
@@ -4807,7 +4807,7 @@
    {
     "label": "其他",
     "users": 201,
-    "signups": 22
+    "signups": 23
    },
    {
     "label": "IG 帶來的",
@@ -4824,5 +4824,505 @@
   "cards": [],
   "summary": "今天正常：昨天新增 11 位名單、工具有 44 人在用",
   "signup_total_30d": 13
+ },
+ "v3": {
+  "channels": {
+   "grow": [
+    {
+     "ch": "社群(IG/FB)",
+     "raw": "Organic Social",
+     "users": 100,
+     "signups": 13
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 61,
+     "signups": 9
+    },
+    {
+     "ch": "跨網路廣告",
+     "raw": "Cross-network",
+     "users": 57,
+     "signups": 4
+    },
+    {
+     "ch": "直接輸入網址",
+     "raw": "Direct",
+     "users": 44,
+     "signups": 2
+    },
+    {
+     "ch": "別的網站連來",
+     "raw": "Referral",
+     "users": 1,
+     "signups": 2
+    }
+   ],
+   "wealth": [
+    {
+     "ch": "直接輸入網址",
+     "raw": "Direct",
+     "users": 170,
+     "signups": 2
+    },
+    {
+     "ch": "別的網站連來",
+     "raw": "Referral",
+     "users": 9,
+     "signups": 0
+    },
+    {
+     "ch": "社群(IG/FB)",
+     "raw": "Organic Social",
+     "users": 7,
+     "signups": 0
+    },
+    {
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
+     "users": 5,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 5,
+     "signups": 0
+    },
+    {
+     "ch": "跨網路廣告",
+     "raw": "Cross-network",
+     "users": 1,
+     "signups": 0
+    }
+   ]
+  },
+  "top_pages": {
+   "grow": [
+    {
+     "path": "/",
+     "name": "光合作用",
+     "views": 313,
+     "users": 165
+    },
+    {
+     "path": "/voices/",
+     "name": "大家怎麼說",
+     "views": 54,
+     "users": 30
+    },
+    {
+     "path": "/dad-bet/",
+     "name": "父子對決 ‧ 30 天衝粉賭局",
+     "views": 51,
+     "users": 26
+    },
+    {
+     "path": "/articles/",
+     "name": "對話筆記",
+     "views": 45,
+     "users": 30
+    },
+    {
+     "path": "/start/",
+     "name": "教養工具箱",
+     "views": 35,
+     "users": 16
+    },
+    {
+     "path": "/welcome/",
+     "name": "收到了，謝謝你",
+     "views": 26,
+     "users": 24
+    },
+    {
+     "path": "/about/",
+     "name": "關於 Jeff",
+     "views": 18,
+     "users": 14
+    },
+    {
+     "path": "/articles/adult-first-burned-out/",
+     "name": "不是孩子難搞，是你今天也快被磨光了",
+     "views": 10,
+     "users": 9
+    }
+   ],
+   "wealth": [
+    {
+     "path": "/",
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "views": 107,
+     "users": 76
+    },
+    {
+     "path": "/about/",
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "views": 38,
+     "users": 3
+    },
+    {
+     "path": "/",
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "views": 10,
+     "users": 7
+    },
+    {
+     "path": "/videos/",
+     "name": "影片庫",
+     "views": 9,
+     "users": 7
+    },
+    {
+     "path": "/start/",
+     "name": "從 0 到 1 學習地圖",
+     "views": 7,
+     "users": 7
+    },
+    {
+     "path": "/about/",
+     "name": "關於 Jeff",
+     "views": 6,
+     "users": 1
+    },
+    {
+     "path": "/consulting/",
+     "name": "1 對 1 新手陪跑諮詢",
+     "views": 5,
+     "users": 3
+    },
+    {
+     "path": "/f627769f-2304-411f-aff7-0ec43463404d",
+     "name": "找不到頁面",
+     "views": 5,
+     "users": 3
+    }
+   ]
+  },
+  "trend_site": {
+   "grow": [
+    {
+     "date": "2026-06-04",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-05",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-06",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-07",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-08",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-09",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-10",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-11",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-12",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-13",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-14",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-15",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-16",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-17",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-18",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-19",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-20",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-21",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-22",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-23",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-24",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-25",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-26",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-27",
+     "users": 1,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-28",
+     "users": 4,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-29",
+     "users": 6,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-30",
+     "users": 3,
+     "signups": 0
+    },
+    {
+     "date": "2026-07-01",
+     "users": 4,
+     "signups": 0
+    },
+    {
+     "date": "2026-07-02",
+     "users": 3,
+     "signups": 0
+    },
+    {
+     "date": "2026-07-03",
+     "users": 64,
+     "signups": 11
+    }
+   ],
+   "wealth": [
+    {
+     "date": "2026-06-04",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-05",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-06",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-07",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-08",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-09",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-10",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-11",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-12",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-13",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-14",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-15",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-16",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-17",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-18",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-19",
+     "users": 0,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-20",
+     "users": 3,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-21",
+     "users": 3,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-22",
+     "users": 8,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-23",
+     "users": 3,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-24",
+     "users": 10,
+     "signups": 1
+    },
+    {
+     "date": "2026-06-25",
+     "users": 11,
+     "signups": 1
+    },
+    {
+     "date": "2026-06-26",
+     "users": 23,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-27",
+     "users": 20,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-28",
+     "users": 30,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-29",
+     "users": 31,
+     "signups": 0
+    },
+    {
+     "date": "2026-06-30",
+     "users": 14,
+     "signups": 0
+    },
+    {
+     "date": "2026-07-01",
+     "users": 16,
+     "signups": 0
+    },
+    {
+     "date": "2026-07-02",
+     "users": 8,
+     "signups": 0
+    },
+    {
+     "date": "2026-07-03",
+     "users": 11,
+     "signups": 0
+    }
+   ]
+  },
+  "site_sum": {
+   "grow": {
+    "signups30": 11,
+    "signups7": 11,
+    "signupsY": 11,
+    "users30": 85,
+    "users7": 85,
+    "rate7": 12.9
+   },
+   "wealth": {
+    "signups30": 2,
+    "signups7": 0,
+    "signupsY": 0,
+    "users30": 191,
+    "users7": 130,
+    "rate7": 0.0
+   }
+  }
  }
 }
