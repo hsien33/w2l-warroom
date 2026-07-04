@@ -391,14 +391,17 @@ def main():
                      "metrics": [{"name": "screenPageViews"}, {"name": "totalUsers"}],
                      "orderBys": [{"metric": {"metricName": "screenPageViews"}, "desc": True}],
                      "limit": 300})
-    top_pages = {"grow": [], "wealth": []}
+    tp_agg = {"grow": {}, "wealth": {}}                # 同標題不同網址(首頁/utm變體)合併，避免重複列
     for (host, pp, title), (pv, tu) in rows(q6):
         s = SITES.get(host)
         if not s: continue
         if pp.startswith("/tools/"): continue          # 工具走專榜
-        if len(top_pages[s]) >= 8: continue
         nm = (title.split("｜")[0].split("|")[0]).strip() or pp
-        top_pages[s].append({"path": pp, "name": nm[:34], "views": int(pv), "users": int(tu)})
+        nm = nm[:34]
+        g = tp_agg[s].setdefault(nm, {"name": nm, "path": pp, "views": 0, "users": 0})
+        g["views"] += int(pv); g["users"] += int(tu)
+    top_pages = {s: sorted(tp_agg[s].values(), key=lambda x: -x["views"])[:8]
+                 for s in ("grow", "wealth")}
 
     # 告警引擎 v2（三段式人話卡：發生什麼/可能原因/一個動作）
     cards = []
