@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-04 21:16",
- "updated": "2026-07-04 21:16 台北",
+ "generatedAt": "2026-07-04 21:55",
+ "updated": "2026-07-04 21:55 台北",
  "yesterday_date": "2026-07-03",
  "yesterday": {
   "users": 75,
@@ -79,11 +79,11 @@
   "users": 276,
   "pv": 731,
   "events": {
-   "email_signup": 13,
    "tool_engaged": 12,
    "tool_result": 11,
-   "purchase_intent": 4,
    "cta_click": 11,
+   "purchase_intent": 4,
+   "email_signup": 13,
    "magnet_delivered": 10,
    "card_open": 6,
    "outbound_placement": 2
@@ -104,11 +104,11 @@
    "wealth": {
     "users": 191,
     "events": {
-     "email_signup": 2,
      "tool_engaged": 11,
      "tool_result": 10,
+     "cta_click": 4,
      "purchase_intent": 4,
-     "cta_click": 4
+     "email_signup": 2
     }
    }
   }
@@ -180,16 +180,16 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 69,
-   "users": 63,
+   "sessions": 71,
+   "users": 64,
    "signups": 9
   },
   {
    "source": "(data not available)",
    "medium": "(data not available)",
    "campaign": "(cross-network)",
-   "sessions": 57,
-   "users": 57,
+   "sessions": 60,
+   "users": 60,
    "signups": 4
   },
   {
@@ -220,7 +220,7 @@
    "source": "ig",
    "medium": "social",
    "campaign": "",
-   "sessions": 10,
+   "sessions": 11,
    "users": 9,
    "signups": 0
   },
@@ -4074,18 +4074,18 @@
      },
      {
       "date": "2026-07-04",
-      "users": 20
+      "users": 22
      }
     ],
-    "today": 20,
+    "today": 22,
     "d7": 0,
     "d30": 0,
     "d7_prev": 0,
-    "pv30": 27,
+    "pv30": 30,
     "outbound": [
      {
       "domain": "www.instagram.com",
-      "clicks": 1
+      "clicks": 3
      }
     ],
     "channels": [
@@ -4099,7 +4099,7 @@
      },
      {
       "ch": "Cross-network",
-      "users": 5
+      "users": 7
      },
      {
       "ch": "Direct",
@@ -4109,7 +4109,7 @@
     "engaged7": 0,
     "result7": 0,
     "emails30": 0,
-    "outbound30": 1,
+    "outbound30": 2,
     "engage_rate": null,
     "finish_rate": null,
     "badges": [
@@ -4757,20 +4757,20 @@
   "outbound_top": [
    {
     "domain": "www.instagram.com",
-    "clicks": 8,
-    "users": 6,
+    "clicks": 10,
+    "users": 7,
     "pages": [
      [
       "/tools/parent-child-bazi-lite.html",
       5
      ],
      [
-      "/tools/learning-gift.html",
-      2
+      "/tools/parent-child-bazi.html",
+      3
      ],
      [
-      "/tools/parent-child-bazi.html",
-      1
+      "/tools/learning-gift.html",
+      2
      ]
     ]
    },
@@ -4806,7 +4806,7 @@
    },
    {
     "label": "其他",
-    "users": 201,
+    "users": 205,
     "signups": 23
    },
    {
@@ -4822,7 +4822,7 @@
   ],
   "ig_share": 6,
   "cards": [],
-  "summary": "今天正常：昨天新增 11 位名單、工具有 44 人在用",
+  "summary": "今天正常：昨天新增 11 位名單、工具有 46 人在用",
   "signup_total_30d": 13
  },
  "v3": {
@@ -4843,7 +4843,7 @@
     {
      "ch": "跨網路廣告",
      "raw": "Cross-network",
-     "users": 57,
+     "users": 60,
      "signups": 4
     },
     {
@@ -4879,14 +4879,14 @@
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 5,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 6,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 5,
      "signups": 0
     },
@@ -4903,8 +4903,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 313,
-     "users": 165
+     "views": 314,
+     "users": 166
     },
     {
      "name": "大家怎麼說",
