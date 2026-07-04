@@ -355,6 +355,51 @@ def main():
     for g in sources4:
         if g["label"] == "IG 帶來的": ig_share = round(g["users"] / tot_u * 100)
 
+    # ══════════ v3 drill-down：各站流量管道 ＋ 各站最多人看的頁 ══════════
+    CH_ZH = {"Organic Search": "自然搜尋(Google)", "Organic Social": "社群(IG/FB)",
+             "Direct": "直接輸入網址", "Referral": "別的網站連來", "Paid Search": "付費搜尋",
+             "Paid Social": "付費社群", "Email": "電子郵件", "Unassigned": "未分類",
+             "Cross-network": "跨網路廣告", "Organic Video": "影音(YT)"}
+    # Q5：各站×管道 → 使用者＋名單（自然流量 vs 社群 vs 直接一眼看出）
+    q5 = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
+                     "dimensions": [{"name": "hostName"}, {"name": "sessionDefaultChannelGroup"}],
+                     "metrics": [{"name": "activeUsers"}, {"name": "sessions"}], "limit": 500})
+    q5b = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
+                      "dimensions": [{"name": "hostName"}, {"name": "sessionDefaultChannelGroup"}],
+                      "metrics": [{"name": "eventCount"}],
+                      "dimensionFilter": {"filter": {"fieldName": "eventName",
+                          "stringFilter": {"value": "email_signup"}}}, "limit": 500})
+    sg_ch = {}
+    for (host, ch), (c,) in rows(q5b):
+        s = SITES.get(host)
+        if s: sg_ch[(s, ch)] = sg_ch.get((s, ch), 0) + int(c)
+    channels = {"grow": {}, "wealth": {}}
+    for (host, ch), (au, ss) in rows(q5):
+        s = SITES.get(host)
+        if not s: continue
+        d0 = channels[s].setdefault(ch, {"ch": CH_ZH.get(ch, ch), "raw": ch, "users": 0, "signups": 0})
+        d0["users"] += int(au); d0["signups"] += sg_ch.get((s, ch), 0) if d0["users"] == int(au) else 0
+    # signups 只加一次（上面條件避免重複），改成事後補
+    for s in ("grow", "wealth"):
+        for ch, d0 in channels[s].items():
+            d0["signups"] = sg_ch.get((s, ch), 0)
+        channels[s] = sorted(channels[s].values(), key=lambda x: -x["users"])[:6]
+
+    # Q6：各站最多人看的頁（排除工具頁，工具另有專榜）→ 瀏覽＋人數
+    q6 = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
+                     "dimensions": [{"name": "hostName"}, {"name": "pagePath"}, {"name": "pageTitle"}],
+                     "metrics": [{"name": "screenPageViews"}, {"name": "totalUsers"}],
+                     "orderBys": [{"metric": {"metricName": "screenPageViews"}, "desc": True}],
+                     "limit": 300})
+    top_pages = {"grow": [], "wealth": []}
+    for (host, pp, title), (pv, tu) in rows(q6):
+        s = SITES.get(host)
+        if not s: continue
+        if pp.startswith("/tools/"): continue          # 工具走專榜
+        if len(top_pages[s]) >= 8: continue
+        nm = (title.split("｜")[0].split("|")[0]).strip() or pp
+        top_pages[s].append({"path": pp, "name": nm[:34], "views": int(pv), "users": int(tu)})
+
     # 告警引擎 v2（三段式人話卡：發生什麼/可能原因/一個動作）
     cards = []
     def card(level, what, why, action, link=""):
@@ -395,6 +440,26 @@ def main():
     else:
         summary = "資料剛開始累積——新追蹤今天才上線，給它 1-2 天長數字"
 
+    # 各站近30天趨勢（給切換到單站時的圖）
+    trend_site = {"grow": [], "wealth": []}
+    for s in ("grow", "wealth"):
+        for i in range(30, 0, -1):
+            dk = (today - datetime.timedelta(days=i)).strftime("%Y-%m-%d")
+            trend_site[s].append({"date": dk,
+                "users": daily.get(dk, {}).get(s, {}).get("users", 0),
+                "signups": ev.get(dk, {}).get(s, {}).get("email_signup", 0)})
+
+    # 各站 30 天北極星摘要（給第一屏兩站對照帶）
+    def site_summary(s):
+        s30 = d30["sites"].get(s, {"users": 0, "events": {}})
+        s7 = d7["sites"].get(s, {"users": 0, "events": {}})
+        sig30 = s30["events"].get("email_signup", 0)
+        sig7 = s7["events"].get("email_signup", 0)
+        sigY = y1["sites"].get(s, {}).get("events", {}).get("email_signup", 0)
+        rate = round(sig7 / s7["users"] * 100, 1) if s7["users"] else None
+        return {"signups30": sig30, "signups7": sig7, "signupsY": sigY,
+                "users30": s30["users"], "users7": s7["users"], "rate7": rate}
+
     write_json({"status": "ok", "generatedAt": now.strftime("%Y-%m-%d %H:%M"),
                 "updated": now.strftime("%Y-%m-%d %H:%M 台北"), "yesterday_date": ystr,
                 "yesterday": y1, "d7": d7, "d30": d30,
@@ -403,7 +468,10 @@ def main():
                 "v2": {"tools": tool_list, "outbound_top": outbound_top,
                         "outbound_status": outbound_status, "sources4": sources4,
                         "ig_share": ig_share, "cards": cards, "summary": summary,
-                        "signup_total_30d": d30["events"].get("email_signup", 0)}})
+                        "signup_total_30d": d30["events"].get("email_signup", 0)},
+                "v3": {"channels": channels, "top_pages": top_pages,
+                        "trend_site": trend_site,
+                        "site_sum": {"grow": site_summary("grow"), "wealth": site_summary("wealth")}}})
     print("polaris.json updated: signup_y=%d signup_7d=%d rate7=%.2f%% alerts=%d"
           % (sy, s7v, rate7, len(alerts)))
 
