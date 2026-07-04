@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-04 20:59",
- "updated": "2026-07-04 20:59 台北",
+ "generatedAt": "2026-07-04 21:02",
+ "updated": "2026-07-04 21:02 台北",
  "yesterday_date": "2026-07-03",
  "yesterday": {
   "users": 75,
@@ -42,13 +42,13 @@
   "users": 215,
   "pv": 566,
   "events": {
-   "tool_engaged": 5,
-   "tool_result": 4,
-   "cta_click": 10,
    "email_signup": 11,
    "magnet_delivered": 10,
    "card_open": 6,
+   "cta_click": 10,
    "outbound_placement": 2,
+   "tool_engaged": 5,
+   "tool_result": 4,
    "purchase_intent": 2
   },
   "sites": {
@@ -67,22 +67,22 @@
    "wealth": {
     "users": 130,
     "events": {
+     "purchase_intent": 2,
      "tool_engaged": 4,
      "tool_result": 3,
-     "cta_click": 3,
-     "purchase_intent": 2
+     "cta_click": 3
     }
    }
   }
  },
  "d30": {
-  "users": 268,
-  "pv": 718,
+  "users": 276,
+  "pv": 731,
   "events": {
+   "email_signup": 13,
    "tool_engaged": 12,
    "tool_result": 11,
    "cta_click": 11,
-   "email_signup": 13,
    "magnet_delivered": 10,
    "card_open": 6,
    "outbound_placement": 2,
@@ -102,12 +102,12 @@
     }
    },
    "wealth": {
-    "users": 183,
+    "users": 191,
     "events": {
+     "email_signup": 2,
      "tool_engaged": 11,
      "tool_result": 10,
      "cta_click": 4,
-     "email_signup": 2,
      "purchase_intent": 4
     }
    }
@@ -340,17 +340,17 @@
   },
   {
    "date": "2026-06-20",
-   "users": 0,
+   "users": 3,
    "signups": 0
   },
   {
    "date": "2026-06-21",
-   "users": 0,
+   "users": 3,
    "signups": 0
   },
   {
    "date": "2026-06-22",
-   "users": 6,
+   "users": 8,
    "signups": 0
   },
   {
@@ -3043,6 +3043,157 @@
     ]
    },
    {
+    "slug": "first-bucket",
+    "site": "wealth",
+    "daily": [
+     {
+      "date": "2026-06-04",
+      "users": 0
+     },
+     {
+      "date": "2026-06-05",
+      "users": 0
+     },
+     {
+      "date": "2026-06-06",
+      "users": 0
+     },
+     {
+      "date": "2026-06-07",
+      "users": 0
+     },
+     {
+      "date": "2026-06-08",
+      "users": 0
+     },
+     {
+      "date": "2026-06-09",
+      "users": 0
+     },
+     {
+      "date": "2026-06-10",
+      "users": 0
+     },
+     {
+      "date": "2026-06-11",
+      "users": 0
+     },
+     {
+      "date": "2026-06-12",
+      "users": 0
+     },
+     {
+      "date": "2026-06-13",
+      "users": 0
+     },
+     {
+      "date": "2026-06-14",
+      "users": 0
+     },
+     {
+      "date": "2026-06-15",
+      "users": 0
+     },
+     {
+      "date": "2026-06-16",
+      "users": 0
+     },
+     {
+      "date": "2026-06-17",
+      "users": 0
+     },
+     {
+      "date": "2026-06-18",
+      "users": 0
+     },
+     {
+      "date": "2026-06-19",
+      "users": 0
+     },
+     {
+      "date": "2026-06-20",
+      "users": 0
+     },
+     {
+      "date": "2026-06-21",
+      "users": 1
+     },
+     {
+      "date": "2026-06-22",
+      "users": 0
+     },
+     {
+      "date": "2026-06-23",
+      "users": 0
+     },
+     {
+      "date": "2026-06-24",
+      "users": 0
+     },
+     {
+      "date": "2026-06-25",
+      "users": 1
+     },
+     {
+      "date": "2026-06-26",
+      "users": 0
+     },
+     {
+      "date": "2026-06-27",
+      "users": 0
+     },
+     {
+      "date": "2026-06-28",
+      "users": 0
+     },
+     {
+      "date": "2026-06-29",
+      "users": 0
+     },
+     {
+      "date": "2026-06-30",
+      "users": 0
+     },
+     {
+      "date": "2026-07-01",
+      "users": 0
+     },
+     {
+      "date": "2026-07-02",
+      "users": 0
+     },
+     {
+      "date": "2026-07-03",
+      "users": 0
+     },
+     {
+      "date": "2026-07-04",
+      "users": 0
+     }
+    ],
+    "today": 0,
+    "d7": 0,
+    "d30": 2,
+    "d7_prev": 2,
+    "pv30": 2,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Referral",
+      "users": 2
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
+   },
+   {
     "slug": "tuitionfees",
     "site": "wealth",
     "daily": [
@@ -3332,157 +3483,6 @@
      {
       "ch": "Direct",
       "users": 1
-     }
-    ],
-    "engaged7": 0,
-    "result7": 0,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": null,
-    "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
-    "slug": "first-bucket",
-    "site": "wealth",
-    "daily": [
-     {
-      "date": "2026-06-04",
-      "users": 0
-     },
-     {
-      "date": "2026-06-05",
-      "users": 0
-     },
-     {
-      "date": "2026-06-06",
-      "users": 0
-     },
-     {
-      "date": "2026-06-07",
-      "users": 0
-     },
-     {
-      "date": "2026-06-08",
-      "users": 0
-     },
-     {
-      "date": "2026-06-09",
-      "users": 0
-     },
-     {
-      "date": "2026-06-10",
-      "users": 0
-     },
-     {
-      "date": "2026-06-11",
-      "users": 0
-     },
-     {
-      "date": "2026-06-12",
-      "users": 0
-     },
-     {
-      "date": "2026-06-13",
-      "users": 0
-     },
-     {
-      "date": "2026-06-14",
-      "users": 0
-     },
-     {
-      "date": "2026-06-15",
-      "users": 0
-     },
-     {
-      "date": "2026-06-16",
-      "users": 0
-     },
-     {
-      "date": "2026-06-17",
-      "users": 0
-     },
-     {
-      "date": "2026-06-18",
-      "users": 0
-     },
-     {
-      "date": "2026-06-19",
-      "users": 0
-     },
-     {
-      "date": "2026-06-20",
-      "users": 0
-     },
-     {
-      "date": "2026-06-21",
-      "users": 0
-     },
-     {
-      "date": "2026-06-22",
-      "users": 0
-     },
-     {
-      "date": "2026-06-23",
-      "users": 0
-     },
-     {
-      "date": "2026-06-24",
-      "users": 0
-     },
-     {
-      "date": "2026-06-25",
-      "users": 1
-     },
-     {
-      "date": "2026-06-26",
-      "users": 0
-     },
-     {
-      "date": "2026-06-27",
-      "users": 0
-     },
-     {
-      "date": "2026-06-28",
-      "users": 0
-     },
-     {
-      "date": "2026-06-29",
-      "users": 0
-     },
-     {
-      "date": "2026-06-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-01",
-      "users": 0
-     },
-     {
-      "date": "2026-07-02",
-      "users": 0
-     },
-     {
-      "date": "2026-07-03",
-      "users": 0
-     },
-     {
-      "date": "2026-07-04",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 0,
-    "d30": 1,
-    "d7_prev": 1,
-    "pv30": 1,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Referral",
-      "users": 2
      }
     ],
     "engaged7": 0,
