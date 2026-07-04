@@ -22,7 +22,8 @@ now = datetime.datetime.utcnow() + datetime.timedelta(hours=8)   # 台北時間�
 today = now.date()
 ystr = (today - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
 
-SITES = {"grow.walk2light.com": "grow", "www.walk2light.com": "wealth", "walk2light.com": "wealth"}
+SITES = {"grow.walk2light.com": "grow", "www.walk2light.com": "wealth",
+         "walk2light.com": "wealth", "new.walk2light.com": "wealth"}  # localhost/bak 等測試網域自動略過
 KEY_EVENTS = ["email_signup", "cta_view", "magnet_delivered", "card_open", "outbound_placement",
               "tool_engaged", "tool_result", "purchase_intent", "cta_click", "result_share"]
 
@@ -67,43 +68,6 @@ def main():
             headers={"Authorization": f"Bearer {creds.token}", "Content-Type": "application/json"})
         with urllib.request.urlopen(req, timeout=45) as r:
             return json.loads(r.read())
-
-    # ── DEBUG（0704 抓 bug）：這個 property 到底有哪些 hostName / 事件 ──
-    print("=== DEBUG PROPERTY_ID (末4碼) =", GA_PROP[-4:] if len(GA_PROP) >= 4 else GA_PROP)
-    try:
-        print("=== DEBUG 服務帳戶 email =", json.loads(GA_SA).get("client_email", "?"))
-    except Exception:
-        print("=== DEBUG 服務帳戶 email 讀取失敗")
-    # 列出服務帳戶能看到的所有 GA4 資源（找正確的 property id）
-    try:
-        areq = urllib.request.Request(
-            "https://analyticsadmin.googleapis.com/v1beta/accountSummaries?pageSize=200",
-            headers={"Authorization": f"Bearer {creds.token}"})
-        with urllib.request.urlopen(areq, timeout=30) as r:
-            summ = json.loads(r.read())
-        print("=== DEBUG 服務帳戶能看到的資源:")
-        for acc in summ.get("accountSummaries", []):
-            for p in acc.get("propertySummaries", []):
-                pid = p.get("property", "").split("/")[-1]
-                nm = p.get("displayName", "").encode("ascii", "replace").decode()
-                print("   property_id=%s name=%s" % (pid, nm))
-    except Exception as ae:
-        print("=== DEBUG accountSummaries 失敗:", type(ae).__name__, str(ae)[:120])
-    dbg_h = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
-                        "dimensions": [{"name": "hostName"}],
-                        "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"}],
-                        "limit": 50})
-    print("=== DEBUG hostNames（含今天，未過濾）:")
-    for (h,), (au, pv) in rows(dbg_h):
-        print("   host=[%s] users=%s pv=%s" % (h.encode("ascii","replace").decode(), au, pv))
-    dbg_e = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
-                        "dimensions": [{"name": "eventName"}],
-                        "metrics": [{"name": "eventCount"}],
-                        "orderBys": [{"metric": {"metricName": "eventCount"}, "desc": True}],
-                        "limit": 40})
-    print("=== DEBUG 事件清單（含今天）:")
-    for (e,), (c,) in rows(dbg_e):
-        print("   event=%s count=%s" % (e, c))
 
     # ── Q1：近 30 天 每日×站 活躍/瀏覽 ───────────────────────────
     q1 = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
