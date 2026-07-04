@@ -70,6 +70,10 @@ def main():
 
     # ── DEBUG（0704 抓 bug）：這個 property 到底有哪些 hostName / 事件 ──
     print("=== DEBUG PROPERTY_ID (末4碼) =", GA_PROP[-4:] if len(GA_PROP) >= 4 else GA_PROP)
+    try:
+        print("=== DEBUG 服務帳戶 email =", json.loads(GA_SA).get("client_email", "?"))
+    except Exception:
+        print("=== DEBUG 服務帳戶 email 讀取失敗")
     # 列出服務帳戶能看到的所有 GA4 資源（找正確的 property id）
     try:
         areq = urllib.request.Request(
