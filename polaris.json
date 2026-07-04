@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-04 21:14",
- "updated": "2026-07-04 21:14 台北",
+ "generatedAt": "2026-07-04 21:16",
+ "updated": "2026-07-04 21:16 台北",
  "yesterday_date": "2026-07-03",
  "yesterday": {
   "users": 75,
@@ -42,9 +42,9 @@
   "users": 215,
   "pv": 566,
   "events": {
-   "cta_click": 10,
    "tool_engaged": 5,
    "tool_result": 4,
+   "cta_click": 10,
    "email_signup": 11,
    "magnet_delivered": 10,
    "card_open": 6,
@@ -67,9 +67,9 @@
    "wealth": {
     "users": 130,
     "events": {
-     "cta_click": 3,
      "tool_engaged": 4,
      "tool_result": 3,
+     "cta_click": 3,
      "purchase_intent": 2
     }
    }
@@ -82,8 +82,8 @@
    "email_signup": 13,
    "tool_engaged": 12,
    "tool_result": 11,
-   "cta_click": 11,
    "purchase_intent": 4,
+   "cta_click": 11,
    "magnet_delivered": 10,
    "card_open": 6,
    "outbound_placement": 2
@@ -107,8 +107,8 @@
      "email_signup": 2,
      "tool_engaged": 11,
      "tool_result": 10,
-     "cta_click": 4,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "cta_click": 4
     }
    }
   }
@@ -4901,101 +4901,101 @@
   "top_pages": {
    "grow": [
     {
-     "path": "/",
      "name": "光合作用",
+     "path": "/",
      "views": 313,
      "users": 165
     },
     {
-     "path": "/voices/",
      "name": "大家怎麼說",
+     "path": "/voices/",
      "views": 54,
      "users": 30
     },
     {
-     "path": "/dad-bet/",
      "name": "父子對決 ‧ 30 天衝粉賭局",
+     "path": "/dad-bet/",
      "views": 51,
      "users": 26
     },
     {
-     "path": "/articles/",
      "name": "對話筆記",
+     "path": "/articles/",
      "views": 45,
      "users": 30
     },
     {
-     "path": "/start/",
      "name": "教養工具箱",
+     "path": "/start/",
      "views": 35,
      "users": 16
     },
     {
-     "path": "/welcome/",
      "name": "收到了，謝謝你",
+     "path": "/welcome/",
      "views": 26,
      "users": 24
     },
     {
-     "path": "/about/",
      "name": "關於 Jeff",
+     "path": "/about/",
      "views": 18,
      "users": 14
     },
     {
-     "path": "/articles/adult-first-burned-out/",
      "name": "不是孩子難搞，是你今天也快被磨光了",
+     "path": "/articles/adult-first-burned-out/",
      "views": 10,
      "users": 9
     }
    ],
    "wealth": [
     {
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "views": 107,
-     "users": 76
+     "views": 155,
+     "users": 86
     },
     {
-     "path": "/about/",
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "views": 38,
-     "users": 3
+     "name": "找不到頁面",
+     "path": "/f627769f-2304-411f-aff7-0ec43463404d",
+     "views": 110,
+     "users": 99
     },
     {
-     "path": "/",
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "views": 10,
-     "users": 7
-    },
-    {
-     "path": "/videos/",
      "name": "影片庫",
+     "path": "/videos/",
      "views": 9,
      "users": 7
     },
     {
-     "path": "/start/",
      "name": "從 0 到 1 學習地圖",
+     "path": "/start/",
      "views": 7,
      "users": 7
     },
     {
-     "path": "/about/",
      "name": "關於 Jeff",
+     "path": "/about/",
      "views": 6,
      "users": 1
     },
     {
-     "path": "/consulting/",
      "name": "1 對 1 新手陪跑諮詢",
+     "path": "/consulting/",
      "views": 5,
      "users": 3
     },
     {
-     "path": "/f627769f-2304-411f-aff7-0ec43463404d",
-     "name": "找不到頁面",
-     "views": 5,
+     "name": "深度文章",
+     "path": "/articles/",
+     "views": 4,
+     "users": 4
+    },
+    {
+     "name": "投資總是賠錢？因為你不懂這個「底層邏輯」！一張圖看懂 40 年不敗心",
+     "path": "/videos/ep09/",
+     "views": 4,
      "users": 3
     }
    ]
