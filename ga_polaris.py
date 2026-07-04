@@ -68,6 +68,24 @@ def main():
         with urllib.request.urlopen(req, timeout=45) as r:
             return json.loads(r.read())
 
+    # ── DEBUG（0704 抓 bug）：這個 property 到底有哪些 hostName / 事件 ──
+    print("=== DEBUG PROPERTY_ID (末4碼) =", GA_PROP[-4:] if len(GA_PROP) >= 4 else GA_PROP)
+    dbg_h = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
+                        "dimensions": [{"name": "hostName"}],
+                        "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"}],
+                        "limit": 50})
+    print("=== DEBUG hostNames（含今天，未過濾）:")
+    for (h,), (au, pv) in rows(dbg_h):
+        print("   host=[%s] users=%s pv=%s" % (h.encode("ascii","replace").decode(), au, pv))
+    dbg_e = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
+                        "dimensions": [{"name": "eventName"}],
+                        "metrics": [{"name": "eventCount"}],
+                        "orderBys": [{"metric": {"metricName": "eventCount"}, "desc": True}],
+                        "limit": 40})
+    print("=== DEBUG 事件清單（含今天）:")
+    for (e,), (c,) in rows(dbg_e):
+        print("   event=%s count=%s" % (e, c))
+
     # ── Q1：近 30 天 每日×站 活躍/瀏覽 ───────────────────────────
     q1 = run_report({"dateRanges": [{"startDate": "30daysAgo", "endDate": "today"}],
                      "dimensions": [{"name": "date"}, {"name": "hostName"}],
