@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-05 21:26",
- "updated": "2026-07-05 21:26 台北",
+ "generatedAt": "2026-07-05 22:07",
+ "updated": "2026-07-05 22:07 台北",
  "yesterday_date": "2026-07-04",
  "yesterday": {
   "users": 158,
@@ -66,9 +66,9 @@
     "users": 126,
     "events": {
      "cta_click": 2,
-     "purchase_intent": 2,
      "tool_engaged": 2,
-     "tool_result": 1
+     "tool_result": 1,
+     "purchase_intent": 2
     }
    }
   }
@@ -77,12 +77,12 @@
   "users": 434,
   "pv": 1114,
   "events": {
-   "cta_click": 19,
    "tool_engaged": 68,
    "tool_result": 64,
    "email_signup": 34,
    "magnet_delivered": 28,
    "card_open": 19,
+   "cta_click": 19,
    "outbound_placement": 6,
    "purchase_intent": 4
   },
@@ -105,8 +105,8 @@
      "cta_click": 5,
      "tool_engaged": 11,
      "tool_result": 10,
-     "purchase_intent": 4,
-     "email_signup": 2
+     "email_signup": 2,
+     "purchase_intent": 4
     }
    }
   }
@@ -162,7 +162,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 289,
+   "sessions": 290,
    "users": 229,
    "signups": 8
   },
@@ -170,8 +170,8 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 157,
-   "users": 137,
+   "sessions": 158,
+   "users": 138,
    "signups": 21
   },
   {
@@ -186,8 +186,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 32,
-   "users": 28,
+   "sessions": 33,
+   "users": 29,
    "signups": 9
   },
   {
@@ -226,7 +226,7 @@
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 6,
+   "sessions": 7,
    "users": 6,
    "signups": 0
   },
@@ -4969,12 +4969,12 @@
    },
    {
     "label": "其他",
-    "users": 182,
+    "users": 183,
     "signups": 25
    },
    {
     "label": "IG 帶來的",
-    "users": 49,
+    "users": 50,
     "signups": 9
    },
    {
@@ -5002,7 +5002,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 192,
+     "users": 194,
      "signups": 30
     },
     {
@@ -5068,8 +5068,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 356,
-     "users": 196
+     "views": 358,
+     "users": 197
     },
     {
      "name": "大家怎麼說",
