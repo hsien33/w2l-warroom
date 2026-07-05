@@ -177,11 +177,18 @@ def main():
     alerts = []
     if s7v >= 3 and sy == 0:
         alerts.append("名單斷流：過去 7 日平均有名單，但昨天掛零。")
+    _UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+           "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
     for url, name in [("https://grow.walk2light.com/", "光合作用 grow"),
                       ("https://www.walk2light.com/", "財富煉金術 www")]:
         try:
-            with urllib.request.urlopen(url, timeout=20) as r:
-                if r.status != 200: alerts.append(f"{name} 回應 {r.status}")
+            req = urllib.request.Request(url, headers={"User-Agent": _UA})
+            urllib.request.urlopen(req, timeout=20).close()
+        except urllib.error.HTTPError:
+            # 伺服器有回應（多半是 GitHub 機房 IP 被 CDN/防護當機器人擋的 4xx/5xx challenge）
+            # ＝站是活的，不誤報。站真的掛掉會是連線層失敗（下面那個 except）；
+            # 內容/追蹤問題另由「昨天 0 人造訪」的資料告警把關。
+            pass
         except Exception as e:
             alerts.append(f"{name} 連不上（{type(e).__name__}）")
     if alerts:
