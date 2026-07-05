@@ -1,18 +1,18 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-06 03:41",
- "updated": "2026-07-06 03:41 台北",
+ "generatedAt": "2026-07-06 06:12",
+ "updated": "2026-07-06 06:12 台北",
  "yesterday_date": "2026-07-05",
  "yesterday": {
   "users": 44,
-  "pv": 128,
+  "pv": 132,
   "events": {
    "tool_engaged": 12,
    "tool_result": 10,
    "magnet_delivered": 6,
    "card_open": 5,
    "email_signup": 5,
-   "cta_click": 2
+   "cta_click": 3
   },
   "sites": {
    "grow": {
@@ -29,6 +29,7 @@
    "wealth": {
     "users": 5,
     "events": {
+     "cta_click": 1,
      "tool_engaged": 1,
      "tool_result": 1
     }
@@ -37,14 +38,14 @@
  },
  "d7": {
   "users": 362,
-  "pv": 906,
+  "pv": 910,
   "events": {
+   "cta_click": 19,
    "tool_engaged": 71,
    "tool_result": 65,
-   "email_signup": 37,
    "magnet_delivered": 34,
    "card_open": 24,
-   "cta_click": 18,
+   "email_signup": 37,
    "outbound_placement": 6,
    "purchase_intent": 2
   },
@@ -54,9 +55,9 @@
     "events": {
      "tool_engaged": 68,
      "tool_result": 63,
-     "email_signup": 37,
      "magnet_delivered": 34,
      "card_open": 24,
+     "email_signup": 37,
      "cta_click": 16,
      "outbound_placement": 6
     }
@@ -64,7 +65,7 @@
    "wealth": {
     "users": 101,
     "events": {
-     "cta_click": 2,
+     "cta_click": 3,
      "tool_engaged": 3,
      "tool_result": 2,
      "purchase_intent": 2
@@ -74,16 +75,16 @@
  },
  "d30": {
   "users": 478,
-  "pv": 1242,
+  "pv": 1246,
   "events": {
-   "email_signup": 39,
    "tool_engaged": 80,
    "tool_result": 74,
-   "cta_click": 21,
+   "purchase_intent": 4,
+   "email_signup": 39,
+   "cta_click": 22,
    "magnet_delivered": 34,
    "card_open": 24,
-   "outbound_placement": 6,
-   "purchase_intent": 4
+   "outbound_placement": 6
   },
   "sites": {
    "grow": {
@@ -91,9 +92,9 @@
     "events": {
      "tool_engaged": 68,
      "tool_result": 63,
-     "email_signup": 37,
      "magnet_delivered": 34,
      "card_open": 24,
+     "email_signup": 37,
      "cta_click": 16,
      "outbound_placement": 6
     }
@@ -101,11 +102,11 @@
    "wealth": {
     "users": 212,
     "events": {
-     "email_signup": 2,
      "tool_engaged": 12,
      "tool_result": 11,
-     "cta_click": 5,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2,
+     "cta_click": 6
     }
    }
   }
@@ -161,8 +162,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 298,
-   "users": 234,
+   "sessions": 299,
+   "users": 235,
    "signups": 8
   },
   {
@@ -177,8 +178,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 46,
-   "users": 31,
+   "sessions": 48,
+   "users": 32,
    "signups": 2
   },
   {
@@ -230,6 +231,14 @@
    "signups": 0
   },
   {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 7,
+   "users": 7,
+   "signups": 0
+  },
+  {
    "source": "(data not available)",
    "medium": "(data not available)",
    "campaign": "(cross-network)",
@@ -241,14 +250,6 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 5,
-   "users": 5,
-   "signups": 0
-  },
-  {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
    "sessions": 5,
    "users": 5,
    "signups": 0
@@ -721,7 +722,7 @@
     "d7": 32,
     "d30": 32,
     "d7_prev": 0,
-    "pv30": 47,
+    "pv30": 48,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5118,12 +5119,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 234,
+    "users": 235,
     "signups": 8
    },
    {
     "label": "其他",
-    "users": 187,
+    "users": 188,
     "signups": 25
    },
    {
@@ -5133,7 +5134,7 @@
    },
    {
     "label": "Google 搜來的",
-    "users": 5,
+    "users": 7,
     "signups": 0
    }
   ],
@@ -5180,7 +5181,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 175,
+     "users": 176,
      "signups": 2
     },
     {
@@ -5198,13 +5199,13 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 5,
+     "users": 7,
      "signups": 0
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 5,
+     "users": 6,
      "signups": 0
     }
    ]
@@ -5264,8 +5265,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 175,
-     "users": 90
+     "views": 179,
+     "users": 93
     },
     {
      "name": "找不到頁面",
@@ -5276,7 +5277,7 @@
     {
      "name": "影片庫",
      "path": "/videos/",
-     "views": 11,
+     "views": 12,
      "users": 8
     },
     {
