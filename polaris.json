@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-07 04:12",
- "updated": "2026-07-07 04:12 台北",
+ "generatedAt": "2026-07-07 06:35",
+ "updated": "2026-07-07 06:35 台北",
  "yesterday_date": "2026-07-06",
  "yesterday": {
   "users": 22,
@@ -38,9 +38,9 @@
    "cta_click": 21,
    "tool_engaged": 81,
    "tool_result": 75,
-   "card_open": 25,
-   "magnet_delivered": 35,
    "email_signup": 37,
+   "magnet_delivered": 35,
+   "card_open": 25,
    "outbound_placement": 6,
    "purchase_intent": 2
   },
@@ -48,12 +48,12 @@
    "grow": {
     "users": 271,
     "events": {
-     "cta_click": 18,
      "tool_engaged": 78,
      "tool_result": 73,
-     "card_open": 25,
-     "magnet_delivered": 35,
      "email_signup": 37,
+     "magnet_delivered": 35,
+     "card_open": 25,
+     "cta_click": 18,
      "outbound_placement": 6
     }
    },
@@ -61,9 +61,9 @@
     "users": 78,
     "events": {
      "cta_click": 3,
+     "purchase_intent": 2,
      "tool_engaged": 3,
-     "tool_result": 2,
-     "purchase_intent": 2
+     "tool_result": 2
     }
    }
   }
@@ -72,36 +72,36 @@
   "users": 502,
   "pv": 1324,
   "events": {
+   "cta_click": 24,
    "tool_engaged": 91,
    "tool_result": 85,
-   "purchase_intent": 4,
    "email_signup": 39,
-   "cta_click": 24,
-   "card_open": 25,
    "magnet_delivered": 35,
-   "outbound_placement": 6
+   "card_open": 25,
+   "outbound_placement": 6,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 282,
     "events": {
-     "cta_click": 18,
      "tool_engaged": 78,
      "tool_result": 73,
-     "card_open": 25,
-     "magnet_delivered": 35,
      "email_signup": 37,
+     "magnet_delivered": 35,
+     "card_open": 25,
+     "cta_click": 18,
      "outbound_placement": 6
     }
    },
    "wealth": {
     "users": 220,
     "events": {
+     "cta_click": 6,
      "tool_engaged": 13,
      "tool_result": 12,
      "purchase_intent": 4,
-     "email_signup": 2,
-     "cta_click": 6
+     "email_signup": 2
     }
    }
   }
@@ -165,7 +165,7 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 170,
+   "sessions": 171,
    "users": 148,
    "signups": 22
   },
@@ -197,7 +197,7 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 18,
+   "sessions": 19,
    "users": 14,
    "signups": 0
   },
@@ -5194,7 +5194,7 @@
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
      "path": "/dad-bet/",
-     "views": 58,
+     "views": 59,
      "users": 28
     },
     {
