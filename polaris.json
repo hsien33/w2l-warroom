@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-06 19:00",
- "updated": "2026-07-06 19:00 台北",
+ "generatedAt": "2026-07-06 23:53",
+ "updated": "2026-07-06 23:53 台北",
  "yesterday_date": "2026-07-05",
  "yesterday": {
   "users": 46,
@@ -40,35 +40,35 @@
   "users": 364,
   "pv": 924,
   "events": {
-   "cta_click": 19,
+   "tool_engaged": 71,
+   "tool_result": 66,
    "email_signup": 37,
    "magnet_delivered": 34,
    "card_open": 25,
+   "cta_click": 19,
    "outbound_placement": 6,
-   "tool_engaged": 71,
-   "tool_result": 66,
    "purchase_intent": 2
   },
   "sites": {
    "grow": {
     "users": 262,
     "events": {
-     "cta_click": 16,
+     "tool_engaged": 68,
+     "tool_result": 64,
      "email_signup": 37,
      "magnet_delivered": 34,
      "card_open": 25,
-     "outbound_placement": 6,
-     "tool_engaged": 68,
-     "tool_result": 64
+     "cta_click": 16,
+     "outbound_placement": 6
     }
    },
    "wealth": {
     "users": 102,
     "events": {
-     "purchase_intent": 2,
+     "cta_click": 3,
      "tool_engaged": 3,
      "tool_result": 2,
-     "cta_click": 3
+     "purchase_intent": 2
     }
    }
   }
@@ -77,35 +77,35 @@
   "users": 480,
   "pv": 1260,
   "events": {
-   "email_signup": 39,
    "tool_engaged": 80,
    "tool_result": 75,
    "purchase_intent": 4,
-   "cta_click": 22,
+   "email_signup": 39,
    "magnet_delivered": 34,
    "card_open": 25,
+   "cta_click": 22,
    "outbound_placement": 6
   },
   "sites": {
    "grow": {
     "users": 267,
     "events": {
-     "cta_click": 16,
+     "tool_engaged": 68,
+     "tool_result": 64,
      "email_signup": 37,
      "magnet_delivered": 34,
      "card_open": 25,
-     "outbound_placement": 6,
-     "tool_engaged": 68,
-     "tool_result": 64
+     "cta_click": 16,
+     "outbound_placement": 6
     }
    },
    "wealth": {
     "users": 213,
     "events": {
-     "email_signup": 2,
      "tool_engaged": 12,
      "tool_result": 11,
      "purchase_intent": 4,
+     "email_signup": 2,
      "cta_click": 6
     }
    }
@@ -162,8 +162,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 305,
-   "users": 239,
+   "sessions": 307,
+   "users": 240,
    "signups": 8
   },
   {
@@ -250,7 +250,7 @@
    "source": "hsien33.github.io",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 4,
+   "sessions": 5,
    "users": 1,
    "signups": 1
   }
@@ -715,14 +715,14 @@
      },
      {
       "date": "2026-07-06",
-      "users": 5
+      "users": 6
      }
     ],
-    "today": 5,
+    "today": 6,
     "d7": 32,
     "d30": 32,
     "d7_prev": 0,
-    "pv30": 50,
+    "pv30": 51,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -736,7 +736,7 @@
      },
      {
       "ch": "Direct",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Unassigned",
@@ -5099,7 +5099,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 239,
+    "users": 240,
     "signups": 8
    },
    {
@@ -5120,7 +5120,7 @@
   ],
   "ig_share": 12,
   "cards": [],
-  "summary": "今天正常：昨天新增 5 位名單、工具有 11 人在用",
+  "summary": "今天正常：昨天新增 5 位名單、工具有 12 人在用",
   "signup_total_30d": 39
  },
  "v3": {
@@ -5135,7 +5135,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 52,
+     "users": 53,
      "signups": 2
     },
     {
