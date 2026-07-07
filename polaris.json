@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-08 04:12",
- "updated": "2026-07-08 04:12 台北",
+ "generatedAt": "2026-07-08 06:21",
+ "updated": "2026-07-08 06:21 台北",
  "yesterday_date": "2026-07-07",
  "yesterday": {
   "users": 234,
@@ -36,34 +36,34 @@
   "users": 567,
   "pv": 1210,
   "events": {
-   "tool_engaged": 167,
-   "tool_result": 145,
    "email_signup": 41,
    "magnet_delivered": 37,
    "card_open": 27,
    "cta_click": 23,
    "outbound_placement": 6,
+   "tool_engaged": 167,
+   "tool_result": 145,
    "purchase_intent": 2
   },
   "sites": {
    "grow": {
     "users": 500,
     "events": {
-     "tool_engaged": 164,
-     "tool_result": 143,
      "email_signup": 41,
      "magnet_delivered": 37,
      "card_open": 27,
      "cta_click": 21,
-     "outbound_placement": 6
+     "outbound_placement": 6,
+     "tool_engaged": 164,
+     "tool_result": 143
     }
    },
    "wealth": {
     "users": 67,
     "events": {
-     "cta_click": 2,
      "purchase_intent": 2,
      "tool_engaged": 3,
+     "cta_click": 2,
      "tool_result": 2
     }
    }
@@ -74,35 +74,35 @@
   "pv": 1645,
   "events": {
    "email_signup": 43,
-   "tool_engaged": 177,
-   "tool_result": 155,
-   "cta_click": 27,
    "magnet_delivered": 37,
    "card_open": 27,
+   "cta_click": 27,
    "outbound_placement": 6,
+   "tool_engaged": 177,
+   "tool_result": 155,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 514,
     "events": {
-     "tool_engaged": 164,
-     "tool_result": 143,
      "email_signup": 41,
      "magnet_delivered": 37,
      "card_open": 27,
      "cta_click": 21,
-     "outbound_placement": 6
+     "outbound_placement": 6,
+     "tool_engaged": 164,
+     "tool_result": 143
     }
    },
    "wealth": {
     "users": 223,
     "events": {
-     "email_signup": 2,
+     "purchase_intent": 4,
      "tool_engaged": 13,
-     "tool_result": 12,
      "cta_click": 6,
-     "purchase_intent": 4
+     "tool_result": 12,
+     "email_signup": 2
     }
    }
   }
@@ -158,15 +158,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 397,
-   "users": 316,
+   "sessions": 399,
+   "users": 318,
    "signups": 9
   },
   {
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 176,
+   "sessions": 177,
    "users": 151,
    "signups": 22
   },
@@ -174,8 +174,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 104,
-   "users": 89,
+   "sessions": 108,
+   "users": 93,
    "signups": 3
   },
   {
@@ -198,8 +198,8 @@
    "source": "(data not available)",
    "medium": "(data not available)",
    "campaign": "(cross-network)",
-   "sessions": 43,
-   "users": 43,
+   "sessions": 46,
+   "users": 46,
    "signups": 1
   },
   {
@@ -230,8 +230,8 @@
    "source": "lm.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 21,
-   "users": 20,
+   "sessions": 22,
+   "users": 21,
    "signups": 0
   },
   {
@@ -552,22 +552,26 @@
      },
      {
       "date": "2026-07-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 5,
     "d7_prev": 2,
-    "pv30": 9,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      },
      {
       "ch": "Referral",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -871,14 +875,14 @@
      },
      {
       "date": "2026-07-08",
-      "users": 16
+      "users": 17
      }
     ],
-    "today": 16,
+    "today": 17,
     "d7": 71,
     "d30": 71,
     "d7_prev": 0,
-    "pv30": 85,
+    "pv30": 86,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -892,7 +896,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 29
+      "users": 30
      },
      {
       "ch": "Direct",
@@ -1978,14 +1982,14 @@
      },
      {
       "date": "2026-07-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 4,
     "d7_prev": 3,
-    "pv30": 4,
+    "pv30": 5,
     "outbound": [],
     "channels": [
      {
@@ -1994,6 +1998,10 @@
      },
      {
       "ch": "Direct",
+      "users": 2
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -5120,12 +5128,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 407,
+    "users": 415,
     "signups": 29
    },
    {
     "label": "直接輸入網址",
-    "users": 316,
+    "users": 318,
     "signups": 9
    },
    {
@@ -5136,7 +5144,7 @@
   ],
   "ig_share": 7,
   "cards": [],
-  "summary": "今天正常：昨天新增 3 位名單、工具有 17 人在用",
+  "summary": "今天正常：昨天新增 3 位名單、工具有 20 人在用",
   "signup_total_30d": 43
  },
  "v3": {
@@ -5145,25 +5153,25 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 335,
+     "users": 336,
      "signups": 32
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 126,
+     "users": 128,
      "signups": 3
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 87,
+     "users": 91,
      "signups": 3
     },
     {
      "ch": "跨網路廣告",
      "raw": "Cross-network",
-     "users": 43,
+     "users": 46,
      "signups": 1
     },
     {
@@ -5177,7 +5185,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 183,
+     "users": 184,
      "signups": 2
     },
     {
@@ -5201,7 +5209,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     }
    ]
@@ -5217,13 +5225,13 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 158,
-     "users": 158
+     "views": 163,
+     "users": 164
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
      "path": "/dad-bet/",
-     "views": 64,
+     "views": 65,
      "users": 31
     },
     {
@@ -5253,8 +5261,8 @@
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 25,
-     "users": 19
+     "views": 26,
+     "users": 20
     }
    ],
    "wealth": [
@@ -5262,7 +5270,7 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 188,
-     "users": 98
+     "users": 99
     },
     {
      "name": "找不到頁面",
@@ -5279,14 +5287,14 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 12,
-     "users": 5
+     "views": 13,
+     "users": 6
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 12,
-     "users": 10
+     "views": 13,
+     "users": 11
     },
     {
      "name": "關於 Jeff",
@@ -5295,16 +5303,16 @@
      "users": 2
     },
     {
-     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
-     "path": "/articles/ep01-foundation/",
-     "views": 7,
-     "users": 2
-    },
-    {
      "name": "1 對 1 新手陪跑諮詢",
      "path": "/consulting/",
-     "views": 7,
-     "users": 4
+     "views": 8,
+     "users": 5
+    },
+    {
+     "name": "投資總是賠錢？因為你不懂這個「底層邏輯」！一張圖看懂 40 年不敗心",
+     "path": "/videos/ep09/",
+     "views": 8,
+     "users": 5
     }
    ]
   },
