@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-09 03:53",
- "updated": "2026-07-09 03:53 台北",
+ "generatedAt": "2026-07-09 06:16",
+ "updated": "2026-07-09 06:16 台北",
  "yesterday_date": "2026-07-08",
  "yesterday": {
   "users": 231,
@@ -39,35 +39,35 @@
   "users": 814,
   "pv": 1571,
   "events": {
-   "email_signup": 46,
-   "magnet_delivered": 44,
-   "card_open": 30,
-   "cta_click": 28,
-   "outbound_placement": 6,
    "tool_engaged": 219,
    "tool_result": 188,
+   "card_open": 30,
+   "magnet_delivered": 44,
+   "email_signup": 46,
+   "cta_click": 28,
+   "outbound_placement": 6,
    "purchase_intent": 2
   },
   "sites": {
    "grow": {
     "users": 755,
     "events": {
-     "email_signup": 46,
-     "magnet_delivered": 44,
-     "card_open": 30,
-     "cta_click": 26,
-     "outbound_placement": 6,
      "tool_engaged": 213,
-     "tool_result": 183
+     "tool_result": 183,
+     "card_open": 30,
+     "magnet_delivered": 44,
+     "email_signup": 46,
+     "cta_click": 26,
+     "outbound_placement": 6
     }
    },
    "wealth": {
     "users": 59,
     "events": {
-     "purchase_intent": 2,
-     "tool_engaged": 6,
      "cta_click": 2,
-     "tool_result": 5
+     "tool_engaged": 6,
+     "tool_result": 5,
+     "purchase_intent": 2
     }
    }
   }
@@ -76,35 +76,35 @@
   "users": 1004,
   "pv": 2085,
   "events": {
-   "email_signup": 48,
-   "magnet_delivered": 44,
-   "card_open": 30,
-   "cta_click": 32,
-   "outbound_placement": 6,
    "tool_engaged": 229,
    "tool_result": 198,
+   "card_open": 30,
+   "magnet_delivered": 44,
+   "email_signup": 48,
+   "cta_click": 32,
+   "outbound_placement": 6,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 773,
     "events": {
-     "email_signup": 46,
-     "magnet_delivered": 44,
-     "card_open": 30,
-     "cta_click": 26,
-     "outbound_placement": 6,
      "tool_engaged": 213,
-     "tool_result": 183
+     "tool_result": 183,
+     "card_open": 30,
+     "magnet_delivered": 44,
+     "email_signup": 46,
+     "cta_click": 26,
+     "outbound_placement": 6
     }
    },
    "wealth": {
     "users": 231,
     "events": {
-     "purchase_intent": 4,
-     "tool_engaged": 16,
      "cta_click": 6,
+     "tool_engaged": 16,
      "tool_result": 15,
+     "purchase_intent": 4,
      "email_signup": 2
     }
    }
