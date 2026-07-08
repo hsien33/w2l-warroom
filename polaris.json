@@ -1,13 +1,13 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-09 00:48",
- "updated": "2026-07-09 00:48 台北",
+ "generatedAt": "2026-07-09 03:53",
+ "updated": "2026-07-09 03:53 台北",
  "yesterday_date": "2026-07-08",
  "yesterday": {
-  "users": 229,
-  "pv": 364,
+  "users": 231,
+  "pv": 370,
   "events": {
-   "tool_engaged": 42,
+   "tool_engaged": 43,
    "tool_result": 31,
    "cta_click": 5,
    "email_signup": 5,
@@ -16,9 +16,9 @@
   },
   "sites": {
    "grow": {
-    "users": 221,
+    "users": 223,
     "events": {
-     "tool_engaged": 39,
+     "tool_engaged": 40,
      "tool_result": 28,
      "cta_click": 5,
      "email_signup": 5,
@@ -36,76 +36,76 @@
   }
  },
  "d7": {
-  "users": 812,
-  "pv": 1565,
+  "users": 814,
+  "pv": 1571,
   "events": {
-   "tool_engaged": 218,
-   "tool_result": 188,
    "email_signup": 46,
    "magnet_delivered": 44,
    "card_open": 30,
    "cta_click": 28,
    "outbound_placement": 6,
+   "tool_engaged": 219,
+   "tool_result": 188,
    "purchase_intent": 2
   },
   "sites": {
    "grow": {
-    "users": 753,
+    "users": 755,
     "events": {
-     "tool_engaged": 212,
-     "tool_result": 183,
      "email_signup": 46,
      "magnet_delivered": 44,
      "card_open": 30,
      "cta_click": 26,
-     "outbound_placement": 6
+     "outbound_placement": 6,
+     "tool_engaged": 213,
+     "tool_result": 183
     }
    },
    "wealth": {
     "users": 59,
     "events": {
-     "cta_click": 2,
+     "purchase_intent": 2,
      "tool_engaged": 6,
-     "tool_result": 5,
-     "purchase_intent": 2
+     "cta_click": 2,
+     "tool_result": 5
     }
    }
   }
  },
  "d30": {
-  "users": 1002,
-  "pv": 2079,
+  "users": 1004,
+  "pv": 2085,
   "events": {
-   "cta_click": 32,
-   "tool_engaged": 228,
-   "tool_result": 198,
    "email_signup": 48,
    "magnet_delivered": 44,
    "card_open": 30,
+   "cta_click": 32,
    "outbound_placement": 6,
+   "tool_engaged": 229,
+   "tool_result": 198,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
-    "users": 771,
+    "users": 773,
     "events": {
-     "tool_engaged": 212,
-     "tool_result": 183,
      "email_signup": 46,
      "magnet_delivered": 44,
      "card_open": 30,
      "cta_click": 26,
-     "outbound_placement": 6
+     "outbound_placement": 6,
+     "tool_engaged": 213,
+     "tool_result": 183
     }
    },
    "wealth": {
     "users": 231,
     "events": {
-     "cta_click": 6,
+     "purchase_intent": 4,
      "tool_engaged": 16,
+     "cta_click": 6,
      "tool_result": 15,
-     "email_signup": 2,
-     "purchase_intent": 4
+     "email_signup": 2
     }
    }
   }
@@ -114,7 +114,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 753,
+    "count": 755,
     "rate": null
    },
    {
@@ -161,8 +161,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 506,
-   "users": 405,
+   "sessions": 509,
+   "users": 407,
    "signups": 9
   },
   {
@@ -209,8 +209,8 @@
    "source": "lm.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 48,
-   "users": 46,
+   "sessions": 49,
+   "users": 47,
    "signups": 2
   },
   {
@@ -225,7 +225,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 27,
+   "sessions": 28,
    "users": 19,
    "signups": 0
   },
@@ -402,7 +402,7 @@
   },
   {
    "date": "2026-07-08",
-   "users": 229,
+   "users": 231,
    "signups": 5
   }
  ],
@@ -721,7 +721,7 @@
     "d7": 157,
     "d30": 157,
     "d7_prev": 0,
-    "pv30": 172,
+    "pv30": 173,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -750,12 +750,12 @@
       "users": 1
      }
     ],
-    "engaged7": 48,
+    "engaged7": 49,
     "result7": 36,
     "emails30": 0,
     "outbound30": 6,
     "engage_rate": 31,
-    "finish_rate": 75,
+    "finish_rate": 73,
     "badges": [
      "爆款"
     ]
@@ -893,7 +893,7 @@
     "d7": 87,
     "d30": 87,
     "d7_prev": 0,
-    "pv30": 145,
+    "pv30": 146,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -903,7 +903,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 45
+      "users": 46
      },
      {
       "ch": "Organic Social",
@@ -1054,14 +1054,14 @@
      },
      {
       "date": "2026-07-09",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 14,
     "d30": 14,
     "d7_prev": 0,
-    "pv30": 14,
+    "pv30": 16,
     "outbound": [],
     "channels": [
      {
@@ -5150,12 +5150,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 552,
+    "users": 553,
     "signups": 29
    },
    {
     "label": "直接輸入網址",
-    "users": 405,
+    "users": 407,
     "signups": 9
    },
    {
@@ -5166,7 +5166,7 @@
   ],
   "ig_share": 6,
   "cards": [],
-  "summary": "今天正常：昨天新增 5 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 5 位名單、工具有 1 人在用",
   "signup_total_30d": 48
  },
  "v3": {
@@ -5175,13 +5175,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 434,
+     "users": 435,
      "signups": 34
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 213,
+     "users": 215,
      "signups": 3
     },
     {
@@ -5247,8 +5247,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 357,
-     "users": 327
+     "views": 359,
+     "users": 329
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
@@ -5259,7 +5259,7 @@
     {
      "name": "大家怎麼說",
      "path": "/voices/",
-     "views": 63,
+     "views": 64,
      "users": 35
     },
     {
@@ -5487,7 +5487,7 @@
     },
     {
      "date": "2026-07-08",
-     "users": 221,
+     "users": 223,
      "signups": 5
     }
    ],
@@ -5649,8 +5649,8 @@
     "signups30": 46,
     "signups7": 46,
     "signupsY": 5,
-    "users30": 771,
-    "users7": 753,
+    "users30": 773,
+    "users7": 755,
     "rate7": 6.1
    },
    "wealth": {
