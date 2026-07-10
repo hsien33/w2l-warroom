@@ -1,13 +1,13 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-11 01:05",
- "updated": "2026-07-11 01:05 台北",
+ "generatedAt": "2026-07-11 03:49",
+ "updated": "2026-07-11 03:49 台北",
  "yesterday_date": "2026-07-10",
  "yesterday": {
   "users": 32,
   "pv": 63,
   "events": {
-   "tool_engaged": 11,
+   "tool_engaged": 12,
    "tool_result": 3,
    "magnet_delivered": 2,
    "cta_click": 1,
@@ -17,7 +17,7 @@
    "grow": {
     "users": 28,
     "events": {
-     "tool_engaged": 11,
+     "tool_engaged": 12,
      "tool_result": 3,
      "magnet_delivered": 2,
      "cta_click": 1,
@@ -34,33 +34,33 @@
   "users": 823,
   "pv": 1530,
   "events": {
-   "tool_engaged": 251,
+   "tool_engaged": 252,
    "tool_result": 208,
-   "card_open": 26,
-   "magnet_delivered": 39,
-   "email_signup": 38,
    "cta_click": 23,
+   "card_open": 26,
+   "email_signup": 38,
+   "magnet_delivered": 39,
    "outbound_placement": 4
   },
   "sites": {
    "grow": {
     "users": 773,
     "events": {
-     "tool_engaged": 247,
+     "tool_engaged": 248,
      "tool_result": 204,
-     "card_open": 26,
-     "magnet_delivered": 39,
-     "email_signup": 38,
      "cta_click": 20,
+     "card_open": 26,
+     "email_signup": 38,
+     "magnet_delivered": 39,
      "outbound_placement": 4
     }
    },
    "wealth": {
     "users": 50,
     "events": {
-     "cta_click": 3,
      "tool_engaged": 4,
-     "tool_result": 4
+     "tool_result": 4,
+     "cta_click": 3
     }
    }
   }
@@ -69,12 +69,12 @@
   "users": 1099,
   "pv": 2261,
   "events": {
-   "tool_engaged": 263,
+   "tool_engaged": 264,
    "tool_result": 219,
-   "card_open": 32,
-   "magnet_delivered": 49,
-   "email_signup": 51,
    "cta_click": 34,
+   "card_open": 32,
+   "email_signup": 51,
+   "magnet_delivered": 49,
    "outbound_placement": 6,
    "purchase_intent": 4
   },
@@ -82,21 +82,21 @@
    "grow": {
     "users": 858,
     "events": {
-     "tool_engaged": 248,
+     "tool_engaged": 249,
      "tool_result": 205,
-     "card_open": 32,
-     "magnet_delivered": 49,
-     "email_signup": 49,
      "cta_click": 27,
+     "card_open": 32,
+     "email_signup": 49,
+     "magnet_delivered": 49,
      "outbound_placement": 6
     }
    },
    "wealth": {
     "users": 241,
     "events": {
-     "cta_click": 7,
      "tool_engaged": 15,
      "tool_result": 14,
+     "cta_click": 7,
      "purchase_intent": 4,
      "email_signup": 2
     }
@@ -154,8 +154,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 586,
-   "users": 452,
+   "sessions": 587,
+   "users": 453,
    "signups": 10
   },
   {
@@ -5201,6 +5201,157 @@
     "badges": [
      "沉睡"
     ]
+   },
+   {
+    "slug": "summer-plan",
+    "site": "grow",
+    "daily": [
+     {
+      "date": "2026-06-11",
+      "users": 0
+     },
+     {
+      "date": "2026-06-12",
+      "users": 0
+     },
+     {
+      "date": "2026-06-13",
+      "users": 0
+     },
+     {
+      "date": "2026-06-14",
+      "users": 0
+     },
+     {
+      "date": "2026-06-15",
+      "users": 0
+     },
+     {
+      "date": "2026-06-16",
+      "users": 0
+     },
+     {
+      "date": "2026-06-17",
+      "users": 0
+     },
+     {
+      "date": "2026-06-18",
+      "users": 0
+     },
+     {
+      "date": "2026-06-19",
+      "users": 0
+     },
+     {
+      "date": "2026-06-20",
+      "users": 0
+     },
+     {
+      "date": "2026-06-21",
+      "users": 0
+     },
+     {
+      "date": "2026-06-22",
+      "users": 0
+     },
+     {
+      "date": "2026-06-23",
+      "users": 0
+     },
+     {
+      "date": "2026-06-24",
+      "users": 0
+     },
+     {
+      "date": "2026-06-25",
+      "users": 0
+     },
+     {
+      "date": "2026-06-26",
+      "users": 0
+     },
+     {
+      "date": "2026-06-27",
+      "users": 0
+     },
+     {
+      "date": "2026-06-28",
+      "users": 0
+     },
+     {
+      "date": "2026-06-29",
+      "users": 0
+     },
+     {
+      "date": "2026-06-30",
+      "users": 0
+     },
+     {
+      "date": "2026-07-01",
+      "users": 0
+     },
+     {
+      "date": "2026-07-02",
+      "users": 0
+     },
+     {
+      "date": "2026-07-03",
+      "users": 0
+     },
+     {
+      "date": "2026-07-04",
+      "users": 0
+     },
+     {
+      "date": "2026-07-05",
+      "users": 0
+     },
+     {
+      "date": "2026-07-06",
+      "users": 0
+     },
+     {
+      "date": "2026-07-07",
+      "users": 0
+     },
+     {
+      "date": "2026-07-08",
+      "users": 0
+     },
+     {
+      "date": "2026-07-09",
+      "users": 0
+     },
+     {
+      "date": "2026-07-10",
+      "users": 0
+     },
+     {
+      "date": "2026-07-11",
+      "users": 1
+     }
+    ],
+    "today": 1,
+    "d7": 0,
+    "d30": 0,
+    "d7_prev": 0,
+    "pv30": 1,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Direct",
+      "users": 1
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
    }
   ],
   "outbound_top": [
@@ -5281,7 +5432,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 452,
+    "users": 453,
     "signups": 10
    },
    {
@@ -5292,7 +5443,7 @@
   ],
   "ig_share": 6,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
   "signup_total_30d": 51
  },
  "v3": {
@@ -5307,7 +5458,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 253,
+     "users": 254,
      "signups": 4
     },
     {
@@ -5379,7 +5530,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 415,
+     "views": 416,
      "users": 234
     },
     {
