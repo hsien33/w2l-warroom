@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-11 03:49",
- "updated": "2026-07-11 03:49 台北",
+ "generatedAt": "2026-07-11 06:14",
+ "updated": "2026-07-11 06:14 台北",
  "yesterday_date": "2026-07-10",
  "yesterday": {
   "users": 32,
@@ -36,10 +36,10 @@
   "events": {
    "tool_engaged": 252,
    "tool_result": 208,
-   "cta_click": 23,
    "card_open": 26,
-   "email_signup": 38,
    "magnet_delivered": 39,
+   "email_signup": 38,
+   "cta_click": 23,
    "outbound_placement": 4
   },
   "sites": {
@@ -48,19 +48,19 @@
     "events": {
      "tool_engaged": 248,
      "tool_result": 204,
-     "cta_click": 20,
      "card_open": 26,
-     "email_signup": 38,
      "magnet_delivered": 39,
+     "email_signup": 38,
+     "cta_click": 20,
      "outbound_placement": 4
     }
    },
    "wealth": {
     "users": 50,
     "events": {
+     "cta_click": 3,
      "tool_engaged": 4,
-     "tool_result": 4,
-     "cta_click": 3
+     "tool_result": 4
     }
    }
   }
@@ -69,36 +69,36 @@
   "users": 1099,
   "pv": 2261,
   "events": {
-   "tool_engaged": 264,
-   "tool_result": 219,
-   "cta_click": 34,
-   "card_open": 32,
    "email_signup": 51,
    "magnet_delivered": 49,
+   "card_open": 32,
+   "cta_click": 34,
    "outbound_placement": 6,
+   "tool_engaged": 264,
+   "tool_result": 219,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 858,
     "events": {
-     "tool_engaged": 249,
-     "tool_result": 205,
-     "cta_click": 27,
-     "card_open": 32,
      "email_signup": 49,
      "magnet_delivered": 49,
-     "outbound_placement": 6
+     "card_open": 32,
+     "cta_click": 27,
+     "outbound_placement": 6,
+     "tool_engaged": 249,
+     "tool_result": 205
     }
    },
    "wealth": {
     "users": 241,
     "events": {
+     "purchase_intent": 4,
      "tool_engaged": 15,
      "tool_result": 14,
-     "cta_click": 7,
-     "purchase_intent": 4,
-     "email_signup": 2
+     "email_signup": 2,
+     "cta_click": 7
     }
    }
   }
@@ -154,8 +154,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 587,
-   "users": 453,
+   "sessions": 589,
+   "users": 454,
    "signups": 10
   },
   {
@@ -871,14 +871,14 @@
      },
      {
       "date": "2026-07-11",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 102,
     "d30": 102,
     "d7_prev": 0,
-    "pv30": 182,
+    "pv30": 183,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5432,7 +5432,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 453,
+    "users": 454,
     "signups": 10
    },
    {
@@ -5443,7 +5443,7 @@
   ],
   "ig_share": 6,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 2 人在用",
   "signup_total_30d": 51
  },
  "v3": {
@@ -5490,7 +5490,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 194,
+     "users": 195,
      "signups": 2
     },
     {
@@ -5574,8 +5574,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 208,
-     "users": 108
+     "views": 209,
+     "users": 109
     },
     {
      "name": "找不到頁面",
