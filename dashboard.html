@@ -133,6 +133,9 @@ details.deep>div{padding:0 15px 13px;font-size:12.5px}
   <h2>流量從哪來<span class="sub">哪個平台帶人、哪個帶「會留 Email 的人」</span></h2>
   <div class="card" id="channels"></div>
 
+  <h2>電子報成效<span class="sub">每封信帶了多少人進站 · 幾個留 Email</span></h2>
+  <div class="card" id="newsletter"></div>
+
   <h2>最多人看的頁<span class="sub">你的哪些內容最紅</span></h2>
   <div class="card" id="pages"></div>
 
@@ -164,6 +167,7 @@ details.deep>div{padding:0 15px 13px;font-size:12.5px}
 <script>
 var NAMES={
  "learning-gift":"孩子學習天賦解碼","learning-gift-full":"天賦解碼·完整版","booklist":"我兒子的書架（書單）",
+ "college-paths":"升學四路導航","college-paths-lite":"升學四路導航（引流版）",
  "family-screen-pact":"3C 家庭公約","alchemy-tuition":"補習費 vs 陪伴試算","phone-pact":"手機使用約定",
  "parent-child-bazi-lite":"八字合不合（公開版）","parent-child-bazi":"八字合不合（完整版）","bazi-lite":"八字合不合（舊版路徑）",
  "parent-child-bazi-quotes":"八字金句卡","tuitionfees-full":"補習費試算·完整版","compound":"複利計算機",
@@ -276,6 +280,23 @@ function renderChannels(){
   el.innerHTML=html+'<div class="plain" style="margin-top:8px">重點不是誰帶人多，是誰帶「會留 Email 的人」——那才是金礦。</div>';
 }
 
+function renderNewsletter(){
+  var v3=DATA.v3||{},el=document.getElementById('newsletter');
+  if(!el)return;
+  var arr=(v3.newsletter)||[];
+  if(!arr.length){el.innerHTML='<div class="pending">還沒有電子報流量——等第一封信寄出、有人點連結進站（連結需帶 UTM 追蹤碼），這裡就會長出每封信的成效。</div>';return;}
+  var mx=Math.max.apply(null,arr.map(function(x){return x.users;}).concat([1]));
+  var totU=0,totSig=0;
+  var html=arr.map(function(n){
+    totU+=n.users;totSig+=n.signups;
+    var nm=(n.campaign&&n.campaign!=='(not set)'&&n.campaign!=='(direct)')?n.campaign:'(未命名信)';
+    return '<div class="row2"><div class="nm">'+esc(nm)+
+      '<div class="bar" style="width:'+Math.max(n.users/mx*60,4)+'%;background:var(--leaf)"></div></div>'+
+      '<div class="val">'+n.users+'<small>人進站 · 留Email '+n.signups+(n.tool?' · 用工具 '+n.tool:'')+'</small></div></div>';
+  }).join('');
+  el.innerHTML=html+'<div class="plain" style="margin-top:8px">90 天內 · 共 '+totU+' 人從電子報進站、'+totSig+' 個留 Email。＝每封信真的「把人帶進網站」的成效（靠連結的 UTM 追蹤碼）。</div>';
+}
+
 function renderPages(){
   var v3=DATA.v3||{},el=document.getElementById('pages');
   var sites=(BRAND==='all'?['wealth','grow']:[BRAND]),html='';
@@ -333,7 +354,7 @@ function renderFunnel(){
   el.innerHTML=html;
 }
 
-function renderAll(){renderHead();renderSaying();renderAlerts();renderTools();renderChannels();renderPages();renderOutbound();renderChart();renderFunnel();}
+function renderAll(){renderHead();renderSaying();renderAlerts();renderTools();renderChannels();renderNewsletter();renderPages();renderOutbound();renderChart();renderFunnel();}
 
 function setBrand(b){BRAND=b;
   [].forEach.call(document.querySelectorAll('.tab'),function(t){t.classList.toggle('on',t.dataset.b===b);});

@@ -470,6 +470,27 @@ def main():
         return {"signups30": sig30, "signups7": sig7, "signupsY": sigY,
                 "users30": s30["users"], "users7": s7["users"], "rate7": rate}
 
+    # ── 電子報成效（UTM: source=newsletter / medium=email，按 campaign 分）──
+    _nl_and = lambda extra=[]: {"andGroup": {"expressions": [
+        {"filter": {"fieldName": "sessionMedium", "stringFilter": {"value": "email"}}},
+        {"filter": {"fieldName": "sessionSource", "stringFilter": {"value": "newsletter"}}}] + extra}}
+    nlq = run_report({"dateRanges": [{"startDate": "90daysAgo", "endDate": "today"}],
+                      "dimensions": [{"name": "sessionCampaignName"}],
+                      "metrics": [{"name": "sessions"}, {"name": "activeUsers"}],
+                      "dimensionFilter": _nl_and(),
+                      "orderBys": [{"metric": {"metricName": "sessions"}, "desc": True}], "limit": 50})
+    nle = run_report({"dateRanges": [{"startDate": "90daysAgo", "endDate": "today"}],
+                      "dimensions": [{"name": "sessionCampaignName"}, {"name": "eventName"}],
+                      "metrics": [{"name": "eventCount"}],
+                      "dimensionFilter": _nl_and([{"filter": {"fieldName": "eventName",
+                          "inListFilter": {"values": ["email_signup", "tool_engaged"]}}}]), "limit": 200})
+    nl_ev = {}
+    for d, m in rows(nle):
+        nl_ev.setdefault(d[0], {})[d[1]] = int(m[0])
+    newsletter = [{"campaign": d[0], "sessions": int(m[0]), "users": int(m[1]),
+                   "signups": nl_ev.get(d[0], {}).get("email_signup", 0),
+                   "tool": nl_ev.get(d[0], {}).get("tool_engaged", 0)} for d, m in rows(nlq)]
+
     write_json({"status": "ok", "generatedAt": now.strftime("%Y-%m-%d %H:%M"),
                 "updated": now.strftime("%Y-%m-%d %H:%M 台北"), "yesterday_date": ystr,
                 "yesterday": y1, "d7": d7, "d30": d30,
@@ -480,7 +501,7 @@ def main():
                         "ig_share": ig_share, "cards": cards, "summary": summary,
                         "signup_total_30d": d30["events"].get("email_signup", 0)},
                 "v3": {"channels": channels, "top_pages": top_pages,
-                        "trend_site": trend_site,
+                        "trend_site": trend_site, "newsletter": newsletter,
                         "site_sum": {"grow": site_summary("grow"), "wealth": site_summary("wealth")}}})
     print("polaris.json updated: signup_y=%d signup_7d=%d rate7=%.2f%% alerts=%d"
           % (sy, s7v, rate7, len(alerts)))
