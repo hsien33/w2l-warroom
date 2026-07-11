@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-11 16:13",
- "updated": "2026-07-11 16:13 台北",
+ "generatedAt": "2026-07-11 18:32",
+ "updated": "2026-07-11 18:32 台北",
  "yesterday_date": "2026-07-10",
  "yesterday": {
   "users": 35,
@@ -36,10 +36,10 @@
   "events": {
    "tool_engaged": 252,
    "tool_result": 208,
-   "magnet_delivered": 39,
-   "cta_click": 23,
-   "email_signup": 38,
    "card_open": 26,
+   "magnet_delivered": 39,
+   "email_signup": 38,
+   "cta_click": 23,
    "outbound_placement": 4
   },
   "sites": {
@@ -48,10 +48,10 @@
     "events": {
      "tool_engaged": 248,
      "tool_result": 204,
-     "magnet_delivered": 39,
-     "cta_click": 20,
-     "email_signup": 38,
      "card_open": 26,
+     "magnet_delivered": 39,
+     "email_signup": 38,
+     "cta_click": 20,
      "outbound_placement": 4
     }
    },
@@ -71,10 +71,10 @@
   "events": {
    "tool_engaged": 264,
    "tool_result": 219,
-   "magnet_delivered": 49,
-   "cta_click": 34,
-   "email_signup": 51,
    "card_open": 32,
+   "magnet_delivered": 49,
+   "email_signup": 51,
+   "cta_click": 34,
    "outbound_placement": 6,
    "purchase_intent": 4
   },
@@ -84,10 +84,10 @@
     "events": {
      "tool_engaged": 249,
      "tool_result": 205,
-     "magnet_delivered": 49,
-     "cta_click": 27,
-     "email_signup": 49,
      "card_open": 32,
+     "magnet_delivered": 49,
+     "email_signup": 49,
+     "cta_click": 27,
      "outbound_placement": 6
     }
    },
@@ -97,8 +97,8 @@
      "cta_click": 7,
      "tool_engaged": 15,
      "tool_result": 14,
-     "email_signup": 2,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
@@ -154,16 +154,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 599,
-   "users": 460,
+   "sessions": 600,
+   "users": 461,
    "signups": 10
   },
   {
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 186,
-   "users": 154,
+   "sessions": 187,
+   "users": 155,
    "signups": 22
   },
   {
@@ -186,7 +186,7 @@
    "source": "lm.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 85,
+   "sessions": 86,
    "users": 83,
    "signups": 4
   },
@@ -710,7 +710,7 @@
     "d7": 176,
     "d30": 176,
     "d7_prev": 0,
-    "pv30": 199,
+    "pv30": 200,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -2465,12 +2465,7 @@
     "d30": 1,
     "d7_prev": 0,
     "pv30": 2,
-    "outbound": [
-     {
-      "domain": "ig.me",
-      "clicks": 2
-     }
-    ],
+    "outbound": [],
     "channels": [
      {
       "ch": "Organic Social",
@@ -5357,12 +5352,7 @@
     "d30": 0,
     "d7_prev": 0,
     "pv30": 6,
-    "outbound": [
-     {
-      "domain": "ig.me",
-      "clicks": 1
-     }
-    ],
+    "outbound": [],
     "channels": [
      {
       "ch": "Direct",
@@ -5734,21 +5724,6 @@
     ]
    },
    {
-    "domain": "ig.me",
-    "clicks": 3,
-    "users": 2,
-    "pages": [
-     [
-      "/tools/alchemy-tuition.html",
-      2
-     ],
-     [
-      "/tools/summer-plan.html",
-      1
-     ]
-    ]
-   },
-   {
     "domain": "shopping.parenting.com.tw",
     "clicks": 2,
     "users": 2,
@@ -5786,12 +5761,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 514,
+    "users": 515,
     "signups": 34
    },
    {
     "label": "直接輸入網址",
-    "users": 460,
+    "users": 461,
     "signups": 10
    },
    {
@@ -5816,13 +5791,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 580,
+     "users": 581,
      "signups": 42
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 259,
+     "users": 260,
      "signups": 4
     },
     {
@@ -5888,14 +5863,14 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 425,
-     "users": 385
+     "views": 426,
+     "users": 386
     },
     {
      "name": "光合作用",
      "path": "/",
-     "views": 420,
-     "users": 236
+     "views": 421,
+     "users": 237
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
