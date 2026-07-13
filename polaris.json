@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-14 03:46",
- "updated": "2026-07-14 03:46 台北",
+ "generatedAt": "2026-07-14 06:07",
+ "updated": "2026-07-14 06:07 台北",
  "yesterday_date": "2026-07-13",
  "yesterday": {
   "users": 68,
@@ -35,8 +35,8 @@
   "events": {
    "tool_engaged": 590,
    "tool_result": 517,
-   "magnet_delivered": 21,
    "email_signup": 17,
+   "magnet_delivered": 21,
    "card_open": 10,
    "outbound_placement": 1,
    "cta_click": 11
@@ -47,8 +47,8 @@
     "events": {
      "tool_engaged": 586,
      "tool_result": 513,
-     "magnet_delivered": 21,
      "email_signup": 17,
+     "magnet_delivered": 21,
      "card_open": 10,
      "outbound_placement": 1,
      "cta_click": 10
@@ -68,26 +68,26 @@
   "users": 1821,
   "pv": 3135,
   "events": {
-   "cta_click": 35,
    "tool_engaged": 682,
    "tool_result": 604,
-   "magnet_delivered": 56,
    "email_signup": 57,
+   "magnet_delivered": 56,
    "card_open": 36,
    "outbound_placement": 7,
+   "cta_click": 35,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 1571,
     "events": {
-     "cta_click": 28,
      "tool_engaged": 665,
      "tool_result": 588,
-     "magnet_delivered": 56,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7
+     "outbound_placement": 7,
+     "cta_click": 28
     }
    },
    "wealth": {
@@ -153,8 +153,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 737,
-   "users": 569,
+   "sessions": 741,
+   "users": 571,
    "signups": 12
   },
   {
@@ -209,8 +209,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 43,
-   "users": 33,
+   "sessions": 45,
+   "users": 34,
    "signups": 0
   },
   {
@@ -704,14 +704,14 @@
      },
      {
       "date": "2026-07-14",
-      "users": 2
+      "users": 4
      }
     ],
-    "today": 2,
+    "today": 4,
     "d7": 661,
     "d30": 661,
     "d7_prev": 0,
-    "pv30": 698,
+    "pv30": 700,
     "outbound": [
      {
       "domain": "ig.me",
@@ -729,14 +729,14 @@
      },
      {
       "ch": "Unassigned",
-      "users": 34
+      "users": 35
+     },
+     {
+      "ch": "Cross-network",
+      "users": 2
      },
      {
       "ch": "Email",
-      "users": 1
-     },
-     {
-      "ch": "Organic Search",
       "users": 1
      }
     ],
@@ -1045,14 +1045,14 @@
      },
      {
       "date": "2026-07-14",
-      "users": 1
+      "users": 2
      }
     ],
-    "today": 1,
+    "today": 2,
     "d7": 76,
     "d30": 114,
     "d7_prev": 38,
-    "pv30": 195,
+    "pv30": 197,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1070,7 +1070,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 3
      }
     ],
     "engaged7": 60,
@@ -5783,12 +5783,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1112,
+    "users": 1113,
     "signups": 32
    },
    {
     "label": "直接輸入網址",
-    "users": 569,
+    "users": 571,
     "signups": 12
    },
    {
@@ -5822,13 +5822,19 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 364,
+     "users": 366,
      "signups": 6
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 28,
+     "users": 29,
+     "signups": 0
+    },
+    {
+     "ch": "跨網路廣告",
+     "raw": "Cross-network",
+     "users": 2,
      "signups": 0
     },
     {
@@ -5842,12 +5848,6 @@
      "raw": "Referral",
      "users": 2,
      "signups": 4
-    },
-    {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
@@ -5886,16 +5886,16 @@
   "top_pages": {
    "grow": [
     {
+     "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
+     "path": "/articles/when-to-give-first-phone/",
+     "views": 454,
+     "users": 405
+    },
+    {
      "name": "光合作用",
      "path": "/",
      "views": 453,
      "users": 259
-    },
-    {
-     "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
-     "path": "/articles/when-to-give-first-phone/",
-     "views": 452,
-     "users": 403
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
