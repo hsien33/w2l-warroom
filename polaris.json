@@ -1,21 +1,21 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-15 00:37",
- "updated": "2026-07-15 00:37 台北",
+ "generatedAt": "2026-07-15 03:41",
+ "updated": "2026-07-15 03:41 台北",
  "yesterday_date": "2026-07-14",
  "yesterday": {
   "users": 49,
-  "pv": 61,
+  "pv": 64,
   "events": {
-   "tool_engaged": 27,
-   "tool_result": 21
+   "tool_engaged": 28,
+   "tool_result": 22
   },
   "sites": {
    "grow": {
     "users": 47,
     "events": {
-     "tool_engaged": 27,
-     "tool_result": 21
+     "tool_engaged": 28,
+     "tool_result": 22
     }
    },
    "wealth": {
@@ -26,27 +26,27 @@
  },
  "d7": {
   "users": 1105,
-  "pv": 1500,
+  "pv": 1503,
   "events": {
-   "tool_engaged": 526,
-   "tool_result": 462,
+   "tool_engaged": 527,
+   "tool_result": 463,
    "magnet_delivered": 17,
+   "cta_click": 8,
    "email_signup": 14,
    "card_open": 9,
-   "outbound_placement": 1,
-   "cta_click": 8
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 1076,
     "events": {
-     "tool_engaged": 522,
-     "tool_result": 458,
+     "tool_engaged": 523,
+     "tool_result": 459,
      "magnet_delivered": 17,
+     "cta_click": 7,
      "email_signup": 14,
      "card_open": 9,
-     "outbound_placement": 1,
-     "cta_click": 7
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -61,14 +61,14 @@
  },
  "d30": {
   "users": 1878,
-  "pv": 3215,
+  "pv": 3218,
   "events": {
-   "tool_engaged": 712,
-   "tool_result": 629,
-   "email_signup": 57,
+   "tool_engaged": 713,
+   "tool_result": 630,
    "magnet_delivered": 56,
-   "card_open": 36,
    "cta_click": 35,
+   "email_signup": 57,
+   "card_open": 36,
    "outbound_placement": 7,
    "purchase_intent": 4
   },
@@ -76,22 +76,22 @@
    "grow": {
     "users": 1626,
     "events": {
-     "tool_engaged": 695,
-     "tool_result": 613,
-     "email_signup": 55,
+     "tool_engaged": 696,
+     "tool_result": 614,
      "magnet_delivered": 56,
-     "card_open": 36,
      "cta_click": 28,
+     "email_signup": 55,
+     "card_open": 36,
      "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 252,
     "events": {
-     "cta_click": 7,
-     "email_signup": 2,
      "tool_engaged": 17,
      "tool_result": 16,
+     "email_signup": 2,
+     "cta_click": 7,
      "purchase_intent": 4
     }
    }
@@ -148,7 +148,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 767,
+   "sessions": 769,
    "users": 591,
    "signups": 12
   },
@@ -201,19 +201,19 @@
    "signups": 13
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 30,
+   "users": 23,
+   "signups": 0
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 30,
    "users": 7,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 29,
-   "users": 23,
    "signups": 0
   },
   {
@@ -695,18 +695,18 @@
      },
      {
       "date": "2026-07-14",
-      "users": 23
+      "users": 24
      },
      {
       "date": "2026-07-15",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
-    "d7": 688,
-    "d30": 688,
+    "today": 1,
+    "d7": 689,
+    "d30": 689,
     "d7_prev": 0,
-    "pv30": 731,
+    "pv30": 732,
     "outbound": [
      {
       "domain": "ig.me",
@@ -724,7 +724,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 14
+      "users": 15
      },
      {
       "ch": "Cross-network",
@@ -907,11 +907,11 @@
       "users": 1
      }
     ],
-    "engaged7": 39,
-    "result7": 28,
+    "engaged7": 40,
+    "result7": 29,
     "emails30": 0,
     "outbound30": 9,
-    "engage_rate": 34,
+    "engage_rate": 35,
     "finish_rate": 72,
     "badges": [
      "爆款"
@@ -1039,7 +1039,7 @@
      },
      {
       "date": "2026-07-14",
-      "users": 11
+      "users": 12
      },
      {
       "date": "2026-07-15",
@@ -1047,10 +1047,10 @@
      }
     ],
     "today": 0,
-    "d7": 50,
-    "d30": 126,
+    "d7": 51,
+    "d30": 127,
     "d7_prev": 76,
-    "pv30": 210,
+    "pv30": 212,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1083,7 +1083,7 @@
     "result7": 25,
     "emails30": 0,
     "outbound30": 2,
-    "engage_rate": 76,
+    "engage_rate": 75,
     "finish_rate": 66,
     "badges": []
    },
