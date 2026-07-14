@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-15 03:41",
- "updated": "2026-07-15 03:41 台北",
+ "generatedAt": "2026-07-15 06:11",
+ "updated": "2026-07-15 06:11 台北",
  "yesterday_date": "2026-07-14",
  "yesterday": {
   "users": 49,
@@ -30,10 +30,10 @@
   "events": {
    "tool_engaged": 527,
    "tool_result": 463,
-   "magnet_delivered": 17,
-   "cta_click": 8,
    "email_signup": 14,
+   "magnet_delivered": 17,
    "card_open": 9,
+   "cta_click": 8,
    "outbound_placement": 1
   },
   "sites": {
@@ -42,10 +42,10 @@
     "events": {
      "tool_engaged": 523,
      "tool_result": 459,
-     "magnet_delivered": 17,
-     "cta_click": 7,
      "email_signup": 14,
+     "magnet_delivered": 17,
      "card_open": 9,
+     "cta_click": 7,
      "outbound_placement": 1
     }
    },
@@ -65,12 +65,12 @@
   "events": {
    "tool_engaged": 713,
    "tool_result": 630,
-   "magnet_delivered": 56,
-   "cta_click": 35,
    "email_signup": 57,
+   "magnet_delivered": 56,
    "card_open": 36,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "cta_click": 35,
+   "purchase_intent": 4,
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -78,10 +78,10 @@
     "events": {
      "tool_engaged": 696,
      "tool_result": 614,
-     "magnet_delivered": 56,
-     "cta_click": 28,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "card_open": 36,
+     "cta_click": 28,
      "outbound_placement": 7
     }
    },
@@ -90,9 +90,9 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 16,
-     "email_signup": 2,
      "cta_click": 7,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
