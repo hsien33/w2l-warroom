@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-16 03:34",
- "updated": "2026-07-16 03:34 台北",
+ "generatedAt": "2026-07-16 06:11",
+ "updated": "2026-07-16 06:11 台北",
  "yesterday_date": "2026-07-15",
  "yesterday": {
   "users": 12,
@@ -30,11 +30,11 @@
   "events": {
    "tool_engaged": 486,
    "tool_result": 432,
-   "email_signup": 7,
    "magnet_delivered": 10,
+   "cta_click": 2,
+   "email_signup": 7,
    "card_open": 4,
-   "outbound_placement": 1,
-   "cta_click": 2
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -42,11 +42,11 @@
     "events": {
      "tool_engaged": 484,
      "tool_result": 430,
-     "email_signup": 7,
      "magnet_delivered": 10,
+     "cta_click": 2,
+     "email_signup": 7,
      "card_open": 4,
-     "outbound_placement": 1,
-     "cta_click": 2
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -64,11 +64,11 @@
   "events": {
    "tool_engaged": 718,
    "tool_result": 633,
-   "email_signup": 57,
    "magnet_delivered": 56,
+   "cta_click": 35,
+   "email_signup": 57,
    "card_open": 36,
    "outbound_placement": 7,
-   "cta_click": 35,
    "purchase_intent": 4
   },
   "sites": {
@@ -77,21 +77,21 @@
     "events": {
      "tool_engaged": 701,
      "tool_result": 617,
-     "email_signup": 55,
      "magnet_delivered": 56,
+     "cta_click": 28,
+     "email_signup": 55,
      "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 28
+     "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 256,
     "events": {
      "cta_click": 7,
-     "email_signup": 2,
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
@@ -5959,7 +5959,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -6019,8 +6019,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 457,
-     "users": 263
+     "views": 458,
+     "users": 264
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
