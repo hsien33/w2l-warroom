@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-15 19:01",
- "updated": "2026-07-15 19:01 台北",
+ "generatedAt": "2026-07-15 22:07",
+ "updated": "2026-07-15 22:07 台北",
  "yesterday_date": "2026-07-14",
  "yesterday": {
   "users": 52,
@@ -30,11 +30,11 @@
   "events": {
    "tool_engaged": 529,
    "tool_result": 464,
-   "email_signup": 14,
    "magnet_delivered": 17,
+   "cta_click": 8,
+   "email_signup": 14,
    "card_open": 9,
-   "outbound_placement": 1,
-   "cta_click": 8
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -42,11 +42,11 @@
     "events": {
      "tool_engaged": 525,
      "tool_result": 460,
-     "email_signup": 14,
      "magnet_delivered": 17,
+     "cta_click": 7,
+     "email_signup": 14,
      "card_open": 9,
-     "outbound_placement": 1,
-     "cta_click": 7
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -65,12 +65,12 @@
   "events": {
    "tool_engaged": 715,
    "tool_result": 631,
-   "email_signup": 57,
    "magnet_delivered": 56,
-   "card_open": 36,
-   "outbound_placement": 7,
+   "purchase_intent": 4,
+   "email_signup": 57,
    "cta_click": 35,
-   "purchase_intent": 4
+   "card_open": 36,
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -78,11 +78,11 @@
     "events": {
      "tool_engaged": 698,
      "tool_result": 615,
-     "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 28
+     "email_signup": 55,
+     "cta_click": 28,
+     "outbound_placement": 7
     }
    },
    "wealth": {
@@ -90,9 +90,9 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 16,
-     "cta_click": 7,
      "purchase_intent": 4,
-     "email_signup": 2
+     "email_signup": 2,
+     "cta_click": 7
     }
    }
   }
@@ -148,16 +148,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 781,
-   "users": 598,
+   "sessions": 783,
+   "users": 599,
    "signups": 12
   },
   {
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 335,
-   "users": 330,
+   "sessions": 336,
+   "users": 331,
    "signups": 1
   },
   {
@@ -699,14 +699,14 @@
      },
      {
       "date": "2026-07-15",
-      "users": 6
+      "users": 7
      }
     ],
-    "today": 6,
+    "today": 7,
     "d7": 690,
     "d30": 690,
     "d7_prev": 0,
-    "pv30": 740,
+    "pv30": 741,
     "outbound": [
      {
       "domain": "ig.me",
@@ -716,11 +716,15 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 586
+      "users": 587
      },
      {
       "ch": "Direct",
       "users": 91
+     },
+     {
+      "ch": "Unassigned",
+      "users": 2
      },
      {
       "ch": "Email",
@@ -728,10 +732,6 @@
      },
      {
       "ch": "Organic Search",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -878,7 +878,7 @@
     "d7": 115,
     "d30": 198,
     "d7_prev": 83,
-    "pv30": 220,
+    "pv30": 221,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5672,6 +5672,157 @@
     "badges": [
      "沉睡"
     ]
+   },
+   {
+    "slug": "etf-vampire",
+    "site": "wealth",
+    "daily": [
+     {
+      "date": "2026-06-15",
+      "users": 0
+     },
+     {
+      "date": "2026-06-16",
+      "users": 0
+     },
+     {
+      "date": "2026-06-17",
+      "users": 0
+     },
+     {
+      "date": "2026-06-18",
+      "users": 0
+     },
+     {
+      "date": "2026-06-19",
+      "users": 0
+     },
+     {
+      "date": "2026-06-20",
+      "users": 0
+     },
+     {
+      "date": "2026-06-21",
+      "users": 0
+     },
+     {
+      "date": "2026-06-22",
+      "users": 0
+     },
+     {
+      "date": "2026-06-23",
+      "users": 0
+     },
+     {
+      "date": "2026-06-24",
+      "users": 0
+     },
+     {
+      "date": "2026-06-25",
+      "users": 0
+     },
+     {
+      "date": "2026-06-26",
+      "users": 0
+     },
+     {
+      "date": "2026-06-27",
+      "users": 0
+     },
+     {
+      "date": "2026-06-28",
+      "users": 0
+     },
+     {
+      "date": "2026-06-29",
+      "users": 0
+     },
+     {
+      "date": "2026-06-30",
+      "users": 0
+     },
+     {
+      "date": "2026-07-01",
+      "users": 0
+     },
+     {
+      "date": "2026-07-02",
+      "users": 0
+     },
+     {
+      "date": "2026-07-03",
+      "users": 0
+     },
+     {
+      "date": "2026-07-04",
+      "users": 0
+     },
+     {
+      "date": "2026-07-05",
+      "users": 0
+     },
+     {
+      "date": "2026-07-06",
+      "users": 0
+     },
+     {
+      "date": "2026-07-07",
+      "users": 0
+     },
+     {
+      "date": "2026-07-08",
+      "users": 0
+     },
+     {
+      "date": "2026-07-09",
+      "users": 0
+     },
+     {
+      "date": "2026-07-10",
+      "users": 0
+     },
+     {
+      "date": "2026-07-11",
+      "users": 0
+     },
+     {
+      "date": "2026-07-12",
+      "users": 0
+     },
+     {
+      "date": "2026-07-13",
+      "users": 0
+     },
+     {
+      "date": "2026-07-14",
+      "users": 0
+     },
+     {
+      "date": "2026-07-15",
+      "users": 1
+     }
+    ],
+    "today": 1,
+    "d7": 0,
+    "d30": 0,
+    "d7_prev": 0,
+    "pv30": 1,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Direct",
+      "users": 1
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
    }
   ],
   "outbound_top": [
@@ -5762,12 +5913,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1112,
+    "users": 1113,
     "signups": 35
    },
    {
     "label": "直接輸入網址",
-    "users": 598,
+    "users": 599,
     "signups": 12
    },
    {
@@ -5795,7 +5946,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1190,
+     "users": 1191,
      "signups": 45
     },
     {
@@ -5825,7 +5976,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 0,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -5833,7 +5984,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 204,
+     "users": 205,
      "signups": 2
     },
     {
