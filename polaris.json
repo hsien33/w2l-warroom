@@ -1,18 +1,18 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-17 00:39",
- "updated": "2026-07-17 00:39 台北",
+ "generatedAt": "2026-07-17 03:32",
+ "updated": "2026-07-17 03:32 台北",
  "yesterday_date": "2026-07-16",
  "yesterday": {
-  "users": 20,
-  "pv": 33,
+  "users": 21,
+  "pv": 35,
   "events": {
    "tool_engaged": 10,
    "tool_result": 7
   },
   "sites": {
    "grow": {
-    "users": 17,
+    "users": 18,
     "events": {
      "tool_engaged": 10,
      "tool_result": 7
@@ -25,27 +25,27 @@
   }
  },
  "d7": {
-  "users": 849,
-  "pv": 1078,
+  "users": 850,
+  "pv": 1080,
   "events": {
    "tool_engaged": 477,
    "tool_result": 426,
-   "card_open": 4,
-   "email_signup": 7,
    "magnet_delivered": 9,
    "cta_click": 2,
+   "email_signup": 7,
+   "card_open": 4,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 827,
+    "users": 828,
     "events": {
      "tool_engaged": 475,
      "tool_result": 424,
-     "card_open": 4,
-     "email_signup": 7,
      "magnet_delivered": 9,
      "cta_click": 2,
+     "email_signup": 7,
+     "card_open": 4,
      "outbound_placement": 1
     }
    },
@@ -59,28 +59,28 @@
   }
  },
  "d30": {
-  "users": 1916,
-  "pv": 3276,
+  "users": 1917,
+  "pv": 3278,
   "events": {
+   "cta_click": 35,
    "tool_engaged": 729,
    "tool_result": 642,
-   "email_signup": 57,
    "magnet_delivered": 56,
+   "email_signup": 57,
    "card_open": 36,
-   "cta_click": 35,
    "outbound_placement": 7,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
-    "users": 1657,
+    "users": 1658,
     "events": {
      "tool_engaged": 712,
      "tool_result": 626,
-     "email_signup": 55,
      "magnet_delivered": 56,
-     "card_open": 36,
      "cta_click": 28,
+     "email_signup": 55,
+     "card_open": 36,
      "outbound_placement": 7
     }
    },
@@ -88,10 +88,10 @@
     "users": 259,
     "events": {
      "cta_click": 7,
-     "email_signup": 2,
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
@@ -100,7 +100,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 827,
+    "count": 828,
     "rate": null
    },
    {
@@ -147,7 +147,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 796,
+   "sessions": 797,
    "users": 608,
    "signups": 12
   },
@@ -155,8 +155,8 @@
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 341,
-   "users": 336,
+   "sessions": 342,
+   "users": 337,
    "signups": 1
   },
   {
@@ -388,7 +388,7 @@
   },
   {
    "date": "2026-07-16",
-   "users": 20,
+   "users": 21,
    "signups": 0
   }
  ],
@@ -692,7 +692,7 @@
      },
      {
       "date": "2026-07-16",
-      "users": 7
+      "users": 8
      },
      {
       "date": "2026-07-17",
@@ -700,10 +700,10 @@
      }
     ],
     "today": 0,
-    "d7": 707,
-    "d30": 707,
+    "d7": 708,
+    "d30": 708,
     "d7_prev": 0,
-    "pv30": 753,
+    "pv30": 754,
     "outbound": [
      {
       "domain": "ig.me",
@@ -713,7 +713,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 594
+      "users": 595
      },
      {
       "ch": "Direct",
@@ -736,7 +736,7 @@
     "result7": 380,
     "emails30": 0,
     "outbound30": 49,
-    "engage_rate": 57,
+    "engage_rate": 56,
     "finish_rate": 95,
     "badges": [
      "爆款"
@@ -5912,7 +5912,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1121,
+    "users": 1122,
     "signups": 35
    },
    {
@@ -5945,7 +5945,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1202,
+     "users": 1203,
      "signups": 45
     },
     {
@@ -6017,7 +6017,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 466,
+     "views": 467,
      "users": 268
     },
     {
@@ -6263,7 +6263,7 @@
     },
     {
      "date": "2026-07-16",
-     "users": 17,
+     "users": 18,
      "signups": 0
     }
    ],
@@ -6434,8 +6434,8 @@
     "signups30": 55,
     "signups7": 7,
     "signupsY": 0,
-    "users30": 1657,
-    "users7": 827,
+    "users30": 1658,
+    "users7": 828,
     "rate7": 0.8
    },
    "wealth": {
