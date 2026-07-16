@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-16 16:31",
- "updated": "2026-07-16 16:31 台北",
+ "generatedAt": "2026-07-16 19:10",
+ "updated": "2026-07-16 19:10 台北",
  "yesterday_date": "2026-07-15",
  "yesterday": {
   "users": 15,
@@ -31,9 +31,9 @@
    "tool_engaged": 487,
    "tool_result": 434,
    "magnet_delivered": 10,
-   "card_open": 4,
-   "email_signup": 7,
    "cta_click": 2,
+   "email_signup": 7,
+   "card_open": 4,
    "outbound_placement": 1
   },
   "sites": {
@@ -43,9 +43,9 @@
      "tool_engaged": 485,
      "tool_result": 432,
      "magnet_delivered": 10,
-     "card_open": 4,
-     "email_signup": 7,
      "cta_click": 2,
+     "email_signup": 7,
+     "card_open": 4,
      "outbound_placement": 1
     }
    },
@@ -67,9 +67,9 @@
    "magnet_delivered": 56,
    "cta_click": 35,
    "email_signup": 57,
-   "purchase_intent": 4,
    "card_open": 36,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
@@ -79,19 +79,19 @@
      "tool_result": 619,
      "magnet_delivered": 56,
      "cta_click": 28,
-     "card_open": 36,
      "email_signup": 55,
+     "card_open": 36,
      "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 256,
     "events": {
-     "cta_click": 7,
-     "email_signup": 2,
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4
+     "cta_click": 7,
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 787,
-   "users": 603,
+   "sessions": 790,
+   "users": 605,
    "signups": 12
   },
   {
@@ -187,16 +187,16 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 112,
-   "users": 83,
+   "sessions": 113,
+   "users": 84,
    "signups": 1
   },
   {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 54,
-   "users": 48,
+   "sessions": 55,
+   "users": 49,
    "signups": 13
   },
   {
@@ -703,7 +703,7 @@
     "d7": 700,
     "d30": 700,
     "d7_prev": 0,
-    "pv30": 747,
+    "pv30": 748,
     "outbound": [
      {
       "domain": "ig.me",
@@ -868,14 +868,14 @@
      },
      {
       "date": "2026-07-16",
-      "users": 3
+      "users": 5
      }
     ],
-    "today": 3,
+    "today": 5,
     "d7": 40,
     "d30": 127,
     "d7_prev": 87,
-    "pv30": 217,
+    "pv30": 218,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -889,7 +889,7 @@
      },
      {
       "ch": "Organic Social",
-      "users": 42
+      "users": 43
      },
      {
       "ch": "Referral",
@@ -1034,14 +1034,14 @@
      },
      {
       "date": "2026-07-16",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 37,
     "d30": 199,
     "d7_prev": 162,
-    "pv30": 221,
+    "pv30": 222,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1055,7 +1055,7 @@
      },
      {
       "ch": "Direct",
-      "users": 53
+      "users": 54
      },
      {
       "ch": "Organic Search",
@@ -5912,17 +5912,17 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1120,
+    "users": 1121,
     "signups": 35
    },
    {
     "label": "直接輸入網址",
-    "users": 603,
+    "users": 605,
     "signups": 12
    },
    {
     "label": "IG 帶來的",
-    "users": 88,
+    "users": 89,
     "signups": 13
    }
   ],
@@ -5945,26 +5945,26 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1198,
+     "users": 1201,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 390,
+     "users": 391,
      "signups": 6
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 6,
+     "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
      "users": 5,
      "signups": 4
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 5,
-     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
@@ -5983,7 +5983,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 207,
+     "users": 208,
      "signups": 2
     },
     {
@@ -6023,8 +6023,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 459,
-     "users": 265
+     "views": 462,
+     "users": 267
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
@@ -6097,8 +6097,8 @@
     {
      "name": "頁面搬家了",
      "path": "/404",
-     "views": 10,
-     "users": 7
+     "views": 11,
+     "users": 8
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
