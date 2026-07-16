@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-16 19:10",
- "updated": "2026-07-16 19:10 台北",
+ "generatedAt": "2026-07-16 22:19",
+ "updated": "2026-07-16 22:19 台北",
  "yesterday_date": "2026-07-15",
  "yesterday": {
   "users": 15,
@@ -62,10 +62,10 @@
   "users": 1896,
   "pv": 3243,
   "events": {
+   "cta_click": 35,
    "tool_engaged": 719,
    "tool_result": 635,
    "magnet_delivered": 56,
-   "cta_click": 35,
    "email_signup": 57,
    "card_open": 36,
    "outbound_placement": 7,
@@ -87,9 +87,9 @@
    "wealth": {
     "users": 256,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
-     "cta_click": 7,
      "purchase_intent": 4,
      "email_signup": 2
     }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 790,
-   "users": 605,
+   "sessions": 794,
+   "users": 607,
    "signups": 12
   },
   {
@@ -187,7 +187,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 113,
+   "sessions": 114,
    "users": 84,
    "signups": 1
   },
@@ -195,8 +195,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 55,
-   "users": 49,
+   "sessions": 56,
+   "users": 50,
    "signups": 13
   },
   {
@@ -696,14 +696,14 @@
      },
      {
       "date": "2026-07-16",
-      "users": 3
+      "users": 7
      }
     ],
-    "today": 3,
+    "today": 7,
     "d7": 700,
     "d30": 700,
     "d7_prev": 0,
-    "pv30": 748,
+    "pv30": 752,
     "outbound": [
      {
       "domain": "ig.me",
@@ -717,7 +717,7 @@
      },
      {
       "ch": "Direct",
-      "users": 91
+      "users": 93
      },
      {
       "ch": "Unassigned",
@@ -875,7 +875,7 @@
     "d7": 40,
     "d30": 127,
     "d7_prev": 87,
-    "pv30": 218,
+    "pv30": 219,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5917,12 +5917,12 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 605,
+    "users": 607,
     "signups": 12
    },
    {
     "label": "IG 帶來的",
-    "users": 89,
+    "users": 90,
     "signups": 13
    }
   ],
@@ -5945,13 +5945,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1201,
+     "users": 1202,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 391,
+     "users": 393,
      "signups": 6
     },
     {
@@ -6023,8 +6023,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 462,
-     "users": 267
+     "views": 465,
+     "users": 268
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
