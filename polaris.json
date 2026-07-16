@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-16 11:33",
- "updated": "2026-07-16 11:33 台北",
+ "generatedAt": "2026-07-16 16:31",
+ "updated": "2026-07-16 16:31 台北",
  "yesterday_date": "2026-07-15",
  "yesterday": {
   "users": 15,
@@ -31,10 +31,10 @@
    "tool_engaged": 487,
    "tool_result": 434,
    "magnet_delivered": 10,
-   "email_signup": 7,
    "card_open": 4,
-   "outbound_placement": 1,
-   "cta_click": 2
+   "email_signup": 7,
+   "cta_click": 2,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -43,10 +43,10 @@
      "tool_engaged": 485,
      "tool_result": 432,
      "magnet_delivered": 10,
-     "email_signup": 7,
      "card_open": 4,
-     "outbound_placement": 1,
-     "cta_click": 2
+     "email_signup": 7,
+     "cta_click": 2,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -62,13 +62,13 @@
   "users": 1896,
   "pv": 3243,
   "events": {
-   "cta_click": 35,
    "tool_engaged": 719,
    "tool_result": 635,
-   "purchase_intent": 4,
-   "email_signup": 57,
-   "card_open": 36,
    "magnet_delivered": 56,
+   "cta_click": 35,
+   "email_signup": 57,
+   "purchase_intent": 4,
+   "card_open": 36,
    "outbound_placement": 7
   },
   "sites": {
@@ -77,10 +77,10 @@
     "events": {
      "tool_engaged": 702,
      "tool_result": 619,
+     "magnet_delivered": 56,
      "cta_click": 28,
      "card_open": 36,
      "email_signup": 55,
-     "magnet_delivered": 56,
      "outbound_placement": 7
     }
    },
@@ -88,10 +88,10 @@
     "users": 256,
     "events": {
      "cta_click": 7,
+     "email_signup": 2,
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4,
-     "email_signup": 2
+     "purchase_intent": 4
     }
    }
   }
@@ -155,8 +155,8 @@
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 340,
-   "users": 335,
+   "sessions": 341,
+   "users": 336,
    "signups": 1
   },
   {
@@ -187,7 +187,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 111,
+   "sessions": 112,
    "users": 83,
    "signups": 1
   },
@@ -696,14 +696,14 @@
      },
      {
       "date": "2026-07-16",
-      "users": 1
+      "users": 3
      }
     ],
-    "today": 1,
+    "today": 3,
     "d7": 700,
     "d30": 700,
     "d7_prev": 0,
-    "pv30": 746,
+    "pv30": 747,
     "outbound": [
      {
       "domain": "ig.me",
@@ -713,11 +713,15 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 592
+      "users": 594
      },
      {
       "ch": "Direct",
       "users": 91
+     },
+     {
+      "ch": "Unassigned",
+      "users": 3
      },
      {
       "ch": "Email",
@@ -725,10 +729,6 @@
      },
      {
       "ch": "Organic Search",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -5912,7 +5912,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1119,
+    "users": 1120,
     "signups": 35
    },
    {
@@ -5945,7 +5945,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1197,
+     "users": 1198,
      "signups": 45
     },
     {
@@ -5963,7 +5963,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 5,
      "signups": 0
     },
     {
