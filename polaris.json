@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-17 06:13",
- "updated": "2026-07-17 06:13 台北",
+ "generatedAt": "2026-07-17 11:34",
+ "updated": "2026-07-17 11:34 台北",
  "yesterday_date": "2026-07-16",
  "yesterday": {
   "users": 21,
@@ -30,10 +30,10 @@
   "events": {
    "tool_engaged": 477,
    "tool_result": 426,
+   "card_open": 4,
+   "email_signup": 7,
    "magnet_delivered": 9,
    "cta_click": 2,
-   "email_signup": 7,
-   "card_open": 4,
    "outbound_placement": 1
   },
   "sites": {
@@ -42,10 +42,10 @@
     "events": {
      "tool_engaged": 475,
      "tool_result": 424,
+     "card_open": 4,
+     "email_signup": 7,
      "magnet_delivered": 9,
      "cta_click": 2,
-     "email_signup": 7,
-     "card_open": 4,
      "outbound_placement": 1
     }
    },
@@ -62,14 +62,14 @@
   "users": 1917,
   "pv": 3278,
   "events": {
-   "cta_click": 35,
    "tool_engaged": 729,
    "tool_result": 642,
    "email_signup": 57,
-   "magnet_delivered": 56,
+   "cta_click": 35,
    "card_open": 36,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "magnet_delivered": 56,
+   "purchase_intent": 4,
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -77,20 +77,20 @@
     "events": {
      "tool_engaged": 712,
      "tool_result": 626,
+     "cta_click": 28,
+     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "card_open": 36,
-     "cta_click": 28,
      "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 259,
     "events": {
-     "cta_click": 7,
+     "email_signup": 2,
      "tool_engaged": 17,
      "tool_result": 16,
-     "email_signup": 2,
+     "cta_click": 7,
      "purchase_intent": 4
     }
    }
@@ -707,7 +707,7 @@
     "outbound": [
      {
       "domain": "ig.me",
-      "clicks": 59
+      "clicks": 58
      }
     ],
     "channels": [
@@ -5827,12 +5827,12 @@
   "outbound_top": [
    {
     "domain": "ig.me",
-    "clicks": 61,
+    "clicks": 60,
     "users": 50,
     "pages": [
      [
       "/tools/summer-plan.html",
-      59
+      58
      ],
      [
       "/tools/alchemy-tuition.html",
