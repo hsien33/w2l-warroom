@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-17 18:57",
- "updated": "2026-07-17 18:57 台北",
+ "generatedAt": "2026-07-17 22:00",
+ "updated": "2026-07-17 22:00 台北",
  "yesterday_date": "2026-07-16",
  "yesterday": {
   "users": 23,
@@ -31,9 +31,9 @@
    "tool_engaged": 478,
    "tool_result": 426,
    "magnet_delivered": 9,
-   "card_open": 4,
-   "email_signup": 7,
    "cta_click": 2,
+   "email_signup": 7,
+   "card_open": 4,
    "outbound_placement": 1
   },
   "sites": {
@@ -43,9 +43,9 @@
      "tool_engaged": 476,
      "tool_result": 424,
      "magnet_delivered": 9,
-     "card_open": 4,
-     "email_signup": 7,
      "cta_click": 2,
+     "email_signup": 7,
+     "card_open": 4,
      "outbound_placement": 1
     }
    },
@@ -65,9 +65,9 @@
    "tool_engaged": 730,
    "tool_result": 642,
    "magnet_delivered": 56,
-   "cta_click": 35,
    "email_signup": 57,
    "card_open": 36,
+   "cta_click": 35,
    "outbound_placement": 7,
    "purchase_intent": 4
   },
@@ -78,9 +78,9 @@
      "tool_engaged": 713,
      "tool_result": 626,
      "magnet_delivered": 56,
-     "cta_click": 28,
      "email_signup": 55,
      "card_open": 36,
+     "cta_click": 28,
      "outbound_placement": 7
     }
    },
@@ -90,8 +90,8 @@
      "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
-     "email_signup": 2,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
@@ -147,7 +147,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 802,
+   "sessions": 803,
    "users": 610,
    "signups": 12
   },
@@ -155,16 +155,16 @@
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 342,
-   "users": 337,
+   "sessions": 343,
+   "users": 338,
    "signups": 1
   },
   {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 326,
-   "users": 324,
+   "sessions": 327,
+   "users": 325,
    "signups": 3
   },
   {
@@ -696,24 +696,24 @@
      },
      {
       "date": "2026-07-17",
-      "users": 3
+      "users": 5
      }
     ],
-    "today": 3,
+    "today": 5,
     "d7": 709,
     "d30": 709,
     "d7_prev": 0,
-    "pv30": 757,
+    "pv30": 759,
     "outbound": [
      {
       "domain": "ig.me",
-      "clicks": 58
+      "clicks": 59
      }
     ],
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 596
+      "users": 598
      },
      {
       "ch": "Direct",
@@ -735,7 +735,7 @@
     "engaged7": 400,
     "result7": 380,
     "emails30": 0,
-    "outbound30": 49,
+    "outbound30": 50,
     "engage_rate": 56,
     "finish_rate": 95,
     "badges": [
@@ -868,10 +868,10 @@
      },
      {
       "date": "2026-07-17",
-      "users": 3
+      "users": 4
      }
     ],
-    "today": 3,
+    "today": 4,
     "d7": 38,
     "d30": 133,
     "d7_prev": 95,
@@ -897,7 +897,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 31,
@@ -5831,12 +5831,12 @@
   "outbound_top": [
    {
     "domain": "ig.me",
-    "clicks": 60,
-    "users": 50,
+    "clicks": 61,
+    "users": 51,
     "pages": [
      [
       "/tools/summer-plan.html",
-      58
+      59
      ],
      [
       "/tools/alchemy-tuition.html",
@@ -5916,7 +5916,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1123,
+    "users": 1125,
     "signups": 35
    },
    {
@@ -5949,7 +5949,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1205,
+     "users": 1207,
      "signups": 45
     },
     {
@@ -5967,7 +5967,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
