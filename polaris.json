@@ -1,20 +1,20 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-18 00:34",
- "updated": "2026-07-18 00:34 台北",
+ "generatedAt": "2026-07-18 03:30",
+ "updated": "2026-07-18 03:30 台北",
  "yesterday_date": "2026-07-17",
  "yesterday": {
   "users": 7,
-  "pv": 10,
+  "pv": 11,
   "events": {
-   "tool_engaged": 4,
+   "tool_engaged": 6,
    "tool_result": 4
   },
   "sites": {
    "grow": {
     "users": 7,
     "events": {
-     "tool_engaged": 4,
+     "tool_engaged": 6,
      "tool_result": 4
     }
    },
@@ -26,27 +26,27 @@
  },
  "d7": {
   "users": 824,
-  "pv": 1027,
+  "pv": 1028,
   "events": {
-   "tool_engaged": 470,
+   "tool_engaged": 472,
    "tool_result": 427,
-   "card_open": 4,
    "email_signup": 6,
    "magnet_delivered": 7,
-   "cta_click": 1,
-   "outbound_placement": 1
+   "card_open": 4,
+   "outbound_placement": 1,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
     "users": 807,
     "events": {
-     "tool_engaged": 468,
+     "tool_engaged": 470,
      "tool_result": 425,
-     "card_open": 4,
      "email_signup": 6,
      "magnet_delivered": 7,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "card_open": 4,
+     "outbound_placement": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -60,36 +60,36 @@
  },
  "d30": {
   "users": 1926,
-  "pv": 3291,
+  "pv": 3292,
   "events": {
+   "tool_engaged": 736,
+   "tool_result": 646,
    "email_signup": 57,
    "magnet_delivered": 56,
    "card_open": 36,
    "cta_click": 35,
    "outbound_placement": 7,
-   "tool_engaged": 734,
-   "tool_result": 646,
    "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 1666,
     "events": {
+     "tool_engaged": 719,
+     "tool_result": 630,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
      "cta_click": 28,
-     "outbound_placement": 7,
-     "tool_engaged": 717,
-     "tool_result": 630
+     "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 260,
     "events": {
+     "cta_click": 7,
      "purchase_intent": 4,
      "tool_engaged": 17,
-     "cta_click": 7,
      "tool_result": 16,
      "email_signup": 2
     }
@@ -732,7 +732,7 @@
       "users": 1
      }
     ],
-    "engaged7": 401,
+    "engaged7": 402,
     "result7": 382,
     "emails30": 0,
     "outbound30": 50,
@@ -875,7 +875,7 @@
     "d7": 35,
     "d30": 137,
     "d7_prev": 102,
-    "pv30": 223,
+    "pv30": 224,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -889,7 +889,7 @@
      },
      {
       "ch": "Organic Social",
-      "users": 43
+      "users": 44
      },
      {
       "ch": "Referral",
@@ -5956,7 +5956,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1208,
+     "users": 1209,
      "signups": 45
     },
     {
