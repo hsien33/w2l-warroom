@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-17 16:26",
- "updated": "2026-07-17 16:26 台北",
+ "generatedAt": "2026-07-17 18:57",
+ "updated": "2026-07-17 18:57 台北",
  "yesterday_date": "2026-07-16",
  "yesterday": {
   "users": 23,
@@ -65,9 +65,9 @@
    "tool_engaged": 730,
    "tool_result": 642,
    "magnet_delivered": 56,
+   "cta_click": 35,
    "email_signup": 57,
    "card_open": 36,
-   "cta_click": 35,
    "outbound_placement": 7,
    "purchase_intent": 4
   },
@@ -78,20 +78,20 @@
      "tool_engaged": 713,
      "tool_result": 626,
      "magnet_delivered": 56,
+     "cta_click": 28,
      "email_signup": 55,
      "card_open": 36,
-     "cta_click": 28,
      "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 260,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4,
      "email_signup": 2,
-     "cta_click": 7
+     "purchase_intent": 4
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 799,
-   "users": 609,
+   "sessions": 802,
+   "users": 610,
    "signups": 12
   },
   {
@@ -187,7 +187,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 114,
+   "sessions": 115,
    "users": 84,
    "signups": 1
   },
@@ -696,14 +696,14 @@
      },
      {
       "date": "2026-07-17",
-      "users": 0
+      "users": 3
      }
     ],
-    "today": 0,
+    "today": 3,
     "d7": 709,
     "d30": 709,
     "d7_prev": 0,
-    "pv30": 755,
+    "pv30": 757,
     "outbound": [
      {
       "domain": "ig.me",
@@ -717,7 +717,7 @@
      },
      {
       "ch": "Direct",
-      "users": 93
+      "users": 94
      },
      {
       "ch": "Email",
@@ -725,6 +725,10 @@
      },
      {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -864,14 +868,14 @@
      },
      {
       "date": "2026-07-17",
-      "users": 1
+      "users": 3
      }
     ],
-    "today": 1,
+    "today": 3,
     "d7": 38,
     "d30": 133,
     "d7_prev": 95,
-    "pv30": 220,
+    "pv30": 222,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1030,14 +1034,14 @@
      },
      {
       "date": "2026-07-17",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 28,
     "d30": 200,
     "d7_prev": 172,
-    "pv30": 222,
+    "pv30": 223,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1059,6 +1063,10 @@
      },
      {
       "ch": "Referral",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -5913,7 +5921,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 609,
+    "users": 610,
     "signups": 12
    },
    {
@@ -5947,7 +5955,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 394,
+     "users": 395,
      "signups": 6
     },
     {
@@ -5955,6 +5963,12 @@
      "raw": "Referral",
      "users": 5,
      "signups": 4
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
+     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
@@ -5965,12 +5979,6 @@
     {
      "ch": "電子郵件",
      "raw": "Email",
-     "users": 1,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -6019,7 +6027,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 466,
+     "views": 467,
      "users": 415
     },
     {
