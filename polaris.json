@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-18 03:30",
- "updated": "2026-07-18 03:30 台北",
+ "generatedAt": "2026-07-18 06:05",
+ "updated": "2026-07-18 06:05 台北",
  "yesterday_date": "2026-07-17",
  "yesterday": {
   "users": 7,
@@ -30,11 +30,11 @@
   "events": {
    "tool_engaged": 472,
    "tool_result": 427,
-   "email_signup": 6,
    "magnet_delivered": 7,
    "card_open": 4,
-   "outbound_placement": 1,
-   "cta_click": 1
+   "email_signup": 6,
+   "cta_click": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -42,11 +42,11 @@
     "events": {
      "tool_engaged": 470,
      "tool_result": 425,
-     "email_signup": 6,
      "magnet_delivered": 7,
      "card_open": 4,
-     "outbound_placement": 1,
-     "cta_click": 1
+     "email_signup": 6,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -64,12 +64,12 @@
   "events": {
    "tool_engaged": 736,
    "tool_result": 646,
+   "purchase_intent": 4,
    "email_signup": 57,
    "magnet_delivered": 56,
    "card_open": 36,
    "cta_click": 35,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -87,11 +87,11 @@
    "wealth": {
     "users": 260,
     "events": {
-     "cta_click": 7,
-     "purchase_intent": 4,
      "tool_engaged": 17,
      "tool_result": 16,
-     "email_signup": 2
+     "purchase_intent": 4,
+     "email_signup": 2,
+     "cta_click": 7
     }
    }
   }
@@ -413,7 +413,9 @@
   }
  ],
  "alerts": [
-  "名單斷流：過去 7 日平均有名單，但昨天掛零。"
+  "名單斷流：過去 7 日平均有名單，但昨天掛零。",
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
  ],
  "v2": {
   "tools": [
