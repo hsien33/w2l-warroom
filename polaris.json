@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-18 16:06",
- "updated": "2026-07-18 16:06 台北",
+ "generatedAt": "2026-07-18 18:39",
+ "updated": "2026-07-18 18:39 台北",
  "yesterday_date": "2026-07-17",
  "yesterday": {
   "users": 7,
@@ -64,12 +64,12 @@
   "events": {
    "tool_engaged": 736,
    "tool_result": 646,
-   "magnet_delivered": 56,
    "card_open": 36,
+   "magnet_delivered": 56,
    "email_signup": 57,
    "cta_click": 35,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "purchase_intent": 4,
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -77,8 +77,8 @@
     "events": {
      "tool_engaged": 719,
      "tool_result": 630,
-     "magnet_delivered": 56,
      "card_open": 36,
+     "magnet_delivered": 56,
      "email_signup": 55,
      "cta_click": 28,
      "outbound_placement": 7
@@ -87,11 +87,11 @@
    "wealth": {
     "users": 260,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
      "purchase_intent": 4,
-     "email_signup": 2,
-     "cta_click": 7
+     "email_signup": 2
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 808,
-   "users": 613,
+   "sessions": 812,
+   "users": 614,
    "signups": 12
   },
   {
@@ -696,14 +696,14 @@
      },
      {
       "date": "2026-07-18",
-      "users": 1
+      "users": 2
      }
     ],
-    "today": 1,
+    "today": 2,
     "d7": 714,
     "d30": 714,
     "d7_prev": 0,
-    "pv30": 761,
+    "pv30": 763,
     "outbound": [
      {
       "domain": "ig.me",
@@ -717,7 +717,7 @@
      },
      {
       "ch": "Direct",
-      "users": 94
+      "users": 95
      },
      {
       "ch": "Email",
@@ -871,7 +871,7 @@
     "d7": 35,
     "d30": 137,
     "d7_prev": 102,
-    "pv30": 225,
+    "pv30": 226,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -881,7 +881,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 65
+      "users": 66
      },
      {
       "ch": "Organic Social",
@@ -5917,7 +5917,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 613,
+    "users": 614,
     "signups": 12
    },
    {
@@ -5958,7 +5958,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 397,
+     "users": 398,
      "signups": 6
     },
     {
