@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-18 06:05",
- "updated": "2026-07-18 06:05 台北",
+ "generatedAt": "2026-07-18 11:28",
+ "updated": "2026-07-18 11:28 台北",
  "yesterday_date": "2026-07-17",
  "yesterday": {
   "users": 7,
@@ -30,11 +30,11 @@
   "events": {
    "tool_engaged": 472,
    "tool_result": 427,
+   "email_signup": 6,
    "magnet_delivered": 7,
    "card_open": 4,
-   "email_signup": 6,
-   "cta_click": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -42,11 +42,11 @@
     "events": {
      "tool_engaged": 470,
      "tool_result": 425,
+     "email_signup": 6,
      "magnet_delivered": 7,
      "card_open": 4,
-     "email_signup": 6,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -62,14 +62,14 @@
   "users": 1926,
   "pv": 3292,
   "events": {
+   "cta_click": 35,
    "tool_engaged": 736,
    "tool_result": 646,
-   "purchase_intent": 4,
-   "email_signup": 57,
    "magnet_delivered": 56,
+   "email_signup": 57,
    "card_open": 36,
-   "cta_click": 35,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
@@ -77,21 +77,21 @@
     "events": {
      "tool_engaged": 719,
      "tool_result": 630,
-     "email_signup": 55,
      "magnet_delivered": 56,
+     "email_signup": 55,
      "card_open": 36,
-     "cta_click": 28,
-     "outbound_placement": 7
+     "outbound_placement": 7,
+     "cta_click": 28
     }
    },
    "wealth": {
     "users": 260,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4,
      "email_signup": 2,
-     "cta_click": 7
+     "purchase_intent": 4
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 804,
-   "users": 610,
+   "sessions": 805,
+   "users": 611,
    "signups": 12
   },
   {
@@ -413,9 +413,7 @@
   }
  ],
  "alerts": [
-  "名單斷流：過去 7 日平均有名單，但昨天掛零。",
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
+  "名單斷流：過去 7 日平均有名單，但昨天掛零。"
  ],
  "v2": {
   "tools": [
@@ -5923,7 +5921,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 610,
+    "users": 611,
     "signups": 12
    },
    {
@@ -5996,7 +5994,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 209,
+     "users": 210,
      "signups": 2
     },
     {
@@ -6020,7 +6018,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -6080,8 +6078,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 223,
-     "users": 121
+     "views": 224,
+     "users": 122
     },
     {
      "name": "找不到頁面",
