@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-19 00:08",
- "updated": "2026-07-19 00:08 台北",
+ "generatedAt": "2026-07-19 03:23",
+ "updated": "2026-07-19 03:23 台北",
  "yesterday_date": "2026-07-18",
  "yesterday": {
   "users": 8,
-  "pv": 14,
+  "pv": 15,
   "events": {
    "tool_engaged": 5,
    "tool_result": 1
@@ -26,7 +26,7 @@
  },
  "d7": {
   "users": 487,
-  "pv": 629,
+  "pv": 630,
   "events": {
    "tool_engaged": 261,
    "tool_result": 229,
@@ -58,14 +58,14 @@
  },
  "d30": {
   "users": 1934,
-  "pv": 3306,
+  "pv": 3307,
   "events": {
    "tool_engaged": 741,
    "tool_result": 647,
    "magnet_delivered": 56,
-   "cta_click": 35,
    "email_signup": 57,
    "card_open": 36,
+   "cta_click": 35,
    "outbound_placement": 7,
    "purchase_intent": 4
   },
@@ -76,9 +76,9 @@
      "tool_engaged": 724,
      "tool_result": 631,
      "magnet_delivered": 56,
-     "cta_click": 28,
      "email_signup": 55,
      "card_open": 36,
+     "cta_click": 28,
      "outbound_placement": 7
     }
    },
@@ -87,8 +87,8 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 16,
-     "cta_click": 7,
      "purchase_intent": 4,
+     "cta_click": 7,
      "email_signup": 2
     }
    }
@@ -145,7 +145,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 814,
+   "sessions": 815,
    "users": 615,
    "signups": 12
   },
@@ -860,14 +860,14 @@
      },
      {
       "date": "2026-07-19",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 35,
     "d30": 140,
     "d7_prev": 80,
-    "pv30": 229,
+    "pv30": 231,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -881,7 +881,7 @@
      },
      {
       "ch": "Organic Social",
-      "users": 45
+      "users": 46
      },
      {
       "ch": "Referral",
@@ -889,7 +889,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 3
      }
     ],
     "engaged7": 29,
@@ -5958,14 +5958,14 @@
      "signups": 4
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 4,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     },
