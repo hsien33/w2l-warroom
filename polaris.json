@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-18 18:39",
- "updated": "2026-07-18 18:39 台北",
+ "generatedAt": "2026-07-18 21:45",
+ "updated": "2026-07-18 21:45 台北",
  "yesterday_date": "2026-07-17",
  "yesterday": {
   "users": 7,
@@ -65,11 +65,11 @@
    "tool_engaged": 736,
    "tool_result": 646,
    "card_open": 36,
-   "magnet_delivered": 56,
    "email_signup": 57,
+   "magnet_delivered": 56,
    "cta_click": 35,
-   "purchase_intent": 4,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
@@ -78,8 +78,8 @@
      "tool_engaged": 719,
      "tool_result": 630,
      "card_open": 36,
-     "magnet_delivered": 56,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "cta_click": 28,
      "outbound_placement": 7
     }
@@ -87,10 +87,10 @@
    "wealth": {
     "users": 260,
     "events": {
-     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
      "purchase_intent": 4,
+     "cta_click": 7,
      "email_signup": 2
     }
    }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 812,
-   "users": 614,
+   "sessions": 814,
+   "users": 615,
    "signups": 12
   },
   {
@@ -179,8 +179,8 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 202,
-   "users": 167,
+   "sessions": 203,
+   "users": 168,
    "signups": 23
   },
   {
@@ -413,7 +413,9 @@
   }
  ],
  "alerts": [
-  "名單斷流：過去 7 日平均有名單，但昨天掛零。"
+  "名單斷流：過去 7 日平均有名單，但昨天掛零。",
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
  ],
  "v2": {
   "tools": [
@@ -864,14 +866,14 @@
      },
      {
       "date": "2026-07-18",
-      "users": 2
+      "users": 3
      }
     ],
-    "today": 2,
+    "today": 3,
     "d7": 35,
     "d30": 137,
     "d7_prev": 102,
-    "pv30": 226,
+    "pv30": 228,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5912,12 +5914,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1126,
+    "users": 1127,
     "signups": 35
    },
    {
     "label": "直接輸入網址",
-    "users": 614,
+    "users": 615,
     "signups": 12
    },
    {
@@ -5952,13 +5954,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1210,
+     "users": 1211,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 398,
+     "users": 399,
      "signups": 6
     },
     {
@@ -6024,8 +6026,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 467,
-     "users": 268
+     "views": 468,
+     "users": 269
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
