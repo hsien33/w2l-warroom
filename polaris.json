@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-19 11:50",
- "updated": "2026-07-19 11:50 台北",
+ "generatedAt": "2026-07-19 16:31",
+ "updated": "2026-07-19 16:31 台北",
  "yesterday_date": "2026-07-18",
  "yesterday": {
   "users": 8,
@@ -30,9 +30,9 @@
   "events": {
    "tool_engaged": 261,
    "tool_result": 229,
-   "magnet_delivered": 3,
    "card_open": 2,
    "email_signup": 2,
+   "magnet_delivered": 3,
    "cta_click": 1
   },
   "sites": {
@@ -41,9 +41,9 @@
     "events": {
      "tool_engaged": 259,
      "tool_result": 227,
-     "magnet_delivered": 3,
      "card_open": 2,
      "email_signup": 2,
+     "magnet_delivered": 3,
      "cta_click": 1
     }
    },
@@ -60,14 +60,14 @@
   "users": 1934,
   "pv": 3307,
   "events": {
-   "cta_click": 35,
    "tool_engaged": 741,
    "tool_result": 647,
-   "purchase_intent": 4,
-   "email_signup": 57,
+   "cta_click": 35,
    "card_open": 36,
+   "email_signup": 57,
    "magnet_delivered": 56,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
@@ -85,11 +85,11 @@
    "wealth": {
     "users": 261,
     "events": {
-     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
      "purchase_intent": 4,
-     "email_signup": 2
+     "email_signup": 2,
+     "cta_click": 7
     }
    }
   }
@@ -145,8 +145,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 817,
-   "users": 616,
+   "sessions": 820,
+   "users": 619,
    "signups": 12
   },
   {
@@ -161,8 +161,8 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 329,
-   "users": 327,
+   "sessions": 330,
+   "users": 328,
    "signups": 3
   },
   {
@@ -692,14 +692,14 @@
      },
      {
       "date": "2026-07-19",
-      "users": 2
+      "users": 3
      }
     ],
-    "today": 2,
+    "today": 3,
     "d7": 394,
     "d30": 716,
     "d7_prev": 322,
-    "pv30": 764,
+    "pv30": 766,
     "outbound": [
      {
       "domain": "ig.me",
@@ -709,11 +709,11 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 600
+      "users": 601
      },
      {
       "ch": "Direct",
-      "users": 95
+      "users": 96
      },
      {
       "ch": "Email",
@@ -5913,12 +5913,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1128,
+    "users": 1129,
     "signups": 35
    },
    {
     "label": "直接輸入網址",
-    "users": 616,
+    "users": 619,
     "signups": 12
    },
    {
@@ -5946,13 +5946,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1213,
+     "users": 1214,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 400,
+     "users": 401,
      "signups": 6
     },
     {
@@ -5984,7 +5984,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 210,
+     "users": 212,
      "signups": 2
     },
     {
@@ -6008,7 +6008,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -6068,8 +6068,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 224,
-     "users": 122
+     "views": 226,
+     "users": 125
     },
     {
      "name": "找不到頁面",
