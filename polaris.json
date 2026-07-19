@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-19 06:05",
- "updated": "2026-07-19 06:05 台北",
+ "generatedAt": "2026-07-19 11:50",
+ "updated": "2026-07-19 11:50 台北",
  "yesterday_date": "2026-07-18",
  "yesterday": {
   "users": 8,
@@ -30,9 +30,9 @@
   "events": {
    "tool_engaged": 261,
    "tool_result": 229,
+   "magnet_delivered": 3,
    "card_open": 2,
    "email_signup": 2,
-   "magnet_delivered": 3,
    "cta_click": 1
   },
   "sites": {
@@ -41,9 +41,9 @@
     "events": {
      "tool_engaged": 259,
      "tool_result": 227,
+     "magnet_delivered": 3,
      "card_open": 2,
      "email_signup": 2,
-     "magnet_delivered": 3,
      "cta_click": 1
     }
    },
@@ -60,14 +60,14 @@
   "users": 1934,
   "pv": 3307,
   "events": {
+   "cta_click": 35,
    "tool_engaged": 741,
    "tool_result": 647,
-   "cta_click": 35,
-   "card_open": 36,
+   "purchase_intent": 4,
    "email_signup": 57,
+   "card_open": 36,
    "magnet_delivered": 56,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -85,11 +85,11 @@
    "wealth": {
     "users": 261,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 17,
      "tool_result": 16,
-     "email_signup": 2,
      "purchase_intent": 4,
-     "cta_click": 7
+     "email_signup": 2
     }
    }
   }
@@ -145,8 +145,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 815,
-   "users": 615,
+   "sessions": 817,
+   "users": 616,
    "signups": 12
   },
   {
@@ -161,8 +161,8 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 328,
-   "users": 326,
+   "sessions": 329,
+   "users": 327,
    "signups": 3
   },
   {
@@ -692,14 +692,14 @@
      },
      {
       "date": "2026-07-19",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 394,
     "d30": 716,
     "d7_prev": 322,
-    "pv30": 763,
+    "pv30": 764,
     "outbound": [
      {
       "domain": "ig.me",
@@ -709,7 +709,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 599
+      "users": 600
      },
      {
       "ch": "Direct",
@@ -721,6 +721,10 @@
      },
      {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -860,14 +864,14 @@
      },
      {
       "date": "2026-07-19",
-      "users": 2
+      "users": 3
      }
     ],
-    "today": 2,
+    "today": 3,
     "d7": 35,
     "d30": 140,
     "d7_prev": 80,
-    "pv30": 231,
+    "pv30": 233,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -881,7 +885,7 @@
      },
      {
       "ch": "Organic Social",
-      "users": 46
+      "users": 47
      },
      {
       "ch": "Referral",
@@ -889,7 +893,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 3
+      "users": 2
      }
     ],
     "engaged7": 29,
@@ -1028,14 +1032,14 @@
      },
      {
       "date": "2026-07-19",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 18,
     "d30": 202,
     "d7_prev": 175,
-    "pv30": 225,
+    "pv30": 226,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1049,7 +1053,7 @@
      },
      {
       "ch": "Direct",
-      "users": 54
+      "users": 55
      },
      {
       "ch": "Organic Search",
@@ -5909,12 +5913,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1127,
+    "users": 1128,
     "signups": 35
    },
    {
     "label": "直接輸入網址",
-    "users": 615,
+    "users": 616,
     "signups": 12
    },
    {
@@ -5942,13 +5946,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1211,
+     "users": 1213,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 399,
+     "users": 400,
      "signups": 6
     },
     {
@@ -6004,7 +6008,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ]
