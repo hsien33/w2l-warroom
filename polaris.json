@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-19 18:42",
- "updated": "2026-07-19 18:42 台北",
+ "generatedAt": "2026-07-19 21:50",
+ "updated": "2026-07-19 21:50 台北",
  "yesterday_date": "2026-07-18",
  "yesterday": {
   "users": 8,
@@ -60,14 +60,14 @@
   "users": 1934,
   "pv": 3307,
   "events": {
+   "cta_click": 35,
    "tool_engaged": 741,
    "tool_result": 647,
-   "email_signup": 57,
    "magnet_delivered": 56,
+   "purchase_intent": 4,
+   "email_signup": 57,
    "card_open": 36,
-   "cta_click": 35,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -75,8 +75,8 @@
     "events": {
      "tool_engaged": 724,
      "tool_result": 631,
-     "email_signup": 55,
      "magnet_delivered": 56,
+     "email_signup": 55,
      "card_open": 36,
      "cta_click": 28,
      "outbound_placement": 7
@@ -86,9 +86,9 @@
     "users": 261,
     "events": {
      "cta_click": 7,
-     "purchase_intent": 4,
      "tool_engaged": 17,
      "tool_result": 16,
+     "purchase_intent": 4,
      "email_signup": 2
     }
    }
@@ -145,7 +145,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 820,
+   "sessions": 821,
    "users": 619,
    "signups": 12
   },
@@ -185,7 +185,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 117,
+   "sessions": 118,
    "users": 84,
    "signups": 1
   },
@@ -201,8 +201,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 30,
-   "users": 7,
+   "sessions": 31,
+   "users": 8,
    "signups": 0
   },
   {
@@ -692,14 +692,14 @@
      },
      {
       "date": "2026-07-19",
-      "users": 3
+      "users": 4
      }
     ],
-    "today": 3,
+    "today": 4,
     "d7": 394,
     "d30": 716,
     "d7_prev": 322,
-    "pv30": 766,
+    "pv30": 767,
     "outbound": [
      {
       "domain": "ig.me",
@@ -871,7 +871,7 @@
     "d7": 35,
     "d30": 140,
     "d7_prev": 80,
-    "pv30": 233,
+    "pv30": 234,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -893,7 +893,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 3
      }
     ],
     "engaged7": 29,
@@ -5913,7 +5913,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1129,
+    "users": 1130,
     "signups": 35
    },
    {
@@ -5990,7 +5990,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 14,
+     "users": 15,
      "signups": 0
     },
     {
@@ -6068,8 +6068,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 226,
-     "users": 125
+     "views": 227,
+     "users": 126
     },
     {
      "name": "找不到頁面",
