@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-20 12:01",
- "updated": "2026-07-20 12:01 台北",
+ "generatedAt": "2026-07-20 17:32",
+ "updated": "2026-07-20 17:32 台北",
  "yesterday_date": "2026-07-19",
  "yesterday": {
   "users": 11,
@@ -54,26 +54,26 @@
   "users": 1945,
   "pv": 3325,
   "events": {
-   "cta_click": 35,
    "tool_engaged": 749,
    "tool_result": 649,
-   "purchase_intent": 4,
+   "magnet_delivered": 56,
    "email_signup": 57,
    "card_open": 36,
-   "magnet_delivered": 56,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "cta_click": 35,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 1680,
     "events": {
-     "cta_click": 28,
      "tool_engaged": 732,
      "tool_result": 633,
-     "card_open": 36,
-     "email_signup": 55,
      "magnet_delivered": 56,
-     "outbound_placement": 7
+     "email_signup": 55,
+     "card_open": 36,
+     "outbound_placement": 7,
+     "cta_click": 28
     }
    },
    "wealth": {
@@ -81,9 +81,9 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 16,
-     "purchase_intent": 4,
+     "cta_click": 7,
      "email_signup": 2,
-     "cta_click": 7
+     "purchase_intent": 4
     }
    }
   }
@@ -203,8 +203,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 31,
-   "users": 8,
+   "sessions": 32,
+   "users": 9,
    "signups": 0
   },
   {
@@ -854,10 +854,10 @@
      },
      {
       "date": "2026-07-20",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 33,
     "d30": 143,
     "d7_prev": 78,
@@ -880,6 +880,10 @@
      {
       "ch": "Referral",
       "users": 3
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 27,
@@ -5895,7 +5899,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1130,
+    "users": 1131,
     "signups": 35
    },
    {
@@ -5961,6 +5965,12 @@
      "raw": "Email",
      "users": 1,
      "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 0,
+     "signups": 0
     }
    ],
    "wealth": [
@@ -5973,7 +5983,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 15,
+     "users": 16,
      "signups": 0
     },
     {
@@ -5991,7 +6001,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 4,
      "signups": 0
     }
    ]
@@ -6051,8 +6061,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 228,
-     "users": 127
+     "views": 229,
+     "users": 128
     },
     {
      "name": "找不到頁面",
@@ -6081,14 +6091,14 @@
     {
      "name": "頁面搬家了",
      "path": "/404",
-     "views": 11,
-     "users": 8
+     "views": 13,
+     "users": 9
     },
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 10,
-     "users": 6
+     "views": 11,
+     "users": 7
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
