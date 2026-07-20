@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-20 06:07",
- "updated": "2026-07-20 06:07 台北",
+ "generatedAt": "2026-07-20 12:01",
+ "updated": "2026-07-20 12:01 台北",
  "yesterday_date": "2026-07-19",
  "yesterday": {
   "users": 11,
-  "pv": 14,
+  "pv": 18,
   "events": {
    "tool_engaged": 8,
    "tool_result": 2
@@ -26,7 +26,7 @@
  },
  "d7": {
   "users": 192,
-  "pv": 265,
+  "pv": 269,
   "events": {
    "tool_engaged": 96,
    "tool_result": 67,
@@ -52,27 +52,27 @@
  },
  "d30": {
   "users": 1945,
-  "pv": 3321,
+  "pv": 3325,
   "events": {
+   "cta_click": 35,
    "tool_engaged": 749,
    "tool_result": 649,
-   "magnet_delivered": 56,
-   "cta_click": 35,
+   "purchase_intent": 4,
    "email_signup": 57,
    "card_open": 36,
-   "purchase_intent": 4,
+   "magnet_delivered": 56,
    "outbound_placement": 7
   },
   "sites": {
    "grow": {
     "users": 1680,
     "events": {
+     "cta_click": 28,
      "tool_engaged": 732,
      "tool_result": 633,
-     "magnet_delivered": 56,
-     "cta_click": 28,
-     "email_signup": 55,
      "card_open": 36,
+     "email_signup": 55,
+     "magnet_delivered": 56,
      "outbound_placement": 7
     }
    },
@@ -81,9 +81,9 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 16,
-     "cta_click": 7,
      "purchase_intent": 4,
-     "email_signup": 2
+     "email_signup": 2,
+     "cta_click": 7
     }
    }
   }
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 822,
-   "users": 619,
+   "sessions": 824,
+   "users": 620,
    "signups": 12
   },
   {
@@ -192,19 +192,19 @@
    "signups": 13
   },
   {
+   "source": "ig",
+   "medium": "social",
+   "campaign": "(not set)",
+   "sessions": 32,
+   "users": 26,
+   "signups": 0
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 31,
    "users": 8,
-   "signups": 0
-  },
-  {
-   "source": "ig",
-   "medium": "social",
-   "campaign": "(not set)",
-   "sessions": 29,
-   "users": 24,
    "signups": 0
   },
   {
@@ -716,10 +716,6 @@
      {
       "ch": "Organic Search",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 48,
@@ -865,7 +861,7 @@
     "d7": 33,
     "d30": 143,
     "d7_prev": 78,
-    "pv30": 234,
+    "pv30": 236,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -883,10 +879,6 @@
      },
      {
       "ch": "Referral",
-      "users": 3
-     },
-     {
-      "ch": "Unassigned",
       "users": 3
      }
     ],
@@ -1055,10 +1047,6 @@
      },
      {
       "ch": "Referral",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -5912,12 +5900,12 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 619,
+    "users": 620,
     "signups": 12
    },
    {
     "label": "IG 帶來的",
-    "users": 93,
+    "users": 95,
     "signups": 13
    }
   ],
@@ -5947,7 +5935,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1214,
+     "users": 1215,
      "signups": 45
     },
     {
@@ -5961,12 +5949,6 @@
      "raw": "Referral",
      "users": 5,
      "signups": 4
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
-     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
@@ -5985,7 +5967,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 212,
+     "users": 213,
      "signups": 2
     },
     {
@@ -6069,8 +6051,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 227,
-     "users": 126
+     "views": 228,
+     "users": 127
     },
     {
      "name": "找不到頁面",
@@ -6103,16 +6085,16 @@
      "users": 8
     },
     {
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 10,
+     "users": 6
+    },
+    {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
      "views": 9,
      "users": 4
-    },
-    {
-     "name": "1 對 1 新手陪跑諮詢",
-     "path": "/consulting/",
-     "views": 9,
-     "users": 6
     }
    ]
   },
