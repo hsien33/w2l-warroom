@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-20 17:32",
- "updated": "2026-07-20 17:32 台北",
+ "generatedAt": "2026-07-20 22:31",
+ "updated": "2026-07-20 22:31 台北",
  "yesterday_date": "2026-07-19",
  "yesterday": {
   "users": 11,
@@ -56,8 +56,8 @@
   "events": {
    "tool_engaged": 749,
    "tool_result": 649,
-   "magnet_delivered": 56,
    "email_signup": 57,
+   "magnet_delivered": 56,
    "card_open": 36,
    "outbound_placement": 7,
    "cta_click": 35,
@@ -69,8 +69,8 @@
     "events": {
      "tool_engaged": 732,
      "tool_result": 633,
-     "magnet_delivered": 56,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "card_open": 36,
      "outbound_placement": 7,
      "cta_click": 28
@@ -82,8 +82,8 @@
      "tool_engaged": 17,
      "tool_result": 16,
      "cta_click": 7,
-     "email_signup": 2,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 2
     }
    }
   }
@@ -139,7 +139,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 824,
+   "sessions": 825,
    "users": 620,
    "signups": 12
   },
@@ -686,10 +686,10 @@
      },
      {
       "date": "2026-07-20",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 116,
     "d30": 720,
     "d7_prev": 604,
@@ -715,6 +715,10 @@
      },
      {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -854,14 +858,14 @@
      },
      {
       "date": "2026-07-20",
-      "users": 1
+      "users": 3
      }
     ],
-    "today": 1,
+    "today": 3,
     "d7": 33,
     "d30": 143,
     "d7_prev": 78,
-    "pv30": 236,
+    "pv30": 237,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -883,7 +887,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 3
      }
     ],
     "engaged7": 27,
@@ -5961,15 +5965,15 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 0,
+     "ch": "電子郵件",
+     "raw": "Email",
+     "users": 1,
      "signups": 0
     }
    ],
