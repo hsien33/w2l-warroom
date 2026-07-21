@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-21 19:17",
- "updated": "2026-07-21 19:17 台北",
+ "generatedAt": "2026-07-21 22:18",
+ "updated": "2026-07-21 22:18 台北",
  "yesterday_date": "2026-07-20",
  "yesterday": {
   "users": 7,
@@ -91,9 +91,9 @@
      "tool_engaged": 17,
      "tool_result": 16,
      "cta_click": 8,
-     "purchase_intent": 4,
      "email_signup": 3,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "purchase_intent": 4
     }
    }
   }
@@ -149,8 +149,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 832,
-   "users": 623,
+   "sessions": 833,
+   "users": 624,
    "signups": 12
   },
   {
@@ -6254,7 +6254,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 623,
+    "users": 624,
     "signups": 12
    },
    {
@@ -6320,7 +6320,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 213,
+     "users": 214,
      "signups": 2
     },
     {
@@ -6404,8 +6404,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 229,
-     "users": 126
+     "views": 230,
+     "users": 127
     },
     {
      "name": "找不到頁面",
