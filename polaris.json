@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-22 06:11",
- "updated": "2026-07-22 06:11 台北",
+ "generatedAt": "2026-07-22 11:42",
+ "updated": "2026-07-22 11:42 台北",
  "yesterday_date": "2026-07-21",
  "yesterday": {
   "users": 8,
-  "pv": 28,
+  "pv": 30,
   "events": {
    "tool_engaged": 10,
    "tool_result": 6
@@ -29,7 +29,7 @@
  },
  "d7": {
   "users": 79,
-  "pv": 144,
+  "pv": 146,
   "events": {
    "tool_engaged": 49,
    "tool_result": 26,
@@ -59,14 +59,14 @@
  },
  "d30": {
   "users": 1954,
-  "pv": 3359,
+  "pv": 3361,
   "events": {
    "tool_engaged": 764,
    "tool_result": 657,
+   "cta_click": 36,
    "email_signup": 58,
    "magnet_delivered": 57,
    "card_open": 36,
-   "cta_click": 36,
    "outbound_placement": 7,
    "purchase_intent": 4
   },
@@ -76,22 +76,22 @@
     "events": {
      "tool_engaged": 744,
      "tool_result": 638,
+     "cta_click": 28,
+     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "card_open": 36,
-     "cta_click": 28,
      "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 266,
     "events": {
-     "purchase_intent": 4,
-     "tool_engaged": 20,
-     "tool_result": 19,
      "cta_click": 8,
      "email_signup": 3,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 20,
+     "tool_result": 19,
+     "purchase_intent": 4
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 833,
-   "users": 623,
+   "sessions": 837,
+   "users": 626,
    "signups": 12
   },
   {
@@ -200,20 +200,20 @@
    "signups": 13
   },
   {
+   "source": "ig",
+   "medium": "social",
+   "campaign": "(not set)",
+   "sessions": 35,
+   "users": 27,
+   "signups": 0
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 33,
    "users": 10,
    "signups": 1
-  },
-  {
-   "source": "ig",
-   "medium": "social",
-   "campaign": "(not set)",
-   "sessions": 32,
-   "users": 26,
-   "signups": 0
   },
   {
    "source": "localhost:8899",
@@ -694,14 +694,14 @@
      },
      {
       "date": "2026-07-22",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 31,
     "d30": 721,
     "d7_prev": 690,
-    "pv30": 768,
+    "pv30": 769,
     "outbound": [
      {
       "domain": "ig.me",
@@ -715,7 +715,7 @@
      },
      {
       "ch": "Direct",
-      "users": 97
+      "users": 98
      },
      {
       "ch": "Email",
@@ -862,14 +862,14 @@
      },
      {
       "date": "2026-07-22",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 24,
     "d30": 151,
     "d7_prev": 51,
-    "pv30": 244,
+    "pv30": 246,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -879,7 +879,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 67
+      "users": 68
      },
      {
       "ch": "Organic Social",
@@ -888,10 +888,6 @@
      {
       "ch": "Referral",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 2
      }
     ],
     "engaged7": 22,
@@ -1360,7 +1356,7 @@
     "d7": 1,
     "d30": 18,
     "d7_prev": 6,
-    "pv30": 27,
+    "pv30": 28,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1370,15 +1366,11 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 13
+      "users": 14
      },
      {
       "ch": "Direct",
       "users": 4
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -1538,10 +1530,6 @@
      {
       "ch": "Organic Social",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -1697,15 +1685,11 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Direct",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -1861,11 +1845,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 2
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
+      "users": 3
      }
     ],
     "engaged7": 0,
@@ -2020,10 +2000,6 @@
      },
      {
       "ch": "Referral",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2326,7 +2302,7 @@
     "outbound": [],
     "channels": [
      {
-      "ch": "Unassigned",
+      "ch": "Organic Social",
       "users": 1
      }
     ],
@@ -2478,10 +2454,6 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -6258,12 +6230,12 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 623,
+    "users": 626,
     "signups": 12
    },
    {
     "label": "IG 帶來的",
-    "users": 96,
+    "users": 97,
     "signups": 13
    }
   ],
@@ -6292,7 +6264,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 404,
+     "users": 406,
      "signups": 6
     },
     {
@@ -6312,19 +6284,13 @@
      "raw": "Email",
      "users": 1,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 213,
+     "users": 214,
      "signups": 2
     },
     {
@@ -6408,8 +6374,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 228,
-     "users": 126
+     "views": 229,
+     "users": 127
     },
     {
      "name": "找不到頁面",
