@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-23 00:42",
- "updated": "2026-07-23 00:42 台北",
+ "generatedAt": "2026-07-23 03:41",
+ "updated": "2026-07-23 03:41 台北",
  "yesterday_date": "2026-07-22",
  "yesterday": {
   "users": 12,
@@ -63,11 +63,11 @@
   "events": {
    "tool_engaged": 765,
    "tool_result": 658,
-   "cta_click": 37,
-   "card_open": 36,
    "email_signup": 58,
    "magnet_delivered": 57,
+   "card_open": 36,
    "outbound_placement": 7,
+   "cta_click": 37,
    "purchase_intent": 4
   },
   "sites": {
@@ -76,11 +76,11 @@
     "events": {
      "tool_engaged": 745,
      "tool_result": 639,
-     "cta_click": 29,
-     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "outbound_placement": 7
+     "card_open": 36,
+     "outbound_placement": 7,
+     "cta_click": 29
     }
    },
    "wealth": {
@@ -90,8 +90,8 @@
      "tool_result": 19,
      "cta_click": 8,
      "email_signup": 3,
-     "magnet_delivered": 1,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "magnet_delivered": 1
     }
    }
   }
@@ -147,7 +147,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 835,
+   "sessions": 836,
    "users": 625,
    "signups": 12
   },
@@ -694,14 +694,14 @@
      },
      {
       "date": "2026-07-23",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 28,
     "d30": 155,
     "d7_prev": 40,
-    "pv30": 252,
+    "pv30": 253,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -723,7 +723,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 23,
@@ -6278,14 +6278,14 @@
      "signups": 4
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     },
