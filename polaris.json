@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-22 11:42",
- "updated": "2026-07-22 11:42 台北",
+ "generatedAt": "2026-07-22 16:41",
+ "updated": "2026-07-22 16:41 台北",
  "yesterday_date": "2026-07-21",
  "yesterday": {
   "users": 8,
@@ -48,11 +48,11 @@
    "wealth": {
     "users": 20,
     "events": {
+     "tool_engaged": 3,
+     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_engaged": 3,
-     "tool_result": 3
+     "magnet_delivered": 1
     }
    }
   }
@@ -63,11 +63,11 @@
   "events": {
    "tool_engaged": 764,
    "tool_result": 657,
-   "cta_click": 36,
    "email_signup": 58,
    "magnet_delivered": 57,
    "card_open": 36,
    "outbound_placement": 7,
+   "cta_click": 36,
    "purchase_intent": 4
   },
   "sites": {
@@ -76,22 +76,22 @@
     "events": {
      "tool_engaged": 744,
      "tool_result": 638,
-     "cta_click": 28,
-     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "outbound_placement": 7
+     "card_open": 36,
+     "outbound_placement": 7,
+     "cta_click": 28
     }
    },
    "wealth": {
     "users": 266,
     "events": {
      "cta_click": 8,
-     "email_signup": 3,
-     "magnet_delivered": 1,
      "tool_engaged": 20,
      "tool_result": 19,
-     "purchase_intent": 4
+     "purchase_intent": 4,
+     "email_signup": 3,
+     "magnet_delivered": 1
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 837,
-   "users": 626,
+   "sessions": 839,
+   "users": 628,
    "signups": 12
   },
   {
@@ -6230,7 +6230,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 626,
+    "users": 628,
     "signups": 12
    },
    {
@@ -6264,7 +6264,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 406,
+     "users": 407,
      "signups": 6
     },
     {
@@ -6284,13 +6284,19 @@
      "raw": "Email",
      "users": 1,
      "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 1,
+     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 214,
+     "users": 215,
      "signups": 2
     },
     {
@@ -6314,7 +6320,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ]
@@ -6324,14 +6330,14 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 469,
+     "views": 470,
      "users": 270
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 468,
-     "users": 415
+     "views": 469,
+     "users": 416
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
@@ -6375,7 +6381,7 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 229,
-     "users": 127
+     "users": 128
     },
     {
      "name": "找不到頁面",
@@ -6386,8 +6392,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 17,
-     "users": 10
+     "views": 18,
+     "users": 11
     },
     {
      "name": "從 0 到 1 學習地圖",
