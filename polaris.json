@@ -1,22 +1,22 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-23 11:41",
- "updated": "2026-07-23 11:41 台北",
+ "generatedAt": "2026-07-23 16:43",
+ "updated": "2026-07-23 16:43 台北",
  "yesterday_date": "2026-07-22",
  "yesterday": {
   "users": 12,
   "pv": 15,
   "events": {
+   "tool_engaged": 2,
    "cta_click": 1,
-   "tool_engaged": 1,
    "tool_result": 1
   },
   "sites": {
    "grow": {
     "users": 8,
     "events": {
+     "tool_engaged": 2,
      "cta_click": 1,
-     "tool_engaged": 1,
      "tool_result": 1
     }
    },
@@ -30,7 +30,7 @@
   "users": 76,
   "pv": 144,
   "events": {
-   "tool_engaged": 46,
+   "tool_engaged": 47,
    "tool_result": 23,
    "cta_click": 2,
    "email_signup": 1,
@@ -40,7 +40,7 @@
    "grow": {
     "users": 56,
     "events": {
-     "tool_engaged": 43,
+     "tool_engaged": 44,
      "tool_result": 20,
      "cta_click": 1
     }
@@ -61,36 +61,36 @@
   "users": 1958,
   "pv": 3317,
   "events": {
-   "tool_engaged": 765,
+   "tool_engaged": 766,
    "tool_result": 658,
-   "cta_click": 37,
    "magnet_delivered": 57,
-   "purchase_intent": 4,
+   "cta_click": 37,
    "email_signup": 58,
    "card_open": 36,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 1696,
     "events": {
-     "tool_engaged": 745,
+     "tool_engaged": 746,
      "tool_result": 639,
      "magnet_delivered": 56,
+     "cta_click": 29,
      "email_signup": 55,
      "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 29
+     "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 262,
     "events": {
-     "cta_click": 8,
+     "email_signup": 3,
      "tool_engaged": 20,
      "tool_result": 19,
+     "cta_click": 8,
      "purchase_intent": 4,
-     "email_signup": 3,
      "magnet_delivered": 1
     }
    }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 838,
-   "users": 627,
+   "sessions": 840,
+   "users": 629,
    "signups": 12
   },
   {
@@ -694,14 +694,14 @@
      },
      {
       "date": "2026-07-23",
-      "users": 1
+      "users": 2
      }
     ],
-    "today": 1,
+    "today": 2,
     "d7": 28,
     "d30": 155,
     "d7_prev": 40,
-    "pv30": 253,
+    "pv30": 254,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -711,7 +711,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 70
+      "users": 71
      },
      {
       "ch": "Organic Social",
@@ -723,7 +723,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 1
      }
     ],
     "engaged7": 23,
@@ -6234,7 +6234,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 627,
+    "users": 629,
     "signups": 12
    },
    {
@@ -6268,7 +6268,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 411,
+     "users": 413,
      "signups": 6
     },
     {
@@ -6278,14 +6278,14 @@
      "signups": 4
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 2,
      "signups": 0
     },
@@ -6300,7 +6300,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 210,
+     "users": 211,
      "signups": 2
     },
     {
@@ -6324,7 +6324,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -6340,8 +6340,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 469,
-     "users": 416
+     "views": 470,
+     "users": 417
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
