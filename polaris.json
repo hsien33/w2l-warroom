@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-23 19:18",
- "updated": "2026-07-23 19:18 台北",
+ "generatedAt": "2026-07-23 22:28",
+ "updated": "2026-07-23 22:28 台北",
  "yesterday_date": "2026-07-22",
  "yesterday": {
   "users": 12,
@@ -31,8 +31,8 @@
   "pv": 144,
   "events": {
    "tool_engaged": 47,
-   "cta_click": 2,
    "tool_result": 23,
+   "cta_click": 2,
    "email_signup": 1,
    "magnet_delivered": 1
   },
@@ -41,18 +41,18 @@
     "users": 56,
     "events": {
      "tool_engaged": 44,
-     "cta_click": 1,
-     "tool_result": 20
+     "tool_result": 20,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 20,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
@@ -61,36 +61,36 @@
   "users": 1958,
   "pv": 3317,
   "events": {
+   "cta_click": 37,
    "tool_engaged": 766,
    "tool_result": 658,
-   "purchase_intent": 4,
    "email_signup": 58,
    "magnet_delivered": 57,
    "card_open": 36,
    "outbound_placement": 7,
-   "cta_click": 37
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
     "users": 1696,
     "events": {
+     "cta_click": 29,
      "tool_engaged": 746,
      "tool_result": 639,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 29
+     "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 262,
     "events": {
+     "cta_click": 8,
      "tool_engaged": 20,
      "tool_result": 19,
      "purchase_intent": 4,
      "email_signup": 3,
-     "cta_click": 8,
      "magnet_delivered": 1
     }
    }
@@ -147,7 +147,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 843,
+   "sessions": 844,
    "users": 631,
    "signups": 12
   },
@@ -6336,16 +6336,16 @@
   "top_pages": {
    "grow": [
     {
+     "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
+     "path": "/articles/when-to-give-first-phone/",
+     "views": 472,
+     "users": 418
+    },
+    {
      "name": "光合作用",
      "path": "/",
      "views": 471,
      "users": 271
-    },
-    {
-     "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
-     "path": "/articles/when-to-give-first-phone/",
-     "views": 471,
-     "users": 418
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
