@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-23 06:14",
- "updated": "2026-07-23 06:14 台北",
+ "generatedAt": "2026-07-23 11:41",
+ "updated": "2026-07-23 11:41 台北",
  "yesterday_date": "2026-07-22",
  "yesterday": {
   "users": 12,
@@ -48,11 +48,11 @@
    "wealth": {
     "users": 20,
     "events": {
+     "tool_engaged": 3,
+     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_engaged": 3,
-     "tool_result": 3
+     "magnet_delivered": 1
     }
    }
   }
@@ -63,12 +63,12 @@
   "events": {
    "tool_engaged": 765,
    "tool_result": 658,
-   "magnet_delivered": 57,
    "cta_click": 37,
+   "magnet_delivered": 57,
+   "purchase_intent": 4,
    "email_signup": 58,
    "card_open": 36,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -77,10 +77,10 @@
      "tool_engaged": 745,
      "tool_result": 639,
      "magnet_delivered": 56,
-     "cta_click": 29,
      "email_signup": 55,
      "card_open": 36,
-     "outbound_placement": 7
+     "outbound_placement": 7,
+     "cta_click": 29
     }
    },
    "wealth": {
@@ -89,9 +89,9 @@
      "cta_click": 8,
      "tool_engaged": 20,
      "tool_result": 19,
+     "purchase_intent": 4,
      "email_signup": 3,
-     "magnet_delivered": 1,
-     "purchase_intent": 4
+     "magnet_delivered": 1
     }
    }
   }
@@ -147,8 +147,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 836,
-   "users": 625,
+   "sessions": 838,
+   "users": 627,
    "signups": 12
   },
   {
@@ -195,8 +195,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 58,
-   "users": 52,
+   "sessions": 59,
+   "users": 53,
    "signups": 13
   },
   {
@@ -862,14 +862,14 @@
      },
      {
       "date": "2026-07-23",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 23,
     "d30": 723,
     "d7_prev": 700,
-    "pv30": 770,
+    "pv30": 771,
     "outbound": [
      {
       "domain": "ig.me",
@@ -883,7 +883,7 @@
      },
      {
       "ch": "Direct",
-      "users": 99
+      "users": 100
      },
      {
       "ch": "Email",
@@ -6234,12 +6234,12 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 625,
+    "users": 627,
     "signups": 12
    },
    {
     "label": "IG 帶來的",
-    "users": 97,
+    "users": 98,
     "signups": 13
    }
   ],
@@ -6262,13 +6262,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1217,
+     "users": 1218,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 410,
+     "users": 411,
      "signups": 6
     },
     {
@@ -6280,7 +6280,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -6300,7 +6300,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 209,
+     "users": 210,
      "signups": 2
     },
     {
@@ -6324,7 +6324,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     }
    ]
@@ -6334,8 +6334,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 470,
-     "users": 270
+     "views": 471,
+     "users": 271
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -6400,16 +6400,16 @@
      "users": 11
     },
     {
+     "name": "頁面搬家了",
+     "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
+     "views": 17,
+     "users": 10
+    },
+    {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
      "views": 16,
      "users": 13
-    },
-    {
-     "name": "頁面搬家了",
-     "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
-     "views": 16,
-     "users": 9
     },
     {
      "name": "影片庫",
