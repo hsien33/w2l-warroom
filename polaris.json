@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-25 00:55",
- "updated": "2026-07-25 00:55 台北",
+ "generatedAt": "2026-07-25 03:44",
+ "updated": "2026-07-25 03:44 台北",
  "yesterday_date": "2026-07-24",
  "yesterday": {
   "users": 5,
@@ -56,11 +56,11 @@
    "cta_click": 37,
    "tool_engaged": 769,
    "tool_result": 657,
-   "purchase_intent": 4,
    "email_signup": 57,
    "magnet_delivered": 57,
    "card_open": 36,
-   "outbound_placement": 7
+   "outbound_placement": 7,
+   "purchase_intent": 4
   },
   "sites": {
    "grow": {
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 834,
-   "users": 628,
+   "sessions": 835,
+   "users": 629,
    "signups": 11
   },
   {
@@ -686,14 +686,14 @@
      },
      {
       "date": "2026-07-25",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 20,
     "d30": 157,
     "d7_prev": 35,
-    "pv30": 256,
+    "pv30": 257,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -712,6 +712,10 @@
      {
       "ch": "Referral",
       "users": 3
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 16,
@@ -5920,7 +5924,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 628,
+    "users": 629,
     "signups": 11
    },
    {
@@ -5971,14 +5975,14 @@
      "signups": 4
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     },
@@ -5993,7 +5997,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 204,
+     "users": 205,
      "signups": 1
     },
     {
@@ -6089,8 +6093,8 @@
     {
      "name": "頁面搬家了",
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
-     "views": 17,
-     "users": 10
+     "views": 18,
+     "users": 11
     },
     {
      "name": "深度文章",
