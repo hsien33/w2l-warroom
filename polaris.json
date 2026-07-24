@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-24 11:40",
- "updated": "2026-07-24 11:40 台北",
+ "generatedAt": "2026-07-24 16:40",
+ "updated": "2026-07-24 16:40 台北",
  "yesterday_date": "2026-07-23",
  "yesterday": {
   "users": 10,
@@ -44,11 +44,11 @@
    "wealth": {
     "users": 18,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
@@ -58,12 +58,12 @@
   "pv": 3327,
   "events": {
    "tool_engaged": 770,
-   "tool_result": 658,
-   "cta_click": 37,
    "email_signup": 58,
    "magnet_delivered": 57,
    "card_open": 36,
+   "cta_click": 37,
    "outbound_placement": 7,
+   "tool_result": 658,
    "purchase_intent": 4
   },
   "sites": {
@@ -71,23 +71,23 @@
     "users": 1704,
     "events": {
      "tool_engaged": 750,
-     "tool_result": 639,
-     "cta_click": 29,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7
+     "cta_click": 29,
+     "outbound_placement": 7,
+     "tool_result": 639
     }
    },
    "wealth": {
     "users": 261,
     "events": {
+     "purchase_intent": 4,
      "tool_engaged": 20,
      "tool_result": 19,
      "email_signup": 3,
      "cta_click": 8,
-     "magnet_delivered": 1,
-     "purchase_intent": 4
+     "magnet_delivered": 1
     }
    }
   }
@@ -143,8 +143,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 843,
-   "users": 632,
+   "sessions": 844,
+   "users": 633,
    "signups": 12
   },
   {
@@ -6075,7 +6075,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 632,
+    "users": 633,
     "signups": 12
    },
    {
@@ -6109,7 +6109,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 417,
+     "users": 418,
      "signups": 6
     },
     {
@@ -6125,14 +6125,14 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "電子郵件",
+     "raw": "Email",
      "users": 1,
      "signups": 0
     }
@@ -6175,8 +6175,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 473,
-     "users": 419
+     "views": 475,
+     "users": 421
     },
     {
      "name": "光合作用",
@@ -6199,8 +6199,8 @@
     {
      "name": "對話筆記",
      "path": "/articles/",
-     "views": 71,
-     "users": 47
+     "views": 72,
+     "users": 48
     },
     {
      "name": "收到了，謝謝你",
