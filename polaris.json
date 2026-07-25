@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-26 00:11",
- "updated": "2026-07-26 00:11 台北",
+ "generatedAt": "2026-07-26 03:32",
+ "updated": "2026-07-26 03:32 台北",
  "yesterday_date": "2026-07-25",
  "yesterday": {
   "users": 8,
@@ -29,8 +29,8 @@
   "pv": 116,
   "events": {
    "tool_engaged": 32,
-   "cta_click": 2,
    "tool_result": 12,
+   "cta_click": 2,
    "email_signup": 1,
    "magnet_delivered": 1
   },
@@ -39,8 +39,8 @@
     "users": 42,
     "events": {
      "tool_engaged": 29,
-     "cta_click": 1,
-     "tool_result": 9
+     "tool_result": 9,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -61,11 +61,11 @@
   "events": {
    "tool_engaged": 766,
    "tool_result": 652,
-   "magnet_delivered": 57,
-   "cta_click": 37,
    "email_signup": 56,
+   "magnet_delivered": 57,
    "card_open": 36,
    "outbound_placement": 7,
+   "cta_click": 37,
    "purchase_intent": 2
   },
   "sites": {
@@ -74,11 +74,11 @@
     "events": {
      "tool_engaged": 753,
      "tool_result": 640,
-     "magnet_delivered": 56,
-     "cta_click": 29,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7
+     "outbound_placement": 7,
+     "cta_click": 29
     }
    },
    "wealth": {
@@ -86,10 +86,10 @@
     "events": {
      "tool_engaged": 13,
      "tool_result": 12,
+     "purchase_intent": 2,
      "cta_click": 8,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "purchase_intent": 2
+     "magnet_delivered": 1
     }
    }
   }
@@ -145,8 +145,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 829,
-   "users": 623,
+   "sessions": 830,
+   "users": 624,
    "signups": 10
   },
   {
@@ -5779,7 +5779,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 623,
+    "users": 624,
     "signups": 10
    },
    {
@@ -5837,7 +5837,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 198,
+     "users": 199,
      "signups": 0
     },
     {
@@ -5939,8 +5939,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 15,
-     "users": 8
+     "views": 16,
+     "users": 9
     },
     {
      "name": "從 0 到 1 學習地圖",
