@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-25 11:34",
- "updated": "2026-07-25 11:34 台北",
+ "generatedAt": "2026-07-25 16:22",
+ "updated": "2026-07-25 16:22 台北",
  "yesterday_date": "2026-07-24",
  "yesterday": {
-  "users": 5,
-  "pv": 8,
+  "users": 6,
+  "pv": 9,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 0,
+    "users": 1,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 61,
-  "pv": 119,
+  "users": 62,
+  "pv": 120,
   "events": {
    "tool_engaged": 34,
    "tool_result": 12,
@@ -38,7 +38,7 @@
     }
    },
    "wealth": {
-    "users": 18,
+    "users": 19,
     "events": {
      "tool_engaged": 3,
      "tool_result": 3,
@@ -50,17 +50,17 @@
   }
  },
  "d30": {
-  "users": 1960,
-  "pv": 3307,
+  "users": 1961,
+  "pv": 3308,
   "events": {
+   "cta_click": 37,
    "tool_engaged": 769,
    "tool_result": 657,
+   "card_open": 36,
    "email_signup": 57,
    "magnet_delivered": 57,
-   "card_open": 36,
-   "cta_click": 37,
-   "outbound_placement": 7,
-   "purchase_intent": 4
+   "purchase_intent": 4,
+   "outbound_placement": 7
   },
   "sites": {
    "grow": {
@@ -68,22 +68,22 @@
     "events": {
      "tool_engaged": 750,
      "tool_result": 639,
+     "cta_click": 29,
+     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "card_open": 36,
-     "cta_click": 29,
      "outbound_placement": 7
     }
    },
    "wealth": {
-    "users": 251,
+    "users": 252,
     "events": {
+     "cta_click": 8,
      "tool_engaged": 19,
      "tool_result": 18,
-     "cta_click": 8,
+     "purchase_intent": 4,
      "email_signup": 2,
-     "magnet_delivered": 1,
-     "purchase_intent": 4
+     "magnet_delivered": 1
     }
    }
   }
@@ -114,13 +114,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 18,
+    "count": 19,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 3,
-    "rate": 16.7
+    "rate": 15.8
    },
    {
     "step": "Email訂閱",
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 838,
-   "users": 631,
+   "sessions": 841,
+   "users": 632,
    "signups": 11
   },
   {
@@ -187,7 +187,7 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 60,
+   "sessions": 61,
    "users": 54,
    "signups": 13
   },
@@ -380,7 +380,7 @@
   },
   {
    "date": "2026-07-24",
-   "users": 5,
+   "users": 6,
    "signups": 0
   }
  ],
@@ -693,7 +693,7 @@
     "d7": 20,
     "d30": 157,
     "d7_prev": 35,
-    "pv30": 258,
+    "pv30": 259,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5928,7 +5928,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 631,
+    "users": 632,
     "signups": 11
    },
    {
@@ -5940,13 +5940,6 @@
   "ig_share": 5,
   "cards": [
    {
-    "level": "red",
-    "what": "財富站昨天 0 人造訪（平常 7 天有 18 人）",
-    "why": "可能是追蹤器斷線或網站掛了",
-    "action": "開一次網站確認活著",
-    "link": "https://www.walk2light.com/"
-   },
-   {
     "level": "yellow",
     "what": "本週新名單 1，比上週（6）掉了三成以上",
     "why": "本週內容可能都沒導向訂閱",
@@ -5954,7 +5947,7 @@
     "link": ""
    }
   ],
-  "summary": "有 1 件事需要你看一下（見下方紅卡）",
+  "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 57
  },
  "v3": {
@@ -5981,7 +5974,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 5,
+     "users": 4,
      "signups": 0
     },
     {
@@ -6001,7 +5994,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 206,
+     "users": 207,
      "signups": 1
     },
     {
@@ -6035,7 +6028,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 477,
+     "views": 478,
      "users": 423
     },
     {
@@ -6085,8 +6078,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 175,
-     "users": 115
+     "views": 176,
+     "users": 116
     },
     {
      "name": "找不到頁面",
@@ -6433,7 +6426,7 @@
     },
     {
      "date": "2026-07-24",
-     "users": 0,
+     "users": 1,
      "signups": 0
     }
    ]
@@ -6460,9 +6453,9 @@
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 251,
-    "users7": 18,
-    "rate7": 5.6
+    "users30": 252,
+    "users7": 19,
+    "rate7": 5.3
    }
   }
  }
