@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-27 03:32",
- "updated": "2026-07-27 03:32 台北",
+ "generatedAt": "2026-07-27 06:10",
+ "updated": "2026-07-27 06:10 台北",
  "yesterday_date": "2026-07-26",
  "yesterday": {
   "users": 3,
@@ -59,9 +59,9 @@
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
-   "magnet_delivered": 57,
    "cta_click": 36,
    "email_signup": 56,
+   "magnet_delivered": 57,
    "card_open": 36,
    "outbound_placement": 7,
    "purchase_intent": 2
@@ -72,9 +72,9 @@
     "events": {
      "tool_engaged": 755,
      "tool_result": 641,
-     "magnet_delivered": 56,
      "cta_click": 29,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "card_open": 36,
      "outbound_placement": 7
     }
@@ -5762,7 +5762,7 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 170,
+     "views": 171,
      "users": 108
     },
     {
