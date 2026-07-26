@@ -1,21 +1,21 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-26 06:08",
- "updated": "2026-07-26 06:08 台北",
+ "generatedAt": "2026-07-26 11:52",
+ "updated": "2026-07-26 11:52 台北",
  "yesterday_date": "2026-07-25",
  "yesterday": {
   "users": 8,
   "pv": 11,
   "events": {
    "tool_engaged": 3,
-   "tool_result": 1
+   "tool_result": 2
   },
   "sites": {
    "grow": {
     "users": 6,
     "events": {
      "tool_engaged": 3,
-     "tool_result": 1
+     "tool_result": 2
     }
    },
    "wealth": {
@@ -29,7 +29,7 @@
   "pv": 116,
   "events": {
    "tool_engaged": 32,
-   "tool_result": 12,
+   "tool_result": 13,
    "cta_click": 2,
    "email_signup": 1,
    "magnet_delivered": 1
@@ -39,18 +39,18 @@
     "users": 42,
     "events": {
      "tool_engaged": 29,
-     "tool_result": 9,
+     "tool_result": 10,
      "cta_click": 1
     }
    },
    "wealth": {
     "users": 20,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
@@ -60,12 +60,12 @@
   "pv": 3291,
   "events": {
    "tool_engaged": 766,
-   "tool_result": 652,
+   "tool_result": 653,
+   "email_signup": 56,
    "magnet_delivered": 57,
    "card_open": 36,
-   "email_signup": 56,
-   "cta_click": 37,
    "outbound_placement": 7,
+   "cta_click": 37,
    "purchase_intent": 2
   },
   "sites": {
@@ -73,22 +73,22 @@
     "users": 1715,
     "events": {
      "tool_engaged": 753,
-     "tool_result": 640,
+     "tool_result": 641,
+     "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "email_signup": 55,
-     "cta_click": 29,
-     "outbound_placement": 7
+     "outbound_placement": 7,
+     "cta_click": 29
     }
    },
    "wealth": {
     "users": 243,
     "events": {
-     "tool_engaged": 13,
-     "tool_result": 12,
      "cta_click": 8,
      "email_signup": 1,
      "magnet_delivered": 1,
+     "tool_engaged": 13,
+     "tool_result": 12,
      "purchase_intent": 2
     }
    }
@@ -201,7 +201,7 @@
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
-   "sessions": 35,
+   "sessions": 37,
    "users": 27,
    "signups": 0
   },
@@ -565,10 +565,6 @@
      {
       "ch": "Referral",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 15,
@@ -729,10 +725,6 @@
       "users": 102
      },
      {
-      "ch": "Unassigned",
-      "users": 2
-     },
-     {
       "ch": "Email",
       "users": 1
      },
@@ -742,11 +734,11 @@
      }
     ],
     "engaged7": 4,
-    "result7": 2,
+    "result7": 3,
     "emails30": 0,
     "outbound30": 51,
     "engage_rate": 29,
-    "finish_rate": 50,
+    "finish_rate": 75,
     "badges": []
    },
    {
@@ -5815,12 +5807,6 @@
      "signups": 4
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
-     "signups": 0
-    },
-    {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 2,
@@ -5829,6 +5815,12 @@
     {
      "ch": "電子郵件",
      "raw": "Email",
+     "users": 1,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -5861,7 +5853,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ]
