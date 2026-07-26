@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-26 11:52",
- "updated": "2026-07-26 11:52 台北",
+ "generatedAt": "2026-07-26 16:38",
+ "updated": "2026-07-26 16:38 台北",
  "yesterday_date": "2026-07-25",
  "yesterday": {
   "users": 8,
@@ -46,11 +46,11 @@
    "wealth": {
     "users": 20,
     "events": {
+     "tool_engaged": 3,
+     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_engaged": 3,
-     "tool_result": 3
+     "magnet_delivered": 1
     }
    }
   }
@@ -64,8 +64,8 @@
    "email_signup": 56,
    "magnet_delivered": 57,
    "card_open": 36,
-   "outbound_placement": 7,
    "cta_click": 37,
+   "outbound_placement": 7,
    "purchase_intent": 2
   },
   "sites": {
@@ -77,19 +77,19 @@
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 29
+     "cta_click": 29,
+     "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 243,
     "events": {
-     "cta_click": 8,
-     "email_signup": 1,
-     "magnet_delivered": 1,
+     "purchase_intent": 2,
      "tool_engaged": 13,
+     "cta_click": 8,
      "tool_result": 12,
-     "purchase_intent": 2
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    }
   }
@@ -539,14 +539,14 @@
      },
      {
       "date": "2026-07-26",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 19,
     "d30": 159,
     "d7_prev": 35,
-    "pv30": 259,
+    "pv30": 261,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -560,11 +560,15 @@
      },
      {
       "ch": "Organic Social",
-      "users": 48
+      "users": 49
      },
      {
       "ch": "Referral",
       "users": 3
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 15,
@@ -5791,7 +5795,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1223,
+     "users": 1224,
      "signups": 45
     },
     {
@@ -5813,14 +5817,14 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "電子郵件",
+     "raw": "Email",
      "users": 1,
      "signups": 0
     }
