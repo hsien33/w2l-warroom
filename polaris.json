@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-27 18:06",
- "updated": "2026-07-27 18:06 台北",
+ "generatedAt": "2026-07-27 23:10",
+ "updated": "2026-07-27 23:10 台北",
  "yesterday_date": "2026-07-26",
  "yesterday": {
   "users": 3,
@@ -59,11 +59,11 @@
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
+   "card_open": 36,
    "email_signup": 56,
    "magnet_delivered": 57,
-   "card_open": 36,
-   "outbound_placement": 7,
    "cta_click": 36,
+   "outbound_placement": 7,
    "purchase_intent": 2
   },
   "sites": {
@@ -72,11 +72,11 @@
     "events": {
      "tool_engaged": 755,
      "tool_result": 641,
+     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 29
+     "cta_click": 29,
+     "outbound_placement": 7
     }
    },
    "wealth": {
@@ -5782,8 +5782,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 14,
-     "users": 11
+     "views": 15,
+     "users": 12
     },
     {
      "name": "訂閱電子報",
