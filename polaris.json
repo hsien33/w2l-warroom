@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-27 06:10",
- "updated": "2026-07-27 06:10 台北",
+ "generatedAt": "2026-07-27 11:59",
+ "updated": "2026-07-27 11:59 台北",
  "yesterday_date": "2026-07-26",
  "yesterday": {
   "users": 3,
@@ -27,8 +27,8 @@
   "pv": 102,
   "events": {
    "tool_engaged": 26,
-   "tool_result": 11,
    "cta_click": 2,
+   "tool_result": 11,
    "email_signup": 1,
    "magnet_delivered": 1
   },
@@ -37,18 +37,18 @@
     "users": 36,
     "events": {
      "tool_engaged": 23,
-     "tool_result": 8,
-     "cta_click": 1
+     "cta_click": 1,
+     "tool_result": 8
     }
    },
    "wealth": {
     "users": 18,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
@@ -58,8 +58,8 @@
   "pv": 3262,
   "events": {
    "tool_engaged": 768,
-   "tool_result": 653,
    "cta_click": 36,
+   "tool_result": 653,
    "email_signup": 56,
    "magnet_delivered": 57,
    "card_open": 36,
@@ -71,8 +71,8 @@
     "users": 1716,
     "events": {
      "tool_engaged": 755,
-     "tool_result": 641,
      "cta_click": 29,
+     "tool_result": 641,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
@@ -82,12 +82,12 @@
    "wealth": {
     "users": 222,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 13,
      "tool_result": 12,
-     "cta_click": 7,
+     "purchase_intent": 2,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "purchase_intent": 2
+     "magnet_delivered": 1
     }
    }
   }
@@ -143,8 +143,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 806,
-   "users": 606,
+   "sessions": 807,
+   "users": 607,
    "signups": 8
   },
   {
@@ -199,8 +199,8 @@
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
-   "sessions": 37,
-   "users": 27,
+   "sessions": 38,
+   "users": 28,
    "signups": 0
   },
   {
@@ -563,10 +563,6 @@
      {
       "ch": "Referral",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 13,
@@ -5620,16 +5616,16 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 606,
+    "users": 607,
     "signups": 8
    },
    {
     "label": "IG 帶來的",
-    "users": 101,
+    "users": 102,
     "signups": 13
    }
   ],
-  "ig_share": 5,
+  "ig_share": 6,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 56
@@ -5662,14 +5658,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "電子郵件",
+     "raw": "Email",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -5678,7 +5674,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 181,
+     "users": 182,
      "signups": 0
     },
     {
@@ -5780,8 +5776,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 16,
-     "users": 9
+     "views": 17,
+     "users": 10
     },
     {
      "name": "從 0 到 1 學習地圖",
