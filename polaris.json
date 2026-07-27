@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-27 11:59",
- "updated": "2026-07-27 11:59 台北",
+ "generatedAt": "2026-07-27 18:06",
+ "updated": "2026-07-27 18:06 台北",
  "yesterday_date": "2026-07-26",
  "yesterday": {
   "users": 3,
@@ -27,8 +27,8 @@
   "pv": 102,
   "events": {
    "tool_engaged": 26,
-   "cta_click": 2,
    "tool_result": 11,
+   "cta_click": 2,
    "email_signup": 1,
    "magnet_delivered": 1
   },
@@ -37,8 +37,8 @@
     "users": 36,
     "events": {
      "tool_engaged": 23,
-     "cta_click": 1,
-     "tool_result": 8
+     "tool_result": 8,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -58,12 +58,12 @@
   "pv": 3262,
   "events": {
    "tool_engaged": 768,
-   "cta_click": 36,
    "tool_result": 653,
    "email_signup": 56,
    "magnet_delivered": 57,
    "card_open": 36,
    "outbound_placement": 7,
+   "cta_click": 36,
    "purchase_intent": 2
   },
   "sites": {
@@ -71,23 +71,23 @@
     "users": 1716,
     "events": {
      "tool_engaged": 755,
-     "cta_click": 29,
      "tool_result": 641,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7
+     "outbound_placement": 7,
+     "cta_click": 29
     }
    },
    "wealth": {
     "users": 222,
     "events": {
-     "cta_click": 7,
      "tool_engaged": 13,
      "tool_result": 12,
-     "purchase_intent": 2,
+     "cta_click": 7,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "purchase_intent": 2
     }
    }
   }
@@ -143,8 +143,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 807,
-   "users": 607,
+   "sessions": 808,
+   "users": 608,
    "signups": 8
   },
   {
@@ -183,7 +183,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 121,
+   "sessions": 122,
    "users": 84,
    "signups": 1
   },
@@ -209,7 +209,7 @@
    "campaign": "(referral)",
    "sessions": 33,
    "users": 10,
-   "signups": 1
+   "signups": 2
   },
   {
    "source": "localhost:8899",
@@ -1022,14 +1022,14 @@
      },
      {
       "date": "2026-07-27",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 204,
     "d7_prev": 12,
-    "pv30": 227,
+    "pv30": 228,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -5612,11 +5612,11 @@
    {
     "label": "其他",
     "users": 1132,
-    "signups": 36
+    "signups": 37
    },
    {
     "label": "直接輸入網址",
-    "users": 607,
+    "users": 608,
     "signups": 8
    },
    {
@@ -5658,14 +5658,14 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "電子郵件",
+     "raw": "Email",
      "users": 1,
      "signups": 0
     }
@@ -5674,14 +5674,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 182,
+     "users": 183,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
      "users": 13,
-     "signups": 1
+     "signups": 2
     },
     {
      "ch": "社群(IG/FB)",
@@ -5708,7 +5708,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 478,
+     "views": 479,
      "users": 423
     },
     {
@@ -5758,8 +5758,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 171,
-     "users": 108
+     "views": 172,
+     "users": 109
     },
     {
      "name": "找不到頁面",
