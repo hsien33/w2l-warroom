@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-28 06:16",
- "updated": "2026-07-28 06:16 台北",
+ "generatedAt": "2026-07-28 11:31",
+ "updated": "2026-07-28 11:31 台北",
  "yesterday_date": "2026-07-27",
  "yesterday": {
   "users": 5,
@@ -46,10 +46,10 @@
    "wealth": {
     "users": 19,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
@@ -59,11 +59,11 @@
   "pv": 3231,
   "events": {
    "tool_engaged": 766,
-   "cta_click": 34,
    "tool_result": 651,
-   "card_open": 36,
    "email_signup": 57,
    "magnet_delivered": 58,
+   "card_open": 36,
+   "cta_click": 34,
    "outbound_placement": 7,
    "purchase_intent": 2
   },
@@ -72,11 +72,11 @@
     "users": 1716,
     "events": {
      "tool_engaged": 755,
-     "cta_click": 29,
      "tool_result": 641,
-     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
+     "card_open": 36,
+     "cta_click": 29,
      "outbound_placement": 7
     }
    },
@@ -86,9 +86,9 @@
      "tool_engaged": 11,
      "tool_result": 10,
      "cta_click": 5,
+     "purchase_intent": 2,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "purchase_intent": 2
+     "magnet_delivered": 2
     }
    }
   }
@@ -144,8 +144,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 784,
-   "users": 591,
+   "sessions": 785,
+   "users": 592,
    "signups": 6
   },
   {
@@ -409,7 +409,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -5472,7 +5475,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 591,
+    "users": 592,
     "signups": 6
    },
    {
@@ -5530,7 +5533,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 166,
+     "users": 167,
      "signups": 0
     },
     {
@@ -5624,16 +5627,16 @@
      "users": 67
     },
     {
-     "name": "頁面搬家了",
-     "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
+     "name": "深度文章",
+     "path": "/articles/",
      "views": 18,
      "users": 11
     },
     {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 17,
-     "users": 10
+     "name": "頁面搬家了",
+     "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
+     "views": 18,
+     "users": 11
     },
     {
      "name": "訂閱電子報",
