@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-29 06:15",
- "updated": "2026-07-29 06:15 台北",
+ "generatedAt": "2026-07-29 11:34",
+ "updated": "2026-07-29 11:34 台北",
  "yesterday_date": "2026-07-28",
  "yesterday": {
   "users": 6,
@@ -29,18 +29,18 @@
   "pv": 75,
   "events": {
    "tool_engaged": 13,
+   "cta_click": 1,
    "tool_result": 6,
    "email_signup": 1,
-   "magnet_delivered": 1,
-   "cta_click": 1
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
     "users": 33,
     "events": {
      "tool_engaged": 13,
-     "tool_result": 6,
-     "cta_click": 1
+     "cta_click": 1,
+     "tool_result": 6
     }
    },
    "wealth": {
@@ -58,11 +58,11 @@
   "events": {
    "tool_engaged": 768,
    "tool_result": 654,
-   "card_open": 36,
    "email_signup": 57,
    "magnet_delivered": 58,
-   "cta_click": 34,
+   "card_open": 36,
    "outbound_placement": 7,
+   "cta_click": 34,
    "purchase_intent": 2
   },
   "sites": {
@@ -71,11 +71,11 @@
     "events": {
      "tool_engaged": 757,
      "tool_result": 644,
-     "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "cta_click": 29,
-     "outbound_placement": 7
+     "card_open": 36,
+     "outbound_placement": 7,
+     "cta_click": 29
     }
    },
    "wealth": {
@@ -83,10 +83,10 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 10,
-     "purchase_intent": 2,
      "cta_click": 5,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "purchase_intent": 2
     }
    }
   }
@@ -142,8 +142,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 741,
-   "users": 563,
+   "sessions": 742,
+   "users": 564,
    "signups": 6
   },
   {
@@ -407,7 +407,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -5307,7 +5310,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 563,
+    "users": 564,
     "signups": 6
    },
    {
@@ -5365,7 +5368,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 141,
+     "users": 142,
      "signups": 0
     },
     {
@@ -5449,8 +5452,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 158,
-     "users": 99
+     "views": 159,
+     "users": 100
     },
     {
      "name": "找不到頁面",
