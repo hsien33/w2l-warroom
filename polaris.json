@@ -1,16 +1,20 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-30 00:37",
- "updated": "2026-07-30 00:37 台北",
+ "generatedAt": "2026-07-30 03:40",
+ "updated": "2026-07-30 03:40 台北",
  "yesterday_date": "2026-07-29",
  "yesterday": {
-  "users": 4,
-  "pv": 3,
-  "events": {},
+  "users": 5,
+  "pv": 5,
+  "events": {
+   "cta_click": 1
+  },
   "sites": {
    "grow": {
-    "users": 1,
-    "events": {}
+    "users": 2,
+    "events": {
+     "cta_click": 1
+    }
    },
    "wealth": {
     "users": 3,
@@ -19,19 +23,21 @@
   }
  },
  "d7": {
-  "users": 42,
-  "pv": 64,
+  "users": 43,
+  "pv": 66,
   "events": {
    "tool_engaged": 12,
-   "tool_result": 5,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 1,
+   "tool_result": 5
   },
   "sites": {
    "grow": {
-    "users": 26,
+    "users": 27,
     "events": {
      "tool_engaged": 12,
+     "cta_click": 1,
      "tool_result": 5
     }
    },
@@ -45,12 +51,12 @@
   }
  },
  "d30": {
-  "users": 1861,
-  "pv": 3044,
+  "users": 1862,
+  "pv": 3046,
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
-   "cta_click": 34,
+   "cta_click": 35,
    "card_open": 36,
    "email_signup": 57,
    "magnet_delivered": 58,
@@ -59,11 +65,11 @@
   },
   "sites": {
    "grow": {
-    "users": 1711,
+    "users": 1712,
     "events": {
      "tool_engaged": 758,
      "tool_result": 644,
-     "cta_click": 29,
+     "cta_click": 30,
      "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
@@ -76,9 +82,9 @@
      "tool_engaged": 10,
      "tool_result": 9,
      "cta_click": 5,
-     "purchase_intent": 2,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "purchase_intent": 2
     }
    }
   }
@@ -87,7 +93,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 26,
+    "count": 27,
     "rate": null
    },
    {
@@ -134,8 +140,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 708,
-   "users": 533,
+   "sessions": 709,
+   "users": 534,
    "signups": 6
   },
   {
@@ -166,8 +172,8 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 203,
-   "users": 168,
+   "sessions": 204,
+   "users": 169,
    "signups": 23
   },
   {
@@ -375,7 +381,7 @@
   },
   {
    "date": "2026-07-29",
-   "users": 4,
+   "users": 5,
    "signups": 0
   }
  ],
@@ -389,7 +395,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.4%",
+   "value": "2.3%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -399,7 +405,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -535,7 +544,7 @@
     "d7": 9,
     "d30": 732,
     "d7_prev": 23,
-    "pv30": 778,
+    "pv30": 779,
     "outbound": [
      {
       "domain": "ig.me",
@@ -549,7 +558,7 @@
      },
      {
       "ch": "Direct",
-      "users": 102
+      "users": 103
      },
      {
       "ch": "Email",
@@ -5141,12 +5150,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1128,
+    "users": 1129,
     "signups": 37
    },
    {
     "label": "直接輸入網址",
-    "users": 533,
+    "users": 534,
     "signups": 6
    },
    {
@@ -5166,13 +5175,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1226,
+     "users": 1227,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 414,
+     "users": 415,
      "signups": 6
     },
     {
@@ -5244,8 +5253,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 396,
-     "users": 269
+     "views": 397,
+     "users": 270
     },
     {
      "name": "大家怎麼說",
@@ -5484,7 +5493,7 @@
     },
     {
      "date": "2026-07-29",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -5655,8 +5664,8 @@
     "signups30": 55,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 1711,
-    "users7": 26,
+    "users30": 1712,
+    "users7": 27,
     "rate7": 0.0
    },
    "wealth": {
