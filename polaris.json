@@ -1,21 +1,21 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-29 11:34",
- "updated": "2026-07-29 11:34 台北",
+ "generatedAt": "2026-07-29 17:06",
+ "updated": "2026-07-29 17:06 台北",
  "yesterday_date": "2026-07-28",
  "yesterday": {
   "users": 6,
-  "pv": 7,
+  "pv": 8,
   "events": {
-   "tool_result": 3,
-   "tool_engaged": 2
+   "tool_engaged": 3,
+   "tool_result": 3
   },
   "sites": {
    "grow": {
     "users": 4,
     "events": {
-     "tool_result": 3,
-     "tool_engaged": 2
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    },
    "wealth": {
@@ -26,21 +26,21 @@
  },
  "d7": {
   "users": 50,
-  "pv": 75,
+  "pv": 76,
   "events": {
-   "tool_engaged": 13,
-   "cta_click": 1,
+   "tool_engaged": 14,
    "tool_result": 6,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
     "users": 33,
     "events": {
-     "tool_engaged": 13,
-     "cta_click": 1,
-     "tool_result": 6
+     "tool_engaged": 14,
+     "tool_result": 6,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -54,12 +54,12 @@
  },
  "d30": {
   "users": 1894,
-  "pv": 3111,
+  "pv": 3112,
   "events": {
-   "tool_engaged": 768,
+   "tool_engaged": 769,
    "tool_result": 654,
-   "email_signup": 57,
    "magnet_delivered": 58,
+   "email_signup": 57,
    "card_open": 36,
    "outbound_placement": 7,
    "cta_click": 34,
@@ -69,10 +69,10 @@
    "grow": {
     "users": 1716,
     "events": {
-     "tool_engaged": 757,
+     "tool_engaged": 758,
      "tool_result": 644,
-     "email_signup": 55,
      "magnet_delivered": 56,
+     "email_signup": 55,
      "card_open": 36,
      "outbound_placement": 7,
      "cta_click": 29
@@ -83,10 +83,10 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 10,
-     "cta_click": 5,
+     "purchase_intent": 2,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "purchase_intent": 2
+     "cta_click": 5
     }
    }
   }
@@ -214,8 +214,8 @@
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 21,
-   "users": 19,
+   "sessions": 22,
+   "users": 20,
    "signups": 0
   },
   {
@@ -407,10 +407,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -712,7 +709,7 @@
     "d7": 10,
     "d30": 161,
     "d7_prev": 24,
-    "pv30": 261,
+    "pv30": 262,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -731,18 +728,14 @@
      {
       "ch": "Referral",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
-    "engaged7": 5,
+    "engaged7": 6,
     "result7": 2,
     "emails30": 0,
     "outbound30": 2,
-    "engage_rate": 50,
-    "finish_rate": 40,
+    "engage_rate": 60,
+    "finish_rate": 33,
     "badges": []
    },
    {
@@ -5315,7 +5308,7 @@
    },
    {
     "label": "IG 帶來的",
-    "users": 102,
+    "users": 103,
     "signups": 13
    }
   ],
@@ -5352,14 +5345,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "電子郵件",
+     "raw": "Email",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -5392,7 +5385,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
