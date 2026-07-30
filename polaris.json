@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-30 11:24",
- "updated": "2026-07-30 11:24 台北",
+ "generatedAt": "2026-07-30 16:46",
+ "updated": "2026-07-30 16:46 台北",
  "yesterday_date": "2026-07-29",
  "yesterday": {
   "users": 5,
@@ -26,10 +26,10 @@
   "users": 43,
   "pv": 66,
   "events": {
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "tool_engaged": 12,
    "tool_result": 5,
+   "email_signup": 1,
+   "magnet_delivered": 1,
    "cta_click": 1
   },
   "sites": {
@@ -56,10 +56,10 @@
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
-   "email_signup": 57,
    "magnet_delivered": 58,
-   "card_open": 36,
    "cta_click": 35,
+   "card_open": 36,
+   "email_signup": 57,
    "outbound_placement": 7,
    "purchase_intent": 2
   },
@@ -69,10 +69,10 @@
     "events": {
      "tool_engaged": 758,
      "tool_result": 644,
-     "email_signup": 55,
      "magnet_delivered": 56,
-     "card_open": 36,
      "cta_click": 30,
+     "card_open": 36,
+     "email_signup": 55,
      "outbound_placement": 7
     }
    },
@@ -82,9 +82,9 @@
      "tool_engaged": 10,
      "tool_result": 9,
      "cta_click": 5,
-     "purchase_intent": 2,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "purchase_intent": 2
     }
    }
   }
@@ -140,8 +140,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 710,
-   "users": 535,
+   "sessions": 713,
+   "users": 538,
    "signups": 6
   },
   {
@@ -564,10 +564,6 @@
      {
       "ch": "Organic Search",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 2,
@@ -706,14 +702,14 @@
      },
      {
       "date": "2026-07-30",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 6,
     "d30": 161,
     "d7_prev": 28,
-    "pv30": 262,
+    "pv30": 264,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -723,7 +719,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 71
+      "users": 73
      },
      {
       "ch": "Organic Social",
@@ -5152,7 +5148,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 535,
+    "users": 538,
     "signups": 6
    },
    {
@@ -5178,7 +5174,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 415,
+     "users": 417,
      "signups": 6
     },
     {
@@ -5194,14 +5190,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "電子郵件",
+     "raw": "Email",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -5210,7 +5206,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 116,
+     "users": 117,
      "signups": 0
     },
     {
@@ -5234,7 +5230,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 3,
      "signups": 0
     }
    ]
