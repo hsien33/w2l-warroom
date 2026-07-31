@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-07-31 11:47",
- "updated": "2026-07-31 11:47 台北",
+ "generatedAt": "2026-07-31 17:14",
+ "updated": "2026-07-31 17:14 台北",
  "yesterday_date": "2026-07-30",
  "yesterday": {
   "users": 5,
@@ -22,11 +22,11 @@
   "users": 38,
   "pv": 54,
   "events": {
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "tool_engaged": 8,
    "tool_result": 5,
-   "cta_click": 1
+   "cta_click": 1,
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -50,37 +50,37 @@
   "users": 1850,
   "pv": 3022,
   "events": {
+   "cta_click": 34,
    "tool_engaged": 768,
    "tool_result": 653,
    "email_signup": 57,
    "magnet_delivered": 58,
    "card_open": 36,
    "outbound_placement": 7,
-   "cta_click": 34,
    "purchase_intent": 2
   },
   "sites": {
    "grow": {
     "users": 1711,
     "events": {
+     "cta_click": 30,
      "tool_engaged": 758,
      "tool_result": 644,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "outbound_placement": 7,
-     "cta_click": 30
+     "outbound_placement": 7
     }
    },
    "wealth": {
     "users": 139,
     "events": {
+     "cta_click": 4,
      "tool_engaged": 10,
      "tool_result": 9,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "purchase_intent": 2,
-     "cta_click": 4
+     "purchase_intent": 2
     }
    }
   }
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 700,
-   "users": 528,
+   "sessions": 701,
+   "users": 529,
    "signups": 6
   },
   {
@@ -184,8 +184,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 62,
-   "users": 55,
+   "sessions": 63,
+   "users": 56,
    "signups": 13
   },
   {
@@ -5140,12 +5140,12 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 528,
+    "users": 529,
     "signups": 6
    },
    {
     "label": "IG 帶來的",
-    "users": 114,
+    "users": 115,
     "signups": 13
    }
   ],
@@ -5160,7 +5160,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1226,
+     "users": 1227,
      "signups": 45
     },
     {
@@ -5198,7 +5198,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 108,
+     "users": 109,
      "signups": 0
     },
     {
@@ -5238,8 +5238,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 393,
-     "users": 267
+     "views": 394,
+     "users": 268
     },
     {
      "name": "大家怎麼說",
@@ -5282,8 +5282,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 148,
-     "users": 90
+     "views": 149,
+     "users": 91
     },
     {
      "name": "頁面搬家了",
