@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-02 00:11",
- "updated": "2026-08-02 00:11 台北",
+ "generatedAt": "2026-08-02 03:31",
+ "updated": "2026-08-02 03:31 台北",
  "yesterday_date": "2026-08-01",
  "yesterday": {
   "users": 0,
@@ -13,18 +13,18 @@
   "users": 29,
   "pv": 41,
   "events": {
-   "cta_click": 1,
    "tool_engaged": 5,
-   "tool_result": 3,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 1,
+   "tool_result": 3
   },
   "sites": {
    "grow": {
     "users": 13,
     "events": {
-     "cta_click": 1,
      "tool_engaged": 5,
+     "cta_click": 1,
      "tool_result": 3
     }
    },
@@ -43,10 +43,10 @@
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
+   "cta_click": 32,
    "card_open": 36,
    "email_signup": 57,
    "magnet_delivered": 58,
-   "cta_click": 32,
    "outbound_placement": 7,
    "purchase_intent": 2
   },
@@ -56,10 +56,10 @@
     "events": {
      "tool_engaged": 758,
      "tool_result": 644,
+     "cta_click": 28,
      "card_open": 36,
      "email_signup": 55,
      "magnet_delivered": 56,
-     "cta_click": 28,
      "outbound_placement": 7
     }
    },
@@ -68,10 +68,10 @@
     "events": {
      "tool_engaged": 10,
      "tool_result": 9,
-     "purchase_intent": 2,
      "cta_click": 4,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "purchase_intent": 2
     }
    }
   }
@@ -392,7 +392,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
