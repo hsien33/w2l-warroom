@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-01 16:32",
- "updated": "2026-08-01 16:32 台北",
+ "generatedAt": "2026-08-01 18:47",
+ "updated": "2026-08-01 18:47 台北",
  "yesterday_date": "2026-07-31",
  "yesterday": {
   "users": 5,
@@ -22,10 +22,10 @@
   "users": 37,
   "pv": 52,
   "events": {
-   "tool_engaged": 8,
-   "tool_result": 5,
    "email_signup": 1,
    "magnet_delivered": 1,
+   "tool_engaged": 8,
+   "tool_result": 5,
    "cta_click": 1
   },
   "sites": {
@@ -52,8 +52,8 @@
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
-   "magnet_delivered": 58,
    "email_signup": 57,
+   "magnet_delivered": 58,
    "card_open": 36,
    "cta_click": 34,
    "outbound_placement": 7,
@@ -65,8 +65,8 @@
     "events": {
      "tool_engaged": 758,
      "tool_result": 644,
-     "magnet_delivered": 56,
      "email_signup": 55,
+     "magnet_delivered": 56,
      "card_open": 36,
      "cta_click": 30,
      "outbound_placement": 7
@@ -77,10 +77,10 @@
     "events": {
      "tool_engaged": 10,
      "tool_result": 9,
-     "purchase_intent": 2,
+     "cta_click": 4,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "cta_click": 4
+     "purchase_intent": 2
     }
    }
   }
