@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-03 00:11",
- "updated": "2026-08-03 00:11 台北",
+ "generatedAt": "2026-08-03 03:31",
+ "updated": "2026-08-03 03:31 台北",
  "yesterday_date": "2026-08-02",
  "yesterday": {
-  "users": 5,
-  "pv": 11,
+  "users": 6,
+  "pv": 12,
   "events": {
    "cta_click": 2,
    "magnet_delivered": 2
@@ -16,7 +16,7 @@
     "events": {}
    },
    "wealth": {
-    "users": 2,
+    "users": 3,
     "events": {
      "cta_click": 2,
      "magnet_delivered": 2
@@ -25,14 +25,14 @@
   }
  },
  "d7": {
-  "users": 34,
-  "pv": 51,
+  "users": 35,
+  "pv": 52,
   "events": {
    "cta_click": 3,
    "magnet_delivered": 3,
-   "email_signup": 1,
    "tool_engaged": 3,
-   "tool_result": 3
+   "tool_result": 3,
+   "email_signup": 1
   },
   "sites": {
    "grow": {
@@ -44,7 +44,7 @@
     }
    },
    "wealth": {
-    "users": 18,
+    "users": 19,
     "events": {
      "cta_click": 2,
      "magnet_delivered": 3,
@@ -54,38 +54,38 @@
   }
  },
  "d30": {
-  "users": 1757,
-  "pv": 2747,
+  "users": 1758,
+  "pv": 2748,
   "events": {
-   "cta_click": 29,
    "tool_engaged": 766,
    "tool_result": 652,
+   "card_open": 30,
    "magnet_delivered": 50,
    "email_signup": 46,
-   "card_open": 30,
+   "cta_click": 29,
    "outbound_placement": 5
   },
   "sites": {
    "grow": {
     "users": 1647,
     "events": {
-     "cta_click": 23,
      "tool_engaged": 757,
      "tool_result": 643,
+     "card_open": 30,
      "magnet_delivered": 46,
      "email_signup": 44,
-     "card_open": 30,
+     "cta_click": 23,
      "outbound_placement": 5
     }
    },
    "wealth": {
-    "users": 110,
+    "users": 111,
     "events": {
      "cta_click": 6,
-     "magnet_delivered": 4,
-     "email_signup": 2,
      "tool_engaged": 9,
-     "tool_result": 9
+     "tool_result": 9,
+     "magnet_delivered": 4,
+     "email_signup": 2
     }
    }
   }
@@ -116,7 +116,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 18,
+    "count": 19,
     "rate": null
    },
    {
@@ -382,7 +382,7 @@
   },
   {
    "date": "2026-08-02",
-   "users": 5,
+   "users": 6,
    "signups": 0
   }
  ],
@@ -406,10 +406,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -4176,13 +4173,19 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 5,
      "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 2,
+     "signups": 0
+    },
+    {
+     "ch": "跨網路廣告",
+     "raw": "Cross-network",
+     "users": 1,
      "signups": 0
     }
    ]
@@ -4242,8 +4245,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 117,
-     "users": 73
+     "views": 118,
+     "users": 74
     },
     {
      "name": "深度文章",
@@ -4590,7 +4593,7 @@
     },
     {
      "date": "2026-08-02",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ]
@@ -4617,9 +4620,9 @@
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 110,
-    "users7": 18,
-    "rate7": 5.6
+    "users30": 111,
+    "users7": 19,
+    "rate7": 5.3
    }
   }
  }
