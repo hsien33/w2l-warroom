@@ -1,35 +1,44 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-02 06:08",
- "updated": "2026-08-02 06:08 台北",
+ "generatedAt": "2026-08-02 11:49",
+ "updated": "2026-08-02 11:49 台北",
  "yesterday_date": "2026-08-01",
  "yesterday": {
-  "users": 0,
-  "pv": 0,
+  "users": 2,
+  "pv": 2,
   "events": {},
-  "sites": {}
+  "sites": {
+   "grow": {
+    "users": 1,
+    "events": {}
+   },
+   "wealth": {
+    "users": 1,
+    "events": {}
+   }
+  }
  },
  "d7": {
-  "users": 29,
-  "pv": 41,
+  "users": 31,
+  "pv": 43,
   "events": {
    "tool_engaged": 5,
-   "tool_result": 3,
    "email_signup": 1,
    "magnet_delivered": 1,
-   "cta_click": 1
+   "cta_click": 1,
+   "tool_result": 3
   },
   "sites": {
    "grow": {
-    "users": 13,
+    "users": 14,
     "events": {
      "tool_engaged": 5,
-     "tool_result": 3,
-     "cta_click": 1
+     "cta_click": 1,
+     "tool_result": 3
     }
    },
    "wealth": {
-    "users": 16,
+    "users": 17,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1
@@ -38,8 +47,8 @@
   }
  },
  "d30": {
-  "users": 1824,
-  "pv": 2916,
+  "users": 1826,
+  "pv": 2918,
   "events": {
    "tool_engaged": 768,
    "tool_result": 653,
@@ -52,7 +61,7 @@
   },
   "sites": {
    "grow": {
-    "users": 1707,
+    "users": 1708,
     "events": {
      "tool_engaged": 758,
      "tool_result": 644,
@@ -64,14 +73,14 @@
     }
    },
    "wealth": {
-    "users": 117,
+    "users": 118,
     "events": {
-     "purchase_intent": 2,
      "tool_engaged": 10,
      "tool_result": 9,
      "cta_click": 4,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "purchase_intent": 2
     }
    }
   }
@@ -80,7 +89,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 13,
+    "count": 14,
     "rate": null
    },
    {
@@ -102,7 +111,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 16,
+    "count": 17,
     "rate": null
    },
    {
@@ -127,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 669,
-   "users": 503,
+   "sessions": 672,
+   "users": 506,
    "signups": 6
   },
   {
@@ -175,8 +184,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 63,
-   "users": 56,
+   "sessions": 64,
+   "users": 57,
    "signups": 13
   },
   {
@@ -191,8 +200,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 31,
-   "users": 8,
+   "sessions": 32,
+   "users": 9,
    "signups": 2
   },
   {
@@ -368,7 +377,7 @@
   },
   {
    "date": "2026-08-01",
-   "users": 0,
+   "users": 2,
    "signups": 0
   }
  ],
@@ -382,7 +391,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "3.4%",
+   "value": "3.2%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -683,14 +692,14 @@
      },
      {
       "date": "2026-08-02",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 733,
     "d7_prev": 14,
-    "pv30": 779,
+    "pv30": 781,
     "outbound": [
      {
       "domain": "ig.me",
@@ -704,7 +713,7 @@
      },
      {
       "ch": "Direct",
-      "users": 103
+      "users": 105
      },
      {
       "ch": "Email",
@@ -4222,38 +4231,23 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1127,
+    "users": 1128,
     "signups": 37
    },
    {
     "label": "直接輸入網址",
-    "users": 503,
+    "users": 506,
     "signups": 6
    },
    {
     "label": "IG 帶來的",
-    "users": 115,
+    "users": 116,
     "signups": 13
    }
   ],
   "ig_share": 7,
-  "cards": [
-   {
-    "level": "red",
-    "what": "光合作用站昨天 0 人造訪（平常 7 天有 13 人）",
-    "why": "可能是追蹤器斷線或網站掛了",
-    "action": "開一次網站確認活著",
-    "link": "https://grow.walk2light.com/"
-   },
-   {
-    "level": "red",
-    "what": "財富站昨天 0 人造訪（平常 7 天有 16 人）",
-    "why": "可能是追蹤器斷線或網站掛了",
-    "action": "開一次網站確認活著",
-    "link": "https://www.walk2light.com/"
-   }
-  ],
-  "summary": "有 2 件事需要你看一下（見下方紅卡）",
+  "cards": [],
+  "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 57
  },
  "v3": {
@@ -4262,13 +4256,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1227,
+     "users": 1228,
      "signups": 45
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 413,
+     "users": 415,
      "signups": 6
     },
     {
@@ -4284,14 +4278,14 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "電子郵件",
+     "raw": "Email",
      "users": 1,
      "signups": 0
     }
@@ -4300,13 +4294,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 87,
+     "users": 88,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 11,
+     "users": 12,
      "signups": 2
     },
     {
@@ -4316,14 +4310,14 @@
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 4,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     }
@@ -4340,8 +4334,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 374,
-     "users": 263
+     "views": 375,
+     "users": 264
     },
     {
      "name": "對話筆記",
@@ -4370,8 +4364,8 @@
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 28,
-     "users": 22
+     "views": 29,
+     "users": 23
     },
     {
      "name": "教養工具箱",
@@ -4384,8 +4378,14 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 130,
-     "users": 77
+     "views": 132,
+     "users": 79
+    },
+    {
+     "name": "深度文章",
+     "path": "/articles/",
+     "views": 19,
+     "users": 12
     },
     {
      "name": "頁面搬家了",
@@ -4394,16 +4394,10 @@
      "users": 12
     },
     {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 18,
-     "users": 11
-    },
-    {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 12,
-     "users": 8
+     "views": 13,
+     "users": 9
     },
     {
      "name": "從 0 到 1 學習地圖",
@@ -4420,8 +4414,8 @@
     {
      "name": "1 對 1 新手陪跑諮詢",
      "path": "/consulting/",
-     "views": 6,
-     "users": 5
+     "views": 7,
+     "users": 6
     },
     {
      "name": "影片庫",
@@ -4580,7 +4574,7 @@
     },
     {
      "date": "2026-08-01",
-     "users": 0,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -4732,7 +4726,7 @@
     },
     {
      "date": "2026-08-01",
-     "users": 0,
+     "users": 1,
      "signups": 0
     }
    ]
@@ -4751,17 +4745,17 @@
     "signups30": 55,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 1707,
-    "users7": 13,
+    "users30": 1708,
+    "users7": 14,
     "rate7": 0.0
    },
    "wealth": {
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 117,
-    "users7": 16,
-    "rate7": 6.2
+    "users30": 118,
+    "users7": 17,
+    "rate7": 5.9
    }
   }
  }
