@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-02 11:49",
- "updated": "2026-08-02 11:49 台北",
+ "generatedAt": "2026-08-02 16:35",
+ "updated": "2026-08-02 16:35 台北",
  "yesterday_date": "2026-08-01",
  "yesterday": {
-  "users": 2,
-  "pv": 2,
+  "users": 3,
+  "pv": 3,
   "events": {},
   "sites": {
    "grow": {
@@ -13,32 +13,32 @@
     "events": {}
    },
    "wealth": {
-    "users": 1,
+    "users": 2,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 31,
-  "pv": 43,
+  "users": 32,
+  "pv": 44,
   "events": {
-   "tool_engaged": 5,
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "cta_click": 1,
-   "tool_result": 3
+   "tool_engaged": 5,
+   "tool_result": 3,
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
     "users": 14,
     "events": {
-     "tool_engaged": 5,
      "cta_click": 1,
+     "tool_engaged": 5,
      "tool_result": 3
     }
    },
    "wealth": {
-    "users": 17,
+    "users": 18,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1
@@ -47,15 +47,15 @@
   }
  },
  "d30": {
-  "users": 1826,
-  "pv": 2918,
+  "users": 1827,
+  "pv": 2919,
   "events": {
+   "cta_click": 32,
    "tool_engaged": 768,
    "tool_result": 653,
    "email_signup": 57,
    "magnet_delivered": 58,
    "card_open": 36,
-   "cta_click": 32,
    "outbound_placement": 7,
    "purchase_intent": 2
   },
@@ -63,21 +63,21 @@
    "grow": {
     "users": 1708,
     "events": {
+     "cta_click": 28,
      "tool_engaged": 758,
      "tool_result": 644,
      "email_signup": 55,
      "magnet_delivered": 56,
      "card_open": 36,
-     "cta_click": 28,
      "outbound_placement": 7
     }
    },
    "wealth": {
-    "users": 118,
+    "users": 119,
     "events": {
+     "cta_click": 4,
      "tool_engaged": 10,
      "tool_result": 9,
-     "cta_click": 4,
      "email_signup": 2,
      "magnet_delivered": 2,
      "purchase_intent": 2
@@ -111,7 +111,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 17,
+    "count": 18,
     "rate": null
    },
    {
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 672,
-   "users": 506,
+   "sessions": 674,
+   "users": 508,
    "signups": 6
   },
   {
@@ -377,7 +377,7 @@
   },
   {
    "date": "2026-08-01",
-   "users": 2,
+   "users": 3,
    "signups": 0
   }
  ],
@@ -391,7 +391,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "3.2%",
+   "value": "3.1%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -721,10 +721,6 @@
      },
      {
       "ch": "Organic Search",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -4190,6 +4186,25 @@
     ]
    },
    {
+    "domain": "www.facebook.com",
+    "clicks": 3,
+    "users": 3,
+    "pages": [
+     [
+      "/",
+      1
+     ],
+     [
+      "/articles/when-to-give-first-phone/",
+      1
+     ],
+     [
+      "/welcome/",
+      1
+     ]
+    ]
+   },
+   {
     "domain": "shopping.parenting.com.tw",
     "clicks": 2,
     "users": 2,
@@ -4201,7 +4216,7 @@
     ]
    },
    {
-    "domain": "www.facebook.com",
+    "domain": "www.threads.com",
     "clicks": 2,
     "users": 2,
     "pages": [
@@ -4210,18 +4225,7 @@
       1
      ],
      [
-      "/articles/when-to-give-first-phone/",
-      1
-     ]
-    ]
-   },
-   {
-    "domain": "www.threads.com",
-    "clicks": 1,
-    "users": 1,
-    "pages": [
-     [
-      "/",
+      "/welcome/",
       1
      ]
     ]
@@ -4236,7 +4240,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 506,
+    "users": 508,
     "signups": 6
    },
    {
@@ -4262,7 +4266,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 415,
+     "users": 416,
      "signups": 6
     },
     {
@@ -4294,7 +4298,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 88,
+     "users": 89,
      "signups": 0
     },
     {
@@ -4364,8 +4368,8 @@
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 29,
-     "users": 23
+     "views": 30,
+     "users": 24
     },
     {
      "name": "教養工具箱",
@@ -4378,8 +4382,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 132,
-     "users": 79
+     "views": 134,
+     "users": 80
     },
     {
      "name": "深度文章",
@@ -4726,7 +4730,7 @@
     },
     {
      "date": "2026-08-01",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -4753,9 +4757,9 @@
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 118,
-    "users7": 17,
-    "rate7": 5.9
+    "users30": 119,
+    "users7": 18,
+    "rate7": 5.6
    }
   }
  }
