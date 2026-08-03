@@ -1,14 +1,15 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-03 11:51",
- "updated": "2026-08-03 11:51 台北",
+ "generatedAt": "2026-08-03 18:03",
+ "updated": "2026-08-03 18:03 台北",
  "yesterday_date": "2026-08-02",
  "yesterday": {
   "users": 6,
   "pv": 12,
   "events": {
-   "cta_click": 2,
-   "magnet_delivered": 2
+   "cta_click": 3,
+   "magnet_delivered": 2,
+   "email_signup": 1
   },
   "sites": {
    "grow": {
@@ -18,8 +19,9 @@
    "wealth": {
     "users": 3,
     "events": {
-     "cta_click": 2,
-     "magnet_delivered": 2
+     "cta_click": 3,
+     "magnet_delivered": 2,
+     "email_signup": 1
     }
    }
   }
@@ -28,9 +30,9 @@
   "users": 35,
   "pv": 52,
   "events": {
-   "cta_click": 3,
+   "cta_click": 4,
+   "email_signup": 2,
    "magnet_delivered": 3,
-   "email_signup": 1,
    "tool_engaged": 3,
    "tool_result": 3
   },
@@ -46,9 +48,9 @@
    "wealth": {
     "users": 19,
     "events": {
-     "cta_click": 2,
+     "email_signup": 2,
      "magnet_delivered": 3,
-     "email_signup": 1
+     "cta_click": 3
     }
    }
   }
@@ -59,11 +61,11 @@
   "events": {
    "tool_engaged": 766,
    "tool_result": 652,
-   "email_signup": 46,
    "magnet_delivered": 50,
    "card_open": 30,
-   "outbound_placement": 5,
-   "cta_click": 29
+   "email_signup": 47,
+   "cta_click": 30,
+   "outbound_placement": 5
   },
   "sites": {
    "grow": {
@@ -71,20 +73,20 @@
     "events": {
      "tool_engaged": 757,
      "tool_result": 643,
-     "email_signup": 44,
      "magnet_delivered": 46,
      "card_open": 30,
-     "outbound_placement": 5,
-     "cta_click": 23
+     "email_signup": 44,
+     "cta_click": 23,
+     "outbound_placement": 5
     }
    },
    "wealth": {
     "users": 111,
     "events": {
-     "cta_click": 6,
      "tool_engaged": 9,
      "tool_result": 9,
-     "email_signup": 2,
+     "cta_click": 7,
+     "email_signup": 3,
      "magnet_delivered": 4
     }
    }
@@ -126,7 +128,7 @@
    },
    {
     "step": "Email訂閱",
-    "count": 1,
+    "count": 2,
     "rate": null
    },
    {
@@ -157,8 +159,8 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 328,
-   "users": 326,
+   "sessions": 329,
+   "users": 327,
    "signups": 3
   },
   {
@@ -205,9 +207,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 32,
+   "sessions": 33,
    "users": 9,
-   "signups": 2
+   "signups": 3
   },
   {
    "source": "instagram.com",
@@ -226,11 +228,11 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
    "sessions": 8,
-   "users": 6,
+   "users": 4,
    "signups": 0
   }
  ],
@@ -383,20 +385,20 @@
   {
    "date": "2026-08-02",
    "users": 6,
-   "signups": 0
+   "signups": 1
   }
  ],
  "lights": [
   {
-   "status": "yellow",
+   "status": "green",
    "label": "昨日名單",
-   "value": "0",
-   "advice": "昨天掛零但 7 日有進帳。看 UTM 排行：哪條導流斷了就補那條（IG bio／貼文首留）。"
+   "value": "+1",
+   "advice": "健康。維持現有導流即可。"
   },
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.9%",
+   "value": "5.7%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -542,7 +544,7 @@
     "d7": 5,
     "d30": 165,
     "d7_prev": 17,
-    "pv30": 266,
+    "pv30": 267,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -4091,8 +4093,8 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1094,
-    "signups": 31
+    "users": 1089,
+    "signups": 32
    },
    {
     "label": "直接輸入網址",
@@ -4103,12 +4105,17 @@
     "label": "IG 帶來的",
     "users": 107,
     "signups": 9
+   },
+   {
+    "label": "Google 搜來的",
+    "users": 4,
+    "signups": 0
    }
   ],
   "ig_share": 6,
   "cards": [],
-  "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
-  "signup_total_30d": 46
+  "summary": "今天正常：昨天新增 1 位名單、工具有 2 人在用",
+  "signup_total_30d": 47
  },
  "v3": {
   "channels": {
@@ -4138,14 +4145,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "電子郵件",
+     "raw": "Email",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -4161,18 +4168,12 @@
      "ch": "別的網站連來",
      "raw": "Referral",
      "users": 12,
-     "signups": 2
+     "signups": 3
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 6,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 5,
+     "users": 8,
      "signups": 0
     },
     {
@@ -4182,9 +4183,9 @@
      "signups": 0
     },
     {
-     "ch": "跨網路廣告",
-     "raw": "Cross-network",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     }
    ]
@@ -4593,7 +4594,7 @@
     {
      "date": "2026-08-02",
      "users": 3,
-     "signups": 0
+     "signups": 1
     }
    ]
   },
@@ -4616,12 +4617,12 @@
     "rate7": 0.0
    },
    "wealth": {
-    "signups30": 2,
-    "signups7": 1,
-    "signupsY": 0,
+    "signups30": 3,
+    "signups7": 2,
+    "signupsY": 1,
     "users30": 111,
     "users7": 19,
-    "rate7": 5.3
+    "rate7": 10.5
    }
   }
  }
