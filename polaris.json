@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-04 19:32",
- "updated": "2026-08-04 19:32 台北",
+ "generatedAt": "2026-08-04 22:37",
+ "updated": "2026-08-04 22:37 台北",
  "yesterday_date": "2026-08-03",
  "yesterday": {
   "users": 2,
@@ -27,8 +27,8 @@
   "pv": 42,
   "events": {
    "tool_engaged": 4,
-   "cta_click": 4,
    "tool_result": 3,
+   "cta_click": 4,
    "magnet_delivered": 2,
    "email_signup": 1
   },
@@ -37,8 +37,8 @@
     "users": 16,
     "events": {
      "tool_engaged": 4,
-     "cta_click": 1,
-     "tool_result": 3
+     "tool_result": 3,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -57,11 +57,11 @@
   "events": {
    "tool_engaged": 711,
    "tool_result": 599,
+   "cta_click": 22,
+   "card_open": 17,
    "email_signup": 26,
    "magnet_delivered": 32,
-   "card_open": 17,
-   "outbound_placement": 1,
-   "cta_click": 22
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -69,21 +69,21 @@
     "events": {
      "tool_engaged": 702,
      "tool_result": 590,
+     "cta_click": 16,
+     "card_open": 17,
      "email_signup": 23,
      "magnet_delivered": 28,
-     "card_open": 17,
-     "outbound_placement": 1,
-     "cta_click": 16
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 96,
     "events": {
-     "email_signup": 3,
-     "magnet_delivered": 4,
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 6
+     "cta_click": 6,
+     "email_signup": 3,
+     "magnet_delivered": 4
     }
    }
   }
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 624,
-   "users": 461,
+   "sessions": 625,
+   "users": 462,
    "signups": 4
   },
   {
@@ -3913,7 +3913,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 461,
+    "users": 462,
     "signups": 4
    },
    {
@@ -3976,7 +3976,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 72,
+     "users": 73,
      "signups": 0
     },
     {
@@ -4060,8 +4060,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 99,
-     "users": 63
+     "views": 100,
+     "users": 64
     },
     {
      "name": "深度文章",
