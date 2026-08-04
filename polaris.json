@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-04 06:16",
- "updated": "2026-08-04 06:16 台北",
+ "generatedAt": "2026-08-04 11:34",
+ "updated": "2026-08-04 11:34 台北",
  "yesterday_date": "2026-08-03",
  "yesterday": {
   "users": 2,
@@ -26,18 +26,18 @@
   "users": 32,
   "pv": 42,
   "events": {
+   "tool_engaged": 4,
    "cta_click": 4,
    "magnet_delivered": 2,
    "email_signup": 1,
-   "tool_engaged": 4,
    "tool_result": 3
   },
   "sites": {
    "grow": {
     "users": 16,
     "events": {
-     "cta_click": 1,
      "tool_engaged": 4,
+     "cta_click": 1,
      "tool_result": 3
     }
    },
@@ -55,12 +55,12 @@
   "users": 1602,
   "pv": 2368,
   "events": {
-   "cta_click": 22,
-   "magnet_delivered": 32,
-   "email_signup": 26,
    "tool_engaged": 711,
    "tool_result": 599,
    "card_open": 17,
+   "magnet_delivered": 32,
+   "email_signup": 26,
+   "cta_click": 22,
    "outbound_placement": 1
   },
   "sites": {
@@ -69,10 +69,10 @@
     "events": {
      "tool_engaged": 702,
      "tool_result": 590,
-     "magnet_delivered": 28,
-     "cta_click": 16,
-     "email_signup": 23,
      "card_open": 17,
+     "magnet_delivered": 28,
+     "email_signup": 23,
+     "cta_click": 16,
      "outbound_placement": 1
     }
    },
@@ -80,10 +80,10 @@
     "users": 96,
     "events": {
      "cta_click": 6,
-     "magnet_delivered": 4,
-     "email_signup": 3,
      "tool_engaged": 9,
-     "tool_result": 9
+     "tool_result": 9,
+     "email_signup": 3,
+     "magnet_delivered": 4
     }
    }
   }
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 622,
-   "users": 459,
+   "sessions": 624,
+   "users": 461,
    "signups": 4
   },
   {
@@ -694,14 +694,14 @@
      },
      {
       "date": "2026-08-04",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 5,
     "d30": 735,
     "d7_prev": 9,
-    "pv30": 782,
+    "pv30": 783,
     "outbound": [
      {
       "domain": "ig.me",
@@ -715,7 +715,7 @@
      },
      {
       "ch": "Direct",
-      "users": 106
+      "users": 107
      },
      {
       "ch": "Email",
@@ -723,6 +723,10 @@
      },
      {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -3913,7 +3917,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 459,
+    "users": 461,
     "signups": 4
    },
    {
@@ -3944,7 +3948,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 385,
+     "users": 386,
      "signups": 4
     },
     {
@@ -3960,14 +3964,14 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "電子郵件",
+     "raw": "Email",
      "users": 1,
      "signups": 0
     }
@@ -3976,7 +3980,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 71,
+     "users": 72,
      "signups": 0
     },
     {
@@ -4060,8 +4064,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 98,
-     "users": 62
+     "views": 99,
+     "users": 63
     },
     {
      "name": "深度文章",
