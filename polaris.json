@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-04 11:34",
- "updated": "2026-08-04 11:34 台北",
+ "generatedAt": "2026-08-04 16:51",
+ "updated": "2026-08-04 16:51 台北",
  "yesterday_date": "2026-08-03",
  "yesterday": {
   "users": 2,
@@ -37,8 +37,8 @@
     "users": 16,
     "events": {
      "tool_engaged": 4,
-     "cta_click": 1,
-     "tool_result": 3
+     "tool_result": 3,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -58,8 +58,8 @@
    "tool_engaged": 711,
    "tool_result": 599,
    "card_open": 17,
-   "magnet_delivered": 32,
    "email_signup": 26,
+   "magnet_delivered": 32,
    "cta_click": 22,
    "outbound_placement": 1
   },
@@ -70,8 +70,8 @@
      "tool_engaged": 702,
      "tool_result": 590,
      "card_open": 17,
-     "magnet_delivered": 28,
      "email_signup": 23,
+     "magnet_delivered": 28,
      "cta_click": 16,
      "outbound_placement": 1
     }
@@ -79,11 +79,11 @@
    "wealth": {
     "users": 96,
     "events": {
-     "cta_click": 6,
      "tool_engaged": 9,
      "tool_result": 9,
-     "email_signup": 3,
-     "magnet_delivered": 4
+     "cta_click": 6,
+     "magnet_delivered": 4,
+     "email_signup": 3
     }
    }
   }
@@ -203,7 +203,7 @@
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
-   "sessions": 20,
+   "sessions": 21,
    "users": 14,
    "signups": 0
   },
@@ -404,7 +404,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -554,10 +557,6 @@
      {
       "ch": "Referral",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 2,
