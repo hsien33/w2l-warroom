@@ -1,43 +1,45 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-04 22:37",
- "updated": "2026-08-04 22:37 台北",
- "yesterday_date": "2026-08-03",
+ "generatedAt": "2026-08-05 01:01",
+ "updated": "2026-08-05 01:01 台北",
+ "yesterday_date": "2026-08-04",
  "yesterday": {
-  "users": 2,
+  "users": 3,
   "pv": 3,
   "events": {
-   "tool_engaged": 1
+   "tool_engaged": 1,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
     "users": 1,
     "events": {
-     "tool_engaged": 1
+     "tool_engaged": 1,
+     "tool_result": 1
     }
    },
    "wealth": {
-    "users": 1,
+    "users": 2,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 32,
-  "pv": 42,
+  "users": 29,
+  "pv": 37,
   "events": {
-   "tool_engaged": 4,
-   "tool_result": 3,
    "cta_click": 4,
    "magnet_delivered": 2,
-   "email_signup": 1
+   "email_signup": 1,
+   "tool_engaged": 2,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
-    "users": 16,
+    "users": 13,
     "events": {
-     "tool_engaged": 4,
-     "tool_result": 3,
+     "tool_engaged": 2,
+     "tool_result": 1,
      "cta_click": 1
     }
    },
@@ -52,36 +54,36 @@
   }
  },
  "d30": {
-  "users": 1602,
-  "pv": 2368,
+  "users": 1559,
+  "pv": 2225,
   "events": {
-   "tool_engaged": 711,
-   "tool_result": 599,
-   "cta_click": 22,
-   "card_open": 17,
-   "email_signup": 26,
-   "magnet_delivered": 32,
+   "tool_engaged": 700,
+   "tool_result": 589,
+   "email_signup": 21,
+   "magnet_delivered": 26,
+   "card_open": 11,
+   "cta_click": 19,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 1506,
+    "users": 1467,
     "events": {
-     "tool_engaged": 702,
-     "tool_result": 590,
-     "cta_click": 16,
-     "card_open": 17,
-     "email_signup": 23,
-     "magnet_delivered": 28,
+     "tool_engaged": 692,
+     "tool_result": 581,
+     "email_signup": 18,
+     "magnet_delivered": 22,
+     "card_open": 11,
+     "cta_click": 14,
      "outbound_placement": 1
     }
    },
    "wealth": {
-    "users": 96,
+    "users": 92,
     "events": {
-     "tool_engaged": 9,
-     "tool_result": 9,
-     "cta_click": 6,
+     "tool_engaged": 8,
+     "tool_result": 8,
+     "cta_click": 5,
      "email_signup": 3,
      "magnet_delivered": 4
     }
@@ -92,7 +94,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 16,
+    "count": 13,
     "rate": null
    },
    {
@@ -139,8 +141,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 625,
-   "users": 462,
+   "sessions": 605,
+   "users": 450,
    "signups": 4
   },
   {
@@ -155,8 +157,8 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 329,
-   "users": 327,
+   "sessions": 328,
+   "users": 326,
    "signups": 3
   },
   {
@@ -179,23 +181,23 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 62,
-   "users": 45,
-   "signups": 4
+   "sessions": 42,
+   "users": 28,
+   "signups": 1
   },
   {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 38,
-   "users": 33,
+   "sessions": 30,
+   "users": 27,
    "signups": 4
   },
   {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 33,
+   "sessions": 24,
    "users": 9,
    "signups": 3
   },
@@ -203,24 +205,24 @@
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
-   "sessions": 21,
-   "users": 14,
+   "sessions": 18,
+   "users": 11,
    "signups": 0
   },
   {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 20,
-   "users": 18,
+   "sessions": 14,
+   "users": 14,
    "signups": 0
   },
   {
    "source": "l.instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 11,
-   "users": 10,
+   "sessions": 10,
+   "users": 9,
    "signups": 0
   },
   {
@@ -233,11 +235,6 @@
   }
  ],
  "trend": [
-  {
-   "date": "2026-07-05",
-   "users": 46,
-   "signups": 5
-  },
   {
    "date": "2026-07-06",
    "users": 23,
@@ -382,6 +379,11 @@
    "date": "2026-08-03",
    "users": 2,
    "signups": 0
+  },
+  {
+   "date": "2026-08-04",
+   "users": 3,
+   "signups": 0
   }
  ],
  "lights": [
@@ -394,7 +396,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "3.1%",
+   "value": "3.4%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -408,170 +410,9 @@
  "v2": {
   "tools": [
    {
-    "slug": "parent-child-bazi",
-    "site": "grow",
-    "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 7
-     },
-     {
-      "date": "2026-07-06",
-      "users": 6
-     },
-     {
-      "date": "2026-07-07",
-      "users": 38
-     },
-     {
-      "date": "2026-07-08",
-      "users": 11
-     },
-     {
-      "date": "2026-07-09",
-      "users": 8
-     },
-     {
-      "date": "2026-07-10",
-      "users": 7
-     },
-     {
-      "date": "2026-07-11",
-      "users": 3
-     },
-     {
-      "date": "2026-07-12",
-      "users": 5
-     },
-     {
-      "date": "2026-07-13",
-      "users": 5
-     },
-     {
-      "date": "2026-07-14",
-      "users": 12
-     },
-     {
-      "date": "2026-07-15",
-      "users": 0
-     },
-     {
-      "date": "2026-07-16",
-      "users": 6
-     },
-     {
-      "date": "2026-07-17",
-      "users": 4
-     },
-     {
-      "date": "2026-07-18",
-      "users": 3
-     },
-     {
-      "date": "2026-07-19",
-      "users": 3
-     },
-     {
-      "date": "2026-07-20",
-      "users": 3
-     },
-     {
-      "date": "2026-07-21",
-      "users": 5
-     },
-     {
-      "date": "2026-07-22",
-      "users": 4
-     },
-     {
-      "date": "2026-07-23",
-      "users": 2
-     },
-     {
-      "date": "2026-07-24",
-      "users": 0
-     },
-     {
-      "date": "2026-07-25",
-      "users": 2
-     },
-     {
-      "date": "2026-07-26",
-      "users": 1
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 1
-     },
-     {
-      "date": "2026-07-29",
-      "users": 0
-     },
-     {
-      "date": "2026-07-30",
-      "users": 2
-     },
-     {
-      "date": "2026-07-31",
-      "users": 2
-     },
-     {
-      "date": "2026-08-01",
-      "users": 0
-     },
-     {
-      "date": "2026-08-02",
-      "users": 0
-     },
-     {
-      "date": "2026-08-03",
-      "users": 1
-     },
-     {
-      "date": "2026-08-04",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 6,
-    "d30": 141,
-    "d7_prev": 14,
-    "pv30": 227,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Direct",
-      "users": 72
-     },
-     {
-      "ch": "Organic Social",
-      "users": 30
-     },
-     {
-      "ch": "Referral",
-      "users": 3
-     }
-    ],
-    "engaged7": 2,
-    "result7": 1,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": 33,
-    "finish_rate": 50,
-    "badges": []
-   },
-   {
     "slug": "summer-plan",
     "site": "grow",
     "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 0
-     },
      {
       "date": "2026-07-06",
       "users": 0
@@ -691,12 +532,16 @@
      {
       "date": "2026-08-04",
       "users": 1
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
-    "today": 1,
+    "today": 0,
     "d7": 5,
-    "d30": 735,
-    "d7_prev": 9,
+    "d30": 736,
+    "d7_prev": 10,
     "pv30": 783,
     "outbound": [
      {
@@ -726,22 +571,177 @@
       "users": 1
      }
     ],
-    "engaged7": 0,
-    "result7": 0,
+    "engaged7": 1,
+    "result7": 1,
     "emails30": 0,
     "outbound30": 51,
-    "engage_rate": 0,
-    "finish_rate": null,
+    "engage_rate": 20,
+    "finish_rate": 100,
+    "badges": [
+     "遺珠"
+    ]
+   },
+   {
+    "slug": "parent-child-bazi",
+    "site": "grow",
+    "daily": [
+     {
+      "date": "2026-07-06",
+      "users": 6
+     },
+     {
+      "date": "2026-07-07",
+      "users": 38
+     },
+     {
+      "date": "2026-07-08",
+      "users": 11
+     },
+     {
+      "date": "2026-07-09",
+      "users": 8
+     },
+     {
+      "date": "2026-07-10",
+      "users": 7
+     },
+     {
+      "date": "2026-07-11",
+      "users": 3
+     },
+     {
+      "date": "2026-07-12",
+      "users": 5
+     },
+     {
+      "date": "2026-07-13",
+      "users": 5
+     },
+     {
+      "date": "2026-07-14",
+      "users": 12
+     },
+     {
+      "date": "2026-07-15",
+      "users": 0
+     },
+     {
+      "date": "2026-07-16",
+      "users": 6
+     },
+     {
+      "date": "2026-07-17",
+      "users": 4
+     },
+     {
+      "date": "2026-07-18",
+      "users": 3
+     },
+     {
+      "date": "2026-07-19",
+      "users": 3
+     },
+     {
+      "date": "2026-07-20",
+      "users": 3
+     },
+     {
+      "date": "2026-07-21",
+      "users": 5
+     },
+     {
+      "date": "2026-07-22",
+      "users": 4
+     },
+     {
+      "date": "2026-07-23",
+      "users": 2
+     },
+     {
+      "date": "2026-07-24",
+      "users": 0
+     },
+     {
+      "date": "2026-07-25",
+      "users": 2
+     },
+     {
+      "date": "2026-07-26",
+      "users": 1
+     },
+     {
+      "date": "2026-07-27",
+      "users": 0
+     },
+     {
+      "date": "2026-07-28",
+      "users": 1
+     },
+     {
+      "date": "2026-07-29",
+      "users": 0
+     },
+     {
+      "date": "2026-07-30",
+      "users": 2
+     },
+     {
+      "date": "2026-07-31",
+      "users": 2
+     },
+     {
+      "date": "2026-08-01",
+      "users": 0
+     },
+     {
+      "date": "2026-08-02",
+      "users": 0
+     },
+     {
+      "date": "2026-08-03",
+      "users": 1
+     },
+     {
+      "date": "2026-08-04",
+      "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
+     }
+    ],
+    "today": 0,
+    "d7": 5,
+    "d30": 134,
+    "d7_prev": 10,
+    "pv30": 220,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Direct",
+      "users": 72
+     },
+     {
+      "ch": "Organic Social",
+      "users": 24
+     },
+     {
+      "ch": "Referral",
+      "users": 3
+     }
+    ],
+    "engaged7": 1,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": 20,
+    "finish_rate": 0,
     "badges": []
    },
    {
     "slug": "family-screen-pact",
     "site": "grow",
     "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 3
-     },
      {
       "date": "2026-07-06",
       "users": 0
@@ -861,13 +861,17 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
-    "d7": 2,
-    "d30": 198,
-    "d7_prev": 1,
-    "pv30": 221,
+    "d7": 0,
+    "d30": 195,
+    "d7_prev": 3,
+    "pv30": 217,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -877,7 +881,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 131
+      "users": 128
      },
      {
       "ch": "Direct",
@@ -892,24 +896,18 @@
       "users": 1
      }
     ],
-    "engaged7": 1,
-    "result7": 1,
+    "engaged7": 0,
+    "result7": 0,
     "emails30": 0,
     "outbound30": 9,
-    "engage_rate": 50,
-    "finish_rate": 100,
-    "badges": [
-     "遺珠"
-    ]
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": []
    },
    {
     "slug": "phone-pact",
     "site": "grow",
     "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 2
-     },
      {
       "date": "2026-07-06",
       "users": 1
@@ -1029,13 +1027,17 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
-    "d7": 1,
-    "d30": 21,
-    "d7_prev": 0,
-    "pv30": 23,
+    "d7": 0,
+    "d30": 19,
+    "d7_prev": 1,
+    "pv30": 20,
     "outbound": [],
     "channels": [
      {
@@ -1049,17 +1051,13 @@
      {
       "ch": "Organic Search",
       "users": 2
-     },
-     {
-      "ch": "Referral",
-      "users": 1
      }
     ],
     "engaged7": 0,
     "result7": 0,
     "emails30": 0,
     "outbound30": 0,
-    "engage_rate": 0,
+    "engage_rate": null,
     "finish_rate": null,
     "badges": []
    },
@@ -1067,10 +1065,6 @@
     "slug": "fire",
     "site": "wealth",
     "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
-     },
      {
       "date": "2026-07-06",
       "users": 0
@@ -1190,13 +1184,17 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
-    "d30": 14,
-    "d7_prev": 3,
-    "pv30": 19,
+    "d30": 13,
+    "d7_prev": 0,
+    "pv30": 16,
     "outbound": [],
     "channels": [
      {
@@ -1225,10 +1223,6 @@
     "site": "grow",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
       "date": "2026-07-06",
       "users": 2
      },
@@ -1347,13 +1341,17 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
-    "d30": 10,
-    "d7_prev": 1,
-    "pv30": 16,
+    "d30": 9,
+    "d7_prev": 0,
+    "pv30": 15,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1363,7 +1361,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 6
+      "users": 5
      },
      {
       "ch": "Direct",
@@ -1383,10 +1381,6 @@
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -1505,13 +1499,17 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
-    "d30": 9,
-    "d7_prev": 1,
-    "pv30": 11,
+    "d30": 8,
+    "d7_prev": 0,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
@@ -1536,324 +1534,10 @@
     "badges": []
    },
    {
-    "slug": "learning-gift",
-    "site": "grow",
-    "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
-      "date": "2026-07-06",
-      "users": 1
-     },
-     {
-      "date": "2026-07-07",
-      "users": 0
-     },
-     {
-      "date": "2026-07-08",
-      "users": 0
-     },
-     {
-      "date": "2026-07-09",
-      "users": 0
-     },
-     {
-      "date": "2026-07-10",
-      "users": 0
-     },
-     {
-      "date": "2026-07-11",
-      "users": 1
-     },
-     {
-      "date": "2026-07-12",
-      "users": 0
-     },
-     {
-      "date": "2026-07-13",
-      "users": 0
-     },
-     {
-      "date": "2026-07-14",
-      "users": 0
-     },
-     {
-      "date": "2026-07-15",
-      "users": 0
-     },
-     {
-      "date": "2026-07-16",
-      "users": 0
-     },
-     {
-      "date": "2026-07-17",
-      "users": 0
-     },
-     {
-      "date": "2026-07-18",
-      "users": 0
-     },
-     {
-      "date": "2026-07-19",
-      "users": 0
-     },
-     {
-      "date": "2026-07-20",
-      "users": 0
-     },
-     {
-      "date": "2026-07-21",
-      "users": 1
-     },
-     {
-      "date": "2026-07-22",
-      "users": 0
-     },
-     {
-      "date": "2026-07-23",
-      "users": 0
-     },
-     {
-      "date": "2026-07-24",
-      "users": 0
-     },
-     {
-      "date": "2026-07-25",
-      "users": 0
-     },
-     {
-      "date": "2026-07-26",
-      "users": 0
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 0
-     },
-     {
-      "date": "2026-07-29",
-      "users": 0
-     },
-     {
-      "date": "2026-07-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-31",
-      "users": 0
-     },
-     {
-      "date": "2026-08-01",
-      "users": 0
-     },
-     {
-      "date": "2026-08-02",
-      "users": 0
-     },
-     {
-      "date": "2026-08-03",
-      "users": 0
-     },
-     {
-      "date": "2026-08-04",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 0,
-    "d30": 4,
-    "d7_prev": 1,
-    "pv30": 4,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Organic Social",
-      "users": 3
-     },
-     {
-      "ch": "Direct",
-      "users": 1
-     }
-    ],
-    "engaged7": 0,
-    "result7": 0,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": null,
-    "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
-    "slug": "compound",
-    "site": "wealth",
-    "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
-      "date": "2026-07-06",
-      "users": 1
-     },
-     {
-      "date": "2026-07-07",
-      "users": 0
-     },
-     {
-      "date": "2026-07-08",
-      "users": 1
-     },
-     {
-      "date": "2026-07-09",
-      "users": 1
-     },
-     {
-      "date": "2026-07-10",
-      "users": 0
-     },
-     {
-      "date": "2026-07-11",
-      "users": 0
-     },
-     {
-      "date": "2026-07-12",
-      "users": 0
-     },
-     {
-      "date": "2026-07-13",
-      "users": 0
-     },
-     {
-      "date": "2026-07-14",
-      "users": 0
-     },
-     {
-      "date": "2026-07-15",
-      "users": 0
-     },
-     {
-      "date": "2026-07-16",
-      "users": 0
-     },
-     {
-      "date": "2026-07-17",
-      "users": 0
-     },
-     {
-      "date": "2026-07-18",
-      "users": 0
-     },
-     {
-      "date": "2026-07-19",
-      "users": 0
-     },
-     {
-      "date": "2026-07-20",
-      "users": 0
-     },
-     {
-      "date": "2026-07-21",
-      "users": 0
-     },
-     {
-      "date": "2026-07-22",
-      "users": 0
-     },
-     {
-      "date": "2026-07-23",
-      "users": 0
-     },
-     {
-      "date": "2026-07-24",
-      "users": 0
-     },
-     {
-      "date": "2026-07-25",
-      "users": 0
-     },
-     {
-      "date": "2026-07-26",
-      "users": 0
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 0
-     },
-     {
-      "date": "2026-07-29",
-      "users": 0
-     },
-     {
-      "date": "2026-07-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-31",
-      "users": 0
-     },
-     {
-      "date": "2026-08-01",
-      "users": 0
-     },
-     {
-      "date": "2026-08-02",
-      "users": 0
-     },
-     {
-      "date": "2026-08-03",
-      "users": 0
-     },
-     {
-      "date": "2026-08-04",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 0,
-    "d30": 4,
-    "d7_prev": 0,
-    "pv30": 6,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Direct",
-      "users": 1
-     },
-     {
-      "ch": "Referral",
-      "users": 1
-     }
-    ],
-    "engaged7": 0,
-    "result7": 0,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": null,
-    "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
     "slug": "tuitionfees-full",
     "site": "grow",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -1971,6 +1655,10 @@
      },
      {
       "date": "2026-08-04",
+      "users": 0
+     },
+     {
+      "date": "2026-08-05",
       "users": 0
      }
     ],
@@ -1997,13 +1685,9 @@
     ]
    },
    {
-    "slug": "first-bucket",
-    "site": "wealth",
+    "slug": "learning-gift",
+    "site": "grow",
     "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
-     },
      {
       "date": "2026-07-06",
       "users": 1
@@ -2019,6 +1703,157 @@
      {
       "date": "2026-07-09",
       "users": 0
+     },
+     {
+      "date": "2026-07-10",
+      "users": 0
+     },
+     {
+      "date": "2026-07-11",
+      "users": 1
+     },
+     {
+      "date": "2026-07-12",
+      "users": 0
+     },
+     {
+      "date": "2026-07-13",
+      "users": 0
+     },
+     {
+      "date": "2026-07-14",
+      "users": 0
+     },
+     {
+      "date": "2026-07-15",
+      "users": 0
+     },
+     {
+      "date": "2026-07-16",
+      "users": 0
+     },
+     {
+      "date": "2026-07-17",
+      "users": 0
+     },
+     {
+      "date": "2026-07-18",
+      "users": 0
+     },
+     {
+      "date": "2026-07-19",
+      "users": 0
+     },
+     {
+      "date": "2026-07-20",
+      "users": 0
+     },
+     {
+      "date": "2026-07-21",
+      "users": 1
+     },
+     {
+      "date": "2026-07-22",
+      "users": 0
+     },
+     {
+      "date": "2026-07-23",
+      "users": 0
+     },
+     {
+      "date": "2026-07-24",
+      "users": 0
+     },
+     {
+      "date": "2026-07-25",
+      "users": 0
+     },
+     {
+      "date": "2026-07-26",
+      "users": 0
+     },
+     {
+      "date": "2026-07-27",
+      "users": 0
+     },
+     {
+      "date": "2026-07-28",
+      "users": 0
+     },
+     {
+      "date": "2026-07-29",
+      "users": 0
+     },
+     {
+      "date": "2026-07-30",
+      "users": 0
+     },
+     {
+      "date": "2026-07-31",
+      "users": 0
+     },
+     {
+      "date": "2026-08-01",
+      "users": 0
+     },
+     {
+      "date": "2026-08-02",
+      "users": 0
+     },
+     {
+      "date": "2026-08-03",
+      "users": 0
+     },
+     {
+      "date": "2026-08-04",
+      "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
+     }
+    ],
+    "today": 0,
+    "d7": 0,
+    "d30": 3,
+    "d7_prev": 0,
+    "pv30": 3,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Organic Social",
+      "users": 3
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
+   },
+   {
+    "slug": "compound",
+    "site": "wealth",
+    "daily": [
+     {
+      "date": "2026-07-06",
+      "users": 1
+     },
+     {
+      "date": "2026-07-07",
+      "users": 0
+     },
+     {
+      "date": "2026-07-08",
+      "users": 1
+     },
+     {
+      "date": "2026-07-09",
+      "users": 1
      },
      {
       "date": "2026-07-10",
@@ -2123,15 +1958,23 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
-    "d30": 2,
+    "d30": 3,
     "d7_prev": 0,
-    "pv30": 2,
+    "pv30": 4,
     "outbound": [],
     "channels": [
+     {
+      "ch": "Direct",
+      "users": 1
+     },
      {
       "ch": "Referral",
       "users": 1
@@ -2152,10 +1995,6 @@
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -2274,12 +2113,16 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
     "d30": 2,
-    "d7_prev": 1,
+    "d7_prev": 0,
     "pv30": 2,
     "outbound": [],
     "channels": [
@@ -2307,10 +2150,6 @@
     "site": "grow",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -2429,12 +2268,16 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
     "d30": 2,
-    "d7_prev": 1,
+    "d7_prev": 0,
     "pv30": 2,
     "outbound": [
      {
@@ -2459,323 +2302,12 @@
     ]
    },
    {
-    "slug": "college-paths",
-    "site": "grow",
-    "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
-      "date": "2026-07-06",
-      "users": 0
-     },
-     {
-      "date": "2026-07-07",
-      "users": 0
-     },
-     {
-      "date": "2026-07-08",
-      "users": 0
-     },
-     {
-      "date": "2026-07-09",
-      "users": 0
-     },
-     {
-      "date": "2026-07-10",
-      "users": 0
-     },
-     {
-      "date": "2026-07-11",
-      "users": 0
-     },
-     {
-      "date": "2026-07-12",
-      "users": 0
-     },
-     {
-      "date": "2026-07-13",
-      "users": 0
-     },
-     {
-      "date": "2026-07-14",
-      "users": 0
-     },
-     {
-      "date": "2026-07-15",
-      "users": 0
-     },
-     {
-      "date": "2026-07-16",
-      "users": 0
-     },
-     {
-      "date": "2026-07-17",
-      "users": 0
-     },
-     {
-      "date": "2026-07-18",
-      "users": 0
-     },
-     {
-      "date": "2026-07-19",
-      "users": 0
-     },
-     {
-      "date": "2026-07-20",
-      "users": 0
-     },
-     {
-      "date": "2026-07-21",
-      "users": 0
-     },
-     {
-      "date": "2026-07-22",
-      "users": 0
-     },
-     {
-      "date": "2026-07-23",
-      "users": 0
-     },
-     {
-      "date": "2026-07-24",
-      "users": 0
-     },
-     {
-      "date": "2026-07-25",
-      "users": 0
-     },
-     {
-      "date": "2026-07-26",
-      "users": 0
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 0
-     },
-     {
-      "date": "2026-07-29",
-      "users": 0
-     },
-     {
-      "date": "2026-07-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-31",
-      "users": 0
-     },
-     {
-      "date": "2026-08-01",
-      "users": 0
-     },
-     {
-      "date": "2026-08-02",
-      "users": 0
-     },
-     {
-      "date": "2026-08-03",
-      "users": 0
-     },
-     {
-      "date": "2026-08-04",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 0,
-    "d30": 1,
-    "d7_prev": 0,
-    "pv30": 2,
-    "outbound": [
-     {
-      "domain": "www.instagram.com",
-      "clicks": 2
-     }
-    ],
-    "channels": [
-     {
-      "ch": "Referral",
-      "users": 1
-     }
-    ],
-    "engaged7": 0,
-    "result7": 0,
-    "emails30": 0,
-    "outbound30": 1,
-    "engage_rate": null,
-    "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
-    "slug": "phone",
-    "site": "grow",
-    "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
-      "date": "2026-07-06",
-      "users": 0
-     },
-     {
-      "date": "2026-07-07",
-      "users": 0
-     },
-     {
-      "date": "2026-07-08",
-      "users": 0
-     },
-     {
-      "date": "2026-07-09",
-      "users": 0
-     },
-     {
-      "date": "2026-07-10",
-      "users": 0
-     },
-     {
-      "date": "2026-07-11",
-      "users": 0
-     },
-     {
-      "date": "2026-07-12",
-      "users": 0
-     },
-     {
-      "date": "2026-07-13",
-      "users": 0
-     },
-     {
-      "date": "2026-07-14",
-      "users": 0
-     },
-     {
-      "date": "2026-07-15",
-      "users": 0
-     },
-     {
-      "date": "2026-07-16",
-      "users": 0
-     },
-     {
-      "date": "2026-07-17",
-      "users": 0
-     },
-     {
-      "date": "2026-07-18",
-      "users": 0
-     },
-     {
-      "date": "2026-07-19",
-      "users": 0
-     },
-     {
-      "date": "2026-07-20",
-      "users": 0
-     },
-     {
-      "date": "2026-07-21",
-      "users": 0
-     },
-     {
-      "date": "2026-07-22",
-      "users": 0
-     },
-     {
-      "date": "2026-07-23",
-      "users": 0
-     },
-     {
-      "date": "2026-07-24",
-      "users": 0
-     },
-     {
-      "date": "2026-07-25",
-      "users": 0
-     },
-     {
-      "date": "2026-07-26",
-      "users": 0
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 0
-     },
-     {
-      "date": "2026-07-29",
-      "users": 0
-     },
-     {
-      "date": "2026-07-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-31",
-      "users": 0
-     },
-     {
-      "date": "2026-08-01",
-      "users": 0
-     },
-     {
-      "date": "2026-08-02",
-      "users": 0
-     },
-     {
-      "date": "2026-08-03",
-      "users": 0
-     },
-     {
-      "date": "2026-08-04",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 0,
-    "d30": 1,
-    "d7_prev": 0,
-    "pv30": 1,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Referral",
-      "users": 1
-     }
-    ],
-    "engaged7": 0,
-    "result7": 0,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": null,
-    "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
-    "slug": "bonus-doubler",
+    "slug": "first-bucket",
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 1
-     },
-     {
       "date": "2026-07-06",
-      "users": 0
+      "users": 1
      },
      {
       "date": "2026-07-07",
@@ -2892,156 +2424,9 @@
      {
       "date": "2026-08-04",
       "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 0,
-    "d30": 1,
-    "d7_prev": 0,
-    "pv30": 1,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Referral",
-      "users": 1
-     }
-    ],
-    "engaged7": 0,
-    "result7": 0,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": null,
-    "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
-    "slug": "wealth-pyramid",
-    "site": "wealth",
-    "daily": [
-     {
-      "date": "2026-07-05",
-      "users": 1
      },
      {
-      "date": "2026-07-06",
-      "users": 0
-     },
-     {
-      "date": "2026-07-07",
-      "users": 0
-     },
-     {
-      "date": "2026-07-08",
-      "users": 0
-     },
-     {
-      "date": "2026-07-09",
-      "users": 0
-     },
-     {
-      "date": "2026-07-10",
-      "users": 0
-     },
-     {
-      "date": "2026-07-11",
-      "users": 0
-     },
-     {
-      "date": "2026-07-12",
-      "users": 0
-     },
-     {
-      "date": "2026-07-13",
-      "users": 0
-     },
-     {
-      "date": "2026-07-14",
-      "users": 0
-     },
-     {
-      "date": "2026-07-15",
-      "users": 0
-     },
-     {
-      "date": "2026-07-16",
-      "users": 0
-     },
-     {
-      "date": "2026-07-17",
-      "users": 0
-     },
-     {
-      "date": "2026-07-18",
-      "users": 0
-     },
-     {
-      "date": "2026-07-19",
-      "users": 0
-     },
-     {
-      "date": "2026-07-20",
-      "users": 0
-     },
-     {
-      "date": "2026-07-21",
-      "users": 0
-     },
-     {
-      "date": "2026-07-22",
-      "users": 0
-     },
-     {
-      "date": "2026-07-23",
-      "users": 0
-     },
-     {
-      "date": "2026-07-24",
-      "users": 0
-     },
-     {
-      "date": "2026-07-25",
-      "users": 0
-     },
-     {
-      "date": "2026-07-26",
-      "users": 0
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 0
-     },
-     {
-      "date": "2026-07-29",
-      "users": 0
-     },
-     {
-      "date": "2026-07-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-31",
-      "users": 0
-     },
-     {
-      "date": "2026-08-01",
-      "users": 0
-     },
-     {
-      "date": "2026-08-02",
-      "users": 0
-     },
-     {
-      "date": "2026-08-03",
-      "users": 0
-     },
-     {
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "users": 0
      }
     ],
@@ -3072,10 +2457,6 @@
     "site": "grow",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -3193,6 +2574,10 @@
      },
      {
       "date": "2026-08-04",
+      "users": 0
+     },
+     {
+      "date": "2026-08-05",
       "users": 0
      }
     ],
@@ -3223,10 +2608,6 @@
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -3344,6 +2725,10 @@
      },
      {
       "date": "2026-08-04",
+      "users": 0
+     },
+     {
+      "date": "2026-08-05",
       "users": 0
      }
     ],
@@ -3374,10 +2759,6 @@
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -3496,12 +2877,16 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
     "d30": 1,
-    "d7_prev": 1,
+    "d7_prev": 0,
     "pv30": 1,
     "outbound": [],
     "channels": [
@@ -3525,10 +2910,6 @@
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -3647,12 +3028,16 @@
      {
       "date": "2026-08-04",
       "users": 0
+     },
+     {
+      "date": "2026-08-05",
+      "users": 0
      }
     ],
     "today": 0,
     "d7": 0,
     "d30": 1,
-    "d7_prev": 1,
+    "d7_prev": 0,
     "pv30": 1,
     "outbound": [],
     "channels": [
@@ -3676,10 +3061,6 @@
     "site": "wealth",
     "daily": [
      {
-      "date": "2026-07-05",
-      "users": 0
-     },
-     {
       "date": "2026-07-06",
       "users": 0
      },
@@ -3797,6 +3178,10 @@
      },
      {
       "date": "2026-08-04",
+      "users": 0
+     },
+     {
+      "date": "2026-08-05",
       "users": 0
      }
     ],
@@ -3841,16 +3226,12 @@
    },
    {
     "domain": "www.instagram.com",
-    "clicks": 18,
-    "users": 11,
+    "clicks": 16,
+    "users": 10,
     "pages": [
      [
       "/tools/family-screen-pact.html",
       15
-     ],
-     [
-      "/tools/college-paths.html",
-      2
      ],
      [
       "/tools/parent-child-bazi-lite.html",
@@ -3908,17 +3289,17 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 1003,
-    "signups": 16
+    "users": 985,
+    "signups": 13
    },
    {
     "label": "直接輸入網址",
-    "users": 462,
+    "users": 450,
     "signups": 4
    },
    {
     "label": "IG 帶來的",
-    "users": 75,
+    "users": 61,
     "signups": 4
    },
    {
@@ -3927,10 +3308,10 @@
     "signups": 0
    }
   ],
-  "ig_share": 5,
+  "ig_share": 4,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
-  "signup_total_30d": 26
+  "signup_total_30d": 21
  },
  "v3": {
   "channels": {
@@ -3938,20 +3319,20 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 1064,
-     "signups": 17
+     "users": 1033,
+     "signups": 14
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 386,
+     "users": 381,
      "signups": 4
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 5,
-     "signups": 2
+     "users": 4,
+     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
@@ -3976,19 +3357,19 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 73,
+     "users": 70,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 11,
+     "users": 10,
      "signups": 3
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 5,
+     "users": 4,
      "signups": 0
     },
     {
@@ -4010,110 +3391,105 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 479,
-     "users": 423
+     "views": 478,
+     "users": 422
     },
     {
      "name": "光合作用",
      "path": "/",
-     "views": 147,
-     "users": 104
-    },
-    {
-     "name": "收到了，謝謝你",
-     "path": "/welcome/",
-     "views": 28,
-     "users": 21
+     "views": 112,
+     "users": 79
     },
     {
      "name": "對話筆記",
      "path": "/articles/",
-     "views": 27,
-     "users": 20
+     "views": 22,
+     "users": 17
+    },
+    {
+     "name": "收到了，謝謝你",
+     "path": "/welcome/",
+     "views": 22,
+     "users": 19
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
      "path": "/dad-bet/",
-     "views": 24,
-     "users": 12
-    },
-    {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 20,
-     "users": 14
+     "views": 19,
+     "users": 11
     },
     {
      "name": "大家怎麼說",
      "path": "/voices/",
-     "views": 17,
-     "users": 14
+     "views": 15,
+     "users": 13
+    },
+    {
+     "name": "關於 Jeff",
+     "path": "/about/",
+     "views": 14,
+     "users": 10
     },
     {
      "name": "找不到頁面",
      "path": "/5b886e2a-7a04-40f7-b53b-86aa241ba86b",
-     "views": 14,
-     "users": 9
+     "views": 13,
+     "users": 8
     }
    ],
    "wealth": [
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 100,
-     "users": 64
+     "views": 82,
+     "users": 61
     },
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 19,
+     "views": 15,
      "users": 12
     },
     {
      "name": "頁面搬家了",
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
-     "views": 15,
-     "users": 11
+     "views": 13,
+     "users": 9
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 11,
+     "views": 9,
      "users": 8
-    },
-    {
-     "name": "訂閱電子報",
-     "path": "/newsletter/",
-     "views": 10,
-     "users": 7
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 8,
+     "views": 7,
      "users": 4
+    },
+    {
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 7,
+     "users": 6
     },
     {
      "name": "1 對 1 新手陪跑諮詢",
      "path": "/consulting/",
-     "views": 6,
-     "users": 5
+     "views": 4,
+     "users": 4
     },
     {
-     "name": "影片庫",
-     "path": "/videos/",
-     "views": 6,
-     "users": 2
+     "name": "投資總是賠錢？因為你不懂這個「底層邏輯」！一張圖看懂 40 年不敗心",
+     "path": "/videos/ep09/",
+     "views": 4,
+     "users": 3
     }
    ]
   },
   "trend_site": {
    "grow": [
-    {
-     "date": "2026-07-05",
-     "users": 40,
-     "signups": 5
-    },
     {
      "date": "2026-07-06",
      "users": 16,
@@ -4258,14 +3634,14 @@
      "date": "2026-08-03",
      "users": 1,
      "signups": 0
+    },
+    {
+     "date": "2026-08-04",
+     "users": 1,
+     "signups": 0
     }
    ],
    "wealth": [
-    {
-     "date": "2026-07-05",
-     "users": 6,
-     "signups": 0
-    },
     {
      "date": "2026-07-06",
      "users": 7,
@@ -4410,6 +3786,11 @@
      "date": "2026-08-03",
      "users": 1,
      "signups": 0
+    },
+    {
+     "date": "2026-08-04",
+     "users": 2,
+     "signups": 0
     }
    ]
   },
@@ -4424,18 +3805,18 @@
   ],
   "site_sum": {
    "grow": {
-    "signups30": 23,
+    "signups30": 18,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 1506,
-    "users7": 16,
+    "users30": 1467,
+    "users7": 13,
     "rate7": 0.0
    },
    "wealth": {
     "signups30": 3,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 96,
+    "users30": 92,
     "users7": 16,
     "rate7": 6.2
    }
