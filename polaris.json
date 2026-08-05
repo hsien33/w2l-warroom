@@ -1,18 +1,18 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-06 00:50",
- "updated": "2026-08-06 00:50 台北",
+ "generatedAt": "2026-08-06 03:52",
+ "updated": "2026-08-06 03:52 台北",
  "yesterday_date": "2026-08-05",
  "yesterday": {
-  "users": 3,
-  "pv": 7,
+  "users": 4,
+  "pv": 8,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1
   },
   "sites": {
    "grow": {
-    "users": 1,
+    "users": 2,
     "events": {}
    },
    "wealth": {
@@ -25,8 +25,8 @@
   }
  },
  "d7": {
-  "users": 27,
-  "pv": 39,
+  "users": 28,
+  "pv": 40,
   "events": {
    "cta_click": 3,
    "magnet_delivered": 2,
@@ -36,7 +36,7 @@
   },
   "sites": {
    "grow": {
-    "users": 12,
+    "users": 13,
     "events": {
      "tool_engaged": 2,
      "tool_result": 1
@@ -55,38 +55,38 @@
   }
  },
  "d30": {
-  "users": 1539,
-  "pv": 2163,
+  "users": 1540,
+  "pv": 2164,
   "events": {
    "tool_engaged": 689,
    "tool_result": 578,
+   "cta_click": 17,
    "email_signup": 20,
    "magnet_delivered": 25,
    "card_open": 10,
-   "cta_click": 17,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 1452,
+    "users": 1453,
     "events": {
      "tool_engaged": 681,
      "tool_result": 570,
      "email_signup": 17,
      "magnet_delivered": 21,
      "card_open": 10,
-     "cta_click": 12,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "cta_click": 12
     }
    },
    "wealth": {
     "users": 87,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 8,
      "cta_click": 5,
      "email_signup": 3,
-     "magnet_delivered": 4
+     "magnet_delivered": 4,
+     "tool_engaged": 8,
+     "tool_result": 8
     }
    }
   }
@@ -95,7 +95,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 12,
+    "count": 13,
     "rate": null
    },
    {
@@ -142,8 +142,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 594,
-   "users": 443,
+   "sessions": 595,
+   "users": 444,
    "signups": 4
   },
   {
@@ -383,7 +383,7 @@
   },
   {
    "date": "2026-08-05",
-   "users": 3,
+   "users": 4,
    "signups": 0
   }
  ],
@@ -397,7 +397,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "3.7%",
+   "value": "3.6%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -410,6 +410,174 @@
  "alerts": [],
  "v2": {
   "tools": [
+   {
+    "slug": "summer-plan",
+    "site": "grow",
+    "daily": [
+     {
+      "date": "2026-07-07",
+      "users": 0
+     },
+     {
+      "date": "2026-07-08",
+      "users": 0
+     },
+     {
+      "date": "2026-07-09",
+      "users": 0
+     },
+     {
+      "date": "2026-07-10",
+      "users": 0
+     },
+     {
+      "date": "2026-07-11",
+      "users": 322
+     },
+     {
+      "date": "2026-07-12",
+      "users": 282
+     },
+     {
+      "date": "2026-07-13",
+      "users": 61
+     },
+     {
+      "date": "2026-07-14",
+      "users": 25
+     },
+     {
+      "date": "2026-07-15",
+      "users": 10
+     },
+     {
+      "date": "2026-07-16",
+      "users": 9
+     },
+     {
+      "date": "2026-07-17",
+      "users": 5
+     },
+     {
+      "date": "2026-07-18",
+      "users": 2
+     },
+     {
+      "date": "2026-07-19",
+      "users": 4
+     },
+     {
+      "date": "2026-07-20",
+      "users": 1
+     },
+     {
+      "date": "2026-07-21",
+      "users": 0
+     },
+     {
+      "date": "2026-07-22",
+      "users": 2
+     },
+     {
+      "date": "2026-07-23",
+      "users": 3
+     },
+     {
+      "date": "2026-07-24",
+      "users": 1
+     },
+     {
+      "date": "2026-07-25",
+      "users": 3
+     },
+     {
+      "date": "2026-07-26",
+      "users": 0
+     },
+     {
+      "date": "2026-07-27",
+      "users": 0
+     },
+     {
+      "date": "2026-07-28",
+      "users": 1
+     },
+     {
+      "date": "2026-07-29",
+      "users": 1
+     },
+     {
+      "date": "2026-07-30",
+      "users": 0
+     },
+     {
+      "date": "2026-07-31",
+      "users": 0
+     },
+     {
+      "date": "2026-08-01",
+      "users": 1
+     },
+     {
+      "date": "2026-08-02",
+      "users": 1
+     },
+     {
+      "date": "2026-08-03",
+      "users": 1
+     },
+     {
+      "date": "2026-08-04",
+      "users": 1
+     },
+     {
+      "date": "2026-08-05",
+      "users": 1
+     },
+     {
+      "date": "2026-08-06",
+      "users": 0
+     }
+    ],
+    "today": 0,
+    "d7": 5,
+    "d30": 737,
+    "d7_prev": 9,
+    "pv30": 784,
+    "outbound": [
+     {
+      "domain": "ig.me",
+      "clicks": 60
+     }
+    ],
+    "channels": [
+     {
+      "ch": "Organic Social",
+      "users": 604
+     },
+     {
+      "ch": "Direct",
+      "users": 108
+     },
+     {
+      "ch": "Email",
+      "users": 1
+     },
+     {
+      "ch": "Organic Search",
+      "users": 1
+     }
+    ],
+    "engaged7": 1,
+    "result7": 1,
+    "emails30": 0,
+    "outbound30": 51,
+    "engage_rate": 20,
+    "finish_rate": 100,
+    "badges": [
+     "遺珠"
+    ]
+   },
    {
     "slug": "parent-child-bazi",
     "site": "grow",
@@ -566,174 +734,6 @@
     "engage_rate": 20,
     "finish_rate": 0,
     "badges": []
-   },
-   {
-    "slug": "summer-plan",
-    "site": "grow",
-    "daily": [
-     {
-      "date": "2026-07-07",
-      "users": 0
-     },
-     {
-      "date": "2026-07-08",
-      "users": 0
-     },
-     {
-      "date": "2026-07-09",
-      "users": 0
-     },
-     {
-      "date": "2026-07-10",
-      "users": 0
-     },
-     {
-      "date": "2026-07-11",
-      "users": 322
-     },
-     {
-      "date": "2026-07-12",
-      "users": 282
-     },
-     {
-      "date": "2026-07-13",
-      "users": 61
-     },
-     {
-      "date": "2026-07-14",
-      "users": 25
-     },
-     {
-      "date": "2026-07-15",
-      "users": 10
-     },
-     {
-      "date": "2026-07-16",
-      "users": 9
-     },
-     {
-      "date": "2026-07-17",
-      "users": 5
-     },
-     {
-      "date": "2026-07-18",
-      "users": 2
-     },
-     {
-      "date": "2026-07-19",
-      "users": 4
-     },
-     {
-      "date": "2026-07-20",
-      "users": 1
-     },
-     {
-      "date": "2026-07-21",
-      "users": 0
-     },
-     {
-      "date": "2026-07-22",
-      "users": 2
-     },
-     {
-      "date": "2026-07-23",
-      "users": 3
-     },
-     {
-      "date": "2026-07-24",
-      "users": 1
-     },
-     {
-      "date": "2026-07-25",
-      "users": 3
-     },
-     {
-      "date": "2026-07-26",
-      "users": 0
-     },
-     {
-      "date": "2026-07-27",
-      "users": 0
-     },
-     {
-      "date": "2026-07-28",
-      "users": 1
-     },
-     {
-      "date": "2026-07-29",
-      "users": 1
-     },
-     {
-      "date": "2026-07-30",
-      "users": 0
-     },
-     {
-      "date": "2026-07-31",
-      "users": 0
-     },
-     {
-      "date": "2026-08-01",
-      "users": 1
-     },
-     {
-      "date": "2026-08-02",
-      "users": 1
-     },
-     {
-      "date": "2026-08-03",
-      "users": 1
-     },
-     {
-      "date": "2026-08-04",
-      "users": 1
-     },
-     {
-      "date": "2026-08-05",
-      "users": 0
-     },
-     {
-      "date": "2026-08-06",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 4,
-    "d30": 736,
-    "d7_prev": 9,
-    "pv30": 783,
-    "outbound": [
-     {
-      "domain": "ig.me",
-      "clicks": 60
-     }
-    ],
-    "channels": [
-     {
-      "ch": "Organic Social",
-      "users": 604
-     },
-     {
-      "ch": "Direct",
-      "users": 107
-     },
-     {
-      "ch": "Email",
-      "users": 1
-     },
-     {
-      "ch": "Organic Search",
-      "users": 1
-     }
-    ],
-    "engaged7": 1,
-    "result7": 1,
-    "emails30": 0,
-    "outbound30": 51,
-    "engage_rate": 25,
-    "finish_rate": 100,
-    "badges": [
-     "遺珠"
-    ]
    },
    {
     "slug": "family-screen-pact",
@@ -3146,7 +3146,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 443,
+    "users": 444,
     "signups": 4
    },
    {
@@ -3172,7 +3172,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 379,
+     "users": 380,
      "signups": 4
     },
     {
@@ -3478,7 +3478,7 @@
     },
     {
      "date": "2026-08-05",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -3649,8 +3649,8 @@
     "signups30": 17,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 1452,
-    "users7": 12,
+    "users30": 1453,
+    "users7": 13,
     "rate7": 0.0
    },
    "wealth": {
