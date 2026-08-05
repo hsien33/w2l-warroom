@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-05 11:29",
- "updated": "2026-08-05 11:29 台北",
+ "generatedAt": "2026-08-05 16:49",
+ "updated": "2026-08-05 16:49 台北",
  "yesterday_date": "2026-08-04",
  "yesterday": {
   "users": 3,
@@ -29,17 +29,17 @@
   "pv": 37,
   "events": {
    "cta_click": 4,
-   "magnet_delivered": 2,
-   "email_signup": 1,
    "tool_engaged": 2,
-   "tool_result": 1
+   "tool_result": 1,
+   "magnet_delivered": 2,
+   "email_signup": 1
   },
   "sites": {
    "grow": {
     "users": 13,
     "events": {
-     "tool_engaged": 2,
      "cta_click": 1,
+     "tool_engaged": 2,
      "tool_result": 1
     }
    },
@@ -59,10 +59,10 @@
   "events": {
    "tool_engaged": 700,
    "tool_result": 589,
-   "cta_click": 19,
-   "magnet_delivered": 26,
    "email_signup": 21,
+   "magnet_delivered": 26,
    "card_open": 11,
+   "cta_click": 19,
    "outbound_placement": 1
   },
   "sites": {
@@ -71,21 +71,21 @@
     "events": {
      "tool_engaged": 692,
      "tool_result": 581,
-     "cta_click": 14,
-     "card_open": 11,
      "email_signup": 18,
      "magnet_delivered": 22,
+     "card_open": 11,
+     "cta_click": 14,
      "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 92,
     "events": {
+     "tool_engaged": 8,
+     "tool_result": 8,
      "cta_click": 5,
      "magnet_delivered": 4,
-     "email_signup": 3,
-     "tool_engaged": 8,
-     "tool_result": 8
+     "email_signup": 3
     }
    }
   }
@@ -173,7 +173,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 123,
+   "sessions": 124,
    "users": 84,
    "signups": 1
   },
@@ -197,8 +197,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 24,
-   "users": 9,
+   "sessions": 25,
+   "users": 10,
    "signups": 3
   },
   {
@@ -565,10 +565,6 @@
      {
       "ch": "Organic Search",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -864,14 +860,14 @@
      },
      {
       "date": "2026-08-05",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 195,
     "d7_prev": 3,
-    "pv30": 217,
+    "pv30": 218,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1502,14 +1498,14 @@
      },
      {
       "date": "2026-08-05",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 8,
     "d7_prev": 0,
-    "pv30": 10,
+    "pv30": 11,
     "outbound": [],
     "channels": [
      {
@@ -1522,6 +1518,10 @@
      },
      {
       "ch": "Organic Social",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -3289,7 +3289,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 985,
+    "users": 986,
     "signups": 13
    },
    {
@@ -3341,14 +3341,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "電子郵件",
+     "raw": "Email",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -3363,7 +3363,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 10,
+     "users": 11,
      "signups": 3
     },
     {
@@ -3373,14 +3373,14 @@
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     }
@@ -3391,7 +3391,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 478,
+     "views": 479,
      "users": 422
     },
     {
@@ -3441,8 +3441,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 82,
-     "users": 61
+     "views": 84,
+     "users": 63
     },
     {
      "name": "深度文章",
@@ -3459,8 +3459,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 9,
-     "users": 8
+     "views": 10,
+     "users": 9
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
