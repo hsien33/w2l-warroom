@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-06 06:18",
- "updated": "2026-08-06 06:18 台北",
+ "generatedAt": "2026-08-06 11:32",
+ "updated": "2026-08-06 11:32 台北",
  "yesterday_date": "2026-08-05",
  "yesterday": {
   "users": 4,
@@ -59,11 +59,11 @@
   "pv": 2164,
   "events": {
    "tool_engaged": 689,
-   "cta_click": 17,
    "tool_result": 578,
+   "card_open": 10,
    "email_signup": 20,
    "magnet_delivered": 25,
-   "card_open": 10,
+   "cta_click": 17,
    "outbound_placement": 1
   },
   "sites": {
@@ -71,11 +71,11 @@
     "users": 1453,
     "events": {
      "tool_engaged": 681,
-     "cta_click": 12,
      "tool_result": 570,
+     "card_open": 10,
      "email_signup": 17,
      "magnet_delivered": 21,
-     "card_open": 10,
+     "cta_click": 12,
      "outbound_placement": 1
     }
    },
@@ -142,8 +142,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 595,
-   "users": 444,
+   "sessions": 596,
+   "users": 445,
    "signups": 4
   },
   {
@@ -407,7 +407,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -3146,7 +3149,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 444,
+    "users": 445,
     "signups": 4
    },
    {
@@ -3188,14 +3191,14 @@
      "signups": 0
     },
     {
-     "ch": "電子郵件",
-     "raw": "Email",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "電子郵件",
+     "raw": "Email",
      "users": 1,
      "signups": 0
     }
@@ -3204,7 +3207,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 66,
+     "users": 67,
      "signups": 0
     },
     {
@@ -3222,7 +3225,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     }
    ]
@@ -3286,16 +3289,16 @@
      "users": 58
     },
     {
+     "name": "深度文章",
+     "path": "/articles/",
+     "views": 12,
+     "users": 13
+    },
+    {
      "name": "頁面搬家了",
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
      "views": 12,
      "users": 8
-    },
-    {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 11,
-     "users": 12
     },
     {
      "name": "從 0 到 1 學習地圖",
