@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-07 18:08",
- "updated": "2026-08-07 18:08 台北",
+ "generatedAt": "2026-08-07 21:35",
+ "updated": "2026-08-07 21:35 台北",
  "yesterday_date": "2026-08-06",
  "yesterday": {
   "users": 3,
@@ -52,24 +52,24 @@
   "users": 1273,
   "pv": 1782,
   "events": {
-   "cta_click": 14,
    "tool_engaged": 595,
    "tool_result": 498,
-   "magnet_delivered": 21,
    "email_signup": 17,
+   "magnet_delivered": 21,
    "card_open": 9,
+   "cta_click": 14,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 1188,
     "events": {
-     "cta_click": 9,
      "tool_engaged": 587,
      "tool_result": 490,
-     "magnet_delivered": 17,
      "email_signup": 14,
+     "magnet_delivered": 17,
      "card_open": 9,
+     "cta_click": 9,
      "outbound_placement": 1
     }
    },
@@ -79,8 +79,8 @@
      "tool_engaged": 8,
      "tool_result": 8,
      "cta_click": 5,
-     "magnet_delivered": 4,
-     "email_signup": 3
+     "email_signup": 3,
+     "magnet_delivered": 4
     }
    }
   }
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 508,
-   "users": 375,
+   "sessions": 509,
+   "users": 376,
    "signups": 3
   },
   {
@@ -224,8 +224,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 7,
-   "users": 7,
+   "sessions": 8,
+   "users": 8,
    "signups": 0
   }
  ],
@@ -1180,27 +1180,31 @@
      },
      {
       "date": "2026-08-07",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 14,
     "d7_prev": 1,
-    "pv30": 15,
+    "pv30": 16,
     "outbound": [],
     "channels": [
+     {
+      "ch": "Direct",
+      "users": 6
+     },
      {
       "ch": "Organic Social",
       "users": 6
      },
      {
-      "ch": "Direct",
-      "users": 5
-     },
-     {
       "ch": "Organic Search",
       "users": 2
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 0,
@@ -3127,12 +3131,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 807,
+    "users": 808,
     "signups": 11
    },
    {
     "label": "直接輸入網址",
-    "users": 375,
+    "users": 376,
     "signups": 3
    },
    {
@@ -3158,18 +3162,18 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 309,
+     "users": 310,
      "signups": 3
-    },
-    {
-     "ch": "別的網站連來",
-     "raw": "Referral",
-     "users": 4,
-     "signups": 0
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
+     "users": 5,
+     "signups": 0
+    },
+    {
+     "ch": "別的網站連來",
+     "raw": "Referral",
      "users": 4,
      "signups": 0
     },
