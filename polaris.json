@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-08 00:07",
- "updated": "2026-08-08 00:07 台北",
+ "generatedAt": "2026-08-08 03:12",
+ "updated": "2026-08-08 03:12 台北",
  "yesterday_date": "2026-08-07",
  "yesterday": {
   "users": 6,
@@ -45,11 +45,11 @@
    "wealth": {
     "users": 14,
     "events": {
+     "tool_engaged": 1,
+     "tool_result": 1,
      "cta_click": 3,
      "magnet_delivered": 2,
-     "email_signup": 1,
-     "tool_engaged": 1,
-     "tool_result": 1
+     "email_signup": 1
     }
    }
   }
@@ -60,10 +60,10 @@
   "events": {
    "tool_engaged": 551,
    "tool_result": 466,
+   "cta_click": 8,
    "card_open": 4,
    "email_signup": 10,
    "magnet_delivered": 14,
-   "cta_click": 8,
    "outbound_placement": 1
   },
   "sites": {
@@ -72,10 +72,10 @@
     "events": {
      "tool_engaged": 545,
      "tool_result": 460,
+     "cta_click": 4,
      "card_open": 4,
      "email_signup": 7,
      "magnet_delivered": 10,
-     "cta_click": 4,
      "outbound_placement": 1
     }
    },
@@ -219,11 +219,11 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
    "sessions": 7,
-   "users": 7,
+   "users": 2,
    "signups": 0
   },
   {
@@ -3113,7 +3113,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 683,
+    "users": 676,
     "signups": 6
    },
    {
@@ -3125,6 +3125,11 @@
     "label": "IG 帶來的",
     "users": 39,
     "signups": 2
+   },
+   {
+    "label": "Google 搜來的",
+    "users": 2,
+    "signups": 0
    }
   ],
   "ig_share": 4,
@@ -3148,14 +3153,14 @@
      "signups": 2
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 5,
+     "ch": "別的網站連來",
+     "raw": "Referral",
+     "users": 4,
      "signups": 0
     },
     {
-     "ch": "別的網站連來",
-     "raw": "Referral",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 4,
      "signups": 0
     },
@@ -3194,7 +3199,13 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
+     "signups": 0
+    },
+    {
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
+     "users": 0,
      "signups": 0
     }
    ]
@@ -3254,7 +3265,7 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 65,
+     "views": 66,
      "users": 54
     },
     {
