@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-08 12:19",
- "updated": "2026-08-08 12:19 台北",
+ "generatedAt": "2026-08-08 15:11",
+ "updated": "2026-08-08 15:11 台北",
  "yesterday_date": "2026-08-07",
  "yesterday": {
   "users": 6,
-  "pv": 9,
+  "pv": 10,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2
@@ -26,13 +26,13 @@
  },
  "d7": {
   "users": 27,
-  "pv": 42,
+  "pv": 43,
   "events": {
-   "tool_engaged": 5,
-   "tool_result": 4,
    "cta_click": 3,
    "magnet_delivered": 2,
-   "email_signup": 1
+   "email_signup": 1,
+   "tool_engaged": 5,
+   "tool_result": 4
   },
   "sites": {
    "grow": {
@@ -56,13 +56,13 @@
  },
  "d30": {
   "users": 1033,
-  "pv": 1389,
+  "pv": 1390,
   "events": {
    "tool_engaged": 551,
-   "tool_result": 466,
-   "magnet_delivered": 14,
    "cta_click": 8,
+   "tool_result": 466,
    "email_signup": 10,
+   "magnet_delivered": 14,
    "card_open": 4,
    "outbound_placement": 1
   },
@@ -71,10 +71,10 @@
     "users": 953,
     "events": {
      "tool_engaged": 545,
-     "tool_result": 460,
-     "magnet_delivered": 10,
      "cta_click": 4,
+     "tool_result": 460,
      "email_signup": 7,
+     "magnet_delivered": 10,
      "card_open": 4,
      "outbound_placement": 1
     }
@@ -82,11 +82,11 @@
    "wealth": {
     "users": 80,
     "events": {
-     "tool_engaged": 6,
-     "tool_result": 6,
      "cta_click": 4,
+     "email_signup": 3,
      "magnet_delivered": 4,
-     "email_signup": 3
+     "tool_engaged": 6,
+     "tool_result": 6
     }
    }
   }
@@ -142,8 +142,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 393,
-   "users": 279,
+   "sessions": 395,
+   "users": 281,
    "signups": 2
   },
   {
@@ -198,8 +198,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 17,
-   "users": 10,
+   "sessions": 18,
+   "users": 11,
    "signups": 3
   },
   {
@@ -222,7 +222,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 8,
+   "sessions": 9,
    "users": 2,
    "signups": 0
   },
@@ -730,10 +730,6 @@
      {
       "ch": "Organic Search",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -872,19 +868,19 @@
      },
      {
       "date": "2026-08-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 79,
     "d7_prev": 8,
-    "pv30": 119,
+    "pv30": 120,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 32
+      "users": 33
      },
      {
       "ch": "Organic Social",
@@ -1050,10 +1046,6 @@
      {
       "ch": "Organic Search",
       "users": 2
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -3113,12 +3105,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 676,
+    "users": 677,
     "signups": 6
    },
    {
     "label": "直接輸入網址",
-    "users": 279,
+    "users": 281,
     "signups": 2
    },
    {
@@ -3149,25 +3141,25 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 216,
+     "users": 217,
      "signups": 2
-    },
-    {
-     "ch": "別的網站連來",
-     "raw": "Referral",
-     "users": 4,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
-     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 3,
+     "signups": 0
+    },
+    {
+     "ch": "別的網站連來",
+     "raw": "Referral",
+     "users": 3,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
@@ -3181,13 +3173,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 63,
+     "users": 64,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 11,
+     "users": 12,
      "signups": 3
     },
     {
@@ -3221,7 +3213,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 76,
+     "views": 77,
      "users": 48
     },
     {
@@ -3265,8 +3257,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 66,
-     "users": 54
+     "views": 68,
+     "users": 56
     },
     {
      "name": "頁面搬家了",
