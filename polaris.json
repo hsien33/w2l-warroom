@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-08 17:52",
- "updated": "2026-08-08 17:52 台北",
+ "generatedAt": "2026-08-08 21:09",
+ "updated": "2026-08-08 21:09 台北",
  "yesterday_date": "2026-08-07",
  "yesterday": {
   "users": 6,
@@ -58,11 +58,11 @@
   "users": 1033,
   "pv": 1390,
   "events": {
-   "cta_click": 8,
-   "magnet_delivered": 14,
    "email_signup": 10,
+   "magnet_delivered": 14,
    "tool_engaged": 551,
    "tool_result": 466,
+   "cta_click": 8,
    "card_open": 4,
    "outbound_placement": 1
   },
@@ -72,21 +72,21 @@
     "events": {
      "tool_engaged": 545,
      "tool_result": 460,
-     "cta_click": 4,
+     "magnet_delivered": 10,
      "card_open": 4,
      "email_signup": 7,
-     "magnet_delivered": 10,
+     "cta_click": 4,
      "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 80,
     "events": {
-     "cta_click": 4,
-     "magnet_delivered": 4,
      "email_signup": 3,
+     "magnet_delivered": 4,
      "tool_engaged": 6,
-     "tool_result": 6
+     "tool_result": 6,
+     "cta_click": 4
     }
    }
   }
@@ -142,7 +142,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 395,
+   "sessions": 396,
    "users": 281,
    "signups": 2
   },
@@ -875,7 +875,7 @@
     "d7": 1,
     "d30": 79,
     "d7_prev": 8,
-    "pv30": 120,
+    "pv30": 121,
     "outbound": [],
     "channels": [
      {
@@ -1184,10 +1184,10 @@
      },
      {
       "date": "2026-08-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 7,
     "d7_prev": 0,
@@ -1204,6 +1204,10 @@
      },
      {
       "ch": "Organic Social",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -1343,10 +1347,10 @@
      },
      {
       "date": "2026-08-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 11,
     "d7_prev": 0,
@@ -1363,6 +1367,10 @@
      },
      {
       "ch": "Organic Social",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -3191,7 +3199,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     },
     {
@@ -3258,7 +3266,7 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 68,
-     "users": 56
+     "users": 57
     },
     {
      "name": "頁面搬家了",
@@ -3275,14 +3283,14 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 7,
-     "users": 6
+     "views": 8,
+     "users": 7
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 5,
-     "users": 5
+     "views": 6,
+     "users": 6
     },
     {
      "name": "工具箱到手",
