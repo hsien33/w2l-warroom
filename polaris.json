@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-08 21:09",
- "updated": "2026-08-08 21:09 台北",
+ "generatedAt": "2026-08-08 23:43",
+ "updated": "2026-08-08 23:43 台北",
  "yesterday_date": "2026-08-07",
  "yesterday": {
   "users": 6,
@@ -28,11 +28,11 @@
   "users": 27,
   "pv": 43,
   "events": {
+   "tool_engaged": 5,
+   "tool_result": 4,
    "cta_click": 3,
    "magnet_delivered": 2,
-   "email_signup": 1,
-   "tool_engaged": 5,
-   "tool_result": 4
+   "email_signup": 1
   },
   "sites": {
    "grow": {
@@ -58,13 +58,13 @@
   "users": 1033,
   "pv": 1390,
   "events": {
-   "email_signup": 10,
-   "magnet_delivered": 14,
    "tool_engaged": 551,
    "tool_result": 466,
-   "cta_click": 8,
+   "email_signup": 10,
+   "magnet_delivered": 14,
    "card_open": 4,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "cta_click": 8
   },
   "sites": {
    "grow": {
@@ -72,11 +72,11 @@
     "events": {
      "tool_engaged": 545,
      "tool_result": 460,
+     "email_signup": 7,
      "magnet_delivered": 10,
      "card_open": 4,
-     "email_signup": 7,
-     "cta_click": 4,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "cta_click": 4
     }
    },
    "wealth": {
@@ -198,8 +198,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 18,
-   "users": 11,
+   "sessions": 19,
+   "users": 12,
    "signups": 3
   },
   {
@@ -1184,19 +1184,19 @@
      },
      {
       "date": "2026-08-08",
-      "users": 1
+      "users": 2
      }
     ],
-    "today": 1,
+    "today": 2,
     "d7": 1,
     "d30": 7,
     "d7_prev": 0,
-    "pv30": 9,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Referral",
-      "users": 4
+      "users": 5
      },
      {
       "ch": "Direct",
@@ -1354,7 +1354,7 @@
     "d7": 0,
     "d30": 11,
     "d7_prev": 0,
-    "pv30": 13,
+    "pv30": 14,
     "outbound": [],
     "channels": [
      {
@@ -3113,7 +3113,7 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 677,
+    "users": 678,
     "signups": 6
    },
    {
@@ -3187,7 +3187,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 12,
+     "users": 13,
      "signups": 3
     },
     {
@@ -3265,8 +3265,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 57
+     "views": 69,
+     "users": 58
     },
     {
      "name": "頁面搬家了",
@@ -3283,8 +3283,8 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 8,
-     "users": 7
+     "views": 9,
+     "users": 8
     },
     {
      "name": "從 0 到 1 學習地圖",
@@ -3295,8 +3295,8 @@
     {
      "name": "工具箱到手",
      "path": "/welcome/",
-     "views": 4,
-     "users": 3
+     "views": 5,
+     "users": 4
     },
     {
      "name": "1 對 1 新手陪跑諮詢",
