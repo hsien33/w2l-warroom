@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-09 10:26",
- "updated": "2026-08-09 10:26 台北",
+ "generatedAt": "2026-08-09 12:33",
+ "updated": "2026-08-09 12:33 台北",
  "yesterday_date": "2026-08-08",
  "yesterday": {
-  "users": 8,
-  "pv": 22,
+  "users": 10,
+  "pv": 25,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2,
@@ -14,11 +14,11 @@
   },
   "sites": {
    "grow": {
-    "users": 4,
+    "users": 5,
     "events": {}
    },
    "wealth": {
-    "users": 4,
+    "users": 5,
     "events": {
      "tool_engaged": 2,
      "tool_result": 2,
@@ -29,68 +29,68 @@
   }
  },
  "d7": {
-  "users": 32,
-  "pv": 62,
+  "users": 34,
+  "pv": 65,
   "events": {
    "tool_engaged": 7,
    "tool_result": 6,
-   "email_signup": 2,
+   "cta_click": 3,
    "magnet_delivered": 3,
-   "cta_click": 3
+   "email_signup": 2
   },
   "sites": {
    "grow": {
-    "users": 16,
+    "users": 17,
     "events": {
      "tool_engaged": 4,
      "tool_result": 3
     }
    },
    "wealth": {
-    "users": 16,
+    "users": 17,
     "events": {
      "tool_engaged": 3,
      "tool_result": 3,
-     "email_signup": 2,
+     "cta_click": 3,
      "magnet_delivered": 3,
-     "cta_click": 3
+     "email_signup": 2
     }
    }
   }
  },
  "d30": {
-  "users": 993,
-  "pv": 1331,
+  "users": 995,
+  "pv": 1334,
   "events": {
    "tool_engaged": 533,
    "tool_result": 453,
-   "cta_click": 8,
    "email_signup": 11,
    "magnet_delivered": 14,
    "card_open": 4,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "cta_click": 8
   },
   "sites": {
    "grow": {
-    "users": 915,
+    "users": 916,
     "events": {
      "tool_engaged": 525,
      "tool_result": 445,
-     "cta_click": 4,
      "email_signup": 7,
      "magnet_delivered": 9,
      "card_open": 4,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "cta_click": 4
     }
    },
    "wealth": {
-    "users": 78,
+    "users": 79,
     "events": {
      "tool_engaged": 8,
      "tool_result": 8,
      "cta_click": 4,
-     "email_signup": 4,
-     "magnet_delivered": 5
+     "magnet_delivered": 5,
+     "email_signup": 4
     }
    }
   }
@@ -99,7 +99,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 16,
+    "count": 17,
     "rate": null
    },
    {
@@ -121,13 +121,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 16,
+    "count": 17,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 3,
-    "rate": 18.8
+    "rate": 17.6
    },
    {
     "step": "Email訂閱",
@@ -146,8 +146,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 358,
-   "users": 261,
+   "sessions": 359,
+   "users": 262,
    "signups": 2
   },
   {
@@ -202,8 +202,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 18,
-   "users": 12,
+   "sessions": 19,
+   "users": 13,
    "signups": 4
   },
   {
@@ -387,7 +387,7 @@
   },
   {
    "date": "2026-08-08",
-   "users": 8,
+   "users": 10,
    "signups": 1
   }
  ],
@@ -401,7 +401,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "6.2%",
+   "value": "5.9%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -720,7 +720,7 @@
     "channels": [
      {
       "ch": "Referral",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Direct",
@@ -728,10 +728,6 @@
      },
      {
       "ch": "Organic Social",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -1028,10 +1024,10 @@
      },
      {
       "date": "2026-08-09",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 2,
     "d30": 37,
     "d7_prev": 3,
@@ -1050,6 +1046,10 @@
      {
       "ch": "Direct",
       "users": 16
+     },
+     {
+      "ch": "Unassigned",
+      "users": 2
      },
      {
       "ch": "Organic Search",
@@ -1363,7 +1363,7 @@
     "channels": [
      {
       "ch": "Referral",
-      "users": 3
+      "users": 4
      },
      {
       "ch": "Direct",
@@ -1371,10 +1371,6 @@
      },
      {
       "ch": "Organic Social",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2964,12 +2960,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 661,
+    "users": 662,
     "signups": 7
    },
    {
     "label": "直接輸入網址",
-    "users": 261,
+    "users": 262,
     "signups": 2
    },
    {
@@ -2985,7 +2981,7 @@
   ],
   "ig_share": 4,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 2 人在用",
   "signup_total_30d": 11
  },
  "v3": {
@@ -3000,7 +2996,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 200,
+     "users": 201,
      "signups": 2
     },
     {
@@ -3038,7 +3034,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 13,
+     "users": 14,
      "signups": 4
     },
     {
@@ -3048,15 +3044,15 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 0,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 1,
      "signups": 0
     }
    ]
@@ -3072,7 +3068,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 74,
+     "views": 75,
      "users": 47
     },
     {
@@ -3116,8 +3112,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 57
+     "views": 70,
+     "users": 58
     },
     {
      "name": "頁面搬家了",
@@ -3312,7 +3308,7 @@
     },
     {
      "date": "2026-08-08",
-     "users": 4,
+     "users": 5,
      "signups": 0
     }
    ],
@@ -3464,7 +3460,7 @@
     },
     {
      "date": "2026-08-08",
-     "users": 4,
+     "users": 5,
      "signups": 1
     }
    ]
@@ -3483,17 +3479,17 @@
     "signups30": 7,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 915,
-    "users7": 16,
+    "users30": 916,
+    "users7": 17,
     "rate7": 0.0
    },
    "wealth": {
     "signups30": 4,
     "signups7": 2,
     "signupsY": 1,
-    "users30": 78,
-    "users7": 16,
-    "rate7": 12.5
+    "users30": 79,
+    "users7": 17,
+    "rate7": 11.8
    }
   }
  }
