@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-10 12:50",
- "updated": "2026-08-10 12:50 台北",
+ "generatedAt": "2026-08-10 16:02",
+ "updated": "2026-08-10 16:02 台北",
  "yesterday_date": "2026-08-09",
  "yesterday": {
   "users": 5,
@@ -61,11 +61,11 @@
   "events": {
    "tool_engaged": 523,
    "tool_result": 452,
-   "cta_click": 7,
    "email_signup": 10,
    "magnet_delivered": 12,
    "card_open": 4,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "cta_click": 7
   },
   "sites": {
    "grow": {
@@ -73,21 +73,21 @@
     "events": {
      "tool_engaged": 514,
      "tool_result": 443,
-     "cta_click": 3,
      "email_signup": 6,
      "magnet_delivered": 7,
      "card_open": 4,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "cta_click": 3
     }
    },
    "wealth": {
     "users": 76,
     "events": {
-     "cta_click": 4,
+     "tool_engaged": 9,
+     "tool_result": 9,
      "email_signup": 4,
      "magnet_delivered": 5,
-     "tool_engaged": 9,
-     "tool_result": 9
+     "cta_click": 4
     }
    }
   }
@@ -143,8 +143,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 331,
-   "users": 250,
+   "sessions": 334,
+   "users": 251,
    "signups": 2
   },
   {
@@ -175,7 +175,7 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 80,
+   "sessions": 81,
    "users": 56,
    "signups": 0
   },
@@ -867,14 +867,14 @@
      },
      {
       "date": "2026-08-10",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 35,
     "d7_prev": 3,
-    "pv30": 41,
+    "pv30": 42,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -892,6 +892,10 @@
      },
      {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2961,7 +2965,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 250,
+    "users": 251,
     "signups": 2
    },
    {
@@ -3002,14 +3006,14 @@
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     },
@@ -3024,7 +3028,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 56,
+     "users": 57,
      "signups": 0
     },
     {
@@ -3064,7 +3068,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 61,
+     "views": 62,
      "users": 46
     },
     {
@@ -3108,8 +3112,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 67,
-     "users": 54
+     "views": 69,
+     "users": 55
     },
     {
      "name": "深度文章",
