@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-10 10:31",
- "updated": "2026-08-10 10:31 台北",
+ "generatedAt": "2026-08-10 12:50",
+ "updated": "2026-08-10 12:50 台北",
  "yesterday_date": "2026-08-09",
  "yesterday": {
   "users": 5,
-  "pv": 7,
+  "pv": 11,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2
@@ -29,7 +29,7 @@
  },
  "d7": {
   "users": 33,
-  "pv": 60,
+  "pv": 64,
   "events": {
    "tool_engaged": 9,
    "tool_result": 8,
@@ -57,13 +57,13 @@
  },
  "d30": {
   "users": 965,
-  "pv": 1275,
+  "pv": 1279,
   "events": {
    "tool_engaged": 523,
    "tool_result": 452,
    "cta_click": 7,
-   "magnet_delivered": 12,
    "email_signup": 10,
+   "magnet_delivered": 12,
    "card_open": 4,
    "outbound_placement": 1
   },
@@ -73,21 +73,21 @@
     "events": {
      "tool_engaged": 514,
      "tool_result": 443,
+     "cta_click": 3,
      "email_signup": 6,
      "magnet_delivered": 7,
      "card_open": 4,
-     "outbound_placement": 1,
-     "cta_click": 3
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 76,
     "events": {
-     "tool_engaged": 9,
-     "tool_result": 9,
      "cta_click": 4,
+     "email_signup": 4,
      "magnet_delivered": 5,
-     "email_signup": 4
+     "tool_engaged": 9,
+     "tool_result": 9
     }
    }
   }
@@ -143,8 +143,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 330,
-   "users": 249,
+   "sessions": 331,
+   "users": 250,
    "signups": 2
   },
   {
@@ -188,20 +188,20 @@
    "signups": 2
   },
   {
+   "source": "w-alchemy.kit.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 19,
+   "users": 14,
+   "signups": 4
+  },
+  {
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
    "sessions": 18,
    "users": 15,
    "signups": 1
-  },
-  {
-   "source": "w-alchemy.kit.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 18,
-   "users": 13,
-   "signups": 4
   },
   {
    "source": "ig",
@@ -408,7 +408,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -544,12 +547,12 @@
     "d7": 5,
     "d30": 9,
     "d7_prev": 0,
-    "pv30": 9,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Referral",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Direct",
@@ -557,10 +560,6 @@
      },
      {
       "ch": "Organic Social",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -875,7 +874,7 @@
     "d7": 4,
     "d30": 35,
     "d7_prev": 3,
-    "pv30": 40,
+    "pv30": 41,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -890,10 +889,6 @@
      {
       "ch": "Direct",
       "users": 15
-     },
-     {
-      "ch": "Unassigned",
-      "users": 2
      },
      {
       "ch": "Organic Search",
@@ -1205,7 +1200,7 @@
     "channels": [
      {
       "ch": "Referral",
-      "users": 4
+      "users": 5
      },
      {
       "ch": "Direct",
@@ -1213,10 +1208,6 @@
      },
      {
       "ch": "Organic Social",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2965,12 +2956,12 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 648,
+    "users": 649,
     "signups": 6
    },
    {
     "label": "直接輸入網址",
-    "users": 249,
+    "users": 250,
     "signups": 2
    },
    {
@@ -3001,7 +2992,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 193,
+     "users": 194,
      "signups": 2
     },
     {
@@ -3011,14 +3002,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 3,
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 2,
      "signups": 0
     },
@@ -3039,7 +3030,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 14,
+     "users": 15,
      "signups": 4
     },
     {
@@ -3068,7 +3059,7 @@
      "name": "光合作用",
      "path": "/",
      "views": 65,
-     "users": 44
+     "users": 45
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -3117,26 +3108,26 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 66,
+     "views": 67,
      "users": 54
     },
     {
      "name": "深度文章",
      "path": "/articles/",
      "views": 10,
-     "users": 10
+     "users": 11
+    },
+    {
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 10,
+     "users": 9
     },
     {
      "name": "頁面搬家了",
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
      "views": 10,
      "users": 6
-    },
-    {
-     "name": "訂閱電子報",
-     "path": "/newsletter/",
-     "views": 9,
-     "users": 8
     },
     {
      "name": "從 0 到 1 學習地圖",
