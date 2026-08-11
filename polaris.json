@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-11 10:24",
- "updated": "2026-08-11 10:24 台北",
+ "generatedAt": "2026-08-11 12:37",
+ "updated": "2026-08-11 12:37 台北",
  "yesterday_date": "2026-08-10",
  "yesterday": {
   "users": 5,
@@ -52,10 +52,10 @@
   "events": {
    "tool_engaged": 307,
    "tool_result": 253,
-   "card_open": 2,
+   "cta_click": 7,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "cta_click": 7
+   "card_open": 2
   },
   "sites": {
    "grow": {
@@ -72,11 +72,11 @@
    "wealth": {
     "users": 77,
     "events": {
-     "tool_engaged": 9,
-     "tool_result": 9,
+     "cta_click": 4,
      "email_signup": 4,
      "magnet_delivered": 5,
-     "cta_click": 4
+     "tool_engaged": 9,
+     "tool_result": 9
     }
    }
   }
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 285,
-   "users": 209,
+   "sessions": 286,
+   "users": 210,
    "signups": 1
   },
   {
@@ -849,14 +849,14 @@
      },
      {
       "date": "2026-08-11",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 416,
     "d7_prev": 5,
-    "pv30": 444,
+    "pv30": 445,
     "outbound": [
      {
       "domain": "ig.me",
@@ -870,7 +870,7 @@
      },
      {
       "ch": "Direct",
-      "users": 82
+      "users": 83
      },
      {
       "ch": "Email",
@@ -2628,7 +2628,7 @@
    },
    {
     "label": "直接輸入網址",
-    "users": 209,
+    "users": 210,
     "signups": 1
    },
    {
@@ -2654,7 +2654,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 152,
+     "users": 153,
      "signups": 1
     },
     {
