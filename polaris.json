@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-11 05:56",
- "updated": "2026-08-11 05:56 台北",
+ "generatedAt": "2026-08-11 10:24",
+ "updated": "2026-08-11 10:24 台北",
  "yesterday_date": "2026-08-10",
  "yesterday": {
   "users": 5,
@@ -74,9 +74,9 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 4,
      "email_signup": 4,
-     "magnet_delivered": 5
+     "magnet_delivered": 5,
+     "cta_click": 4
     }
    }
   }
