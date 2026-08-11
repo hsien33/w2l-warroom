@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-11 18:08",
- "updated": "2026-08-11 18:08 台北",
+ "generatedAt": "2026-08-11 21:39",
+ "updated": "2026-08-11 21:39 台北",
  "yesterday_date": "2026-08-10",
  "yesterday": {
   "users": 6,
@@ -52,10 +52,10 @@
   "events": {
    "tool_engaged": 307,
    "tool_result": 253,
-   "card_open": 2,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "cta_click": 7
+   "cta_click": 7,
+   "card_open": 2
   },
   "sites": {
    "grow": {
@@ -63,10 +63,10 @@
     "events": {
      "tool_engaged": 298,
      "tool_result": 244,
-     "card_open": 2,
-     "email_signup": 2,
      "magnet_delivered": 3,
-     "cta_click": 3
+     "cta_click": 3,
+     "card_open": 2,
+     "email_signup": 2
     }
    },
    "wealth": {
@@ -74,9 +74,9 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 4,
+     "email_signup": 4,
      "magnet_delivered": 5,
-     "email_signup": 4
+     "cta_click": 4
     }
    }
   }
