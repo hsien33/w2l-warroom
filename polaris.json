@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-11 15:33",
- "updated": "2026-08-11 15:33 台北",
+ "generatedAt": "2026-08-11 18:08",
+ "updated": "2026-08-11 18:08 台北",
  "yesterday_date": "2026-08-10",
  "yesterday": {
   "users": 6,
@@ -52,10 +52,10 @@
   "events": {
    "tool_engaged": 307,
    "tool_result": 253,
+   "card_open": 2,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "cta_click": 7,
-   "card_open": 2
+   "cta_click": 7
   },
   "sites": {
    "grow": {
@@ -63,20 +63,20 @@
     "events": {
      "tool_engaged": 298,
      "tool_result": 244,
-     "cta_click": 3,
      "card_open": 2,
      "email_signup": 2,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "cta_click": 3
     }
    },
    "wealth": {
     "users": 78,
     "events": {
-     "email_signup": 4,
-     "magnet_delivered": 5,
-     "cta_click": 4,
      "tool_engaged": 9,
-     "tool_result": 9
+     "tool_result": 9,
+     "cta_click": 4,
+     "magnet_delivered": 5,
+     "email_signup": 4
     }
    }
   }
@@ -2805,16 +2805,16 @@
      "users": 4
     },
     {
+     "name": "戒掉看盤成癮：為什麼「盯盤越勤，報酬越差」？",
+     "path": "/articles/leek-screen-addiction/",
+     "views": 2,
+     "users": 1
+    },
+    {
      "name": "1 對 1 新手陪跑諮詢",
      "path": "/consulting/",
      "views": 2,
      "users": 2
-    },
-    {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 1,
-     "users": 1
     }
    ]
   },
