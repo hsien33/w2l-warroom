@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-11 12:37",
- "updated": "2026-08-11 12:37 台北",
+ "generatedAt": "2026-08-11 15:33",
+ "updated": "2026-08-11 15:33 台北",
  "yesterday_date": "2026-08-10",
  "yesterday": {
-  "users": 5,
-  "pv": 5,
+  "users": 6,
+  "pv": 8,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 3,
+    "users": 4,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 36,
-  "pv": 66,
+  "users": 37,
+  "pv": 69,
   "events": {
    "tool_engaged": 8,
    "tool_result": 8,
@@ -36,7 +36,7 @@
     }
    },
    "wealth": {
-    "users": 19,
+    "users": 20,
     "events": {
      "tool_engaged": 4,
      "tool_result": 4,
@@ -47,14 +47,14 @@
   }
  },
  "d30": {
-  "users": 625,
-  "pv": 871,
+  "users": 626,
+  "pv": 874,
   "events": {
    "tool_engaged": 307,
    "tool_result": 253,
-   "cta_click": 7,
    "email_signup": 6,
    "magnet_delivered": 8,
+   "cta_click": 7,
    "card_open": 2
   },
   "sites": {
@@ -63,18 +63,18 @@
     "events": {
      "tool_engaged": 298,
      "tool_result": 244,
+     "cta_click": 3,
      "card_open": 2,
      "email_signup": 2,
-     "magnet_delivered": 3,
-     "cta_click": 3
+     "magnet_delivered": 3
     }
    },
    "wealth": {
-    "users": 77,
+    "users": 78,
     "events": {
-     "cta_click": 4,
      "email_signup": 4,
      "magnet_delivered": 5,
+     "cta_click": 4,
      "tool_engaged": 9,
      "tool_result": 9
     }
@@ -107,13 +107,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 19,
+    "count": 20,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 4,
-    "rate": 21.1
+    "rate": 20.0
    },
    {
     "step": "Email訂閱",
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 286,
-   "users": 210,
+   "sessions": 287,
+   "users": 211,
    "signups": 1
   },
   {
@@ -169,6 +169,14 @@
    "signups": 0
   },
   {
+   "source": "ig",
+   "medium": "bio",
+   "campaign": "magnet-talkrescue",
+   "sessions": 17,
+   "users": 16,
+   "signups": 0
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -183,14 +191,6 @@
    "sessions": 16,
    "users": 14,
    "signups": 1
-  },
-  {
-   "source": "ig",
-   "medium": "bio",
-   "campaign": "magnet-talkrescue",
-   "sessions": 16,
-   "users": 15,
-   "signups": 0
   },
   {
    "source": "ig",
@@ -217,11 +217,11 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 3,
+   "users": 1,
    "signups": 0
   }
  ],
@@ -373,7 +373,7 @@
   },
   {
    "date": "2026-08-10",
-   "users": 5,
+   "users": 6,
    "signups": 0
   }
  ],
@@ -387,7 +387,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.8%",
+   "value": "2.7%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -548,10 +548,6 @@
      {
       "ch": "Organic Social",
       "users": 12
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 2,
@@ -2623,17 +2619,22 @@
   "sources4": [
    {
     "label": "其他",
-    "users": 363,
+    "users": 358,
     "signups": 5
    },
    {
     "label": "直接輸入網址",
-    "users": 210,
+    "users": 211,
     "signups": 1
    },
    {
     "label": "IG 帶來的",
-    "users": 29,
+    "users": 30,
+    "signups": 0
+   },
+   {
+    "label": "Google 搜來的",
+    "users": 1,
     "signups": 0
    }
   ],
@@ -2648,7 +2649,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 370,
+     "users": 371,
      "signups": 1
     },
     {
@@ -2664,12 +2665,6 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 3,
-     "signups": 0
-    },
-    {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 2,
@@ -2680,13 +2675,19 @@
      "raw": "Email",
      "users": 1,
      "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 1,
+     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 57,
+     "users": 58,
      "signups": 0
     },
     {
@@ -2702,14 +2703,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 2,
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -2720,7 +2721,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 54,
+     "views": 55,
      "users": 37
     },
     {
@@ -2774,6 +2775,12 @@
      "users": 55
     },
     {
+     "name": "深度文章",
+     "path": "/articles/",
+     "views": 10,
+     "users": 10
+    },
+    {
      "name": "訂閱電子報",
      "path": "/newsletter/",
      "views": 10,
@@ -2784,12 +2791,6 @@
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
      "views": 10,
      "users": 6
-    },
-    {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 9,
-     "users": 10
     },
     {
      "name": "從 0 到 1 學習地圖",
@@ -3118,7 +3119,7 @@
     },
     {
      "date": "2026-08-10",
-     "users": 3,
+     "users": 4,
      "signups": 0
     }
    ]
@@ -3145,9 +3146,9 @@
     "signups30": 4,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 77,
-    "users7": 19,
-    "rate7": 5.3
+    "users30": 78,
+    "users7": 20,
+    "rate7": 5.0
    }
   }
  }
