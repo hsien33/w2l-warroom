@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-12 15:48",
- "updated": "2026-08-12 15:48 台北",
+ "generatedAt": "2026-08-12 18:18",
+ "updated": "2026-08-12 18:18 台北",
  "yesterday_date": "2026-08-11",
  "yesterday": {
   "users": 1,
@@ -52,9 +52,9 @@
   "events": {
    "tool_engaged": 134,
    "tool_result": 89,
-   "email_signup": 4,
+   "cta_click": 6,
    "magnet_delivered": 6,
-   "cta_click": 6
+   "email_signup": 4
   },
   "sites": {
    "grow": {
@@ -62,18 +62,18 @@
     "events": {
      "tool_engaged": 126,
      "tool_result": 81,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "cta_click": 2,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 76,
     "events": {
-     "email_signup": 4,
-     "magnet_delivered": 5,
      "tool_engaged": 8,
      "tool_result": 8,
-     "cta_click": 4
+     "cta_click": 4,
+     "magnet_delivered": 5,
+     "email_signup": 4
     }
    }
   }
@@ -129,8 +129,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 217,
-   "users": 157,
+   "sessions": 218,
+   "users": 158,
    "signups": 0
   },
   {
@@ -217,8 +217,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 3,
-   "users": 2,
+   "sessions": 4,
+   "users": 3,
    "signups": 0
   }
  ],
@@ -523,15 +523,20 @@
      },
      {
       "date": "2026-08-12",
-      "users": 0
+      "users": 3
      }
     ],
-    "today": 0,
+    "today": 3,
     "d7": 5,
     "d30": 21,
     "d7_prev": 0,
-    "pv30": 23,
-    "outbound": [],
+    "pv30": 25,
+    "outbound": [
+     {
+      "domain": "www.instagram.com",
+      "clicks": 1
+     }
+    ],
     "channels": [
      {
       "ch": "Direct",
@@ -540,12 +545,20 @@
      {
       "ch": "Organic Social",
       "users": 8
+     },
+     {
+      "ch": "Cross-network",
+      "users": 2
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 2,
     "result7": 2,
     "emails30": 0,
-    "outbound30": 0,
+    "outbound30": 1,
     "engage_rate": 40,
     "finish_rate": 100,
     "badges": [
@@ -2584,6 +2597,17 @@
     ]
    },
    {
+    "domain": "www.instagram.com",
+    "clicks": 1,
+    "users": 1,
+    "pages": [
+     [
+      "/tools/family-screen-pact.html",
+      1
+     ]
+    ]
+   },
+   {
     "domain": "www.threads.com",
     "clicks": 1,
     "users": 1,
@@ -2599,12 +2623,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 157,
+    "users": 158,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 117,
+    "users": 118,
     "signups": 4
    },
    {
@@ -2638,7 +2662,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 100,
+     "users": 101,
+     "signups": 0
+    },
+    {
+     "ch": "跨網路廣告",
+     "raw": "Cross-network",
+     "users": 3,
      "signups": 0
     },
     {
@@ -2656,7 +2686,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2726,6 +2756,12 @@
      "users": 3
     },
     {
+     "name": "找不到頁面",
+     "path": "/42160779-f575-4745-b995-391a667d0893",
+     "views": 3,
+     "users": 3
+    },
+    {
      "name": "頂嘴頂到你想爆炸時，大人先安頓自己再說的那一句",
      "path": "/articles/talkback-self-calm-first/",
      "views": 2,
@@ -2734,12 +2770,6 @@
     {
      "name": "我也曾對孩子吼完就後悔——那天我學會的30秒煞車",
      "path": "/articles/yell-then-regret-30s-brake/",
-     "views": 2,
-     "users": 2
-    },
-    {
-     "name": "父子對決 ‧ 30 天衝粉賭局",
-     "path": "/dad-bet/",
      "views": 2,
      "users": 2
     }
