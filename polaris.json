@@ -1,21 +1,21 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-13 00:07",
- "updated": "2026-08-13 00:07 台北",
+ "generatedAt": "2026-08-13 03:17",
+ "updated": "2026-08-13 03:17 台北",
  "yesterday_date": "2026-08-12",
  "yesterday": {
   "users": 8,
-  "pv": 7,
+  "pv": 9,
   "events": {
-   "tool_engaged": 2,
-   "tool_result": 2
+   "tool_engaged": 4,
+   "tool_result": 3
   },
   "sites": {
    "grow": {
     "users": 8,
     "events": {
-     "tool_engaged": 2,
-     "tool_result": 2
+     "tool_engaged": 4,
+     "tool_result": 3
     }
    },
    "wealth": {
@@ -26,10 +26,10 @@
  },
  "d7": {
   "users": 39,
-  "pv": 66,
+  "pv": 68,
   "events": {
-   "tool_engaged": 8,
-   "tool_result": 8,
+   "tool_engaged": 10,
+   "tool_result": 9,
    "email_signup": 1,
    "magnet_delivered": 1
   },
@@ -37,8 +37,8 @@
    "grow": {
     "users": 23,
     "events": {
-     "tool_engaged": 5,
-     "tool_result": 5
+     "tool_engaged": 7,
+     "tool_result": 6
     }
    },
    "wealth": {
@@ -54,10 +54,10 @@
  },
  "d30": {
   "users": 253,
-  "pv": 406,
+  "pv": 408,
   "events": {
-   "tool_engaged": 104,
-   "tool_result": 65,
+   "tool_engaged": 106,
+   "tool_result": 66,
    "cta_click": 6,
    "email_signup": 4,
    "magnet_delivered": 5
@@ -66,19 +66,19 @@
    "grow": {
     "users": 180,
     "events": {
-     "tool_engaged": 97,
-     "tool_result": 58,
+     "tool_engaged": 99,
+     "tool_result": 59,
      "cta_click": 2
     }
    },
    "wealth": {
     "users": 73,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 7,
+     "cta_click": 4,
      "email_signup": 4,
      "magnet_delivered": 5,
-     "cta_click": 4
+     "tool_engaged": 7,
+     "tool_result": 7
     }
    }
   }
@@ -1024,7 +1024,7 @@
     "d7": 2,
     "d30": 53,
     "d7_prev": 5,
-    "pv30": 74,
+    "pv30": 76,
     "outbound": [],
     "channels": [
      {
@@ -1040,13 +1040,15 @@
       "users": 3
      }
     ],
-    "engaged7": 0,
-    "result7": 0,
+    "engaged7": 1,
+    "result7": 1,
     "emails30": 0,
     "outbound30": 0,
-    "engage_rate": 0,
-    "finish_rate": null,
-    "badges": []
+    "engage_rate": 50,
+    "finish_rate": 100,
+    "badges": [
+     "遺珠"
+    ]
    },
    {
     "slug": "fire",
