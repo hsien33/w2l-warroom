@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-13 15:50",
- "updated": "2026-08-13 15:50 台北",
+ "generatedAt": "2026-08-13 18:19",
+ "updated": "2026-08-13 18:19 台北",
  "yesterday_date": "2026-08-12",
  "yesterday": {
   "users": 10,
@@ -74,11 +74,11 @@
    "wealth": {
     "users": 73,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 7,
+     "cta_click": 4,
      "email_signup": 4,
      "magnet_delivered": 5,
-     "cta_click": 4
+     "tool_engaged": 7,
+     "tool_result": 7
     }
    }
   }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 186,
-   "users": 137,
+   "sessions": 187,
+   "users": 138,
    "signups": 0
   },
   {
@@ -1010,14 +1010,14 @@
      },
      {
       "date": "2026-08-13",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 75,
     "d7_prev": 5,
-    "pv30": 77,
+    "pv30": 78,
     "outbound": [
      {
       "domain": "ig.me",
@@ -1031,7 +1031,7 @@
      },
      {
       "ch": "Direct",
-      "users": 27
+      "users": 28
      }
     ],
     "engaged7": 0,
@@ -2622,7 +2622,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 137,
+    "users": 138,
     "signups": 0
    },
    {
@@ -2655,7 +2655,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 83,
+     "users": 84,
      "signups": 0
     },
     {
