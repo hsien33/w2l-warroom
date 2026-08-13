@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-14 03:17",
- "updated": "2026-08-14 03:17 台北",
+ "generatedAt": "2026-08-14 06:00",
+ "updated": "2026-08-14 06:00 台北",
  "yesterday_date": "2026-08-13",
  "yesterday": {
   "users": 8,
@@ -28,9 +28,9 @@
   "events": {
    "tool_engaged": 11,
    "tool_result": 11,
-   "cta_click": 2,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
@@ -45,9 +45,9 @@
     "events": {
      "tool_engaged": 3,
      "tool_result": 3,
-     "cta_click": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    }
   }
@@ -56,19 +56,19 @@
   "users": 211,
   "pv": 352,
   "events": {
-   "tool_engaged": 77,
-   "cta_click": 8,
-   "tool_result": 45,
    "email_signup": 4,
-   "magnet_delivered": 5
+   "magnet_delivered": 5,
+   "tool_engaged": 77,
+   "tool_result": 45,
+   "cta_click": 8
   },
   "sites": {
    "grow": {
     "users": 138,
     "events": {
      "tool_engaged": 70,
-     "cta_click": 2,
-     "tool_result": 38
+     "tool_result": 38,
+     "cta_click": 2
     }
    },
    "wealth": {
@@ -399,10 +399,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
