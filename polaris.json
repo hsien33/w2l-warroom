@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-14 15:47",
- "updated": "2026-08-14 15:47 台北",
+ "generatedAt": "2026-08-14 18:14",
+ "updated": "2026-08-14 18:14 台北",
  "yesterday_date": "2026-08-13",
  "yesterday": {
   "users": 9,
@@ -26,11 +26,11 @@
   "users": 47,
   "pv": 81,
   "events": {
+   "cta_click": 2,
    "tool_engaged": 11,
    "tool_result": 11,
    "email_signup": 1,
-   "magnet_delivered": 1,
-   "cta_click": 2
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -43,11 +43,11 @@
    "wealth": {
     "users": 17,
     "events": {
+     "cta_click": 2,
      "tool_engaged": 3,
      "tool_result": 3,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "magnet_delivered": 1
     }
    }
   }
@@ -74,9 +74,9 @@
    "wealth": {
     "users": 73,
     "events": {
+     "cta_click": 6,
      "tool_engaged": 7,
      "tool_result": 7,
-     "cta_click": 6,
      "email_signup": 4,
      "magnet_delivered": 5
     }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 158,
-   "users": 118,
+   "sessions": 159,
+   "users": 119,
    "signups": 0
   },
   {
@@ -1006,14 +1006,14 @@
      },
      {
       "date": "2026-08-14",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 51,
     "d7_prev": 6,
-    "pv30": 53,
+    "pv30": 54,
     "outbound": [
      {
       "domain": "ig.me",
@@ -1023,7 +1023,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 23
+      "users": 24
      },
      {
       "ch": "Organic Social",
@@ -2614,7 +2614,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 118,
+    "users": 119,
     "signups": 0
    },
    {
@@ -2644,7 +2644,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 66,
+     "users": 67,
      "signups": 0
     },
     {
