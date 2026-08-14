@@ -1,17 +1,17 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-14 12:59",
- "updated": "2026-08-14 12:59 台北",
+ "generatedAt": "2026-08-14 15:47",
+ "updated": "2026-08-14 15:47 台北",
  "yesterday_date": "2026-08-13",
  "yesterday": {
-  "users": 8,
+  "users": 9,
   "pv": 13,
   "events": {
    "cta_click": 2
   },
   "sites": {
    "grow": {
-    "users": 6,
+    "users": 7,
     "events": {}
    },
    "wealth": {
@@ -23,18 +23,18 @@
   }
  },
  "d7": {
-  "users": 46,
+  "users": 47,
   "pv": 81,
   "events": {
    "tool_engaged": 11,
    "tool_result": 11,
-   "cta_click": 2,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
-    "users": 29,
+    "users": 30,
     "events": {
      "tool_engaged": 8,
      "tool_result": 8
@@ -43,28 +43,28 @@
    "wealth": {
     "users": 17,
     "events": {
-     "cta_click": 2,
      "tool_engaged": 3,
      "tool_result": 3,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    }
   }
  },
  "d30": {
-  "users": 211,
+  "users": 212,
   "pv": 352,
   "events": {
    "tool_engaged": 77,
    "tool_result": 45,
    "cta_click": 8,
-   "magnet_delivered": 5,
-   "email_signup": 4
+   "email_signup": 4,
+   "magnet_delivered": 5
   },
   "sites": {
    "grow": {
-    "users": 138,
+    "users": 139,
     "events": {
      "tool_engaged": 70,
      "tool_result": 38,
@@ -74,11 +74,11 @@
    "wealth": {
     "users": 73,
     "events": {
-     "cta_click": 6,
-     "magnet_delivered": 5,
-     "email_signup": 4,
      "tool_engaged": 7,
-     "tool_result": 7
+     "tool_result": 7,
+     "cta_click": 6,
+     "email_signup": 4,
+     "magnet_delivered": 5
     }
    }
   }
@@ -87,7 +87,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 29,
+    "count": 30,
     "rate": null
    },
    {
@@ -163,6 +163,14 @@
    "signups": 4
   },
   {
+   "source": "ig",
+   "medium": "bio",
+   "campaign": "magnet-talkrescue",
+   "sessions": 14,
+   "users": 13,
+   "signups": 0
+  },
+  {
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -172,26 +180,10 @@
   },
   {
    "source": "ig",
-   "medium": "bio",
-   "campaign": "magnet-talkrescue",
-   "sessions": 12,
-   "users": 11,
-   "signups": 0
-  },
-  {
-   "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
    "sessions": 11,
    "users": 6,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -208,6 +200,14 @@
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
    "signups": 0
   },
   {
@@ -375,7 +375,7 @@
   },
   {
    "date": "2026-08-13",
-   "users": 8,
+   "users": 9,
    "signups": 0
   }
  ],
@@ -389,7 +389,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.2%",
+   "value": "2.1%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -399,10 +399,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -556,7 +553,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 1
      }
     ],
     "engaged7": 4,
@@ -2622,12 +2619,12 @@
    },
    {
     "label": "其他",
-    "users": 53,
+    "users": 52,
     "signups": 4
    },
    {
     "label": "IG 帶來的",
-    "users": 21,
+    "users": 23,
     "signups": 0
    },
    {
@@ -2636,7 +2633,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 11,
+  "ig_share": 12,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 4
@@ -2653,19 +2650,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 56,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 3,
-     "signups": 0
-    },
-    {
-     "ch": "跨網路廣告",
-     "raw": "Cross-network",
-     "users": 2,
+     "users": 58,
      "signups": 0
     },
     {
@@ -2677,6 +2662,12 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
+     "users": 2,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 2,
      "signups": 0
     }
@@ -2965,7 +2956,7 @@
     },
     {
      "date": "2026-08-13",
-     "users": 6,
+     "users": 7,
      "signups": 0
     }
    ],
@@ -3136,8 +3127,8 @@
     "signups30": 0,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 138,
-    "users7": 29,
+    "users30": 139,
+    "users7": 30,
     "rate7": 0.0
    },
    "wealth": {
