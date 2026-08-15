@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-15 11:51",
- "updated": "2026-08-15 11:51 台北",
+ "generatedAt": "2026-08-15 14:55",
+ "updated": "2026-08-15 14:55 台北",
  "yesterday_date": "2026-08-14",
  "yesterday": {
-  "users": 2,
-  "pv": 3,
+  "users": 3,
+  "pv": 4,
   "events": {},
   "sites": {
    "grow": {
@@ -13,20 +13,20 @@
     "events": {}
    },
    "wealth": {
-    "users": 1,
+    "users": 2,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 43,
-  "pv": 74,
+  "users": 44,
+  "pv": 75,
   "events": {
+   "cta_click": 2,
    "tool_engaged": 9,
    "tool_result": 9,
    "email_signup": 1,
-   "magnet_delivered": 1,
-   "cta_click": 2
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -37,25 +37,25 @@
     }
    },
    "wealth": {
-    "users": 15,
+    "users": 16,
     "events": {
+     "cta_click": 2,
      "tool_engaged": 3,
      "tool_result": 3,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "magnet_delivered": 1
     }
    }
   }
  },
  "d30": {
-  "users": 199,
-  "pv": 338,
+  "users": 200,
+  "pv": 339,
   "events": {
    "tool_engaged": 73,
-   "tool_result": 41,
    "email_signup": 4,
    "magnet_delivered": 5,
+   "tool_result": 41,
    "cta_click": 8
   },
   "sites": {
@@ -63,17 +63,17 @@
     "users": 129,
     "events": {
      "tool_engaged": 66,
-     "tool_result": 34,
-     "cta_click": 2
+     "cta_click": 2,
+     "tool_result": 34
     }
    },
    "wealth": {
-    "users": 70,
+    "users": 71,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 7,
      "email_signup": 4,
      "magnet_delivered": 5,
+     "tool_engaged": 7,
+     "tool_result": 7,
      "cta_click": 6
     }
    }
@@ -105,13 +105,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 15,
+    "count": 16,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 3,
-    "rate": 20.0
+    "rate": 18.8
    },
    {
     "step": "Email訂閱",
@@ -130,8 +130,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 151,
-   "users": 113,
+   "sessions": 152,
+   "users": 114,
    "signups": 0
   },
   {
@@ -371,7 +371,7 @@
   },
   {
    "date": "2026-08-14",
-   "users": 2,
+   "users": 3,
    "signups": 0
   }
  ],
@@ -2458,7 +2458,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 113,
+    "users": 114,
     "signups": 0
    },
    {
@@ -2520,7 +2520,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 49,
+     "users": 50,
      "signups": 0
     },
     {
@@ -2608,16 +2608,16 @@
      "users": 47
     },
     {
+     "name": "深度文章",
+     "path": "/articles/",
+     "views": 10,
+     "users": 10
+    },
+    {
      "name": "頁面搬家了",
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
      "views": 10,
      "users": 6
-    },
-    {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 9,
-     "users": 9
     },
     {
      "name": "訂閱電子報",
@@ -2952,7 +2952,7 @@
     },
     {
      "date": "2026-08-14",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2979,9 +2979,9 @@
     "signups30": 4,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 70,
-    "users7": 15,
-    "rate7": 6.7
+    "users30": 71,
+    "users7": 16,
+    "rate7": 6.2
    }
   }
  }
