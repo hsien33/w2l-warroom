@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-16 02:45",
- "updated": "2026-08-16 02:45 台北",
+ "generatedAt": "2026-08-16 05:33",
+ "updated": "2026-08-16 05:33 台北",
  "yesterday_date": "2026-08-15",
  "yesterday": {
   "users": 0,
@@ -28,9 +28,9 @@
    "wealth": {
     "users": 11,
     "events": {
+     "cta_click": 2,
      "tool_engaged": 1,
-     "tool_result": 1,
-     "cta_click": 2
+     "tool_result": 1
     }
    }
   }
@@ -57,11 +57,11 @@
    "wealth": {
     "users": 67,
     "events": {
+     "email_signup": 4,
+     "magnet_delivered": 5,
      "tool_engaged": 7,
      "tool_result": 7,
-     "cta_click": 6,
-     "email_signup": 4,
-     "magnet_delivered": 5
+     "cta_click": 6
     }
    }
   }
@@ -382,7 +382,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
