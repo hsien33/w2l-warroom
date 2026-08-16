@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-16 17:38",
- "updated": "2026-08-16 17:38 台北",
+ "generatedAt": "2026-08-16 20:58",
+ "updated": "2026-08-16 20:58 台北",
  "yesterday_date": "2026-08-15",
  "yesterday": {
   "users": 0,
@@ -13,9 +13,9 @@
   "users": 34,
   "pv": 50,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 7,
-   "tool_result": 7
+   "tool_result": 7,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
@@ -28,9 +28,9 @@
    "wealth": {
     "users": 11,
     "events": {
-     "cta_click": 2,
      "tool_engaged": 1,
-     "tool_result": 1
+     "tool_result": 1,
+     "cta_click": 2
     }
    }
   }
@@ -41,9 +41,9 @@
   "events": {
    "tool_engaged": 62,
    "tool_result": 34,
-   "cta_click": 8,
    "email_signup": 4,
-   "magnet_delivered": 5
+   "magnet_delivered": 5,
+   "cta_click": 8
   },
   "sites": {
    "grow": {
@@ -57,11 +57,11 @@
    "wealth": {
     "users": 67,
     "events": {
-     "cta_click": 6,
+     "email_signup": 4,
+     "magnet_delivered": 5,
      "tool_engaged": 7,
      "tool_result": 7,
-     "email_signup": 4,
-     "magnet_delivered": 5
+     "cta_click": 6
     }
    }
   }
@@ -117,16 +117,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 136,
-   "users": 104,
+   "sessions": 137,
+   "users": 105,
    "signups": 0
   },
   {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 15,
-   "users": 12,
+   "sessions": 16,
+   "users": 13,
    "signups": 4
   },
   {
@@ -2445,12 +2445,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 104,
+    "users": 105,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 40,
+    "users": 41,
     "signups": 5
    },
    {
@@ -2464,7 +2464,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 12,
+  "ig_share": 11,
   "cards": [
    {
     "level": "red",
@@ -2523,13 +2523,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 47,
+     "users": 48,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 13,
+     "users": 14,
      "signups": 4
     },
     {
@@ -2607,8 +2607,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 60,
-     "users": 45
+     "views": 62,
+     "users": 46
     },
     {
      "name": "深度文章",
