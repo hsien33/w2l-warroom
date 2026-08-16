@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-16 14:56",
- "updated": "2026-08-16 14:56 台北",
+ "generatedAt": "2026-08-16 17:38",
+ "updated": "2026-08-16 17:38 台北",
  "yesterday_date": "2026-08-15",
  "yesterday": {
   "users": 0,
@@ -42,8 +42,8 @@
    "tool_engaged": 62,
    "tool_result": 34,
    "cta_click": 8,
-   "magnet_delivered": 5,
-   "email_signup": 4
+   "email_signup": 4,
+   "magnet_delivered": 5
   },
   "sites": {
    "grow": {
@@ -58,10 +58,10 @@
     "users": 67,
     "events": {
      "cta_click": 6,
-     "magnet_delivered": 5,
-     "email_signup": 4,
      "tool_engaged": 7,
-     "tool_result": 7
+     "tool_result": 7,
+     "email_signup": 4,
+     "magnet_delivered": 5
     }
    }
   }
@@ -162,6 +162,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 1
+  },
+  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
@@ -183,14 +191,6 @@
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
-   "users": 3,
    "signups": 0
   },
   {
@@ -511,14 +511,14 @@
      },
      {
       "date": "2026-08-16",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 8,
     "d30": 17,
     "d7_prev": 2,
-    "pv30": 19,
+    "pv30": 22,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -536,6 +536,10 @@
      },
      {
       "ch": "Unassigned",
+      "users": 2
+     },
+     {
+      "ch": "Organic Search",
       "users": 1
      }
     ],
@@ -2446,8 +2450,8 @@
    },
    {
     "label": "其他",
-    "users": 38,
-    "signups": 4
+    "users": 40,
+    "signups": 5
    },
    {
     "label": "IG 帶來的",
@@ -2505,14 +2509,14 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 2,
+     "users": 3,
      "signups": 0
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
-     "signups": 0
+     "users": 3,
+     "signups": 1
     }
    ],
    "wealth": [
@@ -2543,7 +2547,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2553,8 +2557,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 21,
-     "users": 16
+     "views": 22,
+     "users": 17
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2604,7 +2608,7 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 60,
-     "users": 44
+     "users": 45
     },
     {
      "name": "深度文章",
