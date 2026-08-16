@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-16 20:58",
- "updated": "2026-08-16 20:58 台北",
+ "generatedAt": "2026-08-16 23:33",
+ "updated": "2026-08-16 23:33 台北",
  "yesterday_date": "2026-08-15",
  "yesterday": {
   "users": 0,
@@ -41,9 +41,9 @@
   "events": {
    "tool_engaged": 62,
    "tool_result": 34,
+   "cta_click": 8,
    "email_signup": 4,
-   "magnet_delivered": 5,
-   "cta_click": 8
+   "magnet_delivered": 5
   },
   "sites": {
    "grow": {
@@ -57,11 +57,11 @@
    "wealth": {
     "users": 67,
     "events": {
+     "cta_click": 6,
      "email_signup": 4,
      "magnet_delivered": 5,
      "tool_engaged": 7,
-     "tool_result": 7,
-     "cta_click": 6
+     "tool_result": 7
     }
    }
   }
@@ -117,8 +117,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 137,
-   "users": 105,
+   "sessions": 138,
+   "users": 106,
    "signups": 0
   },
   {
@@ -518,7 +518,7 @@
     "d7": 8,
     "d30": 17,
     "d7_prev": 2,
-    "pv30": 22,
+    "pv30": 23,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -2445,7 +2445,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 105,
+    "users": 106,
     "signups": 0
    },
    {
@@ -2523,7 +2523,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 48,
+     "users": 49,
      "signups": 0
     },
     {
@@ -2607,8 +2607,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 46
+     "views": 63,
+     "users": 47
     },
     {
      "name": "深度文章",
