@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-17 15:13",
- "updated": "2026-08-17 15:13 台北",
+ "generatedAt": "2026-08-17 17:55",
+ "updated": "2026-08-17 17:55 台北",
  "yesterday_date": "2026-08-16",
  "yesterday": {
   "users": 6,
@@ -34,12 +34,12 @@
   "users": 35,
   "pv": 51,
   "events": {
+   "cta_click": 2,
    "tool_engaged": 10,
    "tool_result": 10,
    "card_open": 1,
    "email_signup": 1,
-   "magnet_delivered": 1,
-   "cta_click": 2
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -76,8 +76,8 @@
     "users": 104,
     "events": {
      "tool_engaged": 54,
-     "tool_result": 28,
      "cta_click": 2,
+     "tool_result": 28,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
@@ -199,6 +199,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 4,
+   "users": 4,
+   "signups": 0
+  },
+  {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -212,14 +220,6 @@
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
-   "users": 3,
    "signups": 0
   },
   {
@@ -411,7 +411,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -2477,7 +2480,7 @@
    },
    {
     "label": "其他",
-    "users": 36,
+    "users": 37,
     "signups": 4
    },
    {
@@ -2520,7 +2523,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2568,7 +2571,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 15,
+     "views": 16,
      "users": 10
     },
     {
