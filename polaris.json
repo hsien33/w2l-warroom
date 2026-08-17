@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-17 09:53",
- "updated": "2026-08-17 09:53 台北",
+ "generatedAt": "2026-08-17 11:59",
+ "updated": "2026-08-17 11:59 台北",
  "yesterday_date": "2026-08-16",
  "yesterday": {
-  "users": 5,
-  "pv": 11,
+  "users": 6,
+  "pv": 12,
   "events": {
    "tool_engaged": 5,
    "tool_result": 5,
@@ -25,14 +25,14 @@
     }
    },
    "wealth": {
-    "users": 4,
+    "users": 5,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 34,
-  "pv": 50,
+  "users": 35,
+  "pv": 51,
   "events": {
    "tool_engaged": 10,
    "tool_result": 10,
@@ -53,7 +53,7 @@
     }
    },
    "wealth": {
-    "users": 12,
+    "users": 13,
     "events": {
      "cta_click": 2
     }
@@ -61,14 +61,14 @@
   }
  },
  "d30": {
-  "users": 175,
-  "pv": 301,
+  "users": 176,
+  "pv": 302,
   "events": {
-   "email_signup": 5,
-   "magnet_delivered": 6,
    "tool_engaged": 61,
    "tool_result": 35,
    "card_open": 1,
+   "email_signup": 5,
+   "magnet_delivered": 6,
    "cta_click": 8
   },
   "sites": {
@@ -84,13 +84,13 @@
     }
    },
    "wealth": {
-    "users": 71,
+    "users": 72,
     "events": {
+     "cta_click": 6,
      "email_signup": 4,
      "magnet_delivered": 5,
      "tool_engaged": 7,
-     "tool_result": 7,
-     "cta_click": 6
+     "tool_result": 7
     }
    }
   }
@@ -121,7 +121,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 12,
+    "count": 13,
     "rate": null
    },
    {
@@ -146,8 +146,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 133,
-   "users": 104,
+   "sessions": 134,
+   "users": 105,
    "signups": 0
   },
   {
@@ -191,14 +191,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
-   "signups": 1
-  },
-  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
@@ -220,6 +212,14 @@
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
    "signups": 0
   },
   {
@@ -387,7 +387,7 @@
   },
   {
    "date": "2026-08-16",
-   "users": 5,
+   "users": 6,
    "signups": 1
   }
  ],
@@ -411,7 +411,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -564,11 +567,11 @@
       "users": 4
      },
      {
-      "ch": "Unassigned",
-      "users": 2
+      "ch": "Organic Search",
+      "users": 1
      },
      {
-      "ch": "Organic Search",
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2472,13 +2475,13 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 104,
+    "users": 105,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 38,
-    "signups": 5
+    "users": 36,
+    "signups": 4
    },
    {
     "label": "IG 帶來的",
@@ -2515,20 +2518,20 @@
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 3,
-     "signups": 0
+     "signups": 1
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
-     "signups": 1
+     "users": 2,
+     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 49,
+     "users": 50,
      "signups": 0
     },
     {
@@ -2552,7 +2555,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ]
@@ -2960,7 +2963,7 @@
     },
     {
      "date": "2026-08-16",
-     "users": 4,
+     "users": 5,
      "signups": 0
     }
    ]
@@ -2987,8 +2990,8 @@
     "signups30": 4,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 71,
-    "users7": 12,
+    "users30": 72,
+    "users7": 13,
     "rate7": 0.0
    }
   }
