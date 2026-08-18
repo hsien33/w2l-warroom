@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-18 11:55",
- "updated": "2026-08-18 11:55 台北",
+ "generatedAt": "2026-08-18 15:01",
+ "updated": "2026-08-18 15:01 台北",
  "yesterday_date": "2026-08-17",
  "yesterday": {
   "users": 2,
-  "pv": 2,
+  "pv": 3,
   "events": {},
   "sites": {
    "grow": {
@@ -20,11 +20,11 @@
  },
  "d7": {
   "users": 31,
-  "pv": 45,
+  "pv": 46,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 10,
    "tool_result": 10,
+   "cta_click": 2,
    "card_open": 1,
    "email_signup": 1,
    "magnet_delivered": 1
@@ -50,14 +50,14 @@
  },
  "d30": {
   "users": 170,
-  "pv": 289,
+  "pv": 290,
   "events": {
-   "cta_click": 8,
    "tool_engaged": 56,
    "tool_result": 34,
-   "card_open": 1,
+   "cta_click": 8,
+   "magnet_delivered": 6,
    "email_signup": 5,
-   "magnet_delivered": 6
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -65,20 +65,20 @@
     "events": {
      "tool_engaged": 49,
      "tool_result": 27,
+     "cta_click": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 72,
     "events": {
      "cta_click": 6,
-     "tool_engaged": 7,
-     "tool_result": 7,
+     "magnet_delivered": 5,
      "email_signup": 4,
-     "magnet_delivered": 5
+     "tool_engaged": 7,
+     "tool_result": 7
     }
    }
   }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 125,
-   "users": 101,
+   "sessions": 126,
+   "users": 102,
    "signups": 0
   },
   {
@@ -163,19 +163,19 @@
    "signups": 0
   },
   {
+   "source": "l.facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 10,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 9,
    "users": 9,
-   "signups": 0
-  },
-  {
-   "source": "l.facebook.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 9,
-   "users": 2,
    "signups": 0
   },
   {
@@ -187,19 +187,19 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
-   "signups": 0
-  },
-  {
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
    "signups": 0
   },
   {
@@ -524,7 +524,7 @@
      },
      {
       "date": "2026-08-17",
-      "users": 0
+      "users": 1
      },
      {
       "date": "2026-08-18",
@@ -532,10 +532,10 @@
      }
     ],
     "today": 0,
-    "d7": 6,
-    "d30": 16,
+    "d7": 7,
+    "d30": 17,
     "d7_prev": 5,
-    "pv30": 21,
+    "pv30": 22,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -564,7 +564,7 @@
     "result7": 3,
     "emails30": 0,
     "outbound30": 1,
-    "engage_rate": 50,
+    "engage_rate": 43,
     "finish_rate": 100,
     "badges": [
      "遺珠"
@@ -2460,12 +2460,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 101,
+    "users": 102,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 34,
     "signups": 4
    },
    {
@@ -2508,7 +2508,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2516,7 +2516,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 50,
+     "users": 51,
      "signups": 0
     },
     {
@@ -2616,16 +2616,16 @@
      "users": 8
     },
     {
+     "name": "從 0 到 1 學習地圖",
+     "path": "/start/",
+     "views": 8,
+     "users": 7
+    },
+    {
      "name": "頁面搬家了",
      "path": "/dad4914a-04a3-49aa-a855-d4174ecfef7a",
      "views": 8,
      "users": 4
-    },
-    {
-     "name": "從 0 到 1 學習地圖",
-     "path": "/start/",
-     "views": 7,
-     "users": 6
     },
     {
      "name": "工具箱到手",
