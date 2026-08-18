@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-18 21:05",
- "updated": "2026-08-18 21:05 台北",
+ "generatedAt": "2026-08-18 23:44",
+ "updated": "2026-08-18 23:44 台北",
  "yesterday_date": "2026-08-17",
  "yesterday": {
   "users": 2,
@@ -24,10 +24,10 @@
   "events": {
    "tool_engaged": 10,
    "tool_result": 10,
+   "cta_click": 2,
    "card_open": 1,
    "email_signup": 1,
-   "magnet_delivered": 1,
-   "cta_click": 2
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -52,20 +52,20 @@
   "users": 170,
   "pv": 290,
   "events": {
-   "cta_click": 8,
-   "email_signup": 5,
-   "magnet_delivered": 6,
    "tool_engaged": 56,
    "tool_result": 34,
+   "cta_click": 8,
+   "magnet_delivered": 6,
+   "email_signup": 5,
    "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 98,
     "events": {
-     "cta_click": 2,
      "tool_engaged": 49,
      "tool_result": 27,
+     "cta_click": 2,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
@@ -74,11 +74,11 @@
    "wealth": {
     "users": 72,
     "events": {
-     "email_signup": 4,
-     "magnet_delivered": 5,
-     "cta_click": 6,
      "tool_engaged": 7,
-     "tool_result": 7
+     "tool_result": 7,
+     "cta_click": 6,
+     "magnet_delivered": 5,
+     "email_signup": 4
     }
    }
   }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 126,
-   "users": 102,
+   "sessions": 127,
+   "users": 103,
    "signups": 0
   },
   {
@@ -2460,7 +2460,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 102,
+    "users": 103,
     "signups": 0
    },
    {
@@ -2516,7 +2516,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 51,
+     "users": 52,
      "signups": 0
     },
     {
@@ -2634,16 +2634,16 @@
      "users": 4
     },
     {
+     "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
+     "path": "/articles/ep09-retirement-endgame/",
+     "views": 2,
+     "users": 2
+    },
+    {
      "name": "戒掉看盤成癮：為什麼「盯盤越勤，報酬越差」？",
      "path": "/articles/leek-screen-addiction/",
      "views": 2,
      "users": 1
-    },
-    {
-     "name": "1 對 1 新手陪跑諮詢",
-     "path": "/consulting/",
-     "views": 2,
-     "users": 2
     }
    ]
   },
