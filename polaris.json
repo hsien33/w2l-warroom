@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-19 09:50",
- "updated": "2026-08-19 09:50 台北",
+ "generatedAt": "2026-08-19 11:56",
+ "updated": "2026-08-19 11:56 台北",
  "yesterday_date": "2026-08-18",
  "yesterday": {
   "users": 5,
@@ -52,12 +52,12 @@
   "users": 164,
   "pv": 276,
   "events": {
-   "email_signup": 5,
-   "magnet_delivered": 6,
    "tool_engaged": 48,
    "tool_result": 32,
-   "cta_click": 8,
-   "card_open": 1
+   "card_open": 1,
+   "email_signup": 5,
+   "magnet_delivered": 6,
+   "cta_click": 8
   },
   "sites": {
    "grow": {
@@ -65,20 +65,20 @@
     "events": {
      "tool_engaged": 41,
      "tool_result": 25,
-     "cta_click": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    },
    "wealth": {
     "users": 73,
     "events": {
-     "email_signup": 4,
-     "magnet_delivered": 5,
      "tool_engaged": 7,
      "tool_result": 7,
-     "cta_click": 6
+     "cta_click": 6,
+     "magnet_delivered": 5,
+     "email_signup": 4
     }
    }
   }
@@ -399,7 +399,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -2620,8 +2623,8 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 8,
-     "users": 7
+     "views": 9,
+     "users": 8
     },
     {
      "name": "從 0 到 1 學習地圖",
