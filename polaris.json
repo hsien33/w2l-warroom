@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-19 11:56",
- "updated": "2026-08-19 11:56 台北",
+ "generatedAt": "2026-08-19 15:02",
+ "updated": "2026-08-19 15:02 台北",
  "yesterday_date": "2026-08-18",
  "yesterday": {
   "users": 5,
@@ -22,12 +22,12 @@
   "users": 35,
   "pv": 48,
   "events": {
+   "cta_click": 2,
    "tool_engaged": 10,
    "tool_result": 10,
    "card_open": 1,
    "email_signup": 1,
-   "magnet_delivered": 1,
-   "cta_click": 2
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -54,10 +54,10 @@
   "events": {
    "tool_engaged": 48,
    "tool_result": 32,
-   "card_open": 1,
-   "email_signup": 5,
+   "cta_click": 8,
    "magnet_delivered": 6,
-   "cta_click": 8
+   "email_signup": 5,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -65,10 +65,10 @@
     "events": {
      "tool_engaged": 41,
      "tool_result": 25,
+     "cta_click": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 120,
-   "users": 100,
+   "sessions": 121,
+   "users": 101,
    "signups": 0
   },
   {
@@ -182,8 +182,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
@@ -399,10 +399,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -531,14 +528,14 @@
      },
      {
       "date": "2026-08-19",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 7,
     "d30": 16,
     "d7_prev": 5,
-    "pv30": 21,
+    "pv30": 22,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -555,11 +552,11 @@
       "users": 3
      },
      {
-      "ch": "Organic Search",
-      "users": 1
+      "ch": "Unassigned",
+      "users": 2
      },
      {
-      "ch": "Unassigned",
+      "ch": "Organic Search",
       "users": 1
      }
     ],
@@ -2463,12 +2460,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 100,
+    "users": 101,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 35,
     "signups": 4
    },
    {
@@ -2519,7 +2516,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2527,7 +2524,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 51,
+     "users": 52,
      "signups": 0
     },
     {
@@ -2611,8 +2608,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 61,
-     "users": 46
+     "views": 62,
+     "users": 47
     },
     {
      "name": "深度文章",
