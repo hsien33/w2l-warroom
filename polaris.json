@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-20 02:51",
- "updated": "2026-08-20 02:51 台北",
+ "generatedAt": "2026-08-20 05:37",
+ "updated": "2026-08-20 05:37 台北",
  "yesterday_date": "2026-08-19",
  "yesterday": {
   "users": 4,
@@ -22,12 +22,12 @@
   "users": 31,
   "pv": 45,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 5,
    "tool_result": 5,
    "card_open": 1,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
@@ -52,12 +52,12 @@
   "users": 163,
   "pv": 268,
   "events": {
-   "cta_click": 7,
    "tool_engaged": 43,
    "tool_result": 30,
-   "card_open": 1,
+   "cta_click": 7,
+   "magnet_delivered": 5,
    "email_signup": 4,
-   "magnet_delivered": 5
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -75,10 +75,10 @@
     "users": 75,
     "events": {
      "cta_click": 5,
-     "tool_engaged": 7,
-     "tool_result": 7,
      "magnet_delivered": 4,
-     "email_signup": 3
+     "email_signup": 3,
+     "tool_engaged": 7,
+     "tool_result": 7
     }
    }
   }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 116,
-   "users": 100,
+   "sessions": 117,
+   "users": 101,
    "signups": 0
   },
   {
@@ -182,8 +182,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
@@ -2458,12 +2458,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 100,
+    "users": 101,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 33,
     "signups": 3
    },
    {
@@ -2514,7 +2514,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 54,
+     "users": 55,
      "signups": 0
     },
     {
@@ -2538,7 +2538,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ]
