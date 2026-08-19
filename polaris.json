@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-19 21:06",
- "updated": "2026-08-19 21:06 台北",
+ "generatedAt": "2026-08-19 23:43",
+ "updated": "2026-08-19 23:43 台北",
  "yesterday_date": "2026-08-18",
  "yesterday": {
-  "users": 5,
-  "pv": 4,
+  "users": 7,
+  "pv": 7,
   "events": {},
   "sites": {
    "grow": {
@@ -13,21 +13,21 @@
     "events": {}
    },
    "wealth": {
-    "users": 5,
+    "users": 7,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 35,
-  "pv": 48,
+  "users": 37,
+  "pv": 51,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 10,
    "tool_result": 10,
    "card_open": 1,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
@@ -41,7 +41,7 @@
     }
    },
    "wealth": {
-    "users": 15,
+    "users": 17,
     "events": {
      "cta_click": 2
     }
@@ -49,34 +49,34 @@
   }
  },
  "d30": {
-  "users": 164,
-  "pv": 276,
+  "users": 166,
+  "pv": 279,
   "events": {
+   "tool_engaged": 48,
+   "tool_result": 32,
+   "card_open": 1,
    "email_signup": 5,
    "magnet_delivered": 6,
-   "tool_engaged": 48,
-   "cta_click": 8,
-   "tool_result": 32,
-   "card_open": 1
+   "cta_click": 8
   },
   "sites": {
    "grow": {
     "users": 91,
     "events": {
      "tool_engaged": 41,
-     "cta_click": 2,
      "tool_result": 25,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    },
    "wealth": {
-    "users": 73,
+    "users": 75,
     "events": {
+     "cta_click": 6,
      "email_signup": 4,
      "magnet_delivered": 5,
-     "cta_click": 6,
      "tool_engaged": 7,
      "tool_result": 7
     }
@@ -109,7 +109,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 15,
+    "count": 17,
     "rate": null
    },
    {
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 121,
-   "users": 101,
+   "sessions": 124,
+   "users": 104,
    "signups": 0
   },
   {
@@ -182,8 +182,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 6,
-   "users": 6,
+   "sessions": 5,
+   "users": 5,
    "signups": 0
   },
   {
@@ -375,7 +375,7 @@
   },
   {
    "date": "2026-08-18",
-   "users": 5,
+   "users": 7,
    "signups": 0
   }
  ],
@@ -389,7 +389,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.9%",
+   "value": "2.7%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -2460,12 +2460,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 101,
+    "users": 104,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 34,
     "signups": 4
    },
    {
@@ -2524,7 +2524,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 52,
+     "users": 55,
      "signups": 0
     },
     {
@@ -2548,7 +2548,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2608,8 +2608,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 47
+     "views": 64,
+     "users": 48
     },
     {
      "name": "深度文章",
@@ -2642,15 +2642,15 @@
      "users": 4
     },
     {
+     "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
+     "path": "/articles/ep09-retirement-endgame/",
+     "views": 3,
+     "users": 3
+    },
+    {
      "name": "戒掉看盤成癮：為什麼「盯盤越勤，報酬越差」？",
      "path": "/articles/leek-screen-addiction/",
      "views": 3,
-     "users": 2
-    },
-    {
-     "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
-     "path": "/articles/ep09-retirement-endgame/",
-     "views": 2,
      "users": 2
     }
    ]
@@ -2956,7 +2956,7 @@
     },
     {
      "date": "2026-08-18",
-     "users": 5,
+     "users": 7,
      "signups": 0
     }
    ]
@@ -2983,8 +2983,8 @@
     "signups30": 4,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 73,
-    "users7": 15,
+    "users30": 75,
+    "users7": 17,
     "rate7": 0.0
    }
   }
