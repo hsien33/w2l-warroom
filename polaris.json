@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-19 15:02",
- "updated": "2026-08-19 15:02 台北",
+ "generatedAt": "2026-08-19 17:47",
+ "updated": "2026-08-19 17:47 台北",
  "yesterday_date": "2026-08-18",
  "yesterday": {
   "users": 5,
@@ -22,9 +22,9 @@
   "users": 35,
   "pv": 48,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 10,
    "tool_result": 10,
+   "cta_click": 2,
    "card_open": 1,
    "email_signup": 1,
    "magnet_delivered": 1
@@ -54,9 +54,9 @@
   "events": {
    "tool_engaged": 48,
    "tool_result": 32,
-   "cta_click": 8,
-   "magnet_delivered": 6,
    "email_signup": 5,
+   "magnet_delivered": 6,
+   "cta_click": 8,
    "card_open": 1
   },
   "sites": {
@@ -74,11 +74,11 @@
    "wealth": {
     "users": 73,
     "events": {
+     "email_signup": 4,
+     "magnet_delivered": 5,
      "tool_engaged": 7,
      "tool_result": 7,
-     "cta_click": 6,
-     "magnet_delivered": 5,
-     "email_signup": 4
+     "cta_click": 6
     }
    }
   }
@@ -155,6 +155,14 @@
    "signups": 0
   },
   {
+   "source": "l.facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 8,
+   "users": 1,
+   "signups": 0
+  },
+  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -168,14 +176,6 @@
    "campaign": "(not set)",
    "sessions": 7,
    "users": 3,
-   "signups": 0
-  },
-  {
-   "source": "l.facebook.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 7,
-   "users": 1,
    "signups": 0
   },
   {
@@ -2564,7 +2564,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 15,
+     "views": 16,
      "users": 9
     },
     {
