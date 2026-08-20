@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-20 09:48",
- "updated": "2026-08-20 09:48 台北",
+ "generatedAt": "2026-08-20 11:56",
+ "updated": "2026-08-20 11:56 台北",
  "yesterday_date": "2026-08-19",
  "yesterday": {
   "users": 4,
@@ -22,12 +22,12 @@
   "users": 31,
   "pv": 45,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 5,
    "tool_result": 5,
    "card_open": 1,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
@@ -52,12 +52,12 @@
   "users": 163,
   "pv": 268,
   "events": {
-   "email_signup": 4,
-   "magnet_delivered": 5,
    "tool_engaged": 43,
    "tool_result": 30,
-   "cta_click": 7,
-   "card_open": 1
+   "card_open": 1,
+   "email_signup": 4,
+   "magnet_delivered": 5,
+   "cta_click": 7
   },
   "sites": {
    "grow": {
@@ -65,19 +65,19 @@
     "events": {
      "tool_engaged": 36,
      "tool_result": 23,
-     "cta_click": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    },
    "wealth": {
     "users": 75,
     "events": {
-     "email_signup": 3,
-     "magnet_delivered": 4,
      "tool_engaged": 7,
      "tool_result": 7,
+     "email_signup": 3,
+     "magnet_delivered": 4,
      "cta_click": 5
     }
    }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 118,
-   "users": 102,
+   "sessions": 119,
+   "users": 103,
    "signups": 0
   },
   {
@@ -2613,7 +2613,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 102,
+    "users": 103,
     "signups": 0
    },
    {
@@ -2669,7 +2669,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 56,
+     "users": 57,
      "signups": 0
     },
     {
@@ -2753,8 +2753,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 46
+     "views": 63,
+     "users": 47
     },
     {
      "name": "深度文章",
