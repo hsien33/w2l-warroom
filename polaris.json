@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-21 09:55",
- "updated": "2026-08-21 09:55 台北",
+ "generatedAt": "2026-08-21 11:58",
+ "updated": "2026-08-21 11:58 台北",
  "yesterday_date": "2026-08-20",
  "yesterday": {
   "users": 6,
@@ -49,11 +49,11 @@
   "users": 161,
   "pv": 246,
   "events": {
-   "cta_click": 7,
    "tool_engaged": 33,
    "tool_result": 24,
-   "magnet_delivered": 5,
    "email_signup": 4,
+   "magnet_delivered": 5,
+   "cta_click": 7,
    "card_open": 1
   },
   "sites": {
@@ -62,20 +62,20 @@
     "events": {
      "tool_engaged": 29,
      "tool_result": 20,
-     "cta_click": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    },
    "wealth": {
     "users": 74,
     "events": {
-     "cta_click": 5,
-     "magnet_delivered": 4,
-     "email_signup": 3,
      "tool_engaged": 4,
-     "tool_result": 4
+     "tool_result": 4,
+     "email_signup": 3,
+     "magnet_delivered": 4,
+     "cta_click": 5
     }
    }
   }
@@ -396,7 +396,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -1016,10 +1019,6 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -1746,7 +1745,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 54,
+     "users": 55,
      "signups": 0
     },
     {
@@ -1762,15 +1761,15 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 3,
-     "signups": 0
-    },
-    {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
      "users": 2,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 1,
      "signups": 0
     }
    ]
@@ -1830,8 +1829,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 58,
-     "users": 45
+     "views": 59,
+     "users": 46
     },
     {
      "name": "深度文章",
