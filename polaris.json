@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-22 02:53",
- "updated": "2026-08-22 02:53 台北",
+ "generatedAt": "2026-08-22 05:36",
+ "updated": "2026-08-22 05:36 台北",
  "yesterday_date": "2026-08-21",
  "yesterday": {
   "users": 4,
@@ -75,11 +75,11 @@
    "wealth": {
     "users": 74,
     "events": {
-     "tool_engaged": 4,
-     "tool_result": 4,
      "cta_click": 5,
      "magnet_delivered": 4,
-     "email_signup": 3
+     "email_signup": 3,
+     "tool_engaged": 4,
+     "tool_result": 4
     }
    }
   }
@@ -172,19 +172,19 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -1846,7 +1846,7 @@
    },
    {
     "label": "其他",
-    "users": 31,
+    "users": 32,
     "signups": 3
    },
    {
@@ -1921,7 +1921,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ]
@@ -1982,7 +1982,7 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 60,
-     "users": 46
+     "users": 47
     },
     {
      "name": "深度文章",
