@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-21 17:50",
- "updated": "2026-08-21 17:50 台北",
+ "generatedAt": "2026-08-21 21:08",
+ "updated": "2026-08-21 21:08 台北",
  "yesterday_date": "2026-08-20",
  "yesterday": {
   "users": 7,
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 118,
-   "users": 103,
+   "sessions": 119,
+   "users": 104,
    "signups": 0
   },
   {
@@ -1686,7 +1686,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 103,
+    "users": 104,
     "signups": 0
    },
    {
@@ -1742,7 +1742,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 56,
+     "users": 57,
      "signups": 0
     },
     {
@@ -1826,8 +1826,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 60,
-     "users": 47
+     "views": 61,
+     "users": 48
     },
     {
      "name": "深度文章",
