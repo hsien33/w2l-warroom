@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-23 17:39",
- "updated": "2026-08-23 17:39 台北",
+ "generatedAt": "2026-08-23 20:59",
+ "updated": "2026-08-23 20:59 台北",
  "yesterday_date": "2026-08-22",
  "yesterday": {
   "users": 3,
@@ -50,11 +50,11 @@
   "pv": 226,
   "events": {
    "tool_engaged": 28,
+   "tool_result": 23,
+   "cta_click": 6,
    "email_signup": 4,
    "magnet_delivered": 5,
-   "tool_result": 23,
-   "card_open": 1,
-   "cta_click": 6
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -62,20 +62,20 @@
     "events": {
      "tool_engaged": 24,
      "tool_result": 19,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 75,
     "events": {
-     "email_signup": 3,
-     "magnet_delivered": 4,
-     "cta_click": 5,
      "tool_engaged": 4,
-     "tool_result": 4
+     "tool_result": 4,
+     "cta_click": 5,
+     "email_signup": 3,
+     "magnet_delivered": 4
     }
    }
   }
@@ -2454,7 +2454,7 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 8,
+     "views": 9,
      "users": 7
     },
     {
