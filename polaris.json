@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-23 05:33",
- "updated": "2026-08-23 05:33 台北",
+ "generatedAt": "2026-08-23 09:57",
+ "updated": "2026-08-23 09:57 台北",
  "yesterday_date": "2026-08-22",
  "yesterday": {
   "users": 3,
@@ -51,9 +51,9 @@
   "events": {
    "tool_engaged": 28,
    "tool_result": 23,
+   "card_open": 1,
    "email_signup": 4,
    "magnet_delivered": 5,
-   "card_open": 1,
    "cta_click": 6
   },
   "sites": {
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 99,
-   "users": 87,
+   "sessions": 100,
+   "users": 88,
    "signups": 0
   },
   {
@@ -1686,7 +1686,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 87,
+    "users": 88,
     "signups": 0
    },
    {
@@ -1705,7 +1705,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 11,
+  "ig_share": 10,
   "cards": [
    {
     "level": "red",
@@ -1750,7 +1750,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 54,
+     "users": 55,
      "signups": 0
     },
     {
@@ -1874,10 +1874,10 @@
      "users": 2
     },
     {
-     "name": "頁面搬家了",
-     "path": "/59d5f192-70b8-40e8-a62e-f51af72097f9",
+     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
+     "path": "/articles/ep01-foundation/",
      "views": 2,
-     "users": 2
+     "users": 3
     }
    ]
   },
