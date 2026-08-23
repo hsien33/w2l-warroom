@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-23 20:59",
- "updated": "2026-08-23 20:59 台北",
+ "generatedAt": "2026-08-23 23:34",
+ "updated": "2026-08-23 23:34 台北",
  "yesterday_date": "2026-08-22",
  "yesterday": {
   "users": 3,
@@ -49,11 +49,11 @@
   "users": 147,
   "pv": 226,
   "events": {
+   "cta_click": 6,
+   "magnet_delivered": 5,
+   "email_signup": 4,
    "tool_engaged": 28,
    "tool_result": 23,
-   "cta_click": 6,
-   "email_signup": 4,
-   "magnet_delivered": 5,
    "card_open": 1
   },
   "sites": {
@@ -62,20 +62,20 @@
     "events": {
      "tool_engaged": 24,
      "tool_result": 19,
-     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 75,
     "events": {
-     "tool_engaged": 4,
-     "tool_result": 4,
      "cta_click": 5,
+     "magnet_delivered": 4,
      "email_signup": 3,
-     "magnet_delivered": 4
+     "tool_engaged": 4,
+     "tool_result": 4
     }
    }
   }
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 101,
-   "users": 89,
+   "sessions": 103,
+   "users": 91,
    "signups": 0
   },
   {
@@ -168,19 +168,19 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -2294,12 +2294,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 89,
+    "users": 91,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 33,
     "signups": 4
    },
    {
@@ -2358,7 +2358,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 56,
+     "users": 58,
      "signups": 0
     },
     {
@@ -2382,7 +2382,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ]
@@ -2442,8 +2442,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 61,
-     "users": 48
+     "views": 63,
+     "users": 50
     },
     {
      "name": "深度文章",
