@@ -1,14 +1,14 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-24 12:02",
- "updated": "2026-08-24 12:02 台北",
+ "generatedAt": "2026-08-24 15:17",
+ "updated": "2026-08-24 15:17 台北",
  "yesterday_date": "2026-08-23",
  "yesterday": {
   "users": 5,
-  "pv": 12,
+  "pv": 14,
   "events": {
-   "tool_engaged": 3,
-   "tool_result": 2
+   "tool_engaged": 4,
+   "tool_result": 3
   },
   "sites": {
    "grow": {
@@ -18,18 +18,18 @@
    "wealth": {
     "users": 5,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 2
+     "tool_engaged": 4,
+     "tool_result": 3
     }
    }
   }
  },
  "d7": {
   "users": 32,
-  "pv": 47,
+  "pv": 49,
   "events": {
-   "tool_engaged": 4,
-   "tool_result": 2
+   "tool_engaged": 5,
+   "tool_result": 3
   },
   "sites": {
    "grow": {
@@ -41,21 +41,21 @@
    "wealth": {
     "users": 26,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 2
+     "tool_engaged": 4,
+     "tool_result": 3
     }
    }
   }
  },
  "d30": {
   "users": 146,
-  "pv": 229,
+  "pv": 231,
   "events": {
-   "tool_engaged": 31,
-   "tool_result": 25,
+   "cta_click": 6,
+   "tool_engaged": 32,
+   "tool_result": 26,
    "email_signup": 4,
    "magnet_delivered": 5,
-   "cta_click": 6,
    "card_open": 1
   },
   "sites": {
@@ -73,11 +73,11 @@
    "wealth": {
     "users": 79,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 6,
+     "cta_click": 5,
+     "tool_engaged": 8,
+     "tool_result": 7,
      "email_signup": 3,
-     "magnet_delivered": 4,
-     "cta_click": 5
+     "magnet_delivered": 4
     }
    }
   }
@@ -113,8 +113,8 @@
    },
    {
     "step": "用了工具",
-    "count": 3,
-    "rate": 11.5
+    "count": 4,
+    "rate": 15.4
    },
    {
     "step": "Email訂閱",
@@ -133,7 +133,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 99,
+   "sessions": 100,
    "users": 87,
    "signups": 0
   },
@@ -170,14 +170,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
-   "signups": 0
-  },
-  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
@@ -210,20 +202,28 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "fb",
+   "medium": "group",
+   "campaign": "finale",
+   "sessions": 3,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 3,
    "users": 3,
    "signups": 0
-  },
-  {
-   "source": "bing",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 2,
-   "users": 2,
-   "signups": 1
   }
  ],
  "trend": [
@@ -527,14 +527,14 @@
      },
      {
       "date": "2026-08-24",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 16,
     "d7_prev": 7,
-    "pv30": 21,
+    "pv30": 22,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -1155,7 +1155,7 @@
     "d7": 1,
     "d30": 1,
     "d7_prev": 0,
-    "pv30": 1,
+    "pv30": 2,
     "outbound": [],
     "channels": [
      {
@@ -1466,13 +1466,14 @@
       "users": 1
      }
     ],
-    "engaged7": 0,
-    "result7": 0,
+    "engaged7": 1,
+    "result7": 1,
     "emails30": 0,
     "outbound30": 0,
-    "engage_rate": 0,
-    "finish_rate": null,
+    "engage_rate": 100,
+    "finish_rate": 100,
     "badges": [
+     "遺珠",
      "沉睡"
     ]
    },
@@ -1614,10 +1615,6 @@
     "channels": [
      {
       "ch": "Organic Search",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2300,8 +2297,8 @@
    },
    {
     "label": "其他",
-    "users": 33,
-    "signups": 4
+    "users": 31,
+    "signups": 3
    },
    {
     "label": "IG 帶來的",
@@ -2346,7 +2343,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 26,
+     "users": 27,
      "signups": 0
     },
     {
@@ -2382,15 +2379,15 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
-     "signups": 0
-    },
-    {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
      "users": 3,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2400,8 +2397,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 20,
-     "users": 14
+     "views": 22,
+     "users": 15
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
