@@ -1,14 +1,14 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-24 05:33",
- "updated": "2026-08-24 05:33 台北",
+ "generatedAt": "2026-08-24 09:55",
+ "updated": "2026-08-24 09:55 台北",
  "yesterday_date": "2026-08-23",
  "yesterday": {
   "users": 5,
-  "pv": 11,
+  "pv": 12,
   "events": {
-   "tool_engaged": 2,
-   "tool_result": 1
+   "tool_engaged": 3,
+   "tool_result": 2
   },
   "sites": {
    "grow": {
@@ -18,18 +18,18 @@
    "wealth": {
     "users": 5,
     "events": {
-     "tool_engaged": 2,
-     "tool_result": 1
+     "tool_engaged": 3,
+     "tool_result": 2
     }
    }
   }
  },
  "d7": {
   "users": 32,
-  "pv": 46,
+  "pv": 47,
   "events": {
-   "tool_engaged": 3,
-   "tool_result": 1
+   "tool_engaged": 4,
+   "tool_result": 2
   },
   "sites": {
    "grow": {
@@ -41,43 +41,43 @@
    "wealth": {
     "users": 26,
     "events": {
-     "tool_engaged": 2,
-     "tool_result": 1
+     "tool_engaged": 3,
+     "tool_result": 2
     }
    }
   }
  },
  "d30": {
   "users": 146,
-  "pv": 228,
+  "pv": 229,
   "events": {
-   "tool_engaged": 30,
-   "tool_result": 24,
+   "cta_click": 6,
    "email_signup": 4,
    "magnet_delivered": 5,
-   "cta_click": 6,
+   "tool_engaged": 31,
+   "tool_result": 25,
    "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 67,
     "events": {
+     "cta_click": 1,
      "tool_engaged": 24,
      "tool_result": 19,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 79,
     "events": {
-     "tool_engaged": 6,
-     "tool_result": 5,
      "email_signup": 3,
      "magnet_delivered": 4,
-     "cta_click": 5
+     "cta_click": 5,
+     "tool_engaged": 7,
+     "tool_result": 6
     }
    }
   }
@@ -113,8 +113,8 @@
    },
    {
     "step": "用了工具",
-    "count": 2,
-    "rate": 7.7
+    "count": 3,
+    "rate": 11.5
    },
    {
     "step": "Email訂閱",
@@ -170,19 +170,19 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -398,10 +398,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -2303,7 +2300,7 @@
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 33,
     "signups": 4
    },
    {
@@ -2385,14 +2382,14 @@
      "signups": 0
     },
     {
-     "ch": "社群(IG/FB)",
-     "raw": "Organic Social",
-     "users": 3,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 4,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "社群(IG/FB)",
+     "raw": "Organic Social",
      "users": 3,
      "signups": 0
     }
@@ -2453,7 +2450,7 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
+     "views": 63,
      "users": 49
     },
     {
