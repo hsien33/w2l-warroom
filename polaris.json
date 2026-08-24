@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-24 18:01",
- "updated": "2026-08-24 18:01 台北",
+ "generatedAt": "2026-08-24 21:10",
+ "updated": "2026-08-24 21:10 台北",
  "yesterday_date": "2026-08-23",
  "yesterday": {
   "users": 5,
@@ -51,12 +51,12 @@
   "users": 146,
   "pv": 231,
   "events": {
-   "cta_click": 6,
-   "magnet_delivered": 5,
-   "email_signup": 4,
    "tool_engaged": 32,
    "tool_result": 26,
-   "card_open": 1
+   "card_open": 1,
+   "email_signup": 4,
+   "magnet_delivered": 5,
+   "cta_click": 6
   },
   "sites": {
    "grow": {
@@ -64,20 +64,20 @@
     "events": {
      "tool_engaged": 24,
      "tool_result": 19,
-     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 79,
     "events": {
-     "cta_click": 5,
-     "magnet_delivered": 4,
-     "email_signup": 3,
      "tool_engaged": 8,
-     "tool_result": 7
+     "tool_result": 7,
+     "email_signup": 3,
+     "magnet_delivered": 4,
+     "cta_click": 5
     }
    }
   }
@@ -210,19 +210,19 @@
    "signups": 0
   },
   {
+   "source": "bing",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 3,
+   "users": 3,
+   "signups": 1
+  },
+  {
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
    "sessions": 3,
    "users": 2,
-   "signups": 0
-  },
-  {
-   "source": "instagram.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 3,
-   "users": 3,
    "signups": 0
   }
  ],
@@ -534,7 +534,7 @@
     "d7": 2,
     "d30": 16,
     "d7_prev": 7,
-    "pv30": 22,
+    "pv30": 23,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -551,12 +551,12 @@
       "users": 2
      },
      {
-      "ch": "Unassigned",
+      "ch": "Organic Search",
       "users": 2
      },
      {
-      "ch": "Organic Search",
-      "users": 1
+      "ch": "Unassigned",
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -2297,12 +2297,12 @@
    },
    {
     "label": "其他",
-    "users": 32,
-    "signups": 3
+    "users": 35,
+    "signups": 4
    },
    {
     "label": "IG 帶來的",
-    "users": 13,
+    "users": 10,
     "signups": 0
    },
    {
@@ -2311,7 +2311,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 10,
+  "ig_share": 8,
   "cards": [
    {
     "level": "red",
@@ -2349,7 +2349,7 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 3,
+     "users": 4,
      "signups": 1
     },
     {
