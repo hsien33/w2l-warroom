@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-25 05:41",
- "updated": "2026-08-25 05:41 台北",
+ "generatedAt": "2026-08-25 09:50",
+ "updated": "2026-08-25 09:50 台北",
  "yesterday_date": "2026-08-24",
  "yesterday": {
   "users": 3,
@@ -62,10 +62,10 @@
     "events": {
      "tool_engaged": 22,
      "tool_result": 17,
-     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 94,
-   "users": 84,
+   "sessions": 95,
+   "users": 85,
    "signups": 0
   },
   {
@@ -160,6 +160,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -173,14 +181,6 @@
    "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -2274,12 +2274,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 84,
+    "users": 85,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 35,
     "signups": 4
    },
    {
@@ -2293,7 +2293,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 6,
+  "ig_share": 5,
   "cards": [
    {
     "level": "red",
@@ -2338,7 +2338,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 55,
+     "users": 56,
      "signups": 0
     },
     {
@@ -2362,7 +2362,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ]
@@ -2423,13 +2423,13 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 62,
-     "users": 48
+     "users": 49
     },
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 10,
-     "users": 10
+     "views": 11,
+     "users": 11
     },
     {
      "name": "從 0 到 1 學習地圖",
