@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-25 09:50",
- "updated": "2026-08-25 09:50 台北",
+ "generatedAt": "2026-08-25 11:57",
+ "updated": "2026-08-25 11:57 台北",
  "yesterday_date": "2026-08-24",
  "yesterday": {
   "users": 3,
@@ -53,8 +53,8 @@
    "tool_result": 24,
    "email_signup": 4,
    "magnet_delivered": 5,
-   "cta_click": 6,
-   "card_open": 1
+   "card_open": 1,
+   "cta_click": 6
   },
   "sites": {
    "grow": {
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 95,
-   "users": 85,
+   "sessions": 96,
+   "users": 86,
    "signups": 0
   },
   {
@@ -144,6 +144,14 @@
    "signups": 3
   },
   {
+   "source": "l.facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 8,
+   "users": 1,
+   "signups": 0
+  },
+  {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
@@ -152,19 +160,11 @@
    "signups": 0
   },
   {
-   "source": "l.facebook.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 7,
-   "users": 1,
-   "signups": 0
-  },
-  {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
@@ -525,14 +525,14 @@
      },
      {
       "date": "2026-08-25",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 18,
     "d7_prev": 7,
-    "pv30": 23,
+    "pv30": 24,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -2274,12 +2274,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 85,
+    "users": 86,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 36,
     "signups": 4
    },
    {
@@ -2330,7 +2330,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2338,7 +2338,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 56,
+     "users": 57,
      "signups": 0
     },
     {
@@ -2378,7 +2378,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 6,
+     "views": 7,
      "users": 1
     },
     {
@@ -2422,7 +2422,7 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
+     "views": 63,
      "users": 49
     },
     {
