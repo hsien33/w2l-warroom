@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-25 11:57",
- "updated": "2026-08-25 11:57 台北",
+ "generatedAt": "2026-08-25 15:05",
+ "updated": "2026-08-25 15:05 台北",
  "yesterday_date": "2026-08-24",
  "yesterday": {
   "users": 3,
@@ -53,8 +53,8 @@
    "tool_result": 24,
    "email_signup": 4,
    "magnet_delivered": 5,
-   "card_open": 1,
-   "cta_click": 6
+   "cta_click": 6,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -62,10 +62,10 @@
     "events": {
      "tool_engaged": 22,
      "tool_result": 17,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 96,
-   "users": 86,
+   "sessions": 98,
+   "users": 88,
    "signups": 0
   },
   {
@@ -160,14 +160,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 6,
-   "users": 6,
-   "signups": 0
-  },
-  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -181,6 +173,14 @@
    "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 4,
+   "users": 4,
    "signups": 0
   },
   {
@@ -216,10 +216,10 @@
    "signups": 0
   },
   {
-   "source": "hpanel.hostinger.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 2,
+   "source": "ig",
+   "medium": "social",
+   "campaign": "(not set)",
+   "sessions": 3,
    "users": 1,
    "signups": 0
   }
@@ -554,7 +554,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 1
      }
     ],
     "engaged7": 0,
@@ -1752,19 +1752,19 @@
      },
      {
       "date": "2026-08-25",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 12,
     "d7_prev": 4,
-    "pv30": 12,
+    "pv30": 13,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 11
+      "users": 12
      },
      {
       "ch": "Organic Social",
@@ -2274,17 +2274,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 86,
+    "users": 88,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 36,
+    "users": 33,
     "signups": 4
    },
    {
     "label": "IG 帶來的",
-    "users": 7,
+    "users": 8,
     "signups": 0
    },
    {
@@ -2293,7 +2293,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 5,
+  "ig_share": 6,
   "cards": [
    {
     "level": "red",
@@ -2312,7 +2312,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 29,
+     "users": 30,
      "signups": 0
     },
     {
@@ -2330,7 +2330,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2338,7 +2338,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 57,
+     "users": 58,
      "signups": 0
     },
     {
@@ -2362,7 +2362,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2450,6 +2450,12 @@
      "users": 3
     },
     {
+     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
+     "path": "/articles/ep01-foundation/",
+     "views": 3,
+     "users": 4
+    },
+    {
      "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
      "path": "/articles/ep09-retirement-endgame/",
      "views": 3,
@@ -2460,12 +2466,6 @@
      "path": "/articles/leek-screen-addiction/",
      "views": 3,
      "users": 2
-    },
-    {
-     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
-     "path": "/articles/ep01-foundation/",
-     "views": 2,
-     "users": 3
     }
    ]
   },
