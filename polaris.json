@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-25 21:09",
- "updated": "2026-08-25 21:09 台北",
+ "generatedAt": "2026-08-25 23:57",
+ "updated": "2026-08-25 23:57 台北",
  "yesterday_date": "2026-08-24",
  "yesterday": {
   "users": 3,
@@ -51,9 +51,9 @@
   "events": {
    "tool_engaged": 30,
    "tool_result": 24,
-   "email_signup": 4,
-   "magnet_delivered": 5,
    "cta_click": 6,
+   "magnet_delivered": 5,
+   "email_signup": 4,
    "card_open": 1
   },
   "sites": {
@@ -73,9 +73,9 @@
     "events": {
      "tool_engaged": 8,
      "tool_result": 7,
-     "email_signup": 3,
+     "cta_click": 5,
      "magnet_delivered": 4,
-     "cta_click": 5
+     "email_signup": 3
     }
    }
   }
