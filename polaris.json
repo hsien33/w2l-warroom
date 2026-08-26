@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-26 12:00",
- "updated": "2026-08-26 12:00 台北",
+ "generatedAt": "2026-08-26 15:06",
+ "updated": "2026-08-26 15:06 台北",
  "yesterday_date": "2026-08-25",
  "yesterday": {
   "users": 5,
@@ -45,31 +45,31 @@
   "users": 143,
   "pv": 228,
   "events": {
-   "cta_click": 6,
    "tool_engaged": 28,
    "tool_result": 24,
-   "magnet_delivered": 5,
+   "card_open": 1,
    "email_signup": 4,
-   "card_open": 1
+   "magnet_delivered": 5,
+   "cta_click": 6
   },
   "sites": {
    "grow": {
     "users": 64,
     "events": {
      "tool_engaged": 20,
-     "cta_click": 1,
      "tool_result": 17,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 79,
     "events": {
-     "cta_click": 5,
      "tool_engaged": 8,
      "tool_result": 7,
+     "cta_click": 5,
      "magnet_delivered": 4,
      "email_signup": 3
     }
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 97,
-   "users": 87,
+   "sessions": 98,
+   "users": 88,
    "signups": 0
   },
   {
@@ -2270,7 +2270,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 87,
+    "users": 88,
     "signups": 0
    },
    {
@@ -2308,7 +2308,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 31,
+     "users": 32,
      "signups": 0
     },
     {
@@ -2368,8 +2368,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 21,
-     "users": 14
+     "views": 22,
+     "users": 15
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
