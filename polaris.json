@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-27 08:46",
- "updated": "2026-08-27 08:46 台北",
+ "generatedAt": "2026-08-27 22:06",
+ "updated": "2026-08-27 22:06 台北",
  "yesterday_date": "2026-08-26",
  "yesterday": {
   "users": 4,
@@ -46,19 +46,19 @@
   "pv": 219,
   "events": {
    "cta_click": 6,
+   "magnet_delivered": 4,
+   "email_signup": 3,
    "tool_engaged": 28,
    "tool_result": 24,
-   "email_signup": 3,
-   "magnet_delivered": 4,
    "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 66,
     "events": {
-     "cta_click": 1,
      "tool_engaged": 20,
      "tool_result": 17,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
@@ -67,11 +67,11 @@
    "wealth": {
     "users": 76,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 7,
      "cta_click": 5,
+     "magnet_delivered": 3,
      "email_signup": 2,
-     "magnet_delivered": 3
+     "tool_engaged": 8,
+     "tool_result": 7
     }
    }
   }
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 96,
-   "users": 86,
+   "sessions": 103,
+   "users": 89,
    "signups": 0
   },
   {
@@ -156,6 +156,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -175,8 +183,8 @@
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 4,
-   "users": 4,
+   "sessions": 5,
+   "users": 5,
    "signups": 0
   },
   {
@@ -184,14 +192,6 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
-   "users": 3,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
    "users": 3,
    "signups": 0
   },
@@ -212,11 +212,11 @@
    "signups": 0
   },
   {
-   "source": "hpanel.hostinger.com",
+   "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 2,
-   "users": 1,
+   "sessions": 3,
+   "users": 3,
    "signups": 0
   }
  ],
@@ -521,14 +521,14 @@
      },
      {
       "date": "2026-08-27",
-      "users": 0
+      "users": 5
      }
     ],
-    "today": 0,
+    "today": 5,
     "d7": 3,
     "d30": 18,
     "d7_prev": 5,
-    "pv30": 23,
+    "pv30": 28,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -538,11 +538,11 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 7
+      "users": 9
      },
      {
       "ch": "Direct",
-      "users": 2
+      "users": 4
      },
      {
       "ch": "Organic Search",
@@ -550,7 +550,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -2270,17 +2270,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 86,
+    "users": 89,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 34,
     "signups": 3
    },
    {
     "label": "IG 帶來的",
-    "users": 7,
+    "users": 10,
     "signups": 0
    },
    {
@@ -2289,7 +2289,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 6,
+  "ig_share": 7,
   "cards": [
    {
     "level": "red",
@@ -2308,13 +2308,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 32,
+     "users": 34,
      "signups": 0
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 21,
+     "users": 23,
      "signups": 0
     },
     {
@@ -2326,7 +2326,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2334,7 +2334,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 54,
+     "users": 55,
      "signups": 0
     },
     {
@@ -2358,7 +2358,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2418,14 +2418,14 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 55,
-     "users": 45
+     "views": 57,
+     "users": 46
     },
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 10,
-     "users": 10
+     "views": 11,
+     "users": 11
     },
     {
      "name": "從 0 到 1 學習地圖",
