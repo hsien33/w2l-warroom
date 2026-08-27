@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-27 04:01",
- "updated": "2026-08-27 04:01 台北",
+ "generatedAt": "2026-08-27 08:46",
+ "updated": "2026-08-27 08:46 台北",
  "yesterday_date": "2026-08-26",
  "yesterday": {
   "users": 4,
@@ -45,23 +45,23 @@
   "users": 142,
   "pv": 219,
   "events": {
+   "cta_click": 6,
    "tool_engaged": 28,
    "tool_result": 24,
    "email_signup": 3,
    "magnet_delivered": 4,
-   "card_open": 1,
-   "cta_click": 6
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 66,
     "events": {
+     "cta_click": 1,
      "tool_engaged": 20,
      "tool_result": 17,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -69,9 +69,9 @@
     "events": {
      "tool_engaged": 8,
      "tool_result": 7,
+     "cta_click": 5,
      "email_signup": 2,
-     "magnet_delivered": 3,
-     "cta_click": 5
+     "magnet_delivered": 3
     }
    }
   }
@@ -156,14 +156,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
-   "signups": 0
-  },
-  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -192,6 +184,14 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
+   "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
    "users": 3,
    "signups": 0
   },
@@ -2275,7 +2275,7 @@
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 32,
     "signups": 3
    },
    {
@@ -2289,7 +2289,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 5,
+  "ig_share": 6,
   "cards": [
    {
     "level": "red",
@@ -2326,7 +2326,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2358,7 +2358,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ]
