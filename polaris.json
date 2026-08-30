@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-30 13:20",
- "updated": "2026-08-30 13:20 台北",
+ "generatedAt": "2026-08-30 19:51",
+ "updated": "2026-08-30 19:51 台北",
  "yesterday_date": "2026-08-29",
  "yesterday": {
   "users": 3,
@@ -49,9 +49,9 @@
    "tool_engaged": 29,
    "tool_result": 25,
    "cta_click": 5,
-   "card_open": 1,
+   "magnet_delivered": 4,
    "email_signup": 3,
-   "magnet_delivered": 4
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -70,8 +70,8 @@
      "tool_engaged": 10,
      "tool_result": 9,
      "cta_click": 5,
-     "email_signup": 2,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "email_signup": 2
     }
    }
   }
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 99,
-   "users": 85,
+   "sessions": 104,
+   "users": 90,
    "signups": 0
   },
   {
@@ -143,8 +143,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 9,
-   "users": 9,
+   "sessions": 11,
+   "users": 10,
    "signups": 0
   },
   {
@@ -153,6 +153,14 @@
    "campaign": "(referral)",
    "sessions": 7,
    "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
@@ -193,14 +201,6 @@
    "campaign": "(referral)",
    "sessions": 3,
    "users": 3,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 2,
-   "users": 2,
    "signups": 0
   },
   {
@@ -2278,17 +2278,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 85,
+    "users": 90,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 30,
+    "users": 34,
     "signups": 3
    },
    {
     "label": "IG 帶來的",
-    "users": 9,
+    "users": 10,
     "signups": 0
    },
    {
@@ -2316,13 +2316,19 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 32,
+     "users": 37,
      "signups": 0
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 21,
+     "users": 22,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 5,
      "signups": 0
     },
     {
@@ -2330,12 +2336,6 @@
      "raw": "Organic Search",
      "users": 4,
      "signups": 1
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
@@ -2376,8 +2376,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 24,
-     "users": 17
+     "views": 31,
+     "users": 23
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2390,6 +2390,18 @@
      "path": "/about/",
      "views": 3,
      "users": 3
+    },
+    {
+     "name": "父子對決 ‧ 30 天衝粉賭局",
+     "path": "/dad-bet/",
+     "views": 3,
+     "users": 3
+    },
+    {
+     "name": "大家怎麼說",
+     "path": "/voices/",
+     "views": 3,
+     "users": 2
     },
     {
      "name": "找不到頁面",
@@ -2406,18 +2418,6 @@
     {
      "name": "對話筆記",
      "path": "/articles/",
-     "views": 1,
-     "users": 1
-    },
-    {
-     "name": "父子對決 ‧ 30 天衝粉賭局",
-     "path": "/dad-bet/",
-     "views": 1,
-     "users": 1
-    },
-    {
-     "name": "大家怎麼說",
-     "path": "/voices/",
      "views": 1,
      "users": 1
     }
