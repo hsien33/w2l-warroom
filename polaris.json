@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-31 05:01",
- "updated": "2026-08-31 05:01 台北",
+ "generatedAt": "2026-08-31 07:27",
+ "updated": "2026-08-31 07:27 台北",
  "yesterday_date": "2026-08-30",
  "yesterday": {
   "users": 10,
-  "pv": 14,
+  "pv": 15,
   "events": {
    "cta_click": 1,
    "outbound_placement": 1
@@ -26,7 +26,7 @@
  },
  "d7": {
   "users": 36,
-  "pv": 56,
+  "pv": 57,
   "events": {
    "tool_engaged": 5,
    "tool_result": 4,
@@ -54,7 +54,7 @@
  },
  "d30": {
   "users": 145,
-  "pv": 235,
+  "pv": 236,
   "events": {
    "tool_engaged": 29,
    "tool_result": 25,
@@ -140,7 +140,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 103,
+   "sessions": 104,
    "users": 89,
    "signups": 0
   },
@@ -405,10 +405,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -2402,7 +2399,7 @@
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
      "path": "/dad-bet/",
-     "views": 4,
+     "views": 5,
      "users": 4
     },
     {
