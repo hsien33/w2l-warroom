@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-30 07:16",
- "updated": "2026-08-30 07:16 台北",
+ "generatedAt": "2026-08-30 13:20",
+ "updated": "2026-08-30 13:20 台北",
  "yesterday_date": "2026-08-29",
  "yesterday": {
   "users": 3,
-  "pv": 2,
+  "pv": 3,
   "events": {},
   "sites": {
    "grow": {
@@ -20,7 +20,7 @@
  },
  "d7": {
   "users": 31,
-  "pv": 55,
+  "pv": 56,
   "events": {
    "tool_engaged": 9,
    "tool_result": 7
@@ -44,14 +44,14 @@
  },
  "d30": {
   "users": 140,
-  "pv": 227,
+  "pv": 228,
   "events": {
    "tool_engaged": 29,
    "tool_result": 25,
    "cta_click": 5,
-   "magnet_delivered": 4,
+   "card_open": 1,
    "email_signup": 3,
-   "card_open": 1
+   "magnet_delivered": 4
   },
   "sites": {
    "grow": {
@@ -70,8 +70,8 @@
      "tool_engaged": 10,
      "tool_result": 9,
      "cta_click": 5,
-     "magnet_delivered": 3,
-     "email_signup": 2
+     "email_signup": 2,
+     "magnet_delivered": 3
     }
    }
   }
@@ -143,8 +143,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 8,
-   "users": 8,
+   "sessions": 9,
+   "users": 9,
    "signups": 0
   },
   {
@@ -172,14 +172,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 3,
-   "signups": 0
-  },
-  {
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -201,6 +193,14 @@
    "campaign": "(referral)",
    "sessions": 3,
    "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 2,
+   "users": 2,
    "signups": 0
   },
   {
@@ -2283,12 +2283,12 @@
    },
    {
     "label": "其他",
-    "users": 31,
+    "users": 30,
     "signups": 3
    },
    {
     "label": "IG 帶來的",
-    "users": 8,
+    "users": 9,
     "signups": 0
    },
    {
@@ -2297,7 +2297,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 6,
+  "ig_share": 7,
   "cards": [
    {
     "level": "red",
@@ -2322,7 +2322,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 20,
+     "users": 21,
      "signups": 0
     },
     {
@@ -2334,7 +2334,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -2376,7 +2376,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 23,
+     "views": 24,
      "users": 17
     },
     {
