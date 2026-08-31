@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-08-31 07:27",
- "updated": "2026-08-31 07:27 台北",
+ "generatedAt": "2026-08-31 13:28",
+ "updated": "2026-08-31 13:28 台北",
  "yesterday_date": "2026-08-30",
  "yesterday": {
   "users": 10,
-  "pv": 15,
+  "pv": 17,
   "events": {
    "cta_click": 1,
    "outbound_placement": 1
@@ -26,21 +26,21 @@
  },
  "d7": {
   "users": 36,
-  "pv": 57,
+  "pv": 59,
   "events": {
-   "tool_engaged": 5,
-   "tool_result": 4,
    "cta_click": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "tool_engaged": 5,
+   "tool_result": 4
   },
   "sites": {
    "grow": {
     "users": 23,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 2,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "tool_engaged": 3,
+     "tool_result": 2
     }
    },
    "wealth": {
@@ -54,27 +54,27 @@
  },
  "d30": {
   "users": 145,
-  "pv": 236,
+  "pv": 238,
   "events": {
    "tool_engaged": 29,
-   "tool_result": 25,
    "cta_click": 6,
-   "email_signup": 3,
-   "magnet_delivered": 4,
+   "outbound_placement": 1,
+   "tool_result": 25,
    "card_open": 1,
-   "outbound_placement": 1
+   "email_signup": 3,
+   "magnet_delivered": 4
   },
   "sites": {
    "grow": {
     "users": 71,
     "events": {
      "tool_engaged": 19,
+     "cta_click": 1,
+     "outbound_placement": 1,
      "tool_result": 16,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -83,8 +83,8 @@
      "tool_engaged": 10,
      "tool_result": 9,
      "cta_click": 5,
-     "email_signup": 2,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "email_signup": 2
     }
    }
   }
@@ -140,8 +140,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 104,
-   "users": 89,
+   "sessions": 105,
+   "users": 90,
    "signups": 0
   },
   {
@@ -158,14 +158,6 @@
    "campaign": "magnet-talkrescue",
    "sessions": 10,
    "users": 9,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 8,
-   "users": 7,
    "signups": 0
   },
   {
@@ -197,6 +189,14 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
+   "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
    "users": 3,
    "signups": 0
   },
@@ -1327,10 +1327,6 @@
      {
       "ch": "Direct",
       "users": 2
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 0,
@@ -2289,12 +2285,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 89,
+    "users": 90,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 31,
     "signups": 3
    },
    {
@@ -2327,7 +2323,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 37,
+     "users": 38,
      "signups": 0
     },
     {
@@ -2337,16 +2333,16 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 6,
-     "signups": 0
-    },
-    {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 4,
      "signups": 1
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
+     "signups": 0
     }
    ],
    "wealth": [
@@ -2387,7 +2383,7 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 31,
+     "views": 33,
      "users": 23
     },
     {
@@ -2438,7 +2434,7 @@
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
      "views": 60,
-     "users": 47
+     "users": 48
     },
     {
      "name": "深度文章",
