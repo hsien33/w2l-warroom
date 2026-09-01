@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-01 08:36",
- "updated": "2026-09-01 08:36 台北",
+ "generatedAt": "2026-09-01 16:35",
+ "updated": "2026-09-01 16:35 台北",
  "yesterday_date": "2026-08-31",
  "yesterday": {
   "users": 4,
@@ -37,10 +37,10 @@
    "grow": {
     "users": 24,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    },
    "wealth": {
@@ -58,9 +58,9 @@
   "events": {
    "tool_engaged": 30,
    "tool_result": 26,
-   "email_signup": 3,
-   "magnet_delivered": 4,
    "cta_click": 6,
+   "magnet_delivered": 4,
+   "email_signup": 3,
    "outbound_placement": 1,
    "card_open": 1
   },
@@ -82,9 +82,9 @@
     "events": {
      "tool_engaged": 10,
      "tool_result": 9,
-     "email_signup": 2,
+     "cta_click": 5,
      "magnet_delivered": 3,
-     "cta_click": 5
+     "email_signup": 2
     }
    }
   }
@@ -140,16 +140,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 105,
-   "users": 90,
+   "sessions": 111,
+   "users": 94,
    "signups": 0
   },
   {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 15,
-   "users": 11,
+   "sessions": 16,
+   "users": 12,
    "signups": 2
   },
   {
@@ -158,6 +158,14 @@
    "campaign": "magnet-talkrescue",
    "sessions": 10,
    "users": 9,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 8,
+   "users": 8,
    "signups": 0
   },
   {
@@ -185,14 +193,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
-   "signups": 0
-  },
-  {
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -209,6 +209,14 @@
    "signups": 1
   },
   {
+   "source": "hpanel.hostinger.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 3,
+   "users": 1,
+   "signups": 0
+  },
+  {
    "source": "m.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -220,14 +228,6 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 2,
-   "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "hpanel.hostinger.com",
-   "medium": "referral",
-   "campaign": "(referral)",
    "sessions": 2,
    "users": 1,
    "signups": 0
@@ -534,10 +534,10 @@
      },
      {
       "date": "2026-09-01",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 9,
     "d30": 24,
     "d7_prev": 3,
@@ -2285,12 +2285,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 90,
+    "users": 94,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 37,
     "signups": 3
    },
    {
@@ -2304,7 +2304,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 7,
+  "ig_share": 6,
   "cards": [
    {
     "level": "red",
@@ -2341,7 +2341,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2349,14 +2349,20 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 51,
+     "users": 54,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 12,
+     "users": 13,
      "signups": 2
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 5,
+     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2368,12 +2374,6 @@
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
      "users": 3,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
      "signups": 0
     }
    ]
@@ -2433,14 +2433,14 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 60,
-     "users": 48
+     "views": 65,
+     "users": 51
     },
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 8,
-     "users": 8
+     "views": 9,
+     "users": 9
     },
     {
      "name": "從 0 到 1 學習地圖",
@@ -2453,6 +2453,12 @@
      "path": "/newsletter/",
      "views": 6,
      "users": 6
+    },
+    {
+     "name": "一起變輕一點",
+     "path": "/Fitness_challenge/",
+     "views": 4,
+     "users": 3
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
@@ -2469,12 +2475,6 @@
     {
      "name": "戒掉看盤成癮：為什麼「盯盤越勤，報酬越差」？",
      "path": "/articles/leek-screen-addiction/",
-     "views": 3,
-     "users": 2
-    },
-    {
-     "name": "工具箱到手",
-     "path": "/welcome/",
      "views": 3,
      "users": 2
     }
