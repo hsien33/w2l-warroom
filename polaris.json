@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-01 16:35",
- "updated": "2026-09-01 16:35 台北",
+ "generatedAt": "2026-09-01 22:07",
+ "updated": "2026-09-01 22:07 台北",
  "yesterday_date": "2026-08-31",
  "yesterday": {
   "users": 4,
@@ -28,10 +28,10 @@
   "users": 37,
   "pv": 56,
   "events": {
-   "tool_engaged": 5,
-   "tool_result": 5,
    "cta_click": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "tool_engaged": 5,
+   "tool_result": 5
   },
   "sites": {
    "grow": {
@@ -56,11 +56,11 @@
   "users": 146,
   "pv": 238,
   "events": {
-   "tool_engaged": 30,
-   "tool_result": 26,
    "cta_click": 6,
    "magnet_delivered": 4,
    "email_signup": 3,
+   "tool_engaged": 30,
+   "tool_result": 26,
    "outbound_placement": 1,
    "card_open": 1
   },
@@ -80,11 +80,11 @@
    "wealth": {
     "users": 73,
     "events": {
-     "tool_engaged": 10,
-     "tool_result": 9,
      "cta_click": 5,
      "magnet_delivered": 3,
-     "email_signup": 2
+     "email_signup": 2,
+     "tool_engaged": 10,
+     "tool_result": 9
     }
    }
   }
@@ -140,8 +140,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 111,
-   "users": 94,
+   "sessions": 112,
+   "users": 95,
    "signups": 0
   },
   {
@@ -2285,7 +2285,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 94,
+    "users": 95,
     "signups": 0
    },
    {
@@ -2349,7 +2349,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 54,
+     "users": 55,
      "signups": 0
     },
     {
@@ -2433,8 +2433,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 65,
-     "users": 51
+     "views": 66,
+     "users": 52
     },
     {
      "name": "深度文章",
@@ -2449,16 +2449,16 @@
      "users": 5
     },
     {
+     "name": "一起變輕一點",
+     "path": "/Fitness_challenge/",
+     "views": 6,
+     "users": 3
+    },
+    {
      "name": "訂閱電子報",
      "path": "/newsletter/",
      "views": 6,
      "users": 6
-    },
-    {
-     "name": "一起變輕一點",
-     "path": "/Fitness_challenge/",
-     "views": 4,
-     "users": 3
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
