@@ -1,15 +1,15 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-02 07:16",
- "updated": "2026-09-02 07:16 台北",
+ "generatedAt": "2026-09-02 12:27",
+ "updated": "2026-09-02 12:27 台北",
  "yesterday_date": "2026-09-01",
  "yesterday": {
-  "users": 10,
-  "pv": 16,
+  "users": 11,
+  "pv": 23,
   "events": {},
   "sites": {
    "grow": {
-    "users": 2,
+    "users": 3,
     "events": {}
    },
    "wealth": {
@@ -19,8 +19,8 @@
   }
  },
  "d7": {
-  "users": 42,
-  "pv": 66,
+  "users": 43,
+  "pv": 73,
   "events": {
    "tool_engaged": 5,
    "tool_result": 5,
@@ -29,7 +29,7 @@
   },
   "sites": {
    "grow": {
-    "users": 24,
+    "users": 25,
     "events": {
      "tool_engaged": 3,
      "tool_result": 3,
@@ -47,28 +47,28 @@
   }
  },
  "d30": {
-  "users": 150,
-  "pv": 242,
+  "users": 151,
+  "pv": 249,
   "events": {
    "tool_engaged": 30,
    "tool_result": 26,
    "email_signup": 2,
    "magnet_delivered": 2,
+   "card_open": 1,
    "cta_click": 3,
-   "outbound_placement": 1,
-   "card_open": 1
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 72,
+    "users": 73,
     "events": {
      "tool_engaged": 20,
      "tool_result": 17,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -87,7 +87,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 24,
+    "count": 25,
     "rate": null
    },
    {
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 110,
-   "users": 93,
+   "sessions": 114,
+   "users": 95,
    "signups": 0
   },
   {
@@ -155,18 +155,10 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 8,
-   "users": 8,
-   "signups": 0
-  },
-  {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 7,
+   "sessions": 8,
    "users": 1,
    "signups": 0
   },
@@ -179,6 +171,22 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 4,
+   "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "bing",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 4,
+   "users": 4,
+   "signups": 1
+  },
+  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -187,27 +195,19 @@
    "signups": 0
   },
   {
+   "source": "hpanel.hostinger.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 4,
+   "users": 1,
+   "signups": 0
+  },
+  {
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
    "users": 3,
-   "signups": 0
-  },
-  {
-   "source": "bing",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 3,
-   "users": 3,
-   "signups": 1
-  },
-  {
-   "source": "hpanel.hostinger.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 3,
-   "users": 1,
    "signups": 0
   },
   {
@@ -375,7 +375,7 @@
   },
   {
    "date": "2026-09-01",
-   "users": 10,
+   "users": 11,
    "signups": 0
   }
  ],
@@ -524,18 +524,18 @@
      },
      {
       "date": "2026-09-01",
-      "users": 1
+      "users": 2
      },
      {
       "date": "2026-09-02",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
-    "d7": 9,
-    "d30": 25,
+    "today": 1,
+    "d7": 10,
+    "d30": 26,
     "d7_prev": 4,
-    "pv30": 28,
+    "pv30": 31,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -553,21 +553,21 @@
      },
      {
       "ch": "Organic Search",
-      "users": 2
+      "users": 3
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 1
      }
     ],
     "engaged7": 3,
     "result7": 3,
     "emails30": 0,
     "outbound30": 1,
-    "engage_rate": 33,
+    "engage_rate": 30,
     "finish_rate": 100,
     "badges": [
-     "遺珠"
+     "竄升"
     ]
    },
    {
@@ -847,7 +847,7 @@
      },
      {
       "date": "2026-09-01",
-      "users": 0
+      "users": 1
      },
      {
       "date": "2026-09-02",
@@ -855,15 +855,15 @@
      }
     ],
     "today": 0,
-    "d7": 1,
-    "d30": 10,
+    "d7": 2,
+    "d30": 11,
     "d7_prev": 1,
-    "pv30": 10,
+    "pv30": 11,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 10
+      "users": 11
      }
     ],
     "engaged7": 0,
@@ -2257,12 +2257,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 93,
+    "users": 95,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 32,
     "signups": 2
    },
    {
@@ -2280,7 +2280,7 @@
   "cards": [
    {
     "level": "red",
-    "what": "這 7 天有 42 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 43 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -2295,7 +2295,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 37,
+     "users": 38,
      "signups": 0
     },
     {
@@ -2307,13 +2307,13 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 4,
+     "users": 5,
      "signups": 1
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -2321,7 +2321,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 55,
+     "users": 56,
      "signups": 0
     },
     {
@@ -2331,15 +2331,15 @@
      "signups": 1
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 5,
-     "signups": 0
-    },
-    {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 4,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
@@ -2361,7 +2361,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 7,
+     "views": 8,
      "users": 1
     },
     {
@@ -2405,8 +2405,14 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
+     "views": 63,
      "users": 49
+    },
+    {
+     "name": "一起變輕一點",
+     "path": "/Fitness_challenge/",
+     "views": 12,
+     "users": 3
     },
     {
      "name": "深度文章",
@@ -2419,12 +2425,6 @@
      "path": "/start/",
      "views": 7,
      "users": 5
-    },
-    {
-     "name": "一起變輕一點",
-     "path": "/Fitness_challenge/",
-     "views": 6,
-     "users": 3
     },
     {
      "name": "訂閱電子報",
@@ -2601,7 +2601,7 @@
     },
     {
      "date": "2026-09-01",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2772,8 +2772,8 @@
     "signups30": 1,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 72,
-    "users7": 24,
+    "users30": 73,
+    "users7": 25,
     "rate7": 0.0
    },
    "wealth": {
