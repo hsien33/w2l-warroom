@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-02 12:27",
- "updated": "2026-09-02 12:27 台北",
+ "generatedAt": "2026-09-02 19:13",
+ "updated": "2026-09-02 19:13 台北",
  "yesterday_date": "2026-09-01",
  "yesterday": {
   "users": 11,
@@ -22,19 +22,19 @@
   "users": 43,
   "pv": 73,
   "events": {
-   "tool_engaged": 5,
-   "tool_result": 5,
    "cta_click": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "tool_engaged": 5,
+   "tool_result": 5
   },
   "sites": {
    "grow": {
     "users": 25,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    },
    "wealth": {
@@ -50,35 +50,35 @@
   "users": 151,
   "pv": 249,
   "events": {
+   "cta_click": 3,
+   "outbound_placement": 1,
    "tool_engaged": 30,
    "tool_result": 26,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "card_open": 1,
-   "cta_click": 3,
-   "outbound_placement": 1
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 73,
     "events": {
+     "cta_click": 1,
+     "outbound_placement": 1,
      "tool_engaged": 20,
      "tool_result": 17,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 78,
     "events": {
+     "cta_click": 2,
      "tool_engaged": 10,
      "tool_result": 9,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "magnet_delivered": 1
     }
    }
   }
@@ -134,7 +134,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 114,
+   "sessions": 115,
    "users": 95,
    "signups": 0
   },
@@ -150,8 +150,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 10,
-   "users": 9,
+   "sessions": 11,
+   "users": 10,
    "signups": 0
   },
   {
@@ -163,19 +163,19 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -2262,12 +2262,12 @@
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 33,
     "signups": 2
    },
    {
     "label": "IG 帶來的",
-    "users": 9,
+    "users": 10,
     "signups": 0
    },
    {
@@ -2301,7 +2301,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 21,
+     "users": 22,
      "signups": 0
     },
     {
@@ -2339,7 +2339,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2355,8 +2355,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 33,
-     "users": 23
+     "views": 34,
+     "users": 24
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2411,7 +2411,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 12,
+     "views": 14,
      "users": 3
     },
     {
