@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-03 00:31",
- "updated": "2026-09-03 00:31 台北",
+ "generatedAt": "2026-09-03 04:59",
+ "updated": "2026-09-03 04:59 台北",
  "yesterday_date": "2026-09-02",
  "yesterday": {
   "users": 4,
-  "pv": 10,
+  "pv": 11,
   "events": {},
   "sites": {
    "grow": {
@@ -20,21 +20,21 @@
  },
  "d7": {
   "users": 43,
-  "pv": 78,
+  "pv": 79,
   "events": {
-   "tool_engaged": 5,
-   "tool_result": 5,
    "cta_click": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "tool_engaged": 5,
+   "tool_result": 5
   },
   "sites": {
    "grow": {
     "users": 23,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    },
    "wealth": {
@@ -48,35 +48,35 @@
  },
  "d30": {
   "users": 153,
-  "pv": 256,
+  "pv": 257,
   "events": {
    "cta_click": 3,
+   "outbound_placement": 1,
    "tool_engaged": 29,
    "tool_result": 26,
-   "email_signup": 2,
-   "magnet_delivered": 2,
    "card_open": 1,
-   "outbound_placement": 1
+   "email_signup": 2,
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
     "users": 73,
     "events": {
+     "cta_click": 1,
+     "outbound_placement": 1,
      "tool_engaged": 19,
      "tool_result": 17,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 80,
     "events": {
-     "cta_click": 2,
      "tool_engaged": 10,
      "tool_result": 9,
+     "cta_click": 2,
      "email_signup": 1,
      "magnet_delivered": 1
     }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 115,
-   "users": 93,
+   "sessions": 117,
+   "users": 94,
    "signups": 0
   },
   {
@@ -158,8 +158,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 9,
-   "users": 6,
+   "sessions": 10,
+   "users": 7,
    "signups": 0
   },
   {
@@ -179,6 +179,14 @@
    "signups": 0
   },
   {
+   "source": "hpanel.hostinger.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 5,
+   "users": 1,
+   "signups": 0
+  },
+  {
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
@@ -192,14 +200,6 @@
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
-   "signups": 0
-  },
-  {
-   "source": "hpanel.hostinger.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 4,
-   "users": 1,
    "signups": 0
   },
   {
@@ -2257,12 +2257,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 93,
+    "users": 94,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 35,
     "signups": 2
    },
    {
@@ -2321,7 +2321,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 55,
+     "users": 56,
      "signups": 0
     },
     {
@@ -2331,14 +2331,14 @@
      "signups": 1
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 4,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 5,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 4,
      "signups": 0
     },
@@ -2405,13 +2405,13 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 48
+     "views": 65,
+     "users": 49
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 14,
+     "views": 15,
      "users": 3
     },
     {
