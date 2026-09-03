@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-03 07:17",
- "updated": "2026-09-03 07:17 台北",
+ "generatedAt": "2026-09-03 12:19",
+ "updated": "2026-09-03 12:19 台北",
  "yesterday_date": "2026-09-02",
  "yesterday": {
   "users": 4,
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 117,
-   "users": 94,
+   "sessions": 119,
+   "users": 95,
    "signups": 0
   },
   {
@@ -155,14 +155,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 10,
-   "users": 7,
-   "signups": 0
-  },
-  {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -171,17 +163,25 @@
    "signups": 0
   },
   {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 5,
-   "users": 1,
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 7,
+   "users": 6,
    "signups": 0
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
+   "sessions": 6,
+   "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
    "sessions": 5,
    "users": 1,
    "signups": 0
@@ -2257,12 +2257,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 94,
+    "users": 95,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 34,
     "signups": 2
    },
    {
@@ -2321,7 +2321,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 56,
+     "users": 57,
      "signups": 0
     },
     {
@@ -2405,14 +2405,14 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 49
+     "views": 69,
+     "users": 50
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 16,
-     "users": 3
+     "views": 22,
+     "users": 5
     },
     {
      "name": "深度文章",
@@ -2425,6 +2425,12 @@
      "path": "/start/",
      "views": 7,
      "users": 5
+    },
+    {
+     "name": "個人習慣分析",
+     "path": "/Fitness_challenge/person.html",
+     "views": 5,
+     "users": 3
     },
     {
      "name": "訂閱電子報",
@@ -2443,12 +2449,6 @@
      "path": "/articles/ep09-retirement-endgame/",
      "views": 3,
      "users": 3
-    },
-    {
-     "name": "戒掉看盤成癮：為什麼「盯盤越勤，報酬越差」？",
-     "path": "/articles/leek-screen-addiction/",
-     "views": 3,
-     "users": 2
     }
    ]
   },
