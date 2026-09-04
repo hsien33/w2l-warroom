@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-04 12:26",
- "updated": "2026-09-04 12:26 台北",
+ "generatedAt": "2026-09-04 19:13",
+ "updated": "2026-09-04 19:13 台北",
  "yesterday_date": "2026-09-03",
  "yesterday": {
   "users": 11,
@@ -22,19 +22,19 @@
   "users": 49,
   "pv": 115,
   "events": {
-   "cta_click": 1,
-   "outbound_placement": 1,
    "tool_engaged": 3,
-   "tool_result": 3
+   "tool_result": 3,
+   "cta_click": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 20,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
      "tool_engaged": 1,
-     "tool_result": 1
+     "tool_result": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -50,25 +50,25 @@
   "users": 161,
   "pv": 298,
   "events": {
-   "cta_click": 3,
-   "outbound_placement": 1,
    "tool_engaged": 28,
    "tool_result": 25,
    "card_open": 1,
    "email_signup": 2,
-   "magnet_delivered": 2
+   "magnet_delivered": 2,
+   "cta_click": 3,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 73,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
      "tool_engaged": 18,
      "tool_result": 16,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -76,9 +76,9 @@
     "events": {
      "tool_engaged": 10,
      "tool_result": 9,
-     "cta_click": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    }
   }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 129,
-   "users": 97,
+   "sessions": 131,
+   "users": 99,
    "signups": 0
   },
   {
@@ -399,10 +399,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -2260,7 +2257,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 97,
+    "users": 99,
     "signups": 0
    },
    {
@@ -2324,7 +2321,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 60,
+     "users": 62,
      "signups": 0
     },
     {
@@ -2408,8 +2405,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 64,
-     "users": 50
+     "views": 65,
+     "users": 51
     },
     {
      "name": "一起變輕一點",
@@ -2448,10 +2445,10 @@
      "users": 5
     },
     {
-     "name": "Jeff的個人習慣分析",
-     "path": "/Fitness_challenge/person.html",
-     "views": 3,
-     "users": 3
+     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
+     "path": "/articles/ep01-foundation/",
+     "views": 4,
+     "users": 4
     }
    ]
   },
