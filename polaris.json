@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-04 07:15",
- "updated": "2026-09-04 07:15 台北",
+ "generatedAt": "2026-09-04 12:26",
+ "updated": "2026-09-04 12:26 台北",
  "yesterday_date": "2026-09-03",
  "yesterday": {
-  "users": 10,
-  "pv": 42,
+  "users": 11,
+  "pv": 43,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 9,
+    "users": 10,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 48,
-  "pv": 114,
+  "users": 49,
+  "pv": 115,
   "events": {
    "cta_click": 1,
    "outbound_placement": 1,
@@ -38,7 +38,7 @@
     }
    },
    "wealth": {
-    "users": 28,
+    "users": 29,
     "events": {
      "tool_engaged": 2,
      "tool_result": 2
@@ -47,38 +47,38 @@
   }
  },
  "d30": {
-  "users": 160,
-  "pv": 297,
+  "users": 161,
+  "pv": 298,
   "events": {
+   "cta_click": 3,
+   "outbound_placement": 1,
    "tool_engaged": 28,
    "tool_result": 25,
    "card_open": 1,
    "email_signup": 2,
-   "magnet_delivered": 2,
-   "cta_click": 3,
-   "outbound_placement": 1
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
     "users": 73,
     "events": {
+     "cta_click": 1,
+     "outbound_placement": 1,
      "tool_engaged": 18,
      "tool_result": 16,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 87,
+    "users": 88,
     "events": {
      "tool_engaged": 10,
      "tool_result": 9,
+     "cta_click": 2,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 2
+     "magnet_delivered": 1
     }
    }
   }
@@ -109,13 +109,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 28,
+    "count": 29,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 2,
-    "rate": 7.1
+    "rate": 6.9
    },
    {
     "step": "Email訂閱",
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 126,
-   "users": 96,
+   "sessions": 129,
+   "users": 97,
    "signups": 0
   },
   {
@@ -147,11 +147,11 @@
    "signups": 1
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 12,
-   "users": 7,
+   "source": "hpanel.hostinger.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 13,
+   "users": 1,
    "signups": 0
   },
   {
@@ -160,14 +160,6 @@
    "campaign": "magnet-talkrescue",
    "sessions": 12,
    "users": 11,
-   "signups": 0
-  },
-  {
-   "source": "hpanel.hostinger.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 10,
-   "users": 1,
    "signups": 0
   },
   {
@@ -207,6 +199,14 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
+   "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
    "users": 3,
    "signups": 0
   },
@@ -375,7 +375,7 @@
   },
   {
    "date": "2026-09-03",
-   "users": 10,
+   "users": 11,
    "signups": 0
   }
  ],
@@ -399,7 +399,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -2257,12 +2260,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 96,
+    "users": 97,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 31,
     "signups": 2
    },
    {
@@ -2280,7 +2283,7 @@
   "cards": [
    {
     "level": "red",
-    "what": "這 7 天有 48 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 49 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -2313,7 +2316,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -2321,7 +2324,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 59,
+     "users": 60,
      "signups": 0
     },
     {
@@ -2331,15 +2334,15 @@
      "signups": 1
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 5,
-     "signups": 0
-    },
-    {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 4,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
@@ -2405,19 +2408,19 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 70,
+     "views": 64,
      "users": 50
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 32,
+     "views": 35,
      "users": 6
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 12,
+     "views": 16,
      "users": 3
     },
     {
@@ -2433,20 +2436,20 @@
      "users": 5
     },
     {
+     "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
+     "path": "/articles/ep09-retirement-endgame/",
+     "views": 5,
+     "users": 5
+    },
+    {
      "name": "訂閱電子報",
      "path": "/newsletter/",
      "views": 5,
      "users": 5
     },
     {
-     "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
-     "path": "/articles/ep09-retirement-endgame/",
-     "views": 4,
-     "users": 4
-    },
-    {
-     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
-     "path": "/articles/ep01-foundation/",
+     "name": "Jeff的個人習慣分析",
+     "path": "/Fitness_challenge/person.html",
      "views": 3,
      "users": 3
     }
@@ -2753,7 +2756,7 @@
     },
     {
      "date": "2026-09-03",
-     "users": 9,
+     "users": 10,
      "signups": 0
     }
    ]
@@ -2780,8 +2783,8 @@
     "signups30": 1,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 87,
-    "users7": 28,
+    "users30": 88,
+    "users7": 29,
     "rate7": 0.0
    }
   }
