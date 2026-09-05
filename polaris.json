@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-05 12:21",
- "updated": "2026-09-05 12:21 台北",
+ "generatedAt": "2026-09-05 18:30",
+ "updated": "2026-09-05 18:30 台北",
  "yesterday_date": "2026-09-04",
  "yesterday": {
   "users": 4,
@@ -22,19 +22,19 @@
   "users": 47,
   "pv": 106,
   "events": {
-   "cta_click": 1,
-   "outbound_placement": 1,
    "tool_engaged": 1,
-   "tool_result": 1
+   "tool_result": 1,
+   "cta_click": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 19,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
      "tool_engaged": 1,
-     "tool_result": 1
+     "tool_result": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -49,11 +49,11 @@
   "events": {
    "tool_engaged": 27,
    "tool_result": 24,
+   "email_signup": 2,
+   "magnet_delivered": 2,
    "cta_click": 3,
    "outbound_placement": 1,
-   "card_open": 1,
-   "email_signup": 2,
-   "magnet_delivered": 2
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -131,7 +131,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 132,
+   "sessions": 133,
    "users": 100,
    "signups": 0
   },
@@ -171,8 +171,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
+   "sessions": 6,
+   "users": 6,
    "signups": 1
   },
   {
@@ -2257,7 +2257,7 @@
    },
    {
     "label": "其他",
-    "users": 33,
+    "users": 34,
     "signups": 3
    },
    {
@@ -2333,16 +2333,16 @@
      "signups": 1
     },
     {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 5,
+     "signups": 1
+    },
+    {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 4,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
-     "signups": 1
     },
     {
      "ch": "社群(IG/FB)",
@@ -2413,13 +2413,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 35,
+     "views": 36,
      "users": 6
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 16,
+     "views": 17,
      "users": 3
     },
     {
