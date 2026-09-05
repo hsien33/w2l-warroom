@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-05 07:02",
- "updated": "2026-09-05 07:02 台北",
+ "generatedAt": "2026-09-05 12:21",
+ "updated": "2026-09-05 12:21 台北",
  "yesterday_date": "2026-09-04",
  "yesterday": {
   "users": 4,
@@ -22,19 +22,19 @@
   "users": 47,
   "pv": 106,
   "events": {
-   "tool_engaged": 1,
-   "tool_result": 1,
    "cta_click": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "tool_engaged": 1,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
     "users": 19,
     "events": {
-     "tool_engaged": 1,
-     "tool_result": 1,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "tool_engaged": 1,
+     "tool_result": 1
     }
    },
    "wealth": {
@@ -73,9 +73,9 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 8,
-     "cta_click": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    }
   }
@@ -131,17 +131,25 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 131,
-   "users": 99,
+   "sessions": 132,
+   "users": 100,
    "signups": 0
   },
   {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 13,
-   "users": 10,
+   "sessions": 14,
+   "users": 11,
    "signups": 1
+  },
+  {
+   "source": "hpanel.hostinger.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 12,
+   "users": 1,
+   "signups": 0
   },
   {
    "source": "ig",
@@ -152,20 +160,20 @@
    "signups": 0
   },
   {
-   "source": "hpanel.hostinger.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 11,
-   "users": 1,
-   "signups": 0
-  },
-  {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 7,
    "users": 1,
    "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
+   "signups": 1
   },
   {
    "source": "google",
@@ -196,14 +204,6 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 4,
-   "users": 3,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
    "users": 3,
    "signups": 0
   },
@@ -842,10 +842,10 @@
      },
      {
       "date": "2026-09-05",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 7,
     "d7_prev": 2,
@@ -854,7 +854,7 @@
     "channels": [
      {
       "ch": "Referral",
-      "users": 4
+      "users": 5
      },
      {
       "ch": "Direct",
@@ -2252,13 +2252,13 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 99,
+    "users": 100,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 30,
-    "signups": 2
+    "users": 33,
+    "signups": 3
    },
    {
     "label": "IG 帶來的",
@@ -2323,13 +2323,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 63,
+     "users": 64,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 11,
+     "users": 12,
      "signups": 1
     },
     {
@@ -2341,8 +2341,8 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
-     "signups": 0
+     "users": 4,
+     "signups": 1
     },
     {
      "ch": "社群(IG/FB)",
@@ -2407,8 +2407,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 50
+     "views": 66,
+     "users": 52
     },
     {
      "name": "一起變輕一點",
@@ -2429,6 +2429,12 @@
      "users": 9
     },
     {
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 6,
+     "users": 6
+    },
+    {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
      "views": 6,
@@ -2437,12 +2443,6 @@
     {
      "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
      "path": "/articles/ep09-retirement-endgame/",
-     "views": 5,
-     "users": 5
-    },
-    {
-     "name": "訂閱電子報",
-     "path": "/newsletter/",
      "views": 5,
      "users": 5
     },
