@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-06 04:17",
- "updated": "2026-09-06 04:17 台北",
+ "generatedAt": "2026-09-06 06:52",
+ "updated": "2026-09-06 06:52 台北",
  "yesterday_date": "2026-09-05",
  "yesterday": {
   "users": 5,
@@ -67,10 +67,10 @@
   "users": 163,
   "pv": 300,
   "events": {
-   "tool_engaged": 28,
-   "tool_result": 25,
    "cta_click": 4,
    "outbound_placement": 1,
+   "tool_engaged": 28,
+   "tool_result": 25,
    "email_signup": 3,
    "magnet_delivered": 3,
    "card_open": 1
@@ -79,10 +79,10 @@
    "grow": {
     "users": 69,
     "events": {
-     "tool_engaged": 18,
-     "tool_result": 16,
      "cta_click": 1,
      "outbound_placement": 1,
+     "tool_engaged": 18,
+     "tool_result": 16,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
@@ -416,7 +416,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
