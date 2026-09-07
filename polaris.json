@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-07 06:52",
- "updated": "2026-09-07 06:52 台北",
+ "generatedAt": "2026-09-07 12:33",
+ "updated": "2026-09-07 12:33 台北",
  "yesterday_date": "2026-09-06",
  "yesterday": {
   "users": 4,
-  "pv": 3,
+  "pv": 4,
   "events": {},
   "sites": {
    "grow": {
@@ -20,7 +20,7 @@
  },
  "d7": {
   "users": 43,
-  "pv": 100,
+  "pv": 101,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2,
@@ -50,15 +50,15 @@
  },
  "d30": {
   "users": 161,
-  "pv": 295,
+  "pv": 296,
   "events": {
    "tool_engaged": 26,
    "tool_result": 23,
+   "cta_click": 4,
    "email_signup": 3,
    "magnet_delivered": 3,
-   "card_open": 1,
-   "cta_click": 4,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -66,11 +66,11 @@
     "events": {
      "tool_engaged": 16,
      "tool_result": 14,
+     "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -78,9 +78,9 @@
     "events": {
      "tool_engaged": 10,
      "tool_result": 9,
+     "cta_click": 3,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "cta_click": 3
+     "magnet_delivered": 2
     }
    }
   }
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 128,
-   "users": 96,
+   "sessions": 130,
+   "users": 97,
    "signups": 0
   },
   {
@@ -530,14 +530,14 @@
      },
      {
       "date": "2026-09-07",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 7,
     "d30": 27,
     "d7_prev": 9,
-    "pv30": 31,
+    "pv30": 32,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -559,7 +559,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 1,
@@ -2108,7 +2108,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 96,
+    "users": 97,
     "signups": 0
    },
    {
@@ -2138,7 +2138,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 33,
+     "users": 34,
      "signups": 0
     },
     {
@@ -2156,7 +2156,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2180,14 +2180,14 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "社群(IG/FB)",
+     "raw": "Organic Social",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "社群(IG/FB)",
-     "raw": "Organic Social",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -2204,8 +2204,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 7,
-     "users": 1
+     "views": 8,
+     "users": 3
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
@@ -2220,15 +2220,15 @@
      "users": 3
     },
     {
+     "name": "關於 Jeff",
+     "path": "/about/",
+     "views": 2,
+     "users": 2
+    },
+    {
      "name": "大家怎麼說",
      "path": "/voices/",
      "views": 2,
-     "users": 1
-    },
-    {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 1,
      "users": 1
     },
     {
@@ -2238,8 +2238,8 @@
      "users": 1
     },
     {
-     "name": "孩子考差，先別急著安慰——你可以這樣說",
-     "path": "/articles/exam-result-talk/",
+     "name": "不是孩子難搞，是你今天也快被磨光了",
+     "path": "/articles/adult-first-burned-out/",
      "views": 1,
      "users": 1
     }
@@ -2254,7 +2254,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 37,
+     "views": 40,
      "users": 6
     },
     {
