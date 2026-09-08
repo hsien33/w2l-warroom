@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-09 00:35",
- "updated": "2026-09-09 00:35 台北",
+ "generatedAt": "2026-09-09 05:06",
+ "updated": "2026-09-09 05:06 台北",
  "yesterday_date": "2026-09-08",
  "yesterday": {
   "users": 2,
-  "pv": 2,
+  "pv": 3,
   "events": {},
   "sites": {
    "grow": {
@@ -20,7 +20,7 @@
  },
  "d7": {
   "users": 35,
-  "pv": 91,
+  "pv": 92,
   "events": {
    "cta_click": 1,
    "email_signup": 1,
@@ -49,27 +49,27 @@
  },
  "d30": {
   "users": 153,
-  "pv": 276,
+  "pv": 277,
   "events": {
    "tool_engaged": 23,
    "tool_result": 19,
    "cta_click": 4,
-   "outbound_placement": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "card_open": 1
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 63,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
      "tool_engaged": 16,
      "tool_result": 13,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -135,23 +135,23 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 149,
-   "users": 111,
+   "sessions": 152,
+   "users": 114,
    "signups": 0
   },
   {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 17,
-   "users": 17,
+   "sessions": 20,
+   "users": 20,
    "signups": 0
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 13,
+   "sessions": 14,
    "users": 1,
    "signups": 0
   },
@@ -2106,12 +2106,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 111,
+    "users": 114,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 41,
+    "users": 44,
     "signups": 2
    },
    {
@@ -2125,7 +2125,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 7,
+  "ig_share": 6,
   "cards": [
    {
     "level": "red",
@@ -2162,7 +2162,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2220,6 +2220,12 @@
      "users": 3
     },
     {
+     "name": "大家怎麼說",
+     "path": "/voices/",
+     "views": 3,
+     "users": 2
+    },
+    {
      "name": "找不到頁面",
      "path": "/42160779-f575-4745-b995-391a667d0893",
      "views": 3,
@@ -2232,20 +2238,14 @@
      "users": 2
     },
     {
-     "name": "大家怎麼說",
-     "path": "/voices/",
-     "views": 2,
+     "name": "對話筆記",
+     "path": "/articles/",
+     "views": 1,
      "users": 1
     },
     {
      "name": "不是孩子難搞，是你今天也快被磨光了",
      "path": "/articles/adult-first-burned-out/",
-     "views": 1,
-     "users": 1
-    },
-    {
-     "name": "孩子考差，先別急著安慰——你可以這樣說",
-     "path": "/articles/exam-result-talk/",
      "views": 1,
      "users": 1
     }
@@ -2260,7 +2260,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 41,
+     "views": 42,
      "users": 6
     },
     {
