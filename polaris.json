@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-08 12:30",
- "updated": "2026-09-08 12:30 台北",
+ "generatedAt": "2026-09-08 19:12",
+ "updated": "2026-09-08 19:12 台北",
  "yesterday_date": "2026-09-07",
  "yesterday": {
   "users": 5,
@@ -26,10 +26,10 @@
   "users": 44,
   "pv": 112,
   "events": {
-   "tool_engaged": 2,
    "cta_click": 1,
    "email_signup": 1,
    "magnet_delivered": 1,
+   "tool_engaged": 2,
    "tool_result": 1
   },
   "sites": {
@@ -60,8 +60,8 @@
    "cta_click": 4,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "outbound_placement": 1,
-   "card_open": 1
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -69,11 +69,11 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 14,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -139,8 +139,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 136,
-   "users": 99,
+   "sessions": 145,
+   "users": 106,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 14,
+   "users": 14,
    "signups": 0
   },
   {
@@ -163,8 +171,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 11,
-   "users": 8,
+   "sessions": 12,
+   "users": 9,
    "signups": 1
   },
   {
@@ -173,14 +181,6 @@
    "campaign": "(referral)",
    "sessions": 10,
    "users": 2,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
    "signups": 0
   },
   {
@@ -1156,14 +1156,14 @@
      },
      {
       "date": "2026-09-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 2,
     "d7_prev": 1,
-    "pv30": 2,
+    "pv30": 3,
     "outbound": [],
     "channels": [
      {
@@ -1172,6 +1172,10 @@
      },
      {
       "ch": "Referral",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2109,12 +2113,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 99,
+    "users": 106,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 31,
+    "users": 41,
     "signups": 2
    },
    {
@@ -2128,7 +2132,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 8,
+  "ig_share": 7,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 2
@@ -2171,7 +2175,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 9,
+     "users": 10,
      "signups": 1
     },
     {
@@ -2181,14 +2185,14 @@
      "signups": 0
     },
     {
-     "ch": "社群(IG/FB)",
-     "raw": "Organic Social",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "社群(IG/FB)",
+     "raw": "Organic Social",
      "users": 1,
      "signups": 0
     }
@@ -2249,8 +2253,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 59,
-     "users": 47
+     "views": 60,
+     "users": 48
     },
     {
      "name": "一起變輕一點",
