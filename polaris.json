@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-09 05:06",
- "updated": "2026-09-09 05:06 台北",
+ "generatedAt": "2026-09-09 07:22",
+ "updated": "2026-09-09 07:22 台北",
  "yesterday_date": "2026-09-08",
  "yesterday": {
   "users": 2,
@@ -54,10 +54,10 @@
    "tool_engaged": 23,
    "tool_result": 19,
    "cta_click": 4,
+   "outbound_placement": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "card_open": 1,
-   "outbound_placement": 1
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -65,21 +65,21 @@
     "events": {
      "tool_engaged": 16,
      "tool_result": 13,
+     "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 90,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 6,
      "cta_click": 3,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 7,
+     "tool_result": 6
     }
    }
   }
@@ -135,16 +135,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 152,
-   "users": 114,
+   "sessions": 158,
+   "users": 119,
    "signups": 0
   },
   {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 20,
-   "users": 20,
+   "sessions": 24,
+   "users": 24,
    "signups": 0
   },
   {
@@ -400,7 +400,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -2106,12 +2109,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 114,
+    "users": 119,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 44,
+    "users": 48,
     "signups": 2
    },
    {
