@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-08 07:28",
- "updated": "2026-09-08 07:28 台北",
+ "generatedAt": "2026-09-08 12:30",
+ "updated": "2026-09-08 12:30 台北",
  "yesterday_date": "2026-09-07",
  "yesterday": {
-  "users": 4,
-  "pv": 10,
+  "users": 5,
+  "pv": 14,
   "events": {
    "tool_engaged": 1
   },
@@ -17,19 +17,19 @@
     }
    },
    "wealth": {
-    "users": 1,
+    "users": 2,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 43,
-  "pv": 108,
+  "users": 44,
+  "pv": 112,
   "events": {
+   "tool_engaged": 2,
    "cta_click": 1,
    "email_signup": 1,
    "magnet_delivered": 1,
-   "tool_engaged": 2,
    "tool_result": 1
   },
   "sites": {
@@ -40,7 +40,7 @@
     }
    },
    "wealth": {
-    "users": 34,
+    "users": 35,
     "events": {
      "cta_click": 1,
      "email_signup": 1,
@@ -52,16 +52,16 @@
   }
  },
  "d30": {
-  "users": 155,
-  "pv": 281,
+  "users": 156,
+  "pv": 285,
   "events": {
    "tool_engaged": 25,
    "tool_result": 21,
-   "card_open": 1,
+   "cta_click": 4,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "cta_click": 4,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -69,15 +69,15 @@
     "events": {
      "tool_engaged": 17,
      "tool_result": 14,
+     "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 90,
+    "users": 91,
     "events": {
      "tool_engaged": 8,
      "tool_result": 7,
@@ -114,7 +114,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 34,
+    "count": 35,
     "rate": null
    },
    {
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 131,
-   "users": 96,
+   "sessions": 136,
+   "users": 99,
    "signups": 0
   },
   {
@@ -171,16 +171,16 @@
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 9,
-   "users": 1,
+   "sessions": 10,
+   "users": 2,
    "signups": 0
   },
   {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 6,
-   "users": 6,
+   "sessions": 5,
+   "users": 5,
    "signups": 0
   },
   {
@@ -380,7 +380,7 @@
   },
   {
    "date": "2026-09-07",
-   "users": 4,
+   "users": 5,
    "signups": 0
   }
  ],
@@ -529,7 +529,7 @@
      },
      {
       "date": "2026-09-07",
-      "users": 2
+      "users": 3
      },
      {
       "date": "2026-09-08",
@@ -537,10 +537,10 @@
      }
     ],
     "today": 0,
-    "d7": 7,
-    "d30": 29,
+    "d7": 8,
+    "d30": 30,
     "d7_prev": 9,
-    "pv30": 33,
+    "pv30": 35,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -550,7 +550,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 7
+      "users": 8
      },
      {
       "ch": "Direct",
@@ -562,14 +562,14 @@
      },
      {
       "ch": "Unassigned",
-      "users": 2
+      "users": 1
      }
     ],
     "engaged7": 1,
     "result7": 0,
     "emails30": 0,
     "outbound30": 1,
-    "engage_rate": 14,
+    "engage_rate": 12,
     "finish_rate": 0,
     "badges": []
    },
@@ -2109,7 +2109,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 96,
+    "users": 99,
     "signups": 0
    },
    {
@@ -2145,7 +2145,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 22,
+     "users": 23,
      "signups": 0
     },
     {
@@ -2157,7 +2157,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -2165,7 +2165,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 61,
+     "users": 62,
      "signups": 0
     },
     {
@@ -2205,7 +2205,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 9,
+     "views": 10,
      "users": 3
     },
     {
@@ -2249,8 +2249,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 58,
-     "users": 46
+     "views": 59,
+     "users": 47
     },
     {
      "name": "一起變輕一點",
@@ -2597,7 +2597,7 @@
     },
     {
      "date": "2026-09-07",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ]
@@ -2624,8 +2624,8 @@
     "signups30": 1,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 90,
-    "users7": 34,
+    "users30": 91,
+    "users7": 35,
     "rate7": 2.9
    }
   }
