@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-09 07:22",
- "updated": "2026-09-09 07:22 台北",
+ "generatedAt": "2026-09-09 12:36",
+ "updated": "2026-09-09 12:36 台北",
  "yesterday_date": "2026-09-08",
  "yesterday": {
   "users": 2,
@@ -51,12 +51,12 @@
   "users": 153,
   "pv": 277,
   "events": {
-   "tool_engaged": 23,
-   "tool_result": 19,
    "cta_click": 4,
-   "outbound_placement": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
+   "tool_engaged": 23,
+   "tool_result": 19,
+   "outbound_placement": 1,
    "card_open": 1
   },
   "sites": {
@@ -64,9 +64,9 @@
     "users": 63,
     "events": {
      "tool_engaged": 16,
-     "tool_result": 13,
      "cta_click": 1,
      "outbound_placement": 1,
+     "tool_result": 13,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
@@ -135,16 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 158,
-   "users": 119,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 24,
-   "users": 24,
+   "sessions": 169,
+   "users": 128,
    "signups": 0
   },
   {
@@ -153,6 +145,14 @@
    "campaign": "(referral)",
    "sessions": 14,
    "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 13,
+   "users": 13,
    "signups": 0
   },
   {
@@ -400,10 +400,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -869,7 +866,7 @@
       "users": 1
      },
      {
-      "ch": "Unassigned",
+      "ch": "Referral",
       "users": 1
      }
     ],
@@ -2090,6 +2087,158 @@
     "badges": [
      "沉睡"
     ]
+   },
+   {
+    "slug": "wealth-pyramid",
+    "site": "wealth",
+    "daily": [
+     {
+      "date": "2026-08-10",
+      "users": 0
+     },
+     {
+      "date": "2026-08-11",
+      "users": 0
+     },
+     {
+      "date": "2026-08-12",
+      "users": 0
+     },
+     {
+      "date": "2026-08-13",
+      "users": 0
+     },
+     {
+      "date": "2026-08-14",
+      "users": 0
+     },
+     {
+      "date": "2026-08-15",
+      "users": 0
+     },
+     {
+      "date": "2026-08-16",
+      "users": 0
+     },
+     {
+      "date": "2026-08-17",
+      "users": 0
+     },
+     {
+      "date": "2026-08-18",
+      "users": 0
+     },
+     {
+      "date": "2026-08-19",
+      "users": 0
+     },
+     {
+      "date": "2026-08-20",
+      "users": 0
+     },
+     {
+      "date": "2026-08-21",
+      "users": 0
+     },
+     {
+      "date": "2026-08-22",
+      "users": 0
+     },
+     {
+      "date": "2026-08-23",
+      "users": 0
+     },
+     {
+      "date": "2026-08-24",
+      "users": 0
+     },
+     {
+      "date": "2026-08-25",
+      "users": 0
+     },
+     {
+      "date": "2026-08-26",
+      "users": 0
+     },
+     {
+      "date": "2026-08-27",
+      "users": 0
+     },
+     {
+      "date": "2026-08-28",
+      "users": 0
+     },
+     {
+      "date": "2026-08-29",
+      "users": 0
+     },
+     {
+      "date": "2026-08-30",
+      "users": 0
+     },
+     {
+      "date": "2026-08-31",
+      "users": 0
+     },
+     {
+      "date": "2026-09-01",
+      "users": 0
+     },
+     {
+      "date": "2026-09-02",
+      "users": 0
+     },
+     {
+      "date": "2026-09-03",
+      "users": 0
+     },
+     {
+      "date": "2026-09-04",
+      "users": 0
+     },
+     {
+      "date": "2026-09-05",
+      "users": 0
+     },
+     {
+      "date": "2026-09-06",
+      "users": 0
+     },
+     {
+      "date": "2026-09-07",
+      "users": 0
+     },
+     {
+      "date": "2026-09-08",
+      "users": 0
+     },
+     {
+      "date": "2026-09-09",
+      "users": 1
+     }
+    ],
+    "today": 1,
+    "d7": 0,
+    "d30": 0,
+    "d7_prev": 0,
+    "pv30": 0,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Unassigned",
+      "users": 1
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡",
+     "無資料"
+    ]
    }
   ],
   "outbound_top": [
@@ -2109,12 +2258,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 119,
+    "users": 128,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 48,
+    "users": 37,
     "signups": 2
    },
    {
@@ -2173,7 +2322,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 61,
+     "users": 62,
      "signups": 0
     },
     {
@@ -2257,8 +2406,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 56,
-     "users": 45
+     "views": 57,
+     "users": 46
     },
     {
      "name": "一起變輕一點",
@@ -2269,7 +2418,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 17,
+     "views": 18,
      "users": 3
     },
     {
