@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-10 00:35",
- "updated": "2026-09-10 00:35 台北",
+ "generatedAt": "2026-09-10 04:53",
+ "updated": "2026-09-10 04:53 台北",
  "yesterday_date": "2026-09-09",
  "yesterday": {
   "users": 7,
@@ -22,10 +22,10 @@
   "users": 38,
   "pv": 89,
   "events": {
+   "tool_engaged": 2,
    "cta_click": 1,
    "email_signup": 1,
    "magnet_delivered": 1,
-   "tool_engaged": 2,
    "tool_result": 1
   },
   "sites": {
@@ -51,13 +51,13 @@
   "users": 154,
   "pv": 278,
   "events": {
-   "cta_click": 4,
    "tool_engaged": 23,
    "tool_result": 19,
+   "card_open": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "outbound_placement": 1,
-   "card_open": 1
+   "cta_click": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -65,19 +65,19 @@
     "events": {
      "tool_engaged": 16,
      "tool_result": 13,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 91,
     "events": {
-     "cta_click": 3,
      "tool_engaged": 7,
      "tool_result": 6,
+     "cta_click": 3,
      "email_signup": 1,
      "magnet_delivered": 1
     }
@@ -135,16 +135,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 170,
-   "users": 129,
+   "sessions": 177,
+   "users": 135,
    "signups": 0
   },
   {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 17,
-   "users": 17,
+   "sessions": 21,
+   "users": 21,
    "signups": 0
   },
   {
@@ -2261,12 +2261,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 129,
+    "users": 135,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 41,
+    "users": 45,
     "signups": 2
    },
    {
@@ -2280,7 +2280,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 6,
+  "ig_share": 5,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 2
