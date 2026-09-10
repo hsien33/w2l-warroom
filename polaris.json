@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-11 00:21",
- "updated": "2026-09-11 00:21 台北",
+ "generatedAt": "2026-09-11 04:49",
+ "updated": "2026-09-11 04:49 台北",
  "yesterday_date": "2026-09-10",
  "yesterday": {
   "users": 5,
@@ -22,10 +22,10 @@
   "users": 33,
   "pv": 61,
   "events": {
-   "tool_engaged": 2,
    "cta_click": 1,
    "email_signup": 1,
    "magnet_delivered": 1,
+   "tool_engaged": 2,
    "tool_result": 1
   },
   "sites": {
@@ -51,12 +51,12 @@
   "users": 159,
   "pv": 291,
   "events": {
+   "cta_click": 4,
    "tool_engaged": 23,
    "tool_result": 19,
    "card_open": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "cta_click": 4,
    "outbound_placement": 1
   },
   "sites": {
@@ -76,10 +76,10 @@
     "users": 96,
     "events": {
      "cta_click": 3,
-     "tool_engaged": 7,
-     "tool_result": 6,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 7,
+     "tool_result": 6
     }
    }
   }
@@ -135,7 +135,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 193,
+   "sessions": 194,
    "users": 144,
    "signups": 0
   },
