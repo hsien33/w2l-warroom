@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-11 12:34",
- "updated": "2026-09-11 12:34 台北",
+ "generatedAt": "2026-09-11 19:15",
+ "updated": "2026-09-11 19:15 台北",
  "yesterday_date": "2026-09-10",
  "yesterday": {
-  "users": 5,
-  "pv": 8,
+  "users": 7,
+  "pv": 9,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 4,
+    "users": 6,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 33,
-  "pv": 61,
+  "users": 35,
+  "pv": 62,
   "events": {
    "tool_engaged": 2,
    "cta_click": 1,
@@ -36,7 +36,7 @@
     }
    },
    "wealth": {
-    "users": 26,
+    "users": 28,
     "events": {
      "cta_click": 1,
      "email_signup": 1,
@@ -48,8 +48,8 @@
   }
  },
  "d30": {
-  "users": 159,
-  "pv": 291,
+  "users": 161,
+  "pv": 292,
   "events": {
    "tool_engaged": 23,
    "tool_result": 19,
@@ -73,7 +73,7 @@
     }
    },
    "wealth": {
-    "users": 96,
+    "users": 98,
     "events": {
      "tool_engaged": 7,
      "tool_result": 6,
@@ -110,13 +110,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 26,
+    "count": 28,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 1,
-    "rate": 3.8
+    "rate": 3.6
    },
    {
     "step": "Email訂閱",
@@ -135,8 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 200,
-   "users": 149,
+   "sessions": 208,
+   "users": 155,
    "signups": 0
   },
   {
@@ -145,14 +145,6 @@
    "campaign": "(referral)",
    "sessions": 17,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 14,
-   "users": 14,
    "signups": 0
   },
   {
@@ -183,9 +175,17 @@
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
+   "sessions": 6,
+   "users": 6,
+   "signups": 1
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
    "sessions": 5,
    "users": 5,
-   "signups": 1
+   "signups": 0
   },
   {
    "source": "facebook.com",
@@ -193,6 +193,22 @@
    "campaign": "(referral)",
    "sessions": 4,
    "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "tw.search.yahoo.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 4,
+   "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 3,
+   "users": 2,
    "signups": 0
   },
   {
@@ -204,25 +220,9 @@
    "signups": 0
   },
   {
-   "source": "tw.search.yahoo.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 3,
-   "users": 3,
-   "signups": 0
-  },
-  {
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 2,
-   "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
    "sessions": 2,
    "users": 1,
    "signups": 0
@@ -376,7 +376,7 @@
   },
   {
    "date": "2026-09-10",
-   "users": 5,
+   "users": 7,
    "signups": 0
   }
  ],
@@ -390,7 +390,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "3.0%",
+   "value": "2.9%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -529,14 +529,14 @@
      },
      {
       "date": "2026-09-11",
-      "users": 2
+      "users": 3
      }
     ],
-    "today": 2,
+    "today": 3,
     "d7": 6,
     "d30": 29,
     "d7_prev": 7,
-    "pv30": 36,
+    "pv30": 37,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -546,7 +546,7 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 8
+      "users": 9
      },
      {
       "ch": "Direct",
@@ -2238,6 +2238,157 @@
     "badges": [
      "沉睡"
     ]
+   },
+   {
+    "slug": "phone-pact",
+    "site": "grow",
+    "daily": [
+     {
+      "date": "2026-08-12",
+      "users": 0
+     },
+     {
+      "date": "2026-08-13",
+      "users": 0
+     },
+     {
+      "date": "2026-08-14",
+      "users": 0
+     },
+     {
+      "date": "2026-08-15",
+      "users": 0
+     },
+     {
+      "date": "2026-08-16",
+      "users": 0
+     },
+     {
+      "date": "2026-08-17",
+      "users": 0
+     },
+     {
+      "date": "2026-08-18",
+      "users": 0
+     },
+     {
+      "date": "2026-08-19",
+      "users": 0
+     },
+     {
+      "date": "2026-08-20",
+      "users": 0
+     },
+     {
+      "date": "2026-08-21",
+      "users": 0
+     },
+     {
+      "date": "2026-08-22",
+      "users": 0
+     },
+     {
+      "date": "2026-08-23",
+      "users": 0
+     },
+     {
+      "date": "2026-08-24",
+      "users": 0
+     },
+     {
+      "date": "2026-08-25",
+      "users": 0
+     },
+     {
+      "date": "2026-08-26",
+      "users": 0
+     },
+     {
+      "date": "2026-08-27",
+      "users": 0
+     },
+     {
+      "date": "2026-08-28",
+      "users": 0
+     },
+     {
+      "date": "2026-08-29",
+      "users": 0
+     },
+     {
+      "date": "2026-08-30",
+      "users": 0
+     },
+     {
+      "date": "2026-08-31",
+      "users": 0
+     },
+     {
+      "date": "2026-09-01",
+      "users": 0
+     },
+     {
+      "date": "2026-09-02",
+      "users": 0
+     },
+     {
+      "date": "2026-09-03",
+      "users": 0
+     },
+     {
+      "date": "2026-09-04",
+      "users": 0
+     },
+     {
+      "date": "2026-09-05",
+      "users": 0
+     },
+     {
+      "date": "2026-09-06",
+      "users": 0
+     },
+     {
+      "date": "2026-09-07",
+      "users": 0
+     },
+     {
+      "date": "2026-09-08",
+      "users": 0
+     },
+     {
+      "date": "2026-09-09",
+      "users": 0
+     },
+     {
+      "date": "2026-09-10",
+      "users": 0
+     },
+     {
+      "date": "2026-09-11",
+      "users": 1
+     }
+    ],
+    "today": 1,
+    "d7": 0,
+    "d30": 0,
+    "d7_prev": 0,
+    "pv30": 2,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Direct",
+      "users": 1
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
    }
   ],
   "outbound_top": [
@@ -2257,26 +2408,21 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 149,
+    "users": 155,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 40,
+    "users": 33,
     "signups": 2
    },
    {
     "label": "IG 帶來的",
-    "users": 10,
-    "signups": 0
-   },
-   {
-    "label": "Google 搜來的",
-    "users": 1,
+    "users": 12,
     "signups": 0
    }
   ],
-  "ig_share": 5,
+  "ig_share": 6,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 2
@@ -2287,7 +2433,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 29,
+     "users": 30,
      "signups": 0
     },
     {
@@ -2299,19 +2445,13 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 5,
+     "users": 6,
      "signups": 1
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
-     "signups": 0
-    },
-    {
-     "ch": "跨網路廣告",
-     "raw": "Cross-network",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2319,7 +2459,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 61,
+     "users": 63,
      "signups": 0
     },
     {
@@ -2331,18 +2471,18 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 5,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "users": 6,
      "signups": 0
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
+     "users": 1,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -2353,8 +2493,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 28,
-     "users": 22
+     "views": 29,
+     "users": 23
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2369,6 +2509,12 @@
      "users": 3
     },
     {
+     "name": "找不到頁面",
+     "path": "/42160779-f575-4745-b995-391a667d0893",
+     "views": 4,
+     "users": 4
+    },
+    {
      "name": "關於 Jeff",
      "path": "/about/",
      "views": 3,
@@ -2381,16 +2527,10 @@
      "users": 2
     },
     {
-     "name": "找不到頁面",
-     "path": "/42160779-f575-4745-b995-391a667d0893",
-     "views": 3,
-     "users": 3
-    },
-    {
      "name": "對話筆記",
      "path": "/articles/",
-     "views": 1,
-     "users": 1
+     "views": 2,
+     "users": 2
     },
     {
      "name": "不是孩子難搞，是你今天也快被磨光了",
@@ -2403,14 +2543,14 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 57,
-     "users": 46
+     "views": 58,
+     "users": 47
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
      "views": 52,
-     "users": 6
+     "users": 7
     },
     {
      "name": "個人習慣分析",
@@ -2751,7 +2891,7 @@
     },
     {
      "date": "2026-09-10",
-     "users": 4,
+     "users": 6,
      "signups": 0
     }
    ]
@@ -2778,9 +2918,9 @@
     "signups30": 1,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 96,
-    "users7": 26,
-    "rate7": 3.8
+    "users30": 98,
+    "users7": 28,
+    "rate7": 3.6
    }
   }
  }
