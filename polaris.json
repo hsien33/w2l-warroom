@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-11 07:07",
- "updated": "2026-09-11 07:07 台北",
+ "generatedAt": "2026-09-11 12:34",
+ "updated": "2026-09-11 12:34 台北",
  "yesterday_date": "2026-09-10",
  "yesterday": {
   "users": 5,
@@ -53,11 +53,11 @@
   "events": {
    "tool_engaged": 23,
    "tool_result": 19,
+   "cta_click": 4,
+   "outbound_placement": 1,
    "card_open": 1,
    "email_signup": 2,
-   "magnet_delivered": 2,
-   "cta_click": 4,
-   "outbound_placement": 1
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
@@ -65,11 +65,11 @@
     "events": {
      "tool_engaged": 16,
      "tool_result": 13,
+     "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -135,15 +135,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 194,
-   "users": 144,
+   "sessions": 200,
+   "users": 149,
    "signups": 0
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 16,
+   "sessions": 17,
    "users": 1,
    "signups": 0
   },
@@ -151,8 +151,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 11,
-   "users": 11,
+   "sessions": 14,
+   "users": 14,
    "signups": 0
   },
   {
@@ -191,8 +191,8 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 3,
-   "users": 3,
+   "sessions": 4,
+   "users": 4,
    "signups": 0
   },
   {
@@ -529,14 +529,14 @@
      },
      {
       "date": "2026-09-11",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 6,
     "d30": 29,
     "d7_prev": 7,
-    "pv30": 34,
+    "pv30": 36,
     "outbound": [
      {
       "domain": "www.instagram.com",
@@ -546,11 +546,11 @@
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 7
+      "users": 8
      },
      {
       "ch": "Direct",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Organic Search",
@@ -558,7 +558,7 @@
      },
      {
       "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 1,
@@ -2257,12 +2257,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 144,
+    "users": 149,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 36,
+    "users": 40,
     "signups": 2
    },
    {
@@ -2287,13 +2287,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 28,
+     "users": 29,
      "signups": 0
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 21,
+     "users": 22,
      "signups": 0
     },
     {
@@ -2305,7 +2305,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 2,
+     "users": 3,
      "signups": 0
     },
     {
@@ -2409,13 +2409,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 50,
+     "views": 52,
      "users": 6
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 18,
+     "views": 19,
      "users": 3
     },
     {
