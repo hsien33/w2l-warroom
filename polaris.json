@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-13 04:30",
- "updated": "2026-09-13 04:30 台北",
+ "generatedAt": "2026-09-13 07:01",
+ "updated": "2026-09-13 07:01 台北",
  "yesterday_date": "2026-09-12",
  "yesterday": {
   "users": 10,
-  "pv": 29,
+  "pv": 31,
   "events": {
    "tool_engaged": 6,
    "tool_result": 5,
@@ -33,22 +33,22 @@
  },
  "d7": {
   "users": 44,
-  "pv": 95,
+  "pv": 97,
   "events": {
+   "email_signup": 2,
+   "magnet_delivered": 1,
    "tool_engaged": 8,
    "tool_result": 6,
-   "cta_click": 1,
-   "email_signup": 2,
-   "magnet_delivered": 1
+   "cta_click": 1
   },
   "sites": {
    "grow": {
     "users": 14,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 2
     }
    },
    "wealth": {
@@ -64,13 +64,13 @@
  },
  "d30": {
   "users": 160,
-  "pv": 316,
+  "pv": 318,
   "events": {
    "tool_engaged": 25,
    "tool_result": 20,
-   "cta_click": 3,
    "email_signup": 4,
    "magnet_delivered": 3,
+   "cta_click": 3,
    "outbound_placement": 1,
    "card_open": 1
   },
@@ -1189,6 +1189,10 @@
      {
       "ch": "Referral",
       "users": 2
+     },
+     {
+      "ch": "Cross-network",
+      "users": 1
      }
     ],
     "engaged7": 1,
@@ -2756,7 +2760,7 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 8,
+     "views": 9,
      "users": 9
     },
     {
@@ -2778,10 +2782,10 @@
      "users": 4
     },
     {
-     "name": "工具箱到手",
-     "path": "/welcome/",
+     "name": "從 0 到 1 學習地圖",
+     "path": "/start/",
      "views": 4,
-     "users": 2
+     "users": 3
     }
    ]
   },
