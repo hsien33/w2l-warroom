@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-12 12:29",
- "updated": "2026-09-12 12:29 台北",
+ "generatedAt": "2026-09-12 18:41",
+ "updated": "2026-09-12 18:41 台北",
  "yesterday_date": "2026-09-11",
  "yesterday": {
   "users": 8,
@@ -32,11 +32,11 @@
   "users": 39,
   "pv": 77,
   "events": {
-   "tool_engaged": 3,
+   "cta_click": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "tool_result": 2,
-   "cta_click": 1
+   "tool_engaged": 3,
+   "tool_result": 2
   },
   "sites": {
    "grow": {
@@ -64,11 +64,11 @@
   "users": 159,
   "pv": 300,
   "events": {
-   "tool_engaged": 19,
-   "tool_result": 15,
+   "cta_click": 4,
    "email_signup": 3,
    "magnet_delivered": 3,
-   "cta_click": 4,
+   "tool_engaged": 19,
+   "tool_result": 15,
    "outbound_placement": 1,
    "card_open": 1
   },
@@ -78,21 +78,21 @@
     "events": {
      "tool_engaged": 12,
      "tool_result": 9,
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "cta_click": 1,
      "outbound_placement": 1,
-     "card_open": 1
+     "card_open": 1,
+     "email_signup": 2,
+     "magnet_delivered": 2
     }
    },
    "wealth": {
     "users": 100,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 6,
      "cta_click": 3,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 7,
+     "tool_result": 6
     }
    }
   }
@@ -196,8 +196,16 @@
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 4,
-   "users": 4,
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
    "signups": 0
   },
   {
@@ -213,14 +221,6 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 3,
-   "users": 2,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 2,
    "users": 2,
    "signups": 0
   },
@@ -413,9 +413,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（TimeoutError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -860,19 +858,23 @@
      },
      {
       "date": "2026-09-12",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 2,
     "d7_prev": 0,
-    "pv30": 2,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Search",
-      "users": 2
+      "users": 3
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 0,
@@ -2417,7 +2419,7 @@
    },
    {
     "label": "其他",
-    "users": 25,
+    "users": 27,
     "signups": 2
    },
    {
@@ -2433,7 +2435,7 @@
   ],
   "ig_share": 6,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
   "signup_total_30d": 3
  },
  "v3": {
@@ -2480,18 +2482,18 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 6,
-     "signups": 0
-    },
-    {
-     "ch": "社群(IG/FB)",
-     "raw": "Organic Social",
-     "users": 1,
+     "users": 7,
      "signups": 0
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
+     "users": 2,
+     "signups": 0
+    },
+    {
+     "ch": "社群(IG/FB)",
+     "raw": "Organic Social",
      "users": 1,
      "signups": 0
     }
