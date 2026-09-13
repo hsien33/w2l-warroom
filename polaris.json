@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-13 12:41",
- "updated": "2026-09-13 12:41 台北",
+ "generatedAt": "2026-09-13 19:46",
+ "updated": "2026-09-13 19:46 台北",
  "yesterday_date": "2026-09-12",
  "yesterday": {
   "users": 11,
@@ -71,11 +71,11 @@
   "events": {
    "tool_engaged": 25,
    "tool_result": 21,
+   "cta_click": 3,
+   "outbound_placement": 1,
    "card_open": 1,
    "email_signup": 4,
-   "magnet_delivered": 4,
-   "cta_click": 3,
-   "outbound_placement": 1
+   "magnet_delivered": 4
   },
   "sites": {
    "grow": {
@@ -83,11 +83,11 @@
     "events": {
      "tool_engaged": 13,
      "tool_result": 10,
+     "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 2
     }
    },
    "wealth": {
@@ -161,7 +161,7 @@
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 19,
+   "sessions": 20,
    "users": 1,
    "signups": 0
   },
@@ -185,9 +185,17 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 8,
-   "users": 7,
+   "sessions": 9,
+   "users": 8,
    "signups": 2
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 7,
+   "users": 6,
+   "signups": 0
   },
   {
    "source": "bing",
@@ -196,14 +204,6 @@
    "sessions": 6,
    "users": 6,
    "signups": 1
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
-   "signups": 0
   },
   {
    "source": "tw.search.yahoo.com",
@@ -418,10 +418,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -1171,14 +1168,14 @@
      },
      {
       "date": "2026-09-13",
-      "users": 1
+      "users": 2
      }
     ],
-    "today": 1,
+    "today": 2,
     "d7": 2,
     "d30": 6,
     "d7_prev": 1,
-    "pv30": 8,
+    "pv30": 9,
     "outbound": [],
     "channels": [
      {
@@ -1190,11 +1187,11 @@
       "users": 3
      },
      {
-      "ch": "Cross-network",
-      "users": 1
+      "ch": "Unassigned",
+      "users": 2
      },
      {
-      "ch": "Unassigned",
+      "ch": "Cross-network",
       "users": 1
      }
     ],
@@ -1334,10 +1331,10 @@
      },
      {
       "date": "2026-09-13",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 2,
     "d7_prev": 0,
@@ -1490,14 +1487,14 @@
      },
      {
       "date": "2026-09-13",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 2,
     "d7_prev": 0,
-    "pv30": 3,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
@@ -1506,6 +1503,10 @@
      },
      {
       "ch": "Referral",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2104,10 +2105,10 @@
      },
      {
       "date": "2026-09-13",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 3,
     "d7_prev": 0,
@@ -2120,6 +2121,10 @@
      },
      {
       "ch": "Organic Social",
+      "users": 1
+     },
+     {
+      "ch": "Referral",
       "users": 1
      }
     ],
@@ -2609,7 +2614,7 @@
    },
    {
     "label": "其他",
-    "users": 30,
+    "users": 32,
     "signups": 3
    },
    {
@@ -2620,7 +2625,7 @@
   ],
   "ig_share": 5,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 5 人在用",
   "signup_total_30d": 4
  },
  "v3": {
@@ -2661,7 +2666,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 8,
+     "users": 9,
      "signups": 2
     },
     {
@@ -2673,7 +2678,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 5,
      "signups": 0
     },
     {
@@ -2743,16 +2748,16 @@
    ],
    "wealth": [
     {
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "path": "/",
-     "views": 61,
-     "users": 51
-    },
-    {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 58,
+     "views": 63,
      "users": 8
+    },
+    {
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "path": "/",
+     "views": 62,
+     "users": 52
     },
     {
      "name": "個人習慣分析",
@@ -2787,8 +2792,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 4,
-     "users": 3
+     "views": 5,
+     "users": 4
     }
    ]
   },
