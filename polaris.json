@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-14 00:13",
- "updated": "2026-09-14 00:13 台北",
+ "generatedAt": "2026-09-14 04:45",
+ "updated": "2026-09-14 04:45 台北",
  "yesterday_date": "2026-09-13",
  "yesterday": {
   "users": 7,
-  "pv": 23,
+  "pv": 28,
   "events": {
    "tool_engaged": 4,
    "tool_result": 3
@@ -28,22 +28,22 @@
  },
  "d7": {
   "users": 48,
-  "pv": 124,
+  "pv": 129,
   "events": {
    "tool_engaged": 12,
    "tool_result": 10,
+   "cta_click": 1,
    "email_signup": 2,
-   "magnet_delivered": 2,
-   "cta_click": 1
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
     "users": 17,
     "events": {
      "tool_engaged": 4,
+     "tool_result": 2,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_result": 2
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -60,14 +60,14 @@
  },
  "d30": {
   "users": 165,
-  "pv": 345,
+  "pv": 350,
   "events": {
    "tool_engaged": 29,
-   "tool_result": 24,
-   "card_open": 1,
+   "cta_click": 3,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "cta_click": 3,
+   "tool_result": 24,
+   "card_open": 1,
    "outbound_placement": 1
   },
   "sites": {
@@ -86,11 +86,11 @@
    "wealth": {
     "users": 109,
     "events": {
-     "tool_engaged": 15,
-     "tool_result": 14,
      "cta_click": 2,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "tool_engaged": 15,
+     "tool_result": 14
     }
    }
   }
@@ -167,6 +167,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 9,
+   "users": 7,
+   "signups": 0
+  },
+  {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -181,14 +189,6 @@
    "sessions": 9,
    "users": 8,
    "signups": 2
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 8,
-   "users": 7,
-   "signups": 0
   },
   {
    "source": "bing",
@@ -2747,7 +2747,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 63,
+     "views": 66,
      "users": 8
     },
     {
@@ -2769,6 +2769,12 @@
      "users": 8
     },
     {
+     "name": "餐點熱量日誌",
+     "path": "/Fitness_challenge/meals.html",
+     "views": 5,
+     "users": 1
+    },
+    {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
      "views": 5,
@@ -2783,12 +2789,6 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 5,
-     "users": 4
-    },
-    {
-     "name": "從 0 到 1 學習地圖",
-     "path": "/start/",
      "views": 5,
      "users": 4
     }
