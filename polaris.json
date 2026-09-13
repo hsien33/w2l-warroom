@@ -1,20 +1,21 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-13 07:01",
- "updated": "2026-09-13 07:01 台北",
+ "generatedAt": "2026-09-13 12:41",
+ "updated": "2026-09-13 12:41 台北",
  "yesterday_date": "2026-09-12",
  "yesterday": {
-  "users": 10,
-  "pv": 31,
+  "users": 11,
+  "pv": 39,
   "events": {
    "tool_engaged": 6,
-   "tool_result": 5,
+   "tool_result": 6,
    "cta_click": 1,
-   "email_signup": 1
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
-    "users": 1,
+    "users": 2,
     "events": {
      "tool_engaged": 1,
      "tool_result": 1
@@ -24,26 +25,27 @@
     "users": 9,
     "events": {
      "tool_engaged": 5,
-     "tool_result": 4,
+     "tool_result": 5,
      "cta_click": 1,
-     "email_signup": 1
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    }
   }
  },
  "d7": {
-  "users": 44,
-  "pv": 97,
+  "users": 45,
+  "pv": 105,
   "events": {
    "email_signup": 2,
-   "magnet_delivered": 1,
+   "magnet_delivered": 2,
    "tool_engaged": 8,
-   "tool_result": 6,
+   "tool_result": 7,
    "cta_click": 1
   },
   "sites": {
    "grow": {
-    "users": 14,
+    "users": 15,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1,
@@ -55,46 +57,47 @@
     "users": 30,
     "events": {
      "tool_engaged": 5,
-     "tool_result": 4,
+     "tool_result": 5,
      "cta_click": 1,
-     "email_signup": 1
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    }
   }
  },
  "d30": {
-  "users": 160,
-  "pv": 318,
+  "users": 161,
+  "pv": 326,
   "events": {
    "tool_engaged": 25,
-   "tool_result": 20,
+   "tool_result": 21,
+   "card_open": 1,
    "email_signup": 4,
-   "magnet_delivered": 3,
+   "magnet_delivered": 4,
    "cta_click": 3,
-   "outbound_placement": 1,
-   "card_open": 1
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 53,
+    "users": 54,
     "events": {
      "tool_engaged": 13,
      "tool_result": 10,
+     "card_open": 1,
      "email_signup": 2,
      "magnet_delivered": 2,
      "cta_click": 1,
-     "outbound_placement": 1,
-     "card_open": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 107,
     "events": {
      "tool_engaged": 12,
-     "tool_result": 10,
+     "tool_result": 11,
      "cta_click": 2,
      "email_signup": 2,
-     "magnet_delivered": 1
+     "magnet_delivered": 2
     }
    }
   }
@@ -103,7 +106,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 14,
+    "count": 15,
     "rate": null
    },
    {
@@ -150,15 +153,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 210,
-   "users": 157,
+   "sessions": 214,
+   "users": 160,
    "signups": 1
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 18,
+   "sessions": 19,
    "users": 1,
    "signups": 0
   },
@@ -182,9 +185,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 7,
-   "users": 6,
-   "signups": 1
+   "sessions": 8,
+   "users": 7,
+   "signups": 2
   },
   {
    "source": "bing",
@@ -200,7 +203,7 @@
    "campaign": "(not set)",
    "sessions": 5,
    "users": 5,
-   "signups": 1
+   "signups": 0
   },
   {
    "source": "tw.search.yahoo.com",
@@ -391,7 +394,7 @@
   },
   {
    "date": "2026-09-12",
-   "users": 10,
+   "users": 11,
    "signups": 1
   }
  ],
@@ -405,7 +408,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "4.5%",
+   "value": "4.4%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -415,7 +418,10 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [],
+ "alerts": [
+  "光合作用 grow 連不上（URLError）",
+  "財富煉金術 www 連不上（URLError）"
+ ],
  "v2": {
   "tools": [
    {
@@ -717,11 +723,7 @@
      },
      {
       "ch": "Referral",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -731,6 +733,161 @@
     "engage_rate": 0,
     "finish_rate": null,
     "badges": []
+   },
+   {
+    "slug": "phone-pact",
+    "site": "grow",
+    "daily": [
+     {
+      "date": "2026-08-14",
+      "users": 0
+     },
+     {
+      "date": "2026-08-15",
+      "users": 0
+     },
+     {
+      "date": "2026-08-16",
+      "users": 0
+     },
+     {
+      "date": "2026-08-17",
+      "users": 0
+     },
+     {
+      "date": "2026-08-18",
+      "users": 0
+     },
+     {
+      "date": "2026-08-19",
+      "users": 0
+     },
+     {
+      "date": "2026-08-20",
+      "users": 0
+     },
+     {
+      "date": "2026-08-21",
+      "users": 0
+     },
+     {
+      "date": "2026-08-22",
+      "users": 0
+     },
+     {
+      "date": "2026-08-23",
+      "users": 0
+     },
+     {
+      "date": "2026-08-24",
+      "users": 0
+     },
+     {
+      "date": "2026-08-25",
+      "users": 0
+     },
+     {
+      "date": "2026-08-26",
+      "users": 0
+     },
+     {
+      "date": "2026-08-27",
+      "users": 0
+     },
+     {
+      "date": "2026-08-28",
+      "users": 0
+     },
+     {
+      "date": "2026-08-29",
+      "users": 0
+     },
+     {
+      "date": "2026-08-30",
+      "users": 0
+     },
+     {
+      "date": "2026-08-31",
+      "users": 0
+     },
+     {
+      "date": "2026-09-01",
+      "users": 0
+     },
+     {
+      "date": "2026-09-02",
+      "users": 0
+     },
+     {
+      "date": "2026-09-03",
+      "users": 0
+     },
+     {
+      "date": "2026-09-04",
+      "users": 0
+     },
+     {
+      "date": "2026-09-05",
+      "users": 0
+     },
+     {
+      "date": "2026-09-06",
+      "users": 0
+     },
+     {
+      "date": "2026-09-07",
+      "users": 0
+     },
+     {
+      "date": "2026-09-08",
+      "users": 0
+     },
+     {
+      "date": "2026-09-09",
+      "users": 0
+     },
+     {
+      "date": "2026-09-10",
+      "users": 0
+     },
+     {
+      "date": "2026-09-11",
+      "users": 3
+     },
+     {
+      "date": "2026-09-12",
+      "users": 1
+     },
+     {
+      "date": "2026-09-13",
+      "users": 0
+     }
+    ],
+    "today": 0,
+    "d7": 4,
+    "d30": 4,
+    "d7_prev": 0,
+    "pv30": 7,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Direct",
+      "users": 2
+     },
+     {
+      "ch": "Organic Social",
+      "users": 1
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": 0,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
    },
    {
     "slug": "wealth-pyramid",
@@ -873,172 +1030,18 @@
       "users": 3
      },
      {
-      "ch": "Unassigned",
-      "users": 2
-     }
-    ],
-    "engaged7": 2,
-    "result7": 1,
-    "emails30": 0,
-    "outbound30": 0,
-    "engage_rate": 50,
-    "finish_rate": 50,
-    "badges": [
-     "沉睡"
-    ]
-   },
-   {
-    "slug": "phone-pact",
-    "site": "grow",
-    "daily": [
-     {
-      "date": "2026-08-14",
-      "users": 0
-     },
-     {
-      "date": "2026-08-15",
-      "users": 0
-     },
-     {
-      "date": "2026-08-16",
-      "users": 0
-     },
-     {
-      "date": "2026-08-17",
-      "users": 0
-     },
-     {
-      "date": "2026-08-18",
-      "users": 0
-     },
-     {
-      "date": "2026-08-19",
-      "users": 0
-     },
-     {
-      "date": "2026-08-20",
-      "users": 0
-     },
-     {
-      "date": "2026-08-21",
-      "users": 0
-     },
-     {
-      "date": "2026-08-22",
-      "users": 0
-     },
-     {
-      "date": "2026-08-23",
-      "users": 0
-     },
-     {
-      "date": "2026-08-24",
-      "users": 0
-     },
-     {
-      "date": "2026-08-25",
-      "users": 0
-     },
-     {
-      "date": "2026-08-26",
-      "users": 0
-     },
-     {
-      "date": "2026-08-27",
-      "users": 0
-     },
-     {
-      "date": "2026-08-28",
-      "users": 0
-     },
-     {
-      "date": "2026-08-29",
-      "users": 0
-     },
-     {
-      "date": "2026-08-30",
-      "users": 0
-     },
-     {
-      "date": "2026-08-31",
-      "users": 0
-     },
-     {
-      "date": "2026-09-01",
-      "users": 0
-     },
-     {
-      "date": "2026-09-02",
-      "users": 0
-     },
-     {
-      "date": "2026-09-03",
-      "users": 0
-     },
-     {
-      "date": "2026-09-04",
-      "users": 0
-     },
-     {
-      "date": "2026-09-05",
-      "users": 0
-     },
-     {
-      "date": "2026-09-06",
-      "users": 0
-     },
-     {
-      "date": "2026-09-07",
-      "users": 0
-     },
-     {
-      "date": "2026-09-08",
-      "users": 0
-     },
-     {
-      "date": "2026-09-09",
-      "users": 0
-     },
-     {
-      "date": "2026-09-10",
-      "users": 0
-     },
-     {
-      "date": "2026-09-11",
-      "users": 3
-     },
-     {
-      "date": "2026-09-12",
-      "users": 0
-     },
-     {
-      "date": "2026-09-13",
-      "users": 0
-     }
-    ],
-    "today": 0,
-    "d7": 3,
-    "d30": 3,
-    "d7_prev": 0,
-    "pv30": 6,
-    "outbound": [],
-    "channels": [
-     {
-      "ch": "Direct",
-      "users": 2
-     },
-     {
-      "ch": "Organic Social",
+      "ch": "Referral",
       "users": 1
      }
     ],
-    "engaged7": 0,
-    "result7": 0,
+    "engaged7": 2,
+    "result7": 2,
     "emails30": 0,
     "outbound30": 0,
-    "engage_rate": 0,
-    "finish_rate": null,
+    "engage_rate": 50,
+    "finish_rate": 100,
     "badges": [
+     "遺珠",
      "沉睡"
     ]
    },
@@ -1183,15 +1186,15 @@
       "users": 3
      },
      {
-      "ch": "Unassigned",
+      "ch": "Referral",
       "users": 3
      },
      {
-      "ch": "Referral",
-      "users": 2
+      "ch": "Cross-network",
+      "users": 1
      },
      {
-      "ch": "Cross-network",
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -1502,7 +1505,7 @@
       "users": 1
      },
      {
-      "ch": "Unassigned",
+      "ch": "Referral",
       "users": 1
      }
     ],
@@ -1650,7 +1653,7 @@
     "d7": 1,
     "d30": 2,
     "d7_prev": 0,
-    "pv30": 1,
+    "pv30": 2,
     "outbound": [],
     "channels": [
      {
@@ -1805,11 +1808,11 @@
     "d7": 1,
     "d30": 1,
     "d7_prev": 0,
-    "pv30": 0,
+    "pv30": 1,
     "outbound": [],
     "channels": [
      {
-      "ch": "Unassigned",
+      "ch": "Referral",
       "users": 1
      }
     ],
@@ -2601,12 +2604,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 157,
+    "users": 160,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 29,
+    "users": 30,
     "signups": 3
    },
    {
@@ -2626,7 +2629,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 25,
+     "users": 26,
      "signups": 1
     },
     {
@@ -2652,8 +2655,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 69,
+     "users": 70,
      "signups": 0
+    },
+    {
+     "ch": "別的網站連來",
+     "raw": "Referral",
+     "users": 8,
+     "signups": 2
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2662,16 +2671,10 @@
      "signups": 0
     },
     {
-     "ch": "別的網站連來",
-     "raw": "Referral",
-     "users": 7,
-     "signups": 1
-    },
-    {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 5,
-     "signups": 1
+     "users": 4,
+     "signups": 0
     },
     {
      "ch": "跨網路廣告",
@@ -2692,8 +2695,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 26,
-     "users": 21
+     "views": 27,
+     "users": 22
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2748,8 +2751,8 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 53,
-     "users": 7
+     "views": 58,
+     "users": 8
     },
     {
      "name": "個人習慣分析",
@@ -2760,8 +2763,14 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 9,
+     "views": 10,
      "users": 9
+    },
+    {
+     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
+     "path": "/articles/ep01-foundation/",
+     "views": 5,
+     "users": 5
     },
     {
      "name": "住在 3,000 萬的房子裡，卻不敢買貴一點的藥——退休現金流終極系",
@@ -2773,12 +2782,6 @@
      "name": "訂閱電子報",
      "path": "/newsletter/",
      "views": 5,
-     "users": 4
-    },
-    {
-     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
-     "path": "/articles/ep01-foundation/",
-     "views": 4,
      "users": 4
     },
     {
@@ -2938,7 +2941,7 @@
     },
     {
      "date": "2026-09-12",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -3109,9 +3112,9 @@
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 53,
-    "users7": 14,
-    "rate7": 7.1
+    "users30": 54,
+    "users7": 15,
+    "rate7": 6.7
    },
    "wealth": {
     "signups30": 2,
