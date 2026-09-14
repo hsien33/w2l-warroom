@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-14 07:06",
- "updated": "2026-09-14 07:06 台北",
+ "generatedAt": "2026-09-14 12:50",
+ "updated": "2026-09-14 12:50 台北",
  "yesterday_date": "2026-09-13",
  "yesterday": {
-  "users": 8,
-  "pv": 29,
+  "users": 9,
+  "pv": 30,
   "events": {
    "tool_engaged": 4,
    "tool_result": 3
@@ -18,7 +18,7 @@
     }
    },
    "wealth": {
-    "users": 5,
+    "users": 6,
     "events": {
      "tool_engaged": 3,
      "tool_result": 3
@@ -27,27 +27,27 @@
   }
  },
  "d7": {
-  "users": 49,
-  "pv": 130,
+  "users": 50,
+  "pv": 131,
   "events": {
-   "email_signup": 2,
-   "magnet_delivered": 2,
    "tool_engaged": 12,
    "tool_result": 10,
+   "email_signup": 2,
+   "magnet_delivered": 2,
    "cta_click": 1
   },
   "sites": {
    "grow": {
     "users": 17,
     "events": {
+     "tool_engaged": 4,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "tool_engaged": 4,
      "tool_result": 2
     }
    },
    "wealth": {
-    "users": 32,
+    "users": 33,
     "events": {
      "tool_engaged": 8,
      "tool_result": 8,
@@ -59,14 +59,14 @@
   }
  },
  "d30": {
-  "users": 166,
-  "pv": 351,
+  "users": 167,
+  "pv": 352,
   "events": {
+   "cta_click": 3,
    "email_signup": 4,
    "magnet_delivered": 4,
    "tool_engaged": 29,
    "tool_result": 24,
-   "cta_click": 3,
    "outbound_placement": 1,
    "card_open": 1
   },
@@ -74,23 +74,23 @@
    "grow": {
     "users": 56,
     "events": {
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "tool_engaged": 14,
      "tool_result": 10,
+     "email_signup": 2,
+     "magnet_delivered": 2,
      "cta_click": 1,
      "outbound_placement": 1,
      "card_open": 1
     }
    },
    "wealth": {
-    "users": 110,
+    "users": 111,
     "events": {
-     "tool_engaged": 15,
-     "tool_result": 14,
      "cta_click": 2,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "tool_engaged": 15,
+     "tool_result": 14
     }
    }
   }
@@ -121,13 +121,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 32,
+    "count": 33,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 8,
-    "rate": 25.0
+    "rate": 24.2
    },
    {
     "step": "Email訂閱",
@@ -146,16 +146,24 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 213,
-   "users": 158,
+   "sessions": 216,
+   "users": 159,
    "signups": 1
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 21,
+   "sessions": 23,
    "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 11,
+   "users": 8,
    "signups": 0
   },
   {
@@ -173,14 +181,6 @@
    "sessions": 10,
    "users": 9,
    "signups": 2
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 9,
-   "users": 7,
-   "signups": 0
   },
   {
    "source": "l.facebook.com",
@@ -387,7 +387,7 @@
   },
   {
    "date": "2026-09-13",
-   "users": 8,
+   "users": 9,
    "signups": 0
   }
  ],
@@ -401,7 +401,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "4.1%",
+   "value": "4.0%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -2600,12 +2600,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 158,
+    "users": 159,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 35,
     "signups": 3
    },
    {
@@ -2747,7 +2747,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 66,
+     "views": 76,
      "users": 8
     },
     {
@@ -2759,20 +2759,20 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 20,
+     "views": 21,
      "users": 3
+    },
+    {
+     "name": "餐點熱量日誌",
+     "path": "/Fitness_challenge/meals.html",
+     "views": 17,
+     "users": 1
     },
     {
      "name": "深度文章",
      "path": "/articles/",
      "views": 9,
      "users": 8
-    },
-    {
-     "name": "餐點熱量日誌",
-     "path": "/Fitness_challenge/meals.html",
-     "views": 5,
-     "users": 1
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
@@ -3095,7 +3095,7 @@
     },
     {
      "date": "2026-09-13",
-     "users": 5,
+     "users": 6,
      "signups": 0
     }
    ]
@@ -3122,9 +3122,9 @@
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 110,
-    "users7": 32,
-    "rate7": 3.1
+    "users30": 111,
+    "users7": 33,
+    "rate7": 3.0
    }
   }
  }
