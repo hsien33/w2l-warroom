@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-15 03:50",
- "updated": "2026-09-15 03:50 台北",
+ "generatedAt": "2026-09-15 07:51",
+ "updated": "2026-09-15 07:51 台北",
  "yesterday_date": "2026-09-14",
  "yesterday": {
   "users": 5,
-  "pv": 48,
+  "pv": 51,
   "events": {
    "cta_click": 1
   },
@@ -24,7 +24,7 @@
  },
  "d7": {
   "users": 50,
-  "pv": 165,
+  "pv": 168,
   "events": {
    "tool_engaged": 11,
    "tool_result": 10,
@@ -56,15 +56,15 @@
  },
  "d30": {
   "users": 172,
-  "pv": 400,
+  "pv": 403,
   "events": {
    "tool_engaged": 29,
    "tool_result": 24,
-   "cta_click": 4,
+   "card_open": 1,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "outbound_placement": 1,
-   "card_open": 1
+   "cta_click": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -72,11 +72,11 @@
     "events": {
      "tool_engaged": 14,
      "tool_result": 10,
+     "card_open": 1,
      "email_signup": 2,
      "magnet_delivered": 2,
      "cta_click": 1,
-     "outbound_placement": 1,
-     "card_open": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -142,8 +142,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 219,
-   "users": 160,
+   "sessions": 220,
+   "users": 161,
    "signups": 1
   },
   {
@@ -155,20 +155,20 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 12,
+   "users": 6,
+   "signups": 0
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 12,
    "users": 11,
    "signups": 2
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 11,
-   "users": 6,
-   "signups": 0
   },
   {
    "source": "ig",
@@ -2590,7 +2590,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 160,
+    "users": 161,
     "signups": 1
    },
    {
@@ -2615,7 +2615,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 25,
+     "users": 26,
      "signups": 1
     },
     {
@@ -2675,6 +2675,12 @@
      "signups": 0
     },
     {
+     "ch": "AI Assistant",
+     "raw": "AI Assistant",
+     "users": 1,
+     "signups": 0
+    },
+    {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
      "users": 1,
@@ -2687,8 +2693,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 30,
-     "users": 23
+     "views": 31,
+     "users": 24
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2743,7 +2749,7 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 64,
+     "views": 65,
      "users": 56
     },
     {
@@ -2767,7 +2773,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 6,
+     "views": 8,
      "users": 1
     },
     {
