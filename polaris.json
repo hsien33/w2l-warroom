@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-14 12:50",
- "updated": "2026-09-14 12:50 台北",
+ "generatedAt": "2026-09-14 20:39",
+ "updated": "2026-09-14 20:39 台北",
  "yesterday_date": "2026-09-13",
  "yesterday": {
   "users": 9,
@@ -32,18 +32,18 @@
   "events": {
    "tool_engaged": 12,
    "tool_result": 10,
+   "cta_click": 1,
    "email_signup": 2,
-   "magnet_delivered": 2,
-   "cta_click": 1
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
     "users": 17,
     "events": {
      "tool_engaged": 4,
+     "tool_result": 2,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_result": 2
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -62,11 +62,11 @@
   "users": 167,
   "pv": 352,
   "events": {
+   "tool_engaged": 29,
+   "tool_result": 24,
    "cta_click": 3,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "tool_engaged": 29,
-   "tool_result": 24,
    "outbound_placement": 1,
    "card_open": 1
   },
@@ -86,11 +86,11 @@
    "wealth": {
     "users": 111,
     "events": {
+     "tool_engaged": 15,
+     "tool_result": 14,
      "cta_click": 2,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "tool_engaged": 15,
-     "tool_result": 14
+     "magnet_delivered": 2
     }
    }
   }
@@ -146,24 +146,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 216,
-   "users": 159,
+   "sessions": 218,
+   "users": 160,
    "signups": 1
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 23,
+   "sessions": 25,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 11,
-   "users": 8,
    "signups": 0
   },
   {
@@ -178,16 +170,24 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 10,
-   "users": 9,
+   "sessions": 11,
+   "users": 10,
    "signups": 2
   },
   {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 9,
+   "sessions": 10,
    "users": 2,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 9,
+   "users": 4,
    "signups": 0
   },
   {
@@ -223,15 +223,15 @@
    "signups": 0
   },
   {
-   "source": "(data not available)",
-   "medium": "(data not available)",
-   "campaign": "(cross-network)",
+   "source": "accounts.google.com",
+   "medium": "referral",
+   "campaign": "(referral)",
    "sessions": 1,
    "users": 1,
    "signups": 0
   },
   {
-   "source": "accounts.google.com",
+   "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 1,
@@ -540,14 +540,14 @@
      },
      {
       "date": "2026-09-14",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 8,
     "d30": 27,
     "d7_prev": 7,
-    "pv30": 33,
+    "pv30": 34,
     "outbound": [],
     "channels": [
      {
@@ -861,20 +861,12 @@
     "outbound": [],
     "channels": [
      {
+      "ch": "Referral",
+      "users": 5
+     },
+     {
       "ch": "Direct",
       "users": 3
-     },
-     {
-      "ch": "Referral",
-      "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 2
-     },
-     {
-      "ch": "Cross-network",
-      "users": 1
      }
     ],
     "engaged7": 3,
@@ -1489,15 +1481,11 @@
     "outbound": [],
     "channels": [
      {
-      "ch": "Organic Search",
-      "users": 1
-     },
-     {
       "ch": "Referral",
-      "users": 1
+      "users": 2
      },
      {
-      "ch": "Unassigned",
+      "ch": "Organic Search",
       "users": 1
      }
     ],
@@ -1645,7 +1633,7 @@
     "d7": 1,
     "d30": 4,
     "d7_prev": 0,
-    "pv30": 5,
+    "pv30": 6,
     "outbound": [],
     "channels": [
      {
@@ -2600,12 +2588,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 159,
+    "users": 160,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 35,
+    "users": 32,
     "signups": 3
    },
    {
@@ -2645,25 +2633,19 @@
      "raw": "Referral",
      "users": 1,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 69,
+     "users": 70,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 10,
+     "users": 11,
      "signups": 2
     },
     {
@@ -2675,13 +2657,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 5,
-     "signups": 0
-    },
-    {
-     "ch": "跨網路廣告",
-     "raw": "Cross-network",
-     "users": 1,
+     "users": 3,
      "signups": 0
     },
     {
@@ -2746,20 +2722,20 @@
    "wealth": [
     {
      "name": "一起變輕一點",
-     "path": "/Fitness_challenge/",
-     "views": 76,
+     "path": "/Fitness_challenge/index.html",
+     "views": 82,
      "users": 8
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 53
+     "views": 63,
+     "users": 54
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 21,
+     "views": 22,
      "users": 3
     },
     {
