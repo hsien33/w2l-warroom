@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-15 12:49",
- "updated": "2026-09-15 12:49 台北",
+ "generatedAt": "2026-09-15 19:39",
+ "updated": "2026-09-15 19:39 台北",
  "yesterday_date": "2026-09-14",
  "yesterday": {
   "users": 5,
-  "pv": 51,
+  "pv": 55,
   "events": {
    "cta_click": 1
   },
@@ -24,30 +24,30 @@
  },
  "d7": {
   "users": 50,
-  "pv": 168,
+  "pv": 172,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 11,
    "tool_result": 10,
    "email_signup": 2,
-   "magnet_delivered": 2
+   "magnet_delivered": 2,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
     "users": 15,
     "events": {
      "tool_engaged": 3,
-     "tool_result": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_result": 2
     }
    },
    "wealth": {
     "users": 35,
     "events": {
-     "cta_click": 2,
      "tool_engaged": 8,
      "tool_result": 8,
+     "cta_click": 2,
      "email_signup": 1,
      "magnet_delivered": 1
     }
@@ -56,12 +56,12 @@
  },
  "d30": {
   "users": 172,
-  "pv": 403,
+  "pv": 407,
   "events": {
-   "cta_click": 4,
-   "outbound_placement": 1,
    "tool_engaged": 29,
    "tool_result": 24,
+   "cta_click": 4,
+   "outbound_placement": 1,
    "email_signup": 4,
    "magnet_delivered": 4,
    "card_open": 1
@@ -70,21 +70,21 @@
    "grow": {
     "users": 57,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
      "tool_engaged": 14,
      "tool_result": 10,
+     "cta_click": 1,
+     "outbound_placement": 1,
+     "card_open": 1,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "card_open": 1
+     "magnet_delivered": 2
     }
    },
    "wealth": {
     "users": 115,
     "events": {
-     "cta_click": 3,
      "tool_engaged": 15,
      "tool_result": 14,
+     "cta_click": 3,
      "email_signup": 2,
      "magnet_delivered": 2
     }
@@ -142,24 +142,24 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 226,
-   "users": 164,
+   "sessions": 232,
+   "users": 167,
    "signups": 1
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 29,
+   "sessions": 33,
    "users": 1,
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 16,
-   "users": 9,
+   "source": "ig",
+   "medium": "bio",
+   "campaign": "magnet-talkrescue",
+   "sessions": 12,
+   "users": 11,
    "signups": 0
   },
   {
@@ -171,19 +171,19 @@
    "signups": 2
   },
   {
-   "source": "ig",
-   "medium": "bio",
-   "campaign": "magnet-talkrescue",
-   "sessions": 11,
-   "users": 10,
-   "signups": 0
-  },
-  {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 11,
    "users": 2,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 10,
+   "users": 7,
    "signups": 0
   },
   {
@@ -2590,17 +2590,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 164,
+    "users": 167,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 38,
+    "users": 36,
     "signups": 3
    },
    {
     "label": "IG 帶來的",
-    "users": 12,
+    "users": 13,
     "signups": 0
    }
   ],
@@ -2621,7 +2621,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 18,
+     "users": 19,
      "signups": 0
     },
     {
@@ -2641,19 +2641,13 @@
      "raw": "Referral",
      "users": 1,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 70,
+     "users": 72,
      "signups": 0
     },
     {
@@ -2671,7 +2665,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 5,
+     "users": 3,
      "signups": 0
     },
     {
@@ -2693,8 +2687,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 31,
-     "users": 24
+     "views": 32,
+     "users": 25
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2743,14 +2737,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 86,
+     "views": 94,
      "users": 8
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 65,
-     "users": 56
+     "views": 66,
+     "users": 57
     },
     {
      "name": "個人習慣分析",
@@ -2761,13 +2755,7 @@
     {
      "name": "餐點熱量日誌",
      "path": "/Fitness_challenge/meals.html",
-     "views": 17,
-     "users": 1
-    },
-    {
-     "name": "每日熱量收支",
-     "path": "/Fitness_challenge/meals.html",
-     "views": 9,
+     "views": 19,
      "users": 1
     },
     {
@@ -2777,15 +2765,21 @@
      "users": 8
     },
     {
-     "name": "訂閱電子報",
-     "path": "/newsletter/",
-     "views": 6,
-     "users": 5
+     "name": "每日熱量收支",
+     "path": "/Fitness_challenge/meals.html",
+     "views": 8,
+     "users": 1
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 5,
+     "views": 6,
+     "users": 6
+    },
+    {
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 6,
      "users": 5
     }
    ]
