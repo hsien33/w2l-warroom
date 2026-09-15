@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-16 00:55",
- "updated": "2026-09-16 00:55 台北",
+ "generatedAt": "2026-09-16 05:17",
+ "updated": "2026-09-16 05:17 台北",
  "yesterday_date": "2026-09-15",
  "yesterday": {
   "users": 8,
-  "pv": 21,
+  "pv": 22,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1
@@ -26,7 +26,7 @@
  },
  "d7": {
   "users": 56,
-  "pv": 190,
+  "pv": 191,
   "events": {
    "tool_engaged": 12,
    "tool_result": 11,
@@ -58,7 +58,7 @@
  },
  "d30": {
   "users": 174,
-  "pv": 416,
+  "pv": 417,
   "events": {
    "tool_engaged": 25,
    "tool_result": 20,
@@ -82,11 +82,11 @@
    "wealth": {
     "users": 114,
     "events": {
+     "tool_engaged": 15,
+     "tool_result": 14,
      "cta_click": 3,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "tool_engaged": 15,
-     "tool_result": 14
+     "magnet_delivered": 2
     }
    }
   }
@@ -2761,7 +2761,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 10,
+     "views": 11,
      "users": 1
     },
     {
