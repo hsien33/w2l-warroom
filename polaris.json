@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-16 12:45",
- "updated": "2026-09-16 12:45 台北",
+ "generatedAt": "2026-09-16 19:26",
+ "updated": "2026-09-16 19:26 台北",
  "yesterday_date": "2026-09-15",
  "yesterday": {
   "users": 8,
@@ -28,20 +28,20 @@
   "users": 56,
   "pv": 191,
   "events": {
+   "email_signup": 2,
+   "magnet_delivered": 2,
    "tool_engaged": 12,
    "tool_result": 11,
-   "cta_click": 2,
-   "email_signup": 2,
-   "magnet_delivered": 2
+   "cta_click": 2
   },
   "sites": {
    "grow": {
     "users": 19,
     "events": {
-     "tool_engaged": 4,
-     "tool_result": 3,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 4,
+     "tool_result": 3
     }
    },
    "wealth": {
@@ -62,10 +62,10 @@
   "events": {
    "tool_engaged": 25,
    "tool_result": 20,
-   "cta_click": 4,
-   "outbound_placement": 1,
    "email_signup": 3,
-   "magnet_delivered": 3
+   "magnet_delivered": 3,
+   "cta_click": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -73,10 +73,10 @@
     "events": {
      "tool_engaged": 10,
      "tool_result": 6,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -142,15 +142,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 230,
-   "users": 164,
+   "sessions": 241,
+   "users": 170,
    "signups": 1
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 37,
+   "sessions": 40,
    "users": 1,
    "signups": 0
   },
@@ -158,8 +158,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 13,
-   "users": 7,
+   "sessions": 25,
+   "users": 13,
    "signups": 0
   },
   {
@@ -187,6 +187,14 @@
    "signups": 2
   },
   {
+   "source": "tw.search.yahoo.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 6,
+   "users": 6,
+   "signups": 0
+  },
+  {
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
@@ -195,11 +203,19 @@
    "signups": 0
   },
   {
-   "source": "tw.search.yahoo.com",
+   "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 5,
-   "users": 5,
+   "sessions": 4,
+   "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "l.instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 4,
+   "users": 4,
    "signups": 0
   },
   {
@@ -211,25 +227,9 @@
    "signups": 0
   },
   {
-   "source": "instagram.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 3,
-   "users": 2,
-   "signups": 0
-  },
-  {
    "source": "(data not available)",
    "medium": "(data not available)",
    "campaign": "(cross-network)",
-   "sessions": 1,
-   "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "accounts.google.com",
-   "medium": "referral",
-   "campaign": "(referral)",
    "sessions": 1,
    "users": 1,
    "signups": 0
@@ -536,14 +536,14 @@
      },
      {
       "date": "2026-09-16",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 9,
     "d30": 30,
     "d7_prev": 6,
-    "pv30": 32,
+    "pv30": 33,
     "outbound": [],
     "channels": [
      {
@@ -1007,22 +1007,26 @@
      },
      {
       "date": "2026-09-16",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 4,
     "d7_prev": 0,
-    "pv30": 5,
+    "pv30": 6,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Search",
-      "users": 3
+      "users": 4
      },
      {
       "ch": "Referral",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -1628,10 +1632,10 @@
      },
      {
       "date": "2026-09-16",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 4,
     "d7_prev": 0,
@@ -1640,7 +1644,7 @@
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      },
      {
       "ch": "Organic Social",
@@ -2590,21 +2594,21 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 164,
+    "users": 170,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 40,
     "signups": 2
    },
    {
     "label": "IG 帶來的",
-    "users": 13,
+    "users": 18,
     "signups": 0
    }
   ],
-  "ig_share": 6,
+  "ig_share": 8,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 2 位、一切正常",
   "signup_total_30d": 3
@@ -2615,7 +2619,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 26,
+     "users": 27,
      "signups": 1
     },
     {
@@ -2647,7 +2651,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 68,
+     "users": 69,
      "signups": 0
     },
     {
@@ -2659,13 +2663,13 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 6,
+     "users": 7,
      "signups": 0
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2693,8 +2697,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 10,
-     "users": 3
+     "views": 11,
+     "users": 4
     },
     {
      "name": "父子對決 ‧ 30 天衝粉賭局",
@@ -2737,8 +2741,8 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 96,
-     "users": 8
+     "views": 103,
+     "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
@@ -2761,7 +2765,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 11,
+     "views": 14,
      "users": 1
     },
     {
