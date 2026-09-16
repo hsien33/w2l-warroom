@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-17 00:49",
- "updated": "2026-09-17 00:49 台北",
+ "generatedAt": "2026-09-17 05:14",
+ "updated": "2026-09-17 05:14 台北",
  "yesterday_date": "2026-09-16",
  "yesterday": {
   "users": 6,
-  "pv": 18,
+  "pv": 19,
   "events": {},
   "sites": {
    "grow": {
@@ -20,30 +20,30 @@
  },
  "d7": {
   "users": 54,
-  "pv": 191,
+  "pv": 192,
   "events": {
-   "email_signup": 2,
-   "magnet_delivered": 2,
+   "cta_click": 2,
    "tool_engaged": 12,
    "tool_result": 11,
-   "cta_click": 2
+   "email_signup": 2,
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
     "users": 19,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 4,
-     "tool_result": 3
+     "tool_result": 3,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 35,
     "events": {
+     "cta_click": 2,
      "tool_engaged": 8,
      "tool_result": 8,
-     "cta_click": 2,
      "email_signup": 1,
      "magnet_delivered": 1
     }
@@ -52,25 +52,25 @@
  },
  "d30": {
   "users": 178,
-  "pv": 430,
+  "pv": 431,
   "events": {
    "tool_engaged": 25,
-   "email_signup": 3,
-   "magnet_delivered": 3,
    "tool_result": 20,
    "cta_click": 4,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "email_signup": 3,
+   "magnet_delivered": 3
   },
   "sites": {
    "grow": {
     "users": 61,
     "events": {
      "tool_engaged": 10,
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_result": 6,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -136,7 +136,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 242,
+   "sessions": 244,
    "users": 170,
    "signups": 1
   },
@@ -152,7 +152,7 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 17,
+   "sessions": 18,
    "users": 10,
    "signups": 0
   },
@@ -2746,7 +2746,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 15,
+     "views": 16,
      "users": 2
     },
     {
