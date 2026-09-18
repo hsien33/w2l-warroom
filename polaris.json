@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-18 05:18",
- "updated": "2026-09-18 05:18 台北",
+ "generatedAt": "2026-09-18 12:38",
+ "updated": "2026-09-18 12:38 台北",
  "yesterday_date": "2026-09-17",
  "yesterday": {
   "users": 8,
@@ -35,18 +35,18 @@
   "events": {
    "tool_engaged": 13,
    "tool_result": 12,
-   "cta_click": 2,
    "email_signup": 8,
-   "magnet_delivered": 3
+   "magnet_delivered": 3,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
     "users": 19,
     "events": {
      "tool_engaged": 5,
-     "tool_result": 4,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_result": 4
     }
    },
    "wealth": {
@@ -67,21 +67,21 @@
   "events": {
    "tool_engaged": 26,
    "tool_result": 21,
-   "cta_click": 4,
-   "outbound_placement": 1,
    "email_signup": 9,
-   "magnet_delivered": 4
+   "magnet_delivered": 4,
+   "cta_click": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 62,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
      "tool_engaged": 11,
-     "tool_result": 7,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_result": 7,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -147,7 +147,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 251,
+   "sessions": 256,
    "users": 171,
    "signups": 1
   },
@@ -155,7 +155,7 @@
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 43,
+   "sessions": 45,
    "users": 1,
    "signups": 0
   },
@@ -166,6 +166,14 @@
    "sessions": 15,
    "users": 12,
    "signups": 1
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 13,
+   "users": 9,
+   "signups": 5
   },
   {
    "source": "w-alchemy.kit.com",
@@ -182,14 +190,6 @@
    "sessions": 10,
    "users": 2,
    "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 9,
-   "users": 7,
-   "signups": 5
   },
   {
    "source": "instagram.com",
@@ -2745,7 +2745,7 @@
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 36,
     "signups": 7
    },
    {
@@ -2823,7 +2823,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 5,
      "signups": 5
     },
     {
@@ -2895,7 +2895,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 111,
+     "views": 118,
      "users": 9
     },
     {
@@ -2907,13 +2907,13 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 30,
+     "views": 33,
      "users": 3
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 22,
+     "views": 24,
      "users": 3
     },
     {
