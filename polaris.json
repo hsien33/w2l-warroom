@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-19 18:53",
- "updated": "2026-09-19 18:53 台北",
+ "generatedAt": "2026-09-19 23:50",
+ "updated": "2026-09-19 23:50 台北",
  "yesterday_date": "2026-09-18",
  "yesterday": {
   "users": 8,
@@ -45,11 +45,11 @@
    "wealth": {
     "users": 39,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 8,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "cta_click": 2
+     "cta_click": 2,
+     "tool_engaged": 8,
+     "tool_result": 8
     }
    }
   }
@@ -58,33 +58,33 @@
   "users": 183,
   "pv": 473,
   "events": {
-   "cta_click": 4,
-   "outbound_placement": 1,
+   "email_signup": 4,
+   "magnet_delivered": 4,
    "tool_engaged": 28,
    "tool_result": 23,
-   "email_signup": 4,
-   "magnet_delivered": 4
+   "cta_click": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 64,
     "events": {
-     "cta_click": 1,
-     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "tool_engaged": 13,
      "tool_result": 9,
-     "email_signup": 1,
-     "magnet_delivered": 1
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 119,
     "events": {
+     "email_signup": 3,
+     "magnet_delivered": 3,
      "tool_engaged": 15,
      "tool_result": 14,
-     "cta_click": 3,
-     "email_signup": 3,
-     "magnet_delivered": 3
+     "cta_click": 3
     }
    }
   }
@@ -148,7 +148,7 @@
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 46,
+   "sessions": 47,
    "users": 1,
    "signups": 0
   },
@@ -193,6 +193,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 4,
+   "signups": 0
+  },
+  {
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
@@ -206,14 +214,6 @@
    "campaign": "(referral)",
    "sessions": 5,
    "users": 5,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
-   "users": 3,
    "signups": 0
   },
   {
@@ -2738,7 +2738,7 @@
    },
    {
     "label": "其他",
-    "users": 29,
+    "users": 30,
     "signups": 2
    },
    {
@@ -2800,16 +2800,16 @@
      "signups": 0
     },
     {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
+     "signups": 0
+    },
+    {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
      "users": 2,
      "signups": 1
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
-     "signups": 0
     },
     {
      "ch": "AI Assistant",
@@ -2874,7 +2874,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 123,
+     "views": 124,
      "users": 9
     },
     {
