@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-20 06:59",
- "updated": "2026-09-20 06:59 台北",
+ "generatedAt": "2026-09-20 12:49",
+ "updated": "2026-09-20 12:49 台北",
  "yesterday_date": "2026-09-19",
  "yesterday": {
-  "users": 3,
-  "pv": 7,
+  "users": 4,
+  "pv": 8,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 3,
+    "users": 4,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 47,
-  "pv": 186,
+  "users": 48,
+  "pv": 187,
   "events": {
    "tool_engaged": 8,
    "tool_result": 7,
@@ -37,20 +37,20 @@
     }
    },
    "wealth": {
-    "users": 33,
+    "users": 34,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
  },
  "d30": {
-  "users": 179,
-  "pv": 471,
+  "users": 180,
+  "pv": 472,
   "events": {
    "tool_engaged": 28,
    "tool_result": 23,
@@ -65,14 +65,14 @@
     "events": {
      "tool_engaged": 13,
      "tool_result": 9,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
-    "users": 118,
+    "users": 119,
     "events": {
      "cta_click": 3,
      "email_signup": 3,
@@ -109,13 +109,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 33,
+    "count": 34,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 3,
-    "rate": 9.1
+    "rate": 8.8
    },
    {
     "step": "Email訂閱",
@@ -134,15 +134,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 262,
-   "users": 169,
+   "sessions": 266,
+   "users": 171,
    "signups": 1
   },
   {
    "source": "hpanel.hostinger.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 47,
+   "sessions": 51,
    "users": 1,
    "signups": 0
   },
@@ -375,7 +375,7 @@
   },
   {
    "date": "2026-09-19",
-   "users": 3,
+   "users": 4,
    "signups": 0
   }
  ],
@@ -1613,14 +1613,14 @@
      },
      {
       "date": "2026-09-20",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 3,
     "d7_prev": 1,
-    "pv30": 4,
+    "pv30": 5,
     "outbound": [],
     "channels": [
      {
@@ -1628,7 +1628,15 @@
       "users": 2
      },
      {
+      "ch": "Direct",
+      "users": 1
+     },
+     {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2725,7 +2733,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 169,
+    "users": 171,
     "signups": 1
    },
    {
@@ -2784,7 +2792,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 62,
+     "users": 64,
      "signups": 0
     },
     {
@@ -2802,7 +2810,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2874,25 +2882,25 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 124,
+     "views": 126,
      "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 60,
-     "users": 51
+     "views": 61,
+     "users": 53
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 32,
+     "views": 33,
      "users": 3
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 21,
+     "views": 22,
      "users": 3
     },
     {
@@ -3222,7 +3230,7 @@
     },
     {
      "date": "2026-09-19",
-     "users": 3,
+     "users": 4,
      "signups": 0
     }
    ]
@@ -3249,9 +3257,9 @@
     "signups30": 3,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 118,
-    "users7": 33,
-    "rate7": 3.0
+    "users30": 119,
+    "users7": 34,
+    "rate7": 2.9
    }
   }
  }
