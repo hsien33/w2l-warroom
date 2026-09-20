@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-21 00:01",
- "updated": "2026-09-21 00:01 台北",
+ "generatedAt": "2026-09-21 04:45",
+ "updated": "2026-09-21 04:45 台北",
  "yesterday_date": "2026-09-20",
  "yesterday": {
   "users": 6,
-  "pv": 11,
+  "pv": 15,
   "events": {
    "cta_click": 1
   },
@@ -24,13 +24,13 @@
  },
  "d7": {
   "users": 45,
-  "pv": 168,
+  "pv": 172,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 4,
    "tool_result": 4,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 2
   },
   "sites": {
    "grow": {
@@ -43,22 +43,22 @@
    "wealth": {
     "users": 34,
     "events": {
-     "cta_click": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 2
     }
    }
   }
  },
  "d30": {
   "users": 182,
-  "pv": 476,
+  "pv": 480,
   "events": {
-   "cta_click": 5,
    "tool_engaged": 27,
    "tool_result": 23,
    "email_signup": 4,
    "magnet_delivered": 4,
+   "cta_click": 5,
    "outbound_placement": 1
   },
   "sites": {
@@ -67,20 +67,20 @@
     "events": {
      "tool_engaged": 12,
      "tool_result": 9,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 122,
     "events": {
-     "cta_click": 4,
      "email_signup": 3,
      "magnet_delivered": 3,
      "tool_engaged": 15,
-     "tool_result": 14
+     "tool_result": 14,
+     "cta_click": 4
     }
    }
   }
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 269,
-   "users": 170,
+   "sessions": 270,
+   "users": 171,
    "signups": 1
   },
   {
@@ -2726,7 +2726,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 170,
+    "users": 171,
     "signups": 1
    },
    {
@@ -2785,7 +2785,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 63,
+     "users": 64,
      "signups": 0
     },
     {
@@ -2797,7 +2797,7 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 6,
+     "users": 7,
      "signups": 0
     },
     {
@@ -2875,7 +2875,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 128,
+     "views": 132,
      "users": 9
     },
     {
@@ -2909,16 +2909,16 @@
      "users": 7
     },
     {
+     "name": "從 0 到 1 學習地圖",
+     "path": "/start/",
+     "views": 7,
+     "users": 6
+    },
+    {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
      "views": 6,
      "users": 6
-    },
-    {
-     "name": "從 0 到 1 學習地圖",
-     "path": "/start/",
-     "views": 6,
-     "users": 5
     }
    ]
   },
