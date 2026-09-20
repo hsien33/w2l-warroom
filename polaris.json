@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-20 12:49",
- "updated": "2026-09-20 12:49 台北",
+ "generatedAt": "2026-09-20 19:17",
+ "updated": "2026-09-20 19:17 台北",
  "yesterday_date": "2026-09-19",
  "yesterday": {
   "users": 4,
@@ -24,9 +24,9 @@
   "events": {
    "tool_engaged": 8,
    "tool_result": 7,
-   "cta_click": 1,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -39,11 +39,11 @@
    "wealth": {
     "users": 34,
     "events": {
-     "cta_click": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
      "tool_engaged": 3,
-     "tool_result": 3
+     "tool_result": 3,
+     "cta_click": 1
     }
    }
   }
@@ -134,8 +134,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 266,
-   "users": 171,
+   "sessions": 270,
+   "users": 172,
    "signups": 1
   },
   {
@@ -158,8 +158,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 10,
-   "users": 6,
+   "sessions": 12,
+   "users": 8,
    "signups": 0
   },
   {
@@ -2733,12 +2733,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 171,
+    "users": 172,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 32,
+    "users": 34,
     "signups": 2
    },
    {
@@ -2747,7 +2747,7 @@
     "signups": 1
    }
   ],
-  "ig_share": 9,
+  "ig_share": 8,
   "cards": [
    {
     "level": "red",
@@ -2792,7 +2792,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 64,
+     "users": 65,
      "signups": 0
     },
     {
@@ -2810,7 +2810,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 5,
      "signups": 0
     },
     {
@@ -2882,7 +2882,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 126,
+     "views": 127,
      "users": 9
     },
     {
@@ -2922,9 +2922,9 @@
      "users": 6
     },
     {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 5,
+     "name": "從 0 到 1 學習地圖",
+     "path": "/start/",
+     "views": 6,
      "users": 5
     }
    ]
