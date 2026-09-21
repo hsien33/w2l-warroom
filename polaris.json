@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-21 07:13",
- "updated": "2026-09-21 07:13 台北",
+ "generatedAt": "2026-09-21 12:50",
+ "updated": "2026-09-21 12:50 台北",
  "yesterday_date": "2026-09-20",
  "yesterday": {
   "users": 6,
-  "pv": 15,
+  "pv": 16,
   "events": {
    "cta_click": 1
   },
@@ -24,11 +24,11 @@
  },
  "d7": {
   "users": 45,
-  "pv": 172,
+  "pv": 173,
   "events": {
-   "cta_click": 2,
    "tool_engaged": 4,
    "tool_result": 4,
+   "cta_click": 2,
    "email_signup": 1,
    "magnet_delivered": 1
   },
@@ -52,7 +52,7 @@
  },
  "d30": {
   "users": 182,
-  "pv": 480,
+  "pv": 481,
   "events": {
    "tool_engaged": 27,
    "tool_result": 23,
@@ -67,20 +67,20 @@
     "events": {
      "tool_engaged": 12,
      "tool_result": 9,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 122,
     "events": {
-     "tool_engaged": 15,
-     "tool_result": 14,
      "cta_click": 4,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 15,
+     "tool_result": 14
     }
    }
   }
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 270,
-   "users": 171,
+   "sessions": 273,
+   "users": 173,
    "signups": 1
   },
   {
@@ -152,8 +152,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 15,
-   "users": 10,
+   "sessions": 18,
+   "users": 12,
    "signups": 0
   },
   {
@@ -165,20 +165,20 @@
    "signups": 1
   },
   {
+   "source": "w-alchemy.kit.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 11,
+   "users": 10,
+   "signups": 2
+  },
+  {
    "source": "l.facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 10,
    "users": 2,
    "signups": 0
-  },
-  {
-   "source": "w-alchemy.kit.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 10,
-   "users": 9,
-   "signups": 2
   },
   {
    "source": "instagram.com",
@@ -2726,12 +2726,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 171,
+    "users": 173,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 36,
+    "users": 39,
     "signups": 2
    },
    {
@@ -2785,13 +2785,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 64,
+     "users": 65,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 11,
+     "users": 12,
      "signups": 2
     },
     {
@@ -2803,7 +2803,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 6,
+     "users": 7,
      "signups": 0
     },
     {
@@ -2875,14 +2875,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 132,
+     "views": 135,
      "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 58,
-     "users": 50
+     "views": 59,
+     "users": 51
     },
     {
      "name": "個人習慣分析",
@@ -2893,7 +2893,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 22,
+     "views": 23,
      "users": 3
     },
     {
@@ -2911,8 +2911,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 7,
-     "users": 6
+     "views": 8,
+     "users": 7
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
