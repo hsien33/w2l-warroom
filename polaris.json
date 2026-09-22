@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-22 03:58",
- "updated": "2026-09-22 03:58 台北",
+ "generatedAt": "2026-09-22 08:03",
+ "updated": "2026-09-22 08:03 台北",
  "yesterday_date": "2026-09-21",
  "yesterday": {
   "users": 7,
@@ -50,21 +50,21 @@
   "users": 186,
   "pv": 497,
   "events": {
+   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
    "tool_engaged": 27,
    "tool_result": 23,
-   "cta_click": 5,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 61,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 12,
      "tool_result": 9,
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "cta_click": 1,
      "outbound_placement": 1
     }
@@ -177,6 +177,14 @@
    "signups": 0
   },
   {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 6,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -198,14 +206,6 @@
    "campaign": "(organic)",
    "sessions": 5,
    "users": 5,
-   "signups": 0
-  },
-  {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 5,
-   "users": 2,
    "signups": 0
   },
   {
@@ -2888,7 +2888,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 26,
+     "views": 27,
      "users": 3
     },
     {
