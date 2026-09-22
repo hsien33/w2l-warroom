@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-23 00:53",
- "updated": "2026-09-23 00:53 台北",
+ "generatedAt": "2026-09-23 05:15",
+ "updated": "2026-09-23 05:15 台北",
  "yesterday_date": "2026-09-22",
  "yesterday": {
   "users": 7,
@@ -24,9 +24,9 @@
   "events": {
    "tool_engaged": 3,
    "tool_result": 3,
-   "cta_click": 1,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -39,9 +39,9 @@
    "wealth": {
     "users": 37,
     "events": {
-     "cta_click": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1
     }
    }
   }
@@ -51,32 +51,32 @@
   "pv": 499,
   "events": {
    "cta_click": 5,
-   "tool_engaged": 23,
-   "tool_result": 20,
+   "outbound_placement": 1,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "outbound_placement": 1
+   "tool_engaged": 23,
+   "tool_result": 20
   },
   "sites": {
    "grow": {
     "users": 63,
     "events": {
+     "cta_click": 1,
+     "outbound_placement": 1,
      "tool_engaged": 12,
      "tool_result": 9,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 125,
     "events": {
      "cta_click": 4,
-     "tool_engaged": 11,
-     "tool_result": 11,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 11,
+     "tool_result": 11
     }
    }
   }
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 279,
-   "users": 173,
+   "sessions": 281,
+   "users": 175,
    "signups": 1
   },
   {
@@ -2412,7 +2412,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 173,
+    "users": 175,
     "signups": 1
    },
    {
@@ -2474,7 +2474,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 60,
+     "users": 62,
      "signups": 0
     },
     {
@@ -2570,8 +2570,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 56,
-     "users": 47
+     "views": 58,
+     "users": 49
     },
     {
      "name": "個人習慣分析",
