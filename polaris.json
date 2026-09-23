@@ -1,15 +1,15 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-23 12:40",
- "updated": "2026-09-23 12:40 台北",
+ "generatedAt": "2026-09-23 19:29",
+ "updated": "2026-09-23 19:29 台北",
  "yesterday_date": "2026-09-22",
  "yesterday": {
-  "users": 7,
-  "pv": 16,
+  "users": 8,
+  "pv": 19,
   "events": {},
   "sites": {
    "grow": {
-    "users": 2,
+    "users": 3,
     "events": {}
    },
    "wealth": {
@@ -19,18 +19,18 @@
   }
  },
  "d7": {
-  "users": 46,
-  "pv": 134,
+  "users": 47,
+  "pv": 137,
   "events": {
+   "cta_click": 1,
    "tool_engaged": 3,
    "tool_result": 3,
-   "cta_click": 1,
    "email_signup": 1,
    "magnet_delivered": 1
   },
   "sites": {
    "grow": {
-    "users": 9,
+    "users": 10,
     "events": {
      "tool_engaged": 3,
      "tool_result": 3
@@ -47,34 +47,34 @@
   }
  },
  "d30": {
-  "users": 188,
-  "pv": 500,
+  "users": 189,
+  "pv": 503,
   "events": {
-   "cta_click": 5,
    "tool_engaged": 23,
    "tool_result": 20,
+   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 63,
+    "users": 64,
     "events": {
      "tool_engaged": 12,
      "tool_result": 9,
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 125,
     "events": {
-     "cta_click": 4,
      "tool_engaged": 11,
      "tool_result": 11,
+     "cta_click": 4,
      "email_signup": 3,
      "magnet_delivered": 3
     }
@@ -85,7 +85,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 9,
+    "count": 10,
     "rate": null
    },
    {
@@ -132,7 +132,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 286,
+   "sessions": 288,
    "users": 178,
    "signups": 1
   },
@@ -145,6 +145,14 @@
    "signups": 0
   },
   {
+   "source": "w-alchemy.kit.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 15,
+   "users": 13,
+   "signups": 2
+  },
+  {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
@@ -153,19 +161,11 @@
    "signups": 1
   },
   {
-   "source": "w-alchemy.kit.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 13,
-   "users": 11,
-   "signups": 2
-  },
-  {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
    "sessions": 11,
-   "users": 8,
+   "users": 6,
    "signups": 0
   },
   {
@@ -180,7 +180,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 7,
+   "sessions": 9,
    "users": 2,
    "signups": 0
   },
@@ -373,7 +373,7 @@
   },
   {
    "date": "2026-09-22",
-   "users": 7,
+   "users": 8,
    "signups": 0
   }
  ],
@@ -387,7 +387,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.2%",
+   "value": "2.1%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -834,7 +834,7 @@
      },
      {
       "date": "2026-09-22",
-      "users": 0
+      "users": 1
      },
      {
       "date": "2026-09-23",
@@ -842,10 +842,10 @@
      }
     ],
     "today": 0,
-    "d7": 2,
-    "d30": 4,
+    "d7": 3,
+    "d30": 5,
     "d7_prev": 1,
-    "pv30": 3,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
@@ -854,7 +854,7 @@
      },
      {
       "ch": "Organic Social",
-      "users": 1
+      "users": 2
      },
      {
       "ch": "Referral",
@@ -867,9 +867,7 @@
     "outbound30": 0,
     "engage_rate": 0,
     "finish_rate": null,
-    "badges": [
-     "沉睡"
-    ]
+    "badges": []
    },
    {
     "slug": "fire",
@@ -1013,11 +1011,7 @@
      },
      {
       "ch": "Referral",
-      "users": 2
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
+      "users": 3
      }
     ],
     "engaged7": 0,
@@ -2448,7 +2442,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 20,
+     "users": 21,
      "signups": 0
     },
     {
@@ -2460,12 +2454,6 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 1,
-     "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -2480,7 +2468,7 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 13,
+     "users": 15,
      "signups": 2
     },
     {
@@ -2492,7 +2480,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2564,25 +2552,25 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 147,
+     "views": 153,
      "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 60,
-     "users": 51
+     "views": 62,
+     "users": 52
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 33,
+     "views": 35,
      "users": 3
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 32,
+     "views": 33,
      "users": 3
     },
     {
@@ -2604,9 +2592,9 @@
      "users": 7
     },
     {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 5,
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 6,
      "users": 5
     }
    ]
@@ -2760,7 +2748,7 @@
     },
     {
      "date": "2026-09-22",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2931,8 +2919,8 @@
     "signups30": 1,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 63,
-    "users7": 9,
+    "users30": 64,
+    "users7": 10,
     "rate7": 0.0
    },
    "wealth": {
