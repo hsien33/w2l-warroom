@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-25 01:06",
- "updated": "2026-09-25 01:06 台北",
+ "generatedAt": "2026-09-25 05:28",
+ "updated": "2026-09-25 05:28 台北",
  "yesterday_date": "2026-09-24",
  "yesterday": {
   "users": 5,
-  "pv": 13,
+  "pv": 15,
   "events": {},
   "sites": {
    "grow": {
@@ -20,11 +20,11 @@
  },
  "d7": {
   "users": 47,
-  "pv": 120,
+  "pv": 122,
   "events": {
-   "cta_click": 1,
    "tool_engaged": 2,
-   "tool_result": 2
+   "tool_result": 2,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -44,13 +44,13 @@
  },
  "d30": {
   "users": 195,
-  "pv": 527,
+  "pv": 529,
   "events": {
-   "cta_click": 5,
-   "email_signup": 4,
-   "magnet_delivered": 4,
    "tool_engaged": 22,
    "tool_result": 20,
+   "email_signup": 4,
+   "magnet_delivered": 4,
+   "cta_click": 5,
    "outbound_placement": 1
   },
   "sites": {
@@ -59,20 +59,20 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 9,
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 135,
     "events": {
-     "cta_click": 4,
+     "tool_engaged": 11,
+     "tool_result": 11,
      "email_signup": 3,
      "magnet_delivered": 3,
-     "tool_engaged": 11,
-     "tool_result": 11
+     "cta_click": 4
     }
    }
   }
@@ -152,7 +152,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 13,
+   "sessions": 14,
    "users": 2,
    "signups": 0
   },
@@ -2564,13 +2564,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 155,
+     "views": 156,
      "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 61,
+     "views": 62,
      "users": 52
     },
     {
