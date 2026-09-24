@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-24 12:43",
- "updated": "2026-09-24 12:43 台北",
+ "generatedAt": "2026-09-24 19:40",
+ "updated": "2026-09-24 19:40 台北",
  "yesterday_date": "2026-09-23",
  "yesterday": {
   "users": 9,
-  "pv": 30,
+  "pv": 23,
   "events": {},
   "sites": {
    "grow": {
@@ -20,7 +20,7 @@
  },
  "d7": {
   "users": 50,
-  "pv": 149,
+  "pv": 142,
   "events": {
    "tool_engaged": 3,
    "tool_result": 3,
@@ -48,7 +48,7 @@
  },
  "d30": {
   "users": 195,
-  "pv": 527,
+  "pv": 520,
   "events": {
    "tool_engaged": 22,
    "tool_result": 20,
@@ -72,10 +72,10 @@
    "wealth": {
     "users": 133,
     "events": {
-     "tool_engaged": 11,
-     "tool_result": 11,
      "email_signup": 3,
      "magnet_delivered": 3,
+     "tool_engaged": 11,
+     "tool_result": 11,
      "cta_click": 4
     }
    }
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 293,
-   "users": 181,
+   "sessions": 299,
+   "users": 184,
    "signups": 1
   },
   {
@@ -153,28 +153,20 @@
    "signups": 2
   },
   {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 13,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
    "sessions": 13,
    "users": 10,
    "signups": 1
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 12,
-   "users": 6,
-   "signups": 0
-  },
-  {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 11,
-   "users": 2,
-   "signups": 0
   },
   {
    "source": "l.facebook.com",
@@ -206,6 +198,14 @@
    "campaign": "(referral)",
    "sessions": 6,
    "users": 6,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 5,
+   "users": 5,
    "signups": 0
   },
   {
@@ -2408,12 +2408,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 181,
+    "users": 184,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 33,
     "signups": 2
    },
    {
@@ -2472,7 +2472,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 65,
+     "users": 67,
      "signups": 0
     },
     {
@@ -2490,7 +2490,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 3,
      "signups": 0
     },
     {
@@ -2562,14 +2562,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 155,
+     "views": 151,
      "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 61,
-     "users": 52
+     "views": 62,
+     "users": 53
     },
     {
      "name": "每日熱量收支",
@@ -2590,16 +2590,16 @@
      "users": 1
     },
     {
+     "name": "從 0 到 1 學習地圖",
+     "path": "/start/",
+     "views": 13,
+     "users": 9
+    },
+    {
      "name": "深度文章",
      "path": "/articles/",
      "views": 8,
      "users": 7
-    },
-    {
-     "name": "從 0 到 1 學習地圖",
-     "path": "/start/",
-     "views": 8,
-     "users": 8
     },
     {
      "name": "訂閱電子報",
