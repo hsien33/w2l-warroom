@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-26 01:06",
- "updated": "2026-09-26 01:06 台北",
+ "generatedAt": "2026-09-26 05:31",
+ "updated": "2026-09-26 05:31 台北",
  "yesterday_date": "2026-09-25",
  "yesterday": {
-  "users": 8,
-  "pv": 21,
+  "users": 9,
+  "pv": 22,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1
@@ -16,7 +16,7 @@
     "events": {}
    },
    "wealth": {
-    "users": 6,
+    "users": 7,
     "events": {
      "tool_engaged": 1,
      "tool_result": 1
@@ -25,8 +25,8 @@
   }
  },
  "d7": {
-  "users": 47,
-  "pv": 118,
+  "users": 48,
+  "pv": 119,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1,
@@ -38,7 +38,7 @@
     "events": {}
    },
    "wealth": {
-    "users": 41,
+    "users": 42,
     "events": {
      "tool_engaged": 1,
      "tool_result": 1,
@@ -48,34 +48,34 @@
   }
  },
  "d30": {
-  "users": 199,
-  "pv": 541,
+  "users": 200,
+  "pv": 542,
   "events": {
    "tool_engaged": 23,
    "tool_result": 21,
-   "email_signup": 4,
-   "magnet_delivered": 4,
    "cta_click": 5,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "email_signup": 4,
+   "magnet_delivered": 4
   },
   "sites": {
    "grow": {
     "users": 59,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 11,
      "tool_result": 9,
      "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 140,
+    "users": 141,
     "events": {
+     "cta_click": 4,
      "tool_engaged": 12,
      "tool_result": 12,
-     "cta_click": 4,
      "email_signup": 3,
      "magnet_delivered": 3
     }
@@ -108,7 +108,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 41,
+    "count": 42,
     "rate": null
    },
    {
@@ -133,8 +133,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 299,
-   "users": 180,
+   "sessions": 300,
+   "users": 181,
    "signups": 1
   },
   {
@@ -374,7 +374,7 @@
   },
   {
    "date": "2026-09-25",
-   "users": 8,
+   "users": 9,
    "signups": 0
   }
  ],
@@ -2411,7 +2411,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 180,
+    "users": 181,
     "signups": 1
    },
    {
@@ -2434,7 +2434,7 @@
   "cards": [
    {
     "level": "red",
-    "what": "這 7 天有 47 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 48 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -2475,7 +2475,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 65,
+     "users": 66,
      "signups": 0
     },
     {
@@ -2595,8 +2595,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 9,
-     "users": 9
+     "views": 10,
+     "users": 10
     },
     {
      "name": "深度文章",
@@ -2913,7 +2913,7 @@
     },
     {
      "date": "2026-09-25",
-     "users": 6,
+     "users": 7,
      "signups": 0
     }
    ]
@@ -2940,8 +2940,8 @@
     "signups30": 3,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 140,
-    "users7": 41,
+    "users30": 141,
+    "users7": 42,
     "rate7": 0.0
    }
   }
