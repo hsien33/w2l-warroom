@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-25 12:52",
- "updated": "2026-09-25 12:52 台北",
+ "generatedAt": "2026-09-25 19:46",
+ "updated": "2026-09-25 19:46 台北",
  "yesterday_date": "2026-09-24",
  "yesterday": {
   "users": 5,
-  "pv": 16,
+  "pv": 11,
   "events": {},
   "sites": {
    "grow": {
@@ -20,11 +20,11 @@
  },
  "d7": {
   "users": 47,
-  "pv": 123,
+  "pv": 118,
   "events": {
-   "cta_click": 1,
    "tool_engaged": 2,
-   "tool_result": 2
+   "tool_result": 2,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -44,25 +44,25 @@
  },
  "d30": {
   "users": 195,
-  "pv": 530,
+  "pv": 525,
   "events": {
+   "cta_click": 5,
+   "outbound_placement": 1,
    "tool_engaged": 22,
    "tool_result": 20,
-   "cta_click": 5,
    "email_signup": 4,
-   "magnet_delivered": 4,
-   "outbound_placement": 1
+   "magnet_delivered": 4
   },
   "sites": {
    "grow": {
     "users": 60,
     "events": {
+     "cta_click": 1,
+     "outbound_placement": 1,
      "tool_engaged": 11,
      "tool_result": 9,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -128,8 +128,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 297,
-   "users": 180,
+   "sessions": 302,
+   "users": 182,
    "signups": 1
   },
   {
@@ -141,20 +141,20 @@
    "signups": 0
   },
   {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 15,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 15,
    "users": 13,
    "signups": 2
-  },
-  {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 14,
-   "users": 2,
-   "signups": 0
   },
   {
    "source": "ig",
@@ -170,14 +170,6 @@
    "campaign": "(referral)",
    "sessions": 10,
    "users": 2,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 6,
-   "users": 5,
    "signups": 0
   },
   {
@@ -202,6 +194,14 @@
    "campaign": "(referral)",
    "sessions": 6,
    "users": 6,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 2,
    "signups": 0
   },
   {
@@ -681,23 +681,23 @@
      },
      {
       "date": "2026-09-25",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 6,
     "d7_prev": 2,
-    "pv30": 6,
+    "pv30": 7,
     "outbound": [],
     "channels": [
      {
-      "ch": "Referral",
+      "ch": "Direct",
       "users": 3
      },
      {
-      "ch": "Direct",
-      "users": 2
+      "ch": "Referral",
+      "users": 3
      }
     ],
     "engaged7": 0,
@@ -2403,12 +2403,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 180,
+    "users": 182,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 33,
+    "users": 30,
     "signups": 2
    },
    {
@@ -2448,7 +2448,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 28,
+     "users": 29,
      "signups": 1
     },
     {
@@ -2474,7 +2474,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 64,
+     "users": 65,
      "signups": 0
     },
     {
@@ -2492,7 +2492,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 2,
      "signups": 0
     },
     {
@@ -2514,8 +2514,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 28,
-     "users": 23
+     "views": 29,
+     "users": 24
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2564,7 +2564,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 157,
+     "views": 161,
      "users": 9
     },
     {
@@ -2576,13 +2576,13 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 37,
+     "views": 40,
      "users": 3
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 35,
+     "views": 37,
      "users": 3
     },
     {
@@ -2594,7 +2594,7 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 13,
+     "views": 9,
      "users": 9
     },
     {
