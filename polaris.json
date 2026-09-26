@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-26 05:31",
- "updated": "2026-09-26 05:31 台北",
+ "generatedAt": "2026-09-26 12:52",
+ "updated": "2026-09-26 12:52 台北",
  "yesterday_date": "2026-09-25",
  "yesterday": {
   "users": 9,
@@ -28,9 +28,9 @@
   "users": 48,
   "pv": 119,
   "events": {
+   "cta_click": 1,
    "tool_engaged": 1,
-   "tool_result": 1,
-   "cta_click": 1
+   "tool_result": 1
   },
   "sites": {
    "grow": {
@@ -40,9 +40,9 @@
    "wealth": {
     "users": 42,
     "events": {
+     "cta_click": 1,
      "tool_engaged": 1,
-     "tool_result": 1,
-     "cta_click": 1
+     "tool_result": 1
     }
    }
   }
@@ -54,9 +54,9 @@
    "tool_engaged": 23,
    "tool_result": 21,
    "cta_click": 5,
-   "outbound_placement": 1,
    "email_signup": 4,
-   "magnet_delivered": 4
+   "magnet_delivered": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -74,10 +74,10 @@
     "users": 141,
     "events": {
      "cta_click": 4,
-     "tool_engaged": 12,
-     "tool_result": 12,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 12,
+     "tool_result": 12
     }
    }
   }
@@ -149,7 +149,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 17,
+   "sessions": 18,
    "users": 2,
    "signups": 0
   },
@@ -2565,7 +2565,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 162,
+     "views": 163,
      "users": 9
     },
     {
