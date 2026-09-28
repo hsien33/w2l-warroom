@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-28 05:18",
- "updated": "2026-09-28 05:18 台北",
+ "generatedAt": "2026-09-28 13:17",
+ "updated": "2026-09-28 13:17 台北",
  "yesterday_date": "2026-09-27",
  "yesterday": {
   "users": 7,
@@ -43,12 +43,12 @@
   "users": 201,
   "pv": 543,
   "events": {
+   "cta_click": 5,
+   "email_signup": 4,
+   "magnet_delivered": 4,
    "tool_engaged": 19,
    "tool_result": 17,
-   "cta_click": 5,
-   "outbound_placement": 1,
-   "email_signup": 4,
-   "magnet_delivered": 4
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -65,9 +65,9 @@
    "wealth": {
     "users": 147,
     "events": {
+     "cta_click": 4,
      "email_signup": 3,
      "magnet_delivered": 3,
-     "cta_click": 4,
      "tool_engaged": 10,
      "tool_result": 10
     }
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 310,
-   "users": 181,
+   "sessions": 313,
+   "users": 183,
    "signups": 1
   },
   {
@@ -157,8 +157,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 13,
-   "users": 12,
+   "sessions": 14,
+   "users": 13,
    "signups": 2
   },
   {
@@ -186,14 +186,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
-   "signups": 0
-  },
-  {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -208,6 +200,14 @@
    "sessions": 4,
    "users": 4,
    "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
+   "signups": 1
   },
   {
    "source": "facebook.com",
@@ -676,19 +676,19 @@
      },
      {
       "date": "2026-09-28",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 7,
     "d7_prev": 3,
-    "pv30": 7,
+    "pv30": 8,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 3
+      "users": 4
      },
      {
       "ch": "Referral",
@@ -1297,18 +1297,22 @@
      },
      {
       "date": "2026-09-28",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 1,
     "d7_prev": 0,
-    "pv30": 1,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Search",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2548,19 +2552,30 @@
       1
      ]
     ]
+   },
+   {
+    "domain": "www.facebook.com",
+    "clicks": 1,
+    "users": 1,
+    "pages": [
+     [
+      "/welcome/",
+      1
+     ]
+    ]
    }
   ],
   "outbound_status": "ok",
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 181,
+    "users": 183,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 33,
-    "signups": 2
+    "users": 32,
+    "signups": 3
    },
    {
     "label": "IG 帶來的",
@@ -2625,13 +2640,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 67,
+     "users": 69,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 14,
+     "users": 15,
      "signups": 2
     },
     {
@@ -2650,7 +2665,7 @@
      "ch": "未分類",
      "raw": "Unassigned",
      "users": 2,
-     "signups": 0
+     "signups": 1
     },
     {
      "ch": "AI Assistant",
@@ -2715,14 +2730,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 171,
+     "views": 172,
      "users": 9
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 61,
-     "users": 53
+     "views": 66,
+     "users": 55
     },
     {
      "name": "每日熱量收支",
@@ -2749,16 +2764,16 @@
      "users": 12
     },
     {
+     "name": "訂閱電子報",
+     "path": "/newsletter/",
+     "views": 6,
+     "users": 5
+    },
+    {
      "name": "關於 Jeff",
      "path": "/about/",
      "views": 5,
      "users": 5
-    },
-    {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 5,
-     "users": 4
     }
    ]
   },
