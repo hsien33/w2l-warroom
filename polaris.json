@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-28 13:17",
- "updated": "2026-09-28 13:17 台北",
+ "generatedAt": "2026-09-28 21:46",
+ "updated": "2026-09-28 21:46 台北",
  "yesterday_date": "2026-09-27",
  "yesterday": {
   "users": 7,
@@ -43,11 +43,11 @@
   "users": 201,
   "pv": 543,
   "events": {
+   "tool_engaged": 19,
+   "tool_result": 17,
    "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "tool_engaged": 19,
-   "tool_result": 17,
    "outbound_placement": 1
   },
   "sites": {
@@ -56,20 +56,20 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 7,
-     "cta_click": 1,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 147,
     "events": {
+     "tool_engaged": 10,
+     "tool_result": 10,
      "cta_click": 4,
      "email_signup": 3,
-     "magnet_delivered": 3,
-     "tool_engaged": 10,
-     "tool_result": 10
+     "magnet_delivered": 3
     }
    }
   }
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 313,
-   "users": 183,
+   "sessions": 317,
+   "users": 184,
    "signups": 1
   },
   {
@@ -146,20 +146,20 @@
    "signups": 0
   },
   {
+   "source": "w-alchemy.kit.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 16,
+   "users": 14,
+   "signups": 3
+  },
+  {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
    "sessions": 14,
    "users": 11,
    "signups": 1
-  },
-  {
-   "source": "w-alchemy.kit.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 14,
-   "users": 13,
-   "signups": 2
   },
   {
    "source": "l.facebook.com",
@@ -2569,13 +2569,13 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 183,
+    "users": 184,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 32,
-    "signups": 3
+    "users": 33,
+    "signups": 4
    },
    {
     "label": "IG 帶來的",
@@ -2640,14 +2640,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 69,
+     "users": 70,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 15,
-     "signups": 2
+     "users": 16,
+     "signups": 3
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2736,8 +2736,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 66,
-     "users": 55
+     "views": 69,
+     "users": 57
     },
     {
      "name": "每日熱量收支",
@@ -2766,13 +2766,13 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 6,
-     "users": 5
+     "views": 8,
+     "users": 6
     },
     {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 5,
+     "name": "工具箱到手",
+     "path": "/welcome/",
+     "views": 7,
      "users": 5
     }
    ]
