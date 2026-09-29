@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-29 05:13",
- "updated": "2026-09-29 05:13 台北",
+ "generatedAt": "2026-09-29 13:39",
+ "updated": "2026-09-29 13:39 台北",
  "yesterday_date": "2026-09-28",
  "yesterday": {
   "users": 6,
@@ -30,11 +30,11 @@
   "users": 49,
   "pv": 123,
   "events": {
-   "tool_engaged": 1,
-   "tool_result": 1,
    "magnet_delivered": 4,
    "email_signup": 2,
-   "cta_click": 1
+   "cta_click": 1,
+   "tool_engaged": 1,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
@@ -44,11 +44,11 @@
    "wealth": {
     "users": 44,
     "events": {
-     "tool_engaged": 1,
-     "tool_result": 1,
      "magnet_delivered": 4,
      "email_signup": 2,
-     "cta_click": 1
+     "cta_click": 1,
+     "tool_engaged": 1,
+     "tool_result": 1
     }
    }
   }
@@ -57,11 +57,11 @@
   "users": 204,
   "pv": 565,
   "events": {
+   "magnet_delivered": 8,
+   "email_signup": 6,
+   "cta_click": 6,
    "tool_engaged": 19,
    "tool_result": 17,
-   "cta_click": 6,
-   "email_signup": 6,
-   "magnet_delivered": 8,
    "outbound_placement": 1
   },
   "sites": {
@@ -69,21 +69,21 @@
     "users": 52,
     "events": {
      "tool_engaged": 9,
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "tool_result": 7,
      "cta_click": 1,
-     "outbound_placement": 1,
-     "email_signup": 1,
-     "magnet_delivered": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 152,
     "events": {
-     "tool_engaged": 10,
-     "tool_result": 10,
-     "cta_click": 5,
+     "magnet_delivered": 7,
      "email_signup": 5,
-     "magnet_delivered": 7
+     "cta_click": 5,
+     "tool_engaged": 10,
+     "tool_result": 10
     }
    }
   }
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 317,
-   "users": 183,
+   "sessions": 324,
+   "users": 186,
    "signups": 1
   },
   {
@@ -155,7 +155,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 24,
+   "sessions": 25,
    "users": 2,
    "signups": 0
   },
@@ -165,7 +165,7 @@
    "campaign": "(referral)",
    "sessions": 16,
    "users": 14,
-   "signups": 3
+   "signups": 4
   },
   {
    "source": "ig",
@@ -216,19 +216,19 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
-   "users": 3,
-   "signups": 1
-  },
-  {
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 3,
    "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 2,
+   "users": 2,
    "signups": 0
   }
  ],
@@ -701,7 +701,7 @@
       "users": 1
      },
      {
-      "ch": "Unassigned",
+      "ch": "Referral",
       "users": 1
      }
     ],
@@ -2583,12 +2583,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 183,
+    "users": 186,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 33,
+    "users": 32,
     "signups": 4
    },
    {
@@ -2639,14 +2639,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 69,
+     "users": 70,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
      "users": 16,
-     "signups": 3
+     "signups": 4
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2661,14 +2661,14 @@
      "signups": 1
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
-     "signups": 1
-    },
-    {
      "ch": "AI Assistant",
      "raw": "AI Assistant",
+     "users": 1,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -2729,7 +2729,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 172,
+     "views": 174,
      "users": 9
     },
     {
@@ -2759,8 +2759,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 12,
-     "users": 12
+     "views": 13,
+     "users": 13
     },
     {
      "name": "訂閱電子報",
