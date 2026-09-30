@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-09-30 03:58",
- "updated": "2026-09-30 03:58 台北",
+ "generatedAt": "2026-09-30 08:23",
+ "updated": "2026-09-30 08:23 台北",
  "yesterday_date": "2026-09-29",
  "yesterday": {
   "users": 7,
-  "pv": 16,
+  "pv": 20,
   "events": {},
   "sites": {
    "grow": {
@@ -20,7 +20,7 @@
  },
  "d7": {
   "users": 48,
-  "pv": 120,
+  "pv": 124,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1,
@@ -47,32 +47,32 @@
  },
  "d30": {
   "users": 201,
-  "pv": 564,
+  "pv": 568,
   "events": {
+   "tool_engaged": 19,
+   "tool_result": 17,
    "cta_click": 5,
    "email_signup": 6,
-   "magnet_delivered": 8,
-   "tool_engaged": 19,
-   "tool_result": 17
+   "magnet_delivered": 8
   },
   "sites": {
    "grow": {
     "users": 44,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 9,
-     "tool_result": 7
+     "tool_result": 7,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 157,
     "events": {
+     "tool_engaged": 10,
+     "tool_result": 10,
      "cta_click": 5,
      "email_signup": 5,
-     "magnet_delivered": 7,
-     "tool_engaged": 10,
-     "tool_result": 10
+     "magnet_delivered": 7
     }
    }
   }
@@ -197,19 +197,19 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 4,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
    "sessions": 4,
    "users": 4,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 3,
-   "users": 2,
    "signups": 0
   },
   {
@@ -2499,14 +2499,14 @@
      "signups": 1
     },
     {
-     "ch": "AI Assistant",
-     "raw": "AI Assistant",
-     "users": 1,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "AI Assistant",
+     "raw": "AI Assistant",
      "users": 1,
      "signups": 0
     }
@@ -2567,7 +2567,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 178,
+     "views": 180,
      "users": 10
     },
     {
@@ -2579,7 +2579,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 52,
+     "views": 54,
      "users": 4
     },
     {
