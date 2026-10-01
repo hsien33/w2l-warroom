@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-01 13:46",
- "updated": "2026-10-01 13:46 台北",
+ "generatedAt": "2026-10-01 21:08",
+ "updated": "2026-10-01 21:08 台北",
  "yesterday_date": "2026-09-30",
  "yesterday": {
   "users": 4,
@@ -22,11 +22,11 @@
   "users": 43,
   "pv": 112,
   "events": {
-   "tool_engaged": 1,
-   "tool_result": 1,
    "magnet_delivered": 4,
    "email_signup": 2,
-   "cta_click": 1
+   "cta_click": 1,
+   "tool_engaged": 1,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
@@ -36,11 +36,11 @@
    "wealth": {
     "users": 39,
     "events": {
-     "tool_engaged": 1,
-     "tool_result": 1,
      "magnet_delivered": 4,
      "email_signup": 2,
-     "cta_click": 1
+     "cta_click": 1,
+     "tool_engaged": 1,
+     "tool_result": 1
     }
    }
   }
@@ -49,28 +49,28 @@
   "users": 201,
   "pv": 576,
   "events": {
+   "cta_click": 5,
    "email_signup": 6,
    "magnet_delivered": 8,
    "tool_engaged": 18,
-   "tool_result": 16,
-   "cta_click": 5
+   "tool_result": 16
   },
   "sites": {
    "grow": {
     "users": 42,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 8,
-     "tool_result": 6
+     "tool_result": 6,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 159,
     "events": {
+     "cta_click": 5,
      "email_signup": 5,
      "magnet_delivered": 7,
-     "cta_click": 5,
      "tool_engaged": 10,
      "tool_result": 10
     }
@@ -128,7 +128,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 350,
+   "sessions": 354,
    "users": 187,
    "signups": 1
   },
@@ -144,7 +144,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 34,
+   "sessions": 35,
    "users": 2,
    "signups": 0
   },
@@ -160,8 +160,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 14,
-   "users": 8,
+   "sessions": 11,
+   "users": 6,
    "signups": 0
   },
   {
@@ -2426,7 +2426,7 @@
    },
    {
     "label": "其他",
-    "users": 38,
+    "users": 36,
     "signups": 4
    },
    {
@@ -2567,7 +2567,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 188,
+     "views": 189,
      "users": 10
     },
     {
@@ -2579,7 +2579,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 58,
+     "views": 59,
      "users": 4
     },
     {
