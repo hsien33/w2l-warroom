@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-02 04:20",
- "updated": "2026-10-02 04:20 台北",
+ "generatedAt": "2026-10-02 08:44",
+ "updated": "2026-10-02 08:44 台北",
  "yesterday_date": "2026-10-01",
  "yesterday": {
   "users": 3,
-  "pv": 4,
+  "pv": 7,
   "events": {},
   "sites": {
    "grow": {
@@ -20,13 +20,13 @@
  },
  "d7": {
   "users": 41,
-  "pv": 105,
+  "pv": 108,
   "events": {
-   "tool_engaged": 1,
-   "tool_result": 1,
    "magnet_delivered": 4,
    "email_signup": 2,
-   "cta_click": 1
+   "cta_click": 1,
+   "tool_engaged": 1,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
@@ -36,21 +36,21 @@
    "wealth": {
     "users": 37,
     "events": {
-     "tool_engaged": 1,
-     "tool_result": 1,
      "magnet_delivered": 4,
      "email_signup": 2,
-     "cta_click": 1
+     "cta_click": 1,
+     "tool_engaged": 1,
+     "tool_result": 1
     }
    }
   }
  },
  "d30": {
   "users": 193,
-  "pv": 557,
+  "pv": 560,
   "events": {
-   "cta_click": 5,
    "tool_engaged": 18,
+   "cta_click": 5,
    "tool_result": 16,
    "email_signup": 6,
    "magnet_delivered": 8
@@ -128,7 +128,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 346,
+   "sessions": 347,
    "users": 184,
    "signups": 1
   },
@@ -144,7 +144,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 36,
+   "sessions": 37,
    "users": 2,
    "signups": 0
   },
@@ -522,14 +522,14 @@
      },
      {
       "date": "2026-10-02",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 23,
     "d7_prev": 5,
-    "pv30": 28,
+    "pv30": 29,
     "outbound": [],
     "channels": [
      {
@@ -2567,7 +2567,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 180,
+     "views": 182,
      "users": 10
     },
     {
@@ -2579,7 +2579,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 59,
+     "views": 60,
      "users": 4
     },
     {
