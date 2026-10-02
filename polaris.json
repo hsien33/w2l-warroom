@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-02 08:44",
- "updated": "2026-10-02 08:44 台北",
+ "generatedAt": "2026-10-02 17:41",
+ "updated": "2026-10-02 17:41 台北",
  "yesterday_date": "2026-10-01",
  "yesterday": {
   "users": 3,
@@ -22,11 +22,11 @@
   "users": 41,
   "pv": 108,
   "events": {
+   "tool_engaged": 1,
+   "tool_result": 1,
    "magnet_delivered": 4,
    "email_signup": 2,
-   "cta_click": 1,
-   "tool_engaged": 1,
-   "tool_result": 1
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -36,11 +36,11 @@
    "wealth": {
     "users": 37,
     "events": {
+     "tool_engaged": 1,
+     "tool_result": 1,
      "magnet_delivered": 4,
      "email_signup": 2,
-     "cta_click": 1,
-     "tool_engaged": 1,
-     "tool_result": 1
+     "cta_click": 1
     }
    }
   }
@@ -49,30 +49,30 @@
   "users": 193,
   "pv": 560,
   "events": {
-   "tool_engaged": 18,
-   "cta_click": 5,
-   "tool_result": 16,
    "email_signup": 6,
-   "magnet_delivered": 8
+   "magnet_delivered": 8,
+   "tool_engaged": 18,
+   "tool_result": 16,
+   "cta_click": 5
   },
   "sites": {
    "grow": {
     "users": 39,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 6,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 8,
+     "tool_result": 6
     }
    },
    "wealth": {
     "users": 154,
     "events": {
-     "cta_click": 5,
      "tool_engaged": 10,
      "tool_result": 10,
      "email_signup": 5,
-     "magnet_delivered": 7
+     "magnet_delivered": 7,
+     "cta_click": 5
     }
    }
   }
@@ -128,8 +128,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 347,
-   "users": 184,
+   "sessions": 366,
+   "users": 193,
    "signups": 1
   },
   {
@@ -144,7 +144,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 37,
+   "sessions": 38,
    "users": 2,
    "signups": 0
   },
@@ -152,17 +152,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 15,
+   "sessions": 16,
    "users": 13,
    "signups": 4
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 11,
-   "users": 6,
-   "signups": 0
   },
   {
    "source": "ig",
@@ -201,6 +193,14 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 5,
+   "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
    "users": 3,
    "signups": 0
   },
@@ -2421,12 +2421,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 184,
+    "users": 193,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 31,
     "signups": 4
    },
    {
@@ -2477,7 +2477,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 67,
+     "users": 71,
      "signups": 0
     },
     {
@@ -2499,14 +2499,14 @@
      "signups": 1
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
+     "ch": "AI Assistant",
+     "raw": "AI Assistant",
+     "users": 1,
      "signups": 0
     },
     {
-     "ch": "AI Assistant",
-     "raw": "AI Assistant",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 1,
      "signups": 0
     }
@@ -2567,25 +2567,25 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 182,
-     "users": 10
+     "views": 193,
+     "users": 11
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 53
+     "views": 64,
+     "users": 54
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 60,
+     "views": 62,
      "users": 4
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 37,
+     "views": 40,
      "users": 3
     },
     {
@@ -2597,8 +2597,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 13,
-     "users": 13
+     "views": 14,
+     "users": 14
     },
     {
      "name": "訂閱電子報",
