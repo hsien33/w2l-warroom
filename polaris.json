@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-03 06:10",
- "updated": "2026-10-03 06:10 台北",
+ "generatedAt": "2026-10-03 13:13",
+ "updated": "2026-10-03 13:13 台北",
  "yesterday_date": "2026-10-02",
  "yesterday": {
   "users": 13,
@@ -28,11 +28,11 @@
   "users": 45,
   "pv": 122,
   "events": {
+   "tool_engaged": 1,
+   "tool_result": 1,
    "magnet_delivered": 4,
    "email_signup": 2,
-   "cta_click": 1,
-   "tool_engaged": 1,
-   "tool_result": 1
+   "cta_click": 1
   },
   "sites": {
    "grow": {
@@ -56,28 +56,28 @@
   "users": 202,
   "pv": 584,
   "events": {
-   "email_signup": 6,
-   "magnet_delivered": 8,
    "tool_engaged": 19,
    "tool_result": 17,
-   "cta_click": 5
+   "cta_click": 5,
+   "email_signup": 6,
+   "magnet_delivered": 8
   },
   "sites": {
    "grow": {
     "users": 39,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 9,
-     "tool_result": 7
+     "tool_result": 7,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 163,
     "events": {
-     "cta_click": 5,
      "tool_engaged": 10,
      "tool_result": 10,
+     "cta_click": 5,
      "email_signup": 5,
      "magnet_delivered": 7
     }
@@ -135,8 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 369,
-   "users": 197,
+   "sessions": 372,
+   "users": 200,
    "signups": 1
   },
   {
@@ -151,7 +151,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 40,
+   "sessions": 43,
    "users": 2,
    "signups": 0
   },
@@ -2222,19 +2222,19 @@
      },
      {
       "date": "2026-10-03",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 1,
     "d7_prev": 0,
-    "pv30": 1,
+    "pv30": 2,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -2427,7 +2427,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 197,
+    "users": 200,
     "signups": 1
    },
    {
@@ -2457,13 +2457,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 16,
+     "users": 17,
      "signups": 0
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 13,
+     "users": 14,
      "signups": 1
     },
     {
@@ -2483,7 +2483,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 74,
+     "users": 76,
      "signups": 0
     },
     {
@@ -2523,8 +2523,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 15,
-     "users": 13
+     "views": 16,
+     "users": 14
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2577,16 +2577,16 @@
      "users": 11
     },
     {
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "path": "/",
+     "views": 65,
+     "users": 55
+    },
+    {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
      "views": 65,
      "users": 4
-    },
-    {
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "path": "/",
-     "views": 64,
-     "users": 54
     },
     {
      "name": "個人習慣分析",
@@ -2603,8 +2603,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 15,
-     "users": 15
+     "views": 16,
+     "users": 16
     },
     {
      "name": "訂閱電子報",
