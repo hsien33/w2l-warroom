@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-04 13:46",
- "updated": "2026-10-04 13:46 台北",
+ "generatedAt": "2026-10-04 20:16",
+ "updated": "2026-10-04 20:16 台北",
  "yesterday_date": "2026-10-03",
  "yesterday": {
   "users": 10,
@@ -28,11 +28,11 @@
   "users": 50,
   "pv": 125,
   "events": {
-   "tool_engaged": 2,
-   "tool_result": 2,
    "magnet_delivered": 4,
    "email_signup": 2,
-   "cta_click": 1
+   "cta_click": 1,
+   "tool_engaged": 2,
+   "tool_result": 2
   },
   "sites": {
    "grow": {
@@ -56,11 +56,11 @@
   "users": 201,
   "pv": 554,
   "events": {
-   "cta_click": 5,
    "tool_engaged": 20,
    "tool_result": 18,
+   "magnet_delivered": 8,
    "email_signup": 6,
-   "magnet_delivered": 8
+   "cta_click": 5
   },
   "sites": {
    "grow": {
@@ -75,11 +75,11 @@
    "wealth": {
     "users": 160,
     "events": {
-     "cta_click": 5,
      "tool_engaged": 10,
      "tool_result": 10,
+     "magnet_delivered": 7,
      "email_signup": 5,
-     "magnet_delivered": 7
+     "cta_click": 5
     }
    }
   }
@@ -135,15 +135,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 365,
-   "users": 197,
+   "sessions": 373,
+   "users": 201,
    "signups": 1
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 45,
+   "sessions": 46,
    "users": 2,
    "signups": 0
   },
@@ -188,26 +188,26 @@
    "signups": 0
   },
   {
-   "source": "instagram.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 6,
-   "users": 4,
-   "signups": 0
-  },
-  {
    "source": "l.instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 6,
-   "users": 4,
+   "sessions": 7,
+   "users": 5,
    "signups": 0
   },
   {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 4,
+   "sessions": 6,
+   "users": 5,
+   "signups": 0
+  },
+  {
+   "source": "instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 6,
    "users": 4,
    "signups": 0
   },
@@ -2427,17 +2427,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 197,
+    "users": 201,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 35,
     "signups": 4
    },
    {
     "label": "IG 帶來的",
-    "users": 14,
+    "users": 15,
     "signups": 1
    },
    {
@@ -2483,7 +2483,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 73,
+     "users": 74,
      "signups": 0
     },
     {
@@ -2573,7 +2573,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 182,
+     "views": 183,
      "users": 11
     },
     {
@@ -2585,8 +2585,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 63,
-     "users": 53
+     "views": 64,
+     "users": 54
     },
     {
      "name": "個人習慣分析",
