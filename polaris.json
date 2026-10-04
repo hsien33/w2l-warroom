@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-04 05:11",
- "updated": "2026-10-04 05:11 台北",
+ "generatedAt": "2026-10-04 13:46",
+ "updated": "2026-10-04 13:46 台北",
  "yesterday_date": "2026-10-03",
  "yesterday": {
   "users": 10,
@@ -135,8 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 363,
-   "users": 196,
+   "sessions": 365,
+   "users": 197,
    "signups": 1
   },
   {
@@ -183,8 +183,8 @@
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 7,
-   "users": 7,
+   "sessions": 8,
+   "users": 8,
    "signups": 0
   },
   {
@@ -207,7 +207,7 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 5,
+   "sessions": 4,
    "users": 4,
    "signups": 0
   },
@@ -686,19 +686,19 @@
      },
      {
       "date": "2026-10-04",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 6,
     "d7_prev": 1,
-    "pv30": 5,
+    "pv30": 7,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 3
+      "users": 4
      },
      {
       "ch": "Direct",
@@ -706,10 +706,6 @@
      },
      {
       "ch": "Referral",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2431,12 +2427,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 196,
+    "users": 197,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 33,
+    "users": 34,
     "signups": 4
    },
    {
@@ -2461,7 +2457,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 17,
+     "users": 18,
      "signups": 0
     },
     {
@@ -2481,19 +2477,13 @@
      "raw": "Referral",
      "users": 1,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 72,
+     "users": 73,
      "signups": 0
     },
     {
@@ -2505,7 +2495,13 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 9,
+     "users": 10,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
@@ -2513,12 +2509,6 @@
      "raw": "Organic Social",
      "users": 2,
      "signups": 1
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 2,
-     "signups": 0
     },
     {
      "ch": "AI Assistant",
@@ -2583,13 +2573,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 180,
+     "views": 182,
      "users": 11
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 65,
+     "views": 66,
      "users": 4
     },
     {
@@ -2601,7 +2591,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 26,
+     "views": 27,
      "users": 3
     },
     {
@@ -2613,8 +2603,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 16,
-     "users": 16
+     "views": 17,
+     "users": 17
     },
     {
      "name": "訂閱電子報",
