@@ -1,17 +1,17 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-06 14:15",
- "updated": "2026-10-06 14:15 台北",
+ "generatedAt": "2026-10-06 23:54",
+ "updated": "2026-10-06 23:54 台北",
  "yesterday_date": "2026-10-05",
  "yesterday": {
-  "users": 10,
+  "users": 11,
   "pv": 20,
   "events": {
    "cta_click": 1
   },
   "sites": {
    "grow": {
-    "users": 0,
+    "users": 1,
     "events": {}
    },
    "wealth": {
@@ -23,7 +23,7 @@
   }
  },
  "d7": {
-  "users": 55,
+  "users": 56,
   "pv": 121,
   "events": {
    "cta_click": 1,
@@ -33,7 +33,7 @@
   },
   "sites": {
    "grow": {
-    "users": 8,
+    "users": 9,
     "events": {
      "tool_engaged": 4,
      "tool_result": 3,
@@ -51,33 +51,33 @@
   }
  },
  "d30": {
-  "users": 210,
+  "users": 211,
   "pv": 572,
   "events": {
-   "magnet_delivered": 7,
-   "email_signup": 5,
    "cta_click": 5,
    "tool_engaged": 22,
    "tool_result": 19,
+   "email_signup": 5,
+   "magnet_delivered": 7,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 43,
+    "users": 44,
     "events": {
      "tool_engaged": 12,
      "tool_result": 9,
+     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 167,
     "events": {
-     "magnet_delivered": 6,
-     "email_signup": 4,
      "cta_click": 5,
+     "email_signup": 4,
+     "magnet_delivered": 6,
      "tool_engaged": 10,
      "tool_result": 10
     }
@@ -88,7 +88,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 8,
+    "count": 9,
     "rate": null
    },
    {
@@ -135,8 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 398,
-   "users": 215,
+   "sessions": 403,
+   "users": 219,
    "signups": 1
   },
   {
@@ -164,12 +164,12 @@
    "signups": 3
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 11,
+   "source": "ig",
+   "medium": "bio",
+   "campaign": "magnet-talkrescue",
+   "sessions": 9,
    "users": 7,
-   "signups": 0
+   "signups": 1
   },
   {
    "source": "l.facebook.com",
@@ -188,18 +188,18 @@
    "signups": 0
   },
   {
-   "source": "ig",
-   "medium": "bio",
-   "campaign": "magnet-talkrescue",
-   "sessions": 8,
-   "users": 6,
-   "signups": 1
-  },
-  {
    "source": "l.instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 7,
+   "users": 5,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 6,
    "users": 5,
    "signups": 0
   },
@@ -376,7 +376,7 @@
   },
   {
    "date": "2026-10-05",
-   "users": 10,
+   "users": 11,
    "signups": 0
   }
  ],
@@ -3045,17 +3045,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 215,
+    "users": 219,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 37,
+    "users": 35,
     "signups": 3
    },
    {
     "label": "IG 帶來的",
-    "users": 15,
+    "users": 16,
     "signups": 1
    },
    {
@@ -3068,20 +3068,13 @@
   "cards": [
    {
     "level": "red",
-    "what": "光合作用站昨天 0 人造訪（平常 7 天有 8 人）",
-    "why": "可能是追蹤器斷線或網站掛了",
-    "action": "開一次網站確認活著",
-    "link": "https://grow.walk2light.com/"
-   },
-   {
-    "level": "red",
-    "what": "這 7 天有 55 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 56 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
    }
   ],
-  "summary": "有 2 件事需要你看一下（見下方紅卡）",
+  "summary": "有 1 件事需要你看一下（見下方紅卡）",
   "signup_total_30d": 5
  },
  "v3": {
@@ -3090,7 +3083,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 18,
+     "users": 19,
      "signups": 0
     },
     {
@@ -3116,7 +3109,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 81,
+     "users": 84,
      "signups": 0
     },
     {
@@ -3134,7 +3127,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 5,
+     "users": 4,
      "signups": 0
     },
     {
@@ -3156,8 +3149,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 16,
-     "users": 13
+     "views": 17,
+     "users": 14
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -3218,8 +3211,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 54
+     "views": 64,
+     "users": 56
     },
     {
      "name": "個人習慣分析",
@@ -3236,8 +3229,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 18,
-     "users": 18
+     "views": 19,
+     "users": 19
     },
     {
      "name": "關於 Jeff",
@@ -3402,7 +3395,7 @@
     },
     {
      "date": "2026-10-05",
-     "users": 0,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -3573,8 +3566,8 @@
     "signups30": 1,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 43,
-    "users7": 8,
+    "users30": 44,
+    "users7": 9,
     "rate7": 0.0
    },
    "wealth": {
