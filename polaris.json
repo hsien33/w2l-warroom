@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-07 13:53",
- "updated": "2026-10-07 13:53 台北",
+ "generatedAt": "2026-10-07 21:15",
+ "updated": "2026-10-07 21:15 台北",
  "yesterday_date": "2026-10-06",
  "yesterday": {
   "users": 10,
@@ -58,9 +58,9 @@
   "events": {
    "tool_engaged": 26,
    "tool_result": 23,
-   "cta_click": 5,
    "email_signup": 5,
    "magnet_delivered": 7,
+   "cta_click": 5,
    "outbound_placement": 1
   },
   "sites": {
@@ -79,9 +79,9 @@
     "events": {
      "tool_engaged": 14,
      "tool_result": 14,
-     "cta_click": 5,
+     "magnet_delivered": 6,
      "email_signup": 4,
-     "magnet_delivered": 6
+     "cta_click": 5
     }
    }
   }
@@ -137,15 +137,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 407,
-   "users": 221,
+   "sessions": 410,
+   "users": 223,
    "signups": 1
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 52,
+   "sessions": 53,
    "users": 2,
    "signups": 0
   },
@@ -190,14 +190,6 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 7,
-   "users": 5,
-   "signups": 0
-  },
-  {
    "source": "l.instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -210,6 +202,14 @@
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 6,
+   "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 4,
    "users": 4,
    "signups": 0
   },
@@ -711,10 +711,6 @@
      {
       "ch": "Referral",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -864,16 +860,12 @@
     "outbound": [],
     "channels": [
      {
-      "ch": "Referral",
+      "ch": "Direct",
       "users": 3
      },
      {
-      "ch": "Direct",
-      "users": 2
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
+      "ch": "Referral",
+      "users": 3
      }
     ],
     "engaged7": 2,
@@ -1478,7 +1470,7 @@
     "outbound": [],
     "channels": [
      {
-      "ch": "Unassigned",
+      "ch": "Direct",
       "users": 1
      }
     ],
@@ -1630,7 +1622,7 @@
     "outbound": [],
     "channels": [
      {
-      "ch": "Unassigned",
+      "ch": "Direct",
       "users": 1
      }
     ],
@@ -1781,7 +1773,7 @@
     "outbound": [],
     "channels": [
      {
-      "ch": "Unassigned",
+      "ch": "Direct",
       "users": 1
      }
     ],
@@ -3047,12 +3039,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 221,
+    "users": 223,
     "signups": 1
    },
    {
     "label": "其他",
-    "users": 34,
+    "users": 33,
     "signups": 3
    },
    {
@@ -3127,12 +3119,6 @@
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
-     "signups": 0
-    },
-    {
      "ch": "AI Assistant",
      "raw": "AI Assistant",
      "users": 2,
@@ -3143,6 +3129,12 @@
      "raw": "Organic Social",
      "users": 2,
      "signups": 1
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 2,
+     "signups": 0
     }
    ]
   },
@@ -3201,13 +3193,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 191,
+     "views": 193,
      "users": 11
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 69,
+     "views": 70,
      "users": 4
     },
     {
@@ -3219,7 +3211,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 29,
+     "views": 30,
      "users": 3
     },
     {
