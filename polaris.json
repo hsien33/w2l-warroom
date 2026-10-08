@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-08 04:34",
- "updated": "2026-10-08 04:34 台北",
+ "generatedAt": "2026-10-08 08:57",
+ "updated": "2026-10-08 08:57 台北",
  "yesterday_date": "2026-10-07",
  "yesterday": {
   "users": 6,
@@ -54,11 +54,11 @@
   "users": 218,
   "pv": 594,
   "events": {
-   "magnet_delivered": 7,
-   "email_signup": 5,
-   "cta_click": 6,
    "tool_engaged": 25,
    "tool_result": 23,
+   "cta_click": 6,
+   "email_signup": 5,
+   "magnet_delivered": 7,
    "outbound_placement": 1
   },
   "sites": {
@@ -67,17 +67,17 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 9,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 175,
     "events": {
-     "magnet_delivered": 6,
-     "email_signup": 4,
      "cta_click": 6,
+     "email_signup": 4,
+     "magnet_delivered": 6,
      "tool_engaged": 14,
      "tool_result": 14
     }
@@ -143,7 +143,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 55,
+   "sessions": 56,
    "users": 2,
    "signups": 0
   },
@@ -188,6 +188,14 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 6,
+   "users": 5,
+   "signups": 0
+  },
+  {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -201,14 +209,6 @@
    "campaign": "(referral)",
    "sessions": 6,
    "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
    "signups": 0
   },
   {
