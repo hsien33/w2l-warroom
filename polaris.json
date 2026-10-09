@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-09 09:11",
- "updated": "2026-10-09 09:11 台北",
+ "generatedAt": "2026-10-09 18:27",
+ "updated": "2026-10-09 18:27 台北",
  "yesterday_date": "2026-10-08",
  "yesterday": {
   "users": 9,
@@ -31,10 +31,10 @@
   "users": 67,
   "pv": 143,
   "events": {
-   "cta_click": 3,
    "tool_engaged": 10,
    "outbound_placement": 1,
-   "tool_result": 9
+   "tool_result": 9,
+   "cta_click": 3
   },
   "sites": {
    "grow": {
@@ -49,9 +49,9 @@
    "wealth": {
     "users": 53,
     "events": {
-     "cta_click": 2,
      "tool_engaged": 6,
-     "tool_result": 6
+     "tool_result": 6,
+     "cta_click": 2
     }
    }
   }
@@ -60,12 +60,12 @@
   "users": 225,
   "pv": 611,
   "events": {
-   "cta_click": 7,
    "tool_engaged": 26,
    "tool_result": 24,
-   "email_signup": 5,
+   "outbound_placement": 1,
+   "cta_click": 7,
    "magnet_delivered": 7,
-   "outbound_placement": 1
+   "email_signup": 5
   },
   "sites": {
    "grow": {
@@ -73,20 +73,20 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 9,
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "outbound_placement": 1,
-     "cta_click": 1
+     "cta_click": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 178,
     "events": {
-     "cta_click": 6,
      "tool_engaged": 15,
      "tool_result": 15,
-     "email_signup": 4,
-     "magnet_delivered": 6
+     "cta_click": 6,
+     "magnet_delivered": 6,
+     "email_signup": 4
     }
    }
   }
@@ -142,8 +142,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 384,
-   "users": 203,
+   "sessions": 386,
+   "users": 204,
    "signups": 1
   },
   {
@@ -163,20 +163,20 @@
    "signups": 0
   },
   {
+   "source": "ig",
+   "medium": "bio",
+   "campaign": "magnet-talkrescue",
+   "sessions": 14,
+   "users": 11,
+   "signups": 1
+  },
+  {
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 14,
    "users": 11,
    "signups": 3
-  },
-  {
-   "source": "ig",
-   "medium": "bio",
-   "campaign": "magnet-talkrescue",
-   "sessions": 13,
-   "users": 11,
-   "signups": 1
   },
   {
    "source": "tw.search.yahoo.com",
@@ -1162,16 +1162,20 @@
      },
      {
       "date": "2026-10-09",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 3,
     "d7_prev": 0,
-    "pv30": 2,
+    "pv30": 3,
     "outbound": [],
     "channels": [
+     {
+      "ch": "Organic Social",
+      "users": 1
+     },
      {
       "ch": "Referral",
       "users": 1
@@ -3061,7 +3065,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 203,
+    "users": 204,
     "signups": 1
    },
    {
@@ -3131,7 +3135,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 84,
+     "users": 85,
      "signups": 0
     },
     {
@@ -3221,7 +3225,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 191,
+     "views": 193,
      "users": 11
     },
     {
@@ -3239,7 +3243,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 30,
+     "views": 34,
      "users": 3
     },
     {
@@ -3261,10 +3265,10 @@
      "users": 7
     },
     {
-     "name": "訂閱電子報",
-     "path": "/newsletter/",
+     "name": "深度文章",
+     "path": "/articles/",
      "views": 7,
-     "users": 5
+     "users": 6
     }
    ]
   },
