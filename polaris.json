@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-11 13:40",
- "updated": "2026-10-11 13:40 台北",
+ "generatedAt": "2026-10-11 20:43",
+ "updated": "2026-10-11 20:43 台北",
  "yesterday_date": "2026-10-10",
  "yesterday": {
   "users": 5,
@@ -26,9 +26,9 @@
   "users": 56,
   "pv": 129,
   "events": {
+   "cta_click": 4,
    "tool_engaged": 10,
    "tool_result": 8,
-   "cta_click": 4,
    "email_signup": 1,
    "magnet_delivered": 1,
    "outbound_placement": 1
@@ -37,20 +37,20 @@
    "grow": {
     "users": 12,
     "events": {
-     "cta_click": 1,
      "tool_engaged": 4,
      "tool_result": 2,
+     "cta_click": 1,
      "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 44,
     "events": {
-     "tool_engaged": 6,
-     "tool_result": 6,
      "cta_click": 3,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 6,
+     "tool_result": 6
     }
    }
   }
@@ -59,9 +59,9 @@
   "users": 222,
   "pv": 621,
   "events": {
+   "cta_click": 8,
    "tool_engaged": 28,
    "tool_result": 25,
-   "cta_click": 8,
    "email_signup": 6,
    "magnet_delivered": 8,
    "outbound_placement": 1
@@ -81,11 +81,11 @@
    "wealth": {
     "users": 176,
     "events": {
+     "cta_click": 7,
      "tool_engaged": 15,
      "tool_result": 15,
-     "cta_click": 7,
-     "magnet_delivered": 7,
-     "email_signup": 5
+     "email_signup": 5,
+     "magnet_delivered": 7
     }
    }
   }
@@ -141,15 +141,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 344,
-   "users": 172,
+   "sessions": 349,
+   "users": 174,
    "signups": 1
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 61,
+   "sessions": 64,
    "users": 2,
    "signups": 0
   },
@@ -3060,7 +3060,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 172,
+    "users": 174,
     "signups": 1
    },
    {
@@ -3079,7 +3079,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 11,
+  "ig_share": 10,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 6
@@ -3206,7 +3206,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 189,
+     "views": 190,
      "users": 10
     },
     {
