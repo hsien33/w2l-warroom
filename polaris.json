@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-11 05:38",
- "updated": "2026-10-11 05:38 台北",
+ "generatedAt": "2026-10-11 13:40",
+ "updated": "2026-10-11 13:40 台北",
  "yesterday_date": "2026-10-10",
  "yesterday": {
   "users": 5,
@@ -26,12 +26,12 @@
   "users": 56,
   "pv": 129,
   "events": {
-   "cta_click": 4,
    "tool_engaged": 10,
    "tool_result": 8,
-   "outbound_placement": 1,
+   "cta_click": 4,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -39,8 +39,8 @@
     "events": {
      "cta_click": 1,
      "tool_engaged": 4,
-     "outbound_placement": 1,
-     "tool_result": 2
+     "tool_result": 2,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -59,21 +59,21 @@
   "users": 222,
   "pv": 621,
   "events": {
-   "email_signup": 6,
-   "magnet_delivered": 8,
    "tool_engaged": 28,
    "tool_result": 25,
    "cta_click": 8,
+   "email_signup": 6,
+   "magnet_delivered": 8,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 46,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 13,
      "tool_result": 10,
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "cta_click": 1,
      "outbound_placement": 1
     }
@@ -81,11 +81,11 @@
    "wealth": {
     "users": 176,
     "events": {
-     "cta_click": 7,
      "tool_engaged": 15,
      "tool_result": 15,
-     "email_signup": 5,
-     "magnet_delivered": 7
+     "cta_click": 7,
+     "magnet_delivered": 7,
+     "email_signup": 5
     }
    }
   }
@@ -165,9 +165,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 17,
-   "users": 12,
-   "signups": 4
+   "sessions": 18,
+   "users": 13,
+   "signups": 5
   },
   {
    "source": "ig",
@@ -218,17 +218,17 @@
    "signups": 0
   },
   {
-   "source": "facebook.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 3,
-   "users": 3,
-   "signups": 0
-  },
-  {
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
+   "sessions": 4,
+   "users": 4,
+   "signups": 0
+  },
+  {
+   "source": "facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
    "sessions": 3,
    "users": 3,
    "signups": 0
@@ -1002,19 +1002,19 @@
      },
      {
       "date": "2026-10-11",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 8,
     "d7_prev": 2,
-    "pv30": 8,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Social",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Direct",
@@ -3065,12 +3065,12 @@
    },
    {
     "label": "其他",
-    "users": 29,
-    "signups": 4
+    "users": 30,
+    "signups": 5
    },
    {
     "label": "IG 帶來的",
-    "users": 23,
+    "users": 24,
     "signups": 1
    },
    {
@@ -3079,7 +3079,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 10,
+  "ig_share": 11,
   "cards": [],
   "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 6
@@ -3090,7 +3090,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 23,
+     "users": 24,
      "signups": 0
     },
     {
@@ -3122,8 +3122,8 @@
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 14,
-     "signups": 4
+     "users": 15,
+     "signups": 5
     },
     {
      "ch": "自然搜尋(Google)",
@@ -3218,8 +3218,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 55
+     "views": 63,
+     "users": 56
     },
     {
      "name": "個人習慣分析",
@@ -3242,14 +3242,14 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 9,
-     "users": 6
+     "views": 10,
+     "users": 7
     },
     {
-     "name": "關於 Jeff",
-     "path": "/about/",
-     "views": 7,
-     "users": 7
+     "name": "工具箱到手",
+     "path": "/welcome/",
+     "views": 8,
+     "users": 6
     }
    ]
   },
