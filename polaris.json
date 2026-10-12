@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-12 08:30",
- "updated": "2026-10-12 08:30 台北",
+ "generatedAt": "2026-10-12 18:41",
+ "updated": "2026-10-12 18:41 台北",
  "yesterday_date": "2026-10-11",
  "yesterday": {
   "users": 6,
@@ -28,11 +28,11 @@
   "users": 54,
   "pv": 125,
   "events": {
-   "cta_click": 4,
+   "email_signup": 2,
+   "magnet_delivered": 2,
    "tool_engaged": 7,
    "tool_result": 6,
-   "email_signup": 2,
-   "magnet_delivered": 2
+   "cta_click": 4
   },
   "sites": {
    "grow": {
@@ -46,11 +46,11 @@
    "wealth": {
     "users": 42,
     "events": {
-     "cta_click": 3,
      "email_signup": 2,
      "magnet_delivered": 2,
      "tool_engaged": 5,
-     "tool_result": 5
+     "tool_result": 5,
+     "cta_click": 3
     }
    }
   }
@@ -59,9 +59,9 @@
   "users": 220,
   "pv": 611,
   "events": {
-   "cta_click": 8,
    "tool_engaged": 27,
    "tool_result": 24,
+   "cta_click": 8,
    "email_signup": 6,
    "magnet_delivered": 8,
    "outbound_placement": 1
@@ -72,18 +72,18 @@
     "events": {
      "tool_engaged": 12,
      "tool_result": 9,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 178,
     "events": {
+     "tool_engaged": 15,
+     "tool_result": 15,
      "cta_click": 7,
      "email_signup": 6,
-     "magnet_delivered": 8,
-     "tool_engaged": 15,
-     "tool_result": 15
+     "magnet_delivered": 8
     }
    }
   }
@@ -139,15 +139,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 345,
-   "users": 169,
+   "sessions": 359,
+   "users": 177,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 65,
+   "sessions": 67,
    "users": 2,
    "signups": 0
   },
@@ -179,7 +179,7 @@
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 10,
+   "sessions": 11,
    "users": 8,
    "signups": 0
   },
@@ -192,27 +192,27 @@
    "signups": 0
   },
   {
-   "source": "l.facebook.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 5,
-   "users": 1,
-   "signups": 0
-  },
-  {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
+   "sessions": 5,
+   "users": 5,
+   "signups": 0
+  },
+  {
+   "source": "l.facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 5,
+   "users": 1,
    "signups": 0
   },
   {
@@ -533,10 +533,10 @@
      },
      {
       "date": "2026-10-12",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 5,
     "d7_prev": 0,
@@ -3056,17 +3056,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 169,
+    "users": 177,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 29,
+    "users": 31,
     "signups": 5
    },
    {
     "label": "IG 帶來的",
-    "users": 23,
+    "users": 24,
     "signups": 1
    },
    {
@@ -3077,7 +3077,7 @@
   ],
   "ig_share": 10,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
   "signup_total_30d": 6
  },
  "v3": {
@@ -3112,7 +3112,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 87,
+     "users": 90,
      "signups": 0
     },
     {
@@ -3134,14 +3134,14 @@
      "signups": 1
     },
     {
-     "ch": "AI Assistant",
-     "raw": "AI Assistant",
-     "users": 2,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 3,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "AI Assistant",
+     "raw": "AI Assistant",
      "users": 2,
      "signups": 0
     }
@@ -3202,32 +3202,32 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 188,
+     "views": 194,
      "users": 10
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 73,
+     "views": 74,
      "users": 4
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 64,
-     "users": 57
+     "views": 65,
+     "users": 58
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 37,
+     "views": 38,
      "users": 3
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 20,
-     "users": 20
+     "views": 21,
+     "users": 21
     },
     {
      "name": "餐點熱量日誌",
