@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-13 05:14",
- "updated": "2026-10-13 05:14 台北",
+ "generatedAt": "2026-10-13 14:44",
+ "updated": "2026-10-13 14:44 台北",
  "yesterday_date": "2026-10-12",
  "yesterday": {
   "users": 8,
@@ -30,33 +30,33 @@
   "users": 51,
   "pv": 123,
   "events": {
-   "tool_engaged": 7,
-   "tool_result": 6,
-   "card_open": 1,
    "email_signup": 3,
    "magnet_delivered": 3,
-   "cta_click": 3
+   "tool_engaged": 7,
+   "tool_result": 6,
+   "cta_click": 3,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 13,
     "events": {
+     "tool_engaged": 2,
+     "tool_result": 1,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_engaged": 2,
-     "cta_click": 1,
-     "tool_result": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 38,
     "events": {
-     "tool_engaged": 5,
-     "tool_result": 5,
-     "cta_click": 2,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "cta_click": 2,
+     "tool_engaged": 5,
+     "tool_result": 5
     }
    }
   }
@@ -65,12 +65,12 @@
   "users": 217,
   "pv": 590,
   "events": {
-   "cta_click": 7,
-   "tool_engaged": 21,
-   "tool_result": 18,
-   "card_open": 1,
    "email_signup": 6,
    "magnet_delivered": 8,
+   "tool_engaged": 21,
+   "tool_result": 18,
+   "cta_click": 7,
+   "card_open": 1,
    "outbound_placement": 1
   },
   "sites": {
@@ -79,21 +79,21 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 8,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "outbound_placement": 1,
-     "cta_click": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 175,
     "events": {
+     "email_signup": 5,
+     "magnet_delivered": 7,
      "cta_click": 6,
      "tool_engaged": 10,
-     "tool_result": 10,
-     "email_signup": 5,
-     "magnet_delivered": 7
+     "tool_result": 10
     }
    }
   }
@@ -149,15 +149,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 367,
-   "users": 172,
+   "sessions": 374,
+   "users": 176,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 68,
+   "sessions": 69,
    "users": 2,
    "signups": 0
   },
@@ -173,9 +173,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 17,
-   "users": 12,
-   "signups": 4
+   "sessions": 19,
+   "users": 14,
+   "signups": 5
   },
   {
    "source": "ig",
@@ -191,14 +191,6 @@
    "campaign": "(referral)",
    "sessions": 10,
    "users": 7,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 9,
-   "users": 8,
    "signups": 0
   },
   {
@@ -223,6 +215,14 @@
    "campaign": "(referral)",
    "sessions": 5,
    "users": 1,
+   "signups": 0
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 4,
+   "users": 4,
    "signups": 0
   },
   {
@@ -702,14 +702,14 @@
      },
      {
       "date": "2026-10-13",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 16,
     "d7_prev": 2,
-    "pv30": 19,
+    "pv30": 20,
     "outbound": [],
     "channels": [
      {
@@ -1012,23 +1012,23 @@
      },
      {
       "date": "2026-10-13",
-      "users": 0
+      "users": 3
      }
     ],
-    "today": 0,
+    "today": 3,
     "d7": 2,
     "d30": 5,
     "d7_prev": 1,
-    "pv30": 5,
+    "pv30": 8,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 3
+      "users": 4
      },
      {
       "ch": "Referral",
-      "users": 2
+      "users": 4
      }
     ],
     "engaged7": 2,
@@ -1318,19 +1318,19 @@
      },
      {
       "date": "2026-10-13",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 8,
     "d7_prev": 0,
-    "pv30": 8,
+    "pv30": 9,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Referral",
@@ -2895,13 +2895,13 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 172,
+    "users": 176,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 31,
-    "signups": 4
+    "users": 29,
+    "signups": 5
    },
    {
     "label": "IG 帶來的",
@@ -2916,7 +2916,7 @@
   ],
   "ig_share": 11,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 5 人在用",
   "signup_total_30d": 6
  },
  "v3": {
@@ -2951,14 +2951,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 85,
+     "users": 88,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 14,
-     "signups": 4
+     "users": 16,
+     "signups": 5
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2973,14 +2973,14 @@
      "signups": 1
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
+     "ch": "AI Assistant",
+     "raw": "AI Assistant",
+     "users": 2,
      "signups": 0
     },
     {
-     "ch": "AI Assistant",
-     "raw": "AI Assistant",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 2,
      "signups": 0
     }
@@ -3041,7 +3041,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 193,
+     "views": 194,
      "users": 10
     },
     {
@@ -3053,8 +3053,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 60,
-     "users": 54
+     "views": 63,
+     "users": 57
     },
     {
      "name": "個人習慣分析",
@@ -3077,14 +3077,14 @@
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 8,
-     "users": 6
+     "views": 12,
+     "users": 8
     },
     {
      "name": "工具箱到手",
      "path": "/welcome/",
-     "views": 7,
-     "users": 5
+     "views": 8,
+     "users": 6
     }
    ]
   },
