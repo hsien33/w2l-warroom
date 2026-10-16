@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-17 05:02",
- "updated": "2026-10-17 05:02 台北",
+ "generatedAt": "2026-10-17 07:32",
+ "updated": "2026-10-17 07:32 台北",
  "yesterday_date": "2026-10-16",
  "yesterday": {
-  "users": 7,
-  "pv": 8,
+  "users": 10,
+  "pv": 11,
   "events": {},
   "sites": {
    "grow": {
@@ -13,20 +13,20 @@
     "events": {}
    },
    "wealth": {
-    "users": 6,
+    "users": 9,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 43,
-  "pv": 85,
+  "users": 46,
+  "pv": 88,
   "events": {
    "tool_engaged": 4,
-   "tool_result": 2,
-   "cta_click": 1,
    "email_signup": 3,
    "magnet_delivered": 3,
+   "tool_result": 2,
+   "cta_click": 1,
    "card_open": 1
   },
   "sites": {
@@ -40,50 +40,50 @@
     }
    },
    "wealth": {
-    "users": 36,
+    "users": 39,
     "events": {
+     "email_signup": 2,
+     "magnet_delivered": 2,
      "tool_engaged": 2,
      "tool_result": 2,
-     "cta_click": 1,
-     "email_signup": 2,
-     "magnet_delivered": 2
+     "cta_click": 1
     }
    }
   }
  },
  "d30": {
-  "users": 213,
-  "pv": 516,
+  "users": 216,
+  "pv": 519,
   "events": {
-   "cta_click": 7,
    "tool_engaged": 19,
    "tool_result": 16,
+   "cta_click": 7,
    "email_signup": 7,
    "magnet_delivered": 9,
-   "card_open": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
      "tool_engaged": 10,
+     "tool_result": 7,
      "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_result": 7,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 179,
+    "users": 182,
     "events": {
-     "cta_click": 6,
      "tool_engaged": 9,
      "tool_result": 9,
      "email_signup": 6,
-     "magnet_delivered": 8
+     "magnet_delivered": 8,
+     "cta_click": 6
     }
    }
   }
@@ -114,13 +114,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 36,
+    "count": 39,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 2,
-    "rate": 5.6
+    "rate": 5.1
    },
    {
     "step": "Email訂閱",
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 371,
-   "users": 181,
+   "sessions": 374,
+   "users": 184,
    "signups": 0
   },
   {
@@ -380,7 +380,7 @@
   },
   {
    "date": "2026-10-16",
-   "users": 7,
+   "users": 10,
    "signups": 0
   }
  ],
@@ -394,7 +394,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "7.0%",
+   "value": "6.5%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -2729,7 +2729,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 181,
+    "users": 184,
     "signups": 0
    },
    {
@@ -2779,7 +2779,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 91,
+     "users": 94,
      "signups": 0
     },
     {
@@ -2881,8 +2881,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 58,
-     "users": 52
+     "views": 60,
+     "users": 54
     },
     {
      "name": "個人習慣分析",
@@ -3217,7 +3217,7 @@
     },
     {
      "date": "2026-10-16",
-     "users": 6,
+     "users": 9,
      "signups": 0
     }
    ]
@@ -3236,9 +3236,9 @@
     "signups30": 6,
     "signups7": 2,
     "signupsY": 0,
-    "users30": 179,
-    "users7": 36,
-    "rate7": 5.6
+    "users30": 182,
+    "users7": 39,
+    "rate7": 5.1
    }
   }
  }
