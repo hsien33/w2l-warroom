@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-16 12:25",
- "updated": "2026-10-16 12:25 台北",
+ "generatedAt": "2026-10-16 19:16",
+ "updated": "2026-10-16 19:16 台北",
  "yesterday_date": "2026-10-15",
  "yesterday": {
   "users": 4,
@@ -47,11 +47,11 @@
    "wealth": {
     "users": 36,
     "events": {
+     "tool_engaged": 2,
+     "tool_result": 2,
      "cta_click": 2,
      "email_signup": 3,
-     "magnet_delivered": 3,
-     "tool_engaged": 2,
-     "tool_result": 2
+     "magnet_delivered": 3
     }
    }
   }
@@ -60,13 +60,13 @@
   "users": 212,
   "pv": 526,
   "events": {
-   "cta_click": 7,
    "tool_engaged": 19,
    "tool_result": 16,
+   "cta_click": 7,
    "email_signup": 7,
    "magnet_delivered": 9,
-   "card_open": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -75,10 +75,10 @@
      "cta_click": 1,
      "tool_engaged": 10,
      "tool_result": 7,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -144,15 +144,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 380,
-   "users": 181,
+   "sessions": 384,
+   "users": 183,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 77,
+   "sessions": 79,
    "users": 2,
    "signups": 0
   },
@@ -189,18 +189,18 @@
    "signups": 0
   },
   {
-   "source": "l.instagram.com",
-   "medium": "referral",
-   "campaign": "(referral)",
+   "source": "ig",
+   "medium": "social",
+   "campaign": "(not set)",
    "sessions": 7,
    "users": 5,
    "signups": 0
   },
   {
-   "source": "ig",
-   "medium": "social",
-   "campaign": "(not set)",
-   "sessions": 6,
+   "source": "l.instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 7,
    "users": 5,
    "signups": 0
   },
@@ -2735,7 +2735,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 181,
+    "users": 183,
     "signups": 0
    },
    {
@@ -2793,7 +2793,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 90,
+     "users": 91,
      "signups": 0
     },
     {
@@ -2883,13 +2883,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 162,
+     "views": 165,
      "users": 9
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 67,
+     "views": 68,
      "users": 4
     },
     {
@@ -2907,8 +2907,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 22,
-     "users": 22
+     "views": 23,
+     "users": 23
     },
     {
      "name": "訂閱電子報",
