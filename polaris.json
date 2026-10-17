@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-17 07:32",
- "updated": "2026-10-17 07:32 台北",
+ "generatedAt": "2026-10-17 12:19",
+ "updated": "2026-10-17 12:19 台北",
  "yesterday_date": "2026-10-16",
  "yesterday": {
   "users": 10,
@@ -22,31 +22,31 @@
   "users": 46,
   "pv": 88,
   "events": {
-   "tool_engaged": 4,
+   "card_open": 1,
    "email_signup": 3,
    "magnet_delivered": 3,
+   "tool_engaged": 4,
    "tool_result": 2,
-   "cta_click": 1,
-   "card_open": 1
+   "cta_click": 1
   },
   "sites": {
    "grow": {
     "users": 7,
     "events": {
-     "tool_engaged": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 2
     }
    },
    "wealth": {
     "users": 39,
     "events": {
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "tool_engaged": 2,
      "tool_result": 2,
-     "cta_click": 1
+     "cta_click": 1,
+     "email_signup": 2,
+     "magnet_delivered": 2
     }
    }
   }
@@ -55,25 +55,25 @@
   "users": 216,
   "pv": 519,
   "events": {
+   "card_open": 1,
+   "email_signup": 7,
+   "magnet_delivered": 9,
    "tool_engaged": 19,
    "tool_result": 16,
    "cta_click": 7,
-   "email_signup": 7,
-   "magnet_delivered": 9,
-   "outbound_placement": 1,
-   "card_open": 1
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
+     "card_open": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "tool_engaged": 10,
      "tool_result": 7,
      "cta_click": 1,
-     "outbound_placement": 1,
-     "card_open": 1,
-     "email_signup": 1,
-     "magnet_delivered": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -81,9 +81,9 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 9,
+     "cta_click": 6,
      "email_signup": 6,
-     "magnet_delivered": 8,
-     "cta_click": 6
+     "magnet_delivered": 8
     }
    }
   }
@@ -139,7 +139,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 374,
+   "sessions": 375,
    "users": 184,
    "signups": 0
   },
