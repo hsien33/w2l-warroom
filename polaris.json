@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-17 12:19",
- "updated": "2026-10-17 12:19 台北",
+ "generatedAt": "2026-10-17 18:36",
+ "updated": "2026-10-17 18:36 台北",
  "yesterday_date": "2026-10-16",
  "yesterday": {
   "users": 10,
@@ -22,10 +22,10 @@
   "users": 46,
   "pv": 88,
   "events": {
+   "tool_engaged": 4,
    "card_open": 1,
    "email_signup": 3,
    "magnet_delivered": 3,
-   "tool_engaged": 4,
    "tool_result": 2,
    "cta_click": 1
   },
@@ -33,20 +33,20 @@
    "grow": {
     "users": 7,
     "events": {
+     "tool_engaged": 2,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_engaged": 2
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 39,
     "events": {
+     "email_signup": 2,
+     "magnet_delivered": 2,
      "tool_engaged": 2,
      "tool_result": 2,
-     "cta_click": 1,
-     "email_signup": 2,
-     "magnet_delivered": 2
+     "cta_click": 1
     }
    }
   }
@@ -55,25 +55,25 @@
   "users": 216,
   "pv": 519,
   "events": {
-   "card_open": 1,
-   "email_signup": 7,
-   "magnet_delivered": 9,
    "tool_engaged": 19,
+   "outbound_placement": 1,
    "tool_result": 16,
    "cta_click": 7,
-   "outbound_placement": 1
+   "card_open": 1,
+   "email_signup": 7,
+   "magnet_delivered": 9
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
+     "tool_engaged": 10,
+     "outbound_placement": 1,
+     "tool_result": 7,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "tool_engaged": 10,
-     "tool_result": 7,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "cta_click": 1
     }
    },
    "wealth": {
@@ -139,7 +139,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 375,
+   "sessions": 376,
    "users": 184,
    "signups": 0
   },
@@ -2869,7 +2869,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 157,
+     "views": 159,
      "users": 8
     },
     {
@@ -2887,7 +2887,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 39,
+     "views": 41,
      "users": 3
     },
     {
