@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-19 04:36",
- "updated": "2026-10-19 04:36 台北",
+ "generatedAt": "2026-10-19 07:07",
+ "updated": "2026-10-19 07:07 台北",
  "yesterday_date": "2026-10-18",
  "yesterday": {
-  "users": 9,
-  "pv": 9,
+  "users": 10,
+  "pv": 10,
   "events": {},
   "sites": {
    "grow": {
@@ -13,21 +13,21 @@
     "events": {}
    },
    "wealth": {
-    "users": 9,
+    "users": 10,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 50,
-  "pv": 88,
+  "users": 51,
+  "pv": 89,
   "events": {
-   "card_open": 1,
-   "email_signup": 2,
-   "magnet_delivered": 2,
    "tool_engaged": 3,
    "tool_result": 2,
-   "cta_click": 1
+   "cta_click": 1,
+   "email_signup": 2,
+   "magnet_delivered": 2,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -40,7 +40,7 @@
     }
    },
    "wealth": {
-    "users": 46,
+    "users": 47,
     "events": {
      "tool_engaged": 2,
      "tool_result": 2,
@@ -52,36 +52,36 @@
   }
  },
  "d30": {
-  "users": 215,
-  "pv": 481,
+  "users": 216,
+  "pv": 482,
   "events": {
-   "cta_click": 7,
-   "email_signup": 6,
-   "magnet_delivered": 8,
-   "card_open": 1,
    "tool_engaged": 16,
    "tool_result": 13,
+   "magnet_delivered": 8,
+   "email_signup": 6,
+   "cta_click": 7,
+   "card_open": 1,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 30,
     "events": {
+     "tool_engaged": 7,
+     "tool_result": 4,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "cta_click": 1,
-     "tool_engaged": 7,
-     "outbound_placement": 1,
-     "tool_result": 4
+     "outbound_placement": 1
     }
    },
    "wealth": {
-    "users": 185,
+    "users": 186,
     "events": {
-     "cta_click": 6,
-     "email_signup": 5,
      "magnet_delivered": 7,
+     "email_signup": 5,
+     "cta_click": 6,
      "tool_engaged": 9,
      "tool_result": 9
     }
@@ -114,7 +114,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 46,
+    "count": 47,
     "rate": null
    },
    {
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 373,
-   "users": 188,
+   "sessions": 375,
+   "users": 189,
    "signups": 0
   },
   {
@@ -380,7 +380,7 @@
   },
   {
    "date": "2026-10-18",
-   "users": 9,
+   "users": 10,
    "signups": 0
   }
  ],
@@ -394,7 +394,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "4.0%",
+   "value": "3.9%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -2572,7 +2572,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 188,
+    "users": 189,
     "signups": 0
    },
    {
@@ -2622,7 +2622,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 99,
+     "users": 100,
      "signups": 0
     },
     {
@@ -3060,7 +3060,7 @@
     },
     {
      "date": "2026-10-18",
-     "users": 9,
+     "users": 10,
      "signups": 0
     }
    ]
@@ -3079,9 +3079,9 @@
     "signups30": 5,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 185,
-    "users7": 46,
-    "rate7": 2.2
+    "users30": 186,
+    "users7": 47,
+    "rate7": 2.1
    }
   }
  }
