@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-18 12:25",
- "updated": "2026-10-18 12:25 台北",
+ "generatedAt": "2026-10-18 18:58",
+ "updated": "2026-10-18 18:58 台北",
  "yesterday_date": "2026-10-17",
  "yesterday": {
   "users": 6,
@@ -55,9 +55,9 @@
   "users": 214,
   "pv": 493,
   "events": {
-   "cta_click": 7,
    "magnet_delivered": 8,
    "email_signup": 6,
+   "cta_click": 7,
    "tool_engaged": 18,
    "tool_result": 15,
    "card_open": 1,
@@ -79,9 +79,9 @@
    "wealth": {
     "users": 181,
     "events": {
-     "cta_click": 6,
      "magnet_delivered": 7,
      "email_signup": 5,
+     "cta_click": 6,
      "tool_engaged": 9,
      "tool_result": 9
     }
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 376,
-   "users": 184,
+   "sessions": 378,
+   "users": 186,
    "signups": 0
   },
   {
@@ -2578,7 +2578,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 184,
+    "users": 186,
     "signups": 0
    },
    {
@@ -2636,7 +2636,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 93,
+     "users": 95,
      "signups": 0
     },
     {
@@ -2738,8 +2738,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 59,
-     "users": 53
+     "views": 60,
+     "users": 54
     },
     {
      "name": "個人習慣分析",
@@ -2750,8 +2750,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 23,
-     "users": 23
+     "views": 24,
+     "users": 24
     },
     {
      "name": "訂閱電子報",
