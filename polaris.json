@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-18 18:58",
- "updated": "2026-10-18 18:58 台北",
+ "generatedAt": "2026-10-18 23:48",
+ "updated": "2026-10-18 23:48 台北",
  "yesterday_date": "2026-10-17",
  "yesterday": {
   "users": 6,
@@ -33,10 +33,10 @@
    "grow": {
     "users": 6,
     "events": {
-     "tool_engaged": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 1
     }
    },
    "wealth": {
@@ -55,11 +55,11 @@
   "users": 214,
   "pv": 493,
   "events": {
-   "magnet_delivered": 8,
-   "email_signup": 6,
-   "cta_click": 7,
    "tool_engaged": 18,
    "tool_result": 15,
+   "cta_click": 7,
+   "email_signup": 6,
+   "magnet_delivered": 8,
    "card_open": 1,
    "outbound_placement": 1
   },
@@ -79,9 +79,9 @@
    "wealth": {
     "users": 181,
     "events": {
-     "magnet_delivered": 7,
-     "email_signup": 5,
      "cta_click": 6,
+     "email_signup": 5,
+     "magnet_delivered": 7,
      "tool_engaged": 9,
      "tool_result": 9
     }
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 378,
-   "users": 186,
+   "sessions": 382,
+   "users": 189,
    "signups": 0
   },
   {
@@ -2578,7 +2578,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 186,
+    "users": 189,
     "signups": 0
    },
    {
@@ -2597,7 +2597,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 7,
+  "ig_share": 6,
   "cards": [
    {
     "level": "red",
@@ -2636,7 +2636,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 95,
+     "users": 98,
      "signups": 0
     },
     {
@@ -2726,20 +2726,20 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 149,
+     "views": 150,
      "users": 8
+    },
+    {
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "path": "/",
+     "views": 63,
+     "users": 57
     },
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
      "views": 61,
      "users": 4
-    },
-    {
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "path": "/",
-     "views": 60,
-     "users": 54
     },
     {
      "name": "個人習慣分析",
