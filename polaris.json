@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-19 07:07",
- "updated": "2026-10-19 07:07 台北",
+ "generatedAt": "2026-10-19 12:34",
+ "updated": "2026-10-19 12:34 台北",
  "yesterday_date": "2026-10-18",
  "yesterday": {
-  "users": 10,
-  "pv": 10,
+  "users": 12,
+  "pv": 15,
   "events": {},
   "sites": {
    "grow": {
@@ -13,34 +13,34 @@
     "events": {}
    },
    "wealth": {
-    "users": 10,
+    "users": 12,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 51,
-  "pv": 89,
+  "users": 53,
+  "pv": 94,
   "events": {
    "tool_engaged": 3,
-   "tool_result": 2,
-   "cta_click": 1,
+   "card_open": 1,
    "email_signup": 2,
    "magnet_delivered": 2,
-   "card_open": 1
+   "tool_result": 2,
+   "cta_click": 1
   },
   "sites": {
    "grow": {
     "users": 4,
     "events": {
+     "tool_engaged": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "tool_engaged": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 47,
+    "users": 49,
     "events": {
      "tool_engaged": 2,
      "tool_result": 2,
@@ -52,15 +52,15 @@
   }
  },
  "d30": {
-  "users": 216,
-  "pv": 482,
+  "users": 218,
+  "pv": 487,
   "events": {
-   "tool_engaged": 16,
-   "tool_result": 13,
-   "magnet_delivered": 8,
-   "email_signup": 6,
    "cta_click": 7,
+   "tool_engaged": 16,
    "card_open": 1,
+   "email_signup": 6,
+   "magnet_delivered": 8,
+   "tool_result": 13,
    "outbound_placement": 1
   },
   "sites": {
@@ -68,20 +68,20 @@
     "users": 30,
     "events": {
      "tool_engaged": 7,
-     "tool_result": 4,
-     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
+     "tool_result": 4,
+     "cta_click": 1,
      "outbound_placement": 1
     }
    },
    "wealth": {
-    "users": 186,
+    "users": 188,
     "events": {
-     "magnet_delivered": 7,
-     "email_signup": 5,
      "cta_click": 6,
+     "email_signup": 5,
+     "magnet_delivered": 7,
      "tool_engaged": 9,
      "tool_result": 9
     }
@@ -114,13 +114,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 47,
+    "count": 49,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 2,
-    "rate": 4.3
+    "rate": 4.1
    },
    {
     "step": "Email訂閱",
@@ -139,8 +139,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 375,
-   "users": 189,
+   "sessions": 379,
+   "users": 192,
    "signups": 0
   },
   {
@@ -380,7 +380,7 @@
   },
   {
    "date": "2026-10-18",
-   "users": 10,
+   "users": 12,
    "signups": 0
   }
  ],
@@ -394,7 +394,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "3.9%",
+   "value": "3.8%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -2572,7 +2572,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 189,
+    "users": 192,
     "signups": 0
    },
    {
@@ -2622,7 +2622,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 100,
+     "users": 102,
      "signups": 0
     },
     {
@@ -2712,14 +2712,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 143,
+     "views": 144,
      "users": 8
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 64,
-     "users": 58
+     "views": 66,
+     "users": 60
     },
     {
      "name": "每日熱量收支",
@@ -2730,7 +2730,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 32,
+     "views": 34,
      "users": 3
     },
     {
@@ -3060,7 +3060,7 @@
     },
     {
      "date": "2026-10-18",
-     "users": 10,
+     "users": 12,
      "signups": 0
     }
    ]
@@ -3079,9 +3079,9 @@
     "signups30": 5,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 186,
-    "users7": 47,
-    "rate7": 2.1
+    "users30": 188,
+    "users7": 49,
+    "rate7": 2.0
    }
   }
  }
