@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-19 12:34",
- "updated": "2026-10-19 12:34 台北",
+ "generatedAt": "2026-10-19 21:03",
+ "updated": "2026-10-19 21:03 台北",
  "yesterday_date": "2026-10-18",
  "yesterday": {
   "users": 12,
@@ -55,12 +55,12 @@
   "users": 218,
   "pv": 487,
   "events": {
-   "cta_click": 7,
    "tool_engaged": 16,
-   "card_open": 1,
+   "tool_result": 13,
+   "cta_click": 7,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "tool_result": 13,
+   "card_open": 1,
    "outbound_placement": 1
   },
   "sites": {
@@ -68,10 +68,10 @@
     "users": 30,
     "events": {
      "tool_engaged": 7,
+     "tool_result": 4,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "tool_result": 4,
      "cta_click": 1,
      "outbound_placement": 1
     }
