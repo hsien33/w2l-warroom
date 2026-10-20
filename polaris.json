@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-21 03:11",
- "updated": "2026-10-21 03:11 台北",
+ "generatedAt": "2026-10-21 07:50",
+ "updated": "2026-10-21 07:50 台北",
  "yesterday_date": "2026-10-20",
  "yesterday": {
   "users": 11,
@@ -41,35 +41,35 @@
   "users": 226,
   "pv": 489,
   "events": {
-   "card_open": 1,
-   "email_signup": 6,
-   "magnet_delivered": 8,
    "tool_engaged": 16,
    "tool_result": 13,
    "cta_click": 6,
-   "outbound_placement": 1
+   "email_signup": 6,
+   "magnet_delivered": 8,
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
+     "tool_engaged": 7,
+     "tool_result": 4,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "tool_engaged": 7,
-     "tool_result": 4,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 192,
     "events": {
-     "tool_engaged": 9,
-     "tool_result": 9,
      "cta_click": 5,
      "email_signup": 5,
-     "magnet_delivered": 7
+     "magnet_delivered": 7,
+     "tool_engaged": 9,
+     "tool_result": 9
     }
    }
   }
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 387,
-   "users": 204,
+   "sessions": 388,
+   "users": 205,
    "signups": 0
   },
   {
@@ -149,8 +149,8 @@
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
-   "sessions": 11,
-   "users": 10,
+   "sessions": 12,
+   "users": 11,
    "signups": 1
   },
   {
@@ -2558,7 +2558,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 204,
+    "users": 205,
     "signups": 0
    },
    {
@@ -2568,7 +2568,7 @@
    },
    {
     "label": "IG 帶來的",
-    "users": 15,
+    "users": 16,
     "signups": 1
    },
    {
@@ -2596,7 +2596,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 19,
+     "users": 20,
      "signups": 1
     },
     {
@@ -2656,8 +2656,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 15,
-     "users": 14
+     "views": 16,
+     "users": 15
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
