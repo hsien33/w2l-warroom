@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-20 16:26",
- "updated": "2026-10-20 16:26 台北",
+ "generatedAt": "2026-10-20 22:16",
+ "updated": "2026-10-20 22:16 台北",
  "yesterday_date": "2026-10-19",
  "yesterday": {
   "users": 7,
@@ -51,11 +51,11 @@
   "users": 221,
   "pv": 489,
   "events": {
+   "tool_engaged": 16,
+   "tool_result": 13,
    "card_open": 1,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "tool_engaged": 16,
-   "tool_result": 13,
    "cta_click": 7,
    "outbound_placement": 1
   },
@@ -63,11 +63,11 @@
    "grow": {
     "users": 30,
     "events": {
+     "tool_engaged": 7,
+     "tool_result": 4,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "tool_engaged": 7,
-     "tool_result": 4,
      "outbound_placement": 1,
      "cta_click": 1
     }
@@ -75,9 +75,9 @@
    "wealth": {
     "users": 191,
     "events": {
+     "cta_click": 6,
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 6,
      "email_signup": 5,
      "magnet_delivered": 7
     }
@@ -135,15 +135,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 389,
-   "users": 202,
+   "sessions": 398,
+   "users": 209,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 86,
+   "sessions": 88,
    "users": 2,
    "signups": 0
   },
@@ -172,19 +172,19 @@
    "signups": 0
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 7,
+   "users": 6,
+   "signups": 0
+  },
+  {
    "source": "ig",
    "medium": "social",
    "campaign": "(not set)",
    "sessions": 7,
    "users": 5,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
    "signups": 0
   },
   {
@@ -199,8 +199,8 @@
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 2,
-   "users": 2,
+   "sessions": 3,
+   "users": 3,
    "signups": 0
   },
   {
@@ -2065,19 +2065,19 @@
      },
      {
       "date": "2026-10-20",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 1,
     "d7_prev": 0,
-    "pv30": 1,
+    "pv30": 2,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -2572,12 +2572,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 202,
+    "users": 209,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 26,
+    "users": 29,
     "signups": 5
    },
    {
@@ -2614,7 +2614,7 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 2,
+     "users": 3,
      "signups": 0
     }
    ],
@@ -2622,7 +2622,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 107,
+     "users": 111,
      "signups": 0
     },
     {
@@ -2690,6 +2690,12 @@
      "users": 2
     },
     {
+     "name": "孩子考差，先別急著安慰——你可以這樣說",
+     "path": "/articles/exam-result-talk/",
+     "views": 1,
+     "users": 1
+    },
+    {
      "name": "別人家孩子都很乖？停止比較的三個提醒",
      "path": "/articles/stop-comparing-other-kids/",
      "views": 1,
@@ -2700,26 +2706,20 @@
      "path": "/articles/talkback-self-calm-first/",
      "views": 1,
      "users": 1
-    },
-    {
-     "name": "我也曾對孩子吼完就後悔——那天我學會的30秒煞車",
-     "path": "/articles/yell-then-regret-30s-brake/",
-     "views": 1,
-     "users": 1
     }
    ],
    "wealth": [
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 146,
+     "views": 148,
      "users": 8
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 66,
-     "users": 60
+     "views": 68,
+     "users": 62
     },
     {
      "name": "每日熱量收支",
@@ -2736,8 +2736,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 26,
-     "users": 26
+     "views": 27,
+     "users": 27
     },
     {
      "name": "訂閱電子報",
