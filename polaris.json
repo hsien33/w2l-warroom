@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-20 04:33",
- "updated": "2026-10-20 04:33 台北",
+ "generatedAt": "2026-10-20 08:17",
+ "updated": "2026-10-20 08:17 台北",
  "yesterday_date": "2026-10-19",
  "yesterday": {
-  "users": 1,
-  "pv": 1,
+  "users": 3,
+  "pv": 3,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 1,
+    "users": 3,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 46,
-  "pv": 77,
+  "users": 48,
+  "pv": 79,
   "events": {
    "tool_engaged": 3,
    "tool_result": 2,
@@ -36,7 +36,7 @@
     }
    },
    "wealth": {
-    "users": 44,
+    "users": 46,
     "events": {
      "tool_engaged": 2,
      "tool_result": 2,
@@ -48,15 +48,15 @@
   }
  },
  "d30": {
-  "users": 215,
-  "pv": 480,
+  "users": 217,
+  "pv": 482,
   "events": {
    "tool_engaged": 16,
-   "outbound_placement": 1,
    "tool_result": 13,
    "cta_click": 7,
    "email_signup": 6,
    "magnet_delivered": 8,
+   "outbound_placement": 1,
    "card_open": 1
   },
   "sites": {
@@ -64,16 +64,16 @@
     "users": 30,
     "events": {
      "tool_engaged": 7,
-     "outbound_placement": 1,
      "tool_result": 4,
      "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 185,
+    "users": 187,
     "events": {
      "tool_engaged": 9,
      "tool_result": 9,
@@ -110,13 +110,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 44,
+    "count": 46,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 2,
-    "rate": 4.5
+    "rate": 4.3
    },
    {
     "step": "Email訂閱",
@@ -135,7 +135,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 376,
+   "sessions": 377,
    "users": 193,
    "signups": 0
   },
@@ -143,7 +143,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 81,
+   "sessions": 82,
    "users": 2,
    "signups": 0
   },
@@ -376,7 +376,7 @@
   },
   {
    "date": "2026-10-19",
-   "users": 1,
+   "users": 3,
    "signups": 0
   }
  ],
@@ -390,7 +390,7 @@
   {
    "status": "green",
    "label": "7日訂閱率",
-   "value": "2.2%",
+   "value": "2.1%",
    "advice": "高於 2% 基準，磁鐵有吸力。"
   },
   {
@@ -2708,7 +2708,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 140,
+     "views": 142,
      "users": 8
     },
     {
@@ -3056,7 +3056,7 @@
     },
     {
      "date": "2026-10-19",
-     "users": 1,
+     "users": 3,
      "signups": 0
     }
    ]
@@ -3075,9 +3075,9 @@
     "signups30": 5,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 185,
-    "users7": 44,
-    "rate7": 2.3
+    "users30": 187,
+    "users7": 46,
+    "rate7": 2.2
    }
   }
  }
