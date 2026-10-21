@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-21 12:39",
- "updated": "2026-10-21 12:39 台北",
+ "generatedAt": "2026-10-21 19:41",
+ "updated": "2026-10-21 19:41 台北",
  "yesterday_date": "2026-10-20",
  "yesterday": {
   "users": 11,
@@ -41,35 +41,35 @@
   "users": 226,
   "pv": 489,
   "events": {
+   "cta_click": 6,
    "tool_engaged": 16,
    "tool_result": 13,
-   "cta_click": 6,
+   "outbound_placement": 1,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "card_open": 1,
-   "outbound_placement": 1
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
      "tool_engaged": 7,
+     "outbound_placement": 1,
      "tool_result": 4,
-     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "outbound_placement": 1
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 192,
     "events": {
      "cta_click": 5,
-     "email_signup": 5,
-     "magnet_delivered": 7,
      "tool_engaged": 9,
-     "tool_result": 9
+     "tool_result": 9,
+     "email_signup": 5,
+     "magnet_delivered": 7
     }
    }
   }
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 396,
-   "users": 209,
+   "sessions": 398,
+   "users": 211,
    "signups": 0
   },
   {
@@ -173,7 +173,7 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 4,
+   "sessions": 5,
    "users": 4,
    "signups": 0
   },
@@ -2558,7 +2558,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 209,
+    "users": 211,
     "signups": 0
    },
    {
