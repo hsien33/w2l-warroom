@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-23 01:06",
- "updated": "2026-10-23 01:06 台北",
+ "generatedAt": "2026-10-23 05:31",
+ "updated": "2026-10-23 05:31 台北",
  "yesterday_date": "2026-10-22",
  "yesterday": {
   "users": 8,
@@ -43,25 +43,25 @@
   "users": 227,
   "pv": 470,
   "events": {
-   "tool_engaged": 17,
-   "outbound_placement": 1,
-   "tool_result": 14,
    "cta_click": 6,
+   "tool_engaged": 17,
+   "tool_result": 14,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "card_open": 1
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 31,
     "events": {
-     "tool_engaged": 7,
-     "outbound_placement": 1,
-     "tool_result": 4,
      "cta_click": 1,
+     "tool_engaged": 7,
+     "tool_result": 4,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -135,7 +135,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 87,
+   "sessions": 88,
    "users": 2,
    "signups": 0
   },
