@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-23 05:31",
- "updated": "2026-10-23 05:31 台北",
+ "generatedAt": "2026-10-23 12:43",
+ "updated": "2026-10-23 12:43 台北",
  "yesterday_date": "2026-10-22",
  "yesterday": {
   "users": 8,
@@ -43,25 +43,25 @@
   "users": 227,
   "pv": 470,
   "events": {
-   "cta_click": 6,
    "tool_engaged": 17,
+   "outbound_placement": 1,
    "tool_result": 14,
-   "email_signup": 6,
-   "magnet_delivered": 8,
+   "cta_click": 6,
    "card_open": 1,
-   "outbound_placement": 1
+   "email_signup": 6,
+   "magnet_delivered": 8
   },
   "sites": {
    "grow": {
     "users": 31,
     "events": {
-     "cta_click": 1,
      "tool_engaged": 7,
+     "outbound_placement": 1,
      "tool_result": 4,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 395,
-   "users": 212,
+   "sessions": 399,
+   "users": 215,
    "signups": 0
   },
   {
@@ -204,17 +204,17 @@
    "signups": 0
   },
   {
-   "source": "fb",
-   "medium": "group",
-   "campaign": "finale",
+   "source": "facebook.com",
+   "medium": "referral",
+   "campaign": "(referral)",
    "sessions": 1,
    "users": 1,
    "signups": 0
   },
   {
-   "source": "instagram.com",
-   "medium": "referral",
-   "campaign": "(referral)",
+   "source": "fb",
+   "medium": "group",
+   "campaign": "finale",
    "sessions": 1,
    "users": 1,
    "signups": 0
@@ -2562,17 +2562,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 212,
+    "users": 215,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 25,
+    "users": 26,
     "signups": 5
    },
    {
     "label": "IG 帶來的",
-    "users": 16,
+    "users": 15,
     "signups": 1
    },
    {
@@ -2607,7 +2607,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 18,
+     "users": 19,
      "signups": 1
     },
     {
@@ -2627,7 +2627,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 114,
+     "users": 117,
      "signups": 0
     },
     {
@@ -2671,16 +2671,16 @@
      "users": 14
     },
     {
+     "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
+     "path": "/articles/when-to-give-first-phone/",
+     "views": 4,
+     "users": 2
+    },
+    {
      "name": "對話筆記",
      "path": "/articles/",
      "views": 3,
      "users": 2
-    },
-    {
-     "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
-     "path": "/articles/when-to-give-first-phone/",
-     "views": 3,
-     "users": 1
     },
     {
      "name": "關於 Jeff",
@@ -2717,14 +2717,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/index.html",
-     "views": 138,
+     "views": 139,
      "users": 8
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 63
+     "views": 71,
+     "users": 66
     },
     {
      "name": "每日熱量收支",
@@ -2735,7 +2735,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 33,
+     "views": 34,
      "users": 2
     },
     {
