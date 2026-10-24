@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-24 12:30",
- "updated": "2026-10-24 12:30 台北",
+ "generatedAt": "2026-10-24 18:52",
+ "updated": "2026-10-24 18:52 台北",
  "yesterday_date": "2026-10-23",
  "yesterday": {
   "users": 7,
@@ -44,24 +44,24 @@
   "pv": 454,
   "events": {
    "tool_engaged": 17,
-   "tool_result": 14,
    "cta_click": 6,
+   "tool_result": 14,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "card_open": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 32,
     "events": {
      "tool_engaged": 7,
+     "cta_click": 1,
      "tool_result": 4,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 389,
-   "users": 211,
+   "sessions": 391,
+   "users": 212,
    "signups": 0
   },
   {
@@ -156,19 +156,19 @@
    "signups": 5
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 8,
+   "users": 8,
+   "signups": 0
+  },
+  {
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 8,
    "users": 5,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 7,
-   "users": 7,
    "signups": 0
   },
   {
@@ -1144,7 +1144,7 @@
     "d7": 0,
     "d30": 8,
     "d7_prev": 4,
-    "pv30": 8,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
@@ -1153,6 +1153,10 @@
      },
      {
       "ch": "Organic Social",
+      "users": 1
+     },
+     {
+      "ch": "Unassigned",
       "users": 1
      }
     ],
@@ -2562,12 +2566,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 211,
+    "users": 212,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 26,
+    "users": 27,
     "signups": 5
    },
    {
@@ -2613,6 +2617,12 @@
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
      "users": 3,
+     "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 1,
      "signups": 0
     }
    ],
