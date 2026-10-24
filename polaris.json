@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-24 05:21",
- "updated": "2026-10-24 05:21 台北",
+ "generatedAt": "2026-10-24 12:30",
+ "updated": "2026-10-24 12:30 台北",
  "yesterday_date": "2026-10-23",
  "yesterday": {
   "users": 7,
@@ -44,34 +44,34 @@
   "pv": 454,
   "events": {
    "tool_engaged": 17,
+   "tool_result": 14,
+   "cta_click": 6,
    "email_signup": 6,
    "magnet_delivered": 8,
-   "cta_click": 6,
-   "tool_result": 14,
-   "outbound_placement": 1,
-   "card_open": 1
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 32,
     "events": {
      "tool_engaged": 7,
-     "cta_click": 1,
      "tool_result": 4,
-     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 193,
     "events": {
-     "email_signup": 5,
-     "magnet_delivered": 7,
-     "cta_click": 5,
      "tool_engaged": 10,
-     "tool_result": 10
+     "tool_result": 10,
+     "cta_click": 5,
+     "email_signup": 5,
+     "magnet_delivered": 7
     }
    }
   }
@@ -127,7 +127,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 387,
+   "sessions": 389,
    "users": 211,
    "signups": 0
   },
@@ -1137,14 +1137,14 @@
      },
      {
       "date": "2026-10-24",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 8,
     "d7_prev": 4,
-    "pv30": 7,
+    "pv30": 8,
     "outbound": [],
     "channels": [
      {
@@ -2710,7 +2710,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 128,
+     "views": 131,
      "users": 8
     },
     {
@@ -2722,13 +2722,13 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 47,
+     "views": 48,
      "users": 4
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 33,
+     "views": 35,
      "users": 2
     },
     {
