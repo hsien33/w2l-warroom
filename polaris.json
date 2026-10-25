@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-25 12:34",
- "updated": "2026-10-25 12:34 台北",
+ "generatedAt": "2026-10-25 19:18",
+ "updated": "2026-10-25 19:18 台北",
  "yesterday_date": "2026-10-24",
  "yesterday": {
   "users": 3,
@@ -43,34 +43,34 @@
   "users": 223,
   "pv": 455,
   "events": {
-   "email_signup": 6,
-   "magnet_delivered": 8,
    "tool_engaged": 17,
    "tool_result": 14,
+   "magnet_delivered": 8,
+   "email_signup": 6,
    "cta_click": 6,
-   "outbound_placement": 1,
-   "card_open": 1
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 33,
     "events": {
      "tool_engaged": 7,
+     "cta_click": 1,
      "tool_result": 4,
-     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "cta_click": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 190,
     "events": {
-     "email_signup": 5,
-     "magnet_delivered": 7,
      "tool_engaged": 10,
      "tool_result": 10,
+     "magnet_delivered": 7,
+     "email_signup": 5,
      "cta_click": 5
     }
    }
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 390,
-   "users": 214,
+   "sessions": 395,
+   "users": 220,
    "signups": 0
   },
   {
@@ -159,8 +159,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 9,
-   "users": 9,
+   "sessions": 8,
+   "users": 8,
    "signups": 0
   },
   {
@@ -188,6 +188,14 @@
    "signups": 0
   },
   {
+   "source": "instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 3,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "auth.openai.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -207,14 +215,6 @@
    "source": "facebook.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 1,
-   "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "fb",
-   "medium": "group",
-   "campaign": "finale",
    "sessions": 1,
    "users": 1,
    "signups": 0
@@ -829,27 +829,23 @@
      },
      {
       "date": "2026-10-25",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 1,
     "d30": 9,
     "d7_prev": 3,
-    "pv30": 10,
+    "pv30": 13,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      },
      {
       "ch": "Organic Social",
-      "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -2566,17 +2562,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 214,
+    "users": 220,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 28,
+    "users": 26,
     "signups": 5
    },
    {
     "label": "IG 帶來的",
-    "users": 15,
+    "users": 17,
     "signups": 1
    },
    {
@@ -2604,13 +2600,13 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 19,
+     "users": 20,
      "signups": 1
     },
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 8,
+     "users": 12,
      "signups": 0
     },
     {
@@ -2618,19 +2614,13 @@
      "raw": "Organic Search",
      "users": 3,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 115,
+     "users": 116,
      "signups": 0
     },
     {
@@ -2670,8 +2660,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 15,
-     "users": 14
+     "views": 17,
+     "users": 16
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2744,8 +2734,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 27,
-     "users": 27
+     "views": 28,
+     "users": 28
     },
     {
      "name": "訂閱電子報",
