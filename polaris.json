@@ -1,46 +1,46 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-26 00:09",
- "updated": "2026-10-26 00:09 台北",
+ "generatedAt": "2026-10-26 04:46",
+ "updated": "2026-10-26 04:46 台北",
  "yesterday_date": "2026-10-25",
  "yesterday": {
-  "users": 9,
-  "pv": 17,
-  "events": {
-   "tool_engaged": 1,
-   "tool_result": 1
-  },
-  "sites": {
-   "grow": {
-    "users": 4,
-    "events": {
-     "tool_engaged": 1,
-     "tool_result": 1
-    }
-   },
-   "wealth": {
-    "users": 5,
-    "events": {}
-   }
-  }
- },
- "d7": {
-  "users": 53,
-  "pv": 82,
+  "users": 11,
+  "pv": 19,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2
   },
   "sites": {
    "grow": {
-    "users": 11,
+    "users": 5,
     "events": {
-     "tool_engaged": 1,
-     "tool_result": 1
+     "tool_engaged": 2,
+     "tool_result": 2
     }
    },
    "wealth": {
-    "users": 42,
+    "users": 6,
+    "events": {}
+   }
+  }
+ },
+ "d7": {
+  "users": 55,
+  "pv": 84,
+  "events": {
+   "tool_engaged": 3,
+   "tool_result": 3
+  },
+  "sites": {
+   "grow": {
+    "users": 12,
+    "events": {
+     "tool_engaged": 2,
+     "tool_result": 2
+    }
+   },
+   "wealth": {
+    "users": 43,
     "events": {
      "tool_engaged": 1,
      "tool_result": 1
@@ -49,37 +49,37 @@
   }
  },
  "d30": {
-  "users": 223,
-  "pv": 450,
+  "users": 225,
+  "pv": 452,
   "events": {
-   "cta_click": 6,
-   "tool_engaged": 17,
-   "tool_result": 14,
-   "magnet_delivered": 8,
+   "tool_engaged": 18,
+   "tool_result": 15,
    "email_signup": 6,
-   "outbound_placement": 1,
-   "card_open": 1
+   "magnet_delivered": 8,
+   "cta_click": 6,
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
-    "users": 35,
+    "users": 36,
     "events": {
-     "cta_click": 1,
-     "tool_engaged": 8,
-     "tool_result": 5,
-     "outbound_placement": 1,
+     "tool_engaged": 9,
+     "tool_result": 6,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
-    "users": 188,
+    "users": 189,
     "events": {
      "tool_engaged": 9,
      "tool_result": 9,
-     "magnet_delivered": 7,
      "email_signup": 5,
+     "magnet_delivered": 7,
      "cta_click": 5
     }
    }
@@ -89,7 +89,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 11,
+    "count": 12,
     "rate": null
    },
    {
@@ -111,13 +111,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 42,
+    "count": 43,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 1,
-    "rate": 2.4
+    "rate": 2.3
    },
    {
     "step": "Email訂閱",
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 389,
-   "users": 216,
+   "sessions": 391,
+   "users": 218,
    "signups": 0
   },
   {
@@ -205,6 +205,14 @@
    "signups": 0
   },
   {
+   "source": "l.instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 2,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "auth.openai.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -216,14 +224,6 @@
    "source": "chatgpt.com",
    "medium": "ai-assistant",
    "campaign": "(ai-assistant)",
-   "sessions": 1,
-   "users": 1,
-   "signups": 0
-  },
-  {
-   "source": "facebook.com",
-   "medium": "referral",
-   "campaign": "(referral)",
    "sessions": 1,
    "users": 1,
    "signups": 0
@@ -377,7 +377,7 @@
   },
   {
    "date": "2026-10-25",
-   "users": 9,
+   "users": 11,
    "signups": 0
   }
  ],
@@ -526,7 +526,7 @@
      },
      {
       "date": "2026-10-25",
-      "users": 2
+      "users": 3
      },
      {
       "date": "2026-10-26",
@@ -534,10 +534,10 @@
      }
     ],
     "today": 0,
-    "d7": 3,
-    "d30": 11,
+    "d7": 4,
+    "d30": 12,
     "d7_prev": 3,
-    "pv30": 13,
+    "pv30": 14,
     "outbound": [],
     "channels": [
      {
@@ -546,14 +546,14 @@
      },
      {
       "ch": "Organic Social",
-      "users": 2
+      "users": 3
      }
     ],
-    "engaged7": 1,
-    "result7": 1,
+    "engaged7": 2,
+    "result7": 2,
     "emails30": 0,
     "outbound30": 0,
-    "engage_rate": 33,
+    "engage_rate": 50,
     "finish_rate": 100,
     "badges": [
      "遺珠"
@@ -2422,17 +2422,17 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 216,
+    "users": 218,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 26,
+    "users": 25,
     "signups": 5
    },
    {
     "label": "IG 帶來的",
-    "users": 16,
+    "users": 18,
     "signups": 1
    },
    {
@@ -2441,11 +2441,11 @@
     "signups": 0
    }
   ],
-  "ig_share": 6,
+  "ig_share": 7,
   "cards": [
    {
     "level": "red",
-    "what": "這 7 天有 53 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 55 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -2460,7 +2460,7 @@
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 19,
+     "users": 20,
      "signups": 1
     },
     {
@@ -2480,7 +2480,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 113,
+     "users": 114,
      "signups": 0
     },
     {
@@ -2766,7 +2766,7 @@
     },
     {
      "date": "2026-10-25",
-     "users": 4,
+     "users": 5,
      "signups": 0
     }
    ],
@@ -2918,7 +2918,7 @@
     },
     {
      "date": "2026-10-25",
-     "users": 5,
+     "users": 6,
      "signups": 0
     }
    ]
@@ -2929,16 +2929,16 @@
     "signups30": 1,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 35,
-    "users7": 11,
+    "users30": 36,
+    "users7": 12,
     "rate7": 0.0
    },
    "wealth": {
     "signups30": 5,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 188,
-    "users7": 42,
+    "users30": 189,
+    "users7": 43,
     "rate7": 0.0
    }
   }
