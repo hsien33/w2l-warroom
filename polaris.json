@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-26 04:46",
- "updated": "2026-10-26 04:46 台北",
+ "generatedAt": "2026-10-26 07:13",
+ "updated": "2026-10-26 07:13 台北",
  "yesterday_date": "2026-10-25",
  "yesterday": {
   "users": 11,
@@ -66,10 +66,10 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 6,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "cta_click": 1,
      "outbound_placement": 1
     }
    },
@@ -136,7 +136,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 391,
+   "sessions": 392,
    "users": 218,
    "signups": 0
   },
@@ -530,14 +530,14 @@
      },
      {
       "date": "2026-10-26",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 12,
     "d7_prev": 3,
-    "pv30": 14,
+    "pv30": 15,
     "outbound": [],
     "channels": [
      {
