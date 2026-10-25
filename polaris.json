@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-25 07:08",
- "updated": "2026-10-25 07:08 台北",
+ "generatedAt": "2026-10-25 12:34",
+ "updated": "2026-10-25 12:34 台北",
  "yesterday_date": "2026-10-24",
  "yesterday": {
   "users": 3,
@@ -43,35 +43,35 @@
   "users": 223,
   "pv": 455,
   "events": {
+   "email_signup": 6,
+   "magnet_delivered": 8,
    "tool_engaged": 17,
    "tool_result": 14,
    "cta_click": 6,
-   "email_signup": 6,
-   "magnet_delivered": 8,
-   "card_open": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 33,
     "events": {
+     "tool_engaged": 7,
+     "tool_result": 4,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "tool_engaged": 7,
-     "tool_result": 4,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 190,
     "events": {
+     "email_signup": 5,
+     "magnet_delivered": 7,
      "tool_engaged": 10,
      "tool_result": 10,
-     "cta_click": 5,
-     "email_signup": 5,
-     "magnet_delivered": 7
+     "cta_click": 5
     }
    }
   }
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 385,
-   "users": 210,
+   "sessions": 390,
+   "users": 214,
    "signups": 0
   },
   {
@@ -159,8 +159,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 8,
-   "users": 8,
+   "sessions": 9,
+   "users": 9,
    "signups": 0
   },
   {
@@ -392,10 +392,7 @@
    "advice": "多數訪客沒滑到 CTA → 把訂閱區塊往上搬／文章內嵌表單。"
   }
  ],
- "alerts": [
-  "光合作用 grow 連不上（URLError）",
-  "財富煉金術 www 連不上（URLError）"
- ],
+ "alerts": [],
  "v2": {
   "tools": [
    {
@@ -2569,12 +2566,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 210,
+    "users": 214,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 27,
+    "users": 28,
     "signups": 5
    },
    {
@@ -2633,7 +2630,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 112,
+     "users": 115,
      "signups": 0
     },
     {
@@ -2651,7 +2648,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 4,
+     "users": 5,
      "signups": 0
     },
     {
@@ -2723,14 +2720,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 127,
+     "views": 130,
      "users": 8
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 65,
-     "users": 61
+     "views": 67,
+     "users": 63
     },
     {
      "name": "每日熱量收支",
@@ -2741,14 +2738,14 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 36,
+     "views": 38,
      "users": 2
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 26,
-     "users": 26
+     "views": 27,
+     "users": 27
     },
     {
      "name": "訂閱電子報",
