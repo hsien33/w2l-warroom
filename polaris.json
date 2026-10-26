@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-26 07:13",
- "updated": "2026-10-26 07:13 台北",
+ "generatedAt": "2026-10-26 12:40",
+ "updated": "2026-10-26 12:40 台北",
  "yesterday_date": "2026-10-25",
  "yesterday": {
   "users": 11,
@@ -57,8 +57,8 @@
    "email_signup": 6,
    "magnet_delivered": 8,
    "cta_click": 6,
-   "card_open": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
@@ -66,11 +66,11 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 6,
+     "outbound_placement": 1,
      "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -136,8 +136,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 392,
-   "users": 218,
+   "sessions": 395,
+   "users": 220,
    "signups": 0
   },
   {
@@ -2422,7 +2422,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 218,
+    "users": 220,
     "signups": 0
    },
    {
@@ -2480,7 +2480,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 114,
+     "users": 115,
      "signups": 0
     },
     {
@@ -2570,7 +2570,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 124,
+     "views": 125,
      "users": 8
     },
     {
@@ -2588,7 +2588,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 38,
+     "views": 40,
      "users": 2
     },
     {
@@ -2604,16 +2604,16 @@
      "users": 6
     },
     {
+     "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
+     "path": "/articles/ep01-foundation/",
+     "views": 7,
+     "users": 7
+    },
+    {
      "name": "工具箱到手",
      "path": "/welcome/",
      "views": 7,
      "users": 5
-    },
-    {
-     "name": "深度文章",
-     "path": "/articles/",
-     "views": 6,
-     "users": 6
     }
    ]
   },
