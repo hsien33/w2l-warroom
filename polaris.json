@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-27 16:54",
- "updated": "2026-10-27 16:54 台北",
+ "generatedAt": "2026-10-27 23:18",
+ "updated": "2026-10-27 23:18 台北",
  "yesterday_date": "2026-10-26",
  "yesterday": {
   "users": 3,
@@ -46,35 +46,35 @@
   "users": 223,
   "pv": 452,
   "events": {
+   "cta_click": 6,
    "tool_engaged": 18,
    "tool_result": 15,
-   "magnet_delivered": 8,
    "email_signup": 6,
-   "cta_click": 6,
-   "card_open": 1,
-   "outbound_placement": 1
+   "magnet_delivered": 8,
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 37,
     "events": {
      "tool_engaged": 9,
-     "tool_result": 6,
      "cta_click": 1,
+     "tool_result": 6,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 186,
     "events": {
+     "cta_click": 5,
      "tool_engaged": 9,
      "tool_result": 9,
-     "magnet_delivered": 7,
      "email_signup": 5,
-     "cta_click": 5
+     "magnet_delivered": 7
     }
    }
   }
@@ -130,8 +130,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 394,
-   "users": 221,
+   "sessions": 400,
+   "users": 225,
    "signups": 0
   },
   {
@@ -524,14 +524,14 @@
      },
      {
       "date": "2026-10-27",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 6,
     "d30": 13,
     "d7_prev": 2,
-    "pv30": 15,
+    "pv30": 16,
     "outbound": [],
     "channels": [
      {
@@ -2412,7 +2412,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 221,
+    "users": 225,
     "signups": 0
    },
    {
@@ -2516,7 +2516,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 4,
+     "views": 5,
      "users": 2
     },
     {
