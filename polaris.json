@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-28 13:33",
- "updated": "2026-10-28 13:33 台北",
+ "generatedAt": "2026-10-28 20:44",
+ "updated": "2026-10-28 20:44 台北",
  "yesterday_date": "2026-10-27",
  "yesterday": {
   "users": 5,
@@ -46,35 +46,35 @@
   "users": 221,
   "pv": 448,
   "events": {
-   "tool_engaged": 18,
-   "tool_result": 15,
-   "cta_click": 6,
    "card_open": 1,
    "email_signup": 6,
    "magnet_delivered": 8,
+   "cta_click": 6,
+   "tool_engaged": 18,
+   "tool_result": 15,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 39,
     "events": {
-     "tool_engaged": 9,
-     "tool_result": 6,
-     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "outbound_placement": 1
+     "tool_engaged": 9,
+     "outbound_placement": 1,
+     "tool_result": 6,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 182,
     "events": {
+     "cta_click": 5,
      "tool_engaged": 9,
      "tool_result": 9,
-     "email_signup": 5,
      "magnet_delivered": 7,
-     "cta_click": 5
+     "email_signup": 5
     }
    }
   }
@@ -130,8 +130,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 392,
-   "users": 224,
+   "sessions": 395,
+   "users": 227,
    "signups": 0
   },
   {
@@ -146,7 +146,7 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 13,
+   "sessions": 14,
    "users": 9,
    "signups": 5
   },
@@ -834,19 +834,19 @@
      },
      {
       "date": "2026-10-28",
-      "users": 1
+      "users": 2
      }
     ],
-    "today": 1,
+    "today": 2,
     "d7": 1,
     "d30": 6,
     "d7_prev": 2,
-    "pv30": 6,
+    "pv30": 7,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 6
+      "users": 7
      },
      {
       "ch": "Unassigned",
@@ -2412,7 +2412,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 224,
+    "users": 227,
     "signups": 0
    },
    {
@@ -2470,7 +2470,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 111,
+     "users": 114,
      "signups": 0
     },
     {
@@ -2566,8 +2566,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 63,
-     "users": 60
+     "views": 66,
+     "users": 62
     },
     {
      "name": "個人習慣分析",
@@ -2584,14 +2584,14 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 26,
-     "users": 26
+     "views": 27,
+     "users": 27
     },
     {
      "name": "訂閱電子報",
      "path": "/newsletter/",
-     "views": 10,
-     "users": 6
+     "views": 11,
+     "users": 7
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
