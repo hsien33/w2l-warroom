@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-29 08:52",
- "updated": "2026-10-29 08:52 台北",
+ "generatedAt": "2026-10-29 17:51",
+ "updated": "2026-10-29 17:51 台北",
  "yesterday_date": "2026-10-28",
  "yesterday": {
   "users": 10,
@@ -45,33 +45,33 @@
   "events": {
    "cta_click": 5,
    "tool_engaged": 18,
+   "outbound_placement": 1,
    "tool_result": 15,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "card_open": 1,
-   "outbound_placement": 1
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 40,
     "events": {
      "tool_engaged": 9,
+     "outbound_placement": 1,
      "tool_result": 6,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "cta_click": 1,
-     "outbound_placement": 1
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 185,
     "events": {
      "cta_click": 4,
-     "email_signup": 3,
-     "magnet_delivered": 3,
      "tool_engaged": 9,
-     "tool_result": 9
+     "tool_result": 9,
+     "email_signup": 3,
+     "magnet_delivered": 3
     }
    }
   }
@@ -127,15 +127,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 388,
-   "users": 225,
+   "sessions": 391,
+   "users": 227,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 74,
+   "sessions": 75,
    "users": 2,
    "signups": 0
   },
@@ -2245,7 +2245,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 225,
+    "users": 227,
     "signups": 0
    },
    {
@@ -2303,7 +2303,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 112,
+     "users": 114,
      "signups": 0
     },
     {
@@ -2393,19 +2393,19 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 120,
+     "views": 122,
      "users": 7
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 58,
-     "users": 59
+     "views": 60,
+     "users": 61
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 45,
+     "views": 49,
      "users": 2
     },
     {
