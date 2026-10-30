@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-30 02:25",
- "updated": "2026-10-30 02:25 台北",
+ "generatedAt": "2026-10-30 08:56",
+ "updated": "2026-10-30 08:56 台北",
  "yesterday_date": "2026-10-29",
  "yesterday": {
-  "users": 4,
-  "pv": 8,
+  "users": 6,
+  "pv": 10,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 4,
+    "users": 6,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 43,
-  "pv": 78,
+  "users": 45,
+  "pv": 80,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2
@@ -34,18 +34,18 @@
     }
    },
    "wealth": {
-    "users": 32,
+    "users": 34,
     "events": {}
    }
   }
  },
  "d30": {
-  "users": 222,
-  "pv": 424,
+  "users": 224,
+  "pv": 426,
   "events": {
+   "cta_click": 5,
    "tool_engaged": 18,
    "tool_result": 15,
-   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
    "outbound_placement": 1,
@@ -55,23 +55,23 @@
    "grow": {
     "users": 39,
     "events": {
+     "cta_click": 1,
      "tool_engaged": 9,
      "tool_result": 6,
      "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "cta_click": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
-    "users": 183,
+    "users": 185,
     "events": {
+     "tool_engaged": 9,
+     "tool_result": 9,
      "cta_click": 4,
      "email_signup": 3,
-     "magnet_delivered": 3,
-     "tool_engaged": 9,
-     "tool_result": 9
+     "magnet_delivered": 3
     }
    }
   }
@@ -102,7 +102,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 32,
+    "count": 34,
     "rate": null
    },
    {
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 382,
-   "users": 222,
+   "sessions": 386,
+   "users": 226,
    "signups": 0
   },
   {
@@ -140,20 +140,20 @@
    "signups": 0
   },
   {
+   "source": "w-alchemy.kit.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 12,
+   "users": 9,
+   "signups": 3
+  },
+  {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
    "sessions": 11,
    "users": 10,
    "signups": 1
-  },
-  {
-   "source": "w-alchemy.kit.com",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 11,
-   "users": 8,
-   "signups": 3
   },
   {
    "source": "tw.search.yahoo.com",
@@ -368,7 +368,7 @@
   },
   {
    "date": "2026-10-29",
-   "users": 4,
+   "users": 6,
    "signups": 0
   }
  ],
@@ -676,19 +676,19 @@
      },
      {
       "date": "2026-10-30",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 7,
     "d7_prev": 3,
-    "pv30": 6,
+    "pv30": 7,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 6
+      "users": 7
      },
      {
       "ch": "Unassigned",
@@ -2245,12 +2245,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 222,
+    "users": 226,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 25,
+    "users": 26,
     "signups": 3
    },
    {
@@ -2275,7 +2275,7 @@
    },
    {
     "level": "red",
-    "what": "這 7 天有 43 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 45 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -2310,13 +2310,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 111,
+     "users": 115,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 8,
+     "users": 9,
      "signups": 3
     },
     {
@@ -2406,8 +2406,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 59,
-     "users": 60
+     "views": 62,
+     "users": 63
     },
     {
      "name": "個人習慣分析",
@@ -2748,7 +2748,7 @@
     },
     {
      "date": "2026-10-29",
-     "users": 4,
+     "users": 6,
      "signups": 0
     }
    ]
@@ -2767,8 +2767,8 @@
     "signups30": 3,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 183,
-    "users7": 32,
+    "users30": 185,
+    "users7": 34,
     "rate7": 0.0
    }
   }
