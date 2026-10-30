@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-31 01:58",
- "updated": "2026-10-31 01:58 台北",
+ "generatedAt": "2026-10-31 06:14",
+ "updated": "2026-10-31 06:14 台北",
  "yesterday_date": "2026-10-30",
  "yesterday": {
   "users": 7,
-  "pv": 11,
+  "pv": 13,
   "events": {
    "tool_engaged": 2,
    "tool_result": 2
@@ -26,7 +26,7 @@
  },
  "d7": {
   "users": 45,
-  "pv": 84,
+  "pv": 86,
   "events": {
    "tool_engaged": 4,
    "tool_result": 4
@@ -47,37 +47,37 @@
  },
  "d30": {
   "users": 227,
-  "pv": 426,
+  "pv": 428,
   "events": {
+   "email_signup": 4,
+   "magnet_delivered": 4,
    "tool_engaged": 20,
    "tool_result": 17,
    "cta_click": 5,
-   "email_signup": 4,
-   "magnet_delivered": 4,
-   "card_open": 1,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 40,
     "events": {
      "tool_engaged": 11,
+     "outbound_placement": 1,
      "tool_result": 8,
      "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 187,
     "events": {
+     "email_signup": 3,
+     "magnet_delivered": 3,
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 4,
-     "email_signup": 3,
-     "magnet_delivered": 3
+     "cta_click": 4
     }
    }
   }
@@ -189,7 +189,7 @@
    "source": "l.instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 5,
+   "sessions": 6,
    "users": 2,
    "signups": 0
   },
@@ -534,7 +534,7 @@
     "d7": 9,
     "d30": 15,
     "d7_prev": 0,
-    "pv30": 18,
+    "pv30": 20,
     "outbound": [],
     "channels": [
      {
