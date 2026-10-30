@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-30 08:56",
- "updated": "2026-10-30 08:56 台北",
+ "generatedAt": "2026-10-30 17:55",
+ "updated": "2026-10-30 17:55 台北",
  "yesterday_date": "2026-10-29",
  "yesterday": {
   "users": 6,
@@ -43,22 +43,22 @@
   "users": 224,
   "pv": 426,
   "events": {
-   "cta_click": 5,
    "tool_engaged": 18,
    "tool_result": 15,
+   "outbound_placement": 1,
+   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "outbound_placement": 1,
    "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 39,
     "events": {
-     "cta_click": 1,
      "tool_engaged": 9,
      "tool_result": 6,
      "outbound_placement": 1,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 386,
-   "users": 226,
+   "sessions": 390,
+   "users": 228,
    "signups": 0
   },
   {
@@ -180,6 +180,14 @@
    "signups": 0
   },
   {
+   "source": "l.instagram.com",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 4,
+   "users": 2,
+   "signups": 0
+  },
+  {
    "source": "instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -199,14 +207,6 @@
    "source": "fb",
    "medium": "group",
    "campaign": "finale",
-   "sessions": 2,
-   "users": 2,
-   "signups": 0
-  },
-  {
-   "source": "l.instagram.com",
-   "medium": "referral",
-   "campaign": "(referral)",
    "sessions": 2,
    "users": 2,
    "signups": 0
@@ -521,14 +521,14 @@
      },
      {
       "date": "2026-10-30",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 7,
     "d30": 13,
     "d7_prev": 0,
-    "pv30": 15,
+    "pv30": 16,
     "outbound": [],
     "channels": [
      {
@@ -2245,7 +2245,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 226,
+    "users": 228,
     "signups": 0
    },
    {
@@ -2400,7 +2400,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 114,
+     "views": 115,
      "users": 6
     },
     {
@@ -2412,7 +2412,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 49,
+     "views": 51,
      "users": 2
     },
     {
