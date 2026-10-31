@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-10-31 13:32",
- "updated": "2026-10-31 13:32 台北",
+ "generatedAt": "2026-10-31 20:17",
+ "updated": "2026-10-31 20:17 台北",
  "yesterday_date": "2026-10-30",
  "yesterday": {
   "users": 7,
@@ -51,11 +51,11 @@
   "events": {
    "tool_engaged": 20,
    "tool_result": 17,
-   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "outbound_placement": 1,
-   "card_open": 1
+   "cta_click": 5,
+   "card_open": 1,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -63,11 +63,11 @@
     "events": {
      "tool_engaged": 11,
      "tool_result": 8,
-     "outbound_placement": 1,
+     "cta_click": 1,
      "card_open": 1,
      "email_signup": 1,
      "magnet_delivered": 1,
-     "cta_click": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -75,9 +75,9 @@
     "events": {
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 4,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "cta_click": 4
     }
    }
   }
@@ -133,7 +133,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 383,
+   "sessions": 384,
    "users": 231,
    "signups": 0
   },
@@ -141,7 +141,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 67,
+   "sessions": 69,
    "users": 2,
    "signups": 0
   },
@@ -2399,7 +2399,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 109,
+     "views": 110,
      "users": 6
     },
     {
@@ -2411,7 +2411,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 51,
+     "views": 53,
      "users": 2
     },
     {
