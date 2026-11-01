@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-01 08:05",
- "updated": "2026-11-01 08:05 台北",
+ "generatedAt": "2026-11-01 13:56",
+ "updated": "2026-11-01 13:56 台北",
  "yesterday_date": "2026-10-31",
  "yesterday": {
   "users": 9,
@@ -43,10 +43,10 @@
   "users": 233,
   "pv": 434,
   "events": {
+   "cta_click": 5,
    "tool_engaged": 20,
    "outbound_placement": 1,
    "tool_result": 17,
-   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
    "card_open": 1
@@ -67,9 +67,9 @@
    "wealth": {
     "users": 193,
     "events": {
+     "cta_click": 4,
      "tool_engaged": 9,
      "tool_result": 9,
-     "cta_click": 4,
      "email_signup": 3,
      "magnet_delivered": 3
     }
@@ -127,7 +127,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 367,
+   "sessions": 368,
    "users": 228,
    "signups": 0
   },
@@ -135,7 +135,7 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 64,
+   "sessions": 65,
    "users": 2,
    "signups": 0
   },
@@ -167,8 +167,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 6,
-   "users": 6,
+   "sessions": 7,
+   "users": 7,
    "signups": 0
   },
   {
@@ -2250,7 +2250,7 @@
    },
    {
     "label": "其他",
-    "users": 25,
+    "users": 26,
     "signups": 3
    },
    {
@@ -2328,7 +2328,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2400,7 +2400,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 106,
+     "views": 107,
      "users": 6
     },
     {
@@ -2412,7 +2412,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 54,
+     "views": 55,
      "users": 2
     },
     {
