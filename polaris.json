@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-01 13:56",
- "updated": "2026-11-01 13:56 台北",
+ "generatedAt": "2026-11-01 21:14",
+ "updated": "2026-11-01 21:14 台北",
  "yesterday_date": "2026-10-31",
  "yesterday": {
   "users": 9,
@@ -43,12 +43,12 @@
   "users": 233,
   "pv": 434,
   "events": {
-   "cta_click": 5,
    "tool_engaged": 20,
-   "outbound_placement": 1,
    "tool_result": 17,
+   "cta_click": 5,
    "email_signup": 4,
    "magnet_delivered": 4,
+   "outbound_placement": 1,
    "card_open": 1
   },
   "sites": {
@@ -56,20 +56,20 @@
     "users": 40,
     "events": {
      "tool_engaged": 11,
-     "outbound_placement": 1,
      "tool_result": 8,
-     "cta_click": 1,
+     "outbound_placement": 1,
      "card_open": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 193,
     "events": {
-     "cta_click": 4,
      "tool_engaged": 9,
      "tool_result": 9,
+     "cta_click": 4,
      "email_signup": 3,
      "magnet_delivered": 3
     }
@@ -127,8 +127,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 368,
-   "users": 228,
+   "sessions": 369,
+   "users": 229,
    "signups": 0
   },
   {
@@ -2245,7 +2245,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 228,
+    "users": 229,
     "signups": 0
    },
    {
