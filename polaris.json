@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-02 03:37",
- "updated": "2026-11-02 03:37 台北",
+ "generatedAt": "2026-11-02 08:38",
+ "updated": "2026-11-02 08:38 台北",
  "yesterday_date": "2026-11-01",
  "yesterday": {
   "users": 5,
@@ -57,11 +57,11 @@
   "users": 225,
   "pv": 408,
   "events": {
-   "email_signup": 5,
-   "magnet_delivered": 5,
    "tool_engaged": 20,
    "tool_result": 17,
    "cta_click": 5,
+   "email_signup": 5,
+   "magnet_delivered": 5,
    "card_open": 1,
    "outbound_placement": 1
   },
@@ -69,23 +69,23 @@
    "grow": {
     "users": 42,
     "events": {
+     "tool_engaged": 11,
+     "card_open": 1,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "tool_engaged": 11,
      "tool_result": 8,
      "cta_click": 1,
-     "card_open": 1,
      "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 183,
     "events": {
-     "email_signup": 3,
-     "magnet_delivered": 3,
-     "cta_click": 4,
      "tool_engaged": 9,
-     "tool_result": 9
+     "tool_result": 9,
+     "cta_click": 4,
+     "email_signup": 3,
+     "magnet_delivered": 3
     }
    }
   }
@@ -141,8 +141,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 345,
-   "users": 218,
+   "sessions": 347,
+   "users": 220,
    "signups": 0
   },
   {
@@ -690,19 +690,19 @@
      },
      {
       "date": "2026-11-02",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 9,
     "d7_prev": 2,
-    "pv30": 8,
+    "pv30": 9,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 8
+      "users": 9
      },
      {
       "ch": "Unassigned",
@@ -2415,7 +2415,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 218,
+    "users": 220,
     "signups": 0
    },
    {
@@ -2434,9 +2434,9 @@
     "signups": 0
    }
   ],
-  "ig_share": 7,
+  "ig_share": 6,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
   "signup_total_30d": 5
  },
  "v3": {
@@ -2471,7 +2471,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 118,
+     "users": 120,
      "signups": 0
     },
     {
@@ -2579,8 +2579,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 28,
-     "users": 28
+     "views": 29,
+     "users": 29
     },
     {
      "name": "每日熱量收支",
