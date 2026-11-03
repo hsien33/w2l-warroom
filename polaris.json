@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-03 05:40",
- "updated": "2026-11-03 05:40 台北",
+ "generatedAt": "2026-11-03 14:41",
+ "updated": "2026-11-03 14:41 台北",
  "yesterday_date": "2026-11-02",
  "yesterday": {
   "users": 8,
@@ -47,24 +47,24 @@
   "users": 223,
   "pv": 407,
   "events": {
-   "card_open": 1,
-   "email_signup": 5,
-   "magnet_delivered": 5,
+   "cta_click": 5,
    "tool_engaged": 19,
    "tool_result": 16,
-   "cta_click": 5,
+   "email_signup": 5,
+   "magnet_delivered": 5,
+   "card_open": 1,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 40,
     "events": {
-     "card_open": 1,
-     "email_signup": 2,
-     "magnet_delivered": 2,
+     "cta_click": 1,
      "tool_engaged": 10,
      "tool_result": 7,
-     "cta_click": 1,
+     "email_signup": 2,
+     "magnet_delivered": 2,
+     "card_open": 1,
      "outbound_placement": 1
     }
    },
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 349,
-   "users": 218,
+   "sessions": 356,
+   "users": 223,
    "signups": 0
   },
   {
@@ -160,19 +160,19 @@
    "signups": 3
   },
   {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 7,
+   "users": 6,
+   "signups": 0
+  },
+  {
    "source": "tw.search.yahoo.com",
    "medium": "referral",
    "campaign": "(referral)",
    "sessions": 7,
    "users": 4,
-   "signups": 0
-  },
-  {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 6,
-   "users": 6,
    "signups": 0
   },
   {
@@ -678,14 +678,14 @@
      },
      {
       "date": "2026-11-03",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 5,
     "d30": 16,
     "d7_prev": 6,
-    "pv30": 21,
+    "pv30": 22,
     "outbound": [],
     "channels": [
      {
@@ -989,19 +989,19 @@
      },
      {
       "date": "2026-11-03",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 9,
     "d7_prev": 2,
-    "pv30": 9,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 6
+      "users": 7
      },
      {
       "ch": "Referral",
@@ -1448,19 +1448,19 @@
      },
      {
       "date": "2026-11-03",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 3,
     "d7_prev": 0,
-    "pv30": 4,
+    "pv30": 5,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 1
+      "users": 2
      },
      {
       "ch": "Referral",
@@ -2405,7 +2405,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 218,
+    "users": 223,
     "signups": 0
    },
    {
@@ -2461,7 +2461,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 117,
+     "users": 120,
      "signups": 0
     },
     {
@@ -2551,7 +2551,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 88,
+     "views": 89,
      "users": 5
     },
     {
@@ -2563,14 +2563,14 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 53,
+     "views": 54,
      "users": 2
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 29,
-     "users": 29
+     "views": 30,
+     "users": 30
     },
     {
      "name": "每日熱量收支",
