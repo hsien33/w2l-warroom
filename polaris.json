@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-04 14:08",
- "updated": "2026-11-04 14:08 台北",
+ "generatedAt": "2026-11-04 22:33",
+ "updated": "2026-11-04 22:33 台北",
  "yesterday_date": "2026-11-03",
  "yesterday": {
   "users": 8,
@@ -58,12 +58,12 @@
    "grow": {
     "users": 39,
     "events": {
-     "card_open": 1,
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "tool_engaged": 8,
      "tool_result": 6,
-     "cta_click": 1
+     "cta_click": 1,
+     "email_signup": 2,
+     "magnet_delivered": 2,
+     "card_open": 1
     }
    },
    "wealth": {
@@ -129,8 +129,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 355,
-   "users": 224,
+   "sessions": 357,
+   "users": 226,
    "signups": 0
   },
   {
@@ -987,19 +987,19 @@
      },
      {
       "date": "2026-11-04",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 9,
     "d7_prev": 2,
-    "pv30": 9,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 6
+      "users": 7
      },
      {
       "ch": "Referral",
@@ -2405,7 +2405,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 224,
+    "users": 226,
     "signups": 0
    },
    {
@@ -2461,7 +2461,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 119,
+     "users": 120,
      "signups": 0
     },
     {
