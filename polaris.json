@@ -1,18 +1,18 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-06 01:20",
- "updated": "2026-11-06 01:20 台北",
+ "generatedAt": "2026-11-06 07:36",
+ "updated": "2026-11-06 07:36 台北",
  "yesterday_date": "2026-11-05",
  "yesterday": {
-  "users": 4,
-  "pv": 14,
+  "users": 5,
+  "pv": 15,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1
   },
   "sites": {
    "grow": {
-    "users": 0,
+    "users": 1,
     "events": {}
    },
    "wealth": {
@@ -25,17 +25,17 @@
   }
  },
  "d7": {
-  "users": 45,
-  "pv": 82,
+  "users": 46,
+  "pv": 83,
   "events": {
-   "tool_engaged": 4,
-   "tool_result": 4,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "tool_engaged": 4,
+   "tool_result": 4
   },
   "sites": {
    "grow": {
-    "users": 7,
+    "users": 8,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1,
@@ -53,36 +53,36 @@
   }
  },
  "d30": {
-  "users": 210,
-  "pv": 377,
+  "users": 211,
+  "pv": 378,
   "events": {
+   "email_signup": 5,
+   "magnet_delivered": 5,
    "tool_engaged": 13,
    "tool_result": 11,
    "cta_click": 4,
-   "email_signup": 5,
-   "magnet_delivered": 5,
    "card_open": 1
   },
   "sites": {
    "grow": {
-    "users": 36,
+    "users": 37,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 6,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "cta_click": 1,
-     "card_open": 1
+     "tool_engaged": 8,
+     "tool_result": 6,
+     "card_open": 1,
+     "cta_click": 1
     }
    },
    "wealth": {
     "users": 174,
     "events": {
-     "cta_click": 3,
+     "tool_engaged": 5,
+     "tool_result": 5,
      "email_signup": 3,
      "magnet_delivered": 3,
-     "tool_engaged": 5,
-     "tool_result": 5
+     "cta_click": 3
     }
    }
   }
@@ -91,7 +91,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 7,
+    "count": 8,
     "rate": null
    },
    {
@@ -138,8 +138,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 328,
-   "users": 209,
+   "sessions": 329,
+   "users": 210,
    "signups": 0
   },
   {
@@ -379,7 +379,7 @@
   },
   {
    "date": "2026-11-05",
-   "users": 4,
+   "users": 5,
    "signups": 0
   }
  ],
@@ -1959,7 +1959,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 209,
+    "users": 210,
     "signups": 0
    },
    {
@@ -1979,32 +1979,24 @@
    }
   ],
   "ig_share": 5,
-  "cards": [
-   {
-    "level": "red",
-    "what": "光合作用站昨天 0 人造訪（平常 7 天有 7 人）",
-    "why": "可能是追蹤器斷線或網站掛了",
-    "action": "開一次網站確認活著",
-    "link": "https://grow.walk2light.com/"
-   }
-  ],
-  "summary": "有 1 件事需要你看一下（見下方紅卡）",
+  "cards": [],
+  "summary": "今天平靜：昨天沒有新名單，但 7 天累計 1 位、一切正常",
   "signup_total_30d": 5
  },
  "v3": {
   "channels": {
    "grow": [
     {
+     "ch": "直接輸入網址",
+     "raw": "Direct",
+     "users": 14,
+     "signups": 0
+    },
+    {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
      "users": 14,
      "signups": 2
-    },
-    {
-     "ch": "直接輸入網址",
-     "raw": "Direct",
-     "users": 13,
-     "signups": 0
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2063,8 +2055,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 6,
-     "users": 2
+     "views": 7,
+     "users": 3
     },
     {
      "name": "對話筆記",
@@ -2303,7 +2295,7 @@
     },
     {
      "date": "2026-11-05",
-     "users": 0,
+     "users": 1,
      "signups": 0
     }
    ],
@@ -2466,9 +2458,9 @@
     "signups30": 2,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 36,
-    "users7": 7,
-    "rate7": 14.3
+    "users30": 37,
+    "users7": 8,
+    "rate7": 12.5
    },
    "wealth": {
     "signups30": 3,
