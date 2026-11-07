@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-07 07:04",
- "updated": "2026-11-07 07:04 台北",
+ "generatedAt": "2026-11-07 13:52",
+ "updated": "2026-11-07 13:52 台北",
  "yesterday_date": "2026-11-06",
  "yesterday": {
   "users": 6,
@@ -22,10 +22,10 @@
   "users": 45,
   "pv": 77,
   "events": {
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "tool_engaged": 2,
-   "tool_result": 2
+   "tool_result": 2,
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -52,21 +52,21 @@
   "events": {
    "tool_engaged": 13,
    "tool_result": 11,
-   "card_open": 1,
+   "cta_click": 3,
    "email_signup": 5,
    "magnet_delivered": 5,
-   "cta_click": 3
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 37,
     "events": {
-     "card_open": 1,
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "tool_engaged": 8,
      "tool_result": 6,
-     "cta_click": 1
+     "cta_click": 1,
+     "email_signup": 2,
+     "magnet_delivered": 2,
+     "card_open": 1
     }
    },
    "wealth": {
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 336,
-   "users": 215,
+   "sessions": 337,
+   "users": 216,
    "signups": 0
   },
   {
@@ -1298,19 +1298,19 @@
      },
      {
       "date": "2026-11-07",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 2,
     "d7_prev": 0,
-    "pv30": 3,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      }
     ],
     "engaged7": 0,
@@ -1939,7 +1939,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 215,
+    "users": 216,
     "signups": 0
    },
    {
@@ -1969,7 +1969,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 14,
+     "users": 15,
      "signups": 0
     },
     {
