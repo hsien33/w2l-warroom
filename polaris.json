@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-08 03:23",
- "updated": "2026-11-08 03:23 台北",
+ "generatedAt": "2026-11-08 08:32",
+ "updated": "2026-11-08 08:32 台北",
  "yesterday_date": "2026-11-07",
  "yesterday": {
   "users": 3,
@@ -22,10 +22,10 @@
   "users": 39,
   "pv": 70,
   "events": {
-   "tool_engaged": 2,
-   "tool_result": 2,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "tool_engaged": 2,
+   "tool_result": 2
   },
   "sites": {
    "grow": {
@@ -50,31 +50,31 @@
   "users": 205,
   "pv": 361,
   "events": {
-   "tool_engaged": 12,
-   "card_open": 1,
    "email_signup": 5,
    "magnet_delivered": 5,
+   "tool_engaged": 12,
    "tool_result": 10,
-   "cta_click": 2
+   "cta_click": 2,
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
      "tool_engaged": 8,
-     "card_open": 1,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "tool_result": 6
+     "tool_result": 6,
+     "card_open": 1
     }
    },
    "wealth": {
     "users": 171,
     "events": {
-     "tool_engaged": 4,
-     "tool_result": 4,
      "email_signup": 3,
      "magnet_delivered": 3,
+     "tool_engaged": 4,
+     "tool_result": 4,
      "cta_click": 2
     }
    }
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 334,
-   "users": 216,
+   "sessions": 335,
+   "users": 217,
    "signups": 0
   },
   {
@@ -1448,19 +1448,19 @@
      },
      {
       "date": "2026-11-08",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 2,
     "d7_prev": 0,
-    "pv30": 2,
+    "pv30": 3,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      }
     ],
     "engaged7": 0,
@@ -1940,7 +1940,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 216,
+    "users": 217,
     "signups": 0
    },
    {
@@ -1996,7 +1996,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 113,
+     "users": 114,
      "signups": 0
     },
     {
