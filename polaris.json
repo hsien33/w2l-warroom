@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-09 05:58",
- "updated": "2026-11-09 05:58 台北",
+ "generatedAt": "2026-11-09 14:16",
+ "updated": "2026-11-09 14:16 台北",
  "yesterday_date": "2026-11-08",
  "yesterday": {
   "users": 6,
@@ -43,11 +43,11 @@
   "users": 204,
   "pv": 341,
   "events": {
+   "email_signup": 4,
+   "magnet_delivered": 4,
    "tool_engaged": 11,
    "tool_result": 9,
    "cta_click": 1,
-   "email_signup": 4,
-   "magnet_delivered": 4,
    "card_open": 1
   },
   "sites": {
@@ -64,11 +64,11 @@
    "wealth": {
     "users": 170,
     "events": {
+     "email_signup": 2,
+     "magnet_delivered": 2,
      "tool_engaged": 4,
      "tool_result": 4,
-     "cta_click": 1,
-     "email_signup": 2,
-     "magnet_delivered": 2
+     "cta_click": 1
     }
    }
   }
@@ -124,8 +124,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 338,
-   "users": 221,
+   "sessions": 343,
+   "users": 224,
    "signups": 0
   },
   {
@@ -1930,7 +1930,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 221,
+    "users": 224,
     "signups": 0
    },
    {
@@ -1994,7 +1994,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 114,
+     "users": 117,
      "signups": 0
     },
     {
@@ -2006,7 +2006,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2060,19 +2060,19 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 72,
+     "views": 73,
      "users": 5
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 59,
-     "users": 57
+     "views": 62,
+     "users": 60
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 51,
+     "views": 53,
      "users": 1
     },
     {
