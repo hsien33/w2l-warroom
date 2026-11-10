@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-10 11:31",
- "updated": "2026-11-10 11:31 台北",
+ "generatedAt": "2026-11-10 22:47",
+ "updated": "2026-11-10 22:47 台北",
  "yesterday_date": "2026-11-09",
  "yesterday": {
   "users": 8,
@@ -55,10 +55,10 @@
     "users": 35,
     "events": {
      "tool_engaged": 6,
-     "tool_result": 5,
      "card_open": 1,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "tool_result": 5
     }
    },
    "wealth": {
@@ -66,9 +66,9 @@
     "events": {
      "tool_engaged": 4,
      "tool_result": 4,
-     "cta_click": 1,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "cta_click": 1
     }
    }
   }
@@ -124,8 +124,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 350,
-   "users": 230,
+   "sessions": 355,
+   "users": 233,
    "signups": 0
   },
   {
@@ -148,8 +148,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 7,
-   "users": 7,
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
@@ -1130,19 +1130,19 @@
      },
      {
       "date": "2026-11-10",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 3,
     "d7_prev": 0,
-    "pv30": 3,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 3
+      "users": 4
      }
     ],
     "engaged7": 0,
@@ -1928,12 +1928,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 230,
+    "users": 233,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 20,
+    "users": 19,
     "signups": 2
    },
    {
@@ -1986,19 +1986,13 @@
      "raw": "Referral",
      "users": 1,
      "signups": 0
-    },
-    {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 1,
-     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 118,
+     "users": 119,
      "signups": 0
     },
     {
@@ -2008,14 +2002,14 @@
      "signups": 2
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
-     "users": 4,
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
+     "users": 3,
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
+     "ch": "未分類",
+     "raw": "Unassigned",
      "users": 3,
      "signups": 0
     }
@@ -2064,7 +2058,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 74,
+     "views": 75,
      "users": 5
     },
     {
@@ -2076,7 +2070,7 @@
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 55,
+     "views": 57,
      "users": 1
     },
     {
