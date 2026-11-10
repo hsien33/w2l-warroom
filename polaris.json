@@ -1,15 +1,15 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-10 03:45",
- "updated": "2026-11-10 03:45 台北",
+ "generatedAt": "2026-11-10 11:31",
+ "updated": "2026-11-10 11:31 台北",
  "yesterday_date": "2026-11-09",
  "yesterday": {
-  "users": 7,
-  "pv": 10,
+  "users": 8,
+  "pv": 11,
   "events": {},
   "sites": {
    "grow": {
-    "users": 1,
+    "users": 2,
     "events": {}
    },
    "wealth": {
@@ -19,15 +19,15 @@
   }
  },
  "d7": {
-  "users": 39,
-  "pv": 65,
+  "users": 40,
+  "pv": 66,
   "events": {
    "tool_engaged": 1,
    "tool_result": 1
   },
   "sites": {
    "grow": {
-    "users": 6,
+    "users": 7,
     "events": {}
    },
    "wealth": {
@@ -40,25 +40,25 @@
   }
  },
  "d30": {
-  "users": 206,
-  "pv": 343,
+  "users": 207,
+  "pv": 344,
   "events": {
    "tool_engaged": 10,
    "tool_result": 9,
-   "cta_click": 1,
+   "card_open": 1,
    "email_signup": 4,
    "magnet_delivered": 4,
-   "card_open": 1
+   "cta_click": 1
   },
   "sites": {
    "grow": {
-    "users": 34,
+    "users": 35,
     "events": {
      "tool_engaged": 6,
      "tool_result": 5,
+     "card_open": 1,
      "email_signup": 2,
-     "magnet_delivered": 2,
-     "card_open": 1
+     "magnet_delivered": 2
     }
    },
    "wealth": {
@@ -77,7 +77,7 @@
   "grow": [
    {
     "step": "到站(活躍)",
-    "count": 6,
+    "count": 7,
     "rate": null
    },
    {
@@ -124,8 +124,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 342,
-   "users": 223,
+   "sessions": 350,
+   "users": 230,
    "signups": 0
   },
   {
@@ -365,7 +365,7 @@
   },
   {
    "date": "2026-11-09",
-   "users": 7,
+   "users": 8,
    "signups": 0
   }
  ],
@@ -1432,23 +1432,23 @@
      },
      {
       "date": "2026-11-10",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 4,
     "d7_prev": 0,
-    "pv30": 5,
+    "pv30": 6,
     "outbound": [],
     "channels": [
      {
-      "ch": "Organic Social",
+      "ch": "Direct",
       "users": 2
      },
      {
-      "ch": "Direct",
-      "users": 1
+      "ch": "Organic Social",
+      "users": 2
      }
     ],
     "engaged7": 0,
@@ -1928,7 +1928,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 223,
+    "users": 230,
     "signups": 0
    },
    {
@@ -1951,7 +1951,7 @@
   "cards": [
    {
     "level": "red",
-    "what": "這 7 天有 39 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 40 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -1966,7 +1966,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 15,
+     "users": 17,
      "signups": 0
     },
     {
@@ -1998,7 +1998,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 115,
+     "users": 118,
      "signups": 0
     },
     {
@@ -2038,8 +2038,8 @@
     {
      "name": "對話筆記",
      "path": "/articles/",
-     "views": 2,
-     "users": 1
+     "views": 3,
+     "users": 2
     },
     {
      "name": "收到了，謝謝你",
@@ -2064,19 +2064,19 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 72,
+     "views": 74,
      "users": 5
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 61,
-     "users": 59
+     "views": 63,
+     "users": 61
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 53,
+     "views": 55,
      "users": 1
     },
     {
@@ -2094,8 +2094,8 @@
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 7,
-     "users": 7
+     "views": 8,
+     "users": 8
     },
     {
      "name": "訂閱電子報",
@@ -2260,7 +2260,7 @@
     },
     {
      "date": "2026-11-09",
-     "users": 1,
+     "users": 2,
      "signups": 0
     }
    ],
@@ -2423,8 +2423,8 @@
     "signups30": 2,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 34,
-    "users7": 6,
+    "users30": 35,
+    "users7": 7,
     "rate7": 0.0
    },
    "wealth": {
