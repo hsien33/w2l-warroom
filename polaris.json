@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-11 14:05",
- "updated": "2026-11-11 14:05 台北",
+ "generatedAt": "2026-11-11 22:13",
+ "updated": "2026-11-11 22:13 台北",
  "yesterday_date": "2026-11-10",
  "yesterday": {
   "users": 7,
@@ -44,21 +44,21 @@
   "pv": 348,
   "events": {
    "tool_engaged": 10,
-   "card_open": 1,
+   "tool_result": 9,
+   "cta_click": 1,
    "email_signup": 3,
    "magnet_delivered": 3,
-   "tool_result": 9,
-   "cta_click": 1
+   "card_open": 1
   },
   "sites": {
    "grow": {
     "users": 34,
     "events": {
      "tool_engaged": 6,
-     "card_open": 1,
+     "tool_result": 5,
      "email_signup": 2,
      "magnet_delivered": 2,
-     "tool_result": 5
+     "card_open": 1
     }
    },
    "wealth": {
@@ -124,8 +124,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 349,
-   "users": 231,
+   "sessions": 354,
+   "users": 233,
    "signups": 0
   },
   {
@@ -680,7 +680,7 @@
     "d7": 2,
     "d30": 17,
     "d7_prev": 5,
-    "pv30": 23,
+    "pv30": 24,
     "outbound": [],
     "channels": [
      {
@@ -1928,7 +1928,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 231,
+    "users": 233,
     "signups": 0
    },
    {
@@ -1992,7 +1992,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 121,
+     "users": 123,
      "signups": 0
     },
     {
@@ -2058,26 +2058,26 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 75,
+     "views": 76,
      "users": 5
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 60
+     "views": 63,
+     "users": 61
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 57,
+     "views": 60,
      "users": 1
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 28,
-     "users": 28
+     "views": 29,
+     "users": 29
     },
     {
      "name": "每日熱量收支",
