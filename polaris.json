@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-13 01:32",
- "updated": "2026-11-13 01:32 台北",
+ "generatedAt": "2026-11-13 07:32",
+ "updated": "2026-11-13 07:32 台北",
  "yesterday_date": "2026-11-12",
  "yesterday": {
-  "users": 10,
-  "pv": 14,
+  "users": 11,
+  "pv": 18,
   "events": {
    "email_signup": 1,
    "magnet_delivered": 1
@@ -16,7 +16,7 @@
     "events": {}
    },
    "wealth": {
-    "users": 10,
+    "users": 11,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1
@@ -25,13 +25,13 @@
   }
  },
  "d7": {
-  "users": 47,
-  "pv": 70,
+  "users": 48,
+  "pv": 74,
   "events": {
-   "tool_engaged": 1,
-   "tool_result": 1,
    "email_signup": 1,
-   "magnet_delivered": 1
+   "magnet_delivered": 1,
+   "tool_engaged": 1,
+   "tool_result": 1
   },
   "sites": {
    "grow": {
@@ -42,7 +42,7 @@
     }
    },
    "wealth": {
-    "users": 40,
+    "users": 41,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1
@@ -51,13 +51,13 @@
   }
  },
  "d30": {
-  "users": 208,
-  "pv": 332,
+  "users": 209,
+  "pv": 336,
   "events": {
-   "tool_engaged": 9,
-   "tool_result": 8,
    "email_signup": 2,
-   "magnet_delivered": 2
+   "magnet_delivered": 2,
+   "tool_engaged": 9,
+   "tool_result": 8
   },
   "sites": {
    "grow": {
@@ -70,12 +70,12 @@
     }
    },
    "wealth": {
-    "users": 176,
+    "users": 177,
     "events": {
-     "tool_engaged": 2,
-     "tool_result": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 2,
+     "tool_result": 2
     }
    }
   }
@@ -106,7 +106,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 40,
+    "count": 41,
     "rate": null
    },
    {
@@ -131,8 +131,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 315,
-   "users": 222,
+   "sessions": 317,
+   "users": 223,
    "signups": 0
   },
   {
@@ -372,7 +372,7 @@
   },
   {
    "date": "2026-11-12",
-   "users": 10,
+   "users": 11,
    "signups": 1
   }
  ],
@@ -2082,7 +2082,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 222,
+    "users": 223,
     "signups": 0
    },
    {
@@ -2146,7 +2146,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 120,
+     "users": 121,
      "signups": 0
     },
     {
@@ -2212,19 +2212,19 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 69,
+     "views": 70,
      "users": 5
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 62,
-     "users": 60
+     "views": 63,
+     "users": 61
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 60,
+     "views": 62,
      "users": 1
     },
     {
@@ -2560,7 +2560,7 @@
     },
     {
      "date": "2026-11-12",
-     "users": 10,
+     "users": 11,
      "signups": 1
     }
    ]
@@ -2579,9 +2579,9 @@
     "signups30": 1,
     "signups7": 1,
     "signupsY": 1,
-    "users30": 176,
-    "users7": 40,
-    "rate7": 2.5
+    "users30": 177,
+    "users7": 41,
+    "rate7": 2.4
    }
   }
  }
