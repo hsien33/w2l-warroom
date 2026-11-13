@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-13 07:32",
- "updated": "2026-11-13 07:32 台北",
+ "generatedAt": "2026-11-13 14:34",
+ "updated": "2026-11-13 14:34 台北",
  "yesterday_date": "2026-11-12",
  "yesterday": {
   "users": 11,
@@ -28,10 +28,10 @@
   "users": 48,
   "pv": 74,
   "events": {
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "tool_engaged": 1,
-   "tool_result": 1
+   "tool_result": 1,
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -54,10 +54,10 @@
   "users": 209,
   "pv": 336,
   "events": {
-   "email_signup": 2,
-   "magnet_delivered": 2,
    "tool_engaged": 9,
-   "tool_result": 8
+   "tool_result": 8,
+   "email_signup": 2,
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
@@ -72,10 +72,10 @@
    "wealth": {
     "users": 177,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 2,
-     "tool_result": 2
+     "tool_result": 2,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    }
   }
@@ -131,15 +131,15 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 317,
-   "users": 223,
+   "sessions": 319,
+   "users": 225,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 31,
+   "sessions": 32,
    "users": 2,
    "signups": 0
   },
@@ -2082,7 +2082,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 223,
+    "users": 225,
     "signups": 0
    },
    {
@@ -2146,7 +2146,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 121,
+     "users": 123,
      "signups": 0
     },
     {
@@ -2212,14 +2212,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 70,
+     "views": 71,
      "users": 5
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 63,
-     "users": 61
+     "views": 64,
+     "users": 62
     },
     {
      "name": "個人習慣分析",
@@ -2254,8 +2254,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 2,
-     "users": 2
+     "views": 3,
+     "users": 3
     }
    ]
   },
