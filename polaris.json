@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-14 07:29",
- "updated": "2026-11-14 07:29 台北",
+ "generatedAt": "2026-11-14 14:12",
+ "updated": "2026-11-14 14:12 台北",
  "yesterday_date": "2026-11-13",
  "yesterday": {
   "users": 10,
@@ -22,10 +22,10 @@
   "users": 52,
   "pv": 80,
   "events": {
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "tool_engaged": 1,
-   "tool_result": 1
+   "tool_result": 1,
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
@@ -66,10 +66,10 @@
    "wealth": {
     "users": 183,
     "events": {
-     "tool_engaged": 2,
-     "tool_result": 2,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 2,
+     "tool_result": 2
     }
    }
   }
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 320,
-   "users": 226,
+   "sessions": 325,
+   "users": 230,
    "signups": 0
   },
   {
@@ -149,8 +149,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 5,
-   "users": 5,
+   "sessions": 6,
+   "users": 6,
    "signups": 0
   },
   {
@@ -674,19 +674,19 @@
      },
      {
       "date": "2026-11-14",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 8,
     "d7_prev": 3,
-    "pv30": 8,
+    "pv30": 9,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 5
+      "users": 6
      },
      {
       "ch": "Referral",
@@ -2076,12 +2076,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 226,
+    "users": 230,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 18,
+    "users": 19,
     "signups": 1
    },
    {
@@ -2134,13 +2134,19 @@
      "raw": "Referral",
      "users": 1,
      "signups": 0
+    },
+    {
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 1,
+     "signups": 0
     }
    ],
    "wealth": [
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 127,
+     "users": 131,
      "signups": 0
     },
     {
@@ -2169,7 +2175,7 @@
      "name": "光合作用",
      "path": "/",
      "views": 9,
-     "users": 8
+     "users": 9
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2206,26 +2212,26 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 66
+     "views": 69,
+     "users": 67
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 67,
+     "views": 68,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 60,
+     "views": 61,
      "users": 1
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 30,
-     "users": 30
+     "views": 31,
+     "users": 31
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
@@ -2248,8 +2254,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 3,
-     "users": 3
+     "views": 4,
+     "users": 4
     }
    ]
   },
