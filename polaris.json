@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-14 14:12",
- "updated": "2026-11-14 14:12 台北",
+ "generatedAt": "2026-11-14 23:46",
+ "updated": "2026-11-14 23:46 台北",
  "yesterday_date": "2026-11-13",
  "yesterday": {
   "users": 10,
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 325,
-   "users": 230,
+   "sessions": 330,
+   "users": 235,
    "signups": 0
   },
   {
@@ -154,6 +154,14 @@
    "signups": 0
   },
   {
+   "source": "ig",
+   "medium": "bio",
+   "campaign": "magnet-talkrescue",
+   "sessions": 5,
+   "users": 5,
+   "signups": 1
+  },
+  {
    "source": "l.instagram.com",
    "medium": "referral",
    "campaign": "(referral)",
@@ -168,14 +176,6 @@
    "sessions": 4,
    "users": 4,
    "signups": 0
-  },
-  {
-   "source": "ig",
-   "medium": "bio",
-   "campaign": "magnet-talkrescue",
-   "sessions": 4,
-   "users": 4,
-   "signups": 1
   },
   {
    "source": "instagram.com",
@@ -519,14 +519,14 @@
      },
      {
       "date": "2026-11-14",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 16,
     "d7_prev": 4,
-    "pv30": 23,
+    "pv30": 24,
     "outbound": [],
     "channels": [
      {
@@ -535,7 +535,7 @@
      },
      {
       "ch": "Organic Social",
-      "users": 2
+      "users": 3
      }
     ],
     "engaged7": 1,
@@ -978,19 +978,19 @@
      },
      {
       "date": "2026-11-14",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 3,
     "d7_prev": 0,
-    "pv30": 3,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      },
      {
       "ch": "Organic Social",
@@ -1133,19 +1133,19 @@
      },
      {
       "date": "2026-11-14",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 11,
     "d7_prev": 4,
-    "pv30": 9,
+    "pv30": 10,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 9
+      "users": 10
      },
      {
       "ch": "Unassigned",
@@ -2069,6 +2069,157 @@
     "badges": [
      "沉睡"
     ]
+   },
+   {
+    "slug": "learning-gift",
+    "site": "grow",
+    "daily": [
+     {
+      "date": "2026-10-15",
+      "users": 0
+     },
+     {
+      "date": "2026-10-16",
+      "users": 0
+     },
+     {
+      "date": "2026-10-17",
+      "users": 0
+     },
+     {
+      "date": "2026-10-18",
+      "users": 0
+     },
+     {
+      "date": "2026-10-19",
+      "users": 0
+     },
+     {
+      "date": "2026-10-20",
+      "users": 0
+     },
+     {
+      "date": "2026-10-21",
+      "users": 0
+     },
+     {
+      "date": "2026-10-22",
+      "users": 0
+     },
+     {
+      "date": "2026-10-23",
+      "users": 0
+     },
+     {
+      "date": "2026-10-24",
+      "users": 0
+     },
+     {
+      "date": "2026-10-25",
+      "users": 0
+     },
+     {
+      "date": "2026-10-26",
+      "users": 0
+     },
+     {
+      "date": "2026-10-27",
+      "users": 0
+     },
+     {
+      "date": "2026-10-28",
+      "users": 0
+     },
+     {
+      "date": "2026-10-29",
+      "users": 0
+     },
+     {
+      "date": "2026-10-30",
+      "users": 0
+     },
+     {
+      "date": "2026-10-31",
+      "users": 0
+     },
+     {
+      "date": "2026-11-01",
+      "users": 0
+     },
+     {
+      "date": "2026-11-02",
+      "users": 0
+     },
+     {
+      "date": "2026-11-03",
+      "users": 0
+     },
+     {
+      "date": "2026-11-04",
+      "users": 0
+     },
+     {
+      "date": "2026-11-05",
+      "users": 0
+     },
+     {
+      "date": "2026-11-06",
+      "users": 0
+     },
+     {
+      "date": "2026-11-07",
+      "users": 0
+     },
+     {
+      "date": "2026-11-08",
+      "users": 0
+     },
+     {
+      "date": "2026-11-09",
+      "users": 0
+     },
+     {
+      "date": "2026-11-10",
+      "users": 0
+     },
+     {
+      "date": "2026-11-11",
+      "users": 0
+     },
+     {
+      "date": "2026-11-12",
+      "users": 0
+     },
+     {
+      "date": "2026-11-13",
+      "users": 0
+     },
+     {
+      "date": "2026-11-14",
+      "users": 1
+     }
+    ],
+    "today": 1,
+    "d7": 0,
+    "d30": 0,
+    "d7_prev": 0,
+    "pv30": 1,
+    "outbound": [],
+    "channels": [
+     {
+      "ch": "Organic Social",
+      "users": 1
+     }
+    ],
+    "engaged7": 0,
+    "result7": 0,
+    "emails30": 0,
+    "outbound30": 0,
+    "engage_rate": null,
+    "finish_rate": null,
+    "badges": [
+     "沉睡"
+    ]
    }
   ],
   "outbound_top": [],
@@ -2076,7 +2227,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 230,
+    "users": 235,
     "signups": 0
    },
    {
@@ -2086,7 +2237,7 @@
    },
    {
     "label": "IG 帶來的",
-    "users": 6,
+    "users": 7,
     "signups": 1
    },
    {
@@ -2095,7 +2246,7 @@
     "signups": 0
    }
   ],
-  "ig_share": 2,
+  "ig_share": 3,
   "cards": [
    {
     "level": "red",
@@ -2114,13 +2265,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 15,
+     "users": 16,
      "signups": 0
     },
     {
      "ch": "社群(IG/FB)",
      "raw": "Organic Social",
-     "users": 8,
+     "users": 9,
      "signups": 1
     },
     {
@@ -2146,7 +2297,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 131,
+     "users": 135,
      "signups": 0
     },
     {
@@ -2174,8 +2325,8 @@
     {
      "name": "光合作用",
      "path": "/",
-     "views": 9,
-     "users": 9
+     "views": 10,
+     "users": 10
     },
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
@@ -2186,8 +2337,14 @@
     {
      "name": "對話筆記",
      "path": "/articles/",
-     "views": 1,
-     "users": 1
+     "views": 2,
+     "users": 2
+    },
+    {
+     "name": "大家怎麼說",
+     "path": "/voices/",
+     "views": 2,
+     "users": 2
     },
     {
      "name": "孩子考差，先別急著安慰——你可以這樣說",
@@ -2196,8 +2353,8 @@
      "users": 1
     },
     {
-     "name": "大家怎麼說",
-     "path": "/voices/",
+     "name": "孩子滑手機滑到半夜，先別沒收：罵之前先聽懂他在手機裡找什麼",
+     "path": "/articles/phone-till-late-curiosity/",
      "views": 1,
      "users": 1
     },
@@ -2212,8 +2369,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 69,
-     "users": 67
+     "views": 71,
+     "users": 69
     },
     {
      "name": "一起變輕一點",
@@ -2230,8 +2387,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 31,
-     "users": 31
+     "views": 32,
+     "users": 32
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
