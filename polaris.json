@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-15 06:18",
- "updated": "2026-11-15 06:18 台北",
+ "generatedAt": "2026-11-15 14:19",
+ "updated": "2026-11-15 14:19 台北",
  "yesterday_date": "2026-11-14",
  "yesterday": {
   "users": 14,
@@ -53,21 +53,21 @@
   "users": 214,
   "pv": 333,
   "events": {
-   "email_signup": 1,
-   "magnet_delivered": 1,
    "tool_engaged": 10,
    "tool_result": 10,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "email_signup": 1,
+   "magnet_delivered": 1
   },
   "sites": {
    "grow": {
     "users": 35,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 8,
      "tool_result": 8,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -130,8 +130,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 315,
-   "users": 227,
+   "sessions": 318,
+   "users": 229,
    "signups": 0
   },
   {
@@ -1919,7 +1919,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 227,
+    "users": 229,
     "signups": 0
    },
    {
@@ -1989,7 +1989,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 129,
+     "users": 131,
      "signups": 0
     },
     {
@@ -2061,19 +2061,19 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 66
+     "views": 69,
+     "users": 67
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 63,
+     "views": 65,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 58,
+     "views": 59,
      "users": 1
     },
     {
@@ -2091,14 +2091,14 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 5,
+     "views": 6,
      "users": 3
     },
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 5,
-     "users": 5
+     "views": 6,
+     "users": 6
     },
     {
      "name": "深度文章",
