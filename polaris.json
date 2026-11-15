@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-16 00:18",
- "updated": "2026-11-16 00:18 台北",
+ "generatedAt": "2026-11-16 06:45",
+ "updated": "2026-11-16 06:45 台北",
  "yesterday_date": "2026-11-15",
  "yesterday": {
-  "users": 8,
-  "pv": 16,
+  "users": 9,
+  "pv": 17,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 8,
+    "users": 9,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 65,
-  "pv": 103,
+  "users": 66,
+  "pv": 104,
   "events": {
    "email_signup": 1,
    "magnet_delivered": 1,
@@ -38,7 +38,7 @@
     }
    },
    "wealth": {
-    "users": 58,
+    "users": 59,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1
@@ -47,8 +47,8 @@
   }
  },
  "d30": {
-  "users": 223,
-  "pv": 356,
+  "users": 224,
+  "pv": 357,
   "events": {
    "email_signup": 2,
    "magnet_delivered": 2,
@@ -60,15 +60,15 @@
    "grow": {
     "users": 34,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 8,
      "tool_result": 8,
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "outbound_placement": 1
     }
    },
    "wealth": {
-    "users": 189,
+    "users": 190,
     "events": {
      "email_signup": 1,
      "magnet_delivered": 1,
@@ -104,7 +104,7 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 58,
+    "count": 59,
     "rate": null
    },
    {
@@ -129,8 +129,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 322,
-   "users": 230,
+   "sessions": 323,
+   "users": 231,
    "signups": 0
   },
   {
@@ -362,7 +362,7 @@
   },
   {
    "date": "2026-11-15",
-   "users": 8,
+   "users": 9,
    "signups": 0
   }
  ],
@@ -2069,7 +2069,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 230,
+    "users": 231,
     "signups": 0
    },
    {
@@ -2139,7 +2139,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 137,
+     "users": 138,
      "signups": 0
     },
     {
@@ -2211,8 +2211,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 72,
-     "users": 70
+     "views": 73,
+     "users": 71
     },
     {
      "name": "一起變輕一點",
@@ -2559,7 +2559,7 @@
     },
     {
      "date": "2026-11-15",
-     "users": 8,
+     "users": 9,
      "signups": 0
     }
    ]
@@ -2578,8 +2578,8 @@
     "signups30": 1,
     "signups7": 1,
     "signupsY": 0,
-    "users30": 189,
-    "users7": 58,
+    "users30": 190,
+    "users7": 59,
     "rate7": 1.7
    }
   }
