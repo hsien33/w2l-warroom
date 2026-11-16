@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-16 06:45",
- "updated": "2026-11-16 06:45 台北",
+ "generatedAt": "2026-11-16 14:19",
+ "updated": "2026-11-16 14:19 台北",
  "yesterday_date": "2026-11-15",
  "yesterday": {
   "users": 9,
@@ -62,9 +62,9 @@
     "events": {
      "tool_engaged": 8,
      "tool_result": 8,
+     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -129,8 +129,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 323,
-   "users": 231,
+   "sessions": 328,
+   "users": 233,
    "signups": 0
   },
   {
@@ -145,9 +145,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 8,
-   "users": 6,
-   "signups": 1
+   "sessions": 9,
+   "users": 7,
+   "signups": 2
   },
   {
    "source": "(not set)",
@@ -179,6 +179,14 @@
    "campaign": "(organic)",
    "sessions": 3,
    "users": 3,
+   "signups": 0
+  },
+  {
+   "source": "hsien33.github.io",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 2,
+   "users": 1,
    "signups": 0
   },
   {
@@ -2069,13 +2077,13 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 231,
+    "users": 233,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 18,
-    "signups": 1
+    "users": 20,
+    "signups": 2
    },
    {
     "label": "IG 帶來的",
@@ -2139,14 +2147,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 138,
+     "users": 140,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 6,
-     "signups": 1
+     "users": 8,
+     "signups": 2
     },
     {
      "ch": "自然搜尋(Google)",
@@ -2211,19 +2219,19 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 73,
-     "users": 71
+     "views": 76,
+     "users": 72
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 67,
+     "views": 70,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 65,
+     "views": 67,
      "users": 1
     },
     {
@@ -2241,14 +2249,14 @@
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 6,
-     "users": 6
+     "views": 7,
+     "users": 7
     },
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 6,
-     "users": 6
+     "views": 7,
+     "users": 7
     },
     {
      "name": "每日熱量收支",
