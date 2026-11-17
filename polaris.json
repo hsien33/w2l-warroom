@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-17 11:46",
- "updated": "2026-11-17 11:46 台北",
+ "generatedAt": "2026-11-17 23:54",
+ "updated": "2026-11-17 23:54 台北",
  "yesterday_date": "2026-11-16",
  "yesterday": {
   "users": 7,
@@ -66,11 +66,11 @@
    "grow": {
     "users": 35,
     "events": {
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "tool_engaged": 8,
      "tool_result": 8,
-     "outbound_placement": 1,
-     "email_signup": 1,
-     "magnet_delivered": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -135,8 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 320,
-   "users": 229,
+   "sessions": 329,
+   "users": 235,
    "signups": 0
   },
   {
@@ -159,8 +159,8 @@
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 6,
-   "users": 6,
+   "sessions": 7,
+   "users": 7,
    "signups": 0
   },
   {
@@ -180,19 +180,19 @@
    "signups": 0
   },
   {
+   "source": "hsien33.github.io",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 4,
+   "users": 1,
+   "signups": 0
+  },
+  {
    "source": "bing",
    "medium": "organic",
    "campaign": "(organic)",
    "sessions": 3,
    "users": 3,
-   "signups": 0
-  },
-  {
-   "source": "hsien33.github.io",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 3,
-   "users": 1,
    "signups": 0
   },
   {
@@ -529,14 +529,14 @@
      },
      {
       "date": "2026-11-17",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 17,
     "d7_prev": 3,
-    "pv30": 24,
+    "pv30": 25,
     "outbound": [],
     "channels": [
      {
@@ -684,19 +684,19 @@
      },
      {
       "date": "2026-11-17",
-      "users": 0
+      "users": 2
      }
     ],
-    "today": 0,
+    "today": 2,
     "d7": 3,
     "d30": 9,
     "d7_prev": 4,
-    "pv30": 9,
+    "pv30": 11,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 6
+      "users": 8
      },
      {
       "ch": "Referral",
@@ -837,19 +837,19 @@
      },
      {
       "date": "2026-11-17",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 13,
     "d7_prev": 2,
-    "pv30": 11,
+    "pv30": 12,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 11
+      "users": 12
      },
      {
       "ch": "Unassigned",
@@ -990,19 +990,19 @@
      },
      {
       "date": "2026-11-17",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 4,
     "d7_prev": 2,
-    "pv30": 4,
+    "pv30": 5,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 4
+      "users": 5
      }
     ],
     "engaged7": 0,
@@ -2083,12 +2083,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 229,
+    "users": 235,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 19,
+    "users": 20,
     "signups": 2
    },
    {
@@ -2104,7 +2104,7 @@
   ],
   "ig_share": 3,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 0 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 5 人在用",
   "signup_total_30d": 3
  },
  "v3": {
@@ -2145,7 +2145,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 139,
+     "users": 145,
      "signups": 0
     },
     {
@@ -2155,14 +2155,14 @@
      "signups": 2
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 3,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 4,
      "signups": 0
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 3,
      "signups": 0
     }
@@ -2179,7 +2179,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 7,
+     "views": 8,
      "users": 3
     },
     {
@@ -2223,13 +2223,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 68,
+     "views": 71,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 66,
+     "views": 67,
      "users": 1
     },
     {
@@ -2241,8 +2241,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 8,
-     "users": 8
+     "views": 10,
+     "users": 10
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
@@ -2253,7 +2253,7 @@
     {
      "name": "每日熱量收支",
      "path": "/Fitness_challenge/meals.html",
-     "views": 6,
+     "views": 7,
      "users": 2
     },
     {
