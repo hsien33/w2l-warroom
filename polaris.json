@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-17 03:31",
- "updated": "2026-11-17 03:31 台北",
+ "generatedAt": "2026-11-17 11:46",
+ "updated": "2026-11-17 11:46 台北",
  "yesterday_date": "2026-11-16",
  "yesterday": {
   "users": 7,
@@ -56,10 +56,10 @@
   "users": 225,
   "pv": 364,
   "events": {
-   "tool_engaged": 10,
-   "tool_result": 10,
    "email_signup": 3,
    "magnet_delivered": 3,
+   "tool_engaged": 10,
+   "tool_result": 10,
    "outbound_placement": 1
   },
   "sites": {
@@ -68,9 +68,9 @@
     "events": {
      "tool_engaged": 8,
      "tool_result": 8,
+     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1,
-     "outbound_placement": 1
+     "magnet_delivered": 1
     }
    },
    "wealth": {
@@ -135,8 +135,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 318,
-   "users": 228,
+   "sessions": 320,
+   "users": 229,
    "signups": 0
   },
   {
@@ -2083,7 +2083,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 228,
+    "users": 229,
     "signups": 0
    },
    {
@@ -2145,7 +2145,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 138,
+     "users": 139,
      "signups": 0
     },
     {
@@ -2223,13 +2223,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 67,
+     "views": 68,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 65,
+     "views": 66,
      "users": 1
     },
     {
@@ -2259,8 +2259,8 @@
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 5,
-     "users": 5
+     "views": 6,
+     "users": 6
     }
    ]
   },
