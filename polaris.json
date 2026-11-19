@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-19 10:30",
- "updated": "2026-11-19 10:30 台北",
+ "generatedAt": "2026-11-19 19:30",
+ "updated": "2026-11-19 19:30 台北",
  "yesterday_date": "2026-11-18",
  "yesterday": {
   "users": 10,
@@ -22,11 +22,11 @@
   "users": 74,
   "pv": 121,
   "events": {
+   "email_signup": 2,
+   "magnet_delivered": 2,
    "tool_engaged": 2,
    "tool_result": 2,
-   "outbound_placement": 1,
-   "email_signup": 2,
-   "magnet_delivered": 2
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -50,21 +50,21 @@
   "users": 229,
   "pv": 376,
   "events": {
+   "email_signup": 3,
+   "magnet_delivered": 3,
    "tool_engaged": 10,
    "tool_result": 10,
-   "outbound_placement": 1,
-   "email_signup": 3,
-   "magnet_delivered": 3
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 36,
     "events": {
+     "email_signup": 1,
+     "magnet_delivered": 1,
      "tool_engaged": 8,
      "tool_result": 8,
-     "outbound_placement": 1,
-     "email_signup": 1,
-     "magnet_delivered": 1
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -129,8 +129,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 316,
-   "users": 223,
+   "sessions": 327,
+   "users": 225,
    "signups": 0
   },
   {
@@ -145,9 +145,9 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 8,
-   "users": 6,
-   "signups": 2
+   "sessions": 9,
+   "users": 7,
+   "signups": 3
   },
   {
    "source": "(not set)",
@@ -161,7 +161,7 @@
    "source": "hsien33.github.io",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 6,
+   "sessions": 7,
    "users": 1,
    "signups": 0
   },
@@ -676,14 +676,14 @@
      },
      {
       "date": "2026-11-19",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 5,
     "d30": 11,
     "d7_prev": 2,
-    "pv30": 11,
+    "pv30": 12,
     "outbound": [],
     "channels": [
      {
@@ -692,7 +692,7 @@
      },
      {
       "ch": "Referral",
-      "users": 3
+      "users": 4
      }
     ],
     "engaged7": 0,
@@ -829,14 +829,14 @@
      },
      {
       "date": "2026-11-19",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 3,
     "d30": 18,
     "d7_prev": 3,
-    "pv30": 25,
+    "pv30": 27,
     "outbound": [],
     "channels": [
      {
@@ -2075,13 +2075,13 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 223,
+    "users": 225,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 20,
-    "signups": 2
+    "users": 21,
+    "signups": 3
    },
    {
     "label": "IG 帶來的",
@@ -2137,14 +2137,14 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 139,
+     "users": 141,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 7,
-     "signups": 2
+     "users": 8,
+     "signups": 3
     },
     {
      "ch": "未分類",
@@ -2171,7 +2171,7 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 8,
+     "views": 10,
      "users": 3
     },
     {
@@ -2209,19 +2209,19 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 74,
+     "views": 77,
      "users": 5
     },
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 68,
-     "users": 64
+     "views": 71,
+     "users": 66
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 68,
+     "views": 69,
      "users": 1
     },
     {
@@ -2233,8 +2233,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 11,
-     "users": 11
+     "views": 12,
+     "users": 12
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
