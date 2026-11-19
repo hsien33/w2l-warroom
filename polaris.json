@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-19 04:26",
- "updated": "2026-11-19 04:26 台北",
+ "generatedAt": "2026-11-19 10:30",
+ "updated": "2026-11-19 10:30 台北",
  "yesterday_date": "2026-11-18",
  "yesterday": {
   "users": 10,
@@ -22,11 +22,11 @@
   "users": 74,
   "pv": 121,
   "events": {
-   "email_signup": 2,
-   "magnet_delivered": 2,
    "tool_engaged": 2,
    "tool_result": 2,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "email_signup": 2,
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
@@ -50,30 +50,30 @@
   "users": 229,
   "pv": 376,
   "events": {
-   "email_signup": 3,
-   "magnet_delivered": 3,
    "tool_engaged": 10,
    "tool_result": 10,
-   "outbound_placement": 1
+   "outbound_placement": 1,
+   "email_signup": 3,
+   "magnet_delivered": 3
   },
   "sites": {
    "grow": {
     "users": 36,
     "events": {
-     "email_signup": 1,
-     "magnet_delivered": 1,
      "tool_engaged": 8,
      "tool_result": 8,
-     "outbound_placement": 1
+     "outbound_placement": 1,
+     "email_signup": 1,
+     "magnet_delivered": 1
     }
    },
    "wealth": {
     "users": 193,
     "events": {
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "tool_engaged": 2,
-     "tool_result": 2
+     "tool_result": 2,
+     "email_signup": 2,
+     "magnet_delivered": 2
     }
    }
   }
@@ -129,8 +129,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 314,
-   "users": 222,
+   "sessions": 316,
+   "users": 223,
    "signups": 0
   },
   {
@@ -2075,7 +2075,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 222,
+    "users": 223,
     "signups": 0
    },
    {
@@ -2137,7 +2137,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 138,
+     "users": 139,
      "signups": 0
     },
     {
@@ -2209,7 +2209,7 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 73,
+     "views": 74,
      "users": 5
     },
     {
@@ -2233,8 +2233,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 10,
-     "users": 10
+     "views": 11,
+     "users": 11
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
