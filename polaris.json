@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-20 04:29",
- "updated": "2026-11-20 04:29 台北",
+ "generatedAt": "2026-11-20 10:16",
+ "updated": "2026-11-20 10:16 台北",
  "yesterday_date": "2026-11-19",
  "yesterday": {
   "users": 8,
@@ -82,10 +82,10 @@
    "wealth": {
     "users": 193,
     "events": {
-     "email_signup": 3,
-     "magnet_delivered": 3,
      "tool_engaged": 3,
-     "tool_result": 3
+     "tool_result": 3,
+     "email_signup": 3,
+     "magnet_delivered": 3
     }
    }
   }
@@ -141,8 +141,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 317,
-   "users": 215,
+   "sessions": 321,
+   "users": 219,
    "signups": 0
   },
   {
@@ -535,19 +535,19 @@
      },
      {
       "date": "2026-11-20",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 6,
     "d30": 15,
     "d7_prev": 1,
-    "pv30": 13,
+    "pv30": 14,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 13
+      "users": 14
      },
      {
       "ch": "Unassigned",
@@ -1938,7 +1938,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 215,
+    "users": 219,
     "signups": 0
    },
    {
@@ -1959,7 +1959,7 @@
   ],
   "ig_share": 2,
   "cards": [],
-  "summary": "今天正常：昨天新增 1 位名單、工具有 1 人在用",
+  "summary": "今天正常：昨天新增 1 位名單、工具有 2 人在用",
   "signup_total_30d": 4
  },
  "v3": {
@@ -1994,7 +1994,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 137,
+     "users": 141,
      "signups": 0
     },
     {
@@ -2066,8 +2066,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 70,
-     "users": 65
+     "views": 71,
+     "users": 66
     },
     {
      "name": "個人習慣分析",
@@ -2084,8 +2084,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 12,
-     "users": 12
+     "views": 14,
+     "users": 14
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
