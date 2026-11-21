@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-21 10:09",
- "updated": "2026-11-21 10:09 台北",
+ "generatedAt": "2026-11-21 18:54",
+ "updated": "2026-11-21 18:54 台北",
  "yesterday_date": "2026-11-20",
  "yesterday": {
   "users": 13,
@@ -58,10 +58,10 @@
   "users": 231,
   "pv": 385,
   "events": {
-   "tool_engaged": 11,
-   "tool_result": 11,
    "email_signup": 4,
    "magnet_delivered": 4,
+   "tool_engaged": 11,
+   "tool_result": 11,
    "outbound_placement": 1
   },
   "sites": {
@@ -78,10 +78,10 @@
    "wealth": {
     "users": 199,
     "events": {
-     "tool_engaged": 3,
-     "tool_result": 3,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 3,
+     "tool_result": 3
     }
    }
   }
@@ -137,7 +137,7 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 318,
+   "sessions": 319,
    "users": 219,
    "signups": 0
   },
@@ -145,8 +145,8 @@
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 14,
-   "users": 2,
+   "sessions": 15,
+   "users": 3,
    "signups": 0
   },
   {
@@ -1446,19 +1446,19 @@
      },
      {
       "date": "2026-11-21",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 1,
     "d30": 1,
     "d7_prev": 0,
-    "pv30": 1,
+    "pv30": 3,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Search",
-      "users": 1
+      "users": 2
      }
     ],
     "engaged7": 1,
@@ -2101,7 +2101,7 @@
    },
    {
     "label": "Google 搜來的",
-    "users": 2,
+    "users": 3,
     "signups": 0
    }
   ],
@@ -2160,15 +2160,15 @@
      "signups": 3
     },
     {
-     "ch": "未分類",
-     "raw": "Unassigned",
+     "ch": "自然搜尋(Google)",
+     "raw": "Organic Search",
      "users": 5,
      "signups": 0
     },
     {
-     "ch": "自然搜尋(Google)",
-     "raw": "Organic Search",
-     "users": 4,
+     "ch": "未分類",
+     "raw": "Unassigned",
+     "users": 5,
      "signups": 0
     }
    ]
@@ -2222,13 +2222,13 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 72,
+     "views": 73,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 68,
+     "views": 69,
      "users": 1
     },
     {
