@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-21 04:06",
- "updated": "2026-11-21 04:06 台北",
+ "generatedAt": "2026-11-21 10:09",
+ "updated": "2026-11-21 10:09 台北",
  "yesterday_date": "2026-11-20",
  "yesterday": {
   "users": 13,
@@ -28,11 +28,11 @@
   "users": 74,
   "pv": 127,
   "events": {
+   "email_signup": 2,
+   "magnet_delivered": 2,
    "tool_engaged": 4,
    "tool_result": 4,
-   "outbound_placement": 1,
-   "email_signup": 2,
-   "magnet_delivered": 2
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -46,10 +46,10 @@
    "wealth": {
     "users": 68,
     "events": {
-     "tool_engaged": 2,
-     "tool_result": 2,
      "email_signup": 2,
-     "magnet_delivered": 2
+     "magnet_delivered": 2,
+     "tool_engaged": 2,
+     "tool_result": 2
     }
    }
   }
@@ -60,9 +60,9 @@
   "events": {
    "tool_engaged": 11,
    "tool_result": 11,
-   "outbound_placement": 1,
    "email_signup": 4,
-   "magnet_delivered": 4
+   "magnet_delivered": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -70,9 +70,9 @@
     "events": {
      "tool_engaged": 8,
      "tool_result": 8,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -137,8 +137,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 315,
-   "users": 216,
+   "sessions": 318,
+   "users": 219,
    "signups": 0
   },
   {
@@ -153,8 +153,8 @@
    "source": "w-alchemy.kit.com",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 9,
-   "users": 6,
+   "sessions": 11,
+   "users": 7,
    "signups": 3
   },
   {
@@ -839,14 +839,14 @@
      },
      {
       "date": "2026-11-21",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 5,
     "d30": 12,
     "d7_prev": 3,
-    "pv30": 13,
+    "pv30": 14,
     "outbound": [],
     "channels": [
      {
@@ -2086,12 +2086,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 216,
+    "users": 219,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 20,
+    "users": 21,
     "signups": 3
    },
    {
@@ -2150,13 +2150,13 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 143,
+     "users": 146,
      "signups": 0
     },
     {
      "ch": "別的網站連來",
      "raw": "Referral",
-     "users": 7,
+     "users": 8,
      "signups": 3
     },
     {
@@ -2214,16 +2214,16 @@
    ],
    "wealth": [
     {
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "path": "/",
+     "views": 73,
+     "users": 68
+    },
+    {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
      "views": 72,
      "users": 5
-    },
-    {
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "path": "/",
-     "views": 70,
-     "users": 65
     },
     {
      "name": "個人習慣分析",
@@ -2252,8 +2252,8 @@
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 6,
-     "users": 6
+     "views": 7,
+     "users": 7
     },
     {
      "name": "訂閱電子報",
