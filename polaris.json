@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-22 03:08",
- "updated": "2026-11-22 03:08 台北",
+ "generatedAt": "2026-11-22 09:13",
+ "updated": "2026-11-22 09:13 台北",
  "yesterday_date": "2026-11-21",
  "yesterday": {
   "users": 7,
@@ -55,9 +55,9 @@
   "events": {
    "tool_engaged": 12,
    "tool_result": 12,
-   "outbound_placement": 1,
    "email_signup": 4,
-   "magnet_delivered": 4
+   "magnet_delivered": 4,
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -65,9 +65,9 @@
     "events": {
      "tool_engaged": 8,
      "tool_result": 8,
-     "outbound_placement": 1,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "outbound_placement": 1
     }
    },
    "wealth": {
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 311,
-   "users": 213,
+   "sessions": 312,
+   "users": 214,
    "signups": 0
   },
   {
@@ -2082,7 +2082,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 213,
+    "users": 214,
     "signups": 0
    },
    {
@@ -2138,7 +2138,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 142,
+     "users": 143,
      "signups": 0
     },
     {
@@ -2222,8 +2222,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 23,
-     "users": 23
+     "views": 24,
+     "users": 24
     },
     {
      "name": "深度文章",
