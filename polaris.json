@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-22 09:13",
- "updated": "2026-11-22 09:13 台北",
+ "generatedAt": "2026-11-22 19:12",
+ "updated": "2026-11-22 19:12 台北",
  "yesterday_date": "2026-11-21",
  "yesterday": {
   "users": 7,
@@ -132,8 +132,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 312,
-   "users": 214,
+   "sessions": 318,
+   "users": 219,
+   "signups": 0
+  },
+  {
+   "source": "google",
+   "medium": "organic",
+   "campaign": "(organic)",
+   "sessions": 12,
+   "users": 3,
    "signups": 0
   },
   {
@@ -145,27 +153,19 @@
    "signups": 3
   },
   {
-   "source": "google",
-   "medium": "organic",
-   "campaign": "(organic)",
-   "sessions": 11,
-   "users": 3,
+   "source": "hsien33.github.io",
+   "medium": "referral",
+   "campaign": "(referral)",
+   "sessions": 7,
+   "users": 1,
    "signups": 0
   },
   {
    "source": "(not set)",
    "medium": "(not set)",
    "campaign": "(not set)",
-   "sessions": 7,
+   "sessions": 6,
    "users": 6,
-   "signups": 0
-  },
-  {
-   "source": "hsien33.github.io",
-   "medium": "referral",
-   "campaign": "(referral)",
-   "sessions": 7,
-   "users": 1,
    "signups": 0
   },
   {
@@ -696,10 +696,6 @@
      {
       "ch": "Referral",
       "users": 3
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -991,19 +987,23 @@
      },
      {
       "date": "2026-11-22",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 2,
     "d7_prev": 0,
-    "pv30": 3,
+    "pv30": 4,
     "outbound": [],
     "channels": [
      {
       "ch": "Organic Search",
       "users": 2
+     },
+     {
+      "ch": "Unassigned",
+      "users": 1
      }
     ],
     "engaged7": 2,
@@ -1749,19 +1749,19 @@
      },
      {
       "date": "2026-11-22",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 0,
     "d30": 2,
     "d7_prev": 1,
-    "pv30": 2,
+    "pv30": 3,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 2
+      "users": 3
      }
     ],
     "engaged7": 0,
@@ -2082,7 +2082,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 214,
+    "users": 219,
     "signups": 0
    },
    {
@@ -2138,7 +2138,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 143,
+     "users": 148,
      "signups": 0
     },
     {
@@ -2204,26 +2204,26 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 72,
-     "users": 67
+     "views": 73,
+     "users": 68
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 71,
+     "views": 73,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 69,
+     "views": 70,
      "users": 1
     },
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 24,
-     "users": 24
+     "views": 25,
+     "users": 25
     },
     {
      "name": "深度文章",
@@ -2234,14 +2234,14 @@
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 10,
-     "users": 10
+     "views": 11,
+     "users": 11
     },
     {
      "name": "關於 Jeff",
      "path": "/about/",
-     "views": 7,
-     "users": 7
+     "views": 8,
+     "users": 8
     },
     {
      "name": "訂閱電子報",
