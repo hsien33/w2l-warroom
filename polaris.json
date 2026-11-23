@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-23 09:37",
- "updated": "2026-11-23 09:37 台北",
+ "generatedAt": "2026-11-23 20:23",
+ "updated": "2026-11-23 20:23 台北",
  "yesterday_date": "2026-11-22",
  "yesterday": {
   "users": 10,
@@ -28,10 +28,10 @@
   "users": 68,
   "pv": 113,
   "events": {
-   "email_signup": 2,
-   "magnet_delivered": 2,
    "tool_engaged": 4,
-   "tool_result": 4
+   "tool_result": 4,
+   "email_signup": 2,
+   "magnet_delivered": 2
   },
   "sites": {
    "grow": {
@@ -41,10 +41,10 @@
    "wealth": {
     "users": 65,
     "events": {
-     "email_signup": 2,
-     "magnet_delivered": 2,
      "tool_engaged": 4,
-     "tool_result": 4
+     "tool_result": 4,
+     "email_signup": 2,
+     "magnet_delivered": 2
     }
    }
   }
@@ -55,9 +55,9 @@
   "events": {
    "tool_engaged": 13,
    "tool_result": 13,
+   "outbound_placement": 1,
    "email_signup": 4,
-   "magnet_delivered": 4,
-   "outbound_placement": 1
+   "magnet_delivered": 4
   },
   "sites": {
    "grow": {
@@ -73,10 +73,10 @@
    "wealth": {
     "users": 202,
     "events": {
-     "email_signup": 3,
-     "magnet_delivered": 3,
      "tool_engaged": 5,
-     "tool_result": 5
+     "tool_result": 5,
+     "email_signup": 3,
+     "magnet_delivered": 3
     }
    }
   }
@@ -132,16 +132,16 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 316,
-   "users": 217,
+   "sessions": 323,
+   "users": 221,
    "signups": 0
   },
   {
    "source": "google",
    "medium": "organic",
    "campaign": "(organic)",
-   "sessions": 12,
-   "users": 3,
+   "sessions": 13,
+   "users": 4,
    "signups": 0
   },
   {
@@ -526,19 +526,19 @@
      },
      {
       "date": "2026-11-23",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 5,
     "d30": 15,
     "d7_prev": 2,
-    "pv30": 14,
+    "pv30": 15,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 14
+      "users": 15
      },
      {
       "ch": "Unassigned",
@@ -679,14 +679,14 @@
      },
      {
       "date": "2026-11-23",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 5,
     "d30": 13,
     "d7_prev": 4,
-    "pv30": 15,
+    "pv30": 18,
     "outbound": [],
     "channels": [
      {
@@ -696,6 +696,10 @@
      {
       "ch": "Referral",
       "users": 3
+     },
+     {
+      "ch": "Organic Search",
+      "users": 1
      }
     ],
     "engaged7": 1,
@@ -1000,10 +1004,6 @@
      {
       "ch": "Organic Search",
       "users": 2
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 3,
@@ -2082,7 +2082,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 217,
+    "users": 221,
     "signups": 0
    },
    {
@@ -2097,7 +2097,7 @@
    },
    {
     "label": "Google 搜來的",
-    "users": 3,
+    "users": 4,
     "signups": 0
    }
   ],
@@ -2138,7 +2138,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 148,
+     "users": 152,
      "signups": 0
     },
     {
@@ -2150,13 +2150,13 @@
     {
      "ch": "自然搜尋(Google)",
      "raw": "Organic Search",
-     "users": 5,
+     "users": 6,
      "signups": 0
     },
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 2,
      "signups": 0
     },
     {
@@ -2210,20 +2210,20 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 72,
+     "views": 78,
      "users": 5
-    },
-    {
-     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
-     "path": "/",
-     "views": 70,
-     "users": 64
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 69,
+     "views": 73,
      "users": 1
+    },
+    {
+     "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
+     "path": "/",
+     "views": 72,
+     "users": 65
     },
     {
      "name": "從 0 到 1 學習地圖",
@@ -2234,14 +2234,14 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 16,
-     "users": 16
+     "views": 17,
+     "users": 17
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 12,
-     "users": 12
+     "views": 13,
+     "users": 13
     },
     {
      "name": "關於 Jeff",
