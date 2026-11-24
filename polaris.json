@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-24 10:09",
- "updated": "2026-11-24 10:09 台北",
+ "generatedAt": "2026-11-24 21:34",
+ "updated": "2026-11-24 21:34 台北",
  "yesterday_date": "2026-11-23",
  "yesterday": {
   "users": 12,
@@ -53,30 +53,30 @@
   "users": 242,
   "pv": 406,
   "events": {
-   "tool_engaged": 16,
-   "tool_result": 16,
    "email_signup": 4,
    "magnet_delivered": 4,
+   "tool_engaged": 16,
+   "tool_result": 16,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 30,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 8,
      "email_signup": 1,
      "magnet_delivered": 1,
+     "tool_engaged": 8,
+     "tool_result": 8,
      "outbound_placement": 1
     }
    },
    "wealth": {
     "users": 212,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 8,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 8,
+     "tool_result": 8
     }
    }
   }
@@ -132,8 +132,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 323,
-   "users": 222,
+   "sessions": 330,
+   "users": 225,
    "signups": 0
   },
   {
@@ -156,7 +156,7 @@
    "source": "hsien33.github.io",
    "medium": "referral",
    "campaign": "(referral)",
-   "sessions": 7,
+   "sessions": 8,
    "users": 1,
    "signups": 0
   },
@@ -169,20 +169,20 @@
    "signups": 0
   },
   {
-   "source": "(not set)",
-   "medium": "(not set)",
-   "campaign": "(not set)",
-   "sessions": 4,
-   "users": 4,
-   "signups": 0
-  },
-  {
    "source": "ig",
    "medium": "bio",
    "campaign": "magnet-talkrescue",
    "sessions": 4,
    "users": 3,
    "signups": 1
+  },
+  {
+   "source": "(not set)",
+   "medium": "(not set)",
+   "campaign": "(not set)",
+   "sessions": 3,
+   "users": 3,
+   "signups": 0
   },
   {
    "source": "bing",
@@ -838,14 +838,14 @@
      },
      {
       "date": "2026-11-24",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 20,
     "d7_prev": 3,
-    "pv30": 25,
+    "pv30": 26,
     "outbound": [],
     "channels": [
      {
@@ -2082,12 +2082,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 222,
+    "users": 225,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 18,
+    "users": 17,
     "signups": 3
    },
    {
@@ -2138,7 +2138,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 154,
+     "users": 157,
      "signups": 0
     },
     {
@@ -2208,16 +2208,16 @@
    ],
    "wealth": [
     {
-     "name": "一起變輕一點",
-     "path": "/Fitness_challenge/",
-     "views": 74,
-     "users": 5
-    },
-    {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 73,
-     "users": 66
+     "views": 76,
+     "users": 68
+    },
+    {
+     "name": "一起變輕一點",
+     "path": "/Fitness_challenge/",
+     "views": 76,
+     "users": 5
     },
     {
      "name": "個人習慣分析",
@@ -2228,8 +2228,8 @@
     {
      "name": "從 0 到 1 學習地圖",
      "path": "/start/",
-     "views": 26,
-     "users": 26
+     "views": 27,
+     "users": 27
     },
     {
      "name": "深度文章",
