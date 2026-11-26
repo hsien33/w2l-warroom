@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-26 03:11",
- "updated": "2026-11-26 03:11 台北",
+ "generatedAt": "2026-11-26 11:30",
+ "updated": "2026-11-26 11:30 台北",
  "yesterday_date": "2026-11-25",
  "yesterday": {
   "users": 11,
-  "pv": 10,
+  "pv": 11,
   "events": {},
   "sites": {
    "grow": {
@@ -20,12 +20,12 @@
  },
  "d7": {
   "users": 70,
-  "pv": 107,
+  "pv": 108,
   "events": {
+   "email_signup": 1,
    "magnet_delivered": 2,
    "tool_engaged": 7,
-   "tool_result": 7,
-   "email_signup": 1
+   "tool_result": 7
   },
   "sites": {
    "grow": {
@@ -37,23 +37,23 @@
    "wealth": {
     "users": 67,
     "events": {
-     "tool_engaged": 7,
-     "tool_result": 7,
      "email_signup": 1,
-     "magnet_delivered": 1
+     "magnet_delivered": 1,
+     "tool_engaged": 7,
+     "tool_result": 7
     }
    }
   }
  },
  "d30": {
   "users": 248,
-  "pv": 399,
+  "pv": 400,
   "events": {
+   "email_signup": 4,
+   "magnet_delivered": 5,
    "tool_engaged": 14,
    "tool_result": 14,
-   "outbound_placement": 1,
-   "magnet_delivered": 5,
-   "email_signup": 4
+   "outbound_placement": 1
   },
   "sites": {
    "grow": {
@@ -62,17 +62,17 @@
      "tool_engaged": 6,
      "tool_result": 6,
      "outbound_placement": 1,
-     "magnet_delivered": 2,
-     "email_signup": 1
+     "email_signup": 1,
+     "magnet_delivered": 2
     }
    },
    "wealth": {
     "users": 222,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 8,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 8,
+     "tool_result": 8
     }
    }
   }
@@ -128,8 +128,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 326,
-   "users": 222,
+   "sessions": 331,
+   "users": 224,
    "signups": 0
   },
   {
@@ -510,7 +510,7 @@
      },
      {
       "date": "2026-11-25",
-      "users": 0
+      "users": 1
      },
      {
       "date": "2026-11-26",
@@ -518,10 +518,10 @@
      }
     ],
     "today": 0,
-    "d7": 4,
-    "d30": 16,
+    "d7": 5,
+    "d30": 17,
     "d7_prev": 3,
-    "pv30": 21,
+    "pv30": 22,
     "outbound": [],
     "channels": [
      {
@@ -2070,7 +2070,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 222,
+    "users": 224,
     "signups": 0
    },
    {
@@ -2126,7 +2126,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 161,
+     "users": 163,
      "signups": 0
     },
     {
@@ -2198,13 +2198,13 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 80,
-     "users": 73
+     "views": 81,
+     "users": 74
     },
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 71,
+     "views": 72,
      "users": 5
     },
     {
@@ -2228,8 +2228,8 @@
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 12,
-     "users": 12
+     "views": 13,
+     "users": 13
     },
     {
      "name": "關於 Jeff",
