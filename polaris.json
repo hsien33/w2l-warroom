@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-27 09:41",
- "updated": "2026-11-27 09:41 台北",
+ "generatedAt": "2026-11-27 20:06",
+ "updated": "2026-11-27 20:06 台北",
  "yesterday_date": "2026-11-26",
  "yesterday": {
   "users": 11,
@@ -56,10 +56,10 @@
    "grow": {
     "users": 25,
     "events": {
-     "magnet_delivered": 2,
      "tool_engaged": 6,
      "tool_result": 6,
      "outbound_placement": 1,
+     "magnet_delivered": 2,
      "email_signup": 1
     }
    },
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 333,
-   "users": 224,
+   "sessions": 340,
+   "users": 227,
    "signups": 0
   },
   {
@@ -158,7 +158,7 @@
    "medium": "(not set)",
    "campaign": "(not set)",
    "sessions": 5,
-   "users": 4,
+   "users": 5,
    "signups": 0
   },
   {
@@ -677,10 +677,6 @@
      {
       "ch": "Organic Search",
       "users": 1
-     },
-     {
-      "ch": "Unassigned",
-      "users": 1
      }
     ],
     "engaged7": 1,
@@ -971,19 +967,19 @@
      },
      {
       "date": "2026-11-27",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 2,
     "d30": 16,
     "d7_prev": 6,
-    "pv30": 15,
+    "pv30": 16,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 15
+      "users": 16
      },
      {
       "ch": "Unassigned",
@@ -2063,12 +2059,12 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 224,
+    "users": 227,
     "signups": 0
    },
    {
     "label": "其他",
-    "users": 18,
+    "users": 19,
     "signups": 3
    },
    {
@@ -2101,7 +2097,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 14,
+     "users": 15,
      "signups": 0
     },
     {
@@ -2127,7 +2123,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 168,
+     "users": 170,
      "signups": 0
     },
     {
@@ -2145,7 +2141,7 @@
     {
      "ch": "未分類",
      "raw": "Unassigned",
-     "users": 3,
+     "users": 4,
      "signups": 0
     },
     {
@@ -2161,8 +2157,8 @@
     {
      "name": "手機幾歲給才對？我把湧進來反對我的學生留言，一則一則看完了",
      "path": "/articles/when-to-give-first-phone/",
-     "views": 10,
-     "users": 4
+     "views": 11,
+     "users": 5
     },
     {
      "name": "光合作用",
@@ -2205,14 +2201,14 @@
     {
      "name": "一起變輕一點",
      "path": "/Fitness_challenge/",
-     "views": 71,
+     "views": 74,
      "users": 5
     },
     {
      "name": "個人習慣分析",
      "path": "/Fitness_challenge/person.html",
-     "views": 60,
-     "users": 1
+     "views": 63,
+     "users": 2
     },
     {
      "name": "從 0 到 1 學習地圖",
@@ -2229,8 +2225,8 @@
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
      "path": "/articles/ep01-foundation/",
-     "views": 13,
-     "users": 13
+     "views": 14,
+     "users": 14
     },
     {
      "name": "關於 Jeff",
