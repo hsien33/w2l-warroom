@@ -1,11 +1,11 @@
 {
  "status": "ok",
- "generatedAt": "2026-11-27 00:47",
- "updated": "2026-11-27 00:47 台北",
+ "generatedAt": "2026-11-27 09:41",
+ "updated": "2026-11-27 09:41 台北",
  "yesterday_date": "2026-11-26",
  "yesterday": {
-  "users": 9,
-  "pv": 13,
+  "users": 11,
+  "pv": 17,
   "events": {},
   "sites": {
    "grow": {
@@ -13,14 +13,14 @@
     "events": {}
    },
    "wealth": {
-    "users": 8,
+    "users": 10,
     "events": {}
    }
   }
  },
  "d7": {
-  "users": 71,
-  "pv": 100,
+  "users": 73,
+  "pv": 104,
   "events": {
    "tool_engaged": 6,
    "tool_result": 6,
@@ -34,7 +34,7 @@
     }
    },
    "wealth": {
-    "users": 68,
+    "users": 70,
     "events": {
      "tool_engaged": 6,
      "tool_result": 6
@@ -43,33 +43,33 @@
   }
  },
  "d30": {
-  "users": 252,
-  "pv": 404,
+  "users": 254,
+  "pv": 408,
   "events": {
-   "tool_engaged": 14,
-   "tool_result": 14,
    "email_signup": 4,
    "magnet_delivered": 5,
+   "tool_engaged": 14,
+   "tool_result": 14,
    "outbound_placement": 1
   },
   "sites": {
    "grow": {
     "users": 25,
     "events": {
+     "magnet_delivered": 2,
      "tool_engaged": 6,
      "tool_result": 6,
      "outbound_placement": 1,
-     "magnet_delivered": 2,
      "email_signup": 1
     }
    },
    "wealth": {
-    "users": 227,
+    "users": 229,
     "events": {
-     "tool_engaged": 8,
-     "tool_result": 8,
      "email_signup": 3,
-     "magnet_delivered": 3
+     "magnet_delivered": 3,
+     "tool_engaged": 8,
+     "tool_result": 8
     }
    }
   }
@@ -100,13 +100,13 @@
   "wealth": [
    {
     "step": "到站(活躍)",
-    "count": 68,
+    "count": 70,
     "rate": null
    },
    {
     "step": "用了工具",
     "count": 6,
-    "rate": 8.8
+    "rate": 8.6
    },
    {
     "step": "Email訂閱",
@@ -125,8 +125,8 @@
    "source": "(direct)",
    "medium": "(none)",
    "campaign": "(direct)",
-   "sessions": 326,
-   "users": 220,
+   "sessions": 333,
+   "users": 224,
    "signups": 0
   },
   {
@@ -189,7 +189,7 @@
    "source": "chatgpt.com",
    "medium": "ai-assistant",
    "campaign": "(ai-assistant)",
-   "sessions": 2,
+   "sessions": 3,
    "users": 2,
    "signups": 0
   },
@@ -350,7 +350,7 @@
   },
   {
    "date": "2026-11-26",
-   "users": 9,
+   "users": 11,
    "signups": 0
   }
  ],
@@ -503,14 +503,14 @@
      },
      {
       "date": "2026-11-27",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 16,
     "d7_prev": 4,
-    "pv30": 21,
+    "pv30": 22,
     "outbound": [],
     "channels": [
      {
@@ -656,19 +656,19 @@
      },
      {
       "date": "2026-11-27",
-      "users": 0
+      "users": 1
      }
     ],
-    "today": 0,
+    "today": 1,
     "d7": 4,
     "d30": 14,
     "d7_prev": 5,
-    "pv30": 20,
+    "pv30": 21,
     "outbound": [],
     "channels": [
      {
       "ch": "Direct",
-      "users": 8
+      "users": 9
      },
      {
       "ch": "Referral",
@@ -2063,7 +2063,7 @@
   "sources4": [
    {
     "label": "直接輸入網址",
-    "users": 220,
+    "users": 224,
     "signups": 0
    },
    {
@@ -2086,7 +2086,7 @@
   "cards": [
    {
     "level": "red",
-    "what": "這 7 天有 71 個訪客，但 0 人留 Email",
+    "what": "這 7 天有 73 個訪客，但 0 人留 Email",
     "why": "訂閱入口可能壞了，或磁鐵完全沒吸引力",
     "action": "先測訂閱表單能不能送出",
     "link": "https://grow.walk2light.com/"
@@ -2127,7 +2127,7 @@
     {
      "ch": "直接輸入網址",
      "raw": "Direct",
-     "users": 164,
+     "users": 168,
      "signups": 0
     },
     {
@@ -2199,8 +2199,8 @@
     {
      "name": "ETF・FIRE 財務自由與資產配置的白話投資教學",
      "path": "/",
-     "views": 82,
-     "users": 76
+     "views": 83,
+     "users": 77
     },
     {
      "name": "一起變輕一點",
@@ -2223,8 +2223,8 @@
     {
      "name": "深度文章",
      "path": "/articles/",
-     "views": 20,
-     "users": 20
+     "views": 21,
+     "users": 21
     },
     {
      "name": "投資總是賠錢？因為你還在追那隻「狗」——40 年不敗的底層邏輯",
@@ -2547,7 +2547,7 @@
     },
     {
      "date": "2026-11-26",
-     "users": 8,
+     "users": 10,
      "signups": 0
     }
    ]
@@ -2566,8 +2566,8 @@
     "signups30": 3,
     "signups7": 0,
     "signupsY": 0,
-    "users30": 227,
-    "users7": 68,
+    "users30": 229,
+    "users7": 70,
     "rate7": 0.0
    }
   }
